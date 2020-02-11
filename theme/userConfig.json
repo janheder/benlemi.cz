@@ -1,8 +1,0 @@
-{
-    "css": {
-      "dist/main.css": [
-          "src/less/main.less",
-          "src/less/project.less"
-        ]
-    }
-}
