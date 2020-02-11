@@ -3,9 +3,17 @@
 
 @import "var/colors";
 
+/*!
+ * Benlemi (https://benlemi.cz)
+ * info@benlemi.cz
+ * Copyright 2020
+*/
+
 html{
 
 }
 body{
     background: $white;
 }
+
+@import "partials/_img";
