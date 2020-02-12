@@ -1,0 +1,20 @@
+.admin-bar{
+    background: $gray-800;
+}
+.admin-bar a, .admin-bar span{
+    color: $white;
+  }
+.admin-bar > div > ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.admin-bar > div > ul > li{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.admin-bar > div > ul > li > ul{
+    list-style: none;
+    padding: 0;
+}

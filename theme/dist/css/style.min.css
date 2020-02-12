@@ -13,6 +13,6 @@
  * Benlemi (https://benlemi.cz)
  * info@benlemi.cz
  * Copyright 2020
-*/body{background:#fff}img{max-width:100%;height:auto}
+*/body{background:#fff}img{max-width:100%;height:auto}.admin-bar{background:#2D3748}.admin-bar a,.admin-bar span{color:#fff}.admin-bar>div>ul{display:flex;list-style:none;padding:0}.admin-bar>div>ul>li{display:flex;flex-direction:column;flex-grow:1}.admin-bar>div>ul>li>ul{list-style:none;padding:0}.top-navigation-bar{display:none}
 
 /*# sourceMappingURL=maps/style.min.css.map */
