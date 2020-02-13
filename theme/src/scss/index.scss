@@ -2,6 +2,8 @@
 @import "bootstrap/bootstrap-grid";
 
 @import "var/colors";
+@import "var/fonts";
+@import "var/icons";
 
 /*!
  * Benlemi (https://benlemi.cz)
@@ -17,5 +19,19 @@ body{
 }
 
 @import "partials/_img";
+@import "partials/_user-action";
 @import "partials/_admin-bar";
 @import "partials/_top-navigation-bar";
+@import "partials/_header-top";
+@import "partials/_menu";
+@import "partials/_content-wrapper";
+@import "partials/_carousel";
+@import "partials/_sidebar";
+@import "partials/_product";
+@import "partials/_products-block";
+@import "partials/_homepage-group-title";
+
+
+
+
+@import "partials/_footer";

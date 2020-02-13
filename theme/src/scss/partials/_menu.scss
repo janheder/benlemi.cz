@@ -1,0 +1,29 @@
+.menu{
+    display: flex;
+}
+.menu-level-1{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.menu-level-1{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.menu-level-1 > li{
+    padding: 0 20px;
+}
+.menu-level-2{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.menu-level-2 > li{
+    padding: 0 20px;
+}
+
+
+.menu-helper{
+    display: none;
+}
