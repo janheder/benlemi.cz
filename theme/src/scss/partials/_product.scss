@@ -1,8 +1,11 @@
 .product{
     position: relative;
+    width: 25%;
 }
 .p{
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .p .image{
 
@@ -19,7 +22,8 @@
     }
 }
 .p-in{
-    
+    display: flex;
+    flex-direction: column;
 }
 .p-in-in{
 
@@ -37,5 +41,5 @@
 
 }
 .p-code{
-    
+    display: none;
 }

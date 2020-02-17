@@ -9,3 +9,15 @@
 .carousel-inner .item.active{
     opacity: 1;
 }
+
+.banners-row{
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+.banners-row .col-sm-8, .banners-row .col-sm-4{
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+.next-to-carousel-banners .banner-wrapper:first-child{
+    margin-bottom: 15px;
+}
