@@ -1,6 +1,8 @@
 .header-top{
     display: flex;
-    border-bottom: 1px solid $gray-400;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px solid $gray-400; */
 }
 .site-name{
 

@@ -17,8 +17,16 @@ html{
 body{
     background: $white;
 }
+a{
+    color: $green-500;
+
+    &:hover, &:active, &:focus{
+        color: $gray-900;
+    }
+}
 
 @import "partials/_img";
+@import "partials/_btn";
 @import "partials/_user-action";
 @import "partials/_admin-bar";
 @import "partials/_top-navigation-bar";

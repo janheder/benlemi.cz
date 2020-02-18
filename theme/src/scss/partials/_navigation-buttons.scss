@@ -2,11 +2,16 @@
 
 }
 .cart-count{
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .cart-count .sr-only{
 
 }
 .cart-count .cart-price{
-    
+
+}
+.cart-count i{
+
 }

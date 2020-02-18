@@ -1,6 +1,15 @@
 .carousel-inner{
     position: relative;
 }
+.carousel-control{
+    display: none;
+}
+.carousel-control.left{
+
+}
+.carousel-control.right{
+
+}
 .carousel-inner .item{
     position: absolute;
     opacity: 0;
