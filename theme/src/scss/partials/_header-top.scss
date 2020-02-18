@@ -14,22 +14,25 @@
     
 }
 .search{
-
+    height: 46px;
 }
 .search-form{
-
+    height: 100%;
 }
 .search-form fieldset{
-
+    display: inline-block;
+    height: 100%;
 }
 .search-form input{
-
+    border: 0;
+    height: 100%;
 }
 .search-form .btn{
     font-size: 0;
     position: relative;
     background: transparent;
     width: 46px;
+    float: right;
 
     &::after{
         content: "";

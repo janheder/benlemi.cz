@@ -40,9 +40,14 @@
 .menu-level-2 > li{
     padding: 0 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .menu-level-2 > li > a{
 
+}
+.menu-level-2 > li > a > img{
+    height: 50px;
 }
 .menu-level-2 > li > div{
 

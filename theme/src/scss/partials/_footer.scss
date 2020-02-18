@@ -10,5 +10,16 @@ footer{
     display: none;
 }
 .footer-bottom{
-
+    display: flex;
+}
+#signature img{
+    height: 22px;
+}
+#signature .title{
+    color: $gray-900;
+}
+.copyright{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
 }

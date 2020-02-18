@@ -52,7 +52,13 @@
 
 }
 .p .price-final strong{
+    position: relative;
+    display: flex;
 
+    &::before{
+        content: "od";
+        display: flex;
+    }
 }
 .p .p-tools{
     display: none;
@@ -64,6 +70,12 @@
 
 }
 .p .availability{
+    display: flex;
+}
+.p .availability span{
+
+}
+.p .availability .availability-amount{
 
 }
 .p-code{
