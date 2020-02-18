@@ -1,6 +1,7 @@
 .menu{
     display: flex;
     background: $gray-300;
+    position: relative;
 }
 .menu-level-1{
     display: flex;
@@ -24,21 +25,34 @@
     font-weight: 400;
 }
 .menu-level-2{
-    display: flex;
     list-style: none;
     padding: 0;
     display: none;
     position: absolute;
     z-index: 1;
     background: $white;
+    left: 0;
+    width: 100%;
 }
-.menu-level-1 > li:hover + .menu-level-2{
+.menu-level-1 > li:hover .menu-level-2{
     display: flex;
 }
 .menu-level-2 > li{
     padding: 0 20px;
+    display: flex;
 }
+.menu-level-2 > li > a{
 
+}
+.menu-level-2 > li > div{
+
+}
+.menu-level-2 > li > div > a{
+
+}
+.menu-level-2 > li > div > a > span{
+
+}
 
 .menu-helper{
     display: none;
