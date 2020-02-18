@@ -6,17 +6,22 @@
     display: flex;
     list-style: none;
     padding: 0;
-}
-.menu-level-1{
-    display: flex;
-    list-style: none;
-    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 .menu-level-1 > li{
-    padding: 0 20px;
+    height: 50px;
 }
 .menu-level-1 > li > a{
-    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $gray-900;
+    padding: 0 20px;
+}
+.menu-level-1 > li > a > b{
+    font-weight: 400;
 }
 .menu-level-2{
     display: flex;
@@ -27,7 +32,7 @@
     z-index: 1;
     background: $white;
 }
-.menu-level-1 > li > a:hover + .menu-level-2{
+.menu-level-1 > li:hover + .menu-level-2{
     display: flex;
 }
 .menu-level-2 > li{
