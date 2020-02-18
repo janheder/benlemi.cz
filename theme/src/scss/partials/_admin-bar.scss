@@ -5,6 +5,10 @@
 }
 .admin-bar a, .admin-bar span{
     color: $white;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
   }
 .admin-bar > div > ul{
     display: flex;
@@ -17,6 +21,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    cursor: pointer;
 }
 .admin-bar > div > ul > li:hover > ul{
     display: flex;
@@ -30,7 +35,9 @@
     top: 100%;
     display: none;
 }
-
+.admin-bar > div > ul > li > ul > li{
+    min-width: 200px;
+}
 
 @media screen and (max-width: 991px){
     .admin-bar{
