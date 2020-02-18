@@ -9,17 +9,40 @@ footer{
 .footer-rows .site-name{
     display: none;
 }
+.footer-rows .custom-footer{
+    display: flex;
+}
+.footer-rows .custom-footer > div{
+    display: flex;
+}
+.footer-rows .custom-footer > div > h4{
+    display: flex;
+}
+.footer-rows .custom-footer > div > .contact-box{
+
+}
+.footer-rows .custom-footer > div > .contact-box > ul{
+    list-style: none;
+    padding: 0;
+}
+
+
 .footer-bottom{
     display: flex;
+    padding: 20px 0;
 }
 #signature img{
     height: 22px;
 }
 #signature .title{
     color: $gray-900;
+    padding-left: 5px;
 }
 .copyright{
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+}
+.copyright strong{
+    padding: 0 0 0 3px;
 }

@@ -1,5 +1,7 @@
 .admin-bar{
     background: $gray-900;
+    z-index: 99;
+    position: relative;
 }
 .admin-bar a, .admin-bar span{
     color: $white;
