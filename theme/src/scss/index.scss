@@ -30,10 +30,24 @@ html{
 
 }
 body{
+    font-size: 16px;
+    color: $gray-900;
     background: $white;
+    font-family: $font-family-system;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
+@media screen and (max-width: 991px){
+    body.--noScroll{
+        overflow: hidden;
+    }
+}
+
 a{
     color: $green-500;
+    text-decoration: none;
 
     &:hover, &:active, &:focus{
         color: $gray-900;
@@ -55,7 +69,7 @@ a{
 @import "partials/_homepage-group-title";
 @import "partials/_navigation-buttons";
 
-
+@import "partials/_cart";
 
 
 

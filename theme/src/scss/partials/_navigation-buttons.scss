@@ -8,6 +8,11 @@
     align-items: flex-start;
     background: transparent;
     color: $gray-900;
+
+    &::before{
+        content: "";
+        display: flex;
+    }
 }
 .cart-count .sr-only{
 
