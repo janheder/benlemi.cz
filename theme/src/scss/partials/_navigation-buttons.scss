@@ -4,25 +4,28 @@
 .cart-count{
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: flex-start;
     background: transparent;
     color: $gray-900;
+    padding: 0 0 0 40px;
 
     &::before{
         content: "";
-        height: 18px;
-        width: 18px;
+        height: 24px;
+        width: 24px;
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 0;
         background-image: url($i-cart);
         background-repeat: no-repeat;
         background-size: 100%;
+        transform: translate(0, -50%);
     }
 }
 .cart-count .sr-only{
-
+    width: 100%;
 }
 .cart-count .cart-price{
 
