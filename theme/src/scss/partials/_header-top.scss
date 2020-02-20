@@ -13,6 +13,38 @@
 .site-name img{
     
 }
+.header-contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.header-contacts span{
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+
+    &::before{
+        content: "";
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-image: url($i-phone);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transform: translate(-50%,-50%);
+    }
+}
+.header-contacts span:first-child{
+    padding-right: 40px;
+    &::before{
+        background-image: url($i-envelope);
+    }
+
+}
+
 .search{
     height: 46px;
 }
@@ -56,8 +88,8 @@
 
     &::after{
         content: "";
-        height: 18px;
-        width: 18px;
+        height: 24px;
+        width: 24px;
         position: absolute;
         top: 50%;
         left: 50%;

@@ -1,8 +1,10 @@
 'use strict';
+
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify');
 var pump = require('pump');
 var concat = require('gulp-concat');
 
@@ -26,6 +28,25 @@ gulp.task('sass:watch', function () {
 
 
 // =============================================================================
+// MINIFY JS
+// =============================================================================
+
+gulp.task('minifyjs', function (cb) {
+  pump([
+        gulp.src(['./src/js/custom.js']),
+        concat('custom.min.js'),
+        uglify(),
+        gulp.dest('./dist/js')
+    ],
+    cb
+  );
+});
+
+gulp.task('minifyjs:watch', function () {
+  gulp.watch('./src/js/**/*.js', ['minifyjs']);
+});
+
+// =============================================================================
 // SERVE
 // =============================================================================
 
@@ -45,5 +66,5 @@ gulp.task('serve', function(){
 // DEFAULT
 // =============================================================================
 
-gulp.task('default', ['sass:watch', 'serve']);
+gulp.task('default', ['sass:watch', 'minifyjs:watch', 'serve']);
 
