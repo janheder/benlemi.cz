@@ -22,10 +22,16 @@
 }
 .header-contacts a{
     position: relative;
+    color: $gray-900;
     padding-left: 30px;
     font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
 
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        color: $green-500;
+    }
     &::before{
         content: "";
         height: 20px;
@@ -39,7 +45,7 @@
         transform: translate(0%,-50%);
     }
 }
-.header-contacts span:first-child{
+.header-contacts a:first-child{
     padding-right: 40px;
     &::before{
         background-image: url($i-envelope);
@@ -49,6 +55,7 @@
 
 .search{
     height: 46px;
+    padding-right: 40px;
 }
 .search-form{
     height: 100%;
@@ -87,6 +94,8 @@
     background: transparent;
     width: 46px;
     float: right;
+    cursor: pointer;
+    background: $gray-200;
 
     &::after{
         content: "";

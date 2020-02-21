@@ -24,7 +24,7 @@ if ($("#homepageSection").length){
 
 /* load blog posts into homepage section */
 if ($("#blogSection").length){
-    $("#blogSection").load("/blog/ .news-wrapper");
+    $("#blogSection .container").load("/blog/ .news-wrapper");
 }
 
 /* relocate points depending on page type */
