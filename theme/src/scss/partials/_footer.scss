@@ -11,12 +11,23 @@ footer{
 }
 .footer-rows .custom-footer{
     display: flex;
+    flex-wrap: wrap;
 }
 .footer-rows .custom-footer > div{
     display: flex;
+    flex-direction: column;
+    &:first-child{
+        flex-grow: 1;
+        width: 100%;
+    }
 }
 .footer-rows .custom-footer > div > h4{
     display: flex;
+    font-size: 20px;
+}
+.footer-rows .custom-footer > div > ul{
+    list-style: none;
+    padding: 0;
 }
 .footer-rows .custom-footer > div > .contact-box{
 

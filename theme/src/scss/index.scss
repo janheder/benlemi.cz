@@ -61,6 +61,11 @@ a{
         color: $gray-900;
     }
 }
+@media (max-width: 991px){
+    .container {
+        max-width: 100%;
+    }
+}
 
 @import "partials/_img";
 @import "partials/_btn";
