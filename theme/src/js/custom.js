@@ -1,15 +1,37 @@
 
-$(".search").before('<div class="header-contacts"><span>+420 739 787 164</span><span>info@benlemi.cz</span></div>');
+// -----------------------------------------------------------------------------
+// ADD HEADER CONTACT INFO
+// -----------------------------------------------------------------------------
 
-/*
-var fragment = document.createDocumentFragment();
+if ($(".search").length){
+    var mail = $("#footer .mail").text();
+    var tel = $("#footer .tel").text();
 
-var e = document.createElement("div");
-e.className = "header-contacts";
-e.innerHTML = '<span>+420 739 787 164</span><span>info@benlemi.cz</span>';
-fragment.appendChild(e);
+    $(".search").before('<div class="header-contacts">'+
+    '<a href="tel:' + tel + '">' + tel + '</a>'+
+    '<a href="mailto:' + mail + '">' + mail + '</a>'+
+    '</div>');
+}
 
-var sp2 = document.getElementsByClassName("search")[0];
-var parentDiv = sp2.parentNode;
-parentDiv.insertBefore(fragment, sp2);
-*/
+// -----------------------------------------------------------------------------
+// HOMEPAGE
+// -----------------------------------------------------------------------------
+
+/* unwrap homepage section */ 
+if ($("#homepageSection").length){
+    $("#homepageSection").unwrap().unwrap().unwrap().unwrap().unwrap();
+}
+
+/* load blog posts into homepage section */
+if ($("#blogSection").length){
+    $("#blogSection").load("/blog/ .news-wrapper");
+}
+
+/* relocate points depending on page type */
+if ($("#pointsSection").length){
+    if ($("body.type-index").length){
+        $("#pointsSection").insertAfter(".before-carousel");
+    }else{
+        $("#pointsSection").insertBefore("#footer");
+    }
+}
