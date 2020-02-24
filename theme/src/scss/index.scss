@@ -94,6 +94,10 @@ a{
     }
 }
 
+input:focus, button:focus{
+    outline: none;
+  }
+
 @import "partials/_img";
 @import "partials/_btn";
 @import "partials/_user-action";
@@ -108,6 +112,8 @@ a{
 @import "partials/_products-block";
 @import "partials/_homepage-group-title";
 @import "partials/_navigation-buttons";
+
+@import "partials/_news";
 
 @import "partials/_cart";
 

@@ -23,6 +23,11 @@
         background-size: 100%;
         transform: translate(0, -50%);
     }
+
+    &:hover, &:focus, &:active{
+        text-decoration: none;
+        
+    }
 }
 .cart-count .sr-only{
     width: 100%;

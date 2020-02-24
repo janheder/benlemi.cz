@@ -56,8 +56,9 @@
     display: flex;
 
     &::before{
-        content: "od ";
+        content: "od";
         display: flex;
+        padding-right: 4px;
     }
 }
 .p .p-tools{
