@@ -1,3 +1,14 @@
 header{
     background: $white;
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        background: $gray-300;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
 }

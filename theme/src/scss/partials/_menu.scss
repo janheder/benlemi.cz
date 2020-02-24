@@ -2,6 +2,7 @@
     display: flex;
     background: $gray-300;
     position: relative;
+    z-index: 2;
 }
 .menu-level-1{
     display: flex;
