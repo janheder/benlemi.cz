@@ -12,7 +12,13 @@
     flex-grow: 1;
 }
 .pointSingle__imgWrap{
-
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($red-500, 0.1);
 }
 .pointSingle__title{
 
