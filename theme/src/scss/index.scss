@@ -96,7 +96,11 @@ a{
 
 input:focus, button:focus{
     outline: none;
-  }
+}
+
+.in-index #content-wrapper{
+    display: none;
+}
 
 @import "partials/_img";
 @import "partials/_btn";

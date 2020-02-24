@@ -13,6 +13,9 @@ if ($(".search").length){
     '</div>');
 }
 
+$(".navigation-buttons").prepend("<div class='nav-user'>user</div>");
+$(".navigation-buttons").prepend("<div class='nav-search'>search</div>");
+
 // -----------------------------------------------------------------------------
 // HOMEPAGE
 // -----------------------------------------------------------------------------

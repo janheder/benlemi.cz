@@ -1,12 +1,14 @@
 .news-wrapper{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -10px;
 }
 .news-item{
-    width: 33.333%;
+    width: 25%;
+    padding: 10px;
 }
 .news-item > .image{
-    
+    display: flex;
 }
 .news-item > .image > a{
     
@@ -15,10 +17,11 @@
     
 }
 .news-item > .text{
-
+    display: flex;
+    flex-direction: column;
 }
 .news-item > .title{
-
+    font-size: 16px;
 }
 .news-item > time{
 
