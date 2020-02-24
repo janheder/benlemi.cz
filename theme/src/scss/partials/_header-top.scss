@@ -73,8 +73,12 @@
 }
 .search-whisperer{
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
+    width: 100%;
+    background: $gray-200;
+    transform: translateY(100%);
+    z-index: 99;
 
     &.active{
 

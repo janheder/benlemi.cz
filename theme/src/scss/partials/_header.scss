@@ -1,5 +1,6 @@
 header{
     background: $white;
+    position: relative;
 
     &::before{
         content: "";
