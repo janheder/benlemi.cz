@@ -1,11 +1,12 @@
 .news-wrapper{
     display: flex;
+    flex-wrap: wrap;
 }
 .news-item{
-
+    width: 33.333%;
 }
 .news-item > .image{
-
+    
 }
 .news-item > .image > a{
     
