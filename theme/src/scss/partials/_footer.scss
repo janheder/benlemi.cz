@@ -12,11 +12,13 @@ footer{
 .footer-rows .custom-footer{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -10px;
 }
 .footer-rows .custom-footer > div{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    padding: 0 10px;
 
     &:first-child{
         flex-grow: 1;

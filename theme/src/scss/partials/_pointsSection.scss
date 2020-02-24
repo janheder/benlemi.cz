@@ -1,13 +1,18 @@
-.pointsSection{
+#pointsSection{
 
+}
+#pointsSection .container{
+    display: flex;
 }
 .pointSingle{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 .pointSingle__imgWrap{
-    
+
 }
 .pointSingle__title{
 
