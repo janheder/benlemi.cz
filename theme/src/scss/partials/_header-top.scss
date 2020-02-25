@@ -77,7 +77,7 @@
 
 .search{
     height: 46px;
-    padding-right: 40px;
+    padding-right: 0px;
 }
 .search-form{
     height: 100%;
@@ -97,6 +97,10 @@
 .search:hover fieldset input, .search fieldset input:focus,  .search fieldset input:active{
     display: inline-block;
 }
+.search:hover fieldset .btn, .search fieldset input:focus ~ .btn,  .search fieldset input:active ~ .btn{
+    display: inline-block;
+}
+
 
 @media screen and (max-width: 991px){
     .search{

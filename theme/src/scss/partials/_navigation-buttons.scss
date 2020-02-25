@@ -10,7 +10,7 @@
     justify-content: flex-start;
     background: transparent;
     color: $gray-900;
-    padding: 0 0 0 40px;
+    padding: 0 0 0 46px;
     margin-left: 10px;
 
     &::before{
@@ -19,11 +19,11 @@
         width: 24px;
         position: absolute;
         top: 50%;
-        left: 0;
+        left: 11px;
         background-image: url($i-cart);
         background-repeat: no-repeat;
         background-size: 100%;
-        transform: translate(0, -50%);
+        transform: translate(0%, -50%);
     }
 
     &:hover, &:focus, &:active{
