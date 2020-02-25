@@ -1,5 +1,6 @@
 .navigation-buttons{
     color: $gray-900;
+    display: flex;
 }
 .cart-count{
     position: relative;
@@ -26,7 +27,7 @@
 
     &:hover, &:focus, &:active{
         text-decoration: none;
-        
+
     }
 }
 .cart-count .sr-only{
@@ -50,4 +51,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav-user{
+    width: 46px;
+    display: flex;
+    background-image: url($i-user);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+}
+.nav-search{
+    width: 46px;
+    display: flex;
+    background-image: url($i-search);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
 }

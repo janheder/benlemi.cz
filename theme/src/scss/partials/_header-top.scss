@@ -1,15 +1,17 @@
 .header-top{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 80px;
     /* border-bottom: 1px solid $gray-400; */
 }
 .site-name{
     height: 60px;
+    margin: 0;
 }
 .site-name a{
-    
+    display: flex;
+    height: 100%;
 }
 .site-name img{
     max-height: 100%;

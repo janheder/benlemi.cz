@@ -13,8 +13,8 @@ if ($(".search").length){
     '</div>');
 }
 
-$(".navigation-buttons").prepend("<div class='nav-user'>user</div>");
-$(".navigation-buttons").prepend("<div class='nav-search'>search</div>");
+$(".navigation-buttons").prepend('<a href="login" class="nav-user"></div>');
+$(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div>');
 
 // -----------------------------------------------------------------------------
 // HOMEPAGE
