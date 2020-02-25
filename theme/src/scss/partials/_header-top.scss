@@ -5,6 +5,9 @@
     height: 80px;
     /* border-bottom: 1px solid $gray-400; */
 }
+.header-top div{
+    flex-shrink: 0;
+}
 .site-name{
     height: 60px;
     margin: 0;
@@ -54,6 +57,12 @@
     }
 
 }
+@media screen and (max-width: 991px){
+    .header-contacts{
+        display: none;
+    }
+}
+
 
 .search{
     height: 46px;

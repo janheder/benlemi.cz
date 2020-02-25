@@ -30,6 +30,16 @@
 .menu-level-1 > li > a > b{
     font-weight: 400;
 }
+
+@media screen and (max-width: 991px){
+    header::before {
+        content: none;
+    }
+    .menu-level-1{
+        flex-direction: column;
+    }
+}
+
 .menu-level-2{
     list-style: none;
     padding: 0;
