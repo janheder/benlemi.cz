@@ -8,6 +8,17 @@
 @media screen and (max-width: 991px){
     .header-top{
         height: 56px;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        background: $white;
+        
+        &.--active{
+            transform: translate(200px, 0px);
+        }
+        &.--active + #navigation .menu{
+            transform: translate(0%, 0);
+        }
     }
 }
 .header-top div{
