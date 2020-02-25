@@ -57,6 +57,10 @@
     .cart-count .sr-only, .cart-count .cart-price{
         display: none;
     }
+    .cart-count{
+        height: 56px;
+        margin-left: 16px;
+    }
 }
 
 .nav-user{
@@ -79,7 +83,9 @@
 }
 
 @media screen and (max-width: 991px){
-    .nav-search{
+    .nav-user, .nav-search{
         display: flex;
+        height: 56px;
+        width: 56px;
     }
 }

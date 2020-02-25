@@ -5,12 +5,22 @@
     height: 80px;
     /* border-bottom: 1px solid $gray-400; */
 }
+@media screen and (max-width: 991px){
+    .header-top{
+        height: 56px;
+    }
+}
 .header-top div{
     flex-shrink: 0;
 }
 .site-name{
     height: 60px;
     margin: 0;
+}
+@media screen and (max-width: 991px){
+    .site-name{
+        height: 46px;
+    }
 }
 .site-name a{
     display: flex;
@@ -88,7 +98,7 @@
 }
 
 @media screen and (max-width: 991px){
-    .nav-search input{
+    .search-form input{
         display: flex;
     }
 }
@@ -103,7 +113,7 @@
     z-index: 99;
 
     &.active{
-
+        
     }
 }
 .search-whisperer ul{
