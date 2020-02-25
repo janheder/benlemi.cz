@@ -101,6 +101,9 @@ input:focus, button:focus{
 .in-index #content-wrapper{
     display: none;
 }
+.col-xs-12{
+    width: 100%;
+}
 
 @import "partials/_img";
 @import "partials/_btn";
@@ -118,6 +121,8 @@ input:focus, button:focus{
 @import "partials/_homepage-group-title";
 @import "partials/_navigation-buttons";
 @import "partials/_pointsSection";
+
+@import "partials/_subcategories";
 
 @import "partials/_news";
 

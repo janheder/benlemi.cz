@@ -53,6 +53,11 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 991px){
+    .cart-count .sr-only, .cart-count .cart-price{
+        display: none;
+    }
+}
 
 .nav-user{
     width: 46px;
@@ -65,10 +70,16 @@
 }
 .nav-search{
     width: 46px;
-    display: flex;
     background-image: url($i-search);
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: center center;
     margin: 0 10px;
+    display: none;
+}
+
+@media screen and (max-width: 991px){
+    .nav-search{
+        display: flex;
+    }
 }

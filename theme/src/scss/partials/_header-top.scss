@@ -85,7 +85,14 @@
 }
 .search:hover fieldset input, .search fieldset input:focus,  .search fieldset input:active{
     display: inline-block;
-  }
+}
+
+@media screen and (max-width: 991px){
+    .nav-search input{
+        display: flex;
+    }
+}
+
 .search-whisperer{
     position: absolute;
     bottom: 0;
