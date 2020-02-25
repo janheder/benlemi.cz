@@ -99,6 +99,9 @@
 }
 
 @media screen and (max-width: 991px){
+    .search{
+        padding: 0;
+    }
     .search-form input{
         display: flex;
     }
@@ -132,8 +135,11 @@
     width: 46px;
     float: right;
     cursor: pointer;
-    background: $gray-200;
+    background: $white;
 
+    &:hover, &:active, &:focus{
+        background: $gray-200;
+    }
     &::after{
         content: "";
         height: 24px;
