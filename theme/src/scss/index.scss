@@ -46,10 +46,14 @@ body{
     position: relative;
     width: 100%;
     margin: 0 auto;
+    transition: 0.3s ease transform;
 }
 @media screen and (max-width: 991px){
     body.--noScroll{
         overflow: hidden;
+    }
+    body.--active{
+        transform: translateX(200px);
     }
 }
 
