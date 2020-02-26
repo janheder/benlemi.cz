@@ -111,6 +111,7 @@
 }
 .search:hover fieldset .btn, .search fieldset input:focus ~ .btn,  .search fieldset input:active ~ .btn{
     display: inline-block;
+    background: $gray-200;
 }
 
 
