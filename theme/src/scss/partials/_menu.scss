@@ -44,6 +44,7 @@
         height: 100%;
         width: 200px;
         transform: translate(-100%, 0);
+        transition: 0.3s ease transform;
     }
     .menu-level-1{
         flex-direction: column;
