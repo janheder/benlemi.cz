@@ -13,7 +13,7 @@ if ($(".search").length){
     '</div>');
 }
 
-$(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><a href="login" class="nav-user"></a>');
+$(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><a href="/login" class="nav-user"></a>');
 
 $(".header-top").prepend('<div class="nav-menu-toggle" id="js-menuToggle"><span></span></div>');
 
@@ -22,7 +22,6 @@ $("#js-menuToggle").click(function(){
     $("body").toggleClass("--noScroll");
     /*$("body").toggleClass("--active");*/
 });
-
 
 
 // -----------------------------------------------------------------------------

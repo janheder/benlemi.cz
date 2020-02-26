@@ -122,6 +122,13 @@
     }
     .search-form input{
         display: flex;
+        width: 100%;
+    }
+    .search-form .btn {
+        font-size: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
 
