@@ -18,9 +18,9 @@ $(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"><
 $(".header-top").prepend('<div class="nav-menu-toggle" id="js-menuToggle"><span></span></div>');
 
 $("#js-menuToggle").click(function(){
-    /*$(".header-top").toggleClass("--active");*/
+    $(".header-top").toggleClass("--active");
     $("body").toggleClass("--noScroll");
-    $("body").toggleClass("--active");
+    /*$("body").toggleClass("--active");*/
 });
 
 
