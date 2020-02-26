@@ -8,7 +8,14 @@
 
 }
 .subcategories li a{
-
+    display: flex;
+    flex-direction: column;
+}
+.subcategories li a .image{
+    display: flex;
+    flex-direction: column;
+}
+.subcategories li a .text{
     display: flex;
     flex-direction: column;
 }
