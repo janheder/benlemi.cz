@@ -1,3 +1,7 @@
+.products-inline{
+    display: flex;
+    flex-wrap: wrap;
+}
 .product{
     position: relative;
     width: 25%;
