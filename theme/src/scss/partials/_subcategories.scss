@@ -10,10 +10,16 @@
 .subcategories li a{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid $gray-400;
 }
 .subcategories li a .image{
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    height: 120px;
 }
 .subcategories li a .text{
     display: flex;

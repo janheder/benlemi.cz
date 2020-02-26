@@ -1,3 +1,14 @@
+.category-title{
+    text-align: center;
+}
 .category-header{
-    
+    display: flex;
+    margin: 0;
+}
+.category-header input{
+    -webkit-appearance: none;
+}
+
+.category-header input:checked + label{
+    color: $green-500;
 }

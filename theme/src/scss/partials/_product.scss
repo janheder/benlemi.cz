@@ -39,18 +39,25 @@
 .p-in{
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
 }
 .p-in-in{
 
 }
 .p-in-in .name{
+    text-decoration: none;
+    color: $gray-900;
 
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        color: $green-900;
+    }
 }
 .p .p-bottom{
 
 }
 .p .prices{
-
+    color: $red-700;
 }
 .p .price-final{
 
@@ -85,4 +92,10 @@
 }
 .p-code{
     display: none;
+}
+
+.products-page{
+    .product{
+        width: 33.333%;
+    }
 }
