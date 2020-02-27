@@ -5,6 +5,9 @@
     display: flex;
     margin: 0;
 }
+.category-header label{
+    cursor: pointer;
+}
 .category-header input{
     -webkit-appearance: none;
 }

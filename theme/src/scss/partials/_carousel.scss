@@ -31,6 +31,26 @@
 .banners-row .col-sm-8, .banners-row .col-sm-4{
 
 }
-.next-to-carousel-banners .banner-wrapper:first-child{
-    margin-bottom: 20px;
+.next-to-carousel-banners{
+    height: 100%;
+    position: relative;
+}
+.banner-wrapper{
+    height: 50%;
+    display: flex;
+    position: relative;
+
+    &:first-child{
+        padding-bottom: 10px;
+    }
+    &:last-child{
+        padding-top: 10px;
+    }
+}
+.banner-wrapper a{
+    display: flex;
+    height: 100%;
+}
+.banner-wrapper a img{
+    object-fit: cover;
 }
