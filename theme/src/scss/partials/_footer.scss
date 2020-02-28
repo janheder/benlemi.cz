@@ -28,11 +28,36 @@ footer{
 .footer-rows .custom-footer > div > h4{
     display: flex;
     font-size: 20px;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }
 }
 .footer-rows .custom-footer > div > ul{
     list-style: none;
     padding: 0;
 }
+.footer-rows .custom-footer > div > ul > li{
+    
+}
+.footer-rows .custom-footer > div > ul > li > a{
+    color: $gray-900;
+    font-size: 14px;
+    line-height: 22px;
+
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        color: $gray-700;
+    }
+}
+
 .footer-rows .custom-footer > div > .contact-box{
 
 }
@@ -46,6 +71,21 @@ footer{
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: flex;
+        background: $gray-400;
+        height: 1px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        top: 0;
+    }
+}
+#signature{
+    order: 1;
 }
 #signature img{
     height: 22px;
@@ -57,7 +97,8 @@ footer{
 .copyright{
     flex-grow: 1;
     display: flex;
-    justify-content: flex-end;
+    order: 0;
+    justify-content: flex-start;
 }
 .copyright strong{
     padding: 0 0 0 3px;

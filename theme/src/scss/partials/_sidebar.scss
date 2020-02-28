@@ -9,3 +9,10 @@
 .sidebar-inner{
 
 }
+
+
+.in-blog, .in-vyhledavani, .in-login, .in-affiliate-login{
+    .sidebar{
+        display: none;
+    }
+}
