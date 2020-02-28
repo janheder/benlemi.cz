@@ -29,6 +29,8 @@ footer{
     display: flex;
     font-size: 20px;
     position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
 
     &::after{
         content: "";
