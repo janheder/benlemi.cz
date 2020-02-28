@@ -2,6 +2,12 @@
     color: $gray-900;
     display: flex;
 }
+@media screen and (max-width: 991px){
+    .navigation-buttons{
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+}
 .cart-count{
     position: relative;
     display: flex;
