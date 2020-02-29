@@ -89,6 +89,11 @@
     background-size: 24px;
     background-position: center center;
     margin: 0 10px;
+    transition: 0.2s ease background-color;
+    
+    &:hover, &:active, &:focus{
+        background-color: $gray-300;
+    }
 }
 .nav-search{
     width: 46px;
