@@ -26,6 +26,10 @@ $("#js-menuToggle").click(function(){
     $("body").toggleClass("--noScroll");
 });
 
+/* toggle show responsive searchbar */ 
+$("#js-searchToggle").click(function(){
+    $(".search").toggleClass("--active");
+});
 
 // -----------------------------------------------------------------------------
 // HOMEPAGE

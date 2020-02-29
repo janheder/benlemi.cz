@@ -172,6 +172,13 @@
         top: 56px;
         margin: 0;
         width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s ease opacity;
+    }
+    .search.--active{
+        opacity: 1;
+        pointer-events: auto;
     }
     .search-form fieldset {
         width: 100%;
