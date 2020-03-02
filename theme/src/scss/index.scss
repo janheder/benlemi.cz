@@ -102,7 +102,9 @@ input:focus, button:focus{
     outline: none;
 }
 
-
+header + .content-wrapper .content-wrapper-in{
+    padding: 0;
+}
 
 .col-xs-12{
     width: 100%;
