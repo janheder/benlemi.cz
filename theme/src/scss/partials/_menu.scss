@@ -72,10 +72,25 @@
 
 }
 
+
+
 .menu-helper{
+    position: fixed;
+    top: 56px;
     display: none;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1;
+}
+body.--noSCroll .menu-helper{
+    display: flex;
 }
 
+.menu-helper *{
+    display: none;
+}
 
 
 @media screen and (max-width: 991px){

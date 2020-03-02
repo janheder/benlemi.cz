@@ -9,23 +9,12 @@
 }
 .news-item > .image{
     position: relative;
-    padding-bottom: 70%;
 }
 .news-item > .image > a{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    height: 300px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
 }
 .news-item > .image > a > img{
-    max-width: 100%;
-    max-height: 100%;
     object-fit: cover;
 }
 .news-item > .text{

@@ -35,7 +35,7 @@ $("#js-searchToggle").click(function(){
 // HOMEPAGE
 // -----------------------------------------------------------------------------
 
-/* unwrap homepage section */ 
+/* unwrap homepage section */
 if ($("#homepageSection").length){
     $("#homepageSection").unwrap().unwrap().unwrap().unwrap().unwrap();
 }
@@ -53,4 +53,3 @@ if ($("#pointsSection").length){
         $("#pointsSection").insertBefore("#footer");
     }
 }
-
