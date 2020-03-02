@@ -53,3 +53,4 @@ if ($("#pointsSection").length){
         $("#pointsSection").insertBefore("#footer");
     }
 }
+

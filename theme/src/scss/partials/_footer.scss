@@ -25,7 +25,7 @@ footer{
         width: 100%;
     }
 }
-.footer-rows .custom-footer > div > h4{
+.footer-rows .custom-footer > div > h4, .footer-rows .banner-wrapper h4{
     display: flex;
     font-size: 20px;
     position: relative;
@@ -42,14 +42,14 @@ footer{
         background: $green-200;
     }
 }
-.footer-rows .custom-footer > div > ul{
+.footer-rows .custom-footer > div > ul, .footer-rows .banner-wrapper ul{
     list-style: none;
     padding: 0;
 }
-.footer-rows .custom-footer > div > ul > li{
+.footer-rows .custom-footer > div > ul > li, .footer-rows .banner-wrapper li{
     
 }
-.footer-rows .custom-footer > div > ul > li > a{
+.footer-rows .custom-footer > div > ul > li > a, .footer-rows .banner-wrapper a{
     color: $gray-900;
     font-size: 14px;
     line-height: 22px;
