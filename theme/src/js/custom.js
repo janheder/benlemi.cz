@@ -5,9 +5,13 @@
 
 /* add contacts into header area */ 
 if ($(".search").length){
-    var mail = $("#footer .mail").text();
-    var tel = $("#footer .tel").text();
-
+    if ($("#footer").length){
+        var mail = $("#footer .mail").text();
+        var tel = $("#footer .tel").text();
+    }else{
+        var mail = $(".contact-box .mail a").text();
+        var tel = $(".contact-box  .tel").text();
+    }
     $(".search").before('<div class="header-contacts">'+
     '<a href="tel:' + tel + '">' + tel + '</a>'+
     '<a href="mailto:' + mail + '">' + mail + '</a>'+

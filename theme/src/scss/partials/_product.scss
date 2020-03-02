@@ -54,15 +54,15 @@
     text-decoration: none;
     color: $gray-900;
     order: 1;
+    font-size: 14px;
+    font-weight: 500;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
         color: $green-900;
     }
 }
-.p-in-in  .ratings-wrapper{
-    order: 0;
-}
+
 .p .p-bottom{
 
 }
@@ -85,18 +85,24 @@
 .p .p-tools{
     display: none;
 }
-
+.p .ratings-wrapper{
+    order: 0;
+    display: flex;
+}
 .p .stars-placeholder{
-
+    order: 1;
 }
 .p .availability{
     display: flex;
+    font-size: 12px;
+    flex-grow: 1;
+    order: 0;
 }
 .p .availability span{
 
 }
 .p .availability .availability-amount{
-
+    display: none;
 }
 .p-code{
     display: none;

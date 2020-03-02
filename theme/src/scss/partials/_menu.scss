@@ -64,10 +64,21 @@
     height: 50px;
 }
 .menu-level-2 > li > div{
-
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .menu-level-2 > li > div > a{
-
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        background: transparent;
+    }
 }
 .menu-level-2 > li > div > a > span{
 
