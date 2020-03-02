@@ -21,7 +21,7 @@ $(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"><
 $(".header-top").prepend('<div class="nav-menu-toggle" id="js-menuToggle"><span></span></div>');
 
 /* toggle control of responsive menu */ 
-$("#js-menuToggle").click(function(){
+$("#js-menuToggle, .menu-helper").click(function(){
     $(".header-top").toggleClass("--active");
     $("body").toggleClass("--noScroll");
 });

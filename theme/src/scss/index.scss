@@ -102,14 +102,7 @@ input:focus, button:focus{
     outline: none;
 }
 
-.in-index #content-wrapper{
-    display: none;
-}
-@media (max-width: 991px){
-    .in-index #content-wrapper{
-        display: block;
-    }
-}
+
 
 .col-xs-12{
     width: 100%;
