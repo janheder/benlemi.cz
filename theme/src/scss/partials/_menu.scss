@@ -13,6 +13,11 @@
 }
 .menu-level-1 > li{
     height: 50px;
+
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        background: $white;
+    }
 }
 .menu-level-1 > li > a{
     height: 100%;
@@ -40,12 +45,13 @@
     background: $white;
     left: 0;
     width: 100%;
+    padding: 10px 0;
 }
 .menu-level-1 > li:hover .menu-level-2{
     display: flex;
 }
 .menu-level-2 > li{
-    padding: 0 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
