@@ -136,7 +136,30 @@ input:focus, button:focus{
     height: 48px;
     padding: 0 20px;
 }
+.password-helper{
+    text-align: center; 
+    padding-top: 20px;
+    a{
+        margin: 0 20px;
+    }
+}
 
+.in-login{
+    .content{
+        width: 100%;
+    }
+    .content-inner{
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.08);
+        background: $white;
+        padding: 40px;
+    }
+    .btn{
+        width: 100%;
+    }
+}
 
 @import "partials/_img";
 @import "partials/_btn";
