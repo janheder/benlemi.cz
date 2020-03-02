@@ -5,11 +5,16 @@
     padding: 10px 0;
 }
 .breadcrumbs > span{
-    
+
 }
 .breadcrumbs > span > a{
-    
+    padding: 5px 10px;
+    color: $gray-900;
 }
 .breadcrumbs > span > span{
-    
+    padding: 5px 10px;
+    color: $gray-500;
+}
+.breadcrumbs > span > .navigation-bullet{
+    display: none;
 }
