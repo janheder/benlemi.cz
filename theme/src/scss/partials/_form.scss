@@ -1,0 +1,24 @@
+
+.form-group{
+    padding: 10px 0;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.input-wrapper.password{
+
+}
+.form-control{
+    background: $white;
+    border: 1px solid $gray-400;
+    height: 48px;
+    padding: 0 20px;
+}
+.password-helper{
+    text-align: center; 
+    padding-top: 20px;
+    a{
+        margin: 0 20px;
+    }
+}

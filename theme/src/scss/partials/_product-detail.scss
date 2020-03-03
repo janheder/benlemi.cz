@@ -1,0 +1,100 @@
+.p-detail{
+
+}
+.p-detail-inner{
+
+}
+.p-detail-inner-header{
+    h1{
+
+    }
+}
+#product-detail-form{
+
+}
+
+.p-image-wrapper{
+
+}
+.p-image{
+
+}
+.p-thumbnails-wrapper{
+
+}
+.p-thumbnails{
+
+}
+.p-info-wrapper{
+
+}
+.p-final-price-wrapper{
+
+}
+.price-final{
+
+}
+.price-final-holder{
+
+}
+.price-measure{
+
+}
+.availability-value{
+
+}
+.availability-label{
+
+}
+.availability-amount{
+
+}
+.detail-parameters{
+
+}
+.add-to-cart{
+    display: flex;
+}
+.add-to-cart .quantity{
+    margin-right: 10px;
+    position: relative;
+}
+.add-to-cart .amount{
+    height: 46px;
+
+}
+.add-to-cart .increase, .add-to-cart .decrease{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+
+    &::before, &::after{
+        content: "";
+        background: $gray-900;
+        height: 2px;
+        width: 12px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &::after{
+        height: 12px;
+        width: 2px;
+    }
+}
+.add-to-cart .decrease{
+    left: 0;
+    right: auto;
+    &::after{
+        content: none;
+    }
+}
+.add-to-cart .add-to-cart-button{
+
+}
