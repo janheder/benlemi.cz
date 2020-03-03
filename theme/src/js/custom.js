@@ -57,3 +57,12 @@ if ($("#pointsSection").length){
         $("#pointsSection").insertBefore("#footer");
     }
 }
+
+
+// -----------------------------------------------------------------------------
+// PRODUCT PAGE
+// -----------------------------------------------------------------------------
+
+if ($(".p-detail-inner-header").length){
+    $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
+}

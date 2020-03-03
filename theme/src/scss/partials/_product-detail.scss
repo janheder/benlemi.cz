@@ -58,11 +58,14 @@
 .add-to-cart .quantity{
     margin-right: 10px;
     position: relative;
+    max-width: 120px;
 }
 .add-to-cart .amount{
     height: 46px;
     padding: 0 10px;
+    width: 100%;
     border: 1px solid $gray-400;
+    text-align: center;
 }
 .add-to-cart .increase, .add-to-cart .decrease{
     position: absolute;
@@ -97,5 +100,5 @@
     }
 }
 .add-to-cart .add-to-cart-button{
-
+    padding: 0 30px;
 }
