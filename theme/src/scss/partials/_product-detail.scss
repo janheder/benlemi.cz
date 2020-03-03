@@ -61,7 +61,8 @@
 }
 .add-to-cart .amount{
     height: 46px;
-
+    padding: 0 10px;
+    border: 1px solid $gray-400;
 }
 .add-to-cart .increase, .add-to-cart .decrease{
     position: absolute;
