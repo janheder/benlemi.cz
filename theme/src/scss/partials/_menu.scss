@@ -126,8 +126,12 @@
     .menu-level-1{
         flex-direction: column;
     }
+    .menu-level-1 > li{
+        height: auto;
+    }
     .menu-level-1 > li > a{
         justify-content: flex-start;
+        height: 50px;
     }
     .menu-level-2{
         position: relative;
@@ -136,5 +140,8 @@
     }
     .menu-level-2 > li {
         justify-content: flex-start;
+    }
+    .menu-level-2 .menu-image {
+        height: 36px;
     }
 }

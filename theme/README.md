@@ -99,53 +99,9 @@ For continuous development and compatibility of your themes with [Shoptet](https
 ### Very important notice
 **Really _don't ever edit any file in `your_directory/assets/` folder_.**
 
-### Example - change primary color of template
+### About source SASS files
 
-```shell
-cd your_directory/theme
-touch project-variables-custom.less
-touch project-custom.less
-touch userConfig.json
-```
-
-We need to set new value to `@colorPrimary` variable in
-`project-variables-custom.less`:
-
-```less
-@colorPrimary: orangered;
-```
-
-Then we need to load original project files along with
-our newly set variable in `project-custom.less`:
-
-```less
-@import '../assets/11/css/project';
-@import 'project-variables-custom';
-```
-
-And finally we have to use our custom file in build process -
-this is what the `userConfig.json` does:
-
-```json
-{
-  "css": {
-    "dist/main.css": [
-        "../assets/11/css/main.less",
-        "project-custom.less",
-        "../assets/11/css/font-shoptet.less"
-      ]
-  }
-}
-
-```
-
-Now recompile your CSS by `grunt` command and upload it to FTP.
-
-### About source LESS files
-
-* `main.less` is used for layout
-* `project.less` is used for colors
-* `font-shoptet.less` is used for  Shoptet icon font
+* don't use less files, use and compile sass inside src folder using gulp - bundled with bootstrap 4 grid 
 
 ### About source JavaScript files
 

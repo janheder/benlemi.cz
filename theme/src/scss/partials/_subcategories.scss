@@ -2,6 +2,7 @@
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -10px;
 }
 .subcategories li{
@@ -14,6 +15,7 @@
     align-items: center;
     padding: 20px;
     border: 1px solid $gray-400;
+    margin-bottom: 20px;
 }
 .subcategories li a .image{
     display: flex;
