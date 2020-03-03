@@ -27,6 +27,10 @@ footer{
     &:first-child{
         flex-grow: 1;
         width: 100%;
+        
+        .banner-wrapper{
+            width: 100%;
+        }
     }
 }
 .footer-rows .custom-footer > div > h4, .footer-rows .banner-wrapper h4{

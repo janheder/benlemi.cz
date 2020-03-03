@@ -14,6 +14,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    height: auto !important; //todo: delete js that sets .p height
 }
 .p .image{
 
@@ -56,6 +57,7 @@
     order: 1;
     font-size: 14px;
     font-weight: 500;
+    padding: 5px 0;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
@@ -97,6 +99,7 @@
     font-size: 12px;
     flex-grow: 1;
     order: 0;
+    color: $green-500;
 }
 .p .availability span{
 

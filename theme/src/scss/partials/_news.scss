@@ -23,9 +23,11 @@
 }
 .news-item > .title{
     font-size: 16px;
+    font-width: 500;
 }
 .news-item > time{
     font-size: 14px;
+    color: $gray-700;
 }
 .news-item > .description{
 
