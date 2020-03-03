@@ -74,7 +74,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     &:hover, &:active, &:focus{
         text-decoration: none;
         background: transparent;
@@ -97,9 +97,9 @@
     z-index: 1;
 }
 @media screen and (max-width: 991px){
-    body.--noSCroll .menu-helper{
+    body.--noScroll .menu-helper{
         display: flex;
-    }
+    }   
 }
 
 

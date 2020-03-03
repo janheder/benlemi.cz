@@ -2,10 +2,11 @@
     padding: 0px 0;
 }
 .carousel{
-    
+    height: 100%;
 }
 .carousel-inner{
     position: relative;
+    height: 100%;
 }
 .carousel-control{
     display: none;
@@ -20,9 +21,17 @@
     position: absolute;
     opacity: 0;
     transition: 0.6s ease opacity;
+    height: 100%;
 }
 .carousel-inner .item.active{
     opacity: 1;
+}
+.carousel-inner .item a{
+    display: flex;
+    height: 100%;
+}
+.carousel-inner .item a img{
+    object-fit: cover;
 }
 
 .banners-row{
