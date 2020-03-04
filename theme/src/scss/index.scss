@@ -114,7 +114,9 @@ header + .content-wrapper .content-wrapper-in{
     display: none;
 }
 
-
+.content{
+    width: 100%;
+}
 
 .in-login{
     .content{
@@ -128,7 +130,7 @@ header + .content-wrapper .content-wrapper-in{
         background: $white;
         padding: 40px;
     }
-    form .btn{
+    .content-inner form .btn{
         width: 100%;
     }
 }

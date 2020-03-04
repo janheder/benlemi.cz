@@ -14,7 +14,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: auto !important; //todo: delete js that sets .p height
+    height: 100% !important; //todo: delete js that sets .p height
 }
 .p .image{
 
@@ -115,4 +115,15 @@
     .product{
         width: 33.333%;
     }
+}
+
+@media screen and (max-width: 991px){
+    .product{
+        width: 33.333%;
+    } 
+}
+@media screen and (max-width: 500px){
+    .product{
+        width: 50%;
+    } 
 }

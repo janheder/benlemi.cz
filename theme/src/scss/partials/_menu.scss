@@ -2,7 +2,7 @@
     display: flex;
     background: $gray-300;
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 .menu-level-1{
     display: flex;
@@ -116,7 +116,7 @@
         position: fixed;
         left: 0;
         top: 0;
-        z-index: 2;
+        z-index: 3;
         overflow-y: auto;
         height: 100%;
         width: 200px;
