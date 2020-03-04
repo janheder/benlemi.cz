@@ -10,9 +10,15 @@
 .breadcrumbs > span > a{
     padding: 5px 10px;
     color: $gray-900;
-    
+    position: relative;
+
     &::after{
         content: "/";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        line-height: 1;
+        transform: translate(50%,-50%);
     }
 }
 .breadcrumbs > span > span{

@@ -5,6 +5,7 @@
 
 }
 .p-detail-inner-header{
+    order: 0;
     h1{
 
     }
@@ -26,7 +27,8 @@
 
 }
 .p-info-wrapper{
-
+    display: flex;
+    flex-direction: column;
 }
 .p-final-price-wrapper{
 
@@ -35,13 +37,17 @@
 
 }
 .price-final-holder{
-
+    color: $red-700;
+    font-size: 24px;
+    font-weight: 600;
 }
 .price-measure{
 
 }
 .availability-value{
-
+    font-size: 14px;
+    font-weight: 600;
+    color: $green-500;
 }
 .availability-label{
 
@@ -102,4 +108,13 @@
 }
 .add-to-cart .add-to-cart-button{
     padding: 0 30px;
+}
+.p-short-description{
+    order: 1;
+}
+.p-short-description + p{
+    order: 2;
+}
+.social-buttons-wrapper{
+    display: none;
 }
