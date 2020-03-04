@@ -16,7 +16,7 @@
         box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.05);
         
         &.--active{
-            transform: translate(200px, 0px);
+            /*transform: translate(200px, 0px);*/
         }
         &.--active + #navigation .menu{
             transform: translate(0%, 0);

@@ -87,6 +87,7 @@
 .nav-user{
     width: 46px;
     height: 46px;
+    flex-shrink: 0;
     display: flex;
     background-image: url($i-user);
     background-repeat: no-repeat;

@@ -13,6 +13,33 @@
 #product-detail-form{
 
 }
+.product-top{
+
+}
+.p-detail-info{
+
+}
+.p-detail-info .flags{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.p-detail-info .flag{
+    margin-bottom: 5px;
+    padding: 0 5px;
+    height: 22px;
+    background: $white;
+    color: $gray-800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars-wrapper{
+    order: 10;
+}
 
 .p-image-wrapper{
 
@@ -60,6 +87,7 @@
 }
 .add-to-cart{
     display: flex;
+    order: 40;
 }
 .add-to-cart .quantity{
     margin-right: 10px;
@@ -110,10 +138,10 @@
     padding: 0 30px;
 }
 .p-short-description{
-    order: 1;
+    order: 20;
 }
 .p-short-description + p{
-    order: 2;
+    order: 20;
 }
 .social-buttons-wrapper{
     display: none;

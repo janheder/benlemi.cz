@@ -66,3 +66,6 @@ if ($("#pointsSection").length){
 if ($(".p-detail-inner-header").length){
     $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
 }
+if ($(".stars-wrapper").length){
+    $(".stars-wrapper").insertBefore(".p-final-price-wrapper");
+}
