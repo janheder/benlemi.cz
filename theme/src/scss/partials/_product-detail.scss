@@ -39,6 +39,7 @@
 
 .stars-wrapper{
     order: 10;
+    margin-bottom: 10px;
 }
 
 .p-image-wrapper{
@@ -58,7 +59,7 @@
     flex-direction: column;
 }
 .p-final-price-wrapper{
-    order: 25px;
+    order: 25;
 }
 .price-final{
 
@@ -75,6 +76,7 @@
     font-size: 14px;
     font-weight: 600;
     color: $green-500;
+    order: 21;
 }
 .availability-label{
 
@@ -139,9 +141,10 @@
 }
 .p-short-description{
     order: 20;
+    font-size: 14px;
 }
 .p-short-description + p{
-    order: 20;
+
 }
 .social-buttons-wrapper{
     display: none;

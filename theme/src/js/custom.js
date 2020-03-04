@@ -57,7 +57,10 @@ if ($("#pointsSection").length){
         $("#pointsSection").insertBefore("#footer");
     }
 }
-
+/* relocate instagram from footer abuve footer */
+if ($("#instagramSection").length){
+    $("#instagramSection").insertBefore("#footer");
+}
 
 // -----------------------------------------------------------------------------
 // PRODUCT PAGE
@@ -69,3 +72,4 @@ if ($(".p-detail-inner-header").length){
 if ($(".stars-wrapper").length){
     $(".stars-wrapper").insertBefore(".p-final-price-wrapper");
 }
+
