@@ -27,7 +27,7 @@ footer{
     &:first-child{
         flex-grow: 1;
         width: 100%;
-        
+
         .banner-wrapper{
             width: 100%;
         }
@@ -60,7 +60,7 @@ footer{
     
 }
 .footer-rows .custom-footer > div > ul > li > a, .footer-rows .banner-wrapper a{
-    color: $gray-900;
+    color: $gray-800;
     font-size: 14px;
     line-height: 22px;
     display: flex;
@@ -83,7 +83,7 @@ footer{
     line-height: 22px;
 }
 .footer-rows .custom-footer > div > .contact-box a{
-    color: $gray-900;
+    color: $gray-800;
     font-size: 14px;
 }
 
@@ -111,7 +111,7 @@ footer{
     height: 22px;
 }
 #signature .title{
-    color: $gray-900;
+    color: $gray-800;
     padding-left: 5px;
 }
 .copyright{

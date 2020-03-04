@@ -31,7 +31,7 @@ $grays: map-merge((
   "600": $gray-600,
   "700": $gray-700,
   "800": $gray-800,
-  "900": $gray-900
+  "900": $gray-800
 ), $grays);
 
 $blue:    #007bff !default;
@@ -91,7 +91,7 @@ $theme-color-interval:      8% !default;
 $yiq-contrasted-threshold: 150 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark: $gray-900 !default;
+$yiq-text-dark: $gray-800 !default;
 $yiq-text-light: $white !default;
 
 // Options
