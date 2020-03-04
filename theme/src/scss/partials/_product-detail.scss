@@ -58,7 +58,7 @@
     flex-direction: column;
 }
 .p-final-price-wrapper{
-
+    order: 25px;
 }
 .price-final{
 
@@ -145,4 +145,19 @@
 }
 .social-buttons-wrapper{
     display: none;
+}
+
+
+.p-detail-tabs-wrapper{
+    .responsive-nav{
+        display: flex;
+    }
+    .navigation-btn{
+        display: none;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 }
