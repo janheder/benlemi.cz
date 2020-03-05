@@ -107,6 +107,7 @@
     background: $gray-300;
     padding: 0 20px;
     display: none;
+    width: auto;
 }
 .search:hover fieldset input, .search fieldset input:focus,  .search fieldset input:active{
     display: inline-block;
