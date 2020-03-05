@@ -41,7 +41,6 @@
     order: 10;
     margin-bottom: 10px;
 }
-
 .p-image-wrapper{
 
 }
@@ -85,11 +84,12 @@
 
 }
 .detail-parameters{
-
+    display: flex;
 }
 .add-to-cart{
     display: flex;
     order: 40;
+    padding-top: 20px;
 }
 .add-to-cart .quantity{
     margin-right: 10px;
@@ -162,5 +162,12 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        display: flex;
+    }
+    li{
+
+    }
+    a{
+        padding: 10px 20px;
     }
 }
