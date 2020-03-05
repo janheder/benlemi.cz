@@ -118,6 +118,10 @@ header + .content-wrapper .content-wrapper-in{
     width: 100%;
 }
 
+.middle-banners-wrapper .banner-wrapper{  
+    height: auto;
+}
+
 .in-login{
     .content{
         width: 100%;
@@ -161,7 +165,7 @@ header + .content-wrapper .content-wrapper-in{
 @import "partials/_pointsSection";
 @import "partials/_ctaSection";
 @import "partials/_instagramSection";
-
+@import "partials/_categoriesSection";
 
 @import "partials/_subcategories";
 

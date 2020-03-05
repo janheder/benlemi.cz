@@ -57,6 +57,7 @@ if ($("#pointsSection").length){
         $("#pointsSection").insertBefore("#footer");
     }
 }
+
 /* relocate instagram from footer abuve footer */
 if ($("#instagramSection").length){
     $("#instagramSection").insertBefore("#footer");

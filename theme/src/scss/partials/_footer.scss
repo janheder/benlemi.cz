@@ -30,6 +30,10 @@ footer{
 
         .banner-wrapper{
             width: 100%;
+
+            & > span{
+                width: 100%;
+            }
         }
     }
 }
@@ -120,6 +124,17 @@ footer{
     order: 0;
     justify-content: flex-start;
     font-size: 14px;
+    flex-wrap: wrap;
+    
+    /*
+    &::after{
+        content: "Podle zákona o evidenci tržeb je prodávající povinen vystavit kupujícímu účtenku. Zároveň je povinen zaevidovat přijatou tržbu u správce daně online; v případě technického výpadku pak nejpozději do 48 hodin.";
+        display: flex;
+        width: 100%;
+        font-size: 12px;
+        color: $gray-700;
+    }
+    */    
 }
 .copyright strong{
     padding: 0 0 0 3px;

@@ -12,6 +12,21 @@ header{
         width: 100%;
         z-index: 1;
     }
+    &::after{
+        content: "";
+        z-index: 99;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        display: none;
+        transform: translateY(130px);
+        background: rgba(0,0,0,0.4);
+    }
+}
+.submenu-visible header::after{
+    display: flex;
 }
 @media screen and (max-width: 991px){
     header {
