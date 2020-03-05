@@ -147,26 +147,28 @@ header + .content-wrapper .content-wrapper-in{
 @import "partials/_carousel";
 @import "partials/_sidebar";
 @import "partials/_product";
-@import "partials/_product-detail";
 @import "partials/_products-block";
 @import "partials/_homepage-group-title";
 @import "partials/_navigation-buttons";
-@import "partials/_pointsSection";
 @import "partials/_sidebar";
 @import "partials/_filter";
 @import "partials/_category";
 @import "partials/_user-action";
-@import "partials/_instagramSection";
 @import "partials/_breadcrumbs";
 @import "partials/_form";
 
 
+@import "partials/_pointsSection";
+@import "partials/_ctaSection";
+@import "partials/_instagramSection";
+
+
 @import "partials/_subcategories";
+
+@import "partials/_product-detail";
 
 @import "partials/_news";
 
 @import "partials/_cart";
-
-
 
 @import "partials/_footer";
