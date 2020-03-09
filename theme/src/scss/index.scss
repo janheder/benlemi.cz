@@ -56,6 +56,13 @@ body{
         transform: translateX(200px);
     }
 }
+@media screen and (min-width: 992px){
+    body.submenu-visible{
+        overflow: hidden;
+        padding-left: 17px;
+    }
+}
+
 
 a{
     color: $green-500;
