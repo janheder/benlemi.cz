@@ -6,8 +6,9 @@
 }
 .cart-row{
     flex-direction: column;
-    .col-md-8{
-        width: 100%;    
+    .col-md-8, .col-md-4{
+        width: 100%;  
+        max-width: none;  
     }
 }
 .cart-content{
@@ -88,4 +89,16 @@
 }
 .cart-related-product{
     display: flex;
+}
+.checkout-box-wrapper{
+    display: none;
+}
+.summary-wrapper{
+
+}
+.back-shopping-link{
+
+}
+.back-shopping-link .next-step-back{
+
 }
