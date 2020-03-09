@@ -3,13 +3,17 @@
 }
 .category-header{
     display: flex;
+    flex-direction: column;
     margin: 0;
+    align-items: flex-end;
 }
 .category-header label{
     cursor: pointer;
+    margin-left: 20px;
 }
 .category-header input{
     -webkit-appearance: none;
+    display: none;
 }
 
 .category-header input:checked + label{

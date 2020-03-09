@@ -4,19 +4,20 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
-    justify-content: center;
+}
+.subcategories + h4{
+    display: none;
 }
 .subcategories li{
-
+    margin-bottom: 20px;
 }
 .subcategories li a{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 20px;
     border: 1px solid $gray-400;
-    margin-bottom: 20px;
+    height: 100%;
 }
 .subcategories li a .image{
     display: flex;
