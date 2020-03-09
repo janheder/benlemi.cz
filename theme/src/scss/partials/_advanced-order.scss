@@ -11,8 +11,35 @@
 .type-product > #colorbox{
     background: $white;
     z-index: 10;
+}
+.type-product > #cboxWrapper{
+    position: relative;
+}
+.type-product > .advanced-order{
+    padding: 50px;
+}
+.type-product > .advanced-order .h1{
+    
+}
+.type-product > .advanced-order .h2{
+    
+}
+.type-product > .extras-wrap{
 
-    #cboxWrapper{
-        padding: 50px;
-    }
+}
+.type-product > .delivery{
+
+}
+.type-product > .step{
+
+}
+.type-product > #cboxClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background: transparent;
+    font-size: 0;
+    height: 24px;
+    width: 24px;
 }
