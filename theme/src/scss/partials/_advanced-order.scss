@@ -16,13 +16,16 @@
     position: relative;
 }
 .type-product .advanced-order{
-    padding: 50px;
+
 }
+
 .type-product .advanced-order .h1{
-    
+    padding: 10px 50px;
+    text-align: center;
 }
 .type-product .advanced-order .h2{
-    
+    text-align: center;
+    display: none;
 }
 .type-product .extras-wrap{
 
@@ -37,7 +40,7 @@
         }
     }
 }
-.type-product  #cboxClose{
+.type-product #cboxClose{
     position: absolute;
     top: 0;
     right: 0;
@@ -46,4 +49,13 @@
     font-size: 0;
     height: 24px;
     width: 24px;
+}
+.type-product .advanced-order-suggestion{
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 50px;
+}
+.type-product .advanced-order #products{
+    padding: 50px;
+    padding-top: 0;
 }
