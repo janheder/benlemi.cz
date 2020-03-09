@@ -5,7 +5,10 @@
 
 }
 .cart-row{
-
+    flex-direction: column;
+    .col-md-8{
+        width: 100%;    
+    }
 }
 .cart-content{
     margin: 0;
@@ -62,7 +65,18 @@
 
 }
 .cart-table .remove-item{
-
+    border: 0;
+    background-color: $gray-300;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    background-image: url(../icons/user.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center center;
+    flex-shrink: 0;
+    margin: 0 10px;
+    transition: 0.2s ease background-color;
 }
 .cart-table .remove-item span{
     padding: 0;

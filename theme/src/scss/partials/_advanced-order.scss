@@ -31,7 +31,11 @@
 
 }
 .type-product > .step{
-
+    .btn-conversion{
+        &:hover, &:active, &:focus{
+            text-decoration: none;
+        }
+    }
 }
 .type-product > #cboxClose{
     position: absolute;
