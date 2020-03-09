@@ -70,7 +70,7 @@
     width: 46px;
     height: 46px;
     display: flex;
-    background-image: url(../icons/user.svg);
+    background-image: url("../icons/close.svg");
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: center center;
@@ -81,4 +81,11 @@
 .cart-table .remove-item span{
     padding: 0;
     font-size: 0;
+}
+
+.removeable .related{
+
+}
+.cart-related-product{
+    display: flex;
 }

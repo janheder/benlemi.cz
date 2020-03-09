@@ -154,9 +154,15 @@
 .p-detail-tabs-wrapper{
     .responsive-nav{
         display: flex;
+        margin-top: 40px;
+    }
+    .shp-tabs-holder{
+        width: 100%;
+        background-image: $gray-300;
     }
     .p-detail-tabs a{
         padding: 10px 20px;  
+        display: flex;
     }
     .navigation-btn{
         display: none;

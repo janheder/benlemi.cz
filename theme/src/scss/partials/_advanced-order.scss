@@ -15,29 +15,29 @@
 .type-product > #cboxWrapper{
     position: relative;
 }
-.type-product > .advanced-order{
+.type-product .advanced-order{
     padding: 50px;
 }
-.type-product > .advanced-order .h1{
+.type-product .advanced-order .h1{
     
 }
-.type-product > .advanced-order .h2{
+.type-product .advanced-order .h2{
     
 }
-.type-product > .extras-wrap{
+.type-product .extras-wrap{
 
 }
-.type-product > .delivery{
+.type-product .delivery{
 
 }
-.type-product > .step{
+.type-product .step{
     .btn-conversion{
         &:hover, &:active, &:focus{
             text-decoration: none;
         }
     }
 }
-.type-product > #cboxClose{
+.type-product  #cboxClose{
     position: absolute;
     top: 0;
     right: 0;
