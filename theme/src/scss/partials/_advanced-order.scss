@@ -22,18 +22,24 @@
 .type-product .advanced-order .h1{
     padding: 10px 50px;
     text-align: center;
+    font-size: 24px;
 }
 .type-product .advanced-order .h2{
     text-align: center;
     display: none;
 }
 .type-product .extras-wrap{
-
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .type-product .delivery{
-
+    text-align: center;
 }
 .type-product .step{
+    display: flex;
     .btn-conversion{
         &:hover, &:active, &:focus{
             text-decoration: none;
@@ -47,8 +53,9 @@
     border: 0;
     background: transparent;
     font-size: 0;
-    height: 24px;
-    width: 24px;
+    height: 48px;
+    width: 48px;
+    padding: 0;
 }
 .type-product .advanced-order-suggestion{
     text-align: center;
@@ -58,4 +65,8 @@
 .type-product .advanced-order #products{
     padding: 50px;
     padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
