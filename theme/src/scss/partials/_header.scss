@@ -1,4 +1,4 @@
-header{
+#header{
     background: $white;
     position: relative;
 
@@ -25,14 +25,14 @@ header{
         background: rgba(0,0,0,0.4);
     }
 }
-.submenu-visible header::after{
+.submenu-visible #header::after{
     display: flex;
 }
 @media screen and (max-width: 991px){
-    header {
+    #header {
         height: 56px;
     }
-    header .container {
+    #header .container {
         padding: 0;
     }
 }

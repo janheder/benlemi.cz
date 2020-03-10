@@ -42,25 +42,30 @@
     width: 100%;
 }
 .cart-table .removeable{
-
+    width: 100%;
+    display: flex;
 }
 .cart-table .cart-p-image{
 
 }
 .cart-table .p-name{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 .cart-table .p-cell{
 
 }
 .cart-table .p-availability{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 .cart-table .p-quantity{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 .cart-table .p-price{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 .p-total{
     display: flex;
@@ -97,9 +102,15 @@
 .summary-wrapper{
 
 }
-.back-shopping-link{
-
+.summary-wrapper .next-step{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.back-shopping-link .next-step-back{
+.back-shopping-link{
+    display: none;
+}
+.summary-wrapper .next-step-back{
 
 }
