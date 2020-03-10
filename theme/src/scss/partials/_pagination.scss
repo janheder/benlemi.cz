@@ -1,0 +1,22 @@
+.pagination{
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.pagination a{
+    padding: 10px;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-link{
+    
+}
+.pagination .current{
+
+}
+.pagination-top{
+    display: none;
+}
