@@ -3,7 +3,7 @@
     padding: 0 20px;
     background: $green-500;
     color: $white;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -14,5 +14,6 @@
     &:hover, &:active, &:focus{
         color: $white;
         background: $green-600;
+        text-decoration: none;
     }
 }
