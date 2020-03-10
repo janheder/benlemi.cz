@@ -27,9 +27,12 @@
 }
 .cart-header .step{
     display: flex;
-    padding: 20px 20px;
     flex-grow: 1;
     flex-basis: 0;
+}
+.cart-header .step a{
+    text-align: center;
+    padding: 20px 20px;
 }
 .cart-header .step.active{
     
@@ -72,6 +75,7 @@
     position: relative;
 }
 .cart-table .p-quantity .quantity{
+
     .increase, .decrease{
         position: absolute;
         right: 0;
@@ -105,9 +109,19 @@
         content: none;
     }
 }
+.cart-table .p-quantity .quantity .amount{
+    height: 46px;
+    padding: 0 10px;
+    width: 100%;
+    border: 1px solid $gray-400;
+    text-align: center;
+}
 .cart-table .p-price{
     display: flex;
     flex-wrap: wrap;
+}
+.cart-table .p-price .price-final{
+    color: $red-600;
 }
 .p-total{
     display: flex;
