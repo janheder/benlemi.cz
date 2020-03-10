@@ -39,7 +39,7 @@
 
 }
 .p-label{
-
+    width: 100%;
 }
 .cart-table .removeable{
 
@@ -63,7 +63,8 @@
 
 }
 .p-total{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 .cart-table .remove-item{
     border: 0;

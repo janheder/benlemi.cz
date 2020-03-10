@@ -36,7 +36,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.p-detail-info .flag .price-standard{
+    display: none;
+}
 .stars-wrapper{
     order: 10;
     margin-bottom: 10px;
@@ -159,6 +161,7 @@
     .shp-tabs-holder{
         width: 100%;
         background: $gray-300;
+        margin-bottom: 20px;
     }
     .p-detail-tabs a{
         padding: 10px 20px;  

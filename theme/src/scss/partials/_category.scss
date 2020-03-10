@@ -1,5 +1,8 @@
 .category-title{
     text-align: center;
+    & + h4{
+        display: none;
+    }
 }
 .category-header{
     display: flex;

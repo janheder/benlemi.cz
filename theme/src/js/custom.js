@@ -77,12 +77,13 @@ if ($(".stars-wrapper").length){
     $(".stars-wrapper").insertBefore(".p-final-price-wrapper");
 }
 
-/*  */    
-if ($("#colorbox").length){
-    $(".advanced-order .extra.step a").before('<div id="closeModal" class="btn btn-back">Jdu dále nakupovat</div>');
-}
-
-
-$("#closeModal").click(function(){
-    $("#cboxOverlay").click();
+/* add button into advanced-order modal */   
+$(document).ready(function() { 
+    if ($("#colorbox").length){
+        $(".advanced-order .extra.step a").before('<div id="closeModal" class="btn btn-back">Jdu dále nakupovat</div>');
+    }
+    $("#closeModal").click(function(){
+        $("#cboxOverlay").click();
+    });    
 });
+
