@@ -78,12 +78,7 @@
 .p .price-final strong{
     position: relative;
     display: flex;
-
-    &::before{
-        content: "od";
-        display: flex;
-        padding-right: 4px;
-    }
+    align-items: baseline;
 }
 .p .p-tools{
     display: none;
