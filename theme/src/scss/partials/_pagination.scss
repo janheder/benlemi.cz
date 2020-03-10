@@ -3,18 +3,16 @@
     display: flex;
     justify-content: flex-end;
 }
-.pagination a{
+.pagination a, .pagination .current{
     padding: 10px;
     height: 48px;
     min-width: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 5px;
 }
 .pagination-link{
-    
-}
-.pagination .current{
 
 }
 .pagination-top{

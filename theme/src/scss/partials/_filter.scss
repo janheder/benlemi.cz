@@ -12,8 +12,23 @@
 
 }
 .filter-section{
-
+    border-top: 1px solid $gray-400;
+    border-bottom: 1px solid $gray-400;
 }
 .filters .slider-wrapper{
     display: none;
+}
+
+.filter-label{
+    margin: 0;
+}
+.filter-count{
+    color: $gray-700;
+
+    &::before{
+        content: "(";
+    }
+    &::after{
+        content: ")";
+    }
 }
