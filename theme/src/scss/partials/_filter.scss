@@ -21,9 +21,13 @@
 
 .filter-label{
     margin: 0;
+    display: flex;
+    align-items: baseline;
 }
 .filter-count{
     color: $gray-700;
+    font-size: 13px;
+    padding-left: 3px;
 
     &::before{
         content: "(";
