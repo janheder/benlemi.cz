@@ -79,11 +79,11 @@ if ($(".stars-wrapper").length){
 
 /* add button into advanced-order modal */   
 $(document).ready(function() { 
-    if ($("#colorbox").length){
+    $(".add-to-cart-button").click(function(){
         $(".advanced-order .extra.step a").before('<div id="closeModal" class="btn btn-back">Jdu dále nakupovat</div>');
-    }
-    $("#closeModal").click(function(){
-        $("#cboxOverlay").click();
-    });    
+    }); 
 });
 
+$("#closeModal").click(function(){
+    $("#cboxOverlay").click();
+});
