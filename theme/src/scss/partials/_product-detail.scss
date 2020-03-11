@@ -90,6 +90,7 @@
 }
 .detail-parameters{
     display: flex;
+    order: 20;
 }
 .variant-list{
     display: flex;
@@ -98,8 +99,14 @@
 .advanced-parameter{
     position: relative;
     input{
-        appearance: none;
+        -webkit-appearance: none;
+        position: absolute;
+        height: 100%;
+        width: 100%;
     }
+}
+.variant-default{
+    display: none;
 }
 .advanced-parameter-inner{
     display: flex;
