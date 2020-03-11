@@ -8,6 +8,10 @@
 .filters{
 
 }
+.filters fieldset > div{
+    display: flex;
+    align-items: center;
+}
 .filter-sections{
 
 }
@@ -23,6 +27,7 @@
     margin: 0;
     display: flex;
     align-items: baseline;
+    padding-left: 10px;
 }
 .filter-count{
     color: $gray-700;

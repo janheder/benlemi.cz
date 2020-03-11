@@ -17,7 +17,7 @@
 
 }
 .p-detail-info{
-
+    display: none;
 }
 .p-detail-info .flags{
     position: absolute;
@@ -50,9 +50,24 @@
 
 }
 .p-thumbnails-wrapper{
-
+    margin-top: 20px;
 }
 .p-thumbnails{
+
+}
+.p-thumbnails-inner{
+
+}
+.p-thumbnails-inner > div{
+    display: flex;
+}
+.p-thumbnail{
+    display: flex;
+}
+.thumbnail-prev{
+
+}
+.thumbnail-next{
 
 }
 .p-info-wrapper{
@@ -96,8 +111,14 @@
     display: flex;
     flex-direction: column;
 }
+#simple-variants{
+    margin: 0 -5px;
+}
 .advanced-parameter{
     position: relative;
+    padding: 5px;
+    margin: 0;
+
     input{
         -webkit-appearance: none;
         position: absolute;
@@ -204,5 +225,16 @@
     }
     a{
   
+    }
+}
+.detail-parameters{
+    tr{
+
+    }
+    th{
+
+    }
+    td{
+
     }
 }
