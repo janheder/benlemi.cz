@@ -147,6 +147,7 @@
     float: right;
     cursor: pointer;
     background: $white;
+    transition: 0s ease all;
 
     &:hover, &:active, &:focus{
         background: $gray-300;
