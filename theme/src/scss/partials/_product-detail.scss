@@ -216,13 +216,22 @@
     }
     .p-detail-tabs li{
         &.active{
-            background: $white;
+            background: $gray-400;
+            
+            a{
+                color: $gray-800;
+            }
         }
-    }
+    }  
     .p-detail-tabs a{
         padding: 10px 20px;  
         display: flex;
-        color: $gray-800;
+        color: $gray-700;
+
+        &:hover, &:active, &:focus{
+            text-decoration: none;
+            color: $gray-800;
+        }
     }
     .navigation-btn{
         display: none;
