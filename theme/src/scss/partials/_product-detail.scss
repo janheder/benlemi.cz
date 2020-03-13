@@ -1,3 +1,8 @@
+.type-detail{
+    .tooltip{
+        display: none;
+    }
+}
 .p-detail{
 
 }
@@ -60,9 +65,11 @@
 }
 .p-thumbnails-inner > div{
     display: flex;
+    margin: 0 -5px;
 }
 .p-thumbnail{
     display: flex;
+    padding: 5px;
 }
 .thumbnail-prev{
 
@@ -196,8 +203,8 @@
     display: none;
 }
 
-
 .p-detail-tabs-wrapper{
+
     .responsive-nav{
         display: flex;
         margin-top: 40px;
@@ -207,9 +214,15 @@
         background: $gray-300;
         margin-bottom: 20px;
     }
+    .p-detail-tabs li{
+        &.active{
+            background: $white;
+        }
+    }
     .p-detail-tabs a{
         padding: 10px 20px;  
         display: flex;
+        color: $gray-800;
     }
     .navigation-btn{
         display: none;
