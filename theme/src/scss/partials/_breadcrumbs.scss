@@ -29,9 +29,9 @@
     display: none;
 }
 .breadcrumbs > span#navigation-first{
-    padding-left: 30px;
-    background-image: url("icons/home.svg");
+    padding-left: 15px;
+    background-image: url("../icons/home.svg");
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left 1px;
     background-size: 16px 16px;
 }

@@ -39,6 +39,9 @@
         color: $gray-800;
     }
 }
+.cart-count.full .cart-price{
+    display: flex;
+}
 .cart-count .sr-only{
     width: 100%;
     font-size: 14px;
@@ -46,6 +49,7 @@
 .cart-count .cart-price{
     color: $red-700;
     font-weight: 600;
+    display: none;
 }
 .cart-count i{
     position: absolute;

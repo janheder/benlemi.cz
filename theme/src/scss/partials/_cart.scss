@@ -141,6 +141,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+.p-total strong{
+    flex-grow: 1;
+}
 .cart-table .remove-item{
     border: 0;
     background-color: $gray-300;
