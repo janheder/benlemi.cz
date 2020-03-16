@@ -94,6 +94,8 @@ $(document).ready(function() {
     }); 
 });
 
+
+
 /* click on modal overlay closes the whole modal window */   
 $("#closeModal").click(function(){
     $("#cboxOverlay").click();

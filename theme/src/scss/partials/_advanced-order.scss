@@ -29,7 +29,7 @@
     display: none;
 }
 .type-product .extras-wrap{
-    padding: 10px 50px;
+    padding: 10px 50px 50px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,9 +38,15 @@
 .type-product .delivery{
     text-align: center;
     padding: 10px 0;
+    width: 100%;
+    margin-bottom: 20px;
+    background: $gray-300;
 }
 .type-product .step{
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
     .btn-conversion{
         &:hover, &:active, &:focus{
             text-decoration: none;
