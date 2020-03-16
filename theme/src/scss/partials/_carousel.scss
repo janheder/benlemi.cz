@@ -44,7 +44,7 @@
     height: 100%;
     position: relative;
 }
-.banner-wrapper{
+.before-carousel .banner-wrapper{
     height: 50%;
     display: flex;
     position: relative;
@@ -56,10 +56,10 @@
         padding-top: 10px;
     }
 }
-.banner-wrapper a{
+.before-carousel .banner-wrapper a{
     display: flex;
     height: 100%;
 }
-.banner-wrapper a img{
+.before-carousel .banner-wrapper a img{
     object-fit: cover;
 }
