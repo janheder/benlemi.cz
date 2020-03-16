@@ -29,8 +29,13 @@
             text-decoration: none;
         }
     }
-    span{
-        font-weight: 400;
-        color: $gray-700;
+}
+.instagramSection__title a span{
+    font-weight: 400;
+    color: $gray-700;
+
+    &:hover, &:focus, &:active{
+        text-decoration: none;
+        color: $green-500;
     }
 }

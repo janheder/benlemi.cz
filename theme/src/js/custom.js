@@ -55,7 +55,7 @@ if ($("#homepageSection").length){
 
 /* load blog posts into homepage section */
 if ($("#blogSection").length){
-    $("#blogSection .container").load("/blog/ .news-wrapper");
+    $("#blogSection .blogSection__content").load("/blog/ .news-wrapper");
 }
 
 /* relocate benefit points depending on page type */

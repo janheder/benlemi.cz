@@ -66,6 +66,7 @@ body{
 a{
     color: $green-500;
     text-decoration: none;
+    transition: 0.3s ease all;
 
     &:hover, &:active, &:focus{
         color: $gray-800;
@@ -127,7 +128,7 @@ header + .content-wrapper .content-wrapper-in{
 .middle-banners-wrapper .banner-wrapper{  
     height: auto;
 }
-.middle-banners-wrapper .banner-wrapper . span{  
+.middle-banners-wrapper .banner-wrapper > span{  
     width: 100%;
 }
 
