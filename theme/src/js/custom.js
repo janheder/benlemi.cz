@@ -38,9 +38,9 @@ $("#js-searchToggle").click(function(){
 /* toggle submenu overlay (faster than shoptet default function submenu-visible) */
 $(".menu-level-1 .ext").hover(
     function(){
-        $("body").addClass("submenu-acive");
+        $("body").addClass("submenu-active");
     },function(){
-        $("body").removeClass("submenu-acive");
+        $("body").removeClass("submenu-active");
     }
 );
 
