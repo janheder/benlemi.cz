@@ -35,6 +35,15 @@ $("#js-searchToggle").click(function(){
     $(".search").toggleClass("--active");
 });
 
+/* toggle submenu overlay (faster than shoptet default function submenu-visible) */
+$(".menu-level-1 .ext").hover(
+    function(){
+        $("body").addClass("submenu-acive");
+    },function(){
+        $("body").removeClass("submenu-acive");
+    }
+);
+
 // -----------------------------------------------------------------------------
 // HOMEPAGE
 // -----------------------------------------------------------------------------
@@ -80,10 +89,12 @@ if ($(".stars-wrapper").length){
 /* add button into advanced-order modal */   
 $(document).ready(function() { 
     $(".add-to-cart-button").click(function(){
-        $(".advanced-order .extra.step a").before('<div id="closeModal" class="btn btn-back">Jdu dále nakupovat</div>');
+        $("html:lang(cs) .advanced-order .extra.step a").before('<div id="closeModal" class="btn btn-back">Jdu dále nakupovat</div>');
+        $("html:lang(sk) .advanced-order .extra.step a").before('<div id="closeModal" class="btn btn-back">Jdu ďalej nakupovat</div>');
     }); 
 });
 
+/* click on modal overlay closes the whole modal window */   
 $("#closeModal").click(function(){
     $("#cboxOverlay").click();
 });
