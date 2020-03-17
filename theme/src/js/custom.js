@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 /*  */
-$('a[href*="#"]').click(function(event) {
+$('a[href*="#"]').not('[data-force-scroll="true"]').click(function(event) {
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
