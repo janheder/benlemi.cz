@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 /*  */
-$('a[href*="#"]').not('[data-force-scroll="true"]').click(function(event) {
+$('a[href*="#"]').not('[data-force-scroll]').click(function(event) {
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
@@ -131,8 +131,11 @@ $(document).ready(function() {
 
 /* load shop rating */
 if ($(".type-detail").length){
-    $("html:lang(cs) #ratingTab").wrapInner("<div id='ratingProduct'></div>")
-    $("html:lang(cs) #ratingTab").append("<div id='ratingStore'></div>");
+    $("#ratingTab").wrapInner("<div id='ratingProduct'></div>");
+    $("#ratingTab").append("<div id='ratingStore'></div>");
+
+    $("html:lang(cs) #ratingTab").wrapInner("<div id='ratingProduct'></div>");
+    $("html:lang(cs) #ratingProduct").prepend("<h1>Hodnocení produktu</h1>");
     $("html:lang(cs) #ratingTab #ratingStore").load("/hodnoceni-obchodu/ .content-inner");
 }
 
