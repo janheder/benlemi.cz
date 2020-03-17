@@ -49,7 +49,7 @@
     margin-bottom: 10px;
 }
 .p-image-wrapper{
-
+    padding-right: 30px;
 }
 .p-image{
 
@@ -80,6 +80,7 @@
 .p-info-wrapper{
     display: flex;
     flex-direction: column;
+    padding-left: 30px;
 }
 .p-final-price-wrapper{
     order: 25;
@@ -114,9 +115,24 @@
     display: flex;
     order: 20;
 }
+.detail-parameters tbody{
+    width: 100%;
+}
 .variant-list{
     display: flex;
     flex-direction: column;
+    padding: 10px 0;
+}
+.variant-list th{
+    padding-bottom: 5px;
+}
+.variant-list select{
+    width: 320px;
+    max-width: 100%;
+    background: $white;
+    height: 48px;
+    padding: 0 20px;
+    border: 1px solid $gray-400;
 }
 #simple-variants{
     margin: 0 -5px;
