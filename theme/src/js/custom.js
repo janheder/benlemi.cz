@@ -129,7 +129,10 @@ $(document).ready(function() {
     }); 
 });
 
-
+/* load shop rating */
+if ($(".type-detail").length){
+    $("html:lang(cs) #ratingTab").load("/hodnoceni-obchodu/ .content-inner");
+}
 
 /* click on modal overlay closes the whole modal window */   
 $("#closeModal").click(function(){
