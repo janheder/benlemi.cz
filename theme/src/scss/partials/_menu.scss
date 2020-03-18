@@ -47,6 +47,7 @@
     left: 0;
     width: 100%;
     padding: 10px 0;
+    flex-wrap: wrap;
 }
 .menu-level-1 > li:hover .menu-level-2{
     display: flex;

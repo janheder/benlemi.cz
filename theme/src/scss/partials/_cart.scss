@@ -187,3 +187,31 @@
 .summary-wrapper .next-step-back{
 
 }
+
+
+/* empty cart */
+.empty-cart-boxes .col-md-6{
+    width: 100%;
+    text-align: center;
+}
+.empty-cart-boxes .col-md-6:last-child{
+    display: none;
+}
+.empty-cart-boxes .col-md-6 h1{
+
+}
+.empty-cart-boxes .col-md-6 ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empty-cart-boxes .col-md-6 ul li{
+    padding: 10px;
+    width: 20%;
+}
+.empty-cart-boxes .col-md-6 ul li a{
+    width: 100%;
+    padding: 10px;
+}
