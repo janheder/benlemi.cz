@@ -59,7 +59,7 @@
     width: 25%;
 }
 .menu-level-2 > li > a{
-
+    flex-shrink: 0;
 }
 .menu-level-2 > li > a > img{
     height: 50px;
@@ -75,7 +75,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     color: $gray-800;
 
     &:hover, &:active, &:focus{
@@ -92,6 +92,9 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+}
+.menu-level-3 > li{
+    font-size: 13px;
 }
 
 .menu-helper{
