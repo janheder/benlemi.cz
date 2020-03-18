@@ -256,10 +256,10 @@
     }
     .p-detail-tabs li{
         &.active{
-            background: $gray-400;
+       
             
             a{
-                color: $gray-800;
+             
             }
         }
     }  
@@ -271,6 +271,7 @@
         &:hover, &:active, &:focus{
             text-decoration: none;
             color: $gray-800;
+            background: $gray-400;
         }
     }
     .navigation-btn{
