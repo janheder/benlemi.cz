@@ -55,7 +55,8 @@
     padding: 10px 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    width: 25%;
 }
 .menu-level-2 > li > a{
 
@@ -66,14 +67,16 @@
 .menu-level-2 > li > div{
     height: 100%;
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
     align-items: center;
+    flex-direction: column;
 }
 .menu-level-2 > li > div > a{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $gray-800;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
@@ -84,7 +87,12 @@
 
 }
 
-
+.menu-level-3{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
 
 .menu-helper{
     position: fixed;

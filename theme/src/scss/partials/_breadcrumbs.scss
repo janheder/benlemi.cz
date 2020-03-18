@@ -28,10 +28,11 @@
 .breadcrumbs > span > .navigation-bullet{
     display: none;
 }
-.breadcrumbs > span#navigation-first{
+.breadcrumbs > span#navigation-first > a{
     padding-left: 15px;
     background-image: url("../icons/home.svg");
     background-repeat: no-repeat;
     background-position: left 1px;
     background-size: 16px 16px;
+    font-size: 0;
 }
