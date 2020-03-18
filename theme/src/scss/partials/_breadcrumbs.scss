@@ -29,10 +29,13 @@
     display: none;
 }
 .breadcrumbs > span#navigation-first > a{
-    padding-left: 15px;
+    padding-left: 20px;
     background-image: url("../icons/home.svg");
     background-repeat: no-repeat;
-    background-position: left 1px;
+    background-position: left center;
     background-size: 16px 16px;
-    font-size: 0;
+    
+    span{
+        font-size: 0;
+    }
 }
