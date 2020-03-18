@@ -58,7 +58,10 @@
     top: 0;
     right: 0;
     border: 0;
-    background: transparent;
+    background-image: url("../icons/close.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center center;
     font-size: 0;
     height: 48px;
     width: 48px;
