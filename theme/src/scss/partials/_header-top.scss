@@ -224,7 +224,7 @@
         left: 50%;
         width: 18px;
         height: 2px;
-        background: $gray-500;
+        background: $gray-600;
 
         &::before, &::after{
             content: "";
@@ -233,7 +233,7 @@
             left: 0;
             height: 2px;
             width: 18px;
-            background: $gray-500;
+            background: $gray-600;
             transform: translate(0, -300%);
         }
        &::after{
