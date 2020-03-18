@@ -143,6 +143,14 @@ $("#closeModal").click(function(){
     $("#cboxOverlay").click();
 });
 
-
+/* related products setup */
 $(".products-related-header, .products-related").wrapAll("<div id='productsRelated'>");
 $("#p-detail-tabs").append('<li class="shp-tab"><a href="#productsRelated" class="shp-tab-link" role="tab" data-toggle="tab">Související</a></li>');
+
+/* make variant selects required */
+if ($(".hidden-split-parameter").length){
+    $( ".hidden-split-parameter" ).each(function() {
+        $(this).prop('required',true);
+    });
+}
+
