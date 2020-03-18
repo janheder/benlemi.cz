@@ -190,9 +190,14 @@
 
 
 /* empty cart */
+.cart-heading{
+    text-align: center;
+}
 .empty-cart-boxes .col-md-6{
     width: 100%;
     text-align: center;
+    flex: 100%;
+    max-width: 100%;
 }
 .empty-cart-boxes .col-md-6:last-child{
     display: none;
@@ -206,6 +211,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 .empty-cart-boxes .col-md-6 ul li{
     padding: 10px;
@@ -214,4 +220,16 @@
 .empty-cart-boxes .col-md-6 ul li a{
     width: 100%;
     padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: $gray-800;
+    border: 1px solid $gray-500;
+
+    &:hover, &:active, &:focus{
+
+        background: $gray-300;
+        text-decoration: none;
+    }
 }
