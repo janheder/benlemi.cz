@@ -176,8 +176,10 @@ if ($(".type-category").length){
 // -----------------------------------------------------------------------------
 
 if ($(".cart-table").length){
-    $("<div class='cart-table-heading'></div>").insertBefore("tbody");
-    $(".removeable .p-label").each(function(){
-        $(this).append(".cart-table-heading");
+    $("<div class='cart-table-heading'></div>").insertBefore(".cart-table tbody");
+    $(".removeable:first-child .p-label").each(function(){
+        var label = $(this).html();
+        alert(label);
+ 
     });
 }
