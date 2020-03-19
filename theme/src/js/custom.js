@@ -156,7 +156,7 @@ $("#p-detail-tabs").append('<li class="shp-tab"><a href="#productsRelated" class
 
 /* make variant selects required */
 if ($(".hidden-split-parameter").length){
-    $( ".hidden-split-parameter" ).each(function() {
+    $(".hidden-split-parameter").each(function(){
         $(this).prop('required',true);
     });
 }
@@ -169,4 +169,15 @@ if ($(".hidden-split-parameter").length){
 if ($(".type-category").length){
     $(".category-title").insertBefore(".content-wrapper-in");
     $(".subcategories").insertAfter(".category-title");
+}
+
+// -----------------------------------------------------------------------------
+// CART STEP 1
+// -----------------------------------------------------------------------------
+
+if ($(".cart-table").length){
+    $("<div class='cart-table-heading'></div>").insertBefore("tbody");
+    $(".removeable .p-label").each(function(){
+        $(this).append(".cart-table-heading");
+    });
 }
