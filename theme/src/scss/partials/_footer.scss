@@ -37,6 +37,17 @@ footer{
         }
     }
 }
+@media screen and (max-width: 991px){
+    .footer-rows .custom-footer > div{
+        width: 50%;
+        padding: 10px;
+    }
+    .footer-rows .custom-footer > div > h4, .footer-rows .banner-wrapper h4{
+        font-size: 16px;
+    }
+}
+
+
 .footer-rows .custom-footer > div > h4, .footer-rows .banner-wrapper h4{
     display: flex;
     font-size: 20px;
@@ -68,6 +79,7 @@ footer{
     font-size: 14px;
     line-height: 22px;
     display: flex;
+    word-break: break-word;
 
     &:hover, &:active, &:focus{
         text-decoration: none;

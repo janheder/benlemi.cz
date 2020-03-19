@@ -96,7 +96,13 @@ if ($("#blogSection").length){
 /* relocate benefit points depending on page type */
 if ($("#pointsSection").length){
     if ($("body.type-index").length){
-        $("#pointsSection").insertAfter(".before-carousel");
+
+        if ($(".before-carousel").length){
+            $("#pointsSection").insertAfter(".before-carousel");
+        }else{
+            $("#pointsSection").insertBefore("#footer");
+        }
+        
     }else{
         $("#pointsSection").insertBefore("#footer");
     }
