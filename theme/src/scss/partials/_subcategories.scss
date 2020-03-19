@@ -13,12 +13,12 @@
 }
 .subcategories li a{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid $gray-400;
     height: 100%;
-    
+
     &:hover, &:active, &:focus{
         background: $gray-300;
         text-decoration: none;
@@ -28,12 +28,14 @@
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    height: 120px;
+    width: 50px;
+    height: auto;
+    flex-shrink: 0;
 }
 .subcategories li a .text{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     color: $gray-800;
 }

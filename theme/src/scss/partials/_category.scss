@@ -13,6 +13,10 @@
     align-items: flex-end;
     margin: 20px 0;
 }
+.category-header div{
+    font-size: 14px;
+    color: $gray-700;
+}
 .category-header label{
     cursor: pointer;
     margin-left: 20px;

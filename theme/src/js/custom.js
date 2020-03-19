@@ -102,7 +102,7 @@ if ($("#pointsSection").length){
         }else{
             $("#pointsSection").insertBefore("#footer");
         }
-        
+
     }else{
         $("#pointsSection").insertBefore("#footer");
     }
@@ -160,3 +160,12 @@ if ($(".hidden-split-parameter").length){
     });
 }
 
+// -----------------------------------------------------------------------------
+// PRODUCT CATEGORY
+// -----------------------------------------------------------------------------
+
+/* relocate heading and categories */
+if ($(".type-category").length){
+    $(".category-title").insertBefore(".content-wrapper-in");
+    $(".subcategories").insertAfter(".category-title");
+}
