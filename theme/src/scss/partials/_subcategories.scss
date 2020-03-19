@@ -18,6 +18,11 @@
     padding: 20px;
     border: 1px solid $gray-400;
     height: 100%;
+    
+    &:hover, &:active, &:focus{
+        background: $gray-300;
+        text-decoration: none;
+    }
 }
 .subcategories li a .image{
     display: flex;
@@ -29,4 +34,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 14px;
+    color: $gray-800;
 }
