@@ -68,7 +68,7 @@
     display: flex;
     margin: 0;
     padding: 10px 0;
-    border-bottom: 1px solid $gray-400;
+    border-top: 1px solid $gray-400;
 
     .p-label{
         display: none;
@@ -222,9 +222,14 @@
     margin-bottom: 20px;
     display: flex;
 }
+.cart-table .related > td{
+    width: 100%;
+}
 .cart-related-product{
     display: flex;
     height: 50px;
+    font-size: 13px;
+    margin: 5px 0;
 }
 .cart-related-product .cart-related-info{
     flex-grow: 1;
@@ -245,6 +250,12 @@
 .cart-related-button{
     display: flex;
     align-items: center;
+}
+.cart-related-button .price-final{
+
+}
+.cart-related-button .btn{
+    display: none;
 }
 
 .checkout-box-wrapper{
