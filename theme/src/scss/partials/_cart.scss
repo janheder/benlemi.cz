@@ -56,6 +56,19 @@
 .cart-table{
     width: 100%;
 }
+.cart-table-heading{
+    display: flex;
+}
+.cart-table-heading span{
+    width: 15%;  
+    font-size: 14px;
+    font-weight: 600;
+    color: $gray-700;
+    padding: 20px 0 10px 0;
+}
+.cart-table-heading span:first-child{
+    width: calc(35% + 80px);    
+}
 .p-label{
     width: 100%;
     font-size: 14px;

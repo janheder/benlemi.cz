@@ -175,3 +175,10 @@ if ($(".type-category").length){
 // CART STEP 1
 // -----------------------------------------------------------------------------
 
+if ($(".cart-table").length){
+    $("<div class='cart-table-heading'></div>").insertBefore(".cart-table tbody");
+    $(".removeable:first-child .p-label").each(function(){
+        var label = $(this).html();
+        $(".cart-table-heading").prepend("<span>" + label + "</span>");
+    });
+}
