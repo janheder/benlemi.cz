@@ -5,6 +5,9 @@
     flex-wrap: wrap;
     margin: 0 -10px;
 }
+.type-category #content .subcategories, .type-category #content .category-title{
+    display: none;
+}
 .subcategories + h4{
     display: none;
 }

@@ -1,12 +1,12 @@
 .filters-wrapper{
-    background: $gray-300;
-    padding: 20px;
+
 }
 .filters-wrapper > div:first-child{ 
     display: none;
 }
 .filters{
-
+    background: $gray-300;
+    padding: 20px;
 }
 .filters fieldset > div{
     display: flex;

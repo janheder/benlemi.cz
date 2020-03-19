@@ -68,6 +68,7 @@ $("#js-menuToggle, .menu-helper").click(function(){
 /* toggle show responsive searchbar */ 
 $("#js-searchToggle").click(function(){
     $(".search").toggleClass("--active");
+    $(".search .form-control").focus(); 
 });
 
 /* toggle submenu overlay (faster than shoptet default function submenu-visible) */

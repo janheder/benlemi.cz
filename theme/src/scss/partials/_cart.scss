@@ -67,6 +67,8 @@
     width: 100%;
     display: flex;
     margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-400;
 
     .p-label{
         display: none;
@@ -219,18 +221,27 @@
 }
 .cart-related-product{
     display: flex;
+    height: 50px;
 }
 .cart-related-product .cart-related-info{
 
+    display: flex;
+    align-items: center;
 }
 .cart-related-img{
-    
+    height: 100%;
+    display: flex;
 }
 .cart-related-name{
-
+    padding: 0 10px;
+}
 }
 .cart-related-availability{
-
+    padding: 0 10px;
+}
+.cart-related-button{
+    display: flex;
+    align-items: center;
 }
 
 .checkout-box-wrapper{
