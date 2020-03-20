@@ -14,6 +14,9 @@
     flex-grow: 1;
     padding-left: 60px;
 }
+.in-hodnoceni-obchodu .votes-wrap{
+    width: 66.666%;
+}
 .vote-wrap{
     padding: 20px 0;
     border-bottom: 1px solid $gray-400;
@@ -98,11 +101,17 @@
 }
 .rate-wrapper{
     width: 33.333%;
-    z-index: 2;
     position: relative;
-    box-shadow: 0px 4px 15px rgba($black, 0.08);
     background: $white;
-    
+}
+.rate-wrap{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+    margin: 0;
+    background: $white;
+    box-shadow: 0px 4px 15px rgba($black, 0.08);
+
     &::after{
         content: "";
         z-index: -1;
@@ -113,13 +122,6 @@
         width: 100%;
         position: absolute;
     }
-}
-.rate-wrap{
-    display: flex;
-    flex-direction: column;
-    padding: 50px 40px;
-    margin: 0;
-    background: $white;
 }
 .rate-wrap .rate-average-wrap{
     min-width: 100%;
@@ -146,10 +148,22 @@
     font-size: 14px;
     color: $gray-700;
     text-align: center;
+    justify-content: center;
     font-weight: 600;
     padding-top: 10px;
 }
 
+.rate-wrap .rate-form-trigger{
+    color: $pink-700;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 .rate-wrap .col-sm-6{
     min-width: 100%;
     flex-basis: 100%;
@@ -193,4 +207,15 @@
 }
 .rate-wrap .rate-list[data-score="1"] .rate-bar{
     background: $red-800;
+}
+
+
+.rate-wrapper .vote-form{
+    background: $white;
+    padding: 40px;
+    padding-top: 0;
+}
+
+.rate-wrapper .vote-form .consents{
+    font-size: 13px;
 }

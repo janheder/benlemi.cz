@@ -18,6 +18,12 @@
 }
 .p .image{
 
+    &:hover, &:active, &:focus{
+        
+        & + .p-in .name{
+            text-decoration: underline;
+        }
+    }
 }
 .p .flags{
     position: absolute;
@@ -64,8 +70,7 @@
     padding: 5px 0;
 
     &:hover, &:active, &:focus{
-        text-decoration: none;
-        color: $green-900;
+        text-decoration: underline;
     }
 }
 
