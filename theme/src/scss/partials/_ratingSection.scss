@@ -33,3 +33,6 @@
 .ratingSection__content #ratingWrapper{
     display: none;
 }
+.ratingSection__content .vote-wrap:nth-child(1n+6){
+    display: none;
+}

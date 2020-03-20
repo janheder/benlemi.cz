@@ -17,6 +17,12 @@
 .in-hodnoceni-obchodu .votes-wrap{
     width: 66.666%;
 }
+.votes-wrap.admin-response{
+    background: $gray-300;
+    padding: 0 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
 .vote-wrap{
     padding: 20px 0;
     border-bottom: 1px solid $gray-400;
@@ -24,6 +30,8 @@
 .vote-wrap:last-child{
     border-bottom: 0;
 }
+
+
 .vote-header{
 
 }
@@ -102,7 +110,7 @@
 .rate-wrapper{
     width: 33.333%;
     position: relative;
-    background: $white;
+
 }
 .rate-wrap{
     display: flex;
@@ -110,6 +118,7 @@
     padding: 50px 40px;
     margin: 0;
     background: $white;
+    position: relative;
     box-shadow: 0px 4px 15px rgba($black, 0.08);
 
     &::after{
@@ -218,4 +227,22 @@
 
 .rate-wrapper .vote-form .consents{
     font-size: 13px;
+}
+.heureka-rating-group{
+    display: flex;
+}
+.heureka-rating-group > div::first-letter{
+    font-size: 0;
+}
+.heureka-rating-group::before{
+    content: "";
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    background-image: url("../icons/plus-circle-green.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.heureka-rating-group.minus::before{
+    background-image: url("../icons/minus-circle-gray.svg");
 }
