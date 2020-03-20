@@ -313,7 +313,31 @@
 #ratingProduct{
     width: 50%;
     padding: 0 10px;
+    padding-right: 20px;
 }
+#ratingProduct > h1{
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    color: $gray-800;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }
+}
+
+
 #ratingProduct .rate-wrapper {
     width: calc(100% - 10px);
     position: relative;
@@ -327,6 +351,28 @@
 #ratingStore{
     width: 50%;
     padding: 0 10px;
+    padding-left: 20px;
+}
+#ratingStore > h1{
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    color: $gray-800;
+    
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }
 }
 #ratingStore .rate-wrapper {
     width: calc(100% - 10px);
