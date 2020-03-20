@@ -157,13 +157,20 @@
 .rate-wrap .rate-list{
     display: flex;
     align-items: center;
+    padding: 5px 0;
+}
+.rate-wrap .rate-value{
+    padding-right: 5px;
+    font-size: 14px;
+    color: $gray-800;
+    font-weight: 600;
 }
 .rate-wrap .rate-block{
     display: flex;
     flex-grow: 1;
     background: $gray-300;
     height: 6px;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 .rate-wrap .rate-bar{
     display: flex;
