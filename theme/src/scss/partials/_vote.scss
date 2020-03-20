@@ -22,6 +22,7 @@
     padding: 0 20px;
     margin-left: 40px;
     margin-top: 20px;
+    width: auto;
 }
 .vote-wrap{
     padding: 20px 0;
@@ -94,6 +95,9 @@
     font-style: italic;
     color: $gray-800;
     padding-top: 10px;
+}
+.vote-content br{
+    display: none;
 }
 
 .star-wrap.stars{
@@ -237,7 +241,13 @@
 }
 .heureka-rating-group{
     display: flex;
-    padding: 5px 0;
+    padding-bottom: 20px;
+    flex-direction: column;
+    position: relative;
+    padding-left: 30px;
+}
+.heureka-rating-group.plus{
+
 }
 .heureka-rating-group > div::first-letter{
     font-size: 0;
@@ -251,6 +261,9 @@
     background-repeat: no-repeat;
     background-size: 100%;
     flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    top: 4px;
 }
 .heureka-rating-group.minus::before{
     background-image: url("../icons/minus-circle-gray.svg");
