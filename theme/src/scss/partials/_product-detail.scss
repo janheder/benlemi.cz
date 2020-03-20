@@ -314,16 +314,27 @@
     width: 50%;
     padding: 0 10px;
 }
+#ratingProduct .rate-wrapper {
+    width: calc(100% - 10px);
+    position: relative;
+}
+#ratingProduct .votes-wrap{
+    padding: 0; 
+    padding-top: 20px;
+}
+
+
 #ratingStore{
     width: 50%;
     padding: 0 10px;
 }
 #ratingStore .rate-wrapper {
-    width: 100%;
+    width: calc(100% - 10px);
     position: relative;
 }
 #ratingStore .votes-wrap{
     padding: 0; 
+    padding-top: 20px;
 }
 
 
