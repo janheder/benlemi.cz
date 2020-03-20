@@ -56,6 +56,7 @@
 .stars{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
  .stars .star{
     height: 16px;
@@ -135,15 +136,18 @@
 .rate-wrap .rate-average{
     font-size: 46px;
     font-weight: 600;
+    padding-bottom: 10px;
 }
 .rate-wrap .rate-star-wrap{
 
 }
 .rate-wrap .stars-label{
+    display: flex;
     font-size: 14px;
     color: $gray-700;
     text-align: center;
     font-weight: 600;
+    padding-top: 10px;
 }
 
 .rate-wrap .col-sm-6{
@@ -152,13 +156,22 @@
 }
 .rate-wrap .rate-list{
     display: flex;
+    align-items: center;
 }
 .rate-wrap .rate-block{
-
+    display: flex;
+    flex-grow: 1;
+    background: $gray-300;
+    height: 6px;
+    padding-left: 20px;
 }
 .rate-wrap .rate-bar{
-
+    display: flex;
 }
 .rate-wrap .rate-count{
     display: none;
+}
+
+.rate-wrap .rate-list[data-score="5"] .rate-bar{
+    background: $green-500;
 }
