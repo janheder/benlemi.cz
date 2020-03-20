@@ -20,6 +20,7 @@
 .vote-summary{
     display: flex;
     width: 100%;
+    align-items: baseline;
 }   
 .vote-name{
     font-size: 14px;
@@ -30,16 +31,23 @@
 
 }
 .vote-rating{
-
+    flex-grow: 1;
+    justify-content: space-between;
 }
 .vote-rating .stars{
-
+    display: flex;
 }
 .vote-rating .stars .star{
-
+    height: 16px;
+    width: 16px;
+    display: flex;
+    background-image: url("../icons/star-empty.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 2px;
 }
-.vote-rating .star .star-on{
-
+.vote-rating .star.star-on{
+    background-image: url("../icons/star-full.svg");
 }
 .vote-delimeter{
     display: none;
@@ -48,8 +56,6 @@
     font-size: 13px;
     color: $gray-700;
     font-weight: 400;
-    flex-grow: 1;
-    justify-content: flex-end;
 }
 .vote-content{
     font-style: italic;
