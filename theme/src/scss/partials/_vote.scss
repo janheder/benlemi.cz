@@ -54,6 +54,7 @@
 }
 .stars{
     display: flex;
+    justify-content: center;
 }
  .stars .star{
     height: 16px;
@@ -97,4 +98,47 @@
 .rate-wrap{
     display: flex;
     flex-direction: column;
+    padding: 50px 40px;
+    margin: 0;
+}
+.rate-wrap .rate-average-wrap{
+    min-width: 100%;
+    flex-basis: 100%;
+    padding: 0;
+    padding-bottom: 50px;
+}
+.rate-wrap .rate-average-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rate-wrap .rate-average{
+    font-size: 46px;
+    font-weight: 600;
+}
+.rate-wrap .rate-star-wrap{
+
+}
+.rate-wrap .stars-label{
+    font-size: 14px;
+    color: $gray-700;
+    text-align: center;
+}
+
+.rate-wrap .col-sm-6{
+    min-width: 100%;
+    flex-basis: 100%;
+}
+.rate-wrap .rate-list{
+    display: flex;
+}
+.rate-wrap .rate-block{
+
+}
+.rate-wrap .rate-bar{
+
+}
+.rate-wrap .rate-count{
+    display: none;
 }
