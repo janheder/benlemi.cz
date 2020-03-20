@@ -5,6 +5,9 @@
     padding: 20px 0;
     border-bottom: 1px solid $gray-400;
 }
+.vote-wrap:last-child{
+    border-bottom: 0;
+}
 .vote-header{
 
 }
@@ -20,7 +23,7 @@
 .vote-summary{
     display: flex;
     width: 100%;
-    align-items: baseline;
+    align-items: center;
 }   
 .vote-name{
     font-size: 14px;
@@ -37,19 +40,19 @@
     justify-content: center;
     align-items: center;
 }
-.vote-rating .stars{
+.stars{
     display: flex;
 }
-.vote-rating .stars .star{
+ .stars .star{
     height: 16px;
     width: 16px;
     display: flex;
     background-image: url("../icons/star-empty.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     margin: 0px;
 }
-.vote-rating .star.star-on{
+.stars .star.star-on{
     background-image: url("../icons/star-full.svg");
 }
 .vote-delimeter{
@@ -58,10 +61,19 @@
 .vote-time{
     font-size: 14px;
     color: $gray-700;
-    font-weight: 400;
+    flex-grow: 1;
+    text-align: right;
 }
 .vote-content{
     font-style: italic;
     color: $gray-800;
     padding-top: 10px;
+}
+
+.star-wrap.stars{
+    
+}
+.star-wrap.stars .star{
+    height: 24px;
+    width: 24px;
 }
