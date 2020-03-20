@@ -1,3 +1,15 @@
+.in-hodnoceni-obchodu .content-inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.in-hodnoceni-obchodu .content-inner h1{
+    display: flex;
+    width: 100%;
+}
+.in-hodnoceni-obchodu .pagination-wrapper{
+    width: 100%;
+}
+
 .votes-wrap{
 
 }
@@ -76,4 +88,13 @@
 .star-wrap.stars .star{
     height: 24px;
     width: 24px;
+}
+.rate-star-wrap .star{
+    height: 30px;
+    width: 30px;
+}
+
+.rate-wrap{
+    display: flex;
+    flex-direction: column;
 }
