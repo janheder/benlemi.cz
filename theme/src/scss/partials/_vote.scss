@@ -24,6 +24,9 @@
     margin-top: 20px;
     width: auto;
 }
+..votes-wrap.admin-response .vote-wrap{
+    border: 0;
+}
 .vote-wrap{
     padding: 20px 0;
     border-top: 1px solid $gray-400;

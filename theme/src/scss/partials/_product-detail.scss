@@ -310,6 +310,8 @@
     padding: 40px 0;
     margin: 0 -10px;
 }
+
+
 #ratingProduct{
     width: 50%;
     padding: 0 10px;
@@ -335,16 +337,19 @@
         background: $green-200;
     }
 }
-
-
 #ratingProduct .rate-wrapper {
     width: calc(100% - 10px);
     position: relative;
+    margin-bottom: 20px;
 }
 #ratingProduct .votes-wrap{
     padding: 0; 
     padding-top: 20px;
 }
+#ratingProduct .vote-wrap:nth-child(1n+6){
+    display: none;
+}
+
 
 
 #ratingStore{
@@ -375,11 +380,16 @@
 #ratingStore .rate-wrapper {
     width: calc(100% - 10px);
     position: relative;
+    margin-bottom: 20px;
 }
 #ratingStore .votes-wrap{
     padding: 0; 
     padding-top: 20px;
 }
+#ratingStore .vote-wrap:nth-child(1n+6){
+    display: none;
+}
+
 
 
 #cboxPrevious, #cboxNext{
