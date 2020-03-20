@@ -318,6 +318,13 @@
     width: 50%;
     padding: 0 10px;
 }
+#ratingStore .rate-wrapper {
+    width: 100%;
+    position: relative;
+}
+#ratingStore .votes-wrap{
+    padding: 0; 
+}
 
 
 #cboxPrevious, #cboxNext{
@@ -339,4 +346,18 @@
     left: auto;
     right: 10px;
     background-image: url("../icons/arrow-left-right.svg");
+}
+
+
+#description{
+
+}
+.description-inner{
+
+}
+.basic-description{
+
+}
+.basic-description > h3{
+
 }
