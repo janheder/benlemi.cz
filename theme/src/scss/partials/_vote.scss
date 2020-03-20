@@ -243,31 +243,32 @@
 }
 .heureka-rating-group{
     display: flex;
-    padding-bottom: 20px;
     flex-direction: column;
     position: relative;
-    padding-left: 30px;
 }
 .heureka-rating-group.plus{
 
 }
 .heureka-rating-group > div{
     font-style: normal;
+    position: relative;
+    padding-bottom: 5px;
+    padding-left: 25px;
 }
 .heureka-rating-group > div::first-letter{
     font-size: 0;
 }
 .heureka-rating-group div::before{
     content: "";
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
     background-image: url("../icons/plus-circle-green.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     flex-shrink: 0;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 2px;
 }
 .heureka-rating-group.plus div{
     color: $green-800;
