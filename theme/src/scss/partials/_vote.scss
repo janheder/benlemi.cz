@@ -26,13 +26,16 @@
     font-size: 14px;
     color: $gray-700;
     font-weight: 600;
+    padding-right: 20px;
 }
 .vote-name span{
 
 }
 .vote-rating{
+    display: flex;
     flex-grow: 1;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 .vote-rating .stars{
     display: flex;
@@ -44,7 +47,7 @@
     background-image: url("../icons/star-empty.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 2px;
+    margin: 0px;
 }
 .vote-rating .star.star-on{
     background-image: url("../icons/star-full.svg");
@@ -53,7 +56,7 @@
     display: none;
 }
 .vote-time{
-    font-size: 13px;
+    font-size: 14px;
     color: $gray-700;
     font-weight: 400;
 }
