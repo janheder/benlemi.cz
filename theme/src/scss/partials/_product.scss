@@ -19,6 +19,22 @@
 .p .image{
     padding-bottom: 75%;
     position: relative;
+    background: $gray-300;
+
+    &::after{
+        content: "";
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0.4;
+        background-image: url("../icons/symbol-benlemi-bw.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
     img{
         position: absolute;
         left: 0;
