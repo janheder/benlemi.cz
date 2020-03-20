@@ -64,10 +64,11 @@
     font-size: 14px;
     font-weight: 600;
     color: $gray-700;
-    padding: 20px 0 10px 0;
+    padding: 20px 10px 10px 10px;
 }
 .cart-table-heading span:first-child{
-    width: calc(35% + 80px);    
+    width: calc(35% + 80px); 
+    padding-left: 0;   
 }
 .p-label{
     width: 100%;
