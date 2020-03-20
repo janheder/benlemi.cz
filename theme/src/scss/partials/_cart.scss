@@ -109,7 +109,7 @@
 
     &:hover, &:active, &:focus{
         text-decoration: none;
-        color: $green-500;
+        color: $green-700;
     }
 }
 .cart-table .p-name .main-link-variant{
@@ -131,7 +131,7 @@
 .cart-table .p-availability .show-tooltip{
     font-weight: 600;
     font-size: 14px;
-    color: $green-500;
+    color: $green-700;
     display: flex;
     flex-direction: column;
     justify-content: center;
