@@ -94,7 +94,23 @@
     height: 30px;
     width: 30px;
 }
-
+.rate-wrapper{
+    width: 33.333%;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba($black, 0.08);
+    
+    &::after{
+        content: "";
+        z-index: -1;
+        background: $gray-300;
+        bottom: -10px;
+        right: -10px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
 .rate-wrap{
     display: flex;
     flex-direction: column;
