@@ -17,7 +17,13 @@
     height: 100% !important; //todo: delete js that sets .p height
 }
 .p .image{
-
+    padding-bottom: 75%;
+    position: relative;
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
     &:hover, &:active, &:focus{
         
         & + .p-in .name{

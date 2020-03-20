@@ -26,9 +26,9 @@
 }
 .vote-wrap{
     padding: 20px 0;
-    border-bottom: 1px solid $gray-400;
+    border-top: 1px solid $gray-400;
 }
-.vote-wrap:last-child{
+.vote-wrap:first-child{
     border-bottom: 0;
 }
 
@@ -225,8 +225,7 @@
 
 .rate-wrapper .vote-form{
     background: $white;
-    padding: 40px;
-    padding-top: 0;
+    padding: 0px;
     margin-top: 20px;
     top: 0;
     position: sticky;
@@ -256,14 +255,13 @@
     content: "";
     height: 24px;
     width: 24px;
-    margin-right: 10px;
     background-image: url("../icons/plus-circle-green.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     flex-shrink: 0;
     position: absolute;
     left: 0;
-    top: 4px;
+    top: 0;
 }
 .heureka-rating-group.minus::before{
     background-image: url("../icons/minus-circle-gray.svg");
