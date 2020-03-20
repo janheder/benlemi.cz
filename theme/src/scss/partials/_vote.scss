@@ -251,10 +251,13 @@
 .heureka-rating-group.plus{
 
 }
+.heureka-rating-group > div{
+    font-style: normal;
+}
 .heureka-rating-group > div::first-letter{
     font-size: 0;
 }
-.heureka-rating-group::before{
+.heureka-rating-group div::before{
     content: "";
     height: 24px;
     width: 24px;
@@ -266,6 +269,12 @@
     left: 0;
     top: 0;
 }
-.heureka-rating-group.minus::before{
+.heureka-rating-group.plus div{
+    color: $green-700;
+}
+.heureka-rating-group.minus div{
+    color: $gray-700;
+}
+.heureka-rating-group.minus div::before{
     background-image: url("../icons/minus-circle-gray.svg");
 }
