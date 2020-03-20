@@ -182,6 +182,15 @@
 .rate-wrap .rate-list[data-score="5"] .rate-bar{
     background: $green-700;
 }
-.rate-wrap .rate-list[data-score="5"] .rate-bar{
-    background: $green-700;
+.rate-wrap .rate-list[data-score="4"] .rate-bar{
+    background: $green-500;
+}
+.rate-wrap .rate-list[data-score="3"] .rate-bar{
+    background: $yellow-600;
+}
+.rate-wrap .rate-list[data-score="2"] .rate-bar{
+    background: $orange-500;
+}
+.rate-wrap .rate-list[data-score="1"] .rate-bar{
+    background: $red-800;
 }
