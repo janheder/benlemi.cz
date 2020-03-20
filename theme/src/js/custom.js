@@ -94,6 +94,12 @@ if ($("#blogSection").length){
     $("#blogSection .blogSection__content").load("/blog/ .news-wrapper");
 }
 
+/* load blog posts into homepage section */
+if ($("#ratingSection").length){
+    $("#ratingSection .ratingSection__content").load("/hodnoceni-obchodu/ .content-inner");
+}
+
+
 /* relocate benefit points depending on page type */
 if ($("#pointsSection").length){
     if ($("body.type-index").length){

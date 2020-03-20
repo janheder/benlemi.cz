@@ -31,11 +31,15 @@
 .news-item time{
     font-size: 14px;
     color: $gray-700;
-    order: 1;
-    font-weight: 600;
-}
-.news-item  .description{
-    font-size: 14px;
     order: 2;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.news-item .description{
+    font-size: 14px;
+    order: 1;
     color: $gray-700;
+}
+.news-item .description p{
+    margin: 0;
 }
