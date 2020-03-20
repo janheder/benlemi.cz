@@ -2,13 +2,14 @@
 
 }
 .vote-wrap{
-
+    padding: 20px 0;
+    border-bottom: 1px solid $gray-400;
 }
 .vote-header{
 
 }
 .vote-pic{
-
+    display: none;
 }
 .vote-initials{
 
@@ -17,10 +18,13 @@
 
 }
 .vote-summary{
-
-}
+    display: flex;
+    width: 100%;
+}   
 .vote-name{
-
+    font-size: 14px;
+    color: $gray-700;
+    font-weight: 600;
 }
 .vote-name span{
 
@@ -38,8 +42,17 @@
 
 }
 .vote-delimeter{
-
+    display: none;
 }
 .vote-time{
-
+    font-size: 13px;
+    color: $gray-700;
+    font-weight: 400;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.vote-content{
+    font-style: italic;
+    color: $gray-800;
+    padding-top: 10px;
 }
