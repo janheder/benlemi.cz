@@ -187,3 +187,12 @@ if ($(".cart-table").length){
         $(".cart-table-heading").prepend("<span>" + label + "</span>");
     });
 }
+
+// -----------------------------------------------------------------------------
+// STORE RATING PAGE
+// -----------------------------------------------------------------------------
+
+if ($("#rate-form").length){
+    $("html:lang(cs) #rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
+
+}
