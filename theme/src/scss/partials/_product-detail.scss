@@ -349,6 +349,9 @@
 #ratingProduct .vote-wrap:nth-child(1n+6){
     display: none;
 }
+#ratingProduct .pagination-wrapper{
+    display: none;
+}
 
 
 
@@ -387,6 +390,9 @@
     padding-top: 20px;
 }
 #ratingStore .vote-wrap:nth-child(1n+6){
+    display: none;
+}
+#ratingStore .pagination-wrapper{
     display: none;
 }
 
