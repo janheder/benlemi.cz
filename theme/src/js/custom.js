@@ -71,6 +71,11 @@ $("#js-searchToggle").click(function(){
     $(".search .form-control").focus(); 
 });
 
+/* *WIP* override shoptet cart function on mobile */ 
+$(".cart-count").click(function(){
+    window.location.href='/kosik/';
+});
+
 /* toggle submenu overlay (faster than shoptet default function submenu-visible) */
 $(".menu-level-1 .ext").hover(
     function(){
