@@ -316,14 +316,16 @@
 
     .detail-parameters{
         order: 0;
+        font-size: 14px;
         tr{
-    
+            height: 30px;
         }
         th{
-    
+            color: $gray-600;
+            padding-right: 10px;
         }
         td{
-    
+            color: $gray-800;
         }
     }
 }
@@ -454,6 +456,7 @@
 @media screen and (max-width: 767px){
     #ratingStore{
         width: 100%;
+        padding: 0 10px;
     }
 }
 
@@ -503,5 +506,5 @@
     width: 100%;
 }
 .description-infographics{
-
+    width: 50%;
 }

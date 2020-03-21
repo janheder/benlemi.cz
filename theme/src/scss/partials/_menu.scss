@@ -151,8 +151,17 @@
     }
     .menu-level-2 > li {
         justify-content: flex-start;
+        width: 100%;
+        padding: 5px 10px;
+        align-items: center;
     }
     .menu-level-2 .menu-image {
         height: 36px;
+    }
+    .menu-level-2 > li > a > img {
+        height: 100%;
+    }
+    .menu-level-3{
+        display: none;
     }
 }

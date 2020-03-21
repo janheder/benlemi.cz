@@ -33,3 +33,10 @@
 .browse-p{
     display: none;
 }
+
+@media screen and (max-width: 500px){
+    .products-related .product{
+        width: 50%;
+        flex-basis: 50%;
+    }
+}
