@@ -197,9 +197,11 @@ if ($(".type-category").length){
 
 if ($(".cart-table").length){
     $("<div class='cart-table-heading'></div>").insertBefore(".cart-table tbody");
+    $(".cart-table-heading").prepend("<span>Název produktu</span>");
+
     $(".removeable:first-child .p-label").each(function(){
         var label = $(this).html();
-        $(".cart-table-heading").prepend("<span>" + label + "</span>");
+        $(".cart-table-heading span").append("<span>" + label + "</span>");
     });
 }
 
