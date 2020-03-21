@@ -203,10 +203,10 @@
     flex-wrap: wrap;
     align-items: center;
     padding-left: 10px;
-    flex-grow: 1;
+    width: 15%;
 }
 .p-total strong{
-    color: $red-600;
+    color: $red-800;
     flex-grow: 1;
 }
 .cart-table .remove-item{
@@ -221,11 +221,12 @@
     background-position: center center;
     flex-shrink: 0;
     margin: 0;
-    transition: 0.2s ease background-color;
+    transition: 0.2s ease background-color, 0.2s ease background-image;
     cursor: pointer;
 
     &:hover, &:active, &:focus{
-        background: $gray-400;
+        background-color: $red-300;
+        background-image: url("../icons/close-red.svg");
     }
 }
 .cart-table .remove-item span{
