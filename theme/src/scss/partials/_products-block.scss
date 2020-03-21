@@ -3,3 +3,8 @@
     flex-wrap: wrap;
     margin: 0 -10px;
 }
+@media screen and (max-width: 500px){
+    .products-block{
+        margin: 0 -5px;
+    }
+}

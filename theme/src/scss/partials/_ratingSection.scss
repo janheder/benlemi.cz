@@ -39,3 +39,9 @@
 .ratingSection__content .pagination-wrapper{
     display: none;
 }
+
+@media screen and (max-width: 767px){
+    .ratingSection__img{
+        display: none;
+    }
+}

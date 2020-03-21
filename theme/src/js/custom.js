@@ -173,8 +173,10 @@ $('select[data-parameter-name="Propositions"]').change(function() {
     var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
     var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'')
     var src = $('.p-thumbnail[href*="' + optionClean + '.jpg"]').attr("href");
-    if(typeof page_name != 'undefined'){
+    if(typeof src != 'undefined'){
         $(".description-infographics img").attr("src", src);
+    }else{
+        $(".description-infographics img").attr("src", '');
     }
 });
 
