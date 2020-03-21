@@ -4,10 +4,20 @@
     }
 }
 .p-detail{
-
+    display: flex;
+    flex-direction: column;
 }
 .p-detail-inner{
-
+    order: 0;
+}
+.browse-p{
+    order: 10;
+}
+.p-detail-tabs-wrapper{
+    order: 20;
+}
+#productsRelated{
+    order: 30;
 }
 .p-detail-inner-header{
     order: 0;
@@ -96,6 +106,9 @@
     display: flex;
     flex-direction: column;
     padding-left: 30px;
+}
+.p-info-wrapper .detail-parameters{
+    width: 100%;
 }
 .p-final-price-wrapper{
     order: 25;
