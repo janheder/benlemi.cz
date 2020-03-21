@@ -223,6 +223,10 @@
     margin: 0;
     transition: 0.2s ease background-color;
     cursor: pointer;
+
+    &:hover, &:active, &:focus{
+        background: $gray-400;
+    }
 }
 .cart-table .remove-item span{
     padding: 0;

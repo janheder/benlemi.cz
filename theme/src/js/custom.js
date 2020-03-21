@@ -201,7 +201,7 @@ if ($(".cart-table").length){
 
     $(".removeable:first-child .p-label").each(function(){
         var label = $(this).html();
-        $(".cart-table-heading span").append("<span>" + label + "</span>");
+        $(".cart-table-heading span:last-child").after("<span>" + label + "</span>");
     });
 }
 
