@@ -39,3 +39,32 @@
         font-size: 0;
     }
 }
+
+
+@media screen and (max-width: 991px){
+    .breadcrumbs > span{
+        display: none;
+    }
+    .breadcrumbs > span:nth-last-child(2){
+        display: flex;
+    }¨
+    .breadcrumbs > span:nth-last-child(2) a{
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+    }
+    .breadcrumbs > span:nth-last-child(2) a::before{
+        content: "";
+        display: flex;
+        background-image: url("../icons/arrow-left.svg");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 16px 16px;
+        height: 16px;
+        width: 16px;
+        margin-right: 5px;
+    }
+    .breadcrumbs > span:nth-last-child(2) a::after{
+        content: none;
+    }
+}

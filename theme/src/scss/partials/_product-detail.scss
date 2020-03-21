@@ -378,7 +378,11 @@
 #ratingProduct .pagination-wrapper{
     display: none;
 }
-
+@media screen and (max-width: 767px){
+    #ratingProduct{
+        width: 100%;
+    }
+}
 
 
 #ratingStore{
@@ -430,6 +434,12 @@
 #ratingStore .pagination-wrapper{
     display: none;
 }
+@media screen and (max-width: 767px){
+    #ratingStore{
+        width: 100%;
+    }
+}
+
 
 
 
