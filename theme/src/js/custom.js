@@ -166,6 +166,21 @@ if ($(".hidden-split-parameter").length){
     });
 }
 
+/* load infographic images into parameters*/
+$(".extended-description").append('<div class="description-infographics"><img src=""></div>');
+
+$('select[data-parameter-name="Propositions"]').change(function() {
+    var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
+    var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'')
+    alert(optionClean);
+    var src = $('.p-thumbnail[href*="' + optionClean + '.jpg"]').attr("href");
+    alert(src);
+    $(".description-infographics img").attr("src", src);
+});
+
+
+
+
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
 // -----------------------------------------------------------------------------
