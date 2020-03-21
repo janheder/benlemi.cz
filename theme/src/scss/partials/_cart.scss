@@ -285,12 +285,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
 }
 .back-shopping-link{
     display: none;
 }
 .summary-wrapper .next-step-back{
-
+    height: 46px;
+    padding: 0 20px;
+    color: $gray-800;
+    background: $gray-300;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease all;
 }
 
 

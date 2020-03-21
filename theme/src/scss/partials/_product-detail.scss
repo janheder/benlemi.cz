@@ -317,6 +317,8 @@
     .detail-parameters{
         order: 0;
         font-size: 14px;
+        display: table;
+        
         tr{
             height: 30px;
             padding: 5px;
@@ -325,9 +327,10 @@
             background: $gray-300;
         }
         th{
-            color: $gray-600;
+            color: $gray-700;
             padding-right: 10px;
             padding: 5px;
+            font-weight: 400;
         }
         td{
             color: $gray-800;
