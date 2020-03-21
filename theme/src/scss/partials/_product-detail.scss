@@ -319,13 +319,19 @@
         font-size: 14px;
         tr{
             height: 30px;
+            padding: 5px;
+        }
+        tr:nth-child(odd){
+            background: $gray-300;
         }
         th{
             color: $gray-600;
             padding-right: 10px;
+            padding: 5px;
         }
         td{
             color: $gray-800;
+            padding: 5px;
         }
     }
 }
