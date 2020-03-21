@@ -172,13 +172,11 @@ $(".extended-description").append('<div class="description-infographics"><img sr
 $('select[data-parameter-name="Propositions"]').change(function() {
     var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
     var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'')
-    alert(optionClean);
     var src = $('.p-thumbnail[href*="' + optionClean + '.jpg"]').attr("href");
-    alert(src);
-    $(".description-infographics img").attr("src", src);
+    if(typeof page_name != 'undefined'){
+        $(".description-infographics img").attr("src", src);
+    }
 });
-
-
 
 
 // -----------------------------------------------------------------------------
@@ -209,5 +207,5 @@ if ($(".cart-table").length){
 
 if ($("#rate-form").length){
     $("html:lang(cs) #rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
-
+    $("html:lang(sk) #rate-form").prepend("<h3 class='vote-form-title'>Pridať hodnotenie</h3>");
 }

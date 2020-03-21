@@ -80,6 +80,9 @@
     padding: 5px;
     width: 20%;
 }
+.p-thumbnail[href*="infografika"]{
+    display: none;
+}
 .p-thumbnail img{
     min-width: 100%;
 }
