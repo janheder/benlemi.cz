@@ -313,18 +313,21 @@
     a{
   
     }
+
+    .detail-parameters{
+        order: 0;
+        tr{
+    
+        }
+        th{
+    
+        }
+        td{
+    
+        }
+    }
 }
-.detail-parameters{
-    tr{
 
-    }
-    th{
-
-    }
-    td{
-
-    }
-}
 
 #productDiscussion, a[href="#productDiscussion"]{
     display: none !important;
@@ -333,6 +336,7 @@
     display: flex;
     padding: 40px 0;
     margin: 0 -10px;
+    flex-wrap: wrap;
 }
 
 
@@ -488,5 +492,16 @@
 
 }
 .basic-description > h3{
+
+}
+
+.extended-description{
+    display: flex;
+    flex-wrap: wrap;
+}
+.extended-description > h3{
+    width: 100%;
+}
+.description-infographics{
 
 }
