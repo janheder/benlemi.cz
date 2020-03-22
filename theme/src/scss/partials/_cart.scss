@@ -209,6 +209,7 @@
 .p-total strong{
     color: $red-800;
     flex-grow: 1;
+    font-weight: 600;
 }
 .cart-table .remove-item{
     border: 0;
@@ -308,6 +309,49 @@
     border: 0;
     cursor: pointer;
     transition: 0.3s ease all;
+
+    &:hover, &:active, &:focus{
+        background: $gray-400;
+        text-decoration: none;
+    }
+}
+
+.cart-summary{
+
+}
+.cart-summary .extras-wrapper{
+
+}
+.cart-summary .extras-col{
+
+}
+.cart-summary .extras-wrap{
+
+}
+.cart-summary.extra{
+    padding: 10px;
+    font-weight: 400;
+    color: $gray-800;
+    background: $gray-300;
+}
+.cart-summary.extra.delivery{
+    color: $green-800;
+    background: $green-200;
+}
+
+.cart-content.summary-wrapper{
+    margin-top: 20px;
+}
+.cart-content.summary-wrapper .price-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+.cart-content.summary-wrapper .price-label{
+    
+}
+.cart-content.summary-wrapper .price-primary{
+    color: $red-800;
+    font-weight: 600;
 }
 
 

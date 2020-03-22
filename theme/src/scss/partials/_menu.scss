@@ -95,6 +95,10 @@
 .menu-level-3 > li{
     font-size: 13px;
 }
+.menu-level-3 > li > a{
+    color: $gray-700;
+}
+
 
 .menu-helper{
     position: fixed;
