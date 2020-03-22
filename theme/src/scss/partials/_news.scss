@@ -58,3 +58,14 @@
         width: 100%;
     }
 }
+
+
+.news-item-detail{
+    max-width: 720px;
+    margin: 0 auto;
+}
+.news-item-detail time{
+    color: $gray-700;
+    font-weight: 600;
+    font-size: 14px;
+}

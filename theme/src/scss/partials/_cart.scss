@@ -227,7 +227,7 @@
     cursor: pointer;
 
     &:hover, &:active, &:focus{
-        background-color: $red-300;
+        background-color: $red-200;
         background-image: url("../icons/close-red.svg");
     }
 }
@@ -328,13 +328,13 @@
 .cart-summary .extras-wrap{
 
 }
-.cart-summary.extra{
+.cart-summary .extras-wrap .extra{
     padding: 10px;
     font-weight: 400;
     color: $gray-800;
     background: $gray-300;
 }
-.cart-summary.extra.delivery{
+.cart-summary .extras-wrap .extra.delivery{
     color: $green-800;
     background: $green-200;
 }
@@ -345,11 +345,13 @@
 .cart-content.summary-wrapper .price-wrapper{
     display: flex;
     justify-content: flex-end;
+    background: $gray-300;
+    padding: 10px;
 }
 .cart-content.summary-wrapper .price-label{
     
 }
-.cart-content.summary-wrapper .price-primary{
+.cart-content.summary-wrapper .price{
     color: $red-800;
     font-weight: 600;
 }

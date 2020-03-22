@@ -1,6 +1,6 @@
 .type-detail{
     .tooltip{
-        display: none;
+        display: none !important;
     }
 }
 .p-detail{
@@ -567,4 +567,13 @@
 }
 .description-infographics{
     width: 50%;
+}
+
+#jsUnavailableCombinationMessage{
+    margin: 0;
+    padding: 10px;
+    background: $pink-200;
+    text-align: center;
+    color: $pink-800;
+    font-size: 14px;
 }

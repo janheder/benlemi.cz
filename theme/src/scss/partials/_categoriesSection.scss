@@ -58,4 +58,11 @@
     #categoriesSection{
         padding: 40px 0 30px 0;
     }
+    .categoriesSection__row {
+        margin: 0 -5px;
+    }
+    .categoriesSection__row .col-6{
+        margin: 5px 0;
+        padding: 0 5px;
+    }
 }
