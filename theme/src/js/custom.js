@@ -2,7 +2,14 @@
 // GLOBAL
 // -----------------------------------------------------------------------------
 
-/*  */
+/* remove native scroll function - bugs */
+if ($("[data-force-scroll]").length){
+    $("[data-force-scroll]").each(function(){
+        $(this).removeAttr("data-force-scroll");
+    });
+}
+
+/* anchor scroll setup */
 $('a[href*="#"]').not('[data-force-scroll]').click(function(event) {
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -41,11 +48,11 @@ $('a[href*="#"]').not('[data-force-scroll]').click(function(event) {
 /* add contacts into header area */ 
 if ($(".search").length){
     if ($("#footer").length){
-        var mail = $("#footer .mail").text();
-        var tel = $("#footer .tel").text();
+        var mail = $("#footer .mail").text().replace(/\s/g,'');
+        var tel = $("#footer .tel").text().replace(/\s/g,'');
     }else{
-        var mail = $(".contact-box .mail a").text();
-        var tel = $(".contact-box  .tel").text();
+        var mail = $(".contact-box .mail a").text().replace(/\s/g,'');
+        var tel = $(".contact-box  .tel").text().replace(/\s/g,'');
     }
     $(".search").before('<div class="header-contacts">'+
     '<a href="tel:' + tel + '">' + tel + '</a>'+
@@ -171,12 +178,19 @@ if ($(".hidden-split-parameter").length){
     });
 }
 
+/* remove scroll function from tabs */
+if ($("#p-detail-tabs").length){
+    $("#p-detail-tabs .shp-tab-link").each(function(){
+        $(this).removeAttr("data-toggle");
+    });
+}
+
 /* load infographic images into parameters*/
 $(".extended-description").append('<div class="description-infographics"><img src=""></div>');
 
 $('select[data-parameter-name="Propositions"]').change(function() {
     var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
-    var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'')
+    var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
     var src = $('.p-thumbnail[href*="' + optionClean + '.jpg"]').attr("href");
     if(typeof src != 'undefined'){
         $(".description-infographics img").attr("src", src);

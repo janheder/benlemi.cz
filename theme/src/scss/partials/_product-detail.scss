@@ -168,6 +168,12 @@
     background-repeat: no-repeat;
     background-size: 14px 14px;
 }
+@media screen and (max-width: 767px){
+    .variant-list select{
+        width: 100%;
+    }
+}
+
 #simple-variants{
     margin: 0 -5px;
 }
@@ -273,6 +279,10 @@
         display: flex;
         margin-top: 40px;
     }
+    .responsive-nav .navigation-btn{
+        display: none;
+    }
+    
     .shp-tabs-holder{
         width: 100%;
         background: $gray-300;
