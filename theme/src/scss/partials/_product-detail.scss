@@ -356,7 +356,7 @@
     padding: 0 10px;
     padding-right: 20px;
 }
-#ratingProduct  h1{
+#ratingProduct h1{
     text-align: center;
     position: relative;
     display: flex;
@@ -504,7 +504,25 @@
 
 }
 .basic-description > h3{
+    text-align: center;
+    position: relative;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    color: $gray-800;
+    width: 100%;
 
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }
 }
 
 .extended-description{
@@ -512,7 +530,25 @@
     flex-wrap: wrap;
 }
 .extended-description > h3{
+    text-align: center;
+    position: relative;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    color: $gray-800;
     width: 100%;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }
 }
 .description-infographics{
     width: 50%;
