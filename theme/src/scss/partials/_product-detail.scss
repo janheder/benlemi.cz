@@ -378,6 +378,11 @@
 }
 #ratingProduct > p{
     margin: 0;
+    padding: 10px;
+    background: $pink-200;
+    text-align: center;
+    color: $pink-800;
+    font-size: 14px;
 }
 #ratingProduct > p + #ratingWrapper .rate-wrap{
     display: none;
