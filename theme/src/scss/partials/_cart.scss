@@ -404,8 +404,13 @@
     }
 }
 
+
+/*step 1 delivery and payment page*/
 .in-krok-1 .cart-row{
     flex-direction: row;
+}
+#orderFormSubmit{
+    display: none;
 }
 .order-delivery-payment-form{
 
@@ -449,17 +454,18 @@
     padding-left: 34px;
     border: 1px solid $gray-400;
     position: relative;
+    cursor: pointer;
 
     &::before{
         content: "";
         background: $white;
-        height: 12px;
-        width: 12px;
+        height: 14px;
+        width: 14px;
         display: flex;
         margin-right: 10px;
         position: absolute;
         left: 10px;
-        top: 14px;
+        top: 19px;
         border-radius: 50%;
         border: 2px solid $gray-600;
     }
@@ -470,14 +476,15 @@
         width: 6px;
         display: flex;
         position: absolute;
-        top: 18px;
-        left: 13px;
+        top: 23px;
+        left: 14px;
         border-radius: 50%;
     }
 }
 .order-delivery-payment-form .radio-wrapper input:checked + label{
     color: $green-800;
     background: $green-100;
+    border: 1px solid $green-700;
 
     &::before{
         border-color: $green-700;
