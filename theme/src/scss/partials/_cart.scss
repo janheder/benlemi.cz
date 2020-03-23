@@ -403,3 +403,62 @@
         text-decoration: none;
     }
 }
+
+.in-krok-1 .cart-row{
+    flex-direction: row;
+}
+.order-delivery-payment-form{
+
+}
+.order-delivery-payment-form .co-box{
+
+}
+.order-delivery-payment-form .co-box > h4{
+    
+}
+.order-delivery-payment-form .radio-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-delivery-payment-form .radio-wrapper input{
+    -webkit-appearance: none;
+}
+.order-delivery-payment-form .radio-wrapper label{
+    margin: 0;
+    flex-grow: 1;
+    padding: 10px;
+    border-bottom: 1px solid $gray-400;
+    position: relative;
+
+    &::before{
+        content: "";
+        background: $white;
+        height: 12px;
+        width: 12px;
+        display: flex;
+        margin-right: 10px;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+    &::after{
+        content: "";
+        background: $white;
+        height: 6px;
+        width: 6px;
+        display: flex;
+        position: absolute;
+        top: 13px;
+        left: 3px;
+    }
+}
+.payment-info{
+
+}
+.payment-shipping-price{
+
+}
+.payment-shipping-price.for-free{
+
+}
