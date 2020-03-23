@@ -416,7 +416,7 @@
 
 }
 .order-delivery-payment-form .co-box{
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .order-delivery-payment-form .co-box > h4{
     text-align: center;
@@ -455,6 +455,7 @@
     border: 1px solid $gray-400;
     position: relative;
     cursor: pointer;
+    margin: 5px 0;
 
     &::before{
         content: "";
