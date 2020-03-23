@@ -445,8 +445,9 @@
 .order-delivery-payment-form .radio-wrapper label{
     margin: 0;
     flex-grow: 1;
-    padding: 10px;
-    border-bottom: 1px solid $gray-400;
+    padding: 15px 10px;
+    padding-left: 34px;
+    border: 1px solid $gray-400;
     position: relative;
 
     &::before{
@@ -458,7 +459,8 @@
         margin-right: 10px;
         position: absolute;
         left: 10px;
-        top: 15px;
+        top: 14px;
+        border-radius: 50%;
         border: 2px solid $gray-600;
     }
     &::after{
@@ -468,19 +470,27 @@
         width: 6px;
         display: flex;
         position: absolute;
-        top: 13px;
+        top: 18px;
         left: 13px;
+        border-radius: 50%;
     }
 }
 .order-delivery-payment-form .radio-wrapper input:checked + label{
     color: $green-800;
     background: $green-100;
-    &::before, &::after{
+
+    &::before{
+        border-color: $green-700;
+    }
+    &::after{
         background: $green-700;
     }
 }
 .payment-info{
 
+}
+.payment-info b{
+    font-weight: 400;
 }
 .payment-shipping-price{
 
