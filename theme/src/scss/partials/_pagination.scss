@@ -22,7 +22,9 @@
     /*display: none;*/
 }
 .pagination-link{
-
+    span{
+        pointer-events: none;
+    }
 }
 .pagination-top{
     display: none;
