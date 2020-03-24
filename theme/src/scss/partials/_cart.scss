@@ -590,15 +590,10 @@
     .shp-flag-name{
         display: flex;
     }
-    .country-flags-inner{
-        overflow-y: scroll;
-    }
 }
 .country-flags-inner{
     display: flex;
     flex-direction: column;
-    height: 48px;
-    overflow: hidden;
 }
 .country-flag{
     display: flex;
@@ -606,6 +601,8 @@
     order: 1;
     padding: 0px 20px;
     height: 48px;
+    flex-shrink: 0;
+    cursor: pointer;
 }
 .country-flag.selected{
     order: 0;
@@ -632,11 +629,23 @@
 
 
 
-.js-validator-msg.msg-error{
+.js-validator-msg.msg-error, .validator-msg.msg-error{
     margin-bottom: 10px;
     padding: 10px;
     background: $pink-200;
     text-align: center;
     color: $pink-800;
     font-size: 14px;
+}
+.validator-msg{
+    margin-bottom: 10px;
+    padding: 10px;
+    background: $gray-300;
+    text-align: center;
+    color: $gray-800;
+    font-size: 14px;
+}
+.validator-msg.msg-warning{
+    background: $yellow-200;
+    color: $yellow-900;
 }
