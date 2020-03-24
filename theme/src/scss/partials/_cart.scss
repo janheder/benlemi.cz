@@ -457,6 +457,7 @@
     position: relative;
     cursor: pointer;
     margin: 5px 0;
+    display: flex;
 
     &::before{
         content: "";
@@ -496,10 +497,13 @@
     }
 }
 .payment-info{
-
+    flex-grow: 1;
 }
 .payment-info b{
     font-weight: 400;
+}
+.payment-info .not-possible-info{
+    
 }
 .payment-shipping-price{
 
