@@ -253,6 +253,7 @@
     order: 20;
     font-size: 14px;
     padding-top: 10px;
+    color: $gray-700;
 }
 .p-short-description + p{
 
@@ -263,6 +264,28 @@
 
 .p-gifts-wrapper{
     order: 50;
+    padding-top: 20px;
+}
+.p-gifts-heading{
+    font-weight: 600;
+}
+.p-gift{
+    display: flex;
+    align-items: center;
+}
+.p-gift-image{
+    height: 60px;
+    width: 60px;
+}
+.p-gift-name a{
+    font-size: 14px;
+    color: $gray-800;
+    padding-left: 10px;
+}
+.p-gift-name a{
+    font-size: 14px;
+    color: $red-700;
+    display: flex;
 }
 
 
@@ -571,6 +594,10 @@
 }
 .description-infographics{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
 }
 
 #jsUnavailableCombinationMessage{
@@ -580,4 +607,7 @@
     text-align: center;
     color: $pink-800;
     font-size: 14px;
+    a{
+        color: $gray-800;
+    }
 }

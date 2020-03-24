@@ -1,6 +1,19 @@
 #blogSection{
     padding: 60px 0 ;
 }
+#blogSection .container{
+    position: relative;
+}
+#blogSection .container::before{
+    content: "";
+    display: flex;
+    background: $gray-400;
+    height: 1px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 0;
+}
 .blogSection__title{
     text-align: center;
     position: relative;

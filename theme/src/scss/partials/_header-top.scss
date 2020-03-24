@@ -27,7 +27,7 @@
     flex-shrink: 1;
 }
 .site-name{
-    height: 52px;
+    height: 46px;
     margin: 0;
 }
 @media screen and (max-width: 991px){
@@ -77,7 +77,7 @@
         transform: translate(0%,-50%);
     }
 }
-.header-contacts a:first-child{
+.header-contacts a:last-child{
     padding-right: 40px;
     &::before{
         background-image: url($i-envelope);

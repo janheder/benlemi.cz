@@ -152,6 +152,8 @@
         position: relative;
         flex-direction: column;
         background: $gray-200;
+        display: flex;
+        flex-direction: column;
     }
     .menu-level-2 > li {
         justify-content: flex-start;
