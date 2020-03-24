@@ -573,7 +573,7 @@
     display: none;
 }
 .country-flags{
-
+    border: 1px solid $gray-500;
 }
 .country-flags.active{
 
@@ -589,6 +589,8 @@
     display: flex;
     align-items: center;
     order: 1;
+    padding: 8px 20px;
+    line-height: 2;
 }
 .country-flag.selected{
     order: 0;
