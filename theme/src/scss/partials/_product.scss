@@ -42,11 +42,13 @@
     top: 10px;
     left: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .p .flags .flag{
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 5px;
+    margin-right: 5px;
     padding: 0 5px;
     height: 22px;
     background: $white;
@@ -62,6 +64,9 @@
         display: none;
     }
     &.flag-tip{
+        
+    }
+    &.flag-gift{
         
     }
 }

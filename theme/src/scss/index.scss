@@ -124,6 +124,9 @@ header + .content-wrapper .content-wrapper-in{
 .content{
     width: 100%;
 }
+.content > h4{
+    display: none;
+}
 
 .middle-banners-wrapper .banner-wrapper{  
     height: auto;

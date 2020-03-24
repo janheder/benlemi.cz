@@ -114,7 +114,7 @@ if ($("#ratingSection").length){
     $("#ratingSection .ratingSection__content").load("/hodnoceni-obchodu/ .content-inner");
 }
 
-/* relocate benefit points depending on page type */
+/* relocate benefit points and email form depending on page type */
 if ($("#pointsSection").length){
     if ($("body.type-index").length){
 
@@ -126,6 +126,8 @@ if ($("#pointsSection").length){
 
     }else{
         $("#pointsSection").insertBefore("#footer");
+        $("#pointsSection").before('<section id="newsletterSection"></section>');
+        $("#newsletterSection").load("/ #newsletterSection .container");
     }
 }
 
