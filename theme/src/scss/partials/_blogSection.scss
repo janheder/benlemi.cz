@@ -1,8 +1,9 @@
 #blogSection{
-    padding: 60px 0 ;
+    
 }
 #blogSection .container{
     position: relative;
+    padding: 60px 20px;
 }
 #blogSection .container::before{
     content: "";
