@@ -71,16 +71,16 @@
         position: absolute;
         top: 50%;
         left: 0%;
-        background-image: url($i-phone);
+        background-image: url($i-envelope);
         background-repeat: no-repeat;
         background-size: 100%;
         transform: translate(0%,-50%);
     }
 }
-.header-contacts a:last-child{
+.header-contacts a:first-child{
     padding-right: 40px;
     &::before{
-        background-image: url($i-envelope);
+        background-image: url($i-phone);
     }
 
 }

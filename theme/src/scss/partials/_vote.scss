@@ -82,13 +82,13 @@
     height: 16px;
     width: 16px;
     display: flex;
-    background-image: url("../icons/star-empty.svg");
+    background-image: url($i-star-empty);
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0px;
 }
 .stars .star.star-on{
-    background-image: url("../icons/star-full.svg");
+    background-image: url($i-star-full);
 }
 .vote-delimeter{
     display: none;
@@ -267,7 +267,7 @@
     content: "";
     height: 20px;
     width: 20px;
-    background-image: url("../icons/plus-circle-green.svg");
+    background-image: url($i-plus-circle-green);
     background-repeat: no-repeat;
     background-size: 100%;
     flex-shrink: 0;
@@ -282,5 +282,5 @@
     color: $gray-700;
 }
 .heureka-rating-group.minus div::before{
-    background-image: url("../icons/minus-circle-gray.svg");
+    background-image: url($i-plus-circle-gray);
 }
