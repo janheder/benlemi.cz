@@ -503,8 +503,23 @@
     font-weight: 400;
 }
 .payment-info .not-possible-info{
-    
+    display: none;
 }
+.order-delivery-payment-form .radio-wrapper input:disabled + label{
+    border: 1px solid $pink-700;
+    
+    .not-possible-info{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: $pink-800;
+        background: $pink-100;
+    }
+}
+
 .payment-shipping-price{
 
 }
