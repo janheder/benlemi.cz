@@ -544,6 +544,7 @@
         height: 100%;
         color: $pink-800;
         background: rgba($pink-200,0.6);
+        font-style: normal;
     }
 }
 
@@ -552,4 +553,32 @@
 }
 .payment-shipping-price.for-free{
     color: $green-700;
+}
+
+.phone-combined-input{
+    display: flex;
+}
+.phone-combined-input select {
+    display: none;
+}
+.country-flags{
+
+}
+.country-flags-inner{
+
+}
+.country-flag{
+    display: flex;
+    align-items: center;
+}
+.shp-flag{
+    display: flex;
+    height: 20px;
+    width: 30px;
+}
+.shp-flag-label{
+    padding-left: 10px;
+}
+.shp-flag-name{
+
 }
