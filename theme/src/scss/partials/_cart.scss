@@ -590,10 +590,15 @@
     .shp-flag-name{
         display: flex;
     }
+    .country-flags-inner{
+        height: auto;
+    }
 }
 .country-flags-inner{
     display: flex;
     flex-direction: column;
+    height: 48px;
+    overflow: hidden;
 }
 .country-flag{
     display: flex;
