@@ -272,6 +272,8 @@
 .p-gift{
     display: flex;
     align-items: center;
+    border: 1px solid $gray-400;
+    padding: 10px;
 }
 .p-gift-image{
     height: 60px;
@@ -282,7 +284,7 @@
     color: $gray-800;
     padding-left: 10px;
 }
-.p-gift-name a{
+.p-gift-name a span{
     font-size: 14px;
     color: $red-700;
     display: flex;
@@ -325,7 +327,7 @@
         }
     }  
     .p-detail-tabs a{
-        padding: 10px 20px;  
+        padding: 12px 20px;  
         display: flex;
         color: $gray-700;
 

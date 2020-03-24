@@ -338,6 +338,29 @@
     color: $green-800;
     background: $green-100;
 }
+.cart-summary .free-gift{
+    margin-bottom: 20px;
+}
+.cart-summary .free-gifts-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid $gray-400;
+}
+.cart-summary .free-gifts-img{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-summary .free-gifts-img-hover{
+    display: none;
+}
+.cart-summary .free-gift-label{
+
+}
 
 .cart-content.summary-wrapper{
     margin-top: 20px;
