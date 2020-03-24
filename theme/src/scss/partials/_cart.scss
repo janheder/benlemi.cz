@@ -568,17 +568,26 @@
 }
 .phone-combined-input{
     display: flex;
+    position: relative;
 }
 .phone-combined-input select {
     display: none;
 }
 .country-flags{
     border: 1px solid $gray-500;
+    margin-right: 10px;
+    height: 48px;
+    overflow: hidden;
 }
 .country-flags.active{
+    height: 288px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     .shp-flag-name{
-        display: flex;;
+        display: flex;
     }
 }
 .country-flags-inner{
@@ -602,7 +611,9 @@
 }
 .shp-flag-label{
     padding-left: 10px;
+    display: flex;
 }
 .shp-flag-name{
     display: none;
+    padding-right: 5px;
 }
