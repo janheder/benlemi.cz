@@ -14,7 +14,8 @@
 }
 .menu-level-1 > li{
     height: 50px;
-
+}
+.menu-level-1 > li.ext{
     &:hover, &:active, &:focus{
         text-decoration: none;
         background: $white;
@@ -30,13 +31,17 @@
 
     &:hover, &:active, &:focus{
         text-decoration: none;
-        background: transparent;
+        background: $white;
     }
 }
 .menu-level-1 > li > a > b{
     font-weight: 400;
 }
-
+.menu-item-1002{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
 .menu-level-2{
     list-style: none;
     padding: 0;
