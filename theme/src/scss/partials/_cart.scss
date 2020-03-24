@@ -345,7 +345,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
     border: 1px solid $gray-400;
 }
 .cart-summary .free-gifts-img{
@@ -359,7 +360,8 @@
     display: none;
 }
 .cart-summary .free-gift-label{
-
+    flex-grow: 1;
+    padding-left: 20px;
 }
 
 .cart-content.summary-wrapper{
@@ -439,10 +441,10 @@
 .order-delivery-payment-form{
 
 }
-.order-delivery-payment-form .co-box{
+.co-box{
     padding: 20px 0;
 }
-.order-delivery-payment-form .co-box > h4{
+.co-box > h4{
     text-align: center;
     position: relative;
     display: flex;

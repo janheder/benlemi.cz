@@ -279,10 +279,12 @@
     height: 60px;
     width: 60px;
 }
+.p-gift-name{
+    padding-left: 10px;
+}
 .p-gift-name a{
     font-size: 14px;
     color: $gray-800;
-    padding-left: 10px;
 }
 .p-gift-name a span{
     font-size: 14px;
@@ -517,14 +519,16 @@
 
 
 #cboxPrevious, #cboxNext{
+    font-size: 0;
     display: flex;
     position: absolute;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba($black, 0.2);
+    background: rgba($black, 0.4);
     height: 36px;
     width: 36px;
+    border: 0;
     -webkit-appearance: none;
     background-image: url($i-arrow-left-white);
     background-position: center center;
@@ -536,7 +540,9 @@
     right: 10px;
     background-image: url($i-arrow-right-white);
 }
-
+#cboxCurrent{
+    display: none;
+}
 
 #description{
 
