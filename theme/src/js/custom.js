@@ -191,8 +191,6 @@ if ($("#p-detail-tabs").length){
 }
 
 /* load infographic images into parameters */
-
-
 $('select[data-parameter-name="Propositions"]').change(function() {
     var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
     var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
@@ -212,15 +210,18 @@ if ($(".p-info-wrapper").length){
     $(".p-info-wrapper .stars-wrapper, .p-detail-info > div:last-child").appendTo(".p-detail-inner-header");
 }
 
-
+/* relocate video */
 if ($("#productVideos").length){
     $("#productVideos").appendTo(".p-thumbnails-wrapper");
 }
 
+/* add "show more" button to thumbnails */
 if ($(".p-thumbnails-wrapper").length){
     $(".p-thumbnails-inner > div > a:nth-child(8)").after('<div id="thumbnailsShowMore"><div class="thumbnailsShowMore-inner">Zobrazit vše</div></div>');
 }
-
+$("#thumbnailsShowMore").click(function(){
+    $(".p-thumbnails-inner").toggleClass("--active");
+});
 
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY

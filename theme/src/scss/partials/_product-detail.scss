@@ -26,6 +26,7 @@
     order: 0;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 10px;
     h1{
         width: 100%;
         order: 0;
@@ -125,7 +126,7 @@
     font-size: 14px;
 }
 
-.p-thumbnails-inner.active{
+.p-thumbnails-inner.--active{
     & > div{
         flex-wrap: wrap;
     }
@@ -324,7 +325,7 @@
 .p-short-description{
     order: 5;
     font-size: 14px;
-    padding-top: 10px;
+    padding-top: 0px;
     color: $gray-700;
 }
 .p-short-description  p{
@@ -703,7 +704,7 @@
     }
 }
 
-#relatedFile, .shp-tab-link[href="#relatedFiles"]{
+#relatedFiles, .shp-tab-link[href="#relatedFiles"]{
     display: none !important;
 } 
 
@@ -711,7 +712,7 @@
 
 }
 .shp-tab-link[href="#productVideos"]{
-
+    display: none;
 }
 #productVideos h3{
     display: none;
