@@ -55,7 +55,7 @@
     display: none;
 }
 .stars-wrapper{
-    order: 10;
+    order: 4;
     margin-bottom: 10px;
     display: flex;
 }
@@ -107,6 +107,12 @@
     flex-direction: column;
     padding-left: 30px;
 }
+.p-info-wrapper > p{
+    display: flex;
+    order: 10;
+}
+.p-info-wrapper > p > a{
+}
 .p-info-wrapper .detail-parameters{
     width: 100%;
 }
@@ -131,7 +137,8 @@
     font-size: 14px;
     font-weight: 600;
     color: $green-700;
-    order: 21;
+    order: 24;
+    padding-top: 10px;
 }
 .availability-label{
 
@@ -250,7 +257,7 @@
     padding: 0 30px;
 }
 .p-short-description{
-    order: 15;
+    order: 5;
     font-size: 14px;
     padding-top: 10px;
     color: $gray-700;

@@ -207,7 +207,7 @@ $('select[data-parameter-name="Propositions"]').change(function() {
 /* relocate rating */
 if ($(".p-info-wrapper").length){
     var stars = $(".p-info-wrapper .stars-wrapper").html();
-    $(stars).append(".p-info-wrapper > p");
+    $(".p-info-wrapper .stars-wrapper").append('.p-info-wrapper > p');
 }
 
 // -----------------------------------------------------------------------------
