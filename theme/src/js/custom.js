@@ -200,7 +200,7 @@ $('select[data-parameter-name="Propositions"]').change(function() {
     if(typeof src != 'undefined'){
         $(".extended-description").append('<div class="description-infographics"><img src=""><a href="">Stáhnout infografiku</a></div>');
         $(".description-infographics img").attr("src", src);
-        $(".description-infographics img").attr("href", src);
+        $(".description-infographics a").attr("href", src);
     }else{
         $(".description-infographics img").remove();
         $(".description-infographics a").remove();
