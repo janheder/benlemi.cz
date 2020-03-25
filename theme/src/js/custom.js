@@ -196,7 +196,7 @@ $('select[data-parameter-name="Propositions"]').change(function() {
     var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
     var src = $('#relatedFiles a[href*="' + optionClean + '.jpg"]').attr("href");
     if(typeof src != 'undefined'){
-        $(".extended-description").append('<div class="description-infographics"><img src=""><a href="">Stáhnout infografiku</a></div>');
+        $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>Stáhnout infografiku</a></div>');
         $(".description-infographics img").attr("src", src);
         $(".description-infographics a").attr("href", src);
     }else{
