@@ -14,7 +14,8 @@
 .ctaSection__content{
     padding-left: 40px;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding-top: 100px;
 }
 .ctaSection__title{
@@ -40,5 +41,7 @@
     height: 24px;
 }
 .ctaSection__boxTitle{
-
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
 }
