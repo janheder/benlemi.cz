@@ -26,13 +26,18 @@
     font-weight: 600;
 }
 .ctaSection__boxWrap{
-
+    display: flex;
 }
 .ctaSection__box{
-
+    margin-right: 20px;
+    background: $white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .ctaSection__boxIcon{
-
+    height: 24px;
 }
 .ctaSection__boxTitle{
 
