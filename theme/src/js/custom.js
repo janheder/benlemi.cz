@@ -191,16 +191,19 @@ if ($("#p-detail-tabs").length){
 }
 
 /* load infographic images into parameters */
-$(".extended-description").append('<div class="description-infographics"><img src=""></div>');
+
 
 $('select[data-parameter-name="Propositions"]').change(function() {
     var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
     var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
     var src = $('#relatedFiles a[href*="' + optionClean + '.jpg"]').attr("href");
     if(typeof src != 'undefined'){
+        $(".extended-description").append('<div class="description-infographics"><img src=""><a href="">Stáhnout infografiku</a></div>');
         $(".description-infographics img").attr("src", src);
+        $(".description-infographics img").attr("href", src);
     }else{
-        $(".description-infographics img").attr("src", '');
+        $(".description-infographics img").remove();
+        $(".description-infographics a").remove();
     }
 });
 
