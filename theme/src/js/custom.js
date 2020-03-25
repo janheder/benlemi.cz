@@ -190,7 +190,7 @@ if ($("#p-detail-tabs").length){
     });
 }
 
-/* load infographic images into parameters*/
+/* load infographic images into parameters */
 $(".extended-description").append('<div class="description-infographics"><img src=""></div>');
 
 $('select[data-parameter-name="Propositions"]').change(function() {
@@ -204,6 +204,11 @@ $('select[data-parameter-name="Propositions"]').change(function() {
     }
 });
 
+/* relocate rating */
+if ($(".p-info-wrapper").length){
+    var stars = $(".p-info-wrapper .stars-wrapper").html();
+    $(stars).append(".p-info-wrapper > p");
+}
 
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
