@@ -30,9 +30,12 @@
     .p-code{
         display: flex;
         order: 2;
+        font-size: 13px;
+        padding: 0 20px;
     }
     div:nth-child(3){
         order: 3;
+        font-size: 13px;
     }
     .stars-wrapper{
         margin: 0;
@@ -78,6 +81,8 @@
     font-size: 13px;
     color: $gray-700;
     font-weight: 600;
+    align-items: center;
+    display: flex;
 }
 .p-image-wrapper{
     padding-right: 30px;
@@ -124,6 +129,7 @@
 .p-info-wrapper > p{
     display: flex;
     order: 10;
+    margin-bottom: 10px;
 }
 .p-info-wrapper > p > a{
 }
@@ -276,8 +282,8 @@
     padding-top: 10px;
     color: $gray-700;
 }
-.p-short-description + p{
-
+.p-short-description  p{
+    margin-bottom: 10px;
 }
 .social-buttons-wrapper{
     display: none;
