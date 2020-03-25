@@ -217,6 +217,10 @@ if ($("#productVideos").length){
     $("#productVideos").appendTo(".p-thumbnails-wrapper");
 }
 
+if ($(".p-thumbnails-wrapper").length){
+    $(".p-thumbnails-inner > div > a:nth-child(8)").after('<div id="thumbnailsShowMore"><div class="thumbnailsShowMore-inner">Zobrazit vše</div></div>');
+}
+
 
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY

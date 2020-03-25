@@ -100,17 +100,18 @@
     position: relative;
 }
 .p-thumbnails-inner{
-
+    overflow: hidden;
 }
 .p-thumbnails-inner > div{
     display: flex;
     margin: 0 -5px;
-    flex-wrap: wrap;
+    overflow: hidden;
 }
 .p-thumbnail{
     display: flex;
     padding: 5px;
     width: 20%;
+    flex-shrink: 0;
 }
 .p-thumbnail[href*="infografika"]{
     display: none;
@@ -127,6 +128,7 @@
     width: 36px;
     background-color: rgba($black, 0.6);
     cursor: pointer;
+    display: none;
 }
 .thumbnail-next{
     left: auto;
@@ -674,7 +676,7 @@
 }
 
 #relatedFile, .shp-tab-link[href="#relatedFiles"]{
-    display: none;
+    display: none !important;
 } 
 
 #productVideos{
@@ -689,4 +691,17 @@
 #productVideos iframe{
     height: 60px;
     width: 100px;
+}
+
+#thumbnailsShowMore{
+    width: 20%;
+    padding: 5px;
+    display: flex;
+  }
+.thumbnailsShowMore-inner{
+    background: $gray-300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
