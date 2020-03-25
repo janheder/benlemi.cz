@@ -22,6 +22,7 @@
 }
 .ctaSection__contentInner{
     display: flex;
+    flex-direction: column;
 }
 .ctaSection__title{
     font-size: 20px;
