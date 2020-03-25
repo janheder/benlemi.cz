@@ -196,7 +196,7 @@ $(".extended-description").append('<div class="description-infographics"><img sr
 $('select[data-parameter-name="Propositions"]').change(function() {
     var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
     var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
-    var src = $('.p-thumbnail[href*="' + optionClean + '.jpg"]').attr("href");
+    var src = $('#relatedFiles a[href*="' + optionClean + '.jpg"]').attr("href");
     if(typeof src != 'undefined'){
         $(".description-infographics img").attr("src", src);
     }else{
@@ -208,6 +208,12 @@ $('select[data-parameter-name="Propositions"]').change(function() {
 if ($(".p-info-wrapper").length){
     $(".p-info-wrapper .stars-wrapper, .p-detail-info > div:last-child").appendTo(".p-detail-inner-header");
 }
+
+
+if ($("#productVideos").length){
+    $("#productVideos").appendTo(".p-thumbnails-wrapper");
+}
+
 
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY

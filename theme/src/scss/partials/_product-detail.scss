@@ -10,6 +10,9 @@
 .p-detail-inner{
     order: 0;
 }
+.p-detail-inner > .p-detail-inner-header{
+    display: none;
+}
 .browse-p{
     order: 10;
 }
