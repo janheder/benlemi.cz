@@ -204,10 +204,9 @@ $('select[data-parameter-name="Propositions"]').change(function() {
     }
 });
 
-/* relocate rating */
+/* relocate product code and brand name */
 if ($(".p-info-wrapper").length){
-    var stars = $(".p-info-wrapper .stars-wrapper").html();
-    $(".p-info-wrapper .stars-wrapper").append('.p-info-wrapper > p');
+    $(".p-info-wrapper .stars-wrapper, .p-detail-info > div:last-child").appendTo(".p-detail-inner-header");
 }
 
 // -----------------------------------------------------------------------------
