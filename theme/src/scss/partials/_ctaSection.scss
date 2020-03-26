@@ -54,8 +54,12 @@
 }
 .ctaSection__socialWrap{
     display: flex;
+    margin-top: 40px;
 }
 .ctaSection__socialSingle{
     display: flex;
     margin-right: 10px;
+}
+.ctaSection__socialImg{
+    opacity: 0.5;
 }
