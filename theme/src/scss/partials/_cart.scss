@@ -370,12 +370,15 @@
 }
 .cart-content.summary-wrapper .price-wrapper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     background: $gray-300;
     padding: 15px 20px;
 }
-.cart-content.summary-wrapper .price-label{
-    
+.cart-content.summary-wrapper span.price-label{
+    width: 50%;
+    justify-content: flex-end;
+    display: flex;
 }
 .cart-content.summary-wrapper .price{
     color: $red-800;
