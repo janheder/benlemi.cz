@@ -59,6 +59,12 @@
 .ctaSection__socialSingle{
     display: flex;
     margin-right: 10px;
+    height: 36px;
+    width: 36px;
+    background: $white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 .ctaSection__socialImg{
     opacity: 0.5;
