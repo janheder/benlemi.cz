@@ -385,6 +385,10 @@
     font-weight: 600;
     padding-left: 10px;
 }
+.cart-content.summary-wrapper .price-secondary{
+    color: $gray-700;
+    font-size: 14px;
+}
 
 .cart-summary .free-product-gifts{
     list-style: none;

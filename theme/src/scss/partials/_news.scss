@@ -16,9 +16,14 @@
 .news-item > .image > a{
     height: 220px;
     display: flex;
+    overflow: hidden;
 }
 .news-item > .image > a > img{
     object-fit: cover;
+    transition: 1s ease transform;
+}
+.news-item > .image > a:hover > img{
+    transform: scale(1.05);
 }
 .news-item > .text{
     display: flex;

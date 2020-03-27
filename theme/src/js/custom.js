@@ -200,8 +200,7 @@ $('select[data-parameter-name="Propositions"]').change(function() {
         $(".description-infographics img").attr("src", src);
         $(".description-infographics a").attr("href", src);
     }else{
-        $(".description-infographics img").remove();
-        $(".description-infographics a").remove();
+        $(".description-infographics").remove();
     }
 });
 
