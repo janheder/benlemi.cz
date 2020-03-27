@@ -4,7 +4,8 @@
     position: relative;
 }
 #newsletterSection .container{
-
+    display: flex;
+    position: relative;
 }
 .newsletterSection__title{
     position: relative;
@@ -47,4 +48,9 @@
     label{
         margin: 0;
     }
+}
+.newsletterSection__imgWrap{
+    position: absolute;
+    right: 10px;
+    max-width: 50%;
 }
