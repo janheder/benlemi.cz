@@ -374,6 +374,7 @@
     justify-content: flex-end;
     background: $gray-300;
     padding: 15px 20px;
+    align-items: baseline;
 }
 .cart-content.summary-wrapper span.price-label{
     width: 50%;
@@ -382,8 +383,9 @@
 }
 .cart-content.summary-wrapper .price{
     color: $red-800;
-    font-weight: 600;
+    font-weight: 700;
     padding-left: 10px;
+    font-size: 20px;
 }
 .cart-content.summary-wrapper .price-secondary{
     color: $gray-700;

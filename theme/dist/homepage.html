@@ -23,26 +23,39 @@
 
     <section id="newsletterSection">
         <div class="container">
-            <form id="formNewsletterWidget" class="subscribe-form compact-form"
-                action="/action/MailForm/subscribeToNewsletters/" method="post">
+            
+            <form id="formNewsletterWidget" class="subscribe-form compact-form newsletterSection__form" action="/action/MailForm/subscribeToNewsletters/" method="post">
+                <h1 class="newsletterSection__title">Odebírejte náš newsletter</h1>
+
                 <fieldset>
+
                     <input name="formId" type="hidden" value="2">
                     <span class="no-display">Nevyplňujte toto pole:</span>
                     <input class="no-display" name="surname" type="text">
-                    <div class="validator-msg-holder">
-                        <input class="form-control" name="email" required="" type="email" placeholder="Vaše e-mailová adresa">
-                    </div>
-                    <div>
-                        <div class="form-group consents consents-first">
-                            <input id="newsletterWidgetConsents31" name="consents[]" type="hidden" value="31" data-special-message="validatorConsent">
-                            <label class="whole-width" for="newsletterWidgetConsents31">
-                                Vložením e-mailu souhlasíte s <a href="/podminky-ochrany-osobnich-udaju/" target="_blank" rel="noopener noreferrer">podmínkami ochrany osobních údajů</a>
-                            </label>
+
+                    <div class="form-group newsletterSection__formGroup">
+                        <div class="validator-msg-holder">
+                            <input class="form-control newsletterSection__input" name="email" required="" type="email" placeholder="Vaše e-mailová adresa">
                         </div>
+                        <button class="btn btn-default btn-arrow-right newsletterSection__btn" type="submit"><span class="sr-only">Přihlásit se</span></button>
                     </div>
-                    <button class="btn btn-default btn-arrow-right" type="submit"><span class="sr-only">Přihlásit se</span></button>
+
+                    <div class="consents consents-first newsletterSection__consent">
+                        <input id="newsletterWidgetConsents31" name="consents[]" type="hidden" value="31" data-special-message="validatorConsent" placeholder="Zadejte váš email">
+                        <label class="whole-width" for="newsletterWidgetConsents31">
+                            Vložením e-mailu souhlasíte s <a href="/podminky-ochrany-osobnich-udaju/" target="_blank" rel="noopener noreferrer">podmínkami ochrany osobních údajů</a>
+                        </label>
+                    </div>
+    
                 </fieldset>
+
             </form>
+
+            <div class="newsletterSection__imgWrap">
+                <img src="https://janheder.github.io/benlemi.cz/theme/dist/img/rating-kluci.png" alt="Odebírejte náš newsletter" title="Odebírejte náš newsletter">
+            </div>
+
+
         </div>
     </section>
 
