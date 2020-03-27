@@ -191,18 +191,21 @@ if ($("#p-detail-tabs").length){
 }
 
 /* load infographic images into parameters */
-$('select[data-parameter-name="Propositions"]').change(function() {
-    var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
-    var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
-    var src = $('#relatedFiles a[href*="' + optionClean + '.jpg"]').attr("href");
-    if(typeof src != 'undefined'){
-        $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>Stáhnout infografiku</a></div>');
-        $(".description-infographics img").attr("src", src);
-        $(".description-infographics a").attr("href", src);
-    }else{
-        $(".description-infographics").remove();
-    }
-});
+
+if ($("#relatedFiless").length){
+    $('select[data-parameter-name="Propositions"]').change(function() {
+        var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
+        var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
+        var src = $('#relatedFiles a[href*="' + optionClean + '.jpg"]').attr("href");
+        if(typeof src != 'undefined'){
+            $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>Stáhnout infografiku</a></div>');
+            $(".description-infographics img").attr("src", src);
+            $(".description-infographics a").attr("href", src);
+        }else{
+            $(".description-infographics").remove();
+        }
+    });
+}
 
 /* relocate product code and brand name */
 if ($(".p-info-wrapper").length){
