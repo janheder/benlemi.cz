@@ -125,9 +125,9 @@ if ($("#pointsSection").length){
         }
 
     }else{
-        $("#pointsSection").insertBefore("#footer");
-        $("#pointsSection").before('<section id="newsletterSection"></section>');
+        $("#footer").before('<section id="newsletterSection"></section>');
         $("#newsletterSection").load("/ #newsletterSection .container");
+        $("#pointsSection").insertBefore("#newsletterSection");
     }
 }
 
