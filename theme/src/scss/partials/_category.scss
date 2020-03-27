@@ -19,7 +19,10 @@
 }
 .category-header label{
     cursor: pointer;
-    margin-left: 20px;
+    margin-right: 20px;
+}
+.category-header label:last-child{
+    margin-right: 0px;
 }
 .category-header input{
     -webkit-appearance: none;

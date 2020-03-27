@@ -43,3 +43,13 @@
     font-size: 14px;
     color: $gray-800;
 }
+
+@media screen and (max-width: 500px){
+    .subcategories{
+        margin: 0 -5px;
+    }
+    .subcategories li{
+        margin-bottom: 0px;
+        padding: 5px;
+    }
+}
