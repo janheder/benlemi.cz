@@ -102,6 +102,14 @@
 }
 .order-summary-item.price strong{
     flex-grow: 1;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.order-summary-item.price .price-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .order-recapitulation{
     padding: 10px 0;
@@ -109,4 +117,17 @@
 }
 .recapitulation-single{
 
+}
+.recapitulation-single > span{
+
+}
+.recapitulation-single > strong{
+    flex-grow: 1;
+    display: flex;
+}
+.recapitulation-single > strong > span{
+    flex-grow: 1;
+    order: 1;
+    justify-content: flex-end;
+    display: flex;
 }
