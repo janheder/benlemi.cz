@@ -22,13 +22,26 @@
     display: flex;
     padding: 20px;
     background: $gray-300;
+    width: 100%;
 }
 .contact-box img{
     display: none;
 }
+.contact-box strong{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 20px;
+    }
+}
 .contact-box ul{
     list-style: none;
     padding: 0;
+    padding-left: 20px;
     margin: 0;
 }
 .order-summary-inner{
@@ -47,6 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0;
+    border-bottom: 1px solid $gray-400;
 }
 .cart-item-name{
     width: 100%;
