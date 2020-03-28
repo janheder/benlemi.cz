@@ -1,0 +1,24 @@
+#checkoutSidebar{
+
+}
+.order-summary{
+    background: $gray-300;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.checkout-box{
+    
+}
+.toggle-contacts{
+
+}
+.box-bg-default{
+    display: none;
+}
+.box-bg-default.visible{
+    display: flex;
+}
+.next-step{
+    display: flex;
+    justify-content: space-between;
+}
