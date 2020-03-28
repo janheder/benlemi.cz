@@ -28,10 +28,12 @@
 
 }
 .cart-item{
-
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .cart-item-name{
-
+    width: 100%;
 }
 .main-link{
 
@@ -40,13 +42,13 @@
 
 }
 .cart-item-amount{
-
+    flex-grow: 1;
 }
 .unit-value{
 
 }
 .cart-item-price{
-
+    flex-shrink: 0;
 }
 
 .next-step{
