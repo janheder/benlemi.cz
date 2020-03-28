@@ -52,7 +52,6 @@
 .order-summary-inner > h4{
     position: relative;
     display: flex;
-    justify-content: center;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -121,6 +120,7 @@
 }
 .order-summary-item.price{
     border: 0;
+    padding-bottom: 0;
 }
 .order-summary-item.price strong{
     flex-grow: 1;
@@ -156,4 +156,11 @@
 }
 .recapitulation-single.last{
     padding-top: 10px;
+}
+.order-summary-item.price .price.price-primary{
+    color: $red-800;
+}
+.order-summary-item.price .price-secondary{
+    font-size: 14px;
+    color: $gray-700;
 }
