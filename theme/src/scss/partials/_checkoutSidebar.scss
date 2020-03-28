@@ -7,17 +7,48 @@
     margin-bottom: 20px;
 }
 .checkout-box{
-    
-}
-.toggle-contacts{
 
 }
-.box-bg-default{
-    display: none;
+.toggle-contacts{
+    width: 100%;
+    padding: 10px 20px;
 }
-.box-bg-default.visible{
+.order-summary .box-bg-default{
+    display: none;
+    margin-top: 10px;
+}
+.order-summary .box-bg-default.visible{
     display: flex;
 }
+
+.order-summary-inner{
+
+}
+.cart-items{
+
+}
+.cart-item{
+
+}
+.cart-item-name{
+
+}
+.main-link{
+
+}
+.main-link-variant{
+
+}
+.cart-item-amount{
+
+}
+.unit-value{
+
+}
+.cart-item-price{
+
+}
+
 .next-step{
     display: flex;
     justify-content: space-between;
