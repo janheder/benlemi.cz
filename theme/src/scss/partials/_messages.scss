@@ -6,7 +6,12 @@
     width: 100%;
     text-align: center;
 }
+.msg-wrapper{
+    width: 100%;
+}
 .msg{
+    width: 100%;
     padding: 10px 20px;
     background: rgba($black, 0.5);
+    color: $white;
 }
