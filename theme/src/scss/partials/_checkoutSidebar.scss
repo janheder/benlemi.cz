@@ -88,17 +88,24 @@
     justify-content: space-between;
 }
 
-.cart-items.gift-items{
-
+.cart-items.gift-item{
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-400;
+    display: flex;
+    align-items: baseline;
 }
-.cart-items.gift-items.helper{
+.cart-items.gift-item.helper{
     
 }
-.cart-items.gift-items.price{
-    
+.cart-items.gift-item.price{
+    border: 0;
+}
+.cart-items.gift-item.price strong{
+    flex-grow: 1;
 }
 .order-recapitulation{
-
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-400;
 }
 .recapitulation-single{
 
