@@ -2,27 +2,39 @@
 
 }
 .order-summary{
-    background: $gray-300;
-    padding: 20px;
-    margin-bottom: 20px;
+
 }
 .checkout-box{
-
+    margin-bottom: 20px;
 }
 .toggle-contacts{
     width: 100%;
     padding: 10px 20px;
+    display: none;
 }
 .order-summary .box-bg-default{
-    display: none;
-    margin-top: 10px;
+    display: flex;
 }
 .order-summary .box-bg-default.visible{
     display: flex;
 }
-
+.contact-box{
+    display: flex;
+    padding: 20px;
+    background: $gray-300;
+}
+.contact-box img{
+    display: none;
+}
+.contact-box ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .order-summary-inner{
-    padding-top: 20px;
+    background: $gray-300;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 .order-summary-inner > h4{
    
@@ -54,6 +66,7 @@
 .cart-item-price{
     flex-shrink: 0;
     color: $red-800;
+    font-weight: 600;
 }
 
 .next-step{
