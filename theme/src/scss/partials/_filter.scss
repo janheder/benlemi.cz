@@ -31,6 +31,10 @@
         right: 0;
         height: 100%;
         transition: 0.3s ease transform;
+        background: $white;
+        width: 260px;
+        padding: 20px;
+        overflow-y: auto;
     }
     .filters.visible{
         transform: translateX(0%);
