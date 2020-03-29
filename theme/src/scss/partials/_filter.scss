@@ -4,10 +4,30 @@
 .filters-wrapper > div:first-child{ 
     display: none;
 }
+
 .filters{
     background: $gray-300;
     padding: 20px;
 }
+
+@media (max-width: 991px){
+    .filters-wrapper > div:first-child{ 
+        display: flex;
+    }
+    .filters{ 
+        position: fixed;
+        z-index: 9;
+        transform: translateX(100%);
+        top: 0px;
+        right: 0;
+        height: 100%;
+        transition: 0.3s ease transform;
+    }
+    .filters.visible{
+        transform: translateX(0%);
+    }
+}
+
 .filters fieldset > div{
     display: flex;
     align-items: center;
