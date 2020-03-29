@@ -192,7 +192,7 @@ if ($("#p-detail-tabs").length){
 
 /* load infographic images into parameters */
 
-if ($("#relatedFiless").length){
+if ($("#relatedFiles").length){
     $('select[data-parameter-name="Propositions"]').change(function() {
         var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
         var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');

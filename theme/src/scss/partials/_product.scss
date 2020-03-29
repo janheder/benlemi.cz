@@ -8,13 +8,14 @@
 .product{
     position: relative;
     width: 25%;
-    padding: 20px 10px;
+    padding: 0;
 }
 .p{
     position: relative;
     display: flex;
     flex-direction: column;
     height: 100% !important; //todo: delete js that sets .p height
+    padding: 20px 10px;
 }
 .p .image{
     padding-bottom: 75%;
