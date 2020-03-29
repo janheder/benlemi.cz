@@ -6,13 +6,22 @@
 }
 
 .filters{
-    background: $gray-300;
-    padding: 20px;
+    /*background: $gray-300;
+    padding: 20px;*/
 }
+
 
 @media (max-width: 991px){
     .filters-wrapper > div:first-child{ 
         display: flex;
+        position: fixed;
+        top: 56px;
+        z-index: 1;
+        left: 0;
+        width: 50%;
+    }
+    .filters-wrapper > div:first-child a{ 
+        flex-grow: 1;
     }
     .filters{ 
         position: fixed;
@@ -28,6 +37,8 @@
     }
 }
 
+
+
 .filters fieldset > div{
     display: flex;
     align-items: center;
@@ -36,11 +47,56 @@
 
 }
 .filter-section{
-    border-top: 1px solid $gray-400;
+    /*border-top: 1px solid $gray-400;*/
+    padding: 10px 0;
+}
+.filter-section h4{
     border-bottom: 1px solid $gray-400;
+}
+.filter-section-button{
+
 }
 .filters .slider-wrapper{
     display: none;
+}
+.filter-section fieldset label{
+    padding: 20px 5px;
+    position: relative;
+}
+.filter-section fieldset input[type="checkbox"]{
+    -webkit-appearance: none;
+}
+.filter-section fieldset input[type="checkbox"] + label{
+
+    &::before{
+        content: "";
+        background: transparent;
+        height: 14px;
+        width: 14px;
+        display: flex;
+        margin-right: 10px;
+        position: absolute;
+        left: 10px;
+        top: 19px;
+        border-radius: 0%;
+        border: 2px solid $gray-600;
+    }
+}
+.filter-section fieldset input[type="checkbox"]:checked + label{
+
+    &::after{
+        content: "";
+        background: $green-700;
+        height: 14px;
+        width: 14px;
+        display: flex;
+        margin-right: 10px;
+        position: absolute;
+        left: 10px;
+        top: 19px;
+        border-radius: 0%;
+        border: 2px solid $gray-600;
+    }
 }
 
 .filter-label{
@@ -61,3 +117,4 @@
         content: ")";
     }
 }
+
