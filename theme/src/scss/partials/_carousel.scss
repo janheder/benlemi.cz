@@ -3,6 +3,7 @@
 }
 .carousel{
     height: 100%;
+    overflow: hidden;
 }
 .carousel-inner{
     position: relative;
@@ -22,6 +23,7 @@
     opacity: 0;
     transition: 0.6s ease opacity;
     height: 100%;
+    max-width: 100%;
 }
 .carousel-inner .item.active{
     opacity: 1;
