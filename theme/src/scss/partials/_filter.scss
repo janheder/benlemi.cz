@@ -98,6 +98,23 @@
     }
 }
 
+.filter-section fieldset input[type="checkbox"]:disabled + label{
+    cursor: not-allowed;
+    
+    &::after{
+        content: "";
+        background: $gray-600;
+        height: 14px;
+        width: 14px;
+        display: flex;
+        margin-right: 10px;
+        position: absolute;
+        left: 0px;
+        top: 19px;
+        border-radius: 0%;
+    }
+}
+
 .filter-label{
     margin: 0;
     display: flex;
