@@ -65,6 +65,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+
+    &:hover, &:active, &:focus{
+        
+        .ctaSection__socialImg{
+            opacity: 1;
+        }   
+    }
 }
 .ctaSection__socialImg{
     opacity: 0.5;
