@@ -183,6 +183,7 @@
     height: 50px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 .language-toggle.--active{
     background: white;
