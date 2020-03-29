@@ -52,6 +52,7 @@
 }
 .filter-section h4{
     border-bottom: 1px solid $gray-400;
+    padding-bottom: 5px;
 }
 .filter-section-button{
 
@@ -93,14 +94,14 @@
         margin-right: 10px;
         position: absolute;
         left: 0px;
-        top: 19px;
+        top: 10px;
         border-radius: 0%;
     }
 }
 
 .filter-section fieldset input[type="checkbox"]:disabled + label{
     cursor: not-allowed;
-    
+
     &::after{
         content: "";
         background: $gray-600;
