@@ -41,8 +41,6 @@
     }
 }
 
-
-
 .filters fieldset > div{
     display: flex;
     align-items: center;
@@ -68,6 +66,7 @@
     padding: 5px 20px 5px 24px;
     position: relative;
     cursor: pointer;
+    width: 100%;
 }
 .filter-section fieldset input[type="checkbox"]{
     -webkit-appearance: none;
@@ -92,7 +91,11 @@
 
     &::after{
         content: "";
-        background: $green-700;
+        background-color: $green-700;
+        background-image: url("../icons/check-white.svg");
+        background-position: center center;
+        background-size: 12px 12px;
+        background-repeat: no-repeat;
         height: 14px;
         width: 14px;
         display: flex;
@@ -106,7 +109,7 @@
 
 .filter-section fieldset input[type="checkbox"]:disabled + label{
     cursor: not-allowed;
-
+    color: $gray-700;
     &::after{
         content: "";
         background: $gray-600;
