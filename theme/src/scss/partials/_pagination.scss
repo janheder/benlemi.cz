@@ -29,3 +29,10 @@
 .pagination-top{
     display: none;
 }
+.content .pagination-wrapper{
+    display: flex;
+}
+.pagination-loader{
+    margin: 20px 0;
+    flex-grow: 1;
+}
