@@ -186,11 +186,11 @@
     cursor: pointer;
 }
 .language-toggle.--active{
-    background: white;
+    background: $white;
     overflow: visible;
 }
 .language-toggle.--active .language-toggle-item{
-    background: white;
+    background: $white;
 }
 .language-toggle-item{
     height: 50px;
@@ -199,6 +199,11 @@
     background: transparent;
     display: flex;
     align-items: center;
+
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        background: transparent;
+    }
 }
 .language-toggle-item.active{
     
