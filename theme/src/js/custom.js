@@ -96,7 +96,7 @@ $(".menu-level-1 .ext").hover(
 );
 
 
-$("html:lang(cs) .menu-level-1").append('<div class="language-toggle" id="js-langToggle"><div class="language-toggle-item cz active">Česky</div><a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div>');
+$("html:lang(cs) .menu-level-1").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item cz active">Česky</div><a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
 $("#js-langToggle").click(function(){
     $("#js-langToggle").toggleClass("--active");
 });

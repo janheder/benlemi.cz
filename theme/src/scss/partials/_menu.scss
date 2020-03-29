@@ -185,6 +185,9 @@
     flex-direction: column;
     cursor: pointer;
 }
+.language-toggle > div{
+    box-shadow: 0px 4px 15px rgba($black,0.08);
+}
 .language-toggle.--active{
     background: $white;
     overflow: visible;
