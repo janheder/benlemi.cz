@@ -95,6 +95,10 @@ $(".menu-level-1 .ext").hover(
     }
 );
 
+
+$("html:lang(cs) .menu-level-1").append('<div class="language-toggle" id="js-langToggle"><div class="language-toggle-item cz active">Česky</div><div class="language-toggle-item sk">Slovensky</div><div class="language-toggle-item com">Anglicky</div></div>');
+
+
 // -----------------------------------------------------------------------------
 // HOMEPAGE
 // -----------------------------------------------------------------------------

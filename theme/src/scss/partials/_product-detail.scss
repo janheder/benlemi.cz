@@ -252,6 +252,12 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 500px){
+    .detail-parameters{
+        width: 100%;
+    }
+}
+
 
 #simple-variants{
     margin: 0 -5px;
@@ -420,7 +426,7 @@
         }
     }
     .navigation-btn{
-        display: none;
+        display: none !important;
     }
     ul{
         list-style: none;
@@ -696,6 +702,13 @@
     margin-top: 10px;
     font-size: 14px;
     color: $gray-800;
+}
+@media screen and (max-width: 500px){
+    .description-infographics{
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
 }
 
 #jsUnavailableCombinationMessage{

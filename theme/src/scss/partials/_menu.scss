@@ -176,3 +176,29 @@
         display: none;
     }
 }
+
+.language-toggle{
+    overflow: hidden;
+    background: transparent;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.language-toggle.--active{
+    background: white;
+    overflow: visible;
+}
+.language-toggle.--active .language-toggle-item{
+    background: white;
+}
+.language-toggle-item{
+    height: 50px;
+    padding: 0 20px;
+    flex-shrink: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+.language-toggle-item.active{
+    
+}
