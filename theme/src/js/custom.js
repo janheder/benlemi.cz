@@ -265,6 +265,7 @@ if ($("#rate-form").length){
 
 
 /* Cross selling products */
+if ($("#productsAlternative").length){
 
 var pName = $("#productsAlternative .product:first-child .name").prop("text");
 
@@ -295,3 +296,5 @@ $("#product-detail-form").on("submit", function(){
         $("#product-detail-form-2 button").click();
     }
 });
+
+}
