@@ -747,10 +747,19 @@
     width: 100px;
 }
 
+
+#productsAlternative{
+    display: none;
+}
+
 #crossSelling{
     display: none;
 }
 .detail-cross-selling{
     order: 21;
     padding: 10px 0;
+}
+.detail-cross-selling label{
+    padding-left: 10px;
+    cursor: pointer;
 }

@@ -96,7 +96,7 @@ $(".menu-level-1 .ext").hover(
 );
 
 
-$("html:lang(cs) .menu-level-1").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item cz active">Česky</div><a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
+$(".menu-level-1").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item cz active">Česky</div><a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
 $("#js-langToggle").click(function(){
     $("#js-langToggle").toggleClass("--active");
 });
@@ -160,8 +160,7 @@ if ($(".stars-wrapper").length){
 /* add button into advanced-order modal */   
 $(document).ready(function() { 
     $(".add-to-cart-button").click(function(){
-        $("html:lang(cs) .advanced-order .extra.step a").before('<div id="closeModal" class="btn btn-back">Jdu dále nakupovat</div>');
-        $("html:lang(sk) .advanced-order .extra.step a").before('<div id="closeModal" class="btn btn-back">Jdu ďalej nakupovat</div>');
+        $(".advanced-order .extra.step a").before('<div id="closeModal" class="btn btn-back">Jdu dále nakupovat</div>');
     }); 
 });
 
@@ -170,8 +169,8 @@ if ($(".type-detail").length){
     $("#ratingTab").wrapInner("<div id='ratingProduct'></div>");
     $("#ratingTab").append("<div id='ratingStore'></div>");
 
-    $("html:lang(cs) #ratingProduct").prepend("<h1>Hodnocení produktu</h1>");
-    $("html:lang(cs) #ratingTab #ratingStore").load("/hodnoceni-obchodu/ .content-inner");
+    $("#ratingProduct").prepend("<h1>Hodnocení produktu</h1>");
+    $("#ratingTab #ratingStore").load("/hodnoceni-obchodu/ .content-inner");
 }
 
 /* click on modal overlay closes the whole modal window */   
@@ -261,18 +260,17 @@ if ($(".cart-table").length){
 // -----------------------------------------------------------------------------
 
 if ($("#rate-form").length){
-    $("html:lang(cs) #rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
-    $("html:lang(sk) #rate-form").prepend("<h3 class='vote-form-title'>Pridať hodnotenie</h3>");
+    $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
 }
 
 
 /* Cross selling products */
 
-var pName = $("#productsRelated .product:first-child .name").prop("text");
+var pName = $("#productsAlternative .product:first-child .name").prop("text");
 
 $(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling"><input type="checkbox" id="csell1" name="csell1"><label for="csell1">' + pName + '</label></div>')
 
-var pUrl = $("#productsRelated .product:first-child a").prop("href");
+var pUrl = $("#productsAlternative .product:first-child a").prop("href");
 $("body").append("<div id='crossSelling'></div>");
 
 $("#crossSelling").load(pUrl + " #product-detail-form");
