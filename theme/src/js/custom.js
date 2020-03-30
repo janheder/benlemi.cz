@@ -203,7 +203,7 @@ if ($("#relatedFiles").length){
     $('select[data-parameter-name="Propositions"]').change(function() {
         var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
         var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
-        var src = $('#relatedFiles a[href*="' + optionClean + '.jpg"]').attr("href");
+        var src = $('#relatedFiles a[title*="' + optionClean + '"]').attr("href");
         if(typeof src != 'undefined'){
             $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>Stáhnout infografiku</a></div>');
             $(".description-infographics img").attr("src", src);

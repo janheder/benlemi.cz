@@ -1,0 +1,30 @@
+.recapitulation-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.reca-number{
+    width: 100%;
+    text-align: center;
+}
+
+.recapitulation-wrapper .co-payment-method{
+
+}
+.recapitulation-wrapper .co-order{
+    .cart-table-heading{
+        display: none;
+    }
+}
+
+.recapitulation-wrapper .summary-thx{
+    display: none;
+}
+
+.recapitulation-wrapper .order-summary-item.total{
+    text-align: center;
+    border: 0;
+    padding: 40px 0;
+}
+.order-complete-links{
+    text-align: center;
+}

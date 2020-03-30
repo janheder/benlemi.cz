@@ -2,6 +2,7 @@
     margin: 20px -5px;
     display: flex;
     justify-content: flex-end;
+    flex-grow: 1;
 }
 .pagination a, .pagination .current{
     padding: 10px;
