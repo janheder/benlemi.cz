@@ -264,3 +264,36 @@ if ($("#rate-form").length){
     $("html:lang(cs) #rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
     $("html:lang(sk) #rate-form").prepend("<h3 class='vote-form-title'>Pridať hodnotenie</h3>");
 }
+
+
+/* Cross selling products */
+
+var pName = $("#productsRelated .product:first-child .name").prop("text");
+
+$(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling"><input type="checkbox" id="csell1" name="csell1"><label for="csell1">' + pName + '</label></div>')
+
+var pUrl = $("#productsRelated .product:first-child a").prop("href");
+$("body").append("<div id='crossSelling'></div>");
+
+$("#crossSelling").load(pUrl + " #product-detail-form");
+
+
+$("#product-detail-form select[data-parameter-name='Colour']").change(function() {
+
+    $("#crossSelling form").prop("id", "product-detail-form-2");
+
+    var selected = $("#product-detail-form select[data-parameter-name='Colour'] option:selected").text(); 
+
+
+    $("#crossSelling option").filter(function(){
+        return $(this).text() == selected;
+    }).prop("selected", true);
+
+
+});
+
+$("#product-detail-form").on("submit", function(){
+    if($("#csell1").prop("checked")){
+        $("#product-detail-form-2 button").click();
+    }
+});
