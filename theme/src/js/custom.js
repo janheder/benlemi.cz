@@ -265,41 +265,55 @@ if ($("#rate-form").length){
 
 
 /* Cross selling products */
-/*
-
-
 if ($("#productsRelated .flag-custom2").length){
 
-    var pName = $("#productsRelated .flag-custom2").closest(".p").find(".name").prop("title");
 
-$(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling"><input type="checkbox" id="csell1" name="csell1"><label for="csell1">' + pName + '</label></div>')
-
-var pUrl = $("#productsRelated .product:first-child a").prop("href");
-$("body").append("<div id='crossSelling'></div>");
-
-$("#crossSelling").load(pUrl + " #product-detail-form");
+    $("#productsRelated .flag-custom2").each(function(){
 
 
-$("#product-detail-form select[data-parameter-name='Colour']").change(function() {
-
-    $("#crossSelling form").prop("id", "product-detail-form-2");
-
-    var selected = $("#product-detail-form select[data-parameter-name='Colour'] option:selected").text(); 
+        
+        var ran =  Math.floor(Math.random() * 100); 
 
 
-    $("#crossSelling option").filter(function(){
-        return $(this).text() == selected;
-    }).prop("selected", true);
+        var pName = $(this).closest(".p").find(".name").prop("title");
+ 
 
-});
+        $(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '">' + pName + '</label></div>')
+        
+        var pUrl = $(this).closest("a.image").prop("href");
 
-$("#product-detail-form").on("submit", function(){
-    if($("#csell1").prop("checked")){
-        $("#product-detail-form-2 button").click();
-    }
-});
+        $("body").append('<div id="crossSelling' + ran + '"></div>');
+        
+        $("#crossSelling" + ran).load(pUrl + " #product-detail-form");
+        
+        
+        $("#product-detail-form select[data-parameter-name='Colour']").change(function() {
+        
+            
+            $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
+
+            var selected = $("#product-detail-form select[data-parameter-name='Colour'] option:selected").text(); 
+        
+        
+            $("#crossSelling" + ran + " option").filter(function(){
+                return $(this).text() == selected;
+            }).prop("selected", true);
+        
+        });
+        
+        $("#product-detail-form").on("submit", function(){
+            if($("#csell" + ran).prop("checked")){
+                $("#product-detail-form-" + ran +" button").click();
+            }
+        });
+
+        
+
+
+    });
 
 }
 
 
-*/
+
+
