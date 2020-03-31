@@ -77,6 +77,12 @@
     width: calc(35% + 80px); 
     padding-left: 0;   
 }
+@media screen and (max-width: 991px){
+    .cart-table-heading{
+        display: none;
+    }
+}
+
 .p-label{
     width: 100%;
     font-size: 14px;
@@ -208,7 +214,6 @@
 }
 .p-total{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     padding-left: 10px;
     width: 15%;
@@ -241,6 +246,21 @@
 .cart-table .remove-item span{
     padding: 0;
     font-size: 0;
+}
+
+@media screen and (max-width: 991px){
+    .cart-table .removeable {
+        flex-wrap: wrap;
+    }
+    .cart-table .p-cell {
+        width: auto;
+    }
+    .p-price{
+        display: none;
+    }
+    .p-total{
+        width: auto;
+    }
 }
 
 
