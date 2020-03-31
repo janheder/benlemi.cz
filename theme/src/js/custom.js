@@ -77,8 +77,13 @@ $("#js-menuToggle, .menu-helper").click(function(){
 
 /* toggle show responsive searchbar */ 
 $("#js-searchToggle").click(function(){
-    $(".search").toggleClass("--active");
-    $(".search .form-control").focus(); 
+    if($(".search").hasClass("--active")){
+        $(".search").removeClass("--active");
+        $(".search .form-control").blur();  
+    }else{
+        $(".search").addClass("--active");
+        $(".search .form-control").focus(); 
+    }
 });
 
 /* *WIP* override shoptet cart function on mobile */ 

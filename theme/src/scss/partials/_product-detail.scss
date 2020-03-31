@@ -304,9 +304,9 @@
 }
 .add-to-cart .increase, .add-to-cart .decrease{
     position: absolute;
-    right: 0;
-    top: 0;
-    height: 46px;
+    right: 1px;
+    top: 1px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,6 +326,9 @@
     &::after{
         height: 10px;
         width: 2px;
+    }
+    &:hover, &:active, &:focus{
+        background: $grey-300;
     }
 }
 .add-to-cart .decrease{
