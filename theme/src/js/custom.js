@@ -265,13 +265,16 @@ if ($("#rate-form").length){
 
 
 /* Cross selling products */
-if ($("#productsAlternative").length){
+/*
 
-var pName = $("#productsAlternative .product:first-child .name").prop("text");
+
+if ($("#productsRelated .flag-custom2").length){
+
+    var pName = $("#productsRelated .flag-custom2").closest(".p").find(".name").prop("title");
 
 $(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling"><input type="checkbox" id="csell1" name="csell1"><label for="csell1">' + pName + '</label></div>')
 
-var pUrl = $("#productsAlternative .product:first-child a").prop("href");
+var pUrl = $("#productsRelated .product:first-child a").prop("href");
 $("body").append("<div id='crossSelling'></div>");
 
 $("#crossSelling").load(pUrl + " #product-detail-form");
@@ -288,7 +291,6 @@ $("#product-detail-form select[data-parameter-name='Colour']").change(function()
         return $(this).text() == selected;
     }).prop("selected", true);
 
-
 });
 
 $("#product-detail-form").on("submit", function(){
@@ -298,3 +300,6 @@ $("#product-detail-form").on("submit", function(){
 });
 
 }
+
+
+*/
