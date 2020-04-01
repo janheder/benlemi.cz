@@ -50,3 +50,28 @@
 .category-header input:checked + label{
     color: $green-700;
 }
+
+@media screen and (max-width: 991px){
+    .category-header{
+        position: fixed;
+        top: 56px;
+        width: 50%;
+        right: 0;
+        background: $white;
+        z-index: 1;
+    }  
+    .category-header form{
+        width: 100%;
+    }  
+    .category-header fieldset{
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 20px;
+    }  
+    .category-header div{
+        display: none;
+    }
+    .category-header label{
+        margin: 0px;
+    }
+}

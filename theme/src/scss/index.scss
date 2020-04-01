@@ -179,6 +179,12 @@ header + .content-wrapper .content-wrapper-in{
 }
 */
 
+.type-category .overall-wrapper{
+    background-image: url("../img/bg.png");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: bottom center;
+}
 
 @import "partials/_img";
 @import "partials/_btn";

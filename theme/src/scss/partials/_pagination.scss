@@ -32,6 +32,7 @@
 }
 .content .pagination-wrapper{
     display: flex;
+    flex-wrap: wrap;
 }
 .pagination-loader{
     margin: 20px 0;

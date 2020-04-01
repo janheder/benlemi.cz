@@ -9,7 +9,12 @@
 .sidebar-inner{
 
 }
-
+@media screen and (max-width: 991px){
+    .sidebar-left{
+        padding-right: 0px;
+        flex-shrink: 0;
+    }
+}
 
 .in-vyhledavani, .in-login, .in-affiliate-login, .type-page, .in-affiliate-registrace, .in-hodnoceni-obchodu{
     .sidebar{
