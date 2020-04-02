@@ -31,4 +31,8 @@ textarea.form-control{
         margin: 0 20px;
     }
 }
-
+input.form-control:disabled, select.form-control:disabled{
+    background: $gray-300;
+    border: 1px solid $gray-500;
+    cursor: not-allowed;
+}
