@@ -53,6 +53,7 @@
 @media screen and (max-width: 500px){
     .pointSingle{
         width: 33.333%;
+        flex-basis: 33.333%;
     }
     .pointSingle__imgWrap {
         border-radius: 50%;

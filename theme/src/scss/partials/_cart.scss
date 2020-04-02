@@ -705,3 +705,11 @@
     background: $yellow-200;
     color: $yellow-900;
 }
+
+.cart-content #company-info , .cart-content #shipping-address, .cart-content #note{
+    display: none;
+}
+.cart-content #company-info.visible, .cart-content #shipping-address.visible, .cart-content #note.visible{
+    display: flex;
+    flex-direction: column;
+}
