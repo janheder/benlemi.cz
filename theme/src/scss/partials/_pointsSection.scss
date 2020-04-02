@@ -4,6 +4,7 @@
 #pointsSection .container{
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 .pointSingle{
     display: flex;
@@ -47,4 +48,18 @@
     font-weight: 500;
     text-align: center;
     color: $gray-800;
+}
+
+@media screen and (max-width: 500px){
+    .pointSingle{
+        width: 33.333%;
+    }
+    .pointSingle__imgWrap {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+    }
+    .pointSingle__imgWrap img{
+        width: 50px;
+    }
 }

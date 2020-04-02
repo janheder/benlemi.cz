@@ -292,7 +292,7 @@ if ($("#productsRelated .flag-custom2").length){
         $("#crossSelling" + ran).load(pUrl + " #product-detail-form");
         
         
-        $("#product-detail-form select[data-parameter-name='Colour']").change(function() {
+        $("#product-detail-form select[data-parameter-name='Barva']").change(function() {
         
             
             $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);

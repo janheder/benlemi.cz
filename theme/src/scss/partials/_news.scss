@@ -61,6 +61,18 @@
 @media screen and (max-width: 767px){
     .news-item{
         width: 100%;
+        flex-direction: row;
+    }
+    .news-item > .image {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+    .news-item > .image > a {
+        height: 100px;
+    }
+    .news-item > .text {
+        padding-left: 20px;
     }
 }
 

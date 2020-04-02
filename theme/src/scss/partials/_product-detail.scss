@@ -755,7 +755,7 @@
     display: none;
 }
 
-#crossSelling{
+div[id^="crossSelling"]{
     display: none;
 }
 .detail-cross-selling{
