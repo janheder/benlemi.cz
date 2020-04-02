@@ -579,13 +579,21 @@
     }
 }
 .payment-info{
-    flex-grow: 1;
+    
 }
 .payment-info b{
     font-weight: 400;
 }
 .payment-info .not-possible-info{
     display: none;
+}
+.payment-logo{
+    height: 25px;
+    width: auto;
+    margin-left: 20px;
+}
+.payment-logo img{
+    max-height: 100%;
 }
 .order-delivery-payment-form .radio-wrapper input:disabled + label{
     border: 1px solid $pink-700;
@@ -607,6 +615,9 @@
 
 .payment-shipping-price{
     color: $red-800;
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
 }
 .payment-shipping-price.for-free{
     color: $green-700;
