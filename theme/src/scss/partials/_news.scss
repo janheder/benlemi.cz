@@ -78,7 +78,6 @@
 
 
 .news-item-detail{
-    max-width: 720px;
     margin: 0 auto;
 }
 .news-item-detail time{
@@ -86,3 +85,9 @@
     font-weight: 600;
     font-size: 14px;
 }
+
+.in-blog .sidebar-left{
+    order: 2;
+    padding-right: 0px;
+    padding-left: 40px;
+  }

@@ -36,6 +36,7 @@
 .ctaSection__boxWrap{
     display: flex;
     padding-top: 20px;
+    flex-wrap: wrap;
 }
 .ctaSection__box{
     margin-right: 20px;
@@ -107,10 +108,15 @@
     .ctaSection__box {
         margin-right: 10px;
         padding: 10px 10px;
+        margin-bottom: 10px;
+    }
+    .ctaSection__boxIcon {
+        display: none;
     }
     .ctaSection__socialWrap {
         margin-top: 10px;
         margin-bottom: 10px;
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 500px){

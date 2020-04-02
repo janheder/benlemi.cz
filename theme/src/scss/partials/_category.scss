@@ -53,12 +53,10 @@
 
 @media screen and (max-width: 991px){
     .category-header{
-        position: fixed;
-        top: 56px;
-        width: 50%;
-        right: 0;
-        background: $white;
-        z-index: 1;
+        display: none;
+    }  
+    .filter-sections .category-header{
+        display: flex;
     }  
     .category-header form{
         width: 100%;
@@ -77,5 +75,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 10px;
     }
 }

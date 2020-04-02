@@ -202,7 +202,6 @@ if ($("#p-detail-tabs").length){
 }
 
 /* load infographic images into parameters */
-
 if ($("#relatedFiles").length){
     $('select[data-parameter-name="Propositions"]').change(function() {
         var option = $('select[data-parameter-name="Propositions"] option:selected').text(); 
@@ -236,38 +235,6 @@ $("#thumbnailsShowMore").click(function(){
     $(".p-thumbnails-inner").toggleClass("--active");
 });
 
-// -----------------------------------------------------------------------------
-// PRODUCT CATEGORY
-// -----------------------------------------------------------------------------
-
-/* relocate heading and categories */
-if ($(".type-category").length){
-    $(".category-title").insertBefore(".content-wrapper-in");
-    $(".subcategories").insertAfter(".category-title");
-}
-
-// -----------------------------------------------------------------------------
-// CART STEP 1
-// -----------------------------------------------------------------------------
-
-if ($(".cart-table").length){
-    $("<div class='cart-table-heading'></div>").insertBefore(".cart-table tbody");
-    $(".cart-table-heading").prepend("<span>Název produktu</span>");
-
-    $(".removeable:first-child .p-label").each(function(){
-        var label = $(this).html();
-        $(".cart-table-heading span:last-child").after("<span>" + label + "</span>");
-    });
-}
-
-// -----------------------------------------------------------------------------
-// STORE RATING PAGE
-// -----------------------------------------------------------------------------
-
-if ($("#rate-form").length){
-    $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
-}
-
 
 /* Cross selling products */
 if ($("#productsRelated .flag-custom2").length){
@@ -275,14 +242,10 @@ if ($("#productsRelated .flag-custom2").length){
 
     $("#productsRelated .flag-custom2").each(function(){
 
-
-        
         var ran =  Math.floor(Math.random() * 100); 
-
 
         var pName = $(this).closest(".p").find(".name").prop("title");
  
-
         $(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '">' + pName + '</label></div>')
         
         var pUrl = $(this).closest("a.image").prop("href");
@@ -312,12 +275,50 @@ if ($("#productsRelated .flag-custom2").length){
             }
         });
 
-        
-
 
     });
 
 }
+
+// -----------------------------------------------------------------------------
+// PRODUCT CATEGORY
+// -----------------------------------------------------------------------------
+
+/* relocate heading and categories */
+if ($(".type-category").length){
+    $(".category-title").insertBefore(".content-wrapper-in");
+    $(".subcategories").insertAfter(".category-title");
+}
+
+/* relocate sort into filters */
+$(".filters-wrapper>div:first-child a").click(function(){
+    $("#category-header").insertAfter("#category-filter-hover");
+});
+
+// -----------------------------------------------------------------------------
+// CART STEP 1
+// -----------------------------------------------------------------------------
+
+if ($(".cart-table").length){
+    $("<div class='cart-table-heading'></div>").insertBefore(".cart-table tbody");
+    $(".cart-table-heading").prepend("<span>Název produktu</span>");
+
+    $(".removeable:first-child .p-label").each(function(){
+        var label = $(this).html();
+        $(".cart-table-heading span:last-child").after("<span>" + label + "</span>");
+    });
+}
+
+// -----------------------------------------------------------------------------
+// STORE RATING PAGE
+// -----------------------------------------------------------------------------
+
+if ($("#rate-form").length){
+    $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
+}
+
+
+
 
 
 
