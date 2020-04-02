@@ -53,12 +53,12 @@
 .checkout-box .contact-box strong{
     position: relative;
     display: flex;
-    align-items: flex-end;
     background-image: url("../img/customer-support.png");
-
-    &::after{
-        content: "Anička";
-    }
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    font-size: 0;
 }
 .checkout-box .contact-box ul{
     list-style: none;
