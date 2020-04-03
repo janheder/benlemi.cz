@@ -60,6 +60,13 @@
 
 }
 
+@media screen and (max-width: 991px){
+    .cart-header {
+        margin: -20px;
+        margin-bottom: 0;
+    }
+}
+
 .cart-table{
     width: 100%;
 }
