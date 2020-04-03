@@ -6,9 +6,10 @@
 }
 .cart-row{
     flex-direction: column;
+
     .col-md-8, .col-md-4{
         width: 100%;  
-        max-width: none;  
+        /*max-width: none;  */
     }
 }
 .cart-content{
@@ -32,7 +33,7 @@
 }
 .cart-header .step a{
     text-align: center;
-    padding: 20px;
+    padding: 20px 10px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -47,7 +48,7 @@
 }
 .cart-header .step strong{
     text-align: center;
-    padding: 10px;
+    padding: 20px 10px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -57,10 +58,10 @@
 .cart-header .step.active{
     border-bottom: 2px solid $green-700;
 }
-.cart-header .step.complete{
+.cart-header .step.completed{
     border-bottom: 2px solid $green-700;
 }
-.cart-header .step.complete a{
+.cart-header .step.completed a{
     color: $green-700;
 }
 
@@ -72,6 +73,10 @@
     .cart-header {
         margin: -20px;
         margin-bottom: 0;
+    }
+    .cart-header .step a, .cart-header .step strong{
+        padding: 10px;
+        font-size: 14px;
     }
 }
 
