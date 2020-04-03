@@ -46,7 +46,7 @@
 }
 .cart-header .step strong{
     text-align: center;
-    padding: 20px 20px;
+    padding: 10px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -259,6 +259,9 @@
     .cart-table .removeable {
         flex-wrap: wrap;
     }
+    .cart-table .removeable:first-child {
+        border: 0;
+    }
     .cart-table .p-name {
         width: calc(100% - 80px);
     }
@@ -270,7 +273,6 @@
     }
     .cart-table .p-availability {
         padding: 5px 20px 5px 0;
-        width: 100%;
     }
     .p-total{
         width: auto;
@@ -280,7 +282,11 @@
         padding-left: 0;
     }
 }
-
+@media screen and (max-width: 991px){
+    .cart-table .p-availability {
+        width: 100%;
+    }
+}
 
 .cart-table .related{
     padding: 5px 10px;

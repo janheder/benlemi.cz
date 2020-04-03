@@ -213,7 +213,10 @@
             position: absolute;
             height: 100vh;
             width: 100%;
-          }
+        }
+        & + .navigation-buttons .nav-search {
+            background-image: url("../icons/close.svg");
+        }
     }
     .search-form fieldset {
         width: 100%;
