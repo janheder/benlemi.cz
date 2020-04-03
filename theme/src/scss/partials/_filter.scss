@@ -31,16 +31,14 @@
         right: 0;
         height: 100%;
         transition: 0.3s ease transform;
-        background: rgba($black, 0.8);
         width: 100%;
         overflow-y: auto;
         display: flex;
-        justify-content: flex-end;
-    }
-    .filter-sections{
         padding: 20px;
         background: $white;
-        width: 260px;
+    }
+    .filter-sections{
+
     }
     .filters.visible{
         transform: translateX(0%);
