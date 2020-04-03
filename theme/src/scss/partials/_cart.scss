@@ -252,14 +252,25 @@
     .cart-table .removeable {
         flex-wrap: wrap;
     }
+    .cart-table .p-name {
+        width: calc(100% - 80px);
+    }
     .cart-table .p-cell {
         width: auto;
     }
-    .p-price{
+    .cart-table .p-price{
         display: none;
+    }
+    .cart-table .p-availability {
+        padding: 5px 20px 5px 0;
+        width: 100%;
     }
     .p-total{
         width: auto;
+        flex-grow: 1;
+    }
+    .cart-table .p-quantity {
+        padding-left: 0;
     }
 }
 
