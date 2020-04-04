@@ -11,52 +11,7 @@
 }
 
 
-@media (max-width: 991px){
-    .filters-wrapper > div:first-child{ 
-        display: none;
-        position: fixed;
-        bottom: 0;
-        z-index: 2;
-        left: 0;
-        width: 100%;
-    }
-    .filters-wrapper > div:first-child a{ 
-        flex-grow: 1;
-    }
-    #filtersToggle{
-        display: flex;
-        position: fixed;
-        bottom: 0;
-        z-index: 2;
-        left: 0;
-        width: 100%;
-        background: $green-700;
-        height: 50px;
-        justify-content: center;
-        align-items: center;
-        color: $white;
-    }
-    .filters{ 
-        position: fixed;
-        z-index: 1;
-        transform: translateX(100%);
-        top: 0px;
-        right: 0;
-        height: 100%;
-        transition: 0.3s ease transform;
-        width: 100%;
-        overflow-y: auto;
-        display: flex;
-        padding: 20px;
-        background: $white;
-    }
-    .filter-sections{
 
-    }
-    #content-wrapper.--showFilters .filters{
-        transform: translateX(0%);
-    }
-}
 
 .filters fieldset > div{
     display: flex;
@@ -163,4 +118,56 @@
 .filter-total-count{
     color: $gray-700;
     font-size: 14px; 
+}
+
+
+
+@media (max-width: 991px){
+    .filters-wrapper > div:first-child{ 
+        display: none;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        left: 0;
+        width: 100%;
+    }
+    .filters-wrapper > div:first-child a{ 
+        flex-grow: 1;
+    }
+    #filtersToggle{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        left: 0;
+        width: 100%;
+        background: $green-700;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+    }
+    .filters{ 
+        position: fixed;
+        z-index: 1;
+        transform: translateX(100%);
+        top: 0px;
+        right: 0;
+        height: 100%;
+        transition: 0.3s ease transform;
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        padding: 60px 20px 0 20px;
+        background: $white;
+    }
+    .filter-sections{
+
+    }
+    #content-wrapper.--showFilters .filters{
+        transform: translateX(0%);
+    }
+    .filter-total-count{
+        padding-bottom: 50px;
+    }
 }
