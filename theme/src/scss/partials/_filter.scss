@@ -34,6 +34,7 @@
         height: 50px;
         justify-content: center;
         align-items: center;
+        color: $white;
     }
     .filters{ 
         position: fixed;
@@ -52,7 +53,7 @@
     .filter-sections{
 
     }
-    .filters.--active{
+    #content.--showFilters .filters{
         transform: translateX(0%);
     }
 }

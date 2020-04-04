@@ -291,10 +291,13 @@ if ($(".type-category").length){
 }
 
 /* relocate sort into filters */
-$(".filters-wrapper").append('<div id="filtersToggle">Otevřít filtr</div>')
-$(".filters-wrapper > #filtersToggle").click(function(){
-    $("#filters").toggleClass("--active");
-});
+if ($(".filters-wrapper").length){
+    $("#content").append('<div id="filtersToggle">Otevřít filtr</div>')
+    $("#filtersToggle").click(function(){
+        $("#content").toggleClass("--showFilters");
+    });
+}
+
 
 // -----------------------------------------------------------------------------
 // CART STEP 1
