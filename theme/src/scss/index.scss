@@ -187,6 +187,10 @@ header + .content-wrapper .content-wrapper-in{
 }
 */
 
+.type-category .sidebar-inner div[class*="box-section"]{
+    display: none;
+}
+
 @import "partials/_img";
 @import "partials/_btn";
 @import "partials/_user-action";

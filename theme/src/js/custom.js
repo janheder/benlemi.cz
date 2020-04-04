@@ -292,8 +292,7 @@ if ($(".type-category").length){
 
 /* relocate sort into filters */
 $(".filters-wrapper>div:first-child a").click(function(){
-    $("#category-header").insertAfter("#category-filter-hover");
-    $("#filters").toggleClass("--active");
+
 });
 
 // -----------------------------------------------------------------------------

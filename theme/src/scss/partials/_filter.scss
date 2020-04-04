@@ -13,12 +13,12 @@
 
 @media (max-width: 991px){
     .filters-wrapper > div:first-child{ 
-        display: flex;
+        display: none;
         position: fixed;
-        top: 56px;
-        z-index: 1;
+        bottom: 0;
+        z-index: 2;
         left: 0;
-        width: 50%;
+        width: 100%
     }
     .filters-wrapper > div:first-child a{ 
         flex-grow: 1;
@@ -40,7 +40,7 @@
     .filter-sections{
 
     }
-    .filters.--active{
+    .filters.visible{
         transform: translateX(0%);
     }
 }
