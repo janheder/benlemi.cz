@@ -292,12 +292,16 @@ if ($(".type-category").length){
 
 /* relocate sort into filters */
 if ($(".filters-wrapper").length){
-    $("#content").append('<div id="filtersToggle">Otevřít filtr</div>')
+    $("#content-wrapper").append('<div id="filtersToggle">Otevřít filtr</div>')
     $("#filtersToggle").click(function(){
-        $("#content").toggleClass("--showFilters");
+        $("#content-wrapper").toggleClass("--showFilters");
+        if ($("#content-wrapper").hasClass("--showFilters")) {
+            $("#filtersToggle").text("Zavřít filtr");
+        }else{
+            $("#filtersToggle").text("Otevřít filtr");
+        }
     });
 }
-
 
 // -----------------------------------------------------------------------------
 // CART STEP 1
