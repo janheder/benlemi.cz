@@ -13,15 +13,27 @@
 
 @media (max-width: 991px){
     .filters-wrapper > div:first-child{ 
+        display: none;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        left: 0;
+        width: 100%;
+    }
+    .filters-wrapper > div:first-child a{ 
+        flex-grow: 1;
+    }
+    #filtersToggle{
         display: flex;
         position: fixed;
         bottom: 0;
         z-index: 2;
         left: 0;
-        width: 100%
-    }
-    .filters-wrapper > div:first-child a{ 
-        flex-grow: 1;
+        width: 100%;
+        background: $green-700;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
     }
     .filters{ 
         position: fixed;
@@ -40,7 +52,7 @@
     .filter-sections{
 
     }
-    .filters.visible{
+    .filters.--active{
         transform: translateX(0%);
     }
 }

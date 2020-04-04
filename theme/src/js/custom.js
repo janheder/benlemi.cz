@@ -291,8 +291,9 @@ if ($(".type-category").length){
 }
 
 /* relocate sort into filters */
-$(".filters-wrapper>div:first-child a").click(function(){
-
+$(".filters-wrapper").append('<div id="filtersToggle">Otevřít filtr</div>')
+$(".filters-wrapper > #filtersToggle").click(function(){
+    $("#filters").toggleClass("--active");
 });
 
 // -----------------------------------------------------------------------------
