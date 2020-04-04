@@ -13,7 +13,7 @@
 
 @media (max-width: 991px){
     .filters-wrapper > div:first-child{ 
-        display: none;
+        display: flex;
         position: fixed;
         bottom: 0;
         z-index: 2;
@@ -25,7 +25,7 @@
     }
     .filters{ 
         position: fixed;
-        z-index: 9;
+        z-index: 1;
         transform: translateX(100%);
         top: 0px;
         right: 0;
