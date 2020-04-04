@@ -2,7 +2,7 @@
     display: flex;
     background: $gray-300;
     position: relative;
-    z-index: 2;
+    z-index: 4;
 }
 .menu-level-1{
     display: flex;
@@ -113,7 +113,7 @@
     height: 100%;
     width: 100%;
     background: rgba($black,0.8);
-    z-index: 2;
+    z-index: 3;
 }
 @media screen and (max-width: 991px){
     body.--noScroll .menu-helper{

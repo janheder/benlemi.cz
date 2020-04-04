@@ -260,7 +260,7 @@ if ($("#productsRelated .flag-custom2").length){
             
             $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
 
-            var selected = $("#product-detail-form select[data-parameter-name='Colour'] option:selected").text(); 
+            var selected = $("#product-detail-form select[data-parameter-name='Barva'] option:selected").text(); 
         
         
             $("#crossSelling" + ran + " option").filter(function(){
