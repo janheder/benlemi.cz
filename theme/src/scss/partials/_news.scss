@@ -100,4 +100,34 @@
     order: 2;
     padding-right: 0px;
     padding-left: 40px;
-  }
+}
+
+
+.news-item-widget{
+    padding-bottom: 20px;
+}
+.news-item-widget h5{
+    margin-bottom: 10px;
+}
+.news-item-widget h5 a{
+    color: $gray-800;
+
+}
+.news-item-widget time{
+    font-size: 14px;
+    color: $gray-700;
+}
+.in-blog .news-item {
+    width: 50%;
+}
+
+@media screen and (max-width: 991px){
+    .in-blog .sidebar-left{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .in-blog .news-item {
+        width: 100%;
+    }  
+}
