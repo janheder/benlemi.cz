@@ -123,7 +123,19 @@
     }
 }
 @media (max-width: 500px){
+    #ctaSection {
+        flex-wrap: wrap;
+    }
     .ctaSection__content {
         padding-left: 0px;
+    }
+    .ctaSection__imgWrap{
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .ctaSection__img{
+        width: 200px;
     }
 }
