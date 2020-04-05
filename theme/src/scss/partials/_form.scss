@@ -37,50 +37,54 @@ input.form-control:disabled, select.form-control:disabled{
     cursor: not-allowed;
 }
 
-input[type="checkbox"]{
-    -webkit-appearance: none;
-}
-input[type="checkbox"] + label{
-    margin: 0;
-    flex-grow: 1;
-    padding: 15px 10px;
-    padding-left: 34px;
-    border: 1px solid $gray-400;
-    position: relative;
-    cursor: pointer;
-    margin: 5px 0;
-    display: flex;
 
-    &::before{
-        content: "";
-        background: transparent;
-        height: 14px;
-        width: 14px;
-        display: flex;
-        margin-right: 10px;
+.cart-content{
+    input[type="checkbox"]{
+        -webkit-appearance: none;
         position: absolute;
-        left: 0px;
-        top: 10px;
-        border-radius: 0%;
-        border: 2px solid $gray-600;
     }
-}
-input[type="checkbox"]:checked + label{
-    
-    &::after{
-        content: "";
-        background-color: $green-700;
-        background-image: url("../icons/check-white.svg");
-        background-position: center center;
-        background-size: 12px 12px;
-        background-repeat: no-repeat;
-        height: 14px;
-        width: 14px;
+    input[type="checkbox"] + label{
+        margin: 0;
+        flex-grow: 1;
+        padding: 15px 10px;
+        padding-left: 34px;
+        border: 1px solid $gray-500;
+        position: relative;
+        cursor: pointer;
+        margin: 0;
         display: flex;
-        margin-right: 10px;
-        position: absolute;
-        left: 0px;
-        top: 10px;
-        border-radius: 0%;
+    
+        &::before{
+            content: "";
+            background: transparent;
+            height: 14px;
+            width: 14px;
+            display: flex;
+            margin-right: 10px;
+            position: absolute;
+            left: 10px;
+            top: 19px;
+            border-radius: 0%;
+            border: 2px solid $gray-600;
+        }
+    }
+    input[type="checkbox"]:checked + label{
+    
+        &::after{
+            content: "";
+            background-color: $green-700;
+            background-image: url("../icons/check-white.svg");
+            background-position: center center;
+            background-size: 12px 12px;
+            background-repeat: no-repeat;
+            height: 14px;
+            width: 14px;
+            display: flex;
+            margin-right: 10px;
+            position: absolute;
+            left: 10px;
+            top: 19px;
+            border-radius: 0%;
+        }
     }
 }
