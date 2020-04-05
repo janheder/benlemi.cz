@@ -18,6 +18,9 @@
     .votes-wrap{
         padding-left: 0px;
     }
+    .in-hodnoceni-obchodu .content-inner .rate-wrapper, .in-hodnoceni-obchodu .content-inner .votes-wrap{
+        width: 100%;
+    }
 }
 .in-hodnoceni-obchodu .votes-wrap{
     width: 66.666%;
