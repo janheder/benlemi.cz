@@ -94,6 +94,8 @@
     color: $gray-700;
     font-weight: 600;
     font-size: 14px;
+    margin-bottom: 40px;
+    display: flex;
 }
 
 .in-blog .sidebar-left{
@@ -107,14 +109,14 @@
     padding-bottom: 20px;
 }
 .news-item-widget h5{
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .news-item-widget h5 a{
     color: $gray-800;
 
 }
 .news-item-widget time{
-    font-size: 14px;
+    font-size: 13px;
     color: $gray-700;
 }
 .in-blog .news-item {
