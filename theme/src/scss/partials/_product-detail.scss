@@ -644,9 +644,11 @@
 }
 .description-inner{
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .basic-description{
-
+    order: 1;
 }
 .basic-description > h3{
     text-align: center;
@@ -655,6 +657,7 @@
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
+    margin-top: 20px;
     padding-bottom: 15px;
     color: $gray-800;
     width: 100%;
@@ -673,6 +676,7 @@
 .extended-description{
     display: flex;
     flex-wrap: wrap;
+    order: 0;
 }
 .extended-description > h3{
     text-align: center;
@@ -681,7 +685,7 @@
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
-    margin-top: 20px;
+
     padding-bottom: 15px;
     color: $gray-800;
     width: 100%;
