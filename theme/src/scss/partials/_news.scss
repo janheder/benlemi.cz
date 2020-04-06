@@ -99,11 +99,13 @@
 }
 
 .in-blog .sidebar-left{
+    display: none;
+}
+.type-posts-listing{
     order: 2;
     padding-right: 0px;
     padding-left: 40px;
 }
-
 
 .news-item-widget{
     padding-bottom: 20px;
