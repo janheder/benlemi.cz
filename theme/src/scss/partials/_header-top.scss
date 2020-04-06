@@ -129,6 +129,7 @@
     background: $gray-300;
     transform: translateY(100%);
     z-index: 99;
+    min-width: 300px;
 
     &.active{
 
@@ -149,6 +150,7 @@
     display: flex;
     align-items: center;
     padding: 5px 10px;
+    flex-wrap: wrap;
 }
 .search-whisperer .search-whisperer-image{
     width: 60px;
@@ -156,9 +158,11 @@
 .search-whisperer .p-info{
     font-size: 14px;
     color: $gray-800;
+    width: calc(100% - 60px);
 }
 .search-whisperer .price-final{
     color: $red-800;
+    width: calc(100% - 60px);
 }
 .search-whisperer-empty{
     padding: 10px 20px;
