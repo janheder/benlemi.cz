@@ -325,9 +325,11 @@ if ($("#rate-form").length){
     $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
 }
 
+// -----------------------------------------------------------------------------
+// BLOG
+// -----------------------------------------------------------------------------
 
-
-
-
-
-
+/* load blog posts into homepage section */
+if ($(".blogCategories").length){
+    $(".blogCategories .blogCategories__domacnost").load("/blog-domacnost/ .news-wrapper");
+}
