@@ -121,17 +121,9 @@
     font-size: 13px;
     color: $gray-700;
 }
-.in-blog .news-item {
-    width: 50%;
-}
 
 @media screen and (max-width: 991px){
     .in-blog .sidebar-left{
         display: none;
     }
-}
-@media screen and (max-width: 767px){
-    .in-blog .news-item {
-        width: 100%;
-    }  
 }
