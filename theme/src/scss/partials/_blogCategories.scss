@@ -27,3 +27,23 @@
 .blogCategories__section{
     padding: 40px 0;
 }
+.blogCategories__section h2{
+    text-align: center;
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    color: $gray-800;
+    
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }  
+}
