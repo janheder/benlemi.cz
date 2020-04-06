@@ -332,5 +332,5 @@ if ($("#rate-form").length){
 /* load blog posts into homepage section */
 if ($(".blogCategories").length){
     $(".blogCategories .blogCategories__domacnost").load("/blog-domacnost/ .news-wrapper");
-    $(".blogCategories .blogCategories__domacnost").prepend("<h2>Domácnost</h2>");
+    $("<h2 class='blogCategories__sectionTitle'>Domácnost</h2>").inserBefore(".blogCategories .blogCategories__domacnost");
 }
