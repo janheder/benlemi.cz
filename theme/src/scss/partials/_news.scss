@@ -97,6 +97,9 @@
     margin-bottom: 40px;
     display: flex;
 }
+.news-item-detail .next-prev{
+    margin-top: 40px;
+}
 
 .in-blog .sidebar-left{
     display: none;
@@ -116,6 +119,10 @@ body[class*="in-blog-"] .sidebar-left{
 .news-item-widget{
     padding-bottom: 20px;
 }
+.news-item-widget h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
 .news-item-widget h5{
     margin-bottom: 0px;
     font-size: 14px;
@@ -131,6 +138,9 @@ body[class*="in-blog-"] .sidebar-left{
 
 @media screen and (max-width: 991px){
     .in-blog .sidebar-left{
+        display: none;
+    }
+    body[class*="in-blog-"] .sidebar-left{
         display: none;
     }
 }
