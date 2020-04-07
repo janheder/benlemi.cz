@@ -118,7 +118,7 @@ if ($("#homepageSection").length){
 
 /* load blog posts into homepage section */
 if ($("#blogSection").length){
-    $("#blogSection .blogSection__content").load("/blog/ .news-wrapper");
+    $("#blogSection .blogSection__content").load("/blog-domacnost/ .news-wrapper");
 }
 
 /* load rating into homepage section */
@@ -332,5 +332,5 @@ if ($("#rate-form").length){
 /* load blog posts into homepage section */
 if ($(".blogCategories").length){
     $(".blogCategories .blogCategories__domacnost").load("/blog-domacnost/ .news-wrapper");
-    $("<h2 class='blogCategories__sectionTitle'>Domácnost</h2>").inserBefore(".blogCategories .blogCategories__domacnost");
+    $("<h2 class='blogCategories__sectionTitle'>Domácnost</h2>").insertBefore(".blogCategories .blogCategories__domacnost");
 }
