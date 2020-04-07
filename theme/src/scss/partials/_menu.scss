@@ -37,10 +37,15 @@
 .menu-level-1 > li > a > b{
     font-weight: 400;
 }
-.menu-item-1002{
+.menu-level-1 > li:nth-child(4){
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+}
+@media screen and (max-width: 991px){
+    .menu-level-1 > li:nth-child(4){
+        justify-content: flex-start;
+    }  
 }
 .menu-level-2{
     list-style: none;
