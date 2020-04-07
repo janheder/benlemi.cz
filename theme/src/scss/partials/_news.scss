@@ -101,6 +101,12 @@
 .in-blog .sidebar-left{
     display: none;
 }
+
+body[class*="in-blog-"] .sidebar-left{
+    padding: 0;
+    padding-left: 40px;
+    order: 2;
+}
 .in-blog .type-posts-listing{
     order: 2;
     padding-right: 0px;
@@ -112,6 +118,7 @@
 }
 .news-item-widget h5{
     margin-bottom: 0px;
+    font-size: 14px;
 }
 .news-item-widget h5 a{
     color: $gray-800;
