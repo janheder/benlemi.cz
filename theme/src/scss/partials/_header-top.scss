@@ -151,9 +151,11 @@
     align-items: center;
     padding: 5px 10px;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .search-whisperer .search-whisperer-image{
     width: 60px;
+    padding-right: 20px;
 }
 .search-whisperer .p-info{
     font-size: 14px;
@@ -163,6 +165,7 @@
 .search-whisperer .price-final{
     color: $red-800;
     width: calc(100% - 60px);
+    font-size: 13px;
 }
 .search-whisperer-empty{
     padding: 10px 20px;
