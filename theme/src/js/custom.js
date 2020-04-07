@@ -323,7 +323,7 @@ if ($(".cart-table").length){
 
 if ($("#rate-form").length){
     $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
-}
+}   
 
 // -----------------------------------------------------------------------------
 // BLOG
