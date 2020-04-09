@@ -159,15 +159,27 @@
         background: $gray-200;
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
     .menu-level-2 > li {
         justify-content: flex-start;
         width: 100%;
-        padding: 5px 10px;
+        padding: 0;
         align-items: center;
+    }
+    .menu-level-2 > li > div{
+        padding: 0;
+        width: 100%;
+    }
+    .menu-level-2 > li > div > a{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 5px 20px;
     }
     .menu-level-2 .menu-image {
         height: 36px;
+        display: none;
     }
     .menu-level-2 > li > a > img {
         height: 100%;
