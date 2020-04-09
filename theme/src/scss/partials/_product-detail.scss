@@ -88,7 +88,7 @@
     padding-left: 5px;
     font-size: 13px;
     color: $gray-700;
-    font-weight: 600;
+    font-weight: 400;
     align-items: center;
     display: flex;
 }
@@ -246,6 +246,7 @@
     background-position: right 10px center;
     background-repeat: no-repeat;
     background-size: 14px 14px;
+    border-radius: 0;
 }
 .variant-list select::-ms-expand {
     display: none;
@@ -644,9 +645,11 @@
 }
 .description-inner{
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .basic-description{
-
+    order: 1;
 }
 .basic-description > h3{
     text-align: center;
@@ -655,6 +658,7 @@
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
+    margin-top: 20px;
     padding-bottom: 15px;
     color: $gray-800;
     width: 100%;
@@ -673,6 +677,8 @@
 .extended-description{
     display: flex;
     flex-wrap: wrap;
+    order: 0;
+    margin-bottom: 20px;
 }
 .extended-description > h3{
     text-align: center;
@@ -681,7 +687,7 @@
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
-    margin-top: 20px;
+
     padding-bottom: 15px;
     color: $gray-800;
     width: 100%;

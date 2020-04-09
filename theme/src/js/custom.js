@@ -118,7 +118,7 @@ if ($("#homepageSection").length){
 
 /* load blog posts into homepage section */
 if ($("#blogSection").length){
-    $("#blogSection .blogSection__content").load("/blog/ .news-wrapper");
+    $("#blogSection .blogSection__content").load("/blog-domacnost/ .news-wrapper");
 }
 
 /* load rating into homepage section */
@@ -323,11 +323,18 @@ if ($(".cart-table").length){
 
 if ($("#rate-form").length){
     $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
+}   
+
+// -----------------------------------------------------------------------------
+// BLOG
+// -----------------------------------------------------------------------------
+
+/* load blog posts into homepage section */
+if ($(".blogCategories").length){
+    $(".blogCategories .blogCategories__domacnost").load("/blog-domacnost/ .news-wrapper");
+    $("<h2 class='blogCategories__sectionTitle'>Domácnost</h2>").insertBefore(".blogCategories .blogCategories__domacnost");
+    
+    $(".blogCategories .blogCategories__o-nas").load("/blog-o-nas/ .news-wrapper");
+    $("<h2 class='blogCategories__sectionTitle'>O nás</h2>").insertBefore(".blogCategories .blogCategories__o-nas");
+
 }
-
-
-
-
-
-
-

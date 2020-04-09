@@ -90,6 +90,12 @@
         background: $green-200;
     }
 }
+@media screen and (max-width: 991px){
+    .order-summary-inner{
+        display: none;
+    }
+}
+
 .cart-items{
 
 }

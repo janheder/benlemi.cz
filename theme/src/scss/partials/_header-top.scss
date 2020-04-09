@@ -129,6 +129,7 @@
     background: $gray-300;
     transform: translateY(100%);
     z-index: 99;
+    min-width: 300px;
 
     &.active{
 
@@ -137,7 +138,7 @@
 .search-whisperer ul{
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
 }
 .search-whisperer ul > li{
 
@@ -145,24 +146,46 @@
 .search-whisperer ul > li{
 
 }
-.search-whisperer ul > li >a{
+.search-whisperer ul > li > a{
     display: flex;
     align-items: center;
     padding: 5px 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    &:hover, &:active, &:focus{
+        background: $white;
+        text-decoration: none;
+
+        .p-info{
+            color: $green-700;
+        }
+    }
 }
 .search-whisperer .search-whisperer-image{
     width: 60px;
+    padding-right: 20px;
 }
 .search-whisperer .p-info{
     font-size: 14px;
     color: $gray-800;
+    width: calc(100% - 60px);
+}
+.search-whisperer .p-availability{
+    display: none;
 }
 .search-whisperer .price-final{
     color: $red-800;
+    width: calc(100% - 60px);
+    font-size: 13px;
 }
 .search-whisperer-empty{
     padding: 10px 20px;
 }
+.search-whisperer-documents{
+    display: none;
+}
+
 
 .search-form .btn{
     font-size: 0;
