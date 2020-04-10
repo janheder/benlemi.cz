@@ -687,6 +687,8 @@
     height: 48px;
     overflow: hidden;
     background: $white;
+    min-width: 100px;
+    flex-shrink: 0;
 }
 .country-flags.active{
     height: 288px;
@@ -712,7 +714,7 @@
     display: flex;
     align-items: center;
     order: 1;
-    padding: 0px 20px;
+    padding: 0px 10px;
     height: 48px;
     flex-shrink: 0;
     cursor: pointer;
@@ -770,3 +772,4 @@
     display: flex;
     flex-direction: column;
 }
+
