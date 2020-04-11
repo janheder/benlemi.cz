@@ -136,7 +136,11 @@ if ($("#pointsSection").length){
             $("#pointsSection").insertBefore("#footer");
         }
 
-    }else{
+    }
+    else if ($("body.type-product").length){
+        $("#pointsSection").insertBefore(".p-detail-tabs-wrapper");
+    }
+    else{
         $("#footer").before('<section id="newsletterSection"></section>');
         $("#newsletterSection").load("/ #newsletterSection .container");
         $("#pointsSection").insertBefore("#newsletterSection");
