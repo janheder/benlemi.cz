@@ -1,10 +1,26 @@
+.in-404{
+    
+}
 .empty-content-404{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .empty-content-404 h1{
     
+}
+.empty-content-404 h1::after{
+    content: "";
+    display: flex;
+    background-image: url("../img/404.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 800px;
+    max-width: 100%;
+    height: 600px;
 }
 .empty-content-404 h2{
     
@@ -15,3 +31,4 @@
 .empty-content-404 p a{
     
 }
+
