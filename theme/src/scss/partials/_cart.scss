@@ -490,14 +490,31 @@
     text-align: center;
     margin: 40px 0;
     position: relative;
-
 }
+.cart-empty .cart-heading{
+    font-size: 24px;
+    font-weight: 600;
+}
+.cart-empty .cart-heading::after{
+    content: "";
+    display: flex;
+    background-image: url("../img/empty.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    margin: 40px 0;
+}
+
 .empty-cart-boxes .col-md-6{
     width: 100%;
     text-align: center;
     flex: 100%;
     max-width: 100%;
 }
+
 .empty-cart-boxes .col-md-6:last-child{
     display: none;
 }
