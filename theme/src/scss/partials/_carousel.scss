@@ -66,3 +66,13 @@
 .before-carousel .banner-wrapper a img{
     object-fit: cover;
 }
+
+
+.mobile .banners-row .col-sm-8{
+    width: 100%;
+    max-width: none;
+    flex-basis: 100%;
+}
+.mobile .banners-row #carousel{
+    padding-top: 20px;
+}

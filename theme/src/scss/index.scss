@@ -62,7 +62,7 @@ body{
     }
 }
 
-body.in-kosik::after body.ordering-process::after{
+body.in-kosik::after, body.ordering-process::after{
     content: "";
     height: 300px;
     width: 100%;

@@ -494,6 +494,10 @@
 .cart-empty .cart-heading{
     font-size: 24px;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .cart-empty .cart-heading::after{
     content: "";
@@ -507,7 +511,9 @@
     height: 400px;
     margin: 40px 0;
 }
-
+.cart-empty .col-md-4{
+    display: none;
+}
 .empty-cart-boxes .col-md-6{
     width: 100%;
     text-align: center;
