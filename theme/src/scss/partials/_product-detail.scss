@@ -54,10 +54,11 @@
 
 }
 .product-top{
-
+    position: relative;
 }
 .p-detail-info{
-    display: none;
+    z-index: 1;
+    position: absolute;
 }
 .p-detail-info .flags{
     position: absolute;
@@ -313,6 +314,7 @@
     align-items: center;
     width: 40px;
     cursor: pointer;
+    background: $white;
 
     &::before, &::after{
         content: "";
@@ -333,7 +335,7 @@
     }
 }
 .add-to-cart .decrease{
-    left: 0;
+    left: 1px;
     right: auto;
     &::after{
         content: none;
@@ -741,6 +743,19 @@
 #relatedFiles, .shp-tab-link[href="#relatedFiles"]{
     display: none !important;
 } 
+#relatedFiles{
+    flex-wrap: wrap;
+}
+#relatedFiles li{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+
 
 #productVideos{
 
@@ -777,3 +792,5 @@ div[id^="crossSelling"]{
     cursor: pointer;
     margin: 0;
 }
+
+

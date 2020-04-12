@@ -70,10 +70,9 @@
     }
     .news-item > .image > a {
         height: 100px;
-    }¨
+    }
     .news-item .title {
         padding: 0px 0 10px 0;
-
     }
     .news-item > .text {
         padding-left: 20px;
@@ -85,7 +84,18 @@
         padding: 5px 0px
     }
 }
-
+@media screen and (max-width: 500px){
+    .news-item > .image {
+        width: 60px;
+        height: 60px;
+    }
+    .news-item > .image > a {
+        height: 60px;
+    }
+    .news-item > .text {
+        padding-left: 10px;
+    }
+}
 
 .news-item-detail{
     margin: 0 auto;

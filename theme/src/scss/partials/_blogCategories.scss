@@ -48,3 +48,13 @@
         background: $green-200;
     }  
 }
+
+@media screen and (max-width: 991px){
+    .blogCategories__row{
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    .blogCategories__single{
+        padding: 5px;
+    }
+}
