@@ -157,6 +157,7 @@
     .menu-level-1 > li > a{
         justify-content: flex-start;
         height: 50px;
+        padding: 0 15px;
     }
     .menu-level-1 > li > a > b{
         font-weight: 600;
@@ -183,7 +184,8 @@
         display: flex;
         justify-content: flex-start;
         width: 100%;
-        padding: 5px 20px;
+        padding: 5px 30px 5px 15px;
+        color: $gray-700;
     }
     .menu-level-2 .menu-image {
         height: 36px;
