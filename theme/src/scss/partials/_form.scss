@@ -42,6 +42,7 @@ input.form-control:disabled, select.form-control:disabled{
     input[type="checkbox"]{
         -webkit-appearance: none;
         position: absolute;
+        opacity: 0;
     }
     input[type="checkbox"] + label{
         margin: 0;

@@ -77,10 +77,15 @@
     #newsletterSection {
         padding: 40px 0;
     }
+    #newsletterSection .container{
+        flex-wrap: wrap;
+    }
     .newsletterSection__form{
         width: 100%;
     }
-    .newsletterSection__imgWrap {
-        display: none;
+    .newsletterSection__imgWrap{
+        position: relative;
+        right: auto;
+        max-width: 100%;
     }
 }

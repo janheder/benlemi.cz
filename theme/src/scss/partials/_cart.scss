@@ -597,6 +597,8 @@
 }
 .order-delivery-payment-form .radio-wrapper input{
     -webkit-appearance: none;
+    opacity: 0;
+    position: absolute;
 }
 .order-delivery-payment-form .radio-wrapper label{
     margin: 0;

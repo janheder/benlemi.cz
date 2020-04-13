@@ -42,6 +42,8 @@
 }
 .filter-section fieldset input[type="checkbox"]{
     -webkit-appearance: none;
+    opacity: 0;
+    position: absolute;
 }
 .filter-section fieldset input[type="checkbox"] + label{
 
