@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var uglify = require('gulp-uglify');
+let uglify = require('gulp-uglify-es').default;
 var pump = require('pump');
 var concat = require('gulp-concat');
 
