@@ -156,3 +156,14 @@ footer{
 .copyright strong{
     padding: 0 0 0 3px;
 }
+
+.footer-icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-icons img{
+    height: 60px;
+    width: auto;
+    margin: 10px;
+}
