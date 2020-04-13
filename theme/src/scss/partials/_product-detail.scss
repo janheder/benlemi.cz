@@ -76,6 +76,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 13px;
 }
 .p-detail-info .flag .price-standard{
     display: none;
@@ -100,7 +101,7 @@
 
 }
 .p-thumbnails-wrapper{
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .p-thumbnails{
     position: relative;
@@ -200,6 +201,15 @@
     color: $red-700;
     font-size: 24px;
     font-weight: 700;
+}
+.price-final-currency{
+    font-size: 18px;
+}
+.price-final-dph{
+
+}
+.price-final-pre{
+    font-size: 18px;
 }
 .price-measure{
 
@@ -444,6 +454,7 @@
         padding: 0;
         margin: 0;
         display: flex;
+        flex-wrap: wrap;
     }
     li{
 
