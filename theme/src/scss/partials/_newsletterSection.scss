@@ -89,3 +89,9 @@
         max-width: 100%;
     }
 }
+
+@media screen and (max-width: 991px){
+    .newsletterSection__form{
+        padding: 20px;
+    }
+}

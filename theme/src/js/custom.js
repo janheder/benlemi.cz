@@ -284,6 +284,50 @@ if ($("#productsRelated .flag-custom2").length){
 
 }
 
+
+/* Adjust price displaying */
+if ($(".type-detail").length){
+
+    $(".price-final span").each(function() {
+        var str = $(this).text();
+        var strM = str.replace(/\s/g, '',).replace("Kč", '').replace("od", ''); 
+        $(this).text(strM);
+        var str = $(this).append("<span> Kč</span>");
+    });
+
+    $(".price-final span.default-variant").prepend("<span>od </span>");
+
+    $(".price-additional span").each(function() {
+        var str1 = $(this).text();
+        var strM1 = str1.replace(/\s/g, '',).replace("KčbezDPH", '').replace("od", ''); 
+        $(this).text(strM1);
+        var str1 = $(this).append("<span> Kč bez DPH</span>"); 
+    });
+
+    $(".price-additional span.default-variant").prepend("<span>od </span>");
+
+    $(".price-standard span").each(function() {
+        var str1 = $(this).text();
+        var strM1 = str1.replace(/\s/g, '',).replace("Kč", '').replace("od", ''); 
+        $(this).text(strM1);
+        var str1 = $(this).append("<span> Kč</span>");
+    });
+
+    $(".price-standard span.default-variant").prepend("<span>od </span>");
+
+    $(".price-additional:not(:has(span))").each(function() {
+        var str1 = $(this).text();
+        var strM1 = str1.replace(/\s/g, '',).replace("KčbezDPH", ''); 
+        $(this).text(strM1);
+        var str1 = $(this).append("<span> Kč bez DPH</span>");
+    });
+}
+
+
+
+
+
+
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
 // -----------------------------------------------------------------------------

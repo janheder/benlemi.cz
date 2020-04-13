@@ -36,6 +36,9 @@ footer{
             }
         }
     }
+    &:last-child{
+        display: none;
+    }
 }
 @media screen and (max-width: 991px){
     .footer-rows .custom-footer > div{
