@@ -23,10 +23,12 @@ footer{
     flex-direction: column;
     flex-grow: 1;
     padding: 0 10px;
+    max-width: 33.333%;
 
     &:first-child{
         flex-grow: 1;
         width: 100%;
+        min-width: 100%;
 
         .banner-wrapper{
             width: 100%;
@@ -44,6 +46,7 @@ footer{
     .footer-rows .custom-footer > div{
         width: 50%;
         padding: 10px;
+        max-width: none;
     }
     .footer-rows .custom-footer > div > h4, .footer-rows .banner-wrapper h4{
         font-size: 16px;
@@ -166,4 +169,7 @@ footer{
     height: 60px;
     width: auto;
     margin: 10px;
+}
+.footer-icons img:last-child{
+    height: 40px;
 }
