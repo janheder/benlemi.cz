@@ -208,7 +208,7 @@
 .price-final-dph{
 
 }
-.price-final-pre{
+.price-final .price-final-pre{
     font-size: 18px;
 }
 .price-measure{
@@ -563,6 +563,10 @@
 @media screen and (max-width: 767px){
     #ratingProduct{
         width: 100%;
+        padding: 0 10px;
+    }
+    #ratingProduct .rate-wrapper{
+        width: 100%;
     }
 }
 
@@ -620,6 +624,9 @@
     #ratingStore{
         width: 100%;
         padding: 0 10px;
+    }
+    #ratingStore .rate-wrapper {
+        width: 100%;
     }
 }
 
