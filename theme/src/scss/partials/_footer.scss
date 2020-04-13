@@ -164,12 +164,13 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 20px;
 }
 .footer-icons img{
     height: 60px;
     width: auto;
     margin: 10px;
 }
-.footer-icons img:last-child{
+.footer-icons > img:last-child{
     height: 40px;
 }
