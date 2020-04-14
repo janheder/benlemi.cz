@@ -243,29 +243,25 @@ $("#thumbnailsShowMore").click(function(){
 /* Cross selling products */
 if ($("#productsRelated .flag-custom2").length){
 
-
     $("#productsRelated .flag-custom2").each(function(){
 
         var ran =  Math.floor(Math.random() * 100); 
 
         var pName = $(this).closest(".p").find(".name").prop("title");
- 
+
         $(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '">' + pName + '</label></div>')
-        
+
         var pUrl = $(this).closest("a.image").prop("href");
 
         $("body").append('<div id="crossSelling' + ran + '"></div>');
-        
+
         $("#crossSelling" + ran).load(pUrl + " #product-detail-form");
-        
-        
+
         $("#product-detail-form select[data-parameter-name='Barva']").change(function() {
-        
-            
+
             $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
 
             var selected = $("#product-detail-form select[data-parameter-name='Barva'] option:selected").text(); 
-        
         
             $("#crossSelling" + ran + " option").filter(function(){
                 return $(this).text() == selected;
@@ -278,10 +274,7 @@ if ($("#productsRelated .flag-custom2").length){
                 $("#product-detail-form-" + ran +" button").click();
             }
         });
-
-
     });
-
 }
 
 
