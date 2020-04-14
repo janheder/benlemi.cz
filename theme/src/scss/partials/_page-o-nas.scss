@@ -2,10 +2,18 @@
 
 }
 .oNas__quote{
+    padding: 20px;
+    background: $gray-300;
+    display: flex;
+    text-align: center;
 
 }
 .oNas__headerImg{
-
+    margin: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .oNas__h2{
 
@@ -40,7 +48,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 20px 10px;
 }
 .oNas__profileImgWrap{
     height: 150px;
@@ -53,9 +61,10 @@
     padding-top: 20px;
 }
 .oNas__profileSubtitle{
-
+    margin-bottom: 10px;
 }
 .oNas__profileText{
     color: $gray-700;
     font-size: 14px;
+    margin: 0;
 }
