@@ -29,7 +29,9 @@
 
 }
 .oNas__profiles{
-
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .oNas__profile{
     width: 33.333%;
@@ -37,20 +39,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 10px;
 }
 .oNas__profileImgWrap{
-    height: 80px;
-    width: 80px;
+    height: 150px;
+    width: 150px;
 }
 .oNas__profileImg{
 
 }
 .oNas__profileTitle{
-
+    padding-top: 20px;
 }
 .oNas__profileSubtitle{
 
 }
 .oNas__profileText{
-
+    color: $gray-700;
+    font-size: 14px;
 }
