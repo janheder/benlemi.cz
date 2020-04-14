@@ -32,10 +32,15 @@
 
 }
 .oNas__profile{
-
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .oNas__profileImgWrap{
-
+    height: 80px;
+    width: 80px;
 }
 .oNas__profileImg{
 
