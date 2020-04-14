@@ -10,8 +10,8 @@
     align-items: center;
 }
 .oNas__headerImg{
-    margin: 40px 0;
-    max-width: 400px;
+    margin: 40px auto;
+    max-width: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,4 +69,8 @@
     color: $gray-700;
     font-size: 14px;
     margin: 0;
+}
+.oNas__footerImg{
+    max-width: 700px;
+    margin: 40px auto;
 }
