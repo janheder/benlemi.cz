@@ -13,10 +13,13 @@
 }
 .vyhody__singleContent{
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .vyhody__singleTitle{
 
 }
 .vyhody__singleText{
-
+    margin: 0;
 }
