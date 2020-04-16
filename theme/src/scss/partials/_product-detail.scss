@@ -60,6 +60,9 @@
     z-index: 1;
     position: absolute;
 }
+.p-detail-info :not(.flags){
+
+}
 .p-detail-info .flags{
     position: absolute;
     top: 10px;
