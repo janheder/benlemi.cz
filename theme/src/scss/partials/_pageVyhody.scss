@@ -1,12 +1,20 @@
 .vyhody{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 .vyhody__title{
-
+    width: 100%;
 }
 .vyhody__single{
     display: flex;
-    padding: 20px 0;
+    padding: 20px;
+    width: 50%;
+}
+.vyhody__single:nth-child(even){
+    padding-left: 0;
+}
+.vyhody__single:nth-child(odd){
+    padding-right: 0;
 }
 .vyhody__singleImg{
     width: 100px;
@@ -16,11 +24,19 @@
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .vyhody__singleTitle{
 
 }
 .vyhody__singleText{
     margin: 0;
+}
+
+@media screen and (max-width: 991px){
+    .vyhody__singleImg{
+        width: 60px;
+    }
+    .vyhody__single{
+        width: 100%;
+    }
 }
