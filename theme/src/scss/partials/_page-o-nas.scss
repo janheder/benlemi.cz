@@ -18,14 +18,15 @@
     text-align: center;
 }
 .oNas__h2{
-
-}
+    padding-top: 20px;
+}   
 .oNas__p{
 
 }
 .oNas__points{
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 .oNas__point{
     width: 33.333%;
@@ -46,7 +47,9 @@
     margin: 0;
 }
 .oNas__link{
-
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .oNas__profiles{
     margin: 0 -10px;
@@ -81,7 +84,7 @@
 }
 .oNas__footerImg{
     max-width: 700px;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
 }
 
 @media screen and (max-width: 767px){
