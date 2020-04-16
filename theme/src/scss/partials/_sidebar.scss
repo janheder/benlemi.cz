@@ -9,6 +9,26 @@
 .sidebar-inner{
 
 }
+.sidebar-inner .box h4{
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    color: $gray-800;
+    
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }  
+}
+
 @media screen and (max-width: 991px){
     .sidebar-left{
         padding-right: 0px;
