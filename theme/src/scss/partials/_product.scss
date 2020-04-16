@@ -121,6 +121,7 @@
 .p .ratings-wrapper{
     order: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 .p .stars-wrapper{
     margin: 0;
