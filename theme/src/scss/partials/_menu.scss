@@ -216,9 +216,13 @@
 }
 .language-toggle.--active .language-toggle-item{
     background: $white;
+    height: 36px;
+    z-index: 5;
+    position: relative;
 }
 .language-toggle-item{
     height: 20px;
+    font-size: 14px;
     padding: 0 10px;
     flex-shrink: 0;
     background: transparent;
@@ -245,7 +249,8 @@
     font-size: 14px;
     padding: 0 10px;
     border-left: 1px solid $gray-400;
+    border-right: 1px solid $gray-400;
 }
 .navLinks__link:first-child{
-    border: 0;;
+    border: 0;
 }
