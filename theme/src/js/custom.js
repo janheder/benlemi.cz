@@ -256,7 +256,6 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 
 
 /* Cross selling products */
-/*
 if ($("#productsRelated .flag-custom2").length){
 
     $("#productsRelated .flag-custom2").each(function(){
@@ -292,7 +291,6 @@ if ($("#productsRelated .flag-custom2").length){
         });
     });
 }
-*/
 
 
 /* Adjust price displaying */
