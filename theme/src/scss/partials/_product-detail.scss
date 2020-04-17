@@ -489,6 +489,15 @@
     }
 }
 
+.p-detail-tabs li:nth-child(2){
+    order: 0;
+}
+.p-detail-tabs li:nth-child(5){
+    order: 20;
+}
+.p-detail-tabs li:nth-child(6){
+    order: 10;
+}
 
 #productDiscussion, a[href="#productDiscussion"]{
     display: none !important;

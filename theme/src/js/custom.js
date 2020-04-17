@@ -241,8 +241,12 @@ $("#thumbnailsShowMore").click(function(){
 
 
 /* reloace related product before rating */
-
 $("#productsRelated").insertBefore("#productDiscussion");
+
+
+/* */
+$("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="shp-tab-link" role="tab">Parametry</a></li>');
+
 
 
 /* Cross selling products */
