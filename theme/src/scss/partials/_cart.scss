@@ -36,7 +36,6 @@
 .cart-header .step{
     display: flex;
     flex-grow: 1;
-    flex-basis: 0;
 }
 .cart-header .step a{
     text-align: center;
@@ -403,7 +402,7 @@
 
 }
 .cart-summary .extras-wrap .extra{
-    padding: 10px;
+    padding: 10px 20px;
     font-weight: 400;
     color: $gray-800;
     background: $gray-300;
@@ -572,6 +571,14 @@
 /*step 1 delivery and payment page*/
 .in-krok-1 .cart-row{
     flex-direction: row;
+}
+@media screen and (max-width: 991px){
+    .in-krok-1 .cart-row{
+        flex-direction: column;
+    }
+    .cart-row .col-md-8, .cart-row .col-md-4 {
+        max-width: none;
+    }
 }
 #orderFormSubmit{
     display: none;
