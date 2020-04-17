@@ -405,4 +405,4 @@ $("#cboxContent .extra.step").prepend('<div class="btn" id="modalClose">Zpět do
 $(".search").insertAfter(".language-toggle");
 
 
-$(".top-navigation-tools").insertAfter(".nav-user");
+$('<div class="navLinks"><a href="/login/" class="navLinks__link">Přihlášení</a><a href="/registrace/" class="navLinks__link">Registrace</a></div>').insertAfter(".nav-user");
