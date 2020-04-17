@@ -20,7 +20,7 @@
 }
 
 .type-product .advanced-order .h1{
-    padding: 10px 50px;
+    padding: 40px 50px;
     text-align: center;
     font-size: 24px;
 }
@@ -29,18 +29,19 @@
     display: none;
 }
 .type-product .extras-wrap{
-    padding: 10px 50px 50px 50px;
+    padding: 40px 50px 40px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: $gray-300;
 }
 .type-product .delivery{
     text-align: center;
     padding: 10px 0;
     width: 100%;
     margin-bottom: 20px;
-    background: $gray-300;
+    background: $green-300;
 }
 .type-product .step{
     display: flex;
@@ -75,7 +76,7 @@
     padding: 10px 50px;
 }
 .type-product .advanced-order #products{
-    padding: 0 50px 30px 50px;
+    padding: 0 50px 10px 50px;
     display: flex;
     justify-content: center;
     margin: 0;

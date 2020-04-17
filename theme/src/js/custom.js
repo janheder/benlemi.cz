@@ -396,5 +396,7 @@ if ($(".blogCategories").length){
     
     $(".blogCategories .blogCategories__o-nas").load("/blog-o-nas/ .news-wrapper");
     $("<h2 class='blogCategories__sectionTitle'>O nás</h2>").insertBefore(".blogCategories .blogCategories__o-nas");
-
 }
+
+
+$("#cboxContent .extra.step").prepend('<div class="btn" id="modalClose">Zpět do obchodu</div>');
