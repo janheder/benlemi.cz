@@ -40,3 +40,9 @@
         color: $green-700;
     }
 }
+
+@media screen and (max-width: 991px){
+    #instagramSection{
+        padding: 20px 0;
+    }
+}

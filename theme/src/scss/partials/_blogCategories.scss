@@ -28,6 +28,11 @@
 .blogCategories__section{
     padding: 0px 0;
 }
+
+.blogCategories__section .news-item:nth-of-type(1n+3){
+    display: none;
+}
+
 .blogCategories__sectionTitle{
     text-align: center;
     position: relative;
@@ -49,11 +54,23 @@
         background: $green-200;
     }  
 }
+.blogCategories__sectionShowMore{
+    padding: 10px; 
+}
+.blogCategories__sectionShowMoreLink{
+    background: $gray-300;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media screen and (max-width: 991px){
     .blogCategories__row{
-        margin-right: -10px;
-        margin-left: -10px;
+        margin-right: -5px;
+        margin-left: -5px;
     }
     .blogCategories__single{
         padding: 5px;

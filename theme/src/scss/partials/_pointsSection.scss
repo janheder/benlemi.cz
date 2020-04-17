@@ -53,6 +53,11 @@
     color: $gray-800;
 }
 
+@media screen and (max-width: 991px){
+    #pointsSection {
+        padding: 20px 0;
+    }
+}
 @media screen and (max-width: 500px){
     .pointSingle{
         width: 33.333%;
