@@ -290,13 +290,21 @@
         position: absolute;
         height: 100%;
         width: 100%;
+        top: 0;
+        left: 0;
     }
 }
 .variant-default{
     display: none;
 }
+.advanced-parameter .parameter-value{
+    display: none;
+}
 .advanced-parameter-inner{
     display: flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
 .add-to-cart{
     display: flex;
