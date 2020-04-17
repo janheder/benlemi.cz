@@ -140,9 +140,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 0 20px;
     background: $gray-300;
     color: $gray-800;
+    margin-right: 10px;
 
     &:hover, &:active, &:focus{
         text-decoration: none;

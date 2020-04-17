@@ -669,7 +669,7 @@
     }
 }
 .payment-info{
-    
+    order: 10;
 }
 .payment-info b{
     font-weight: 400;
@@ -680,7 +680,8 @@
 .payment-logo{
     height: 25px;
     width: auto;
-    margin-left: 20px;
+    margin-right: 20px;
+    order: 0;
 }
 .payment-logo img{
     max-height: 100%;
@@ -709,6 +710,7 @@
     flex-grow: 1;
     justify-content: flex-end;
     display: flex;
+    order: 20;
 }
 .payment-shipping-price.for-free{
     color: $green-700;
