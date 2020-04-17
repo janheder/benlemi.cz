@@ -239,7 +239,9 @@ header + .content-wrapper .content-wrapper-in{
     background: $white;
 }
 
-
+.force-display{
+    display: block !important;
+}
 
 @import "partials/_img";
 @import "partials/_btn";
