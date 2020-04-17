@@ -202,7 +202,7 @@
 .language-toggle{
     overflow: hidden;
     background: transparent;
-    height: 50px;
+    height: 20px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -218,8 +218,8 @@
     background: $white;
 }
 .language-toggle-item{
-    height: 50px;
-    padding: 0 20px;
+    height: 20px;
+    padding: 0 10px;
     flex-shrink: 0;
     background: transparent;
     display: flex;
