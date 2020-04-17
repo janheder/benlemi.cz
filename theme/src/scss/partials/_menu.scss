@@ -225,7 +225,7 @@
     font-size: 0px;
     padding: 0 10px;
     height: 20px;
-    width: 50px;
+    width: 40px;
     flex-shrink: 0;
     background: transparent;
     display: flex;
@@ -238,7 +238,6 @@
 
     &:hover, &:active, &:focus{
         text-decoration: none;
-        background: transparent;
     }
 }
 .language-toggle-item.cz{
@@ -275,5 +274,5 @@
 }
 .navLinks__span{
     font-size: 14px;
-    padding: 0 10px;
+    padding: 0 0px 0 10px;
 }
