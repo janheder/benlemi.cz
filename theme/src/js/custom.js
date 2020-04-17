@@ -395,11 +395,11 @@ if ($("#rate-form").length){
 
 /* load blog posts into homepage section */
 if ($(".blogCategories").length){
-    $(".blogCategories .blogCategories__domacnost").load("/blog-domacnost/ .news-wrapper");
-    $("<h2 class='blogCategories__sectionTitle'>Domácnost</h2>").insertBefore(".blogCategories .blogCategories__domacnost");
-    $( document ).ready(function() {
-        $("<div class='blogCategories__sectionShowMore'><a href='/blog-domacnost/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__section .news-item:nth-child(2)");
+    $(".blogCategories .blogCategories__domacnost").load("/blog-domacnost/ .news-wrapper", function() {
+        $("<h2 class='blogCategories__sectionTitle'>Domácnost</h2>").insertBefore(".blogCategories .blogCategories__domacnost");
+        $("<div class='blogCategories__sectionShowMore'><a href='/blog-domacnost/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__section .news-item:nth-child(2)");    
     });
+
 
     $(".blogCategories .blogCategories__o-nas").load("/blog-o-nas/ .news-wrapper");
     $("<h2 class='blogCategories__sectionTitle'>O nás</h2>").insertBefore(".blogCategories .blogCategories__o-nas");
