@@ -244,9 +244,10 @@ $("#thumbnailsShowMore").click(function(){
 $("#productsRelated").insertBefore("#productDiscussion");
 
 
-/* */
+/* Description hooks changes */
+$(".basic-description").attr('id', 'descriptionLong');
+$('#p-detail-tabs a[href="#description"]').attr('href', '#descriptionLong');
 $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="shp-tab-link" role="tab">Parametry</a></li>');
-
 
 
 /* Cross selling products */
