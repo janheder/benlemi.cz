@@ -306,6 +306,9 @@ if ($("#productsRelated .flag-custom2").length){
     
       
         var number = one+"-"+two+"-"+one2+"-"+two2;
+        $(".price-final-holder").each(function(){
+            $(this).removeClass("force-display");
+        });
         $("span."+ number).addClass("force-display");
     });
     
