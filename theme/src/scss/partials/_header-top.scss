@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 90px;
     /* border-bottom: 1px solid $gray-400; */
 }
 @media screen and (max-width: 991px){
@@ -48,9 +48,9 @@
 }
 .header-contacts{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+
 }
 .header-contacts a{
     position: relative;
@@ -78,7 +78,7 @@
     }
 }
 .header-contacts a:first-child{
-    padding-right: 40px;
+
     &::before{
         background-image: url($i-phone);
     }
@@ -92,7 +92,7 @@
 
 
 .search{
-    height: 46px;
+    height: 50px;
     padding-right: 0px;
     margin: 0 10px;
 }
