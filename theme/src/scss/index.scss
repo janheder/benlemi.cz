@@ -229,14 +229,14 @@ header + .content-wrapper .content-wrapper-in{
  
 
 
-.type-detail .overall-wrapper{
-    background-image: url(https://janheder.github.io/benlemi.cz/theme/dist/img/bg.png);
+.type-detail .overall-wrapper, .type-category .overall-wrapper{
+    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/img/bg.png");
     background-position: center bottom;
     background-repeat: repeat no-repeat;
     background-attachment: fixed;
 }
-.type-detail .content-wrapper{
-    background: white;
+.type-detail .content-wrapper, .type-category .content-wrapper{
+    background: $white;
 }
 
 @import "partials/_img";

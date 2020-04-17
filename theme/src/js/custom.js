@@ -240,6 +240,11 @@ $("#thumbnailsShowMore").click(function(){
 });
 
 
+/* reloace related product before rating */
+
+$("#productsRelated").insertBefore("#productDiscussion");
+
+
 /* Cross selling products */
 if ($("#productsRelated .flag-custom2").length){
 
