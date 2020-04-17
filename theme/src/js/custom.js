@@ -367,10 +367,13 @@ if ($(".cart-table").length){
 
 /* add 4. step */
 if ($(".ordering-process").length){
-
     $(".cart-header").append('<li class="step step-4"><a href="" title="Dokončení objednávky"><span>Dokončení objednávky</span></a></li>');
 }
 
+
+if ($(".ordering-process").length){
+    $(".discount-coupon").insertBefore('.price-wrapper .price-label.price-primary');
+}
 
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
