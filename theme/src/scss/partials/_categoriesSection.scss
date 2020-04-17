@@ -1,7 +1,13 @@
+.middle-banners-wrapper{
+    background: $gray-300;
+    margin: 40px 0;
+}
 #categoriesSection{
-    padding: 60px 0;
+    padding: 40px 0;
+    /*
     border-top: 1px solid $gray-400;
     border-bottom: 1px solid $gray-400;
+    */
 }
 .mobile #categoriesSection{
     margin-top: 40px;
@@ -33,7 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: $gray-300;
+    background: $white;
     padding: 30px 20px;
 
     &:hover, &:active, &:focus{
