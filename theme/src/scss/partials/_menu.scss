@@ -222,8 +222,10 @@
 }
 .language-toggle-item{
     height: 20px;
-    font-size: 14px;
+    font-size: 0px;
     padding: 0 10px;
+    height: 20px;
+    width: 50px;
     flex-shrink: 0;
     background: transparent;
     display: flex;
@@ -235,6 +237,21 @@
         text-decoration: none;
         background: transparent;
     }
+}
+.language-toggle-item.cz{
+    background-image: url("../img/cz-vlajka.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.language-toggle-item.sk{
+    background-image: url("../img/sk-vlajka.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.language-toggle-item.com{
+    background-image: url("../img/com-vlajka.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .language-toggle-item.active{
     

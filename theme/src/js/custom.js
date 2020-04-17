@@ -103,7 +103,7 @@ $(".menu-level-1 .ext").hover(
 $(".search").insertAfter(".menu-level-1>li:last-child");
 
 
-$('<div class="navLinks"><a href="/login/" class="navLinks__link">Přihlášení</a><a href="/registrace/" class="navLinks__link">Registrace</a></div>').insertAfter(".nav-user");
+$('<div class="navLinks"><a href="/login/" class="navLinks__link">Přihlášení</a><a href="/registrace/" class="navLinks__link">Registrace</a><span class="navLinks__span">Jazyk:</span></div>').insertAfter(".nav-user");
 
 
 $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item cz active">Česky</div><a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
