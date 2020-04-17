@@ -442,9 +442,13 @@
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
+}
+.price-wrapper .discount-coupon{
+    margin: 0;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .discount-coupon form{
     display: flex;
