@@ -1,7 +1,7 @@
 .btn{
     height: 46px;
     padding: 0 20px;
-    background: $green-700;
+    background: $orange-700;
     color: $white;
     display: inline-flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
 
     &:hover, &:active, &:focus{
         color: $white;
-        background: $green-800;
+        background: $orange-800;
         text-decoration: none;
     }
 }
