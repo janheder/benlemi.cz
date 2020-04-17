@@ -256,6 +256,7 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 
 
 /* Cross selling products */
+/*
 if ($("#productsRelated .flag-custom2").length){
 
     $("#productsRelated .flag-custom2").each(function(){
@@ -270,11 +271,15 @@ if ($("#productsRelated .flag-custom2").length){
 
         $("body").append('<div id="crossSelling' + ran + '"></div>');
 
-        $("#crossSelling" + ran).load(pUrl + " #product-detail-form");
+        $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
+            $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
+        });
+
+        
 
         $("#product-detail-form select[data-parameter-name='Barva']").change(function() {
 
-            $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
+            
 
             var selected = $("#product-detail-form select[data-parameter-name='Barva'] option:selected").text(); 
         
@@ -291,6 +296,8 @@ if ($("#productsRelated .flag-custom2").length){
         });
     });
 }
+*/
+
 
 
 /* Adjust price displaying */
