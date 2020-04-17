@@ -7,6 +7,7 @@
     .navigation-buttons{
         flex-grow: 1;
         justify-content: flex-end;
+        flex-direction: row;
     }
 }
 .cart-count{

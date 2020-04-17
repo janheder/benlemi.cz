@@ -192,10 +192,10 @@
     font-size: 0;
     position: relative;
     background: transparent;
-    width: 46px;
+    width: 50px;
     float: right;
     cursor: pointer;
-    background: $white;
+    background: transparent;
     transition: 0s ease all;
 
     &:hover, &:active, &:focus{

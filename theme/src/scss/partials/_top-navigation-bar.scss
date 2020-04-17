@@ -3,9 +3,16 @@
 }
 
 .top-navigation-tools{
-
+    text-align: right;
 }
 .top-nav-button-login{
     font-size: 14px;
     color: $gray-900;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 991px){
+    .top-navigation-tools{
+        display: none;
+    }
 }
