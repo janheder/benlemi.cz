@@ -306,6 +306,7 @@ if ($("#productsRelated .flag-custom2").length){
     
       
         var number = one+"-"+two+"-"+one2+"-"+two2;
+        alert(number);
         $("span."+ number).removeClass("no-display");
     });
     
