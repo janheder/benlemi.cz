@@ -41,12 +41,13 @@
     padding: 10px 0;
     width: 100%;
     margin-bottom: 20px;
-    background: $green-100;
+    background: $green-700;
+    color: $white;
 }
 .type-product .step{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     
     .btn-conversion{
         &:hover, &:active, &:focus{
