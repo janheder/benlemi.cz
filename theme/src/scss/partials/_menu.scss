@@ -215,8 +215,8 @@
     overflow: visible;
 }
 .language-toggle.--active .language-toggle-item{
-    background: $white;
-    height: 36px;
+    background-color: $white;
+    height: 30px;
     z-index: 5;
     position: relative;
 }
@@ -232,6 +232,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
@@ -240,18 +243,12 @@
 }
 .language-toggle-item.cz{
     background-image: url("../img/cz-vlajka.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .language-toggle-item.sk{
     background-image: url("../img/sk-vlajka.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .language-toggle-item.com{
     background-image: url("../img/com-vlajka.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .language-toggle-item.active{
     
@@ -275,4 +272,8 @@
     .navLinks{
         display: none;
     }
+}
+.navLinks__span{
+    font-size: 14px;
+    padding: 0 10px;
 }
