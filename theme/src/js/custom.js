@@ -402,7 +402,7 @@ if ($(".blogCategories").length){
 $("#cboxContent .extra.step").prepend('<div class="btn" id="modalClose">Zpět do obchodu</div>');
 
 
-$(".search").insertAfter("#language-toggle");
+$(".search").insertAfter(".language-toggle");
 
 
 $(".top-navigation-tools").insertAfter(".nav-user");
