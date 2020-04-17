@@ -324,8 +324,8 @@ if ($(".type-detail").length){
 /* relocate heading and categories */
 if ($(".type-category").length){
     $(".category-title").insertBefore(".content-wrapper-in");
-    $(".category-perex").insertAfter(".category-title");
     $(".subcategories").insertAfter(".category-title");
+    $(".category-perex").insertAfter(".category-title");
 }
 
 /* relocate sort into filters */
