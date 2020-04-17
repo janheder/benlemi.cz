@@ -238,8 +238,14 @@
 
 .navLinks{
     display: flex;
+    padding-bottom: 5px;
 }
 .navLinks__link{
+    color: $gray-700;
     font-size: 14px;
     padding: 0 10px;
+    border-left: 1px solid $gray-400;
+}
+.navLinks__link:first-child{
+    border: 0;;
 }
