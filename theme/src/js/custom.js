@@ -256,7 +256,6 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 
 
 /* Cross selling products */
-/*
 if ($("#productsRelated .flag-custom2").length){
 
     $("#productsRelated .flag-custom2").each(function(){
@@ -295,8 +294,27 @@ if ($("#productsRelated .flag-custom2").length){
             }
         });
     });
+
+
+    $("#product-detail-form select").change(function(){
+        var one = $("#product-detail-form select[data-parameter-name='Barva']").attr("data-parameter-id");
+        var two = $("#product-detail-form select[data-parameter-name='Barva']").find("option:selected").prop("value");
+    
+    
+        var one2 = $("#product-detail-form select[data-parameter-name='Rozměr']").attr("data-parameter-id");
+        var two2 = $("#product-detail-form select[data-parameter-name='Rozměr']").find("option:selected").prop("value");
+    
+      
+        var number = one+"-"+two+"-"+one2+"-"+two2;
+        $("span."+ number).removeClass("no-display");
+    });
+    
+
+
 }
-*/
+
+
+
 
 
 
