@@ -439,6 +439,19 @@
     padding-left: 20px;
 }
 
+.cart-summary .discount-coupon{
+    margin-bottom: 20px;
+    display: flex;
+    flex-grow: 1;
+}
+.cart-summary .discount-coupon form{
+    display: flex;
+}
+.cart-summary .discount-coupon input{
+    height: 46px;
+}
+
+
 .cart-content.summary-wrapper{
     margin-top: 20px;
 }
