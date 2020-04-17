@@ -51,11 +51,12 @@
 }
 
 @media screen and (max-width: 991px){
-    .blogCategories__row{
-        margin-right: -10px;
-        margin-left: -10px;
-    }
     .blogCategories__single{
-        padding: 5px;
+        width: 33.333%;
+    }
+}
+@media screen and (max-width: 500px){
+    .blogCategories__single{
+        width: 50%;
     }
 }
