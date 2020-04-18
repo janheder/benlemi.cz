@@ -13,8 +13,9 @@
     }
 
 }
-.in-kosik .cart-row  .col-md-8{
+.in-kosik .cart-row .col-md-8, .in-kosik .cart-row .col-md-4{
     max-width: none;
+    flex-basis: 100%;
 }
 
 .cart-content{
