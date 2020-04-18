@@ -60,6 +60,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 600;
+    color: $gray-700;
 }
 .cart-header .step.active{
     border-bottom: 2px solid $green-700;
@@ -459,6 +460,7 @@
 }
 .discount-coupon input{
     height: 46px;
+    margin-right: 5px;
 }
 .applied-coupon{
     width: 100%;
