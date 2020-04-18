@@ -401,6 +401,10 @@
 .p-gift-name a{
     font-size: 14px;
     color: $gray-800;
+
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+    }
 }
 .p-gift-name a span{
     font-size: 14px;
@@ -555,7 +559,7 @@
     display: none;
 }
 #ratingProduct .rate-wrapper {
-    width: calc(100% - 10px);
+    width: 100%;
     position: relative;
     margin-bottom: 20px;
 }
@@ -615,7 +619,7 @@
     }
 }
 #ratingStore .rate-wrapper {
-    width: calc(100% - 10px);
+    width: 100%;
     position: relative;
     margin-bottom: 20px;
 }
