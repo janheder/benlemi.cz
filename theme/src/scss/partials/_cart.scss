@@ -10,11 +10,14 @@
     .col-md-8, .col-md-4{
         width: 100%;  
         top: 0 !important;
-        /*max-width: none;  */
     }
-    .col-md-8{
-        max-width: none;
-    }
+
+}
+.cart-row .col-md-4 {
+    max-width: none;
+}
+.in-kosik .col-md-8{
+    max-width: none;
 }
 .in-kosik .cart-row .col-md-4{
     max-width: none;  
@@ -595,10 +598,7 @@
     .in-krok-1 .cart-row{
         flex-direction: column;
     }
-    .cart-row .col-md-4 {
-        max-width: none;
-    }
-    .in-kosik .col-md-8{
+    .cart-row .col-md-8, .cart-row .col-md-4 {
         max-width: none;
     }
 }
