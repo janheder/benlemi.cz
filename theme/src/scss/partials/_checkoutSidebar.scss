@@ -1,6 +1,15 @@
 #checkoutSidebar{
 
 }
+#checkoutSidebar .cart-content{
+
+}
+@media screen and (min-width: 992px){
+    #checkoutSidebar .cart-content{
+        position: sticky;
+        top: 20px;
+    }
+}
 .order-summary{
 
 }
@@ -134,7 +143,7 @@
 .next-step{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .next-step-back{
     display: flex;

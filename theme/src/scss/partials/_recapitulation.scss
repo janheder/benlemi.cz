@@ -33,3 +33,12 @@
     text-align: center;
     width: 100%;
 }
+
+.recapitulation-table{
+    width: 100%;
+    background: $gray-300;
+    padding: 10px;
+}
+.recapitulation-table tr, .recapitulation-table td{
+    padding: 10px;
+}
