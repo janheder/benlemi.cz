@@ -2,7 +2,7 @@
 // GLOBAL
 // -----------------------------------------------------------------------------
 
-/* remove native scroll function - bugs */
+/* remove native shoptet scroll function - bugs */
 if ($("[data-force-scroll]").length){
     $("[data-force-scroll]").each(function(){
         $(this).removeAttr("data-force-scroll");
@@ -274,12 +274,7 @@ if ($("#productsRelated .flag-custom2").length){
             $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
         });
 
-        
-
         $("#product-detail-form select[data-parameter-name='Barva']").change(function() {
-
-            
-
             var selected = $("#product-detail-form select[data-parameter-name='Barva'] option:selected").text(); 
         
             $("#crossSelling" + ran + " option").filter(function(){
@@ -317,11 +312,11 @@ if ($("#productsRelated .flag-custom2").length){
 }
 
 
+/* add button into advanced order modal */
 $("#cboxOverlay, #colorbox").hover(function(){
     $("#backToShop").remove();
-    $(".extra.step").append("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
+    $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
 });
-
 
 
 /* Adjust price displaying */
@@ -435,8 +430,3 @@ if ($(".blogCategories").length){
     $(".blogCategories .blogCategories__o-nas").load("/blog-o-nas/ .news-wrapper");
     $("<h2 class='blogCategories__sectionTitle'>O nás</h2>").insertBefore(".blogCategories .blogCategories__o-nas");
 }
-
-
-$("#cboxContent .extra.step").prepend('<div class="btn" id="modalClose">Zpět do obchodu</div>');
-
-
