@@ -320,6 +320,11 @@ $(document).ready(function() {
     });
 });
 
+$("#backToShop").click(function(){
+    $("#cboxClose").click();
+});
+
+
 /* Adjust price displaying */
 if ($(".type-detail").length){
 
