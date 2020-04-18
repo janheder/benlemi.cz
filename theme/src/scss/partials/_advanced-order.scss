@@ -47,12 +47,21 @@
 .type-product .step{
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     
     .btn-conversion{
         &:hover, &:active, &:focus{
             text-decoration: none;
         }
+    }
+}
+#backToShop{
+    margin-right: 20px;
+    background: $gray-400;
+    color: $gray-900;
+
+    &:hover, &:active, &:focus{
+        background: $gray-500;
     }
 }
 .type-product #cboxClose{

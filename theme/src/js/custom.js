@@ -317,7 +317,10 @@ if ($("#productsRelated .flag-custom2").length){
 }
 
 
-
+$("#cboxOverlay, #colorbox").hover(function(){
+    $("#backToShop").remove();
+    $(".extra.step").append("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
+});
 
 
 
