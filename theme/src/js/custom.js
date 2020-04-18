@@ -317,12 +317,13 @@ $(document).ready(function() {
     $("#cboxOverlay, #colorbox").hover(function(){
         $("#backToShop").remove();
         $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
+        $("#backToShop").click(function(){
+            $("#cboxClose").click();
+        });
     });
 });
 
-$("#backToShop").click(function(){
-    $("#cboxClose").click();
-});
+
 
 
 /* Adjust price displaying */
