@@ -10,7 +10,7 @@ if ($("[data-force-scroll]").length){
 }
 
 /* anchor scroll setup */
-$( document ).ready(function() {
+$(document).ready(function() {
     $('a[href*="#"]').click(function(event) {
         if (
           location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -137,10 +137,10 @@ if ($("#pointsSection").length){
 
         if ($(".before-carousel").length){
             $("#pointsSection").insertAfter(".before-carousel");
-        }else{
+        }
+        else{
             $("#pointsSection").insertBefore("#footer");
         }
-
     }
     else if ($("body.type-product").length){
         $("#pointsSection").insertBefore(".p-detail-tabs-wrapper");
@@ -313,11 +313,12 @@ if ($("#productsRelated .flag-custom2").length){
 
 
 /* add button into advanced order modal */
-$("#cboxOverlay, #colorbox").hover(function(){
-    $("#backToShop").remove();
-    $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
+$(document).ready(function() {
+    $("#cboxOverlay, #colorbox").hover(function(){
+        $("#backToShop").remove();
+        $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
+    });
 });
-
 
 /* Adjust price displaying */
 if ($(".type-detail").length){
