@@ -595,7 +595,10 @@
     .in-krok-1 .cart-row{
         flex-direction: column;
     }
-    .cart-row .col-md-8, .cart-row .col-md-4 {
+    .cart-row .col-md-4 {
+        max-width: none;
+    }
+    .in-kosik .col-md-8{
         max-width: none;
     }
 }

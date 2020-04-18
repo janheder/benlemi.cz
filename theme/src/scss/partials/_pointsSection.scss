@@ -26,6 +26,9 @@
     align-items: center;
     background: $green-100;
 }
+.pointSingle__imgWrap img{
+    width: 100%;
+}
 /*
 .pointSingle{
     &:nth-child(2) .pointSingle__imgWrap{
