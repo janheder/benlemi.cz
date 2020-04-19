@@ -256,6 +256,7 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 
 
 /* Cross selling products */
+/*
 if ($("#productsRelated .flag-custom2").length){
     var i=0;
     $("#productsRelated .flag-custom2").each(function(i){
@@ -315,6 +316,7 @@ if ($("#productsRelated .flag-custom2").length){
 
 
 }
+*/
 
 
 /* add button into advanced order modal */
