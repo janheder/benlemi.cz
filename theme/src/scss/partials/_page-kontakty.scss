@@ -5,7 +5,8 @@
     margin-bottom: 0;
     padding-bottom: 40px;
     background: $white;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    border-bottom: 1px solid $gray-400;
 }
 .kontaktyTop__col {
     width: 33.333%;
@@ -23,20 +24,45 @@
     font-size: 16px;
 }
 
-.kontakty__profiles{
+.kontakty__profilesRow{
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
 }
+.kontakty__profilesTitle{
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    color: $gray-800;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }
+}
+
 .personalProfile{ 
     width: 33.333%;
     padding: 10px;
 }
 .personalProfile__inner{
     background: $white;
+    box-shadow: 0px 4px 15px rgba($black,0.08);
     padding: 50px 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .personalProfile__img{
     height: 220px;
@@ -44,6 +70,7 @@
 }
 .personalProfile__title{
     font-size: 18px;
+    padding-top: 20px;
 }
 .personalProfile__subtitle{
     font-size: 14px; 
