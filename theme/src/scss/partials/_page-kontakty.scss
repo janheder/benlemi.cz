@@ -24,7 +24,47 @@
     margin: 0;
 }
 
+.kontakty__info{
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid $gray-400;
+    display: flex;
+    flex-wrap: wrap;
+}
+.kontakty__infoTitle{
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    color: $gray-800;
 
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }
+}
+.kontakty__infoWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.kontakty__infoTitle{
+    margin-bottom: 20px;
+}
+.kontakty__infoMap{
+    flex-grow: 1;
+    margin-left: 40px;
+}
 
 .kontakty__showroom{
     padding-bottom: 60px;
@@ -60,6 +100,35 @@
 .kontakty__showroomMap img{
 
 }
+
+.kontakty__form{
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid $gray-400;
+}
+.kontakty__formTitle{
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    color: $gray-800;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }
+}
+
 
 
 .kontakty__profiles{
