@@ -113,7 +113,7 @@
     display: none;
     width: auto;
 }
-.search:hover fieldset input, .search fieldset input:focus,  .search fieldset input:active{
+.search:hover fieldset input, .search fieldset input:focus,  .search fieldset input:active, .search fieldset input:not(:placeholder-shown){
     display: inline-block;
 }
 .search:hover fieldset .btn, .search fieldset input:focus ~ .btn,  .search fieldset input:active ~ .btn{
