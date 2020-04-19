@@ -27,7 +27,9 @@
 
 
 .kontakty__showroom{
-
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $gray-400;
 }
 .kontakty__showroomTitle{
     text-align: center;
@@ -52,7 +54,8 @@
     }
 }
 .kontakty__showroomMap{
-
+    max-width: 720px;
+    margin: 0 auto;
 }
 .kontakty__showroomMap img{
 
