@@ -257,10 +257,10 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 
 /* Cross selling products */
 if ($("#productsRelated .flag-custom2").length){
+    var i=0;
+    $("#productsRelated .flag-custom2").each(function(i){
 
-    $("#productsRelated .flag-custom2").each(function(){
-
-        var ran =  Math.floor(Math.random() * 100); 
+        var ran =  i+1; 
 
         var pName = $(this).closest(".p").find(".name").prop("title");
 
