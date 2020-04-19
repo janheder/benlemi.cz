@@ -1,0 +1,56 @@
+
+.kontaktyTop {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    background: $white;
+    margin-bottom: 10px
+}
+.kontaktyTop__col {
+    width: 33.333%;
+    text-align: center
+}
+.kontaktyTop__img {
+    height: 90px
+}
+.kontaktyTop__title {
+    margin-bottom: 10px;
+    color: $green-700;
+    font-size: 24px;
+}
+.kontaktyTop__text {
+    font-size: 16px;
+}
+
+.kontakty__profiles{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.personalProfile{ 
+    width: 33.333%;
+    padding: 10px;
+}
+.personalProfile__inner{
+    background: $white;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.personalProfile__img{
+    height: 220px;
+    width: 220px;
+}
+.personalProfile__title{
+    font-size: 18px;
+}
+.personalProfile__subtitle{
+    font-size: 14px; 
+}
+.personalProfile__link{
+    font-size: 16px;
+}
+.personalProfile__link img{
+    margin-right: 10px;
+}
