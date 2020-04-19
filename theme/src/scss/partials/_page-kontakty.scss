@@ -1,29 +1,33 @@
 
-.kontaktyTop {
+.kontaktyTop{
     display: flex;
     width: 100%;
-    margin-bottom: 0;
     padding-bottom: 40px;
     background: $white;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     border-bottom: 1px solid $gray-400;
 }
-.kontaktyTop__col {
+.kontaktyTop__col{
     width: 33.333%;
     text-align: center
 }
-.kontaktyTop__img {
+.kontaktyTop__img{
     height: 90px
 }
-.kontaktyTop__title {
-    margin-bottom: 10px;
+.kontaktyTop__title{
+    margin: 10px 0;
     color: $green-700;
-    font-size: 24px;
+    font-size: 20px;
 }
-.kontaktyTop__text {
+.kontaktyTop__text{
     font-size: 16px;
+    margin: 0;
 }
 
+
+.kontakty__profiles{
+
+}
 .kontakty__profilesRow{
     display: flex;
     flex-wrap: wrap;
@@ -54,12 +58,12 @@
 
 .personalProfile{ 
     width: 33.333%;
-    padding: 10px;
+    padding: 30px 10px 30px 10px;
 }
 .personalProfile__inner{
     background: $white;
     box-shadow: 0px 4px 15px rgba($black,0.08);
-    padding: 50px 30px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,6 +71,7 @@
 .personalProfile__img{
     height: 220px;
     width: 220px;
+    margin-top: -70px;
 }
 .personalProfile__title{
     font-size: 18px;
@@ -80,6 +85,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $gray-700;
+    margin-top: 20px;
 }
 .personalProfile__link img{
     margin-right: 10px;
