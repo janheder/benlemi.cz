@@ -2,9 +2,9 @@
 .kontaktyTop{
     display: flex;
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 0 60px 0;
     background: $white;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     border-bottom: 1px solid $gray-400;
 }
 .kontaktyTop__col{
@@ -27,8 +27,8 @@
 
 
 .kontakty__showroom{
-    padding-bottom: 40px;
-    margin-bottom: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
     border-bottom: 1px solid $gray-400;
 }
 .kontakty__showroomTitle{
