@@ -835,6 +835,8 @@ div[id^="crossSelling"]{
 .detail-cross-selling{
     order: 21;
     padding: 10px 0;
+    display: flex;
+    align-items: center;
 }
 .detail-cross-selling label{
     padding-left: 10px;

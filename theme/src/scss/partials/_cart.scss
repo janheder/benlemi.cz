@@ -756,6 +756,7 @@
     overflow: hidden;
     background: $white;
     min-width: 100px;
+    max-width: 280px;
     flex-shrink: 0;
 }
 .country-flags.active{
