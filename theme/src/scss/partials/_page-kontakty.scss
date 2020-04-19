@@ -50,6 +50,9 @@
 }
 .personalProfile__link{
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .personalProfile__link img{
     margin-right: 10px;
