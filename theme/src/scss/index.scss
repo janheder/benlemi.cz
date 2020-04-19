@@ -228,13 +228,28 @@ header + .content-wrapper .content-wrapper-in{
 }
  
 
-
+/*
 .type-detail .overall-wrapper, .type-category .overall-wrapper{
     background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/img/bg.png");
     background-position: center bottom;
     background-repeat: repeat no-repeat;
     background-attachment: fixed;
 }
+*/
+.type-detail .overall-wrapper::before, .type-category .overall-wrapper::before{
+    content: "";
+    background-image: url("../img/bg.png");
+    background-position: center top;
+    background-repeat: repeat no-repeat;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+
 .type-detail .content-wrapper, .type-category .content-wrapper{
     background: $white;
 }
