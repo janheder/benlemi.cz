@@ -256,7 +256,7 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 
 
 /* Cross selling products */
-/*
+
 if ($("#productsRelated .flag-custom2").length){
     var i=0;
     $("#productsRelated .flag-custom2").each(function(i){
@@ -292,7 +292,9 @@ if ($("#productsRelated .flag-custom2").length){
         $(".detail-cross-selling").each(function(i){
             var ran = i+1; 
             if($("#csell" + ran).prop("checked")){
-                $("#product-detail-form-" + ran +" button").click();
+                setTimeout(function(){
+                    $("#product-detail-form-" + ran +" button").click();
+                }, 300);
             }
         });
     });
@@ -313,10 +315,8 @@ if ($("#productsRelated .flag-custom2").length){
         $("span."+ number).addClass("force-display");
     });
     
-
-
 }
-*/
+
 
 
 /* add button into advanced order modal */
