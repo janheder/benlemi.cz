@@ -260,7 +260,7 @@ if ($("#productsRelated .flag-custom2").length){
     var i=0;
     $("#productsRelated .flag-custom2").each(function(i){
 
-        var ran =  i+1; 
+        var ran = i+1; 
 
         var pName = $(this).closest(".p").find(".name").prop("title");
 
@@ -289,8 +289,9 @@ if ($("#productsRelated .flag-custom2").length){
     $("#product-detail-form").on("submit", function(){
         var i = 0;
         $(".detail-cross-selling").each(function(i){
-            if($("#csell" + i).prop("checked")){
-                $("#product-detail-form-" + i +" button").click();
+            var ran = i+1; 
+            if($("#csell" + ran).prop("checked")){
+                $("#product-detail-form-" + ran +" button").click();
             }
         });
     });
