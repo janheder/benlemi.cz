@@ -283,13 +283,17 @@ if ($("#productsRelated .flag-custom2").length){
         
         });
         
-        $("#product-detail-form").on("submit", function(){
-            if($("#csell" + ran).prop("checked")){
-                $("#product-detail-form-" + ran +" button").click();
+
+    });
+
+    $("#product-detail-form").on("submit", function(){
+        var i = 0;
+        $(".detail-cross-selling").each(function(i){
+            if($("#csell" + i).prop("checked")){
+                $("#product-detail-form-" + i +" button").click();
             }
         });
     });
-
 
     $("#product-detail-form select").change(function(){
         var one = $("#product-detail-form select[data-parameter-name='Barva']").attr("data-parameter-id");
