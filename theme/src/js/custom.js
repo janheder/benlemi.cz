@@ -430,6 +430,10 @@ if ($(".ordering-process").length){
 }
 */
 
+if ($(".ordering-process").length){
+    $(".navigation-buttons").append('<div class="free-delivery">Nad <span>1234 Kč</span> máte dopravu zdarma</div>');
+}
+
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
 // -----------------------------------------------------------------------------

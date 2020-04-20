@@ -9,6 +9,9 @@
     display: flex;
     flex-shrink: 0;
 }
+.ctaSection__imgWrap img{
+    height: 300px;
+}
 .ctaSection__img{
 
 }
@@ -26,11 +29,11 @@
     flex-direction: column;
 }
 .ctaSection__title{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
 }
 .ctaSection__text{
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
 }
 .ctaSection__boxWrap{
@@ -77,7 +80,7 @@
     }
 }
 .ctaSection__socialImg{
-    opacity: 0.5;
+    opacity: 1;
 }
 
 @media (max-width: 991px){
