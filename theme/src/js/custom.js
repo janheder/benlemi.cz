@@ -298,11 +298,14 @@ if ($("#productsRelated .flag-custom2").length){
             }
         });
     });
-
+/*
     $("#product-detail-form select").change(function(){
-        var one = $("#product-detail-form select[data-parameter-name='Barva']").attr("data-parameter-id");
-        var two = $("#product-detail-form select[data-parameter-name='Barva']").find("option:selected").prop("value");
-    
+        if ($("#product-detail-form select[data-parameter-name='Barva']").length){
+            var one = $("#product-detail-form select[data-parameter-name='Barva']").attr("data-parameter-id");
+            var two = $("#product-detail-form select[data-parameter-name='Barva']").find("option:selected").prop("value");
+        
+        };
+
     
         var one2 = $("#product-detail-form select[data-parameter-name='Rozměr']").attr("data-parameter-id");
         var two2 = $("#product-detail-form select[data-parameter-name='Rozměr']").find("option:selected").prop("value");
@@ -314,6 +317,7 @@ if ($("#productsRelated .flag-custom2").length){
         });
         $("span."+ number).addClass("force-display");
     });
+    */
     
 }
 
