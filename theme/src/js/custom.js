@@ -298,26 +298,34 @@ if ($("#productsRelated .flag-custom2").length){
             }
         });
     });
-/*
+
     $("#product-detail-form select").change(function(){
         if ($("#product-detail-form select[data-parameter-name='Barva']").length){
             var one = $("#product-detail-form select[data-parameter-name='Barva']").attr("data-parameter-id");
             var two = $("#product-detail-form select[data-parameter-name='Barva']").find("option:selected").prop("value");
+            
+        };
+
+        if ($("#product-detail-form select[data-parameter-name='Rozměr']").length){
+            var one2 = $("#product-detail-form select[data-parameter-name='Rozměr']").attr("data-parameter-id");
+            var two2 = $("#product-detail-form select[data-parameter-name='Rozměr']").find("option:selected").prop("value");
         
         };
 
-    
-        var one2 = $("#product-detail-form select[data-parameter-name='Rozměr']").attr("data-parameter-id");
-        var two2 = $("#product-detail-form select[data-parameter-name='Rozměr']").find("option:selected").prop("value");
-    
-      
-        var number = one+"-"+two+"-"+one2+"-"+two2;
+        if (one === undefined){
+            var number = one2+"-"+two2;
+        }else if(one2 === undefined){
+            var number = one+"-"+two;
+        }else{
+            var number = one+"-"+two+"-"+one2+"-"+two2;
+        }
+        
         $(".p-info-wrapper span").each(function(){
             $(this).removeClass("force-display");
         });
         $("span."+ number).addClass("force-display");
     });
-    */
+  
     
 }
 
