@@ -212,6 +212,7 @@ if ($("#p-detail-tabs").length){
 
 /* load infographic images into parameters */
 if ($("#relatedFiles").length){
+    $(".description-infographics").remove();
     $('select[data-parameter-name="Rozměr"]').change(function() {
         var option = $('select[data-parameter-name="Rozměr"] option:selected').text(); 
         var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');

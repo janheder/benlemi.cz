@@ -69,7 +69,9 @@
 .cart-header .step.completed a{
     color: $green-700;
 }
-
+.cart-header .step.active strong{
+    color: $gray-900;
+}
 .cart-header .step.step-1{
 
 }
