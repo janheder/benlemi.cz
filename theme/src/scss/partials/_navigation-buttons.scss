@@ -19,14 +19,16 @@
     justify-content: center;
     background: transparent;
     color: $gray-800;
-    padding: 0 10px 0 46px;
+    padding: 0 10px 0 56px;
     margin-left: 10px;
     line-height: 1.2;
+    height: 50px;
+    margin-top: 5px;
 
     &::before{
         content: "";
-        height: 24px;
-        width: 24px;
+        height: 34px;
+        width: 34px;
         position: absolute;
         top: 50%;
         left: 11px;

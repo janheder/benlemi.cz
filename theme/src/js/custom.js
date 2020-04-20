@@ -283,8 +283,6 @@ if ($("#productsRelated .flag-custom2").length){
             }).prop("selected", true);
         
         });
-        
-
     });
 
     $("#product-detail-form").on("submit", function(){
@@ -303,13 +301,11 @@ if ($("#productsRelated .flag-custom2").length){
         if ($("#product-detail-form select[data-parameter-name='Barva']").length){
             var one = $("#product-detail-form select[data-parameter-name='Barva']").attr("data-parameter-id");
             var two = $("#product-detail-form select[data-parameter-name='Barva']").find("option:selected").prop("value");
-            
         };
 
         if ($("#product-detail-form select[data-parameter-name='Rozměr']").length){
             var one2 = $("#product-detail-form select[data-parameter-name='Rozměr']").attr("data-parameter-id");
             var two2 = $("#product-detail-form select[data-parameter-name='Rozměr']").find("option:selected").prop("value");
-        
         };
 
         if (one === undefined){

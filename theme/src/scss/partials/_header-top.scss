@@ -3,6 +3,7 @@
     align-items: flex-end;
     justify-content: space-between;
     height: 110px;
+    padding-bottom: 20px;
     /* border-bottom: 1px solid $gray-400; */
 }
 @media screen and (max-width: 991px){
@@ -11,6 +12,8 @@
         position: fixed;
         z-index: 2;
         width: 100%;
+        padding: 0;
+        align-items: center;
         background: $white;
         transition: 0.3s ease all;
         box-shadow: 0px 3px 8px 0px rgba($black,0.05);
