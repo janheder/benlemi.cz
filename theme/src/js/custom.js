@@ -173,6 +173,11 @@ if ($("#instagramSection").length){
     $("#instagramSection").insertBefore("#footer");
 }
 
+/* relocate middle categories section */
+$(".middle-banners-wrapper").insertBefore("#pointsSection + .content-wrapper");
+
+
+
 // -----------------------------------------------------------------------------
 // PRODUCT PAGE
 // -----------------------------------------------------------------------------
