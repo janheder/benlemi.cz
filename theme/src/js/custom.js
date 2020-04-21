@@ -113,8 +113,8 @@ $("#js-langToggle").click(function(){
     $("#js-langToggle").toggleClass("--active");
 });
 
-$(document).ready(function() { 
-    var price = $(".cart-price").html().replace(/\s/g, '');;
+$(document).ready(function(){ 
+    var price = $(".cart-price").html().replace(/\s/g, '');
     var priceFree = 1234;
     priceInt = parseInt(price);
     if(priceInt > priceFree){
