@@ -475,7 +475,7 @@ if ($(".blogCategories").length){
     });
 
     $(".blogCategories .blogCategories__rodina").load("/blog-rodina/ .news-wrapper", function() {
-        $("<h2 class='blogCategories__sectionTitle'>Domácnost</h2>").insertBefore(".blogCategories .blogCategories__rodina");
+        $("<h2 class='blogCategories__sectionTitle'>Rodina</h2>").insertBefore(".blogCategories .blogCategories__rodina");
         $("<div class='blogCategories__sectionShowMore'><a href='/blog-rodina/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__rodina .blogCategories__section .news-item:nth-child(2)");    
     });
 
