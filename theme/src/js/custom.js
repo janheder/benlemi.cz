@@ -44,6 +44,8 @@ $(document).ready(function() {
 });
 
 
+
+
 // -----------------------------------------------------------------------------
 // HEADER AREA
 // -----------------------------------------------------------------------------
@@ -109,6 +111,18 @@ $('<div class="navLinks"><a href="/login/" class="navLinks__link">Přihlášení
 $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item cz active">Česky</div><a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
 $("#js-langToggle").click(function(){
     $("#js-langToggle").toggleClass("--active");
+});
+
+$(document).ready(function() { 
+    var price = $(".cart-price").html().replace(/\s/g, '');;
+    var priceFree = 1234;
+    priceInt = parseInt(price);
+    if(priceInt > priceFree){
+        $(".cart-count").append("<div class='headerFreeDelivery'>Dopravu máte zdarma</div>");
+    }else{
+        var priceFinal = priceFree - priceInt;
+        $(".cart-count").append("<div class='headerFreeDelivery'>Nakupte ještě za "+ priceFinal +" a dopravu máte zdarma</div>");
+    }
 });
 
 
@@ -379,6 +393,10 @@ if ($(".type-detail").length){
         var str1 = $(this).append("<span class='price-final-dph'> Kč bez DPH</span>");
     });
 }
+
+
+$("<div class='btn' id='js-ratingStoreToggle'>Přidat hodnocení</div>").insertBefore("#ratingStore #rate-form");
+
 
 
 // -----------------------------------------------------------------------------

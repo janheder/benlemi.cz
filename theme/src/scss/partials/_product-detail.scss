@@ -650,6 +650,9 @@
 #ratingStore .pagination-wrapper{
     display: none;
 }
+#ratingStore #rate-form{
+    display: none;
+}
 @media screen and (max-width: 767px){
     #ratingStore{
         width: 100%;

@@ -46,10 +46,12 @@
 }
 .cart-count.full .cart-price{
     display: flex;
+    display: none;
 }
 .cart-count .sr-only{
     width: 100%;
     font-size: 14px;
+    display: none;
 }
 .cart-count .cart-price{
     color: $red-700;
