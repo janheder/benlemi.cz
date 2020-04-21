@@ -5,11 +5,12 @@
     color: $white;
     display: inline-flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     border: 0;
     cursor: pointer;
     transition: 0.3s ease all;
+    text-transform: uppercase;
 
     &:hover, &:active, &:focus{
         color: $white;
