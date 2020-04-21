@@ -122,7 +122,7 @@ $(document).ready(function(){
             $("<div class='headerFreeDelivery free'>Dopravu máte zdarma</div>").insertBefore(".cart-count");
         }else{
             var priceFinal = priceFree - priceInt;
-            $("<div class='headerFreeDelivery'>Nakupte ještě za <span>"+ priceFinal +" Kč</span><br>a dopravu máte zdarma</div>").insertBefore(".cart-count");
+            $("<div class='headerFreeDelivery'>Vyberte ještě za <span>"+ priceFinal +" Kč</span><br>a dopravu máte zdarma</div>").insertBefore(".cart-count");
         }
     }
 });
@@ -468,12 +468,25 @@ if ($("#rate-form").length){
 
 /* load blog posts into homepage section */
 if ($(".blogCategories").length){
-    $(".blogCategories .blogCategories__domacnost").load("/blog-domacnost/ .news-wrapper", function() {
-        $("<h2 class='blogCategories__sectionTitle'>Domácnost</h2>").insertBefore(".blogCategories .blogCategories__domacnost");
-        $("<div class='blogCategories__sectionShowMore'><a href='/blog-domacnost/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__section .news-item:nth-child(2)");    
+
+    $(".blogCategories .blogCategories__bydleni").load("/blog-bydleni/ .news-wrapper", function() {
+        $("<h2 class='blogCategories__sectionTitle'>Bydlení</h2>").insertBefore(".blogCategories .blogCategories__bydleni");
+        $("<div class='blogCategories__sectionShowMore'><a href='/blog-bydleni/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__section .news-item:nth-child(2)");    
     });
 
+    $(".blogCategories .blogCategories__rodina").load("/blog-rodina/ .news-wrapper", function() {
+        $("<h2 class='blogCategories__sectionTitle'>Domácnost</h2>").insertBefore(".blogCategories .blogCategories__rodina");
+        $("<div class='blogCategories__sectionShowMore'><a href='/blog-rodina/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__section .news-item:nth-child(2)");    
+    });
 
-    $(".blogCategories .blogCategories__o-nas").load("/blog-o-nas/ .news-wrapper");
-    $("<h2 class='blogCategories__sectionTitle'>O nás</h2>").insertBefore(".blogCategories .blogCategories__o-nas");
+    $(".blogCategories .blogCategories__novinky").load("/blog-novinky/ .news-wrapper", function() {
+        $("<h2 class='blogCategories__sectionTitle'>Novinky</h2>").insertBefore(".blogCategories .blogCategories__novinky");
+        $("<div class='blogCategories__sectionShowMore'><a href='/blog-novinky/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__section .news-item:nth-child(2)");    
+    });
+
+    $(".blogCategories .blogCategories__benlemi-pomaha").load("/blog-benlemi-pomaha/ .news-wrapper", function() {
+        $("<h2 class='blogCategories__sectionTitle'>Benlemi pomáhá</h2>").insertBefore(".blogCategories .blogCategories__benlemi-pomaha");
+        $("<div class='blogCategories__sectionShowMore'><a href='/blog-benlemi-pomaha/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__section .news-item:nth-child(2)");    
+    });
+
 }

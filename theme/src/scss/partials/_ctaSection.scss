@@ -43,11 +43,13 @@
 }
 .ctaSection__box{
     margin-right: 20px;
-    background: $white;
+    background: transparent;
     padding: 13px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    padding-right: 20px;
 }
 .ctaSection__boxIcon{
     height: 24px;
