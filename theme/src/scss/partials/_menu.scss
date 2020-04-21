@@ -295,4 +295,9 @@
 }
 .headerFreeDelivery span{
     color: $red-700;
+    font-weight: 600;
+}
+.headerFreeDelivery.free{
+    color: $greem-700;
+    font-weight: 600;
 }

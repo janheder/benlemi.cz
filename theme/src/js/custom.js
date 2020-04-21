@@ -118,7 +118,7 @@ $(document).ready(function(){
     var priceFree = 1234;
     priceInt = parseInt(price);
     if(priceInt > priceFree){
-        $("<div class='headerFreeDelivery'>Dopravu máte zdarma</div>").insertBefore(".cart-count");
+        $("<div class='headerFreeDelivery free'>Dopravu máte zdarma</div>").insertBefore(".cart-count");
     }else{
         var priceFinal = priceFree - priceInt;
         $("<div class='headerFreeDelivery'>Nakupte ještě za <span>"+ priceFinal +" Kč</span><br>a dopravu máte zdarma</div>").insertBefore(".cart-count");
