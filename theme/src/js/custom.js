@@ -121,7 +121,7 @@ $(document).ready(function(){
         $("<div class='headerFreeDelivery'>Dopravu máte zdarma</div>").insertBefore(".cart-count");
     }else{
         var priceFinal = priceFree - priceInt;
-        $("<div class='headerFreeDelivery'>Nakupte ještě za "+ priceFinal +" a dopravu máte zdarma</div>").insertBefore(".cart-count");
+        $("<div class='headerFreeDelivery'>Nakupte ještě za <span>"+ priceFinal +"</span> <br>a dopravu máte zdarma</div>").insertBefore(".cart-count");
     }
 });
 
