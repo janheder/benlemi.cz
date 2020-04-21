@@ -118,10 +118,10 @@ $(document).ready(function(){
     var priceFree = 1234;
     priceInt = parseInt(price);
     if(priceInt > priceFree){
-        $(".cart-count").append("<div class='headerFreeDelivery'>Dopravu máte zdarma</div>");
+        $("<div class='headerFreeDelivery'>Dopravu máte zdarma</div>").insertBefore(".cart-count");
     }else{
         var priceFinal = priceFree - priceInt;
-        $(".cart-count").append("<div class='headerFreeDelivery'>Nakupte ještě za "+ priceFinal +" a dopravu máte zdarma</div>");
+        $("<div class='headerFreeDelivery'>Nakupte ještě za "+ priceFinal +" a dopravu máte zdarma</div>").insertBefore(".cart-count");
     }
 });
 
