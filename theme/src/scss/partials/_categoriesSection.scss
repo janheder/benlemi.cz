@@ -34,6 +34,9 @@
 }
 .categoriesSection__row .col-6{
     margin: 10px 0;
+    width: 20%;
+    flex-basis: 20%;
+    max-width: none;
 }
 .categoriesSection__single{
     display: flex;
