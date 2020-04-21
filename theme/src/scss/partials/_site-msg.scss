@@ -1,8 +1,9 @@
 .site-msg{
     background: $green-200;
     text-align: center;
-    padding: 2px 0;
+    padding: 5px 0;
     font-size: 14px;
+    margin-top: 10px;
 }
 @media screen and (max-width: 991px){
     .site-msg{

@@ -127,6 +127,15 @@ $(document).ready(function(){
     }
 });
 
+/* relocate site message */
+if ($(".site-msg").length){
+    if ($(".breadcrumbs").length){
+        $(".site-msg").insertBefore(".breadcrumbs");
+    } 
+    if ($(".before-carousel").length){
+        $(".site-msg").insertBefore(".before-carousel");
+    } 
+}
 
 // -----------------------------------------------------------------------------
 // HOMEPAGE
