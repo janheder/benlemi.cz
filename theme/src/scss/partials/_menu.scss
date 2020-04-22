@@ -302,3 +302,8 @@
     color: $green-800;
     font-weight: 600;
 }
+@media screen and (max-width: 991px){
+    .headerFreeDelivery{
+        display: none;
+    }
+}
