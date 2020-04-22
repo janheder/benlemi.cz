@@ -845,3 +845,8 @@
     flex-direction: column;
 }
 
+
+
+.ordering-process #navigation, .ordering-process #header::before{
+    display: none;
+}

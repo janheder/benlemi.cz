@@ -119,10 +119,10 @@ $(document).ready(function(){
         var priceFree = 1234;
         priceInt = parseInt(price);
         if(priceInt > priceFree){
-            $("<div class='headerFreeDelivery free'>Dopravu máte zdarma</div>").insertBefore(".cart-count");
+            $("<div class='headerFreeDelivery free'>Dopravu máte zdarma</div>").insertAfter(".navLinks");
         }else{
             var priceFinal = priceFree - priceInt;
-            $("<div class='headerFreeDelivery'>Vyberte ještě za <span>"+ priceFinal +" Kč</span><br>a dopravu máte zdarma</div>").insertBefore(".cart-count");
+            $("<div class='headerFreeDelivery'>Vyberte ještě za <span>"+ priceFinal +" Kč</span><br>a dopravu máte zdarma</div>").insertAfter(".navLinks");
         }
     }
 });
@@ -464,9 +464,6 @@ if ($(".ordering-process").length){
 }
 */
 
-if ($(".ordering-process").length){
-    $(".navigation-buttons").append('<div class="free-delivery">Nad <span>1234 Kč</span> máte dopravu zdarma</div>');
-}
 
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
