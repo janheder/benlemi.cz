@@ -118,12 +118,19 @@ $(document).ready(function(){
         var price = $(".cart-price").html().replace(/\s/g, '');
         var priceFree = 1234;
         priceInt = parseInt(price);
-        if(priceInt > priceFree){
-            $("<div class='headerFreeDelivery free'>Dopravu máte zdarma</div>").insertAfter(".navLinks");
-        }else{
-            var priceFinal = priceFree - priceInt;
-            $("<div class='headerFreeDelivery'>Vyberte ještě za <span>"+ priceFinal +" Kč</span><br>a dopravu máte zdarma</div>").insertAfter(".navLinks");
+        if ($(".ordering-process").length){
+            $("<div class='headerFreeDelivery free'>Při nákupu za 1234 Kč máte dopravu zdarma</div>").insertAfter(".navLinks");
         }
+        else{
+            if(priceInt > priceFree){
+                $("<div class='headerFreeDelivery free'>Dopravu máte zdarma</div>").insertBefore(".cart-count");
+            }
+            else{
+                var priceFinal = priceFree - priceInt;
+                $("<div class='headerFreeDelivery'>Vyberte ještě za <span>"+ priceFinal +" Kč</span><br>a dopravu máte zdarma</div>").insertBefore(".cart-count");
+            }
+        }
+
     }
 });
 
