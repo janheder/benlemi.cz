@@ -154,6 +154,9 @@
     background: $gray-300;
     color: $gray-800;
     margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
