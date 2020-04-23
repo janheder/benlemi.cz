@@ -20,10 +20,13 @@
 .cart-content{
     margin: 0;
 }
+.cart-content .cart-header{
+    display: none;
+}
 .cart-header{
     display: flex;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     list-style: none;
     padding: 0;
     background-color: $gray-300;

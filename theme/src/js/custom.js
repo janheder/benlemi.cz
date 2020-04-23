@@ -465,6 +465,10 @@ if ($(".ordering-process").length){
     $(".cart-header").append('<li class="step step-4"><a href="" title="Dokončení"><span>Dokončení</span></a></li>');
 }
 
+if ($(".ordering-process").length){
+    $(".cart-header").insertBefore('.cart-inner .cart-row');
+}
+
 /*
 if ($(".ordering-process").length){
     $(".discount-coupon").insertBefore('.price-wrapper .price-label.price-primary');
