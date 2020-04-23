@@ -95,16 +95,16 @@
     border: 2px solid #8DC63F;
     color: $gray-900;
 }
-.step-1::after{
+.step.step-1::after{
     content: "1";
 }
-.step-2::after{
+.step.step-2::after{
     content: "2";
 }
-.step-3::after{
+.step.step-3::after{
     content: "3";
 }
-.step-4::after{
+.step.step-4::after{
     content: "4";
 }
 .cart-header .step.active .step-number{
@@ -113,6 +113,7 @@
 }
 .step.completed::after{
     content: "✓";
+    color: $white;
     background: #8DC63F;
 }
 
