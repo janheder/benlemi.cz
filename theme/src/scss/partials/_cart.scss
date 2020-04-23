@@ -34,16 +34,18 @@
 .cart-header .step{
     display: flex;
     flex-grow: 1;
+    border-bottom: 2px solid $gray-500;
 }
 .cart-header .step a{
     text-align: center;
-    padding: 20px 10px;
+    padding: 15px 10px 30px 10px;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     font-weight: 600;
     color: $gray-700;
+    position: relative;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
@@ -52,7 +54,7 @@
 }
 .cart-header .step strong{
     text-align: center;
-    padding: 20px 10px;
+    padding: 15px 10px 30px 10px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -75,6 +77,38 @@
 .cart-header .step.step-1{
 
 }
+
+.step-1::after{
+    content: "1";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background: $white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    line-height: 1;
+    border: 2px solid #8DC63F;
+    color: $gray-900;
+}
+.step-2::after{
+    content: "2";
+}
+.step-3::after{
+    content: "3";
+}
+.step-4::after{
+    content: "4";
+}
+.cart-header .step.active .step-number{
+    background: #8DC63F;
+    color: white;
+}
+
 
 @media screen and (max-width: 991px){
     .cart-header {

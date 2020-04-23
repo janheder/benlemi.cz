@@ -130,7 +130,7 @@ $(document).ready(function(){
     }
 
     if ($(".ordering-process").length){
-        $("<div class='headerFreeDelivery free'>Vyberte nad 1234 Kč a máte dopravu zdarma</div>").insertAfter(".navLinks");
+        $("<div class='headerFreeDelivery free'>Vyberte nad 1234 Kč<br>a máte dopravu zdarma</div>").insertAfter(".navLinks");
     }
 });
 
