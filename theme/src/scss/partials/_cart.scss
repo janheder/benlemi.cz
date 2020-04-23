@@ -85,13 +85,13 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%,50%);
-    background: $gray-500;
+    background: $gray-300;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     line-height: 1;
     border: 3px solid $white;
     color: $gray-900;
@@ -118,6 +118,8 @@
     border: 2px solid $green-700;
     background: $white;
     box-shadow: 0px 0px 0px 3px $white;
+    width: 30px;
+    height: 30px;
 }
 .step.completed::after{
     content: "✓";
