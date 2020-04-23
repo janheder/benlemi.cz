@@ -297,13 +297,14 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 
 if ($("#productsRelated .flag-custom2").length){
     var i=0;
+
     $("#productsRelated .flag-custom2").each(function(i){
 
         var ran = i+1; 
 
         var pName = $(this).closest(".p").find(".name").prop("title");
 
-        $(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '">' + pName + '</label></div>')
+        $(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling selling-"'+ ran +'><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '">' + pName + '</label></div>')
 
         var pUrl = $(this).closest("a.image").prop("href");
 
@@ -322,6 +323,9 @@ if ($("#productsRelated .flag-custom2").length){
         
         });
     });
+
+    $("<h4 class='detail-cross-selling-heading'>Doplňky</h4>").insertBefore(".selling-1");
+
 
     $("#product-detail-form").on("submit", function(){
         var i = 0;
