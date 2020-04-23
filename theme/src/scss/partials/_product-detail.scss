@@ -842,9 +842,45 @@ div[id^="crossSelling"]{
     align-items: center;
 }
 .detail-cross-selling label{
-    padding-left: 10px;
+    padding: 10px;
     cursor: pointer;
     margin: 0;
+    padding-left: 34px;
+    position: relative;
+    display: block;
+    border: 1px solid $gray-400;
 }
-
-
+.detail-cross-selling input{
+    -webkit-appearance: none;
+    position: absolute;
+    opacity: 0;
+}
+.detail-cross-selling input+label::before {
+    content: "";
+    background: transparent;
+    height: 14px;
+    width: 14px;
+    display: flex;
+    margin-right: 10px;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    border-radius: 0%;
+    border: 2px solid #BFBFBF;
+}
+.detail-cross-selling input:checked+label::after {
+    content: "";
+    background-color: #8DC63F;
+    background-image: url(../icons/check-white.svg);
+    background-position: center center;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    height: 14px;
+    width: 14px;
+    display: flex;
+    margin-right: 10px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 0%;
+}

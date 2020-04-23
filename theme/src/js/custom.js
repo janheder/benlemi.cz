@@ -364,7 +364,6 @@ if ($("#productsRelated .flag-custom2").length){
 }
 
 
-
 /* add button into advanced order modal */
 $(document).ready(function() {
     $("#cboxOverlay, #colorbox").hover(function(){
@@ -375,8 +374,6 @@ $(document).ready(function() {
         });
     });
 });
-
-
 
 
 /* Adjust price displaying */
@@ -418,9 +415,16 @@ if ($(".type-detail").length){
 }
 
 
+/*
 $("<div class='btn' id='js-ratingStoreToggle'>Přidat hodnocení</div>").insertBefore("#ratingStore #rate-form");
+*/
 
-
+/* rename titles */
+if ($(".type-detail").length){
+    $(".extended-description h3").text("Výhody a parametry");
+    $(".products-related-header").text("Potřebné příslušenství, které oceníte:");
+    $('a[href="#productsRelated"]').text("Příslušenství");
+}
 
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
