@@ -90,11 +90,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
     line-height: 1;
-    border: 2px solid $white;
+    border: 3px solid $white;
     color: $gray-900;
+    font-size: 14px;
+    font-weight: 600;
 }
 .step.step-1::after{
     content: "1";
@@ -114,12 +116,13 @@
 }
 .step.active::after{
     border: 2px solid $green-700;
+    background: $white;
+    box-shadow: 0px 0px 0px 3px $white;
 }
 .step.completed::after{
     content: "✓";
     color: $white;
     background: $green-700;
-    border: 0;
 }
 
 @media screen and (max-width: 991px){
