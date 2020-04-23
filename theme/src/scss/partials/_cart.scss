@@ -36,6 +36,7 @@
     flex-grow: 1;
     border-bottom: 2px solid $gray-500;
     position: relative;
+    flex-basis: 0;
 }
 .cart-header .step a{
     text-align: center;
@@ -84,7 +85,7 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%,50%);
-    background: $white;
+    background: $gray-500;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -92,7 +93,7 @@
     width: 30px;
     height: 30px;
     line-height: 1;
-    border: 2px solid $gray-500;
+    border: 2px solid $white;
     color: $gray-900;
 }
 .step.step-1::after{
@@ -118,6 +119,7 @@
     content: "✓";
     color: $white;
     background: $green-700;
+    border: 0;
 }
 
 @media screen and (max-width: 991px){
