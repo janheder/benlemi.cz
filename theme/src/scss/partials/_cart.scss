@@ -95,7 +95,7 @@
     border: 2px solid #8DC63F;
     color: $gray-900;
 }
-.step-2::after{
+.step-1::after{
     content: "1";
 }
 .step-2::after{
@@ -111,7 +111,10 @@
     background: #8DC63F;
     color: white;
 }
-
+.step.completed::after{
+    content: "✓";
+    background: #8DC63F;
+}
 
 @media screen and (max-width: 991px){
     .cart-header {
