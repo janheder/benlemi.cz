@@ -133,10 +133,11 @@
 @media screen and (max-width: 991px){
     .cart-header {
         margin: -20px;
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
     .cart-header .step a, .cart-header .step strong{
         padding: 10px;
+        padding-bottom: 20px;
         font-weight: 400;
         font-size: 14px;
     }
