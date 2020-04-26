@@ -464,7 +464,7 @@ function cart() {
     /* add heading to cart table */
     if ($(".cart-table").length){
 
-        $(".cart-inner>.cart-header").remove();
+        
 
         $("<div class='cart-table-heading'></div>").insertBefore(".cart-table tbody");
         $(".cart-table-heading").prepend("<span>Název produktu</span>");
@@ -479,7 +479,6 @@ function cart() {
     if ($(".ordering-process").length){
      
 
-        $(".cart-header").insertBefore('.cart-inner .cart-row');
     }
 
 
