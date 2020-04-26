@@ -114,7 +114,7 @@ $("#js-langToggle").click(function(){
 });
 
 $(document).ready(function(){ 
-    if ($(".cart-price").length){
+    if ($(".cart-count.full .cart-price").length){
         var price = $(".cart-price").html().replace(/\s/g, '');
         var priceFree = 1234;
         priceInt = parseInt(price);
@@ -127,6 +127,9 @@ $(document).ready(function(){
             var priceFinal = priceFree - priceInt;
             $("<div class='headerFreeDelivery'>Vyberte ještě za <span>"+ priceFinal +" Kč</span><br>a dopravu máte zdarma</div>").insertBefore(".cart-count");
         }
+    }
+    else{
+        $("<div class='headerFreeDelivery free'>Vyberte nad 1234 Kč<br>a máte dopravu zdarma</div>").insertBefore(".cart-count");  
     }
 
     if ($(".ordering-process").length){
