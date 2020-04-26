@@ -488,17 +488,6 @@ function cart() {
 }
 
 
-// Setup a new observer to get notified of changes
-var observer = new MutationObserver(function (mutations) {
-    $( "#cart-wrapper" ).load(window.location.href + " #cart-wrapper" , function() {
-        cart();
-    }); 
-});
-
-// Observe a specific DOM node / subtree
-observer.observe($('body.ordering-process')[0], {
-    childList: true
-});
 
 
 
