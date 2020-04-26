@@ -487,20 +487,20 @@ function cart() {
     
 }
 
+window.addEventListener('load', function () {
+    // Setup a new observer to get notified of changes
+    var observer = new MutationObserver(function (mutations) {
+        cart();
+    });
+    
+    // Observe a specific DOM node / subtree
+    observer.observe($('body.ordering-process')[0], {
+        childList: true
+    });
+})
 
-$(document).ready(function() {
-// Setup a new observer to get notified of changes
-var observer = new MutationObserver(function (mutations) {
 
-    cart();
 
-});
-  
-// Observe a specific DOM node / subtree
-observer.observe($('body.ordering-process')[0], {
-    childList: true
-});
-});
 
 /*
 if ($(".ordering-process").length){
