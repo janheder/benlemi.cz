@@ -463,9 +463,6 @@ if ($(".filters-wrapper").length){
 function cart() {
     /* add heading to cart table */
     if ($(".cart-table").length){
-
-        
-
         $("<div class='cart-table-heading'></div>").insertBefore(".cart-table tbody");
         $(".cart-table-heading").prepend("<span>Název produktu</span>");
 
@@ -477,15 +474,12 @@ function cart() {
 
     /* relocate cart heading navigation */
     if ($(".ordering-process").length){
-     
-
+        $(".cart-header").insertBefore('.cart-inner .cart-row');
     }
 
 
     /* add 4. step */
     if ($(".ordering-process").length){
-        $(".cart-header .step-4").remove();
-
         $(".cart-header").append('<li class="step step-4"><strong><span>Dokončení objednávky</span></strong></li>');
         $(".cart-header .step-2 span").text('Doprava a platba');
         $(".cart-header .step-3 span").text('Kontaktní údaje');
@@ -496,7 +490,9 @@ function cart() {
 
 // Setup a new observer to get notified of changes
 var observer = new MutationObserver(function (mutations) {
-    cart();
+    $( "#cart-wrapper" ).load(window.location.href + " #cart-wrapper" , function() {
+        cart();
+    }); 
 });
 
 // Observe a specific DOM node / subtree
