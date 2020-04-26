@@ -490,9 +490,9 @@ cart();
 
 // Setup a new observer to get notified of changes
 var observer = new MutationObserver(function (mutations) {
-    mutations.forEach(function(mutation) {
+
     cart();
-    });
+
 });
   
 // Observe a specific DOM node / subtree
