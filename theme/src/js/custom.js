@@ -304,7 +304,7 @@ if ($("#productsRelated .flag-custom2").length){
 
         var pName = $(this).closest(".p").find(".name").prop("title");
 
-        $(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling selling-"'+ ran +'><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '">' + pName + '</label></div>')
+        $(".p-info-wrapper .detail-parameters").after('<div class="detail-cross-selling selling-'+ ran +'"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '">' + pName + '</label></div>')
 
         var pUrl = $(this).closest("a.image").prop("href");
 
