@@ -297,7 +297,6 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 
 
 /* Cross selling products */
-
 if ($("#productsRelated .flag-custom2").length){
     var i=0;
 
@@ -458,29 +457,49 @@ if ($(".filters-wrapper").length){
 }
 
 // -----------------------------------------------------------------------------
-// CART STEP 1
+// CART
 // -----------------------------------------------------------------------------
 
-if ($(".cart-table").length){
-    $("<div class='cart-table-heading'></div>").insertBefore(".cart-table tbody");
-    $(".cart-table-heading").prepend("<span>Název produktu</span>");
+function cart() {
+    /* add heading to cart table */
+    if ($(".cart-table").length){
+        $("<div class='cart-table-heading'></div>").insertBefore(".cart-table tbody");
+        $(".cart-table-heading").prepend("<span>Název produktu</span>");
 
-    $(".removeable:first-child .p-label").each(function(){
-        var label = $(this).html();
-        $(".cart-table-heading span:last-child").after("<span>" + label + "</span>");
+        $(".removeable:first-child .p-label").each(function(){
+            var label = $(this).html();
+            $(".cart-table-heading span:last-child").after("<span>" + label + "</span>");
+        });
+    }
+
+    /* relocate cart heading navigation */
+    if ($(".ordering-process").length){
+        $(".cart-header").insertBefore('.cart-inner .cart-row');
+    }
+
+
+    /* add 4. step */
+    if ($(".ordering-process").length){
+        $(".cart-header").append('<li class="step step-4"><strong><span>Dokončení objednávky</span></strong></li>');
+        $(".cart-header .step-2 span").text('Doprava a platba');
+        $(".cart-header .step-3 span").text('Kontaktní údaje');
+    }
+    
+}
+cart();
+
+// Setup a new observer to get notified of changes
+var observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function(mutation) {
+    cart();
     });
-}
+});
+  
+// Observe a specific DOM node / subtree
+observer.observe($('body.ordering-process')[0], {
+    childList: true
+});
 
-/* add 4. step */
-if ($(".ordering-process").length){
-    $(".cart-header").append('<li class="step step-4"><strong><span>Dokončení objednávky</span></strong></li>');
-    $(".cart-header .step-2 span").text('Doprava a platba');
-    $(".cart-header .step-3 span").text('Kontaktní údaje');
-}
-
-if ($(".ordering-process").length){
-    $(".cart-header").insertBefore('.cart-inner .cart-row');
-}
 
 /*
 if ($(".ordering-process").length){
@@ -493,6 +512,7 @@ if ($(".ordering-process").length){
 // STORE RATING PAGE
 // -----------------------------------------------------------------------------
 
+/* add title to rating */
 if ($("#rate-form").length){
     $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
 }   
