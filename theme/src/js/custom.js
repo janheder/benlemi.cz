@@ -488,6 +488,7 @@ function cart() {
 }
 cart();
 
+$(document).ready(function() {
 // Setup a new observer to get notified of changes
 var observer = new MutationObserver(function (mutations) {
 
@@ -499,7 +500,7 @@ var observer = new MutationObserver(function (mutations) {
 observer.observe($('body.ordering-process')[0], {
     childList: true
 });
-
+});
 
 /*
 if ($(".ordering-process").length){
