@@ -491,13 +491,14 @@ window.addEventListener('load', function () {
     // Setup a new observer to get notified of changes
     var observer = new MutationObserver(function (mutations) {
         cart();
+        alert("loaded");
     });
     
     // Observe a specific DOM node / subtree
     observer.observe($('body.ordering-process')[0], {
         childList: true
     });
-})
+});
 
 
 
