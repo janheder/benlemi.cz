@@ -486,7 +486,7 @@ function cart() {
     }
     
 }
-cart();
+
 
 $(document).ready(function() {
 // Setup a new observer to get notified of changes
