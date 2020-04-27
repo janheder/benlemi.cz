@@ -912,3 +912,21 @@ div[id^="crossSelling"]{
         background: $gray-600;
     }
 }
+
+
+.p-in .p-tools {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    left: 10px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000080;
+    opacity: 0;
+    transition: 0.3s ease opacity;
+}
+.p:hover .p-in .p-tools {
+    opacity: 1;
+}
