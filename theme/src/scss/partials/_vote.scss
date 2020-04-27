@@ -242,7 +242,9 @@
     position: sticky;
 }
 .rate-wrapper .vote-form .vote-form-title{
-    margin-top: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
     background: $gray-700;
     color: $white;
     height: 46px;
@@ -259,7 +261,15 @@
         background: $gray-600;
     }
 }
-
+.rate-wrapper .vote-form .vote-form-title.--hide{
+    display: none;
+}
+.vote-form-title + #formRating{
+    display: none;
+}
+.vote-form-title + #formRating.--active{
+    display: flex;
+}
 
 .rate-wrapper .vote-form .consents{
     font-size: 13px;

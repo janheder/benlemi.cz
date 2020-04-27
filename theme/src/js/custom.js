@@ -233,6 +233,11 @@ if ($(".type-detail").length){
     });
 }
 
+$(".rate-wrapper .vote-form .vote-form-title").click(function(){
+    $(".vote-form-title + #formRating").addClass("--active");
+    $(this).addClass("--hide");
+});
+
 /* click on modal overlay closes the whole modal window */   
 $("#closeModal").click(function(){
     $("#cboxOverlay").click();
