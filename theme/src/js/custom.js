@@ -44,8 +44,6 @@ $(document).ready(function() {
 });
 
 
-
-
 // -----------------------------------------------------------------------------
 // HEADER AREA
 // -----------------------------------------------------------------------------
@@ -233,7 +231,6 @@ if ($(".type-detail").length){
             $(this).addClass("--hide");
         });
     });
-
 }
 
 /* click on modal overlay closes the whole modal window */   
@@ -294,31 +291,22 @@ $("#thumbnailsShowMore").click(function(){
     $(".p-thumbnails-inner").toggleClass("--active");
 });
 
-
 /* reloace related product before rating */
 $("#productsRelated").insertBefore("#productDiscussion");
-
 
 /* Description hooks changes */
 $(".basic-description").attr('id', 'descriptionLong');
 $('#p-detail-tabs a[href="#description"]').attr('href', '#descriptionLong');
 $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="shp-tab-link" role="tab">Parametry</a></li>');
 
-
 /* Cross selling products */
 if ($("#productsRelated .flag-custom2").length){
     var i=0;
-
     $("#productsRelated .flag-custom2").each(function(i){
-
         var ran = i+1; 
-
         var pName = $(this).closest(".p").find(".name").prop("title");
-
         $(".p-info-wrapper .add-to-cart").before('<div class="detail-cross-selling selling-'+ ran +'"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '">' + pName + '</label></div>')
-
         var pUrl = $(this).closest("a.image").prop("href");
-
         $("body").append('<div id="crossSelling' + ran + '"></div>');
 
         $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
@@ -327,7 +315,6 @@ if ($("#productsRelated .flag-custom2").length){
 
         $("#product-detail-form select[data-parameter-name='Barva']").change(function() {
             var selected = $("#product-detail-form select[data-parameter-name='Barva'] option:selected").text(); 
-        
             $("#crossSelling" + ran + " option").filter(function(){
                 return $(this).text() == selected;
             }).prop("selected", true);
