@@ -294,9 +294,7 @@ header + .content-wrapper .content-wrapper-in{
 */
 
 
-#header::before {
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
- }
+
  .menu-level-1>li>a::before{
    content: "";
    width: 1px;

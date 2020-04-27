@@ -28,6 +28,11 @@
 .submenu-active #header::after{
     display: flex;
 }
+
+#header.scroll::before {
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
+ }
+
 @media screen and (max-width: 991px){
     #header {
         height: 56px;

@@ -48,6 +48,34 @@ $(document).ready(function() {
 // HEADER AREA
 // -----------------------------------------------------------------------------
 
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $("#header");
+    header.addClass("no-scroll");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 0) {
+            header.removeClass("no-scroll").addClass("scroll");
+        }
+        if (scroll <= 0) {
+            header.removeClass("scroll").addClass("no-scroll");
+        }
+    });
+});
+
+$(function() {
+    //caches a jQuery object containing the header element
+    var header2 = $(".no-scroll");
+    var scroll2 = $(window).scrollTop();
+    if (scroll2 > 0) {
+        header2.removeClass('no-scroll').addClass("scroll");
+    }
+    if (scroll < 0) {
+        header2.removeClass("scroll").addClass('no-scroll');
+    }
+});
+
+
 /* add contacts into header area */ 
 if ($(".search").length){
     if ($("#footer").length){
