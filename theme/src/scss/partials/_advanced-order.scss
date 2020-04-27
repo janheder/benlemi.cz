@@ -11,13 +11,13 @@
     width: 100%;
     z-index: 9;
     background: rgba(0,0,0,0.5);
-    display: flex;
+    display: flex !important;
 }
 
 .type-product > #colorbox{
     background: $white;
     z-index: 10;
-    display: flex;
+    display: flex !important;
 }
 .type-product > #cboxWrapper{
     position: relative;
