@@ -858,7 +858,7 @@ div[id^="crossSelling"]{
     position: absolute;
     opacity: 0;
 }
-.detail-cross-selling input+label::before {
+.detail-cross-selling input+label::before{
     content: "";
     background: transparent;
     height: 14px;
@@ -871,7 +871,7 @@ div[id^="crossSelling"]{
     border-radius: 0%;
     border: 2px solid $gray-600;
 }
-.detail-cross-selling input:checked+label::after {
+.detail-cross-selling input:checked+label::after{
     content: "";
     background-color: $green-700;
     background-image: url("../icons/check-white.svg");
@@ -899,4 +899,12 @@ div[id^="crossSelling"]{
 }
 #js-ratingStoreToggle.--hide{
     display: none;
+}
+
+#ratingProduct input[type="submit"], #ratingStore input[type="submit"]{
+    background: $gray-700;
+
+    &:hover, &:active, &:focus{
+        background: $gray-800;
+    }
 }
