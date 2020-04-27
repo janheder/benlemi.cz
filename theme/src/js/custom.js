@@ -486,17 +486,11 @@ if ($(".ordering-process").length){
 }
 
 
-
-
-
-
-
 /*
 if ($(".ordering-process").length){
     $(".discount-coupon").insertBefore('.price-wrapper .price-label.price-primary');
 }
 */
-
 
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
