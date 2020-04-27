@@ -895,10 +895,13 @@ div[id^="crossSelling"]{
 
 #js-ratingStoreToggle{
     margin-top: 40px;
-    background: $gray-700;
+    background: $white;
+    color: $gray-900;
+    border: 2px solid $gray-400;
 
     &:hover, &:active, &:focus{
         background: $gray-600;
+        border: 0;
     }
 }
 #js-ratingStoreToggle.--hide{
