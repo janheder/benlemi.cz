@@ -458,6 +458,12 @@ if ($(".type-detail").length){
     $('a[href="#productsRelated"]').text("Příslušenství");
 }
 
+if ($(".product").length){
+    $(".product").each(function(){
+        $(this).find(".p-tools").insertBefore($(this).find('.image'));
+    });
+}
+
 
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY

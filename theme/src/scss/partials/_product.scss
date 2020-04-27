@@ -115,8 +115,23 @@
 .p .price-final strong small{
     padding-right: 3px;
 }
-.p .p-tools{
-    display: none;
+
+.p .p-tools {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000080;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.3s ease opacity;
+}
+.p:hover .p-tools {
+    opacity: 1;
 }
 .p .ratings-wrapper{
     order: 0;
