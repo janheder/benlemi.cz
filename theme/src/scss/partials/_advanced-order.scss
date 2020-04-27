@@ -1,6 +1,6 @@
 
 #cboxOverlay, #colorbox{
-    display: none !important;
+    display: none;
 }
 
 .type-product > #cboxOverlay{
@@ -11,13 +11,13 @@
     width: 100%;
     z-index: 9;
     background: rgba(0,0,0,0.5);
-    display: flex !important;
+    display: flex;
 }
 
 .type-product > #colorbox{
     background: $white;
     z-index: 10;
-    display: flex !important;
+    display: flex;
 }
 .type-product > #cboxWrapper{
     position: relative;
@@ -101,4 +101,3 @@
     justify-content: center;
     margin: 0;
 }
-
