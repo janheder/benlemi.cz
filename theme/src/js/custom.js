@@ -227,6 +227,11 @@ if ($(".type-detail").length){
 
     $("#ratingTab #ratingStore").load("/hodnoceni-obchodu/ .content-inner", function() {
         $("<div class='btn btn-secondary' id='js-ratingStoreToggle'>Přidat hodnocení</div>").insertBefore("#ratingStore #rate-form");
+        
+        $("#js-ratingStoreToggle").click(function(){
+            $("#ratingStore #rate-form").addClass("--active");
+            $(this).addClass("--hide");
+        });
     });
 
 }
@@ -431,10 +436,6 @@ if ($(".type-detail").length){
     $('a[href="#productsRelated"]').text("Příslušenství");
 }
 
-$("#js-ratingStoreToggle").click(function(){
-    $("#ratingStore #rate-form").addClass("--active");
-    $(this).addClass("--hide");
-});
 
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
