@@ -558,9 +558,9 @@
 #ratingProduct > p{
     margin: 0;
     padding: 10px;
-    background: $pink-200;
+    background: $gray-300;
     text-align: center;
-    color: $pink-800;
+    color: $gray-900;
     font-size: 14px;
 }
 #ratingProduct > p + #ratingWrapper .rate-wrap{
@@ -896,6 +896,10 @@ div[id^="crossSelling"]{
 #js-ratingStoreToggle{
     margin-top: 40px;
     background: $gray-700;
+
+    &:hover, &:active, &:focus{
+        background: $gray-600;
+    }
 }
 #js-ratingStoreToggle.--hide{
     display: none;
@@ -905,6 +909,6 @@ div[id^="crossSelling"]{
     background: $gray-700;
 
     &:hover, &:active, &:focus{
-        background: $gray-800;
+        background: $gray-600;
     }
 }
