@@ -424,15 +424,16 @@ if ($(".type-detail").length){
     });
 }
 
-
-
-
 /* rename titles */
 if ($(".type-detail").length){
     $(".extended-description h3").text("Výhody a parametry");
     $(".products-related-header").text("Potřebné příslušenství, které oceníte:");
     $('a[href="#productsRelated"]').text("Příslušenství");
 }
+
+$("#js-ratingStoreToggle").click(function(){
+    $("#rate-form").classToggle("--active");
+});
 
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
