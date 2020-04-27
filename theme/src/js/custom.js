@@ -432,7 +432,8 @@ if ($(".type-detail").length){
 }
 
 $("#js-ratingStoreToggle").click(function(){
-    $("#rate-form").classToggle("--active");
+    $("#ratingStore #rate-form").addClass("--active");
+    $(this).addClass("--hide");
 });
 
 // -----------------------------------------------------------------------------

@@ -896,3 +896,6 @@ div[id^="crossSelling"]{
 #js-ratingStoreToggle{
     margin-top: 20px;
 }
+#js-ratingStoreToggle.--hide{
+    display: none;
+}
