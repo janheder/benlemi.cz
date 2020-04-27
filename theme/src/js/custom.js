@@ -224,7 +224,11 @@ if ($(".type-detail").length){
     $("#ratingTab").append("<div id='ratingStore'></div>");
 
     $("#ratingProduct").prepend("<h1>Hodnocení produktu</h1>");
-    $("#ratingTab #ratingStore").load("/hodnoceni-obchodu/ .content-inner");
+
+    $("#ratingTab #ratingStore").load("/hodnoceni-obchodu/ .content-inner", function() {
+        $("<div class='btn btn-secondary' id='js-ratingStoreToggle'>Přidat hodnocení</div>").insertBefore("#ratingStore #rate-form");
+    });
+
 }
 
 /* click on modal overlay closes the whole modal window */   
@@ -421,9 +425,7 @@ if ($(".type-detail").length){
 }
 
 
-/*
-$("<div class='btn' id='js-ratingStoreToggle'>Přidat hodnocení</div>").insertBefore("#ratingStore #rate-form");
-*/
+
 
 /* rename titles */
 if ($(".type-detail").length){
