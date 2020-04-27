@@ -285,11 +285,42 @@ header + .content-wrapper .content-wrapper-in{
 .menu-level-1>li >a::after {
     content: none;
 }
+/*
 .menu-level-1>li >a{
     border-right: 1px solid #e0e0e0;
     border-left: 1px solid #e0e0e0;
     margin-right: -1px
 }
+*/
+
+
+#header::before {
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
+ }
+ .menu-level-1>li>a::before{
+   content: "";
+   width: 1px;
+   height: 26px;
+   background: #e1e1e1;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   position: absolute;
+ }
+ .menu-level-1>li>a::after{
+   content: "";
+   width: 20px;
+   height: 20px;
+   background-color: transparent;
+       background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/arrow-down.svg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 14px 14px;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   position: absolute;
+ }
 
 @import "partials/_img";
 @import "partials/_btn";
