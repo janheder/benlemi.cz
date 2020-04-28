@@ -43,7 +43,7 @@
     top: 10px;
     left: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 .p .flags .flag{
@@ -70,6 +70,19 @@
     &.flag-gift{
         
     }
+}
+.p .flags.flags-extra{
+    left: auto;
+    right: 0;
+}
+.p .flags.flags-extra .flag-discount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    background: $orange-700;
 }
 .flag-custom2{
     display: none !important;
