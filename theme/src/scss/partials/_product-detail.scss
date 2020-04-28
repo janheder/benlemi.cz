@@ -83,14 +83,14 @@
 .p-detail-info .flag .price-standard{
     display: none;
 }
-.p-detail-info .flag-discount .price-save{
+.p-image .flag-discount .price-save{
     position: absolute;
     right: 10px;
     top: 10px;    
     z-index: 1;
 }
-.p-detail-info .flag-discount .price-standard{
-    display: none;
+.p-image .flag-discount .price-standard{
+    display: none !important;
 }
 
 .stars-wrapper{
