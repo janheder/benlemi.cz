@@ -89,6 +89,15 @@
     top: 10px;    
     z-index: 1;
 }
+.p-image .flag-discount .price-save span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    background: $orange-700;
+}
 .p-image .flag-discount .price-standard{
     display: none !important;
 }
