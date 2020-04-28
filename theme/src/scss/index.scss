@@ -257,6 +257,9 @@ header + .content-wrapper .content-wrapper-in{
 .force-display{
     display: block !important;
 }
+.force-display.empty{
+    display: none !important;
+}
 
 @media screen and (min-width: 992px){
     body:not(.ordering-process):not(.type-detail) .overall-wrapper{
