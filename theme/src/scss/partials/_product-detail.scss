@@ -202,6 +202,14 @@
     flex-direction: column;
     padding-top: 20px;
 }
+.p-final-price-wrapper .price-standard{
+    text-decoration: line-through;
+    color: $gray-700;
+    font-weight: 500;
+}
+.p-final-price-wrapper .price-save{
+    display: none;
+}
 .price-final{
 
 }
