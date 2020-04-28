@@ -221,12 +221,14 @@
     text-decoration: line-through;
     color: $gray-700;
     font-weight: 500;
+    padding-right: 10px;
 }
 .p-final-price-wrapper .price-save{
     display: none;
 }
 .price-final{
-
+    display: flex;
+    align-items: baseline;
 }
 .price-additional{
     font-size: 14px;

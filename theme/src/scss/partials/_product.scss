@@ -119,7 +119,8 @@
     color: $red-700;
 }
 .p .price-final{
-
+    display: flex;
+    align-items: baseline;
 }
 .p .price-final strong{
     position: relative;

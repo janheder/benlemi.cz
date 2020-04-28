@@ -396,8 +396,11 @@ if ($("#productsRelated .flag-custom2").length){
         });
         $("span."+ number).addClass("force-display");
     });
-  
-    
+}
+
+/* move standard price */
+if ($(".p-final-price-wrapper .price-standard").length){
+    $(".p-final-price-wrapper .price-standard").insertBefore(".p-final-price-wrapper .price-final-holder:first-child");
 }
 
 
