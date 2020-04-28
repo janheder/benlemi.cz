@@ -895,9 +895,8 @@ div[id^="crossSelling"]{
 
 #js-ratingStoreToggle{
     margin-top: 40px;
-    background: $white;
+    background: $gray-400;
     color: $gray-900;
-    border: 2px solid $gray-400;
 
     &:hover, &:active, &:focus{
         background: $gray-600;
@@ -915,5 +914,3 @@ div[id^="crossSelling"]{
         background: $gray-600;
     }
 }
-
-

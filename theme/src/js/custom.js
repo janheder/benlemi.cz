@@ -460,7 +460,7 @@ if ($(".type-detail").length){
 
 if ($(".product").length){
     $(".product").each(function(){
-        $(this).find(".p-tools").insertBefore($(this).find('.image'));
+        $(this).find(".p-tools").insertBefore($(this).find('.image img'));
     });
 }
 
