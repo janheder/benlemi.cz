@@ -83,6 +83,16 @@
 .p-detail-info .flag .price-standard{
     display: none;
 }
+.p-detail-info .flag-discount .price-save{
+    position: absolute;
+    right: 10px;
+    top: 10px;    
+    z-index: 1;
+}
+.p-detail-info .flag-discount .price-standard{
+    display: none;
+}
+
 .stars-wrapper{
     order: 4;
     margin-bottom: 10px;
@@ -709,6 +719,7 @@
     order: 1;
 }
 .basic-description > h3{
+    display: none;
     text-align: center;
     position: relative;
     display: flex;
