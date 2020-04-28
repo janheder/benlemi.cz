@@ -42,3 +42,7 @@
         padding: 0;
     }
 }
+
+body.ordering-process #header.scroll::before, body.type-detail #header.scroll::before{
+    box-shadow: none;
+}
