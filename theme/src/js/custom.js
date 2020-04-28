@@ -398,12 +398,12 @@ if ($("#productsRelated .flag-custom2").length){
     });
 }
 
-/* move standard price */
+/* move standard price 
 if ($(".p-final-price-wrapper .price-standard").length){
     $(".p-final-price-wrapper .price-standard").insertBefore(".p-final-price-wrapper .price-final-holder:first-child");
 }
 
-
+*/
 /* add button into advanced order modal */
 $(document).ready(function() {
     $("#cboxOverlay, #colorbox").hover(function(){
