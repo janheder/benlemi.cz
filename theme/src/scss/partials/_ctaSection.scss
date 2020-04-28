@@ -51,6 +51,10 @@
     padding: 0;
     padding: 15px 20px;
     border: 2px solid $gray-400;
+
+    &:hover, &:active, &:focus{
+        border: 2px solid $gray-600;
+    }
 }
 .ctaSection__boxIcon{
     height: 30px;

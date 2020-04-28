@@ -266,8 +266,6 @@ if ($(".type-detail").length){
     });
 }
 
-
-
 /* click on modal overlay closes the whole modal window */   
 $("#closeModal").click(function(){
     $("#cboxOverlay").click();
@@ -398,7 +396,7 @@ if ($("#productsRelated .flag-custom2").length){
     });
 }
 
-/* move standard price */
+/* relocate standard price */
 $(document).ready(function() {
     if ($(".p-final-price-wrapper .price-standard").length){
         $(".p-final-price-wrapper .price-standard").insertBefore(".p-final-price-wrapper .price-final-holder:first-child");
@@ -522,11 +520,10 @@ if ($(".ordering-process").length){
     $(".cart-header .step-3 span").text('Kontaktní údaje');
 }
 
-
 /*
-if ($(".ordering-process").length){
-    $(".discount-coupon").insertBefore('.price-wrapper .price-label.price-primary');
-}
+    if ($(".ordering-process").length){
+        $(".discount-coupon").insertBefore('.price-wrapper .price-label.price-primary');
+    }
 */
 
 // -----------------------------------------------------------------------------
