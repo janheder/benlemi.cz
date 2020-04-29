@@ -37,6 +37,10 @@
 .pagination-loader{
     margin: 20px 0;
     flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
 }¨
 .pagination-loader span{
     width: 100%;
