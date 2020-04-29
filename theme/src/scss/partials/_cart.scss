@@ -69,6 +69,7 @@
 }
 .cart-header .step.active{
     border-bottom: 2px solid $green-700;
+    background: $gray-400;
 }
 .cart-header .step.completed{
     border-bottom: 2px solid $green-700;

@@ -3,7 +3,7 @@
     display: none;
 }
 
-.type-product > #cboxOverlay{
+#colorbox > #cboxOverlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -14,28 +14,28 @@
     display: flex;
 }
 
-.type-product > #colorbox{
+#colorbox > #colorbox{
     background: $white;
     z-index: 10;
     display: flex;
 }
-.type-product > #cboxWrapper{
+#colorbox > #cboxWrapper{
     position: relative;
 }
-.type-product .advanced-order{
+#colorbox .advanced-order{
 
 }
 
-.type-product .advanced-order .h1{
+#colorbox .advanced-order .h1{
     padding: 40px 50px;
     text-align: center;
     font-size: 24px;
 }
-.type-product .advanced-order .h2{
+#colorbox .advanced-order .h2{
     text-align: center;
     display: none;
 }
-.type-product .extras-wrap{
+#colorbox .extras-wrap{
     padding: 40px 50px 40px 50px;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@
     flex-direction: column;
     background: $gray-300;
 }
-.type-product .delivery{
+#colorbox .delivery{
     text-align: center;
     padding: 10px 0;
     width: 100%;
@@ -51,10 +51,10 @@
     background: $green-700;
     color: $white;
 }
-.type-product .delivery strong{
+#colorbox .delivery strong{
     font-weight: 400;
 }
-.type-product .step{
+#colorbox .step{
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -74,7 +74,7 @@
         background: $gray-500;
     }
 }
-.type-product #cboxClose{
+#colorbox #cboxClose{
     position: absolute;
     top: 0;
     right: 0;
@@ -90,12 +90,12 @@
     padding: 0;
     cursor: pointer;
 }
-.type-product .advanced-order-suggestion{
+#colorbox .advanced-order-suggestion{
     text-align: center;
     font-size: 24px;
     padding: 10px 50px;
 }
-.type-product .advanced-order #products{
+#colorbox .advanced-order #products{
     padding: 0 50px 10px 50px;
     display: flex;
     justify-content: center;
