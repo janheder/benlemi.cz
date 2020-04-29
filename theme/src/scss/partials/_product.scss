@@ -140,12 +140,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #00000080;
+    background: rgba($black, 0.8);
     opacity: 0;
     z-index: 1;
     transition: 0.3s ease opacity;
 }
-.p:hover .p-tools {
+.p .image:hover .p-tools {
     opacity: 1;
 }
 .p .ratings-wrapper{
@@ -186,6 +186,9 @@
     } 
     .products-page .product{
         width: 33.333%;
+    }
+    .p .p-tools{
+        display: none;
     }
 }
 @media screen and (max-width: 500px){
