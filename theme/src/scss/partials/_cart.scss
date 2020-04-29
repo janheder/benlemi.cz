@@ -896,7 +896,7 @@
     color: $yellow-900;
 }
 
-.cart-content #company-info , .cart-content #shipping-address, .cart-content #note{
+.cart-content #company-info , .cart-content #shipping-address, .cart-content #add-note, .cart-content #add-note+label{
     display: none;
 }
 .cart-content #company-info.visible, .cart-content #shipping-address.visible, .cart-content #note.visible{

@@ -399,6 +399,7 @@ if ($("#productsRelated .flag-custom2").length){
             $(this).removeClass("force-display");
         });
         $("span."+ number).addClass("force-display");
+        $(".default-variant").addClass("no-display");
     });
 }
 
