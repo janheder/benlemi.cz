@@ -479,23 +479,6 @@
     background: $green-100;
 
 }
-@media screen and (min-width: 992px){
-    .discount-coupon {
-        margin-bottom: -46px;
-    }
-    .cart-summary .extras-wrap .extra.delivery{
-        color: $green-800;
-        background: transparent;
-        display: flex;
-        justify-content: flex-end;
-        height: 46px;
-        padding: 0;
-    }
-    .cart-summary .extras-wrap .extra.delivery > span{
-        padding: 10px 20px;
-        background: $green-100;
-    }
-}
 .cart-summary .free-gift{
     margin-bottom: 20px;
 }
@@ -542,11 +525,30 @@
     height: 46px;
     margin-right: 5px;
 }
+
 .applied-coupon{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (min-width: 992px){
+    .discount-coupon {
+        margin-bottom: -46px;
+    }
+    .cart-summary .extras-wrap .extra.delivery{
+        color: $green-800;
+        background: transparent;
+        display: flex;
+        justify-content: flex-end;
+        height: 46px;
+        padding: 0;
+    }
+    .cart-summary .extras-wrap .extra.delivery > span{
+        padding: 10px 20px;
+        background: $green-100;
+    }
 }
 
 .cart-content.summary-wrapper{
