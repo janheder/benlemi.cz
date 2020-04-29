@@ -537,6 +537,10 @@ if ($(".ordering-process").length){
     }
 */
 
+if ($(".in-krok-2").length){
+    $(".in-krok-2 .co-billing-address .unveil-wrapper").insertAfter('.in-krok-2 .co-billing-address fieldset > h4');
+}
+
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
 // -----------------------------------------------------------------------------
