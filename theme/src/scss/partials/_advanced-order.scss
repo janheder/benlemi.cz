@@ -3,7 +3,7 @@
     display: none;
 }
 
-#colorbox > #cboxOverlay{
+ #cboxOverlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     display: flex;
 }
 
-#colorbox > #colorbox{
+#colorbox{
     background: $white;
     z-index: 10;
     display: flex;
