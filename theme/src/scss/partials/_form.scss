@@ -104,3 +104,8 @@ input.form-control:disabled, select.form-control:disabled{
         color: $gray-700;
     }
 }
+
+
+.stay-in-touch .cart-content input[type="checkbox"]+label{
+    border: 1px solid $green-700;
+}

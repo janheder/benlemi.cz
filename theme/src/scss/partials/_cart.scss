@@ -917,6 +917,25 @@
     color: $yellow-900;
 }
 
+.validator-msg.msg-info{
+    animation-name: hide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    overflow: hidden;
+}
+  
+@keyframes hide {
+    from {
+        height: auto;
+    }
+    to {
+      height: 0;
+      padding: 0;
+      margin: 0;
+    }
+}
+
 .cart-content #company-info , .cart-content #shipping-address, .cart-content #add-note, .cart-content #add-note+label{
     display: none;
 }
