@@ -499,7 +499,6 @@ if ($(".filters-wrapper").length){
 
 if ($(".pagination-loader").length){
     $(".pagination-loader span").text("Zobrazit další");
-
 }
 
 
