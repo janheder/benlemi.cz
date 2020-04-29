@@ -135,6 +135,7 @@
     .cart-header {
         margin: -20px;
         margin-bottom: 20px;
+        margin-top: 0;
     }
     .cart-header .step a, .cart-header .step strong{
         padding: 10px;
@@ -477,7 +478,7 @@
 .cart-summary .extras-wrap .extra.delivery{
     color: $green-800;
     background: $green-100;
-
+    text-align: right;
 }
 .cart-summary .free-gift{
     margin-bottom: 20px;
