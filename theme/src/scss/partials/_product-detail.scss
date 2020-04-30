@@ -899,6 +899,10 @@ div[id^="crossSelling"]{
     display: block;
     border: 1px solid $gray-400;
 }
+.detail-cross-selling label img{
+    height: 40px;
+    margin-right: 10px;
+}
 .detail-cross-selling input{
     -webkit-appearance: none;
     position: absolute;
@@ -913,7 +917,7 @@ div[id^="crossSelling"]{
     margin-right: 10px;
     position: absolute;
     left: 10px;
-    top: 15px;
+    top: 23px;
     border-radius: 0%;
     border: 2px solid $gray-600;
 }
@@ -930,7 +934,7 @@ div[id^="crossSelling"]{
     margin-right: 10px;
     position: absolute;
     left: 10px;
-    top: 15px;
+    top: 23px;
     border-radius: 0%;
 }
 .detail-cross-selling-heading{
