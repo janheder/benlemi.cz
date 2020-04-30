@@ -339,10 +339,11 @@ content: "";
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px;
     background: $white;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 .bottomCta__spinner{
 
