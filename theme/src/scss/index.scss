@@ -340,9 +340,12 @@ content: "";
     left: 0;
     width: 100%;
     padding: 20px;
+    background: $white;
+    display: flex;
+    justify-content: center;
 }
 .bottomCta__spinner{
-    
+
 }
 .bottomCta__button{
 
