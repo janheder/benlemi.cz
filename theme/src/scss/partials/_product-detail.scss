@@ -883,6 +883,13 @@ div[id^="crossSelling"]{
     display: flex;
     align-items: center;
 }
+.selling-2 ~ .detail-cross-selling{
+    display: none;
+}
+.detail-cross-selling.checked  ~ .detail-cross-selling{
+    display: flex;
+}
+  
 .detail-cross-selling label{
     padding: 10px;
     cursor: pointer;

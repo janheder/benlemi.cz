@@ -402,6 +402,14 @@ if ($("#productsRelated .flag-custom2").length){
     });
 }
 
+$('.detail-cross-selling input').change(function() {
+    if($(this).is(":checked")) {
+        $(this).closest(".detail-cross-selling").addClass("checked");
+    }else{
+        $(this).closest(".detail-cross-selling").removeClass("checked");
+    }
+});
+
 /* relocate standard price */
 $(document).ready(function() {
     if ($(".p-final-price-wrapper .price-standard").length){
