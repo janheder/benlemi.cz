@@ -12,9 +12,9 @@
     }
 }
 
-.overall-wrapper > .site-msg{
+.overall-wrapper > .site-msg:first-child{
     display: none;
 }
-.ordering-process .overall-wrapper > .site-msg{
+.ordering-process .overall-wrapper > .site-msg:first-child{
     display: flex;
 }
