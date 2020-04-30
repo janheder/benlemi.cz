@@ -478,10 +478,9 @@ if ($(".type-detail").length){
     $('a[href="#productsRelated"]').text("Příslušenství");
 }
 
-if ($(".product").length){
-    $(".product").each(function(){
-        $(this).find(".p-tools").insertBefore($(this).find('.image img'));
-    });
+/* add add to cart cta fixed on bottom of a page */
+if ($(".type-detail").length){
+    $('<div class="bottomCta"><div class="bottomCta__spinner"></div><div class="bottomCta__button">Přidat do košíku</div></div>').insertBefore(".overall-wraper");
 }
 
 
@@ -509,8 +508,16 @@ if ($(".filters-wrapper").length){
     });
 }
 
+/* rename show more button */
 if ($(".pagination-loader").length){
     $(".pagination-loader span").text("Zobrazit další");
+}
+
+/* relocate hover overlay on product */
+if ($(".product").length){
+    $(".product").each(function(){
+        $(this).find(".p-tools").insertBefore($(this).find('.image img'));
+    });
 }
 
 

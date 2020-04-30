@@ -309,30 +309,46 @@ header + .content-wrapper .content-wrapper-in{
 
 
 
- .menu-level-1>li.ext>a::before{
-   content: "";
-   width: 1px;
-   height: 26px;
-   background: #e1e1e1;
-   left: 0;
-   top: 50%;
-   transform: translateY(-50%);
-   position: absolute;
- }
- .menu-level-1>li.ext>a::after{
-   content: "";
-   width: 20px;
-   height: 20px;
-   background-color: transparent;
-       background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/arrow-down.svg");
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: 14px 14px;
-   right: 10px;
-   top: 50%;
-   transform: translateY(-50%);
-   position: absolute;
- }
+.menu-level-1>li.ext>a::before{
+    content: "";
+    width: 1px;
+    height: 26px;
+    background: #e1e1e1;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.menu-level-1>li.ext>a::after{
+content: "";
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/arrow-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.bottomCta{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+.bottomCta__spinner{
+    
+}
+.bottomCta__button{
+
+}
+
+
 
 @import "partials/_img";
 @import "partials/_btn";

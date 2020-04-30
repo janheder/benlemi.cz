@@ -896,7 +896,9 @@ div[id^="crossSelling"]{
     margin: 0;
     padding-left: 34px;
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid $gray-400;
 }
 .detail-cross-selling label img{
