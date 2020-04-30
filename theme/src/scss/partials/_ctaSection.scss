@@ -8,9 +8,24 @@
 .ctaSection__imgWrap{
     display: flex;
     flex-shrink: 0;
+    position: relative;
 }
 .ctaSection__imgWrap img{
     max-height: 300px;
+}
+.ctaSection__imgCaption{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: $white;
+    box-shadow: 0px 4px 15px rgba($black,0.08);
+}
+.ctaSection__imgCaption span{
+    font-size: 14px;
 }
 .ctaSection__img{
 
