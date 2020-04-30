@@ -344,7 +344,8 @@ if ($("#productsRelated .flag-custom2").length){
     $("#productsRelated .flag-custom2").each(function(i){
         var ran = i+1; 
         var pName = $(this).closest(".p").find(".name").prop("title");
-        $(".p-info-wrapper .add-to-cart").before('<div class="detail-cross-selling selling-'+ ran +'"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '">' + pName + '</label></div>')
+        var pImg = $(this).closest(".p").find(".image img").prop("src");
+        $(".p-info-wrapper .add-to-cart").before('<div class="detail-cross-selling selling-'+ ran +'"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '"><img src="' + pImg + '">' + pName + '</label></div>')
         var pUrl = $(this).closest("a.image").prop("href");
         $("body").append('<div id="crossSelling' + ran + '"></div>');
 
