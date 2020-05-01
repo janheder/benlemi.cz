@@ -343,22 +343,56 @@ content: "";
     background: $white;
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 3;
 }
 .bottomCta__spinner{
     width: 120px;
     margin-right: 10px;
+    position: relative;
 }
 .bottomCta__spinner input{
     height: 100%;
     text-align: center;
+    line-height: 46px;
+    padding: 0 10px;
+    border: 1px solid $gray-400;
 }
-.bottomCta__spinner .increase{
-    width: 120px;
-    margin-right: 10px;
+.bottomCta__spinner .increase, .bottomCta__spinner .decrease{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    cursor: pointer;
+    background: $white;
+
+    &::before, &::after{
+        content: "";
+        background: $gray-800;
+        height: 2px;
+        width: 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &::after{
+        height: 10px;
+        width: 2px;
+    }
+    &:hover, &:active, &:focus{
+        background: $gray-300;
+    }
 }
 .bottomCta__spinner .decrease{
-
+    left: 1px;
+    right: auto;
+    &::after{
+        content: none;
+    }
 }
 .bottomCta__button{
 
