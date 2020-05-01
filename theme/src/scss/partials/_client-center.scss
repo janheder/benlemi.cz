@@ -1,8 +1,16 @@
 .client-center-box{
-    padding: 20px;
+    padding: 0px;
     background: $gray-300;
 }
 .client-center-box ul{
     list-style: none;
     margin: 0;
+    padding: 0;
+}
+.client-center-box a{
+    padding: 10px 20px;
+    color: $gray-900;
+}
+.client-center-box .logout a{
+    height: 26px;
 }
