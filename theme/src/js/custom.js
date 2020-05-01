@@ -480,7 +480,9 @@ if ($(".type-detail").length){
 
 /* add add to cart cta fixed on bottom of a page */
 if ($(".type-detail").length){
-    $('<div class="bottomCta"><div class="bottomCta__spinner"><input type="text" id="bottomCtaInput" value="1"><span class="increase"></span><span class="decrease"></span></div><div class="btn bottomCta__button" id="bottomCtaButton">Přidat do košíku</div></div>').insertBefore(".overall-wrapper");
+    var pName = $(".p-detail-inner-header h1").text();
+    var pPrice = $(".p-final-price-wrapper .price-final").html();
+    $('<div class="bottomCta"><div class="bottomCta__content"><div class="bottomCta__title">' + pName + '</div><div class="bottomCta__price">' + pPrice + '</div></div><div class="bottomCta__spinner"><input type="text" id="bottomCtaInput" value="1"><span class="increase"></span><span class="decrease"></span></div><div class="btn bottomCta__button" id="bottomCtaButton">Přidat do košíku</div></div>').insertBefore(".overall-wrapper");
     $("#bottomCtaInput").change(function(){
         var inputValue = $('#bottomCtaInput').val();
         $('.quantity input').val(inputValue);
