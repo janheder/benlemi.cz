@@ -399,7 +399,7 @@ if ($("#productsRelated .flag-custom2").length){
             var number = one+"-"+two+"-"+one2+"-"+two2;
         }
         
-        $(".p-info-wrapper span, .price-save span, .price-standard span").each(function(){
+        $(".p-info-wrapper span, .price-save span, .price-standard span, .bottomCta__price span").each(function(){
             $(this).removeClass("force-display");
         });
         $("span."+ number).addClass("force-display");
