@@ -480,13 +480,14 @@ if ($(".type-detail").length){
 
 /* add add to cart cta fixed on bottom of a page */
 if ($(".type-detail").length){
-    $('<div class="bottomCta"><div class="bottomCta__spinner"><input type="text" id="bottomCtaInput" value="1"><span class="increase"></span><span class="decrease"></span></div><div class="btn bottomCta__button">Přidat do košíku</div></div>').insertBefore(".overall-wrapper");
+    $('<div class="bottomCta"><div class="bottomCta__spinner"><input type="text" id="bottomCtaInput" value="1"><span class="increase"></span><span class="decrease"></span></div><div class="btn bottomCta__button" id="bottomCtaButton">Přidat do košíku</div></div>').insertBefore(".overall-wrapper");
     $("#bottomCtaInput").change(function(){
         var inputValue = $('#bottomCtaInput').val();
         $('.quantity input').val(inputValue);
     });
-    
-
+    $("#bottomCtaButton").click(function(){
+        $('.add-to-cart-button').click();
+    });
 }
 
 
