@@ -346,6 +346,18 @@ content: "";
     z-index: 1;
 }
 .bottomCta__spinner{
+    width: 120px;
+    margin-right: 10px;
+}
+.bottomCta__spinner input{
+    height: 100%;
+    text-align: center;
+}
+.bottomCta__spinner .increase{
+    width: 120px;
+    margin-right: 10px;
+}
+.bottomCta__spinner .decrease{
 
 }
 .bottomCta__button{
