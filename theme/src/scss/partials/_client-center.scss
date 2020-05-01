@@ -10,7 +10,12 @@
 .client-center-box a{
     padding: 10px 20px;
     color: $gray-900;
+    display: flex;
+}
+.client-center-box .logout{
+    padding: 0 20px;
 }
 .client-center-box .logout a{
     height: 26px;
+    
 }

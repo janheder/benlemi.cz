@@ -346,9 +346,21 @@ content: "";
     z-index: 3;
     box-shadow: 0px -5px 5px rgba(0,0,0,0.08);
 }
+.bottomCta__content{
+
+}
+.bottomCta__title{
+    font-weight: 500;
+}
+.bottomCta__price{
+
+}
+.bottomCta__price span{
+    font-size: 16px;
+}
 .bottomCta__spinner{
     width: 120px;
-    margin-right: 10px;
+    margin: 0 10px;
     position: relative;
 }
 .bottomCta__spinner input{
