@@ -509,7 +509,10 @@ if ($(".type-detail").length){
         $('#bottomCtaInput').val(inputValue+1);
     });
     $(".add-to-cart .decrease").click(function(){
-        $('.bottomCta__spinner .decrease').click();
+        var inputValue = parseInt($('.add-to-cart .amount').val());
+        if(inputValue>=1){
+            $('#bottomCtaInput').val(inputValue-1);
+        }
     });
 
 }
