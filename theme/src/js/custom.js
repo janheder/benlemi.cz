@@ -505,17 +505,13 @@ if ($(".type-detail").length){
     });
 
     $(".add-to-cart .increase").click(function(){
-        $('.bottomCta__spinner .increase').click();
-        var inputValue = parseInt($('#bottomCtaInput').val());
+        var inputValue = parseInt($('.add-to-cart .amount').val());
         $('#bottomCtaInput').val(inputValue+1);
     });
     $(".add-to-cart .decrease").click(function(){
         $('.bottomCta__spinner .decrease').click();
-        var inputValue = parseInt($('#bottomCtaInput').val());
-        if(inputValue>=1){
-            $('#bottomCtaInput').val(inputValue-1);
-        }
     });
+
 }
 
 
