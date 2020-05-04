@@ -58,17 +58,23 @@
     justify-content: center;
     align-items: center;
 
-    .flag-action{
-        
+    &.flag-action{
+        background: #cf4823;
+    }
+    &.flag-new{
+        background: #d86329;
+    }
+    &.flag-tip{
+        background: #eb8959;
+    }
+    &.flag-gift{
+        background: #a0cd54;
+    }
+    &.flag-custom3{
+        background: #78aa66;
     }
     .price-standard{
         display: none;
-    }
-    &.flag-tip{
-        
-    }
-    &.flag-gift{
-        
     }
 }
 .p .flags.flags-extra{

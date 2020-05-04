@@ -490,6 +490,16 @@ if ($(".type-detail").length){
     $("#bottomCtaButton").click(function(){
         $('.add-to-cart-button').click();
     });
+    $(".bottomCta__spinner .increase").click(function(){
+        $('.add-to-cart .increase').click();
+        var inputValue = parseInt($('#bottomCtaInput').val());
+        $('#bottomCtaInput').val(inputValue+1);
+    });
+    $(".bottomCta__spinner .decrease").click(function(){
+        $('.add-to-cart .decrease').click();
+        var inputValue = parseInt($('#bottomCtaInput').val());
+        $('#bottomCtaInput').val(inputValue-1);
+    });
 }
 
 
