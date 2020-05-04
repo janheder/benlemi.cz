@@ -490,6 +490,7 @@ if ($(".type-detail").length){
     $("#bottomCtaButton").click(function(){
         $('.add-to-cart-button').click();
     });
+
     $(".bottomCta__spinner .increase").click(function(){
         $('.add-to-cart .increase').click();
         var inputValue = parseInt($('#bottomCtaInput').val());
@@ -498,7 +499,22 @@ if ($(".type-detail").length){
     $(".bottomCta__spinner .decrease").click(function(){
         $('.add-to-cart .decrease').click();
         var inputValue = parseInt($('#bottomCtaInput').val());
-        $('#bottomCtaInput').val(inputValue-1);
+        if(inputValue>=1){
+            $('#bottomCtaInput').val(inputValue-1);
+        }
+    });
+
+    $(".add-to-cart .increase").click(function(){
+        $('.bottomCta__spinner .increase').click();
+        var inputValue = parseInt($('#bottomCtaInput').val());
+        $('#bottomCtaInput').val(inputValue+1);
+    });
+    $(".add-to-cart .decrease").click(function(){
+        $('.bottomCta__spinner .decrease').click();
+        var inputValue = parseInt($('#bottomCtaInput').val());
+        if(inputValue>=1){
+            $('#bottomCtaInput').val(inputValue-1);
+        }
     });
 }
 
