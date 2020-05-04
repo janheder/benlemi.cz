@@ -37,7 +37,7 @@
     background: $pink-200;
     text-align: center;
     color: $pink-800;
-    font-size: 14px;
+    font-size: 64px;
 }
 .order-complete-links{
     text-align: center;
@@ -76,6 +76,9 @@
         text-align: right;
     }
     .cart-table-heading{
+        display: none;
+    }
+    .header-contacts{
         display: none;
     }
 }

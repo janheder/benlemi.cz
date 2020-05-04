@@ -242,4 +242,15 @@
 }
 #checkoutSidebar .consents label{
     margin: 0;
+    border: 0;
+    padding: 10px 0;
+
+    &::before{
+        left: 0px;
+        top: 5px;
+    }
+    &::after{
+        left: 0px;
+        top: 5px;
+    }
 }
