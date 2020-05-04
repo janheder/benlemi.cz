@@ -567,7 +567,12 @@ if ($(".ordering-process").length){
 
 if ($(".in-krok-2").length){
     $(".in-krok-2 .co-billing-address .unveil-wrapper").insertAfter('.in-krok-2 .co-billing-address fieldset > h4');
+
+    $(".stay-in-touch .form-group:last-child").addClass("register");
+    $(".stay-in-touch .form-group.register").insertAfter(".co-contact-information");
 }
+
+
 
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE

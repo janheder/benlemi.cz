@@ -109,3 +109,17 @@ input.form-control:disabled, select.form-control:disabled{
 .cart-content .stay-in-touch input[type="checkbox"]+label{
     border: 1px solid $green-700;
 }
+
+.cart-content .register input[type="checkbox"]+label{
+    padding: 0 10px;
+    border: 0;
+
+    &::before{
+        left: 0px;
+        top: 5px;
+    }
+    &::after{
+        left: 0px;
+        top: 5px;
+    }
+}
