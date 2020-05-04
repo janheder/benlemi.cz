@@ -309,7 +309,7 @@
 .variant-list select{
     width: 360px;
     max-width: 100%;
-    background: $gray-300;
+    background: $white;
     height: 48px;
     padding: 0 15px;
     border: 1px solid $gray-400;
@@ -771,7 +771,6 @@
     display: none;
     text-align: center;
     position: relative;
-    display: flex;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
