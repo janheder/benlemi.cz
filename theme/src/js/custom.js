@@ -520,9 +520,12 @@ if ($(".type-detail").length){
 $("#ratingProduct>p").text("Buďte první, kdo napíše hodnocení k tomuto produktu");
 
 /* rewrite description */
-var desc = $("#descriptionLong .rte p").text();
-var descTrim = desc.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
-$(".p-short-description p").text(descTrim);
+if ($(".type-detail").length){
+    var desc = $("#descriptionLong .rte p").text();
+    var descTrim = desc.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
+    $(".p-short-description p").text(descTrim);
+}
+
 
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
@@ -645,4 +648,11 @@ if ($(".blogCategories").length){
         $("<div class='blogCategories__sectionShowMore'><a href='/blog-benlemi-pomaha/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__benlemi-pomaha .blogCategories__section .news-item:nth-child(2)");    
     });
 
+}
+
+// -----------------------------------------------------------------------------
+// USER PROFILE
+// -----------------------------------------------------------------------------
+if ($(".logout").length){
+    $(".logout").insertAfter(".client-center-box");
 }

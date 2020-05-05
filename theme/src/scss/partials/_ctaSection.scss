@@ -15,7 +15,7 @@
 }
 .ctaSection__imgCaption{
     position: absolute;
-    right: -80px;
+    right: -170px;
     bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
 
 }
 .ctaSection__content{
-    padding-left: 20px;
+    padding-left: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,6 +134,9 @@
         margin-left: -20px;
         justify-content: center;
         align-items: flex-end;
+    }
+    .ctaSection__imgCaption{
+        right: 0;
     }
     .ctaSection__content{
         padding-left: 20px;
