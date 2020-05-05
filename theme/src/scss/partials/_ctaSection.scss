@@ -71,8 +71,9 @@
     border: 2px solid $gray-400;
 
     &:hover, &:active, &:focus{
-        border: 2px solid $green-700;
-        background: $green-700;
+        border: 2px solid $green-900;
+        background: $green-900;
+
         .ctaSection__boxTitle, .ctaSection__boxText{
             color: $white;
         }
