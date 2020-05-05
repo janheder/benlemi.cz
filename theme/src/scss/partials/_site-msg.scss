@@ -18,3 +18,8 @@
 .ordering-process .overall-wrapper > .site-msg:first-child{
     display: flex;
 }
+@media screen and (max-width: 991px){
+    .ordering-process .overall-wrapper > .site-msg:first-child{
+        display: none;
+    }
+}
