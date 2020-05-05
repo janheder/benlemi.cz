@@ -71,7 +71,14 @@
     border: 2px solid $gray-400;
 
     &:hover, &:active, &:focus{
-        border: 2px solid $gray-600;
+        border: 2px solid $green-700;
+
+        .ctaSection__boxTitle, .ctaSection__boxText{
+            color: $white;
+        }
+        .ctaSection__boxIcon{
+            filter: brightness(10);
+        }
     }
 }
 .ctaSection__boxIcon{
@@ -87,7 +94,7 @@
 }
 .ctaSection__boxText{
     font-size: 16px;
-    font-weight:4600;
+    font-weight: 600;
     color: $gray-700;
 }
 .ctaSection__socialWrap{
