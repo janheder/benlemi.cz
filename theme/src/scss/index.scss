@@ -142,7 +142,9 @@ header + .content-wrapper .content-wrapper-in{
 .content > h4{
     display: none;
 }
-.in-klient .content, .in-nastaveni .content, .in-objednavky .content{
+.in-klient .content, .in-nastaveni .content, .in-objednavky .content, 
+.in-klient-objednavky .content, .in-klient-slevy .content, .in-klient-hodnoceni .content, 
+.in-klient-diskuze .content{
     width: 75%;
 }
 
@@ -323,11 +325,11 @@ header + .content-wrapper .content-wrapper-in{
     position: absolute;
 }
 .menu-level-1>li.ext>a::after{
-content: "";
+    content: "";
     width: 20px;
     height: 20px;
     background-color: transparent;
-    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/arrow-down.svg");
+    background-image: url("../icons/arrow-down.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 14px 14px;
