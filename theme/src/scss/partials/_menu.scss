@@ -265,6 +265,15 @@
     padding: 0 10px;
     border-left: 1px solid $gray-400;
     border-right: 1px solid $gray-400;
+
+    &.--user{
+        padding-left: 30px;
+        background-image: url("../icons/user.svg");
+        height: 18px;
+        width: 18px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 .navLinks__link:first-child{
     border: 0;
