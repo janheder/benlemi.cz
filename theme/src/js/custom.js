@@ -597,7 +597,11 @@ if ($(".in-krok-2").length){
     $(".stay-in-touch .form-group.register").insertAfter(".co-contact-information");
 }
 
-
+$("#company-shopping").change(function(){
+    $("#company-info input").each(function(){
+        $(this).prop("required", true);
+    });
+});
 
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
