@@ -950,3 +950,10 @@
 .ordering-process #navigation, .ordering-process #header::before{
     display: none;
 }
+
+.co-box-additional{
+    padding-top: 0px;
+}
+.co-box-additional .form-group:first-child{
+    display: none;
+}

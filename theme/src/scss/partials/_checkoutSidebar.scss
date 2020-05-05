@@ -144,6 +144,10 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+.next-step a, .next-step button{
+    width: 100%;
 }
 
 .next-step-back{
@@ -234,7 +238,6 @@
     font-size: 14px;
     color: $gray-700;
 }
-
 #checkoutSidebar .consents{
     font-size: 14px;
     padding: 0;
