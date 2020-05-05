@@ -519,6 +519,10 @@ if ($(".type-detail").length){
 
 $("#ratingProduct>p").text("Buďte první, kdo napíše hodnocení k tomuto produktu");
 
+var desc = $("#descriptionLong .rte p").text();
+var descTrim = desc.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
+$(".p-short-description p").text(descTrim);
+
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
 // -----------------------------------------------------------------------------
