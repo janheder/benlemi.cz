@@ -72,7 +72,7 @@
 
     &:hover, &:active, &:focus{
         border: 2px solid $green-700;
-
+        background: $green-700;
         .ctaSection__boxTitle, .ctaSection__boxText{
             color: $white;
         }
