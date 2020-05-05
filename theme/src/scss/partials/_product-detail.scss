@@ -519,6 +519,8 @@
         padding: 12px 20px;  
         display: flex;
         color: $gray-700;
+        text-transform: uppercase;
+        font-weight: 600;
 
         &:hover, &:active, &:focus{
             text-decoration: none;
