@@ -517,6 +517,7 @@ if ($(".type-detail").length){
 
 }
 
+$("#ratingProduct>p").text("Buďte první, kdo napíše hodnocení k tomuto produktu");
 
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
