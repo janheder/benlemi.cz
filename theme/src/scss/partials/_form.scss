@@ -27,6 +27,9 @@
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
+textarea.form-control:valid{
+    background: none;
+}
 select.form-control{
     background: $white;
     height: 48px;
