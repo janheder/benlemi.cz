@@ -23,8 +23,11 @@
 }
 .logout a{
     height: 26px;
-    color: $white;
     width: 100%;
     margin-top: 10px;
-    
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    color: $gray-700;
 }
