@@ -21,6 +21,12 @@
     width: 100%;
     border-radius: 0;
 }
+.form-control:valid{
+    background: url("../icons/checkbox-green.svg");
+    background-position: right center;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
 select.form-control{
     background: $white;
     height: 48px;
