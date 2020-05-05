@@ -627,13 +627,14 @@
     position: relative;
 
     &::before{
+        content: "";
         background: url("../img/kluci-polocelek.png");
         background-position: center center;
         position: absolute;
         right: 0;
         bottom: 0;
         top: -30px;
-        
+
     }
 }
 #ratingProduct > p + #ratingWrapper .rate-wrap{
