@@ -616,13 +616,25 @@
 }
 #ratingProduct > p{
     margin: 0;
-    padding: 10px;
+    padding: 20px;
+    padding-right: 20px;
     background: $white;
     text-align: left;
     color: $gray-900;
     font-size: 18px;
     padding-right: 50%;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+    position: relative;
+
+    &::before{
+        background: url("../img/kluci-polocelek.png");
+        background-position: center center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: -30px;
+        
+    }
 }
 #ratingProduct > p + #ratingWrapper .rate-wrap{
     display: none;
