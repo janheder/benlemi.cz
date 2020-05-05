@@ -507,6 +507,18 @@
         margin-bottom: 20px;
     }
     .p-detail-tabs li{
+        position: relative;
+        &::after{
+            content: "";
+            width: 1px;
+            height: 26px;
+            background: #e1e1e1;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+
         &.active{
        
             
@@ -518,7 +530,7 @@
     .p-detail-tabs a{
         padding: 12px 20px;  
         display: flex;
-        color: $gray-700;
+        color: $gray-900;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 15px;
