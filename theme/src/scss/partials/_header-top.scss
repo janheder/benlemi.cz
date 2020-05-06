@@ -39,6 +39,9 @@
         height: 38px;
         margin: 0px;
     }
+    .ordering-process .site-name{
+        margin-left: 10px;
+    }
 }
 .site-name a{
     display: flex;
@@ -267,6 +270,9 @@
 .nav-menu-toggle{
     display: none;
 }
+.ordering-process .nav-menu-toggle{
+    display: none;
+} 
 
 @media screen and (max-width: 991px){
     .nav-menu-toggle{

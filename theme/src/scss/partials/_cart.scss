@@ -984,6 +984,9 @@
 .co-box-additional{
     padding-top: 0px;
 }
+.co-box-additional > .form-group:first-child{
+    display: none;
+}
 .co-box-additional .form-group:first-child{
     display: flex;
 }
