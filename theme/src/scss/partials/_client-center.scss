@@ -31,4 +31,10 @@
     padding: 0;
     color: $gray-700;
     background: transparent;
+    text-transform: none;
+
+    &:hover, &:active, &:focus{
+        background: transparent
+        color: $gray-900;
+    }
 }
