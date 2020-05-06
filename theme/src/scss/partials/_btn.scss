@@ -21,3 +21,13 @@
         text-decoration: none;
     }
 }
+.btn-secondary{
+    background: $gray-300;
+    color: $gray-800;
+
+    &:hover, &:active, &:focus{
+        color: $gray-800;
+        background: $gray-400;
+        text-decoration: none;
+    }
+}
