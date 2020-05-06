@@ -561,10 +561,15 @@ if ($(".pagination-loader").length){
     $(".pagination-loader span").text("Zobrazit další");
 }
 
-/* relocate hover overlay on product */
+/* relocate hover overlay on product & add more variants into product box*/
 if ($(".product").length){
     $(".product").each(function(){
         $(this).find(".p-tools").insertBefore($(this).find('.image img'));
+
+        if ($(this).find(".price-final strong > small").length){
+            $(this).find(".name").append("<span class='p-variants'>Více variant</span>");
+        }
+
     });
 }
 

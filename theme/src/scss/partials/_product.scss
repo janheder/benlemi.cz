@@ -122,7 +122,10 @@
         text-decoration: underline;
     }
 }
-
+.p-in-in .name .p-variants{
+    display: flex;
+    color: $gray-700;
+}
 .p .p-bottom{
 
 }
