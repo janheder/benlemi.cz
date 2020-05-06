@@ -945,7 +945,27 @@
     flex-direction: column;
 }
 
+.co-billing-address filedset > h4{
+    text-align: center;
+    position: relative;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    color: $gray-800;
+    width: 100%;
 
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }
+}
 
 .ordering-process #navigation, .ordering-process #header::before{
     display: none;
@@ -970,7 +990,7 @@
     &::before, &::after{
         top: 50%;
         left: 50%;
-        transform: translate(-20px,-50%)
+        transform: translate(-26px,-50%)
     }
 }
 .cart-content .stay-in-touch::before {
