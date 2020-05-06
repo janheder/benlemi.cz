@@ -90,6 +90,7 @@ input.form-control:disabled, select.form-control:disabled{
             border: 2px solid $gray-600;
         }
     }
+    
     input[type="checkbox"]:checked + label{
     
         &::after{
