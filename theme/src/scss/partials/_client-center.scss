@@ -37,7 +37,7 @@
     text-transform: none;
 
     &:hover, &:active, &:focus{
-        background: transparent
+        background: transparent;
         color: $gray-900;
     }
 }
