@@ -954,7 +954,12 @@
     display: flex;
     flex-direction: column;
 }
-
+.co-billing-address{
+    padding-bottom: 0;
+}
+.co-shipping-address{
+    padding-top: 0;
+}
 .co-billing-address fieldset > h4{
     text-align: center;
     position: relative;
@@ -992,7 +997,7 @@
 }
 .cart-content .stay-in-touch{
     position: relative;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .cart-content .stay-in-touch input[type="checkbox"]+label{
