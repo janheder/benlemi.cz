@@ -535,6 +535,15 @@
     align-items: center;
 }
 
+@media screen and (max-width: 991px){
+    .discount-coupon form{
+        width: 100%;
+    }
+    .cart-summary .extras-wrap .extra.delivery {
+        text-align: center;
+    }
+}
+
 @media screen and (min-width: 992px){
     .discount-coupon {
         margin-bottom: -46px;
