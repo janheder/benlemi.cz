@@ -690,6 +690,7 @@
     }
     .cart-row .col-md-8, .cart-row .col-md-4 {
         max-width: none;
+        flex-basis: 100%;
     }
 }
 #orderFormSubmit{
