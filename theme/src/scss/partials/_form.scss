@@ -90,7 +90,7 @@ input.form-control:disabled, select.form-control:disabled{
             border: 2px solid $gray-600;
         }
     }
-    
+
     input[type="checkbox"]:checked + label{
     
         &::after{
@@ -116,9 +116,6 @@ input.form-control:disabled, select.form-control:disabled{
 }
 
 
-.cart-content .stay-in-touch input[type="checkbox"]+label{
-    border: 1px solid $green-700;
-}
 
 .cart-content .register input[type="checkbox"]+label{
     padding: 0 20px;
