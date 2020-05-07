@@ -40,6 +40,13 @@
 .client-center-box a[href="/klient/klient-slevy/"]::before{
     background: url("../icons/discount.svg");
 }
+.client-center-box a[href="/klient/klient-hodnoceni/"]::before{
+    background: url("../icons/star.svg");
+}
+.client-center-box a[href="/klient/klient-diskuze/"]::before{
+    background: url("../icons/message.svg");
+}
+
 .client-center-box strong{
     font-size: 18px;
 }
