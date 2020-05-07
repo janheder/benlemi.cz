@@ -148,6 +148,19 @@ header + .content-wrapper .content-wrapper-in{
     width: 75%;
 }
 
+.in-klient-slevy .content table{
+    width: 100%;
+
+    td{
+        border: 1px solid $gray-400;
+        padding: 10px;
+    }
+}
+.in-klient-slevy .content table + p{
+    color: $gray-700;
+    margin-top: 10px;
+}
+
 .middle-banners-wrapper .banner-wrapper{  
     height: auto;
 }
