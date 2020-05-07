@@ -532,6 +532,15 @@ if ($(".type-detail").length){
 }
 
 
+$(window).on('scroll', function() {
+    scrollPosition = $(this).scrollTop();
+    if (scrollPosition >= 1000) {
+        $(".bottomCta").addClass("--active");
+        $(this).off('scroll');
+    }
+});
+
+
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
 // -----------------------------------------------------------------------------
