@@ -8,11 +8,12 @@
     padding: 0;
 }
 .client-center-box a{
-    padding: 10px 20px 10px 45px;
+    padding: 12px 20px 12px 45px;
     color: $gray-900;
     display: flex;
     position: relative;
     font-size: 14px;
+    border-bottom: 1px solid $gray-400;
 
     &::before{
         content: "";
