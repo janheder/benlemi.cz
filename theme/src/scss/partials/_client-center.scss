@@ -8,21 +8,23 @@
     padding: 0;
 }
 .client-center-box a{
-    padding: 10px 20px 10px 40px;
+    padding: 10px 20px 10px 45px;
     color: $gray-900;
     display: flex;
     position: relative;
+    font-size: 14px;
 
     &::before{
         content: "";
         background: url("../icons/user.svg");
-        background-size: 14px;
-        height: 141px;
-        width: 14px;
+        background-size: 18px;
+        height: 18px;
+        width: 18px;
         display: flex;
         position: absolute;
         left: 15px;
-        top: 10px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     &:hover, &:active, &:focus{
         background: $gray-400;
@@ -31,6 +33,13 @@
 }
 .client-center-box strong{
     font-size: 18px;
+}
+.client-center-box li:first-child a{
+    padding: 10px 20px;
+
+    &::before{
+        content: none;
+    }
 }
 .client-center-box li.active{
     background: $gray-400;
