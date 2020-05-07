@@ -31,6 +31,15 @@
         text-decoration: none;
     }
 }
+.client-center-box a[href="/klient/objednavky/"]::before{
+    background: url("../icons/cart.svg");
+}
+.client-center-box a[href="/klient/klient-doklady/"]::before{
+    background: url("../icons/document.svg");
+}
+.client-center-box a[href="/klient/klient-slevy/"]::before{
+    background: url("../icons/discount.svg");
+}
 .client-center-box strong{
     font-size: 18px;
 }
