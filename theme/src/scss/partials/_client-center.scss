@@ -8,10 +8,22 @@
     padding: 0;
 }
 .client-center-box a{
-    padding: 10px 20px;
+    padding: 10px 20px 10px 40px;
     color: $gray-900;
     display: flex;
+    position: relative;
 
+    &::before{
+        content: "";
+        background: url("../icons/user.svg");
+        background-size: 14px;
+        height: 141px;
+        width: 14px;
+        display: flex;
+        position: absolute;
+        left: 15px;
+        top: 10px;
+    }
     &:hover, &:active, &:focus{
         background: $gray-400;
         text-decoration: none;
