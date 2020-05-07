@@ -32,19 +32,19 @@
     }
 }
 .client-center-box a[href="/klient/objednavky/"]::before{
-    background: url("../icons/cart.svg");
+    background-image: url("../icons/cart.svg");
 }
 .client-center-box a[href="/klient/klient-doklady/"]::before{
-    background: url("../icons/document.svg");
+    background-image: url("../icons/document.svg");
 }
 .client-center-box a[href="/klient/klient-slevy/"]::before{
-    background: url("../icons/discount.svg");
+    background-image: url("../icons/discount.svg");
 }
 .client-center-box a[href="/klient/klient-hodnoceni/"]::before{
-    background: url("../icons/star.svg");
+    background-image: url("../icons/star.svg");
 }
 .client-center-box a[href="/klient/klient-diskuze/"]::before{
-    background: url("../icons/message.svg");
+    background-image: url("../icons/message.svg");
 }
 
 .client-center-box strong{
