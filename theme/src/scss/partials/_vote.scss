@@ -245,7 +245,7 @@
     margin-top: 20px;
     font-size: 15px;
     font-weight: 500;
-    background: $gray-400;
+    background: $gray-300;
     color: $gray-900;
     height: 46px;
     padding: 0 20px;
@@ -258,7 +258,7 @@
     text-transform: uppercase;
 
     &:hover, &:active, &:focus{
-        background: $gray-500;
+        background: $gray-400;
     }
 }
 .rate-wrapper .vote-form .vote-form-title.--hide{
