@@ -17,6 +17,13 @@
         text-decoration: none;
     }
 }
+.client-center-box strong{
+    font-size: 18px;
+}
+.client-center-box li.active{
+    background: $gray-400;
+}
+
 .client-center-box .logout{
     display: none;
 }
