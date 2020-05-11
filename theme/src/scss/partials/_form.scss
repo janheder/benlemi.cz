@@ -30,6 +30,9 @@
 textarea.form-control:valid{
     background: none;
 }
+.search .search-form .form-control:valid{
+    background: none;
+}
 select.form-control, select.form-control:valid{
     background: $white;
     height: 48px;
