@@ -680,9 +680,12 @@ if ($(".blogCategories").length){
 
 if ($(".logout").length){
     $(".logout").insertAfter(".client-center-box");
+
+    $("<div class='client-contact-box'></div>").insertAfter(".client-center-box + .logout");
+    $(".client-contact-box").load("/objednavka/krok-1// .checkout-box");
 }
 
-$("<div class='client-contact-box'></div>").insertAfter(".client-center-box + .logout");
+
 
 
 // -----------------------------------------------------------------------------
