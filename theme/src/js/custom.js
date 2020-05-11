@@ -640,8 +640,6 @@ $("#company-shopping").change(function(){
     });
 });
 
-
-
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
 // -----------------------------------------------------------------------------
@@ -649,7 +647,7 @@ $("#company-shopping").change(function(){
 /* add title to rating */
 if ($("#rate-form").length){
     $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
-}   
+}
 
 // -----------------------------------------------------------------------------
 // BLOG
@@ -662,7 +660,7 @@ if ($(".blogCategories").length){
         $("<h2 class='blogCategories__sectionTitle'>Bydlení</h2>").insertBefore(".blogCategories .blogCategories__bydleni");
         $("<div class='blogCategories__sectionShowMore'><a href='/blog-bydleni/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__bydleni .blogCategories__section .news-item:nth-child(2)");    
     });
-
+    
     $(".blogCategories .blogCategories__rodina").load("/blog-rodina/ .news-wrapper", function() {
         $("<h2 class='blogCategories__sectionTitle'>Rodina</h2>").insertBefore(".blogCategories .blogCategories__rodina");
         $("<div class='blogCategories__sectionShowMore'><a href='/blog-rodina/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__rodina .blogCategories__section .news-item:nth-child(2)");    
