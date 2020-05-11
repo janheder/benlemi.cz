@@ -337,6 +337,7 @@ header + .content-wrapper .content-wrapper-in{
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
+    z-index: -1;
 }
 
 .menu-level-1>li.ext>a::before{
