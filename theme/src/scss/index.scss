@@ -328,14 +328,23 @@ header + .content-wrapper .content-wrapper-in{
 }
 */
 
-
+.menu-level-1::before{
+    content: "";
+    width: 1px;
+    height: 26px;
+    background: $gray-400;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
 
 .menu-level-1>li.ext>a::before{
     content: "";
     width: 1px;
     height: 26px;
-    background: #e1e1e1;
-    left: 0;
+    background: $gray-400;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     position: absolute;

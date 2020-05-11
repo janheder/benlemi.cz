@@ -69,6 +69,7 @@
     background-repeat: no-repeat;
     width: 120px;
     font-size: 0;
+    flex-shrink: 0;
 }
 .checkout-box .contact-box ul{
     list-style: none;
@@ -76,6 +77,13 @@
     padding-left: 20px;
     padding-bottom: 20px;
     margin: 0;
+}
+.checkout-box .contact-box li{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.checkout-box .contact-box ul .facebook, .checkout-box .contact-box ul .instagram{
+    display: none;
 }
 .order-summary-inner{
     background: $gray-300;

@@ -9,6 +9,7 @@
     display: flex;
     flex-shrink: 0;
     position: relative;
+    align-items: flex-end;
 }
 .ctaSection__imgWrap img{
     max-height: 320px;
@@ -39,7 +40,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 20px;
     flex-grow: 1;
 }
 .ctaSection__contentInner{
