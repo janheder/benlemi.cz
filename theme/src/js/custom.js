@@ -626,6 +626,12 @@ if ($(".in-krok-2").length){
     $(".in-krok-2 .co-billing-address .unveil-wrapper").insertAfter('.in-krok-2 .co-billing-address fieldset > h4');
     $(".stay-in-touch .form-group:nth-child(2)").addClass("register");
     $(".stay-in-touch .form-group.register").insertAfter(".co-contact-information");
+
+    $(".co-contact-information h4 + .form-group label").text("Už jste u nás zaregistrovaní?");
+    $(".co-contact-information h4 + .form-group a").text("Přihlaste se");
+
+    $("#sendNewsletter + label").text("Dostávejte naše maily. Posíláme skutečně jen užitečné informace o bydlení, novinkách a slevách.");
+
 }
 
 $("#company-shopping").change(function(){
