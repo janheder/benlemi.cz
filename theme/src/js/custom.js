@@ -631,6 +631,8 @@ $("#company-shopping").change(function(){
     });
 });
 
+
+
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
 // -----------------------------------------------------------------------------
@@ -676,6 +678,9 @@ if ($(".blogCategories").length){
 if ($(".logout").length){
     $(".logout").insertAfter(".client-center-box");
 }
+
+$("<div class='client-contact-box'></div>").insertAfter(".client-center-box + .logout");
+
 
 // -----------------------------------------------------------------------------
 // FOOTER
