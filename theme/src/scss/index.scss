@@ -139,6 +139,9 @@ header + .content-wrapper .content-wrapper-in{
 .content{
     width: 100%;
 }
+.type-post .content-wrapper-in{
+    flex-wrap: nowrap;
+}
 .content > h4{
     display: none;
 }
