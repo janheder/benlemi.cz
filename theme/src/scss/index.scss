@@ -525,6 +525,7 @@ header + .content-wrapper .content-wrapper-in{
     background: #c53030;
     color: #fff;    
     display: flex;
+    text-align: left;
 }
 .msg-success::before {
     content: "✓";
