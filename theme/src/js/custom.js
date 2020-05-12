@@ -643,9 +643,8 @@ $("#company-shopping").change(function(){
 if ($(".in-dekujeme").length){
     var num = $(".reca-number strong").text();
     $(".recapitulation-wrapper .co-order .order-content").text("Obsah objednávky: "+ num);
-    $(".reca-number").text("");
+    $(".reca-number").text("Doma to budete mít krásné a ještě jste podpořili českou rodinnou firmu. Do 30 minut vám pošleme email se všemi důležitými informacemi.");
 }
-
 
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
@@ -696,9 +695,6 @@ if ($(".logout").length){
 
     $(".client-contact-box").load("/objednavka/krok-1/ .checkout-box");
 }
-
-
-
 
 // -----------------------------------------------------------------------------
 // FOOTER

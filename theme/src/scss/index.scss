@@ -547,3 +547,20 @@ header + .content-wrapper .content-wrapper-in{
     z-index: 9;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
 }
+
+.in-klient .content-inner h2{
+    font-size: 18px;
+}
+.in-klient .content-inner .table{
+
+}
+.in-klient .content-inner .table th{
+    border-bottom: 1px solid $gray-400;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+.in-klient .content-inner .table td{
+    background: $gray-300;
+    padding: 10px 10px;
+    font-size: 14px;
+}
