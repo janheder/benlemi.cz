@@ -150,6 +150,15 @@ header + .content-wrapper .content-wrapper-in{
 .in-klient-diskuze .content, .in-zapomenute-heslo .content, .in-dorucovaci-udaje .content{
     width: 75%;
 }
+@media screen and (max-width: 991px){
+    .in-klient .content, .in-nastaveni .content, .in-objednavky .content, 
+    .in-klient-objednavky .content, .in-klient-slevy .content, .in-klient-hodnoceni .content, .in-klient-doklady .content,
+    .in-klient-diskuze .content, .in-zapomenute-heslo .content, .in-dorucovaci-udaje .content{
+        width: 100%;
+    }
+}
+
+
 
 .in-klient-slevy .content table{
     width: 100%;
