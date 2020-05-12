@@ -640,6 +640,13 @@ $("#company-shopping").change(function(){
     });
 });
 
+if ($(".in-dekujeme").length){
+    var num = $(".reca-number strong").text();
+    $(".recapitulation-wrapper .co-order .order-content").text("Obsah objednávky"+ num);
+    $(".reca-number").text("");
+}
+
+
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
 // -----------------------------------------------------------------------------

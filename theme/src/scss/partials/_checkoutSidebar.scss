@@ -36,6 +36,10 @@
         background: $green-200;
     }  
 }
+.in-dekujeme .order-summary-heading::after{
+    content: none;
+}
+
 .checkout-box{
     margin-bottom: 20px;
 }
