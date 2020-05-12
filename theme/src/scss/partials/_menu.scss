@@ -45,6 +45,7 @@
 @media screen and (max-width: 991px){
     .menu-level-1 > li:nth-child(4){
         justify-content: flex-start;
+        flex-grow: 0;
     }  
 }
 .menu-level-2{
@@ -159,6 +160,7 @@
         justify-content: flex-start;
         height: 50px;
         padding: 0 15px;
+        width: 100%;
     }
     .menu-level-1 > li > a > b{
         font-weight: 600;
