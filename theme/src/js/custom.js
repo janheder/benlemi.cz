@@ -642,7 +642,7 @@ $("#company-shopping").change(function(){
 
 if ($(".in-dekujeme").length){
     var num = $(".reca-number strong").text();
-    $(".recapitulation-wrapper .co-order .order-content").text("Obsah objednávky"+ num);
+    $(".recapitulation-wrapper .co-order .order-content").text("Obsah objednávky: "+ num);
     $(".reca-number").text("");
 }
 
@@ -693,7 +693,8 @@ if ($(".logout").length){
     $(".logout").insertAfter(".client-center-box");
 
     $("<div class='client-contact-box'></div>").insertAfter(".client-center-box + .logout");
-    $(".client-contact-box").load("/objednavka/krok-1// .checkout-box");
+
+    $(".client-contact-box").load("/objednavka/krok-1/ .checkout-box");
 }
 
 

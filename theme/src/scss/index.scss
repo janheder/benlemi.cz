@@ -453,6 +453,40 @@ header + .content-wrapper .content-wrapper-in{
 
 }
 
+.in-login .content-inner h1.spaced, .in-login .content-inner h1.spaced+form{
+    display: none;
+}
+.messages a{
+    color: #fff;
+}
+.msg {
+    width: 100%;
+    padding: 20px 20px;
+    background: #c53030;
+    color: #fff;    
+    display: flex;
+}
+.msg-success::before {
+    content: "✓";
+    font-size: 24px;
+}
+.msg-error::before {
+    content: "✕";
+    font-size: 24px;
+}
+.messages {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    top: auto;
+    left: auto;
+    right: 20px;
+    width: 400px;
+    text-align: center;
+    z-index: 9;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
+}
+
 
 
 @import "partials/_img";
