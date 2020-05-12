@@ -522,7 +522,7 @@ header + .content-wrapper .content-wrapper-in{
 .msg {
     width: 100%;
     padding: 20px 20px;
-    background: #c53030;
+    background: $green-700;
     color: #fff;    
     display: flex;
     text-align: left;
@@ -534,6 +534,7 @@ header + .content-wrapper .content-wrapper-in{
 .msg-error::before {
     content: "✕";
     font-size: 24px;
+    background: #c53030;
 }
 .messages {
     display: flex;
