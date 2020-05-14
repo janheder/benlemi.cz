@@ -99,6 +99,15 @@
 .flag-custom2{
     display: none !important;
 }
+@media screen and (max-width: 991px){
+    .p .flags{
+        top: 5px;
+        left: 5px;
+    }
+}
+
+
+
 .p-in{
     display: flex;
     flex-direction: column;

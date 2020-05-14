@@ -117,6 +117,8 @@ a{
 @media (max-width: 991px){
     .container {
         max-width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
 
@@ -223,6 +225,20 @@ header + .content-wrapper .content-wrapper-in{
         border-top: 1px solid $gray-400;
     }
 }
+
+@media screen and (max-width: 991px){
+    .in-login{
+        .content-inner{
+            width: 100%;
+            box-shadow: none;
+            background: $white;
+            padding: 0px;
+        }
+    }
+}
+
+
+
 /*
 .js-hidden{
     display: none;
