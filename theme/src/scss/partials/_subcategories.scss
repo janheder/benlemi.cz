@@ -43,6 +43,15 @@
     font-size: 16px;
     color: $gray-800;
     padding-top: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 575px){
+    .subcategories li a .image {
+        width: 60px;
+    }
+    .subcategories li {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 500px){
