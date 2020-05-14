@@ -27,10 +27,7 @@
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
-textarea.form-control:valid{
-    background: none;
-}
-.search .search-form .form-control:valid{
+textarea.form-control:valid, .search .search-form .form-control:valid, .form-control:optional{
     background: none;
 }
 select.form-control, select.form-control:valid{
