@@ -500,12 +500,12 @@ header + .content-wrapper .content-wrapper-in{
     .box-squeeze .form-group{
         display: flex;
     }
-    .box-squeeze input{
+    input{
         -webkit-appearance: none;
         position: absolute;
         opacity: 0;
     }
-    input[type="checkbox"] + label{
+    input[type="checkbox"] + label, input[type="radio"] + label{
         margin: 0;
         flex-grow: 1;
         padding: 10px 10px;
@@ -531,7 +531,7 @@ header + .content-wrapper .content-wrapper-in{
         }
     }
 
-    input[type="checkbox"]:checked + label{
+    input[type="checkbox"]:checked + label, input[type="radio"]:checked + label{
     
         &::after{
             content: "";
