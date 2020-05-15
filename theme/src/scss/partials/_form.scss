@@ -60,13 +60,13 @@ input.form-control:disabled, select.form-control:disabled{
     cursor: not-allowed;
 }
 
-.cart-content{
-    input[type="checkbox"]{
+.cart-content, #register-form{
+    input[type="checkbox"], input[type="radio"]{
         -webkit-appearance: none;
         position: absolute;
         opacity: 0;
     }
-    input[type="checkbox"] + label{
+    input[type="checkbox"] + label, input[type="radio"] + label{
         margin: 0;
         flex-grow: 1;
         padding: 10px 10px;
@@ -92,7 +92,7 @@ input.form-control:disabled, select.form-control:disabled{
         }
     }
 
-    input[type="checkbox"]:checked + label{
+    input[type="checkbox"]:checked + label, input[type="radio"]:checked + label{
     
         &::after{
             content: "";
@@ -106,10 +106,13 @@ input.form-control:disabled, select.form-control:disabled{
             display: flex;
             margin-right: 10px;
             position: absolute;
-            left: 1px;
+            left: 0px;
             top: 14px;
             border-radius: 0%;
         }
+    }
+    input[type="radio"] + label::before, input[type="radio"] + label::after{
+        border-radius: 50%;
     }
     .additional-information{
         color: $gray-700;
