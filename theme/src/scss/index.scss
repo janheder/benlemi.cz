@@ -483,6 +483,7 @@ header + .content-wrapper .content-wrapper-in{
         padding-bottom: 15px;
         color: $gray-800;
         width: 100%;
+        margin-top: 20px;
     
         &::after{
             content: "";
@@ -499,6 +500,7 @@ header + .content-wrapper .content-wrapper-in{
     }
     .box-squeeze .form-group{
         display: flex;
+        padding: 0;
     }
     
     #company-info, #shipping-address{
@@ -510,5 +512,12 @@ header + .content-wrapper .content-wrapper-in{
     }
     .submit-wrapper .btn-login{
         width: 100%;
+        background: $orange-700;
+        color: $white;
+
+        &:hover, &:active, &:focus{
+            color: $white;
+            background: $orange-800;
+        }
     }
 }
