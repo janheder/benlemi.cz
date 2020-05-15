@@ -692,6 +692,16 @@
     #ratingProduct .rate-wrapper{
         width: 100%;
     }
+    #ratingProduct > p {
+        padding-right: 0;
+        padding-bottom: 240px;
+
+    }
+    #ratingProduct>p::before{
+        top: auto;
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
 
 
