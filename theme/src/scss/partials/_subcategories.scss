@@ -4,7 +4,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
-    /*justify-content: center;*/
 }
 .type-category #content .subcategories, .type-category #content .category-title, .type-category #content .category-perex{
     display: none;
@@ -48,6 +47,9 @@
 @media screen and (max-width: 575px){
     .subcategories li a .image {
         width: 60px;
+    }
+    .subcategories li a .text {
+        font-size: 14px;
     }
     .subcategories li {
         width: 50%;
