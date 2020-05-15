@@ -87,7 +87,6 @@ input.form-control:disabled, select.form-control:disabled{
             position: absolute;
             left: 0px;
             top: 14px;
-            border-radius: 0%;
             border: 2px solid $gray-600;
         }
     }
@@ -108,7 +107,6 @@ input.form-control:disabled, select.form-control:disabled{
             position: absolute;
             left: 0px;
             top: 14px;
-            border-radius: 0%;
         }
     }
     input[type="radio"] + label::before, input[type="radio"] + label::after{
