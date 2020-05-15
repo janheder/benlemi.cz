@@ -914,6 +914,10 @@
     text-align: center;
     color: $pink-800;
     font-size: 14px;
+
+    &::before{
+        content: none;
+    }
 }
 .validator-msg{
     margin-bottom: 10px;
