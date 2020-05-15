@@ -476,6 +476,8 @@ header + .content-wrapper .content-wrapper-in{
     #register-form{
         max-width: 700px;
         margin: 0 auto;
+        background: $white;
+        padding: 20px;
     }
     #register-form h4{
         text-align: center;
