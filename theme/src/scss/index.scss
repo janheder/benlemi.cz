@@ -527,3 +527,15 @@ header + .content-wrapper .content-wrapper-in{
         }
     }
 }
+
+.in-registrace #content-wrapper::after{
+    content: "";
+    height: 300px;
+    width: 100%;
+    position: sticky;
+    margin-top: -300px;
+    z-index: -1;
+    display: flex;
+    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/img/bg.png");
+    background-position: center top;
+}
