@@ -87,3 +87,18 @@
 
 }
 
+@media screen and (max-width: 575px){
+    .bottomCta__container {
+        flex-wrap: wrap;
+    }
+    .bottomCta__content {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .bottomCta__title {
+        font-size: 14px;
+    }
+    .bottomCta__spinner {
+        margin-left: 0;
+    }
+}
