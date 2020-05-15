@@ -1007,14 +1007,14 @@
 .cart-content .stay-in-touch input[type="checkbox"]+label{
     padding: 60px 20px;
     padding-left: 60px;
-    padding-right: 50%;
+    padding-right: 45%;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
     max-width: 100%;
     font-size: 16px;
 
     &::before, &::after{
         top: 50%;
-        left: 20px;
+        left: 25px;
         transform: translate(0px,-50%)
     }
 }
