@@ -67,6 +67,16 @@
     object-fit: cover;
 }
 
+.banners-row .col-sm-8{
+    width: 55%;
+    max-width: none;
+    flex-basis: 55%;
+}
+.banners-row .col-sm-4{
+    width: 45%;
+    max-width: none;
+    flex-basis: 45%;
+}
 
 .mobile .banners-row .col-sm-8{
     width: 100%;

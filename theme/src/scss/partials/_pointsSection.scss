@@ -24,7 +24,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .pointSingle__imgWrap img{
     width: 100%;
@@ -61,6 +60,10 @@
     #pointsSection {
         padding: 20px 0;
     }
+    .pointSingle__imgWrap {
+        height: 60px;
+        width: 60px;
+    }
 }
 @media screen and (max-width: 500px){
     .pointSingle{
@@ -69,11 +72,6 @@
         flex-direction: row;
         justify-content: flex-start;
         padding: 0;
-    }
-    .pointSingle__imgWrap {
-        border-radius: 50%;
-        height: 60px;
-        width: 60px;
     }
     .pointSingle__imgWrap img{
         width: 50px;
