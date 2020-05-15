@@ -328,157 +328,6 @@ header + .content-wrapper .content-wrapper-in{
         top: 0;
     }
 }
-.menu-level-1>li.ext >a{
-    position:relative;
-    padding: 0 40px 0 20px;
-}
-.menu-level-1>li.ext >a::after{
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    background: #ccc;
-}
-.menu-level-1>li.ext >a::after {
-    content: none;
-}
-/*
-.menu-level-1>li >a{
-    border-right: 1px solid #e0e0e0;
-    border-left: 1px solid #e0e0e0;
-    margin-right: -1px
-}
-*/
-
-.menu-level-1::before{
-    content: "";
-    width: 1px;
-    height: 26px;
-    background: $gray-400;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    z-index: -1;
-}
-
-.menu-level-1>li.ext>a::before{
-    content: "";
-    width: 1px;
-    height: 26px;
-    background: $gray-400;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-}
-.menu-level-1>li.ext>a::after{
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    background-image: url("../icons/arrow-down.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-}
-
-.bottomCta{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 10px;
-    background: $gray-300;
-    z-index: 3;
-    box-shadow: 0px -5px 5px rgba($black, 0.08);
-    transform: translateY(100%);
-    transition: 0.3s ease transform;
-}
-.bottomCta.--active{
-    transform: translateY(0%);
-}
-.bottomCta__container{
-    margin: 0 auto;
-    max-width: 1180px;
-    display: flex;
-    justify-content: center;
-}
-.bottomCta__content{
-    flex-grow: 1;
-}
-.bottomCta__title{
-    font-weight: 500;
-}
-.bottomCta__price{
-
-}
-.bottomCta__price span{
-    font-size: 16px;
-}
-.bottomCta__spinner{
-    width: 120px;
-    margin: 0 10px;
-    position: relative;
-    height: 46px;
-}
-.bottomCta__spinner input{
-    height: 100%;
-    text-align: center;
-    line-height: 46px;
-    padding: 0 10px;
-    border: 1px solid $gray-400;
-    width: 100%;
-}
-.bottomCta__spinner .increase, .bottomCta__spinner .decrease{
-    position: absolute;
-    right: 1px;
-    top: 1px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    cursor: pointer;
-    background: $white;
-
-    &::before, &::after{
-        content: "";
-        background: $gray-800;
-        height: 2px;
-        width: 10px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-    }
-    &::after{
-        height: 10px;
-        width: 2px;
-    }
-    &:hover, &:active, &:focus{
-        background: $gray-300;
-    }
-}
-.bottomCta__spinner .decrease{
-    left: 1px;
-    right: auto;
-    &::after{
-        content: none;
-    }
-}
-.bottomCta__button{
-
-}
-
-
 
 
 @import "partials/_img";
@@ -513,6 +362,7 @@ header + .content-wrapper .content-wrapper-in{
 @import "partials/_site-msg";
 @import "partials/_client-center";
 @import "partials/_blogCategories";
+@import "partials/_bottomCta";
 
 @import "partials/_pointsSection";
 @import "partials/_ctaSection";
@@ -544,7 +394,7 @@ header + .content-wrapper .content-wrapper-in{
 .messages a{
     color: #fff;
 }
-.msg {
+.msg{
     width: 100%;
     padding: 20px 20px;
     background: $green-700;
@@ -552,16 +402,18 @@ header + .content-wrapper .content-wrapper-in{
     display: flex;
     text-align: left;
 }
-.msg-success::before {
+.msg-success::before{
     content: "✓";
     font-size: 24px;
 }
-.msg-error::before {
+.msg-error::before{
     content: "✕";
     font-size: 24px;
+}
+.msg-error{
     background: #c53030;
 }
-.messages {
+.messages{
     display: flex;
     position: fixed;
     bottom: 20px;
@@ -593,3 +445,18 @@ header + .content-wrapper .content-wrapper-in{
     }
 }
 
+.in-registrace{
+    .content-inner h1{
+        
+    }
+    #register-form{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .box-squeeze{
+        display: flex;
+    }
+    .box-squeeze .form-group{
+        display: flex;
+    }
+}

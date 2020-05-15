@@ -1,0 +1,89 @@
+
+.bottomCta{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    background: $gray-300;
+    z-index: 3;
+    box-shadow: 0px -5px 5px rgba($black, 0.08);
+    transform: translateY(100%);
+    transition: 0.3s ease transform;
+}
+.bottomCta.--active{
+    transform: translateY(0%);
+}
+.bottomCta__container{
+    margin: 0 auto;
+    max-width: 1180px;
+    display: flex;
+    justify-content: center;
+}
+.bottomCta__content{
+    flex-grow: 1;
+}
+.bottomCta__title{
+    font-weight: 500;
+}
+.bottomCta__price{
+
+}
+.bottomCta__price span{
+    font-size: 16px;
+}
+.bottomCta__spinner{
+    width: 120px;
+    margin: 0 10px;
+    position: relative;
+    height: 46px;
+}
+.bottomCta__spinner input{
+    height: 100%;
+    text-align: center;
+    line-height: 46px;
+    padding: 0 10px;
+    border: 1px solid $gray-400;
+    width: 100%;
+}
+.bottomCta__spinner .increase, .bottomCta__spinner .decrease{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    cursor: pointer;
+    background: $white;
+
+    &::before, &::after{
+        content: "";
+        background: $gray-800;
+        height: 2px;
+        width: 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &::after{
+        height: 10px;
+        width: 2px;
+    }
+    &:hover, &:active, &:focus{
+        background: $gray-300;
+    }
+}
+.bottomCta__spinner .decrease{
+    left: 1px;
+    right: auto;
+    &::after{
+        content: none;
+    }
+}
+.bottomCta__button{
+
+}
+
