@@ -71,6 +71,10 @@ body.in-kosik::after, body.ordering-process::after{
     background-position: center top;
 }
 
+::selection {
+    background: $green-200;
+}
+
 a{
     color: $green-700;
     text-decoration: none;
