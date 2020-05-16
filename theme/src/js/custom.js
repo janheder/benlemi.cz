@@ -43,6 +43,8 @@ $(document).ready(function() {
     });
 });
 
+$("#content-wrapper").wrap("<div id='content-wrapper-wrap'></div>");
+
 
 // -----------------------------------------------------------------------------
 // HEADER AREA
@@ -705,3 +707,6 @@ if ($("#footer").length){
     $("#signature").prepend('<a href="https://benlemi.cz" class="title --benlemi">Vytvořili <img src="https://janheder.github.io/benlemi.cz/theme/dist/img/symbol-benlemi.svg" class="image --benlemi"> Benlemi &</a>');
     
 }
+
+
+

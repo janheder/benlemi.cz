@@ -528,11 +528,12 @@ header + .content-wrapper .content-wrapper-in{
     }
 }
 
-.in-registrace #content-wrapper::after{
+.in-registrace #content-wrapper-wrap::after{
     content: "";
     height: 300px;
     width: 100%;
     position: sticky;
+    bottom: 0;
     margin-top: -300px;
     z-index: -1;
     display: flex;
