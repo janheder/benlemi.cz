@@ -268,12 +268,14 @@ if ($(".type-detail").length){
     $("#ratingProduct").prepend("<h1>Hodnocení produktu</h1>");
 
     $("#ratingTab #ratingStore").load("/hodnoceni-obchodu/ .content-inner", function() {
-        $("<div class='btn btn-secondary' id='js-ratingStoreToggle'>Přidat hodnocení</div>").insertBefore("#ratingStore #rate-form");
+        $("<a href='/hodnoceni-obchodu' class='btn btn-secondary' id='js-ratingStoreToggle'>Přidat hodnocení</div>").insertBefore("#ratingStore #rate-form");
         
+        /*
         $("#js-ratingStoreToggle").click(function(){
             $("#ratingStore #rate-form").addClass("--active");
             $(this).addClass("--hide");
         });
+        */
         
         $(".rate-wrapper .vote-form .vote-form-title").click(function(){
             $(".vote-form-title + #formRating").addClass("--active");
@@ -708,5 +710,11 @@ if ($("#footer").length){
     
 }
 
+// -----------------------------------------------------------------------------
+// RATING STORE PAGE
+// -----------------------------------------------------------------------------
 
-
+$(".vote-form-title").click(function(){
+    $(".vote-form-title+#formRating").addClass("--active");
+    $(this).addClass("--hide");
+});
