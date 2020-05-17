@@ -967,6 +967,14 @@ div[id^="crossSelling"]{
     border: 1px solid $gray-400;
     width: 100%;
 }
+.detail-cross-selling label > span{
+    display: flex;
+    flex-direction: column;
+}
+.detail-cross-selling label > span > span:last-child{
+    color: $red-700;
+    font-weight: 600;
+}
 .detail-cross-selling label img{
     height: 40px;
     margin-right: 10px;

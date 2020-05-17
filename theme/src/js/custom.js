@@ -358,7 +358,7 @@ if ($("#productsRelated .flag-custom2").length){
         var pName = $(this).closest(".p").find(".name").prop("title");
         var pImg = $(this).closest(".p").find(".image img").prop("src");
         var pPrice = $(this).closest(".p").find(".price-final strong").text();
-        $(".p-info-wrapper .add-to-cart").before('<div class="detail-cross-selling selling-'+ ran +'"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '"><img src="' + pImg + '">' + pName + '<span>' + pPrice + '</span></label></div>')
+        $(".p-info-wrapper .add-to-cart").before('<div class="detail-cross-selling selling-'+ ran +'"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '"><img src="' + pImg + '"><span><span>' + pName + '</span><span>' + pPrice + '</span></span></label></div>')
         var pUrl = $(this).closest("a.image").prop("href");
         $("body").append('<div id="crossSelling' + ran + '"></div>');
 
