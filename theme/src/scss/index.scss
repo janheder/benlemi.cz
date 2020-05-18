@@ -540,3 +540,29 @@ header + .content-wrapper .content-wrapper-in{
     background-image: url("../img/bg.png");
     background-position: center top;
 }
+
+
+.in-dekujeme .header-top{
+    border-bottom: 1px solid $gray-400;
+  }
+  .ratingSection__content #ratingWrapper {
+      display: flex;
+    width: 100%;
+  }
+  
+  .ratingSection__content #ratingWrapper #rate-form{
+    display: none;
+  }
+  .ratingSection__content #ratingWrapper .rate-wrap{
+    width: 100%;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    padding: 30px 40px;
+      padding-left: 0;
+  }
+  .ratingSection__content #ratingWrapper .rate-wrap .col-sm-6 {
+      min-width: 50%;
+      flex-basis: 50%;
+      padding-bottom: 0px;
+  }
