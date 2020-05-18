@@ -35,7 +35,7 @@
     }
 }
 .menu-level-1 > li > a > b{
-    font-weight: 400;
+    font-weight: 500;
 }
 .menu-level-1 > li:nth-child(4){
     flex-grow: 1;
@@ -88,6 +88,7 @@
     align-items: flex-start;
     color: $gray-800;
     margin-top: 30px;
+    font-weight: 500;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
