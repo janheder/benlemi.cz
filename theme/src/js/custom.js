@@ -237,6 +237,8 @@ if ($("#instagramSection").length){
 /* relocate middle categories section */
 $(".middle-banners-wrapper").insertBefore("#pointsSection + .content-wrapper");
 
+/* relocate middle categories section */
+$('<div style="display:block;text-align:center;"><a href="hodnoceni-obchodu" class="btn btn-secondary">Další hodnocení</a></div>').insertAfter(".ratingSection__content #ratingWrapper + .votes-wrap");
 
 
 // -----------------------------------------------------------------------------
