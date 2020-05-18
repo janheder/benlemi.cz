@@ -472,6 +472,14 @@
     display: flex;
 }
 
+.p-detail-tabs-wrapper .responsive-nav{
+    display: flex;
+    margin-top: 0px;
+}
+.p-detail-tabs-wrapper .responsive-nav .navigation-btn{
+    display: none;
+}
+    
 
 @media screen and (max-width: 991px){
     .p-image-wrapper {
@@ -491,14 +499,7 @@
     }
 }
 
-.p-detail-tabs-wrapper .responsive-nav{
-    display: flex;
-    margin-top: 0px;
-}
-.p-detail-tabs-wrapper .responsive-nav .navigation-btn{
-    display: none;
-}
-    
+
 @media screen and (min-width: 992px){
     .p-detail-tabs-wrapper .responsive-nav{
         position: sticky;
