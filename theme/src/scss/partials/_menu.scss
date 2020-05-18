@@ -180,6 +180,7 @@
     background: rgba($black,0.8);
     z-index: 3;
 }
+
 @media screen and (max-width: 991px){
     body.--noScroll .menu-helper{
         display: flex;
