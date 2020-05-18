@@ -11,7 +11,7 @@
 .empty-content-404 h1{
     
 }
-.empty-content-404 h1::after{
+.empty-content-404 h1 + p::after{
     content: "";
     display: flex;
     background-image: url("../img/404.png");

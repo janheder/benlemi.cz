@@ -709,7 +709,6 @@ if ($(".logout").length){
 if ($("#footer").length){
     $("#signature .title").text("Shoptet");
     $("#signature").prepend('<a href="https://benlemi.cz" class="title --benlemi">Vytvořili <img src="https://janheder.github.io/benlemi.cz/theme/dist/img/symbol-benlemi.svg" class="image --benlemi"> Benlemi &</a>');
-    
 }
 
 // -----------------------------------------------------------------------------
@@ -720,3 +719,10 @@ $(".vote-form-title").click(function(){
     $(".vote-form-title+#formRating").addClass("--active");
     $(this).addClass("--hide");
 });
+
+// -----------------------------------------------------------------------------
+// RATING STORE PAGE
+// -----------------------------------------------------------------------------
+
+$(".empty-content-404 h1").text("Tahle stránka je vzhůru nohama");
+$("<p>Náš kvalitní nábytek naštěstí stojí všema nohama pevně na zemi. Tak si vyberte unikátní domečkovou postel nebo cokoliv, čím proměníte svůj byt v krásný domov.</p>").insertAfter(".empty-content-404 h1");
