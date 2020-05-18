@@ -648,6 +648,7 @@ $("#company-shopping").change(function(){
 if ($(".in-dekujeme").length){
     var num = $(".reca-number strong").text();
     $(".recapitulation-wrapper .co-order .order-content").text("Obsah objednávky: "+ num);
+    $(".order-summary-heading").text("Potvrzujeme, že jste si právě udělali radost");
     $(".reca-number").text("Doma to budete mít krásné a ještě jste podpořili českou rodinnou firmu. Do 30 minut vám pošleme email se všemi důležitými informacemi.");
 }
 
