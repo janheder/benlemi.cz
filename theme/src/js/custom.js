@@ -189,9 +189,10 @@ var name = $(".popup-widget-inner p strong").text();
 $(".navLinks__link.--user").text("Přihlášen: " + name);
 
 
-$(".menu-level-1 > li.ext > a").each(function() {
+$(".menu-level-1 > li.ext").each(function() {
     $(this).prepend('<div class="menu-item-responsive"></div>');
-
+    var catLink = $(this).children('a').prop("href");
+    $(this).find(".menu-level-2").prepend('<a class="menu-item-more" href="' + catLink + '">Zobrazit vše</a>')
 });
 
 $(".menu-item-responsive").click(function(){
