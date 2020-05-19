@@ -216,8 +216,12 @@ if ($("#blogSection").length){
 
 /* load rating into homepage section */
 if ($("#ratingSection").length){
-    $("#ratingSection .ratingSection__content").load("/hodnoceni-obchodu/ .content-inner");
+    $("#ratingSection .ratingSection__content").load("/hodnoceni-obchodu/ .content-inner", function() {
+        $('<div style="display:block;text-align:center;"><a href="hodnoceni-obchodu" class="btn btn-secondary">Další hodnocení</a></div>').insertAfter(".ratingSection__content #ratingWrapper + .votes-wrap");
+    });
 }
+
+
 
 /* relocate benefit points and email form depending on page type */
 if ($("#pointsSection").length){
@@ -249,7 +253,6 @@ if ($("#instagramSection").length){
 $(".middle-banners-wrapper").insertBefore("#pointsSection + .content-wrapper");
 
 /* relocate middle categories section */
-$('<div style="display:block;text-align:center;"><a href="hodnoceni-obchodu" class="btn btn-secondary">Další hodnocení</a></div>').insertAfter(".ratingSection__content #ratingWrapper + .votes-wrap");
 
 
 // -----------------------------------------------------------------------------
