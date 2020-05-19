@@ -60,8 +60,11 @@
     padding: 10px 0;
     flex-wrap: wrap;
 }
-.menu-level-1 > li:hover .menu-level-2{
-    display: flex;
+
+@media screen and (min-width: 992px){
+    .menu-level-1 > li:hover .menu-level-2{
+        display: flex;
+    }
 }
 .menu-level-2 > li{
     padding: 10px 20px;
