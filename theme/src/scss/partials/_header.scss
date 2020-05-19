@@ -34,12 +34,23 @@
     box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
 }
 
+.menu-item-responsive{
+    display: none;
+}
+
 @media screen and (max-width: 991px){
     #header {
         height: 56px;
     }
     #header .container {
         padding: 0;
+    }
+    .submenu-active #header::after{
+        display: none;
+        padding: 10px 20px;
+    }
+    .menu-item-responsive{
+        display: flex;
     }
 }
 

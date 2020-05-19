@@ -233,6 +233,11 @@
         display: flex;
         flex-direction: column;
         padding: 0;
+        display: none;
+
+        &.--active{
+            display: flex;
+        }
     }
     .menu-level-2 > li {
         justify-content: flex-start;
