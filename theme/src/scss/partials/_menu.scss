@@ -219,11 +219,12 @@
     }
     .menu-level-1 > li{
         height: auto;
+        display: relative;
     }
     .menu-level-1 > li > a{
         justify-content: flex-start;
         height: 50px;
-        padding: 0 15px;
+        padding: 0 20px;
         width: 100%;
     }
     .menu-level-1 > li > a > b{
