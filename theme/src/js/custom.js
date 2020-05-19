@@ -189,11 +189,14 @@ var name = $(".popup-widget-inner p strong").text();
 $(".navLinks__link.--user").text("Přihlášen: " + name);
 
 
-$(".menu-level-1 > li.ext").each(function() {
-    var catName = $(this).find("a>b").text();
-    $(this).prepend('<div class="menu-item-responsive">' + catName + '</div>');
+$(".menu-level-1 > li.ext > a").each(function() {
+    $(this).prepend('<div class="menu-item-responsive"></div>');
+
 });
 
+$(".menu-item-responsive").click(function(){
+    $(this).siblings(".menu-level-2").toggleClass("--active");
+});
 
 
 // -----------------------------------------------------------------------------
