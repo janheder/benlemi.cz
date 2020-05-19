@@ -108,7 +108,7 @@
 }
 .ctaSection__socialSingle{
     display: flex;
-    margin: 0 10px;
+    margin: 10px;
     height: 60px;
     width: 60px;
     background: $white;
@@ -200,8 +200,17 @@
     }
     .ctaSection__boxWrap {
         padding-top: 0px;
+        justify-content: center;
     }
     .ctaSection__boxContent {
         padding-left: 0px;
+    }
+    .ctaSection__socialSingle {
+        height: 25%;
+        width: 25%;
+        img{
+            height: 40px;
+            width: 40px;  
+        }
     }
 }

@@ -71,6 +71,9 @@
         flex-basis: 20%;
         max-width: none;
     }
+    .categoriesSection__single:nth-child(1n+6){
+        display: none;
+    }
 }
 @media screen and (max-width: 767px){
     #categoriesSection{

@@ -126,6 +126,11 @@ footer{
         top: 0;
     }
 }
+@media screen and (max-width: 991px){
+    .footer-bottom{
+        flex-direction: column;
+    }
+}
 #signature{
     order: 1;
 }
