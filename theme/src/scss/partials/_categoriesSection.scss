@@ -75,6 +75,11 @@
         display: none;
     }
 }
+@media screen and (max-width: 991px){
+    .body-banners{
+        background: $gray-300;
+    }
+}
 @media screen and (max-width: 767px){
     #categoriesSection{
         padding: 40px 0 30px 0;
@@ -92,5 +97,15 @@
     .categoriesSection__singleTitle {
         padding-top: 0px;
         padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .categoriesSection__single {
+        flex-direction: column;
+
+    }
+    .categoriesSection__singleTitle{
+        padding-right: 0;
     }
 }
