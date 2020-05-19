@@ -74,10 +74,14 @@
         padding: 0;
     }
     .pointSingle__imgWrap img{
-        width: 50px;
+        width: 40px;
     }
-    .pointSingle__title {
+    .pointSingle__title{
         padding: 0;
         padding-left: 10px;
+    }
+    .pointSingle__imgWrap{
+        height: 50px;
+        width: 50px;
     }
 }

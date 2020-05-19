@@ -49,6 +49,12 @@
         order: 1;
     }
 }
+@media screen and (max-width: 500px){
+    .p-detail-inner-header .stars-wrapper{
+        width: 100%;
+    }
+}
+
 #product-detail-form{
 
 }
