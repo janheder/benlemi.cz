@@ -14,14 +14,7 @@
     flex-grow: 1;
     padding-left: 60px;
 }
-@media screen and (max-width: 767px){
-    .votes-wrap{
-        padding-left: 0px;
-    }
-    .in-hodnoceni-obchodu .content-inner .rate-wrapper, .in-hodnoceni-obchodu .content-inner .votes-wrap{
-        width: 100%;
-    }
-}
+
 .in-hodnoceni-obchodu .votes-wrap{
     width: 66.666%;
 }
@@ -41,6 +34,18 @@
 }
 .vote-wrap:first-child{
     border-top: 0;
+}
+
+@media screen and (max-width: 767px){
+    .votes-wrap{
+        padding-left: 0px;
+    }
+    .in-hodnoceni-obchodu .content-inner .rate-wrapper, .in-hodnoceni-obchodu .content-inner .votes-wrap{
+        width: 100%;
+    }
+    .votes-wrap.admin-response{
+        margin-left: 0px;
+    }
 }
 
 

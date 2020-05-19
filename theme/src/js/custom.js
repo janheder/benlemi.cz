@@ -107,6 +107,7 @@ $("#js-menuToggle, .menu-helper").click(function(){
 
 /* toggle show responsive searchbar */ 
 $("#js-searchToggle").click(function(){
+    $(".menu-level-1 .search").insertAfter(".navigation-buttons");
     if($(".search").hasClass("--active")){
         $(".search").removeClass("--active");
         $(".search .form-control").blur();  
