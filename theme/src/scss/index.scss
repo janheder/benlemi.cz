@@ -403,13 +403,13 @@ header + .content-wrapper .content-wrapper-in{
     display: none;
 }
 .messages a{
-    color: #fff;
+    color: $white; 
 }
 .msg{
     width: 100%;
     padding: 20px 20px;
     background: $green-700;
-    color: #fff;    
+    color: $white;   
     display: flex;
     text-align: left;
 }
@@ -423,6 +423,10 @@ header + .content-wrapper .content-wrapper-in{
 }
 .msg-error{
     background: #c53030;
+}
+.msg-warning{
+    background: $gray-300;
+    color: $gray-900;
 }
 .messages{
     display: flex;
