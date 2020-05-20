@@ -200,6 +200,13 @@ header + .content-wrapper .content-wrapper-in{
     }
     .content-inner form .btn{
         width: 100%;
+        background: $orange-700;
+        color: $white;
+
+        &:hover, &:active, &:focus{
+            color: $white;
+            background: $orange-800;
+        }
     }
     .content-inner h1{
         text-align: center;
