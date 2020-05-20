@@ -567,6 +567,8 @@ header + .content-wrapper .content-wrapper-in{
 }
 @media screen and (max-width: 991px){
     .ratingSection__content #ratingWrapper .rate-wrap{
-        margin: 0 20px;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 20px;
     }
 }
