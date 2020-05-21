@@ -1,5 +1,4 @@
 .user-action{
-    position: absolute;
 
 }
 .user-action-in{
@@ -7,4 +6,22 @@
 }
 .user-action .user-action-in > div {
     display: none;
+}
+.login-window-visible .user-action{
+    background: rgba($black, 0.2);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+.login-window-visible .user-action .login-widget{
+    display: flex;
+    z-index: 99;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    background: $white;
+    padding: 20px;
 }
