@@ -134,7 +134,7 @@ $(".menu-level-1 .ext").hover(
 $(".search").insertAfter(".menu-level-1>li:last-child");
 
 if ($(".popup-widget-inner h2").length){
-    $('<div class="navLinks"><a href="/login/" class="navLinks__link">Přihlášení</a><a href="/registrace/" class="navLinks__link">Registrace</a><span class="navLinks__span">Jazyk:</span></div>').insertAfter(".nav-user");
+    $('<div class="navLinks"><a href="/login/?backTo=%2F" class="top-nav-button top-nav-button-login primary login toggle-window navLinks__link" data-target="login" rel="nofollow">Přihlášení</a><a href="/registrace/" class="navLinks__link">Registrace</a><span class="navLinks__span">Jazyk:</span></div>').insertAfter(".nav-user");
 }else{
     $('<div class="navLinks"><a href="/klient/" class="navLinks__link --user">Uživatelský účet</a><span class="navLinks__span">Jazyk:</span></div>').insertAfter(".nav-user");
 }
