@@ -53,6 +53,12 @@
     .p-detail-inner-header .stars-wrapper{
         width: 100%;
     }
+    .p-detail-inner-header .p-code {
+        padding: 10px 10px 0 0;
+    }
+    .p-detail-inner-header div:nth-child(3) {
+        padding-top: 10px;
+    }
 }
 
 #product-detail-form{
