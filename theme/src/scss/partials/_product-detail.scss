@@ -340,11 +340,12 @@
     .variant-list select{
         width: 100%;
     }
-}
-@media screen and (max-width: 500px){
     .detail-parameters{
         width: 100%;
     }
+}
+@media screen and (max-width: 500px){
+
 }
 
 
@@ -899,7 +900,7 @@
     font-size: 14px;
     color: $gray-800;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 767px){
     .description-infographics{
         width: 100%;
         padding-left: 0px;
