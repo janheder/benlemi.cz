@@ -451,18 +451,17 @@ $(document).ready(function() {
 
 /* add button into advanced order modal */
 $(document).ready(function() {
-    $("#cboxOverlay, #colorbox").hover(function(){
-        $("#backToShop").remove();
-        $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
-        $("#backToShop").click(function(){
-            $("#cboxClose").click();
-        });
+    $(".add-to-cart-button").click(function(){
+        setTimeout(function(){
+            $("#backToShop").remove();
+            $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
+            $("#backToShop").click(function(){
+                $("#cboxClose").click();
+            });
+        }, 500);
     });
 });
 
-$(document).ajaxSuccess(function(){
-    $('<span class="do-obchodu"><span>❮</span> Jdu dále nakupovat</span>').prependTo(".advanced-order .extras-wrap .extra.step");
-});
 
 /* Adjust price displaying */
 if ($(".type-detail").length){
