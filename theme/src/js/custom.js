@@ -161,6 +161,7 @@ function freeDelivery(){
         }
     }
     else{
+        $(".headerFreeDelivery").remove();
         $("<div class='headerFreeDelivery free'>Vyberte nad 1234 Kč<br>a máte dopravu zdarma</div>").insertBefore(".cart-count");  
     }
 
