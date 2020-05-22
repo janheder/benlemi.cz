@@ -460,6 +460,9 @@ $(document).ready(function() {
     });
 });
 
+$(document).ajaxSuccess(function(){
+    $('<span class="do-obchodu"><span>❮</span> Jdu dále nakupovat</span>').prependTo(".advanced-order .extras-wrap .extra.step");
+});
 
 /* Adjust price displaying */
 if ($(".type-detail").length){
