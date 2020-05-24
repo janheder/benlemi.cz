@@ -167,6 +167,7 @@
     opacity: 0;
     z-index: 1;
     transition: 0.3s ease opacity;
+    pointer-events: none;
 }
 .p .image:hover .p-tools {
     opacity: 1;

@@ -23,7 +23,7 @@
     height: 100%;
 
     &:hover, &:active, &:focus{
-        background: $gray-300;
+        border-color: $green-700;
         text-decoration: none;
     }
 }
