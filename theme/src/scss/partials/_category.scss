@@ -25,10 +25,25 @@
         display: none;
     }
 }
+
 .category-perex{
     font-size: 14px;
     margin-top: -20px;
     margin-bottom: 40px;
+}
+.category-perex.active{
+    .perex-short, .perex-showMore{
+        display: none;
+    }
+}
+.category-perex > p{
+    display: none;
+}
+.perex-showMore{
+    color: $green-700;
+}
+.perex-short{
+    
 }
 .category-header{
     display: flex;

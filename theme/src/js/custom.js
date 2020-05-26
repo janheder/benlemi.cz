@@ -672,6 +672,17 @@ if ($(".in-dekujeme").length){
     $(".reca-number").text("Doma to budete mít krásné a ještě jste podpořili českou rodinnou firmu. Do 30 minut vám pošleme email se všemi důležitými informacemi.");
 }
 
+if ($(".category-perex").length){
+    var text = $(".category-perex p").text();
+    var textMod = text.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
+    $("<div class='perex-showMore'>Celý popis</div><div class='perex-short'></div>").insertAfter(".category-perex > p");
+    $(".perex-short").text(textMod);
+    $(".perex-showMore").click(function(){
+        $(".category-perex").addClass("active");
+    });
+}
+
+
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
 // -----------------------------------------------------------------------------
