@@ -354,7 +354,7 @@ if ($("#productVideos").length){
 
 /* add "show more" button to thumbnails */
 if ($(".p-thumbnails-wrapper").length){
-    $(".p-thumbnails-inner > div > a:nth-child(8)").after('<div id="thumbnailsShowMore"><div class="thumbnailsShowMore-inner">Zobrazit vše</div></div>');
+    $(".p-thumbnails-inner > div > a:last-child").after('<div id="thumbnailsShowMore"><div class="thumbnailsShowMore-inner">Zobrazit vše</div></div>');
 }
 $("#thumbnailsShowMore").click(function(){
     $(".p-thumbnails-inner").toggleClass("--active");
