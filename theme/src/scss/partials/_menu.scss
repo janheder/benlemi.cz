@@ -225,12 +225,20 @@
         padding: 0 20px;
         width: 100%;
     }
-    .menu-level-1 > li.ext > a[href="/detsky-nabytek/"]{
+    .menu-level-1 > li.ext > a{
         padding: 0 40px 0 60px;
-        background-image: url("../img/detsky-nabytek.png");
-        background-size: 20px;
+        background-size: 30px;
         background-position: left 20px center;
         background-repeat: no-repeat;
+    }
+    .menu-level-1 > li.ext > a[href="/detsky-nabytek/"]{
+        background-image: url("../img/detsky-nabytek.png");
+    }
+    .menu-level-1 > li.ext > a[href="/nabytek/"]{
+        background-image: url("../img/nabytek.png");
+    }
+    .menu-level-1 > li.ext > a[href="/textil/"]{
+        background-image: url("../img/textil.png");
     }
     .menu-level-1 > li > a > b{
         font-weight: 600;
