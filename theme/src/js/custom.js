@@ -675,7 +675,7 @@ if ($(".in-dekujeme").length){
 if ($(".category-perex").length){
     var text = $(".category-perex p").text();
     var textMod = text.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
-    $("<div class='perex-showMore'>Celý popis</div><div class='perex-short'></div>").insertAfter(".category-perex > p");
+    $("<div class='perex-short'></div><div class='perex-showMore'>Celý popis</div>").insertAfter(".category-perex > p");
     $(".perex-short").text(textMod);
     $(".perex-showMore").click(function(){
         $(".category-perex").addClass("active");
