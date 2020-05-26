@@ -1013,9 +1013,9 @@
     font-size: 16px;
 
     &::before, &::after{
-        top: 50%;
-        left: 25px;
-        transform: translate(0px,-50%)
+        top: 50% !important;
+        left: 25px !important;
+        transform: translate(0px,-50%);
     }
 }
 .cart-content .stay-in-touch::before {
