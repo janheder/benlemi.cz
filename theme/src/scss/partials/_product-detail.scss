@@ -564,6 +564,11 @@
             background: $gray-400;
         }
     }
+    .p-detail-tabs a[href="#ratingTab"]{
+        background-image: url("../icons/star-full.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
     .navigation-btn{
         display: none !important;
     }

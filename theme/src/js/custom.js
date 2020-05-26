@@ -368,70 +368,78 @@ $(".basic-description").attr('id', 'descriptionLong');
 $('#p-detail-tabs a[href="#description"]').attr('href', '#descriptionLong');
 $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="shp-tab-link" role="tab">Parametry</a></li>');
 
+/* Rename decription link */
+$('a[href="#description"]').text("Zobrazit informace ");
+
+
+
 /* Cross selling products */
-if ($("#productsRelated .flag-custom2").length){
-    var i=0;
-    $("#productsRelated .flag-custom2").each(function(i){
-        var ran = i+1; 
-        var pName = $(this).closest(".p").find(".name").prop("title");
-        var pImg = $(this).closest(".p").find(".image img").prop("src");
-        var pPrice = $(this).closest(".p").find(".price-final strong").text();
-        $(".p-info-wrapper .add-to-cart").before('<div class="detail-cross-selling selling-'+ ran +'"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '"><img src="' + pImg + '"><span><span>' + pName + '</span><span>' + pPrice + '</span></span></label></div>')
-        var pUrl = $(this).closest("a.image").prop("href");
-        $("body").append('<div id="crossSelling' + ran + '"></div>');
-
-        $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
-            $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
-        });
-
-        $("#product-detail-form select[data-parameter-name='Barva']").change(function() {
-            var selected = $("#product-detail-form select[data-parameter-name='Barva'] option:selected").text(); 
-            $("#crossSelling" + ran + " option").filter(function(){
-                return $(this).text() == selected;
-            }).prop("selected", true);
-        
-        });
-    });
-
-    $("<h4 class='detail-cross-selling-heading'>Doplňky</h4>").insertBefore(".selling-1");
-
-
-    $("#product-detail-form").on("submit", function(){
-        var i = 0;
-        $(".detail-cross-selling").each(function(i){
+if ($(".in-children-s-wooden-house-beds").length){
+    if ($("#productsRelated .flag-custom2").length){
+        var i=0;
+        $("#productsRelated .flag-custom2").each(function(i){
             var ran = i+1; 
-            if($("#csell" + ran).prop("checked")){
-                setTimeout(function(){
-                    $("#product-detail-form-" + ran +" button").click();
-                }, 300);
+            var pName = $(this).closest(".p").find(".name").prop("title");
+            var pImg = $(this).closest(".p").find(".image img").prop("src");
+            var pPrice = $(this).closest(".p").find(".price-final strong").text();
+            $(".p-info-wrapper .add-to-cart").before('<div class="detail-cross-selling selling-'+ ran +'"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '"><img src="' + pImg + '"><span><span>' + pName + '</span><span>' + pPrice + '</span></span></label></div>')
+            var pUrl = $(this).closest("a.image").prop("href");
+            $("body").append('<div id="crossSelling' + ran + '"></div>');
+
+            $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
+                $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
+            });
+
+            $("#product-detail-form select[data-parameter-name='Barva']").change(function() {
+                var selected = $("#product-detail-form select[data-parameter-name='Barva'] option:selected").text(); 
+                $("#crossSelling" + ran + " option").filter(function(){
+                    return $(this).text() == selected;
+                }).prop("selected", true);
+            
+            });
+        });
+
+        $("<h4 class='detail-cross-selling-heading'>Doplňky</h4>").insertBefore(".selling-1");
+
+
+        $("#product-detail-form").on("submit", function(){
+            var i = 0;
+            $(".detail-cross-selling").each(function(i){
+                var ran = i+1; 
+                if($("#csell" + ran).prop("checked")){
+                    setTimeout(function(){
+                        $("#product-detail-form-" + ran +" button").click();
+                    }, 300);
+                }
+            });
+        });
+
+        $("#product-detail-form select").change(function(){
+            if ($("#product-detail-form select[data-parameter-name='Barva']").length){
+                var one = $("#product-detail-form select[data-parameter-name='Barva']").attr("data-parameter-id");
+                var two = $("#product-detail-form select[data-parameter-name='Barva']").find("option:selected").prop("value");
+            };
+
+            if ($("#product-detail-form select[data-parameter-name='Rozměr']").length){
+                var one2 = $("#product-detail-form select[data-parameter-name='Rozměr']").attr("data-parameter-id");
+                var two2 = $("#product-detail-form select[data-parameter-name='Rozměr']").find("option:selected").prop("value");
+            };
+
+            if (one === undefined){
+                var number = one2+"-"+two2;
+            }else if(one2 === undefined){
+                var number = one+"-"+two;
+            }else{
+                var number = one+"-"+two+"-"+one2+"-"+two2;
             }
+            
+            $(".p-info-wrapper span, .price-save span, .price-standard span, .bottomCta__price span").each(function(){
+                $(this).removeClass("force-display");
+            });
+            $("span."+ number).addClass("force-display");
         });
-    });
+    }
 
-    $("#product-detail-form select").change(function(){
-        if ($("#product-detail-form select[data-parameter-name='Barva']").length){
-            var one = $("#product-detail-form select[data-parameter-name='Barva']").attr("data-parameter-id");
-            var two = $("#product-detail-form select[data-parameter-name='Barva']").find("option:selected").prop("value");
-        };
-
-        if ($("#product-detail-form select[data-parameter-name='Rozměr']").length){
-            var one2 = $("#product-detail-form select[data-parameter-name='Rozměr']").attr("data-parameter-id");
-            var two2 = $("#product-detail-form select[data-parameter-name='Rozměr']").find("option:selected").prop("value");
-        };
-
-        if (one === undefined){
-            var number = one2+"-"+two2;
-        }else if(one2 === undefined){
-            var number = one+"-"+two;
-        }else{
-            var number = one+"-"+two+"-"+one2+"-"+two2;
-        }
-        
-        $(".p-info-wrapper span, .price-save span, .price-standard span, .bottomCta__price span").each(function(){
-            $(this).removeClass("force-display");
-        });
-        $("span."+ number).addClass("force-display");
-    });
 }
 
 $('.detail-cross-selling input').change(function() {
