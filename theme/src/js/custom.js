@@ -369,7 +369,7 @@ $('#p-detail-tabs a[href="#description"]').attr('href', '#descriptionLong');
 $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="shp-tab-link" role="tab">Parametry</a></li>');
 
 /* Rename decription link */
-$('a[href="#description"]').text("Zobrazit informace ");
+$('.p-info-wrapper a[href="#description"]').text("Zobrazit informace ");
 
 
 

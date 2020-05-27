@@ -631,7 +631,10 @@
     order: 0;
 }
 
-.p-detail-tabs li:nth-child(6){
+.p-detail-tabs li:nth-last-child(2){
+    order: 20;
+}
+.p-detail-tabs li:last-child{
     order: 10;
 }
 
@@ -875,6 +878,9 @@
 }
 .basic-description > .rte > h2{
     display: flex;
+    strong{
+        font-weight: 600;
+    }
 }
 .extended-description{
     display: flex;
