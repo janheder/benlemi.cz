@@ -852,7 +852,7 @@
 .basic-description{
     order: 1;
 }
-.basic-description > h3{
+.basic-description > h3, .basic-description > .rte > h2{
     display: none;
     text-align: center;
     position: relative;
