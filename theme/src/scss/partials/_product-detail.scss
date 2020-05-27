@@ -854,7 +854,6 @@
 }
 .basic-description > h3, .basic-description > .rte > h2{
     display: none;
-    text-align: center;
     position: relative;
     font-size: 24px;
     font-weight: 600;
@@ -874,7 +873,9 @@
         background: $green-200;
     }
 }
-
+.basic-description > .rte > h2{
+    display: flex;
+}
 .extended-description{
     display: flex;
     flex-wrap: wrap;
