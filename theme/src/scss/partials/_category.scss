@@ -89,10 +89,13 @@
         display: flex;
     }
     .sidebar-left{
-        display: none;
+        opacity: 0;
+        position: absolute;
     }
     .sidebar-left.--active{
         display: flex;
+        opacity: 1;
+        position: relative;
     }
 }
 @media screen and (max-width: 991px){
