@@ -618,6 +618,11 @@ if ($(".product").length){
     });
 }
 
+if ($("#category-header").length){
+    $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">Filtr</div>');
+}
+
+
 
 // -----------------------------------------------------------------------------
 // CART

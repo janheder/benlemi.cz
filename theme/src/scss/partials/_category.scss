@@ -51,10 +51,12 @@
 }
 .category-header{
     display: flex;
-    flex-direction: column;
-    margin: 0;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
     margin: 0px 0;
+    padding: 10px;
+    justify-content: space-between;
+    background: $bg-light;
 }
 .category-header div{
     font-size: 14px;
@@ -63,6 +65,7 @@
 .category-header label{
     cursor: pointer;
     margin-right: 20px;
+    margin-bottom: 0;
 }
 .category-header label:last-child{
     margin-right: 0px;
@@ -75,7 +78,23 @@
 .category-header input:checked + label{
     color: $green-700;
 }
+#filterToggleDesktop{
+    display: none;
+}
 
+
+@media screen and (min-width: 992px){
+    #filterToggleDesktop{
+        color: $white;
+        display: flex;
+    }
+    .sidebar-left{
+        display: none;
+    }
+    .sidebar-left.--active{
+        display: flex;
+    }
+}
 @media screen and (max-width: 991px){
     .category-title{
         font-size: 24px;
