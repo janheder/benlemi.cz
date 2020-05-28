@@ -91,11 +91,17 @@
     .sidebar-left{
         opacity: 0;
         position: absolute;
+        pointer-events: none;
     }
     .sidebar-left.--active{
         display: flex;
         opacity: 1;
         position: relative;
+        pointer-events: auto;
+        
+        .sidebar-inner{
+            width: 100%;
+        }
     }
 }
 @media screen and (max-width: 991px){
