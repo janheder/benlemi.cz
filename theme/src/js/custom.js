@@ -619,11 +619,11 @@ if ($(".product").length){
 }
 
 if ($("#category-header").length){
+    $("#category-header").insertBefore(".content-wrapper-in");
     $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">Filtr</div>');
 
     $("#filterToggleDesktop").click(function(){
         $(".sidebar-left").toggleClass("--active");
-        $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">Filtr</div>');
     });
 }
 

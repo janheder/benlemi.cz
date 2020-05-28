@@ -98,10 +98,13 @@
         opacity: 1;
         position: relative;
         pointer-events: auto;
-        
+
         .sidebar-inner{
             width: 100%;
         }
+    }
+    #content #category-header{
+        display: none;
     }
 }
 @media screen and (max-width: 991px){
