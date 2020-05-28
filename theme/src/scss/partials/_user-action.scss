@@ -66,6 +66,14 @@
 }
 .login-widget .btn{
     width: 100%;
+    background: $orange-700;
+    color: $white;
+    
+    &:hover, &:active, &:focus{
+        color: $white;
+        background: $orange-800;
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 500px){
