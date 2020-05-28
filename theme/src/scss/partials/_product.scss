@@ -138,6 +138,10 @@
 .p .p-bottom{
 
 }
+.p .p-bottom > div{
+    display: flex;
+    justify-content: space-between;
+}
 .p .prices{
     color: $red-700;
 }
@@ -155,7 +159,6 @@
 }
 
 .p .p-tools {
-
     top: 0px;
     right: 0px;
     left: 0px;
@@ -163,11 +166,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba($black, 0.6);
+    /*background: rgba($black, 0.6);*/
     opacity: 1;
     z-index: 1;
     transition: 0.3s ease opacity;
     pointer-events: none;
+}
+.p .p-tools .btn{
+    height: 30px;
+    font-size: 13px;
+    margin-left: 10px;
 }
 .p .image:hover .p-tools {
     opacity: 1;
