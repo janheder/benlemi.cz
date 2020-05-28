@@ -845,8 +845,15 @@
 }
 
 #description{
-
+    &::before{
+        content: "";
+        height: 100px;
+        width: 100%;
+        display: flex;
+        background: $gray-300;
+    }
 }
+
 .description-inner{
     padding-top: 20px;
     display: flex;
