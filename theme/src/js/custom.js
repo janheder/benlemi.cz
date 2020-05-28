@@ -623,6 +623,7 @@ if ($("#category-header").length){
 
     $("#filterToggleDesktop").click(function(){
         $(".sidebar-left").toggleClass("--active");
+        $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">Filtr</div>');
     });
 }
 
