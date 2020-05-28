@@ -484,6 +484,9 @@ header + .content-wrapper .content-wrapper-in{
             background: $green-200;
         }
     }
+    .content-inner{
+        background: $white;
+    }
     #register-form{
         max-width: 700px;
         margin: 0 auto;

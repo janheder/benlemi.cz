@@ -23,14 +23,21 @@
     transform: translate(-50%);
     left: 50%;
     background: $white;
-    padding: 40px;
     top: 20px;
     overflow-y: auto;
     height: auto;
-    min-width: 500px;
+    min-width: 700px;
+
+    &::after{
+        content: "";
+        width:200px;
+        display: flex;
+        background: $gray-300;
+    }
 }
 .login-window-visible .user-action .login-widget .popup-widget-inner{
     flex-grow: 1;
+    padding: 40px;
 }
 .login-widget .user-action-tabs, #affiliateLogin{
     display: none;
