@@ -40,7 +40,7 @@
 }
 .login-window-visible .user-action .login-widget .popup-widget-inner{
     flex-grow: 1;
-    padding: 40px;
+    padding: 60px 40px;
 }
 .login-widget h2{
     position: relative;
@@ -81,6 +81,9 @@
 @media (max-width: 767px){
     .login-window-visible .user-action .login-widget::after{
         content: none;
+    }
+    .login-window-visible .user-action .login-widget .popup-widget-inner{
+        padding: 40px 40px;
     }
 }
 @media (max-width: 500px){
