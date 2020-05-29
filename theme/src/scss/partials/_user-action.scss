@@ -30,9 +30,12 @@
 
     &::after{
         content: "";
-        width:200px;
+        width: 200px;
         display: flex;
-        background: $gray-300;
+        background-color: $gray-300;
+        background-image: url("../img/bg-login.jpg");
+        background-size: cover;
+        background-position: center center;
     }
 }
 .login-window-visible .user-action .login-widget .popup-widget-inner{
@@ -75,7 +78,11 @@
         text-decoration: none;
     }
 }
-
+@media (max-width: 767px){
+    .login-window-visible .user-action .login-widget::after{
+        content: none;
+    }
+}
 @media (max-width: 500px){
     .login-window-visible .user-action .login-widget{
         padding: 40px 20px;
