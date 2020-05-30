@@ -174,9 +174,16 @@
 
 }
 .p .p-tools .btn{
-    height: 30px;
+    height: 32px;
     font-size: 13px;
     margin-left: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease opacity;
+}
+.p:hover .p-tools .btn{
+    opacity: 1;
+    pointer-events: auto;
 }
 .p .image:hover .p-tools {
     opacity: 1;

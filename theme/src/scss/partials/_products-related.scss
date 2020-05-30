@@ -29,6 +29,9 @@
     width: 25%;
     flex-basis: 25%;
 }
+.products-related .product:nth-child(1n+5){
+    display: none;
+}
 .browse-p{
     display: none;
 }
