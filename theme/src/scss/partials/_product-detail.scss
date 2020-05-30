@@ -178,9 +178,12 @@
 #thumbnailsShowMore{
     width: 20%;
     padding: 5px;
-    display: flex;
+    display: none;
     flex-shrink: 0;
     cursor: pointer;
+}
+.p-thumbnail:nth-child(1n+18) ~ #thumbnailsShowMore{
+    display: flex;
 }
 .thumbnailsShowMore-inner{
     background: $gray-300;
@@ -203,7 +206,7 @@
     flex-shrink: 0;
 }
 @media screen and (min-width: 992px){
-    .p-thumbnail:nth-child(1n+16){
+    .p-thumbnail:nth-child(1n+18){
         display: none;
     }
 }
