@@ -16,8 +16,9 @@
     z-index: 999;
     top: 0;
 }
-.login-window-visible .user-action .login-widget{
-    display: flex;
+
+
+.user-action .login-widget{
     z-index: 99;
     position: absolute;
     transform: translate(-50%);
@@ -27,16 +28,19 @@
     overflow-y: auto;
     height: auto;
     min-width: 700px;
-
-    &::after{
-        content: "";
-        width: 200px;
-        display: flex;
-        background-color: $gray-300;
-        background-image: url("../img/bg-login.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
+    box-shadow: 0px 4px 15px rgba($black,0.08);
+}
+.user-action .login-widget::after{
+    content: "";
+    width: 200px;
+    display: flex;
+    background-color: $gray-300;
+    background-image: url("../img/bg-login.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.login-window-visible .user-action .login-widget{
+    display: flex;
 }
 .login-window-visible .user-action .login-widget .popup-widget-inner{
     flex-grow: 1;

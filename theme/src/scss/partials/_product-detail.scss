@@ -888,6 +888,9 @@
     strong{
         font-weight: 600;
     }
+    *{
+        color: $green-800;
+    }
 }
 .extended-description{
     display: flex;
