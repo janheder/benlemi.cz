@@ -861,14 +861,25 @@
 }
 .basic-description{
     order: 1;
+    display: flex;
+    margin-top: 20px;
 }
+.basic-description::after{
+    content: "";
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-shrink: 0;
+    background: #f5f5f5;
+    margin-left: 40px;
+  }
 .basic-description > h3, .basic-description > .rte > h2{
     display: none;
     position: relative;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
     padding-bottom: 15px;
     color: $gray-800;
     width: 100%;
@@ -889,7 +900,10 @@
         font-weight: 600;
     }
     *{
-        color: $green-800;
+        color: $gray-800;
+    }
+    br{
+        display: none;
     }
 }
 .extended-description{
