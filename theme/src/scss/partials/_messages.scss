@@ -16,3 +16,41 @@
     background: rgba($black, 0.7);
     color: $white;
 }
+.messages a{
+    color: $white; 
+}
+.msg{
+    width: 100%;
+    padding: 20px 20px;
+    background: $green-700;
+    color: $white;   
+    display: flex;
+    text-align: left;
+}
+.msg-success::before{
+    content: "✓";
+    font-size: 24px;
+}
+.msg-error::before{
+    content: "✕";
+    font-size: 24px;
+}
+.msg-error{
+    background: #c53030;
+}
+.msg-warning{
+    background: $gray-300;
+    color: $gray-900;
+}
+.messages{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    top: auto;
+    left: auto;
+    right: 20px;
+    width: 400px;
+    text-align: center;
+    z-index: 9;
+    box-shadow: 0px 5px 5px rgba($black,0.08);
+}

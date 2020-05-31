@@ -178,9 +178,14 @@
     height: 32px;
     font-size: 13px;
     margin-left: 10px;
-    opacity: 0;
-    pointer-events: none;
     transition: 0.3s ease opacity;
+    background: $gray-300;
+    color: $gray-900;
+
+    &:hover, &:active, &:focus{
+        background: $gray-400;
+        border: 0;
+    }
 }
 .p:hover .p-tools .btn{
     opacity: 1;

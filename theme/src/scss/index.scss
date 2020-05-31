@@ -186,68 +186,6 @@ header + .content-wrapper .content-wrapper-in{
     width: 100%;
 }
 
-.in-login{
-    .content{
-        width: 100%;
-    }
-    .content-inner{
-        width: 100%;
-        max-width: 700px;
-        margin: 0 auto;
-        box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.08);
-        background: $white;
-        padding: 40px;
-    }
-    .content-inner form .btn{
-        width: 100%;
-        background: $orange-700;
-        color: $white;
-
-        &:hover, &:active, &:focus{
-            color: $white;
-            background: $orange-800;
-        }
-    }
-    .content-inner h1{
-        text-align: center;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-        color: $gray-800;
-
-        &::after{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 6px;
-            width: 40px;
-            background: $green-200;
-        }
-    }
-    .content-inner h1.spaced{
-        margin-top: 30px;
-        padding-top: 40px;
-        border-top: 1px solid $gray-400;
-    }
-}
-
-@media screen and (max-width: 991px){
-    .in-login{
-        .content-inner{
-            width: 100%;
-            box-shadow: none;
-            background: $white;
-            padding: 0px;
-        }
-    }
-}
-
 
 
 /*
@@ -391,6 +329,8 @@ header + .content-wrapper .content-wrapper-in{
 
 @import "partials/_cart";
 
+@import "partials/_login";
+
 @import "partials/_404";
 
 @import "partials/_footer";
@@ -402,44 +342,7 @@ header + .content-wrapper .content-wrapper-in{
 .in-login .content-inner h1.spaced, .in-login .content-inner h1.spaced+form{
     display: none;
 }
-.messages a{
-    color: $white; 
-}
-.msg{
-    width: 100%;
-    padding: 20px 20px;
-    background: $green-700;
-    color: $white;   
-    display: flex;
-    text-align: left;
-}
-.msg-success::before{
-    content: "✓";
-    font-size: 24px;
-}
-.msg-error::before{
-    content: "✕";
-    font-size: 24px;
-}
-.msg-error{
-    background: #c53030;
-}
-.msg-warning{
-    background: $gray-300;
-    color: $gray-900;
-}
-.messages{
-    display: flex;
-    position: fixed;
-    bottom: 20px;
-    top: auto;
-    left: auto;
-    right: 20px;
-    width: 400px;
-    text-align: center;
-    z-index: 9;
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
-}
+
 .in-klient, .in-objednavky{
 
     .content-inner h2{
@@ -558,31 +461,4 @@ header + .content-wrapper .content-wrapper-in{
 
 .in-dekujeme .header-top{
     border-bottom: 1px solid $gray-400;
-}
-.ratingSection__content #ratingWrapper {
-    display: flex;      
-    width: 100%;
-}
-.ratingSection__content #ratingWrapper #rate-form{
-    display: none;
-}
-.ratingSection__content #ratingWrapper .rate-wrap{
-    width: 100%;
-    flex-direction: row;
-    margin-left: 60px;
-    margin-bottom: 20px;
-    padding: 30px 40px;
-    padding-left: 0;
-}
-.ratingSection__content #ratingWrapper .rate-wrap .col-sm-6 {
-    min-width: 50%;
-    flex-basis: 50%;
-    padding-bottom: 0px;
-}
-@media screen and (max-width: 991px){
-    .ratingSection__content #ratingWrapper .rate-wrap{
-        margin: 0;
-        margin-bottom: 20px;
-        padding: 20px;
-    }
 }
