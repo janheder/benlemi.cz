@@ -34,7 +34,7 @@
     &:hover, &:active, &:focus{
         
         & + .p-in .name{
-            text-decoration: underline;
+            text-decoration: none;
         }
     }
 }
@@ -128,8 +128,9 @@
     padding: 5px 0;
 
     &:hover, &:active, &:focus{
-        text-decoration: underline;
+        text-decoration: none
     }
+
 }
 .p-in-in .name .p-variants{
     display: flex;
