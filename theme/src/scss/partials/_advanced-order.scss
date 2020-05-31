@@ -72,22 +72,26 @@
     margin-bottom: 20px;
     background: $green-200;
     color: $gray-800;
-    span{
-        display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        &::before{
-            content: "";
-            display: flex;
-            height: 100px;
-            width: 160px;
-            background-image: url("../icons/delivery.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
+    &::before{
+        content: "";
+        display: flex;
+        height: 80px;
+        width: 80px;
+        margin-right: 40px;
+        background-image: url("../icons/delivery.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
+#colorbox .delivery span{
+    font-weight: 600;
+}
 #colorbox .delivery strong{
-    font-weight: 400;
+    font-weight: 600;
 }
 #colorbox .step{
     display: flex;

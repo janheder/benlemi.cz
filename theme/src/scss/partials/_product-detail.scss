@@ -312,12 +312,13 @@
     order: 24;
     padding-top: 10px;
     display: flex;
-    
+
     &::before{
         content: "";
         display: flex;
-        height: 100px;
-        width: 160px;
+        height: 22px;
+        width: 22px;
+        margin-right: 10px;
         background-image: url("../icons/delivery.svg");
         background-size: contain;
         background-repeat: no-repeat;
