@@ -131,20 +131,23 @@ $(".menu-level-1 .ext").hover(
     }
 );
 
+/* relocate search */
 $(".search").insertAfter(".menu-level-1>li:last-child");
 
+/* add header client section */
 if ($(".popup-widget-inner h2").length){
     $('<div class="navLinks"><a href="/login/?backTo=%2F" class="top-nav-button top-nav-button-login primary login toggle-window navLinks__link" data-target="login" rel="nofollow">Přihlášení</a><a href="/registrace/" class="navLinks__link">Registrace</a><span class="navLinks__span">Jazyk:</span></div>').insertAfter(".nav-user");
 }else{
     $('<div class="navLinks"><a href="/klient/" class="navLinks__link --user">Uživatelský účet</a><span class="navLinks__span">Jazyk:</span></div>').insertAfter(".nav-user");
 }
 
-
+/* language toggle */
 $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item cz active">Česky</div><a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
 $("#js-langToggle").click(function(){
     $("#js-langToggle").toggleClass("--active");
 });
 
+/* free delivery fucntion */
 function freeDelivery(){ 
     if ($(".cart-count.full .cart-price").length){
         $(".headerFreeDelivery").remove();
@@ -170,6 +173,7 @@ function freeDelivery(){
     }
 }
 freeDelivery();
+
 $(".add-to-cart .add-to-cart-button").click(function(){
     setTimeout(function(){
         freeDelivery();
@@ -190,7 +194,7 @@ if ($(".site-msg").length){
 var name = $(".popup-widget-inner p strong").text();
 $(".navLinks__link.--user").text("Přihlášen: " + name);
 
-
+/* add responsive link into menu */
 $(".menu-level-1 > li.ext").each(function() {
     $(this).prepend('<div class="menu-item-responsive"></div>');
     var catLink = $(this).children('a').prop("href");
@@ -222,8 +226,6 @@ if ($("#ratingSection").length){
         $('<div style="display:block;text-align:center;"><a href="hodnoceni-obchodu" class="btn btn-secondary">Další hodnocení</a></div>').insertAfter(".ratingSection__content #ratingWrapper + .votes-wrap");
     });
 }
-
-
 
 /* relocate benefit points and email form depending on page type */
 if ($("#pointsSection").length){
@@ -370,8 +372,6 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 
 /* Rename decription link */
 $('.p-info-wrapper a[href="#description"]').text("Zobrazit informace ");
-
-
 
 /* Cross selling products */
 if ($(".in-children-s-wooden-house-beds").length){
@@ -576,7 +576,6 @@ $(window).on('scroll', function() {
     
 });
 
-
 // -----------------------------------------------------------------------------
 // PRODUCT CATEGORY
 // -----------------------------------------------------------------------------
@@ -628,8 +627,6 @@ if ($("#category-header").length){
         $(".sidebar-left").toggleClass("--active");
     });
 }
-
-
 
 // -----------------------------------------------------------------------------
 // CART

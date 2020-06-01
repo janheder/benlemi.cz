@@ -23,7 +23,7 @@
         left: 0;
         display: none;
         transform: translateY(160px);
-        background: rgba(0,0,0,0.4);
+        background: rgba($black,0.4);
     }
 }
 .submenu-active #header::after{
@@ -31,7 +31,7 @@
 }
 
 #header.scroll::before {
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
+    box-shadow: 0px 5px 5px rgba($black,0.08);
 }
 
 .menu-item-responsive{
