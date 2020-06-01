@@ -60,6 +60,15 @@ body{
     body.submenu-active{
         overflow-y: scroll;
     }
+    body:not(.ordering-process):not(.type-detail) .overall-wrapper{
+        padding-top: 160px;
+    }
+    body:not(.ordering-process):not(.type-detail) #header{
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+    }
 }
 
 body.in-kosik::after, body.ordering-process::after{
@@ -266,17 +275,6 @@ header + .content-wrapper .content-wrapper-in{
     display: none !important;
 }
 
-@media screen and (min-width: 992px){
-    body:not(.ordering-process):not(.type-detail) .overall-wrapper{
-        padding-top: 160px;
-    }
-    body:not(.ordering-process):not(.type-detail) #header{
-        position: fixed;
-        width: 100%;
-        z-index: 2;
-        top: 0;
-    }
-}
 
 
 @import "partials/_img";
@@ -330,6 +328,7 @@ header + .content-wrapper .content-wrapper-in{
 @import "partials/_cart";
 
 @import "partials/_login";
+@import "partials/_registrace";
 
 @import "partials/_404";
 
@@ -339,9 +338,7 @@ header + .content-wrapper .content-wrapper-in{
 @import "partials/_pageVyhody";
 @import "partials/_page-kontakty";
 
-.in-login .content-inner h1.spaced, .in-login .content-inner h1.spaced+form{
-    display: none;
-}
+
 
 .in-klient, .in-objednavky{
 
@@ -362,102 +359,6 @@ header + .content-wrapper .content-wrapper-in{
         font-size: 14px;
     }
 }
-
-.in-registrace{
-    .content-inner h1{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        font-size: 24px;
-        font-weight: 600;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        padding-bottom: 10px;
-        max-width: 600px;
-        text-align: center;
-    
-        &::after{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 6px;
-            width: 40px;
-            background: $green-200;
-        }
-    }
-    .content-inner{
-        background: $white;
-    }
-    #register-form{
-        max-width: 700px;
-        margin: 0 auto;
-        background: $white;
-        padding: 20px;
-    }
-    #register-form h4{
-        text-align: center;
-        position: relative;
-        display: flex;
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-        color: $gray-800;
-        width: 100%;
-        margin-top: 20px;
-    
-        &::after{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 6px;
-            width: 40px;
-            background: $green-200;
-        }
-    }
-    .box-squeeze{
-        display: none;
-    }
-    .box-squeeze .form-group{
-        display: flex;
-        padding: 0;
-    }
-    
-    #company-info, #shipping-address{
-        display: none;
-    }
-    #company-info.visible, #shipping-address.visible{
-        display: flex;
-        flex-direction: column;
-    }
-    .submit-wrapper .btn-login{
-        width: 100%;
-        background: $orange-700;
-        color: $white;
-
-        &:hover, &:active, &:focus{
-            color: $white;
-            background: $orange-800;
-        }
-    }
-}
-
-.in-registrace #content-wrapper-wrap::after{
-    content: "";
-    height: 300px;
-    width: 100%;
-    position: sticky;
-    bottom: 0;
-    margin-top: -300px;
-    z-index: -1;
-    display: flex;
-    background-image: url("../img/bg.png");
-    background-position: center top;
-}
-
 
 .in-dekujeme .header-top{
     border-bottom: 1px solid $gray-400;
