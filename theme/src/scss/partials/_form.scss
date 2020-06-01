@@ -1,6 +1,9 @@
 ::placeholder{
     color: $gray-700;
 }
+input:focus, button:focus{
+    outline: none;
+}
 
 .form-group{
     padding-top: 10px;

@@ -135,9 +135,6 @@ a{
     }
 }
 
-input:focus, button:focus{
-    outline: none;
-}
 
 header + .content-wrapper .content-wrapper-in{
     padding: 0;
@@ -160,33 +157,7 @@ header + .content-wrapper .content-wrapper-in{
 .content > h4{
     display: none;
 }
-.in-klient .content, .in-nastaveni .content, .in-objednavky .content, 
-.in-klient-objednavky .content, .in-klient-slevy .content, .in-klient-hodnoceni .content, .in-klient-doklady .content,
-.in-klient-diskuze .content, .in-zapomenute-heslo .content, .in-dorucovaci-udaje .content{
-    width: 75%;
-}
-@media screen and (max-width: 991px){
-    .in-klient .content, .in-nastaveni .content, .in-objednavky .content, 
-    .in-klient-objednavky .content, .in-klient-slevy .content, .in-klient-hodnoceni .content, .in-klient-doklady .content,
-    .in-klient-diskuze .content, .in-zapomenute-heslo .content, .in-dorucovaci-udaje .content{
-        width: 100%;
-    }
-}
 
-
-
-.in-klient-slevy .content table{
-    width: 100%;
-
-    td{
-        border: 1px solid $gray-400;
-        padding: 10px;
-    }
-}
-.in-klient-slevy .content table + p{
-    color: $gray-700;
-    margin-top: 10px 20px;
-}
 
 .middle-banners-wrapper .banner-wrapper{  
     height: auto;
@@ -195,26 +166,15 @@ header + .content-wrapper .content-wrapper-in{
     width: 100%;
 }
 
-
-
 /*
 .js-hidden{
     display: none;
-}
-*/
-/*
-.type-category .overall-wrapper{
-    background-image: url("../img/bg.png");
-    background-repeat: repeat-x;
-    background-attachment: fixed;
-    background-position: bottom center;
 }
 */
 
 .type-category .sidebar-inner div[class*="box-section"]{
     display: none;
 }
-
 .content-inner header h1{
     text-align: center;
     position: relative;
@@ -239,14 +199,6 @@ header + .content-wrapper .content-wrapper-in{
 }
 
 
-/*
-.type-detail .overall-wrapper, .type-category .overall-wrapper{
-    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/img/bg.png");
-    background-position: center bottom;
-    background-repeat: repeat no-repeat;
-    background-attachment: fixed;
-}
-*/
 .type-detail .overall-wrapper::before, .type-category .overall-wrapper::before{
     content: "";
     background-image: url("../img/bg.png");
@@ -259,11 +211,10 @@ header + .content-wrapper .content-wrapper-in{
     height: 300px;
     z-index: -1;
 }
-
-
 .type-detail .content-wrapper, .type-category .content-wrapper{
     background: $white;
 }
+
 
 .force-display{
     display: block !important;
@@ -274,7 +225,6 @@ header + .content-wrapper .content-wrapper-in{
 .force-display ~ .default-variant{
     display: none !important;
 }
-
 
 
 @import "partials/_img";
@@ -329,6 +279,7 @@ header + .content-wrapper .content-wrapper-in{
 
 @import "partials/_login";
 @import "partials/_registrace";
+@import "partials/_klient";
 
 @import "partials/_404";
 
@@ -338,27 +289,6 @@ header + .content-wrapper .content-wrapper-in{
 @import "partials/_pageVyhody";
 @import "partials/_page-kontakty";
 
-
-
-.in-klient, .in-objednavky{
-
-    .content-inner h2{
-        font-size: 18px;
-    }
-    .content-inner .table{
-        word-break: break-word;
-    }
-    .content-inner .table th{
-        border-bottom: 1px solid $gray-400;
-        padding: 10px 10px;
-        font-size: 14px;
-    }
-    .content-inner .table td{
-        background: $gray-300;
-        padding: 10px 10px;
-        font-size: 14px;
-    }
-}
 
 .in-dekujeme .header-top{
     border-bottom: 1px solid $gray-400;

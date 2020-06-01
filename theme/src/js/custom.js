@@ -51,7 +51,6 @@ $("#content-wrapper").wrap("<div id='content-wrapper-wrap'></div>");
 // -----------------------------------------------------------------------------
 
 $(function() {
-    //caches a jQuery object containing the header element
     var header = $("#header");
     header.addClass("no-scroll");
     $(window).scroll(function() {
@@ -66,7 +65,6 @@ $(function() {
 });
 
 $(function() {
-    //caches a jQuery object containing the header element
     var header2 = $(".no-scroll");
     var scroll2 = $(window).scrollTop();
     if (scroll2 > 0) {
@@ -210,6 +208,7 @@ $(".menu-item-responsive").click(function(){
 // HOMEPAGE
 // -----------------------------------------------------------------------------
 
+
 /* unwrap homepage section */
 if ($("#homepageSection").length){
     $("#homepageSection").unwrap().unwrap().unwrap().unwrap().unwrap();
@@ -255,8 +254,6 @@ if ($("#instagramSection").length){
 
 /* relocate middle categories section */
 $(".middle-banners-wrapper").insertBefore("#pointsSection + .content-wrapper");
-
-/* relocate middle categories section */
 
 
 // -----------------------------------------------------------------------------
@@ -564,16 +561,14 @@ if ($(".type-detail").length){
     $(".p-short-description p").text(descTrim);
 }
 
-
+/* show add to cart section on scroll */
 $(window).on('scroll', function() {
     scrollPosition = $(this).scrollTop();
     if (scrollPosition >= 1000) {
         $(".bottomCta").addClass("--active");
-
     }else{
         $(".bottomCta").removeClass("--active");
     }
-    
 });
 
 // -----------------------------------------------------------------------------
@@ -609,8 +604,6 @@ if ($(".pagination-loader").length){
 if ($(".product").length){
     $(".product").each(function(){
         $(this).find(".p-tools .btn span").text("Detail");
-    
-        
 
         if ($(this).find(".price-final strong > small").length){
             $(this).find(".name").append("<span class='p-variants'>Více variant</span>");
@@ -619,6 +612,7 @@ if ($(".product").length){
     });
 }
 
+/* category header edit */
 if ($("#category-header").length){
     $("#category-header").insertBefore(".content-wrapper-in");
     $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">Filtr</div>');
@@ -663,6 +657,7 @@ if ($(".ordering-process").length){
     }
 */
 
+/* customize cart step 2 */
 if ($(".in-krok-2").length){
     $(".in-krok-2 .co-billing-address #company-info").insertAfter('.in-krok-2 .co-billing-address fieldset > h4');
     $(".in-krok-2 .co-billing-address .unveil-wrapper").insertAfter('.in-krok-2 .co-billing-address fieldset > h4');
@@ -676,12 +671,14 @@ if ($(".in-krok-2").length){
 
 }
 
+/* make company info required */
 $("#company-shopping").change(function(){
     $("#company-info input").each(function(){
         $(this).prop("required", true);
     });
 });
 
+/* cart finish step */
 if ($(".in-dekujeme").length){
     var num = $(".reca-number strong").text();
     $(".recapitulation-wrapper .co-order .order-content").text("Obsah objednávky: "+ num);
@@ -689,6 +686,7 @@ if ($(".in-dekujeme").length){
     $(".reca-number").text("Doma to budete mít krásné a ještě jste podpořili českou rodinnou firmu. Do 30 minut vám pošleme email se všemi důležitými informacemi.");
 }
 
+/* category perex */
 if ($(".category-perex").length){
     var text = $(".category-perex p").text();
     var textMod = text.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
