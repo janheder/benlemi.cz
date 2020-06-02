@@ -1136,3 +1136,20 @@ div[id^="crossSelling"]{
         background: $gray-600;
     }
 }
+
+@media screen and (max-width: 991px){
+    #description{
+        &::before{
+            height: 60px;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    #description{
+        &::before{
+            height: 60px;
+            background-size: cover;
+            background-position: left -20px center;
+        }
+    }
+}
