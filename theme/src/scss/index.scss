@@ -293,3 +293,18 @@ header + .content-wrapper .content-wrapper-in{
 .in-dekujeme .header-top{
     border-bottom: 1px solid $gray-400;
 }
+
+.register-points{
+    display: flex;
+    flex-wrap: wrap;
+    span{
+        display: flex;
+        width: 50%;
+        align-items: center;
+    }
+    img{
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+    }
+}

@@ -699,12 +699,26 @@ if ($(".category-perex").length){
 
 
 // -----------------------------------------------------------------------------
+// REGISTER PAGE
+// -----------------------------------------------------------------------------
+
+/* add points above form */
+if ($("#rate-form").length){
+    $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
+}
+
+// -----------------------------------------------------------------------------
 // STORE RATING PAGE
 // -----------------------------------------------------------------------------
 
 /* add title to rating */
-if ($("#rate-form").length){
-    $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
+if ($("#register-form").length){
+    $('<div class="register-points">'+
+    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/rucni-vyroba.png">Vybavte svůj domov ručně dělaným nábytkem</span>'+
+    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/unikat.png">Každý kus je jedinečný originál</span>'+
+    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/prasatko-ceske.png">Od 1234 Kč máte dopravu ZDARMA</span>'+
+    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/vlastni-doprava.png">Nábytek vám doveze BENLEMI TRUCK</span>'+
+    '</div>').insertBefore("#register-form");
 }
 
 // -----------------------------------------------------------------------------
