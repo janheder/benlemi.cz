@@ -866,6 +866,10 @@
         width: 100%;
         display: flex;
         background: $gray-300;
+        background-image: url("../img/vyroba-banner.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
