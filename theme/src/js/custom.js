@@ -105,13 +105,13 @@ $("#js-menuToggle, .menu-helper").click(function(){
 
 /* toggle show responsive searchbar */ 
 $("#js-searchToggle").click(function(){
-    $(".menu-level-1 .search").insertAfter(".navigation-buttons");
+    $(".menu-helper .search").insertAfter(".navigation-buttons");
     if($(".search").hasClass("--active")){
         $(".search").removeClass("--active");
-        $(".search .form-control").blur();  
+        $(".menu-helper .search .form-control").blur();  
     }else{
         $(".search").addClass("--active");
-        $(".search .form-control").focus(); 
+        $(".menu-helper .search .form-control").focus(); 
     }
 });
 
