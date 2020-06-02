@@ -133,7 +133,7 @@
 .search-whisperer{
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     background: $gray-300;
     transform: translateY(100%);
@@ -257,6 +257,7 @@
     .search-form input{
         display: flex;
         width: 100%;
+        background: $white;
     }
     .search-form .btn {
         font-size: 0;
