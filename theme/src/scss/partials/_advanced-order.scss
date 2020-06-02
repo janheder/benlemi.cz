@@ -57,7 +57,7 @@
     display: none;
 }
 #colorbox .extras-wrap{
-    padding: 40px 50px 40px 50px;
+    padding: 20px 50px 40px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,11 +67,10 @@
 }
 #colorbox .delivery{
     text-align: center;
-    padding: 10px 0;
+    padding: 0px 10px;
     width: 100%;
     margin-bottom: 20px;
-    background: $white;
-    border: 1px solid $green-500;
+    background: #f7f7f7;
     color: $gray-800;
     display: flex;
     justify-content: center;
@@ -86,6 +85,7 @@
         background-image: url("../img/delivery-truck.png");
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
     }
 }
 #colorbox .delivery span{
@@ -97,7 +97,8 @@
 #colorbox .step{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     
     .btn-conversion{
         &:hover, &:active, &:focus{
@@ -140,4 +141,17 @@
     display: flex;
     justify-content: center;
     margin: 0;
+}
+
+@media screen and (max-width: 991px){
+
+    #colorbox .advanced-order .h1{
+        padding: 40px 20px;
+    }
+    #colorbox .advanced-order .advanced-order-suggestion{
+        padding: 40px 20px 10px 20px;
+    }
+    #colorbox .extras-wrap{
+        padding: 20px 20px 40px 20px;
+    }
 }
