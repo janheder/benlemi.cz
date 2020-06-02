@@ -1147,9 +1147,7 @@ div[id^="crossSelling"]{
 @media screen and (max-width: 500px){
     #description{
         &::before{
-            height: 60px;
-            background-size: cover;
-            background-position: left -20px center;
+            content: none;
         }
     }
 }
