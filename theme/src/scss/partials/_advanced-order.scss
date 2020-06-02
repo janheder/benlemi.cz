@@ -70,7 +70,7 @@
     padding: 10px 0;
     width: 100%;
     margin-bottom: 20px;
-    background: $green-200;
+    background: $gray-300;
     color: $gray-800;
     display: flex;
     justify-content: center;
@@ -79,10 +79,10 @@
     &::before{
         content: "";
         display: flex;
-        height: 80px;
-        width: 80px;
+        height: 120px;
+        width: 120px;
         margin-right: 40px;
-        background-image: url("../icons/delivery.svg");
+        background-image: url("../img/delivery-truck.png");
         background-size: contain;
         background-repeat: no-repeat;
     }
