@@ -861,7 +861,11 @@
 
 #description{
     &::before{
-        content: "";
+        content: "Prodáváme jen to, co jsme sami vyrobili.";
+        padding-left: 20px;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 600;
         height: 100px;
         width: 100%;
         display: flex;
