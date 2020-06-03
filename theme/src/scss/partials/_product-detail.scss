@@ -859,23 +859,6 @@
     opacity: 0;
 }
 
-#description{
-    &::before{
-        content: "";
-        padding-left: 20px;
-        align-items: center;
-        font-size: 30px;
-        font-weight: 600;
-        height: 100px;
-        width: 100%;
-        display: flex;
-        background: $gray-300;
-        background-image: url("../img/vyroba-banner.png");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-}
 
 .description-inner{
     padding-top: 20px;
@@ -1137,15 +1120,35 @@ div[id^="crossSelling"]{
     }
 }
 
+
+.type-product #ratingTab{
+    &::before{
+        content: "";
+        padding-left: 20px;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 600;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        background: $gray-300;
+        background-image: url("../img/vyroba-banner.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
 @media screen and (max-width: 991px){
-    #description{
+    .type-product #ratingTab{
         &::before{
             height: 60px;
         }
     }
 }
 @media screen and (max-width: 500px){
-    #description{
+    .type-product #ratingTab{
         &::before{
             content: none;
         }
