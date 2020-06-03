@@ -308,23 +308,3 @@ header + .content-wrapper .content-wrapper-in{
     border-bottom: 1px solid $gray-400;
 }
 
-.register-points{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 660px;
-    margin: 0 auto;
-    padding-top: 10px;
-    font-size: 14px;
-
-    span{
-        display: flex;
-        width: 50%;
-        align-items: center;
-        padding: 10px 0;
-    }
-    img{
-        height: 40px;
-        width: 40px;
-        margin-right: 10px;
-    }
-}

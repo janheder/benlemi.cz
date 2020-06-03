@@ -23,6 +23,9 @@
             background: $green-200;
         }
     }
+    .content-inner > p{
+        text-align: center;
+    }
     .content-inner{
         background: $white;
     }
@@ -92,4 +95,28 @@
     display: flex;
     background-image: url("../img/bg.png");
     background-position: center top;
+}
+
+.register-points{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 660px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 14px;
+
+    .register-points__title{
+        width: 100%;
+    }
+    span{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 10px 0;
+    }
+    img{
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    }
 }
