@@ -24,7 +24,9 @@
         }
     }
     .content-inner > p{
+        max-width: 600px;
         text-align: center;
+        margin: 0 auto 40px auto;
     }
     .content-inner{
         background: $white;
