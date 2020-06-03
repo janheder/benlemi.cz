@@ -688,13 +688,15 @@ if ($(".in-dekujeme").length){
 
 /* category perex */
 if ($(".category-perex").length){
-    var text = $(".category-perex p").text();
-    var textMod = text.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
-    $("<div class='perex-short'></div><div class='perex-showMore'>Celý popis</div>").insertAfter(".category-perex > p");
-    $(".perex-short").text(textMod);
-    $(".perex-showMore").click(function(){
-        $(".category-perex").addClass("active");
-    });
+    if ($(window).width() <= 991) {
+        var text = $(".category-perex p").text();
+        var textMod = text.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
+        $("<div class='perex-short'></div><div class='perex-showMore'>Celý popis</div>").insertAfter(".category-perex > p");
+        $(".perex-short").text(textMod);
+        $(".perex-showMore").click(function(){
+            $(".category-perex").addClass("active");
+        });
+    }
 }
 
 

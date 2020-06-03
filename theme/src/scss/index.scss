@@ -70,14 +70,28 @@ body{
         top: 0;
     }
 }
+@media (min-width: 992px){
+    body.in-kosik::after, body.ordering-process::after{
+        content: "";
+        height: 300px;
+        width: 100%;
+        display: flex;
+        background-image: url("../img/bg.png");
+        background-position: center top;
+    }
+}
 
-body.in-kosik::after, body.ordering-process::after{
-    content: "";
-    height: 300px;
-    width: 100%;
-    display: flex;
-    background-image: url("../img/bg.png");
-    background-position: center top;
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: transparent;
 }
 
 ::selection {

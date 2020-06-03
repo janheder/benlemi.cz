@@ -134,6 +134,6 @@ input.form-control:disabled, select.form-control:disabled{
     }
     &::after{
         left: 0px;
-        top: 5px;
+        top: 5px !important;
     }
 }
