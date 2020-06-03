@@ -705,22 +705,25 @@ if ($(".category-perex").length){
 // -----------------------------------------------------------------------------
 
 /* add points above form */
-if ($("#rate-form").length){
-    $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
-}
+if ($("#register-form").length){
+    $('<div class="register-points"><h4 class="register-points__title">Co získáte?</h4>'+
+    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/rucni-vyroba.png">Kompletní historii všech svých objednávek </span>'+
+    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/unikat.png">Info o designových novinkách </span>'+
+    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/prasatko-ceske.png">Vyší slevy s každým dalším nákupem</span>'+
+    '</div>').insertBefore("#register-form");
+
+
+    $(".in-registrace .content-inner h1").text("Vybíráte u nás častěji? Rovnou se zaregistrujte");
+
+    $("<p>Automaticky se stanete členem věrnostního programu rodiny Benlemi a budete sbírat slevy za každý svůj nákup.</p>").insertAfter(".in-registrace .content-inner h1");
 
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE
 // -----------------------------------------------------------------------------
 
 /* add title to rating */
-if ($("#register-form").length){
-    $('<div class="register-points">'+
-    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/rucni-vyroba.png">Vybavte svůj domov ručně dělaným nábytkem</span>'+
-    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/unikat.png">Každý kus je jedinečný originál</span>'+
-    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/prasatko-ceske.png">Od 1234 Kč máte dopravu ZDARMA</span>'+
-    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/vlastni-doprava.png">Nábytek vám doveze BENLEMI TRUCK</span>'+
-    '</div>').insertBefore("#register-form");
+if ($("#rate-form").length){
+    $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
 }
 
 // -----------------------------------------------------------------------------

@@ -27,6 +27,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease transform;
+
+    &:hover, &:active, &:focus{
+      transform: scale(1.1);
+    }
 }
 .pointSingle__imgWrap img{
     width: 100%;
@@ -60,6 +65,7 @@
 
     strong{
         font-weight: 600;
+        display: block;
     }
 }
 
