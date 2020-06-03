@@ -716,6 +716,7 @@ if ($("#register-form").length){
     $(".in-registrace .content-inner h1").text("Vybíráte u nás častěji? Rovnou se zaregistrujte");
 
     $("<p>Automaticky se stanete členem věrnostního programu rodiny Benlemi a budete sbírat slevy za každý svůj nákup.</p>").insertAfter(".in-registrace .content-inner h1");
+}
 
 // -----------------------------------------------------------------------------
 // STORE RATING PAGE

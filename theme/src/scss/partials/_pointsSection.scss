@@ -92,6 +92,9 @@
     .pointSingle__title{
         padding: 0;
         padding-left: 10px;
+        strong{
+            display: inline-block;
+        }
     }
     .pointSingle__imgWrap{
         height: 50px;
