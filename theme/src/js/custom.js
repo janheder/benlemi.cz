@@ -603,7 +603,7 @@ if ($(".pagination-loader").length){
 /* relocate hover overlay on product & add more variants into product box*/
 if ($(".product").length){
     $(".product").each(function(){
-        $(this).find(".p-tools .btn span").text("Detail");
+        $(this).find(".p-tools .btn span").text("Zobrazit");
 
         if ($(this).find(".price-final strong > small").length){
             $(this).find(".name").append("<span class='p-variants'>Více variant</span>");
