@@ -308,3 +308,20 @@ header + .content-wrapper .content-wrapper-in{
     border-bottom: 1px solid $gray-400;
 }
 
+.mobile.in-index #content{
+    display: flex;
+    flex-direction: column;
+}
+.mobile.in-index #content .row.banners-row{
+  order: 0;
+}
+
+.mobile.in-index #content .h4.homepage-group-title{
+  order:30;
+}
+.mobile.in-index #content #products-2{
+  order: 40;
+}
+.mobile.in-index #content .body-banners{
+  order: 20;
+}
