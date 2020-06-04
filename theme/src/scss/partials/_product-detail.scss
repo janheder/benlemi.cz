@@ -195,7 +195,11 @@
     padding: 10px;
     font-size: 14px;
 }
-
+@media screen and (max-width: 991px){
+    .p-thumbnails-wrapper{
+        margin-top: 5px;
+    }
+}
 
 
 
@@ -527,6 +531,7 @@
 @media screen and (max-width: 991px){
     .p-image-wrapper {
         padding-right: 10px;
+        margin-top: -10px;
     }
     .p-info-wrapper{
         padding-left: 10px;
@@ -1121,7 +1126,7 @@ div[id^="crossSelling"]{
 }
 
 
-.type-product #ratingTab{
+.type-product #descriptionLong{
     &::before{
         content: "";
         padding-left: 20px;
@@ -1142,14 +1147,14 @@ div[id^="crossSelling"]{
 
 
 @media screen and (max-width: 991px){
-    .type-product #ratingTab{
+    .type-product #descriptionLong{
         &::before{
             height: 60px;
         }
     }
 }
 @media screen and (max-width: 500px){
-    .type-product #ratingTab{
+    .type-product #descriptionLong{
         &::before{
             content: none;
         }
