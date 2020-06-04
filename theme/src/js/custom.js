@@ -707,9 +707,9 @@ if ($(".category-perex").length){
 /* add points above form */
 if ($("#register-form").length){
     $('<div class="register-points"><h4 class="register-points__title">Co získáte?</h4>'+
-    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/rucni-vyroba.png">Kompletní historii všech svých objednávek </span>'+
-    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/unikat.png">Info o designových novinkách </span>'+
-    '<span><img src="https://janheder.github.io/benlemi.cz/theme/dist/icons/points-all/prasatko-ceske.png">Vyší slevy s každým dalším nákupem</span>'+
+    '<span>Kompletní historii všech svých objednávek </span>'+
+    '<span>Info o designových novinkách </span>'+
+    '<span>Vyší slevy s každým dalším nákupem</span>'+
     '</div>').insertBefore("#register-form");
 
 

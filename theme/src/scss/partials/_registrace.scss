@@ -117,9 +117,19 @@
     }
     span{
         display: flex;
-        width: 100%;
+        width: 33.333%;
         align-items: center;
         padding: 10px 0;
+        padding-left: 30px;
+        position: relative;
+
+        &::before{
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: $green-200;
+            display: flex;
+        }
     }
     img{
         height: 40px;
