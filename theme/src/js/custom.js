@@ -792,3 +792,9 @@ $(".vote-form-title").click(function(){
 
 $(".empty-content-404 h1").text("Tahle stránka je vzhůru nohama");
 $("<p>Náš kvalitní nábytek naštěstí stojí všema nohama pevně na zemi. Tak si vyberte unikátní domečkovou postel nebo cokoliv, čím proměníte svůj byt v krásný domov.</p>").insertAfter(".empty-content-404 h1");
+
+// -----------------------------------------------------------------------------
+// LOGIN FORM
+// -----------------------------------------------------------------------------
+
+$("<span class='login-close'></span>").insertAfter(".user-action .login-widget .popup-widget-inner");
