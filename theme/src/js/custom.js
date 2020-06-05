@@ -799,5 +799,5 @@ $("<p>Náš kvalitní nábytek naštěstí stojí všema nohama pevně na zemi. 
 
 $("<span class='login-close'></span>").insertAfter(".user-action .login-widget .popup-widget-inner");
 $(".login-close").click(function(){
-    $(body).removeClass(".user-action-visible .login-window-visible");
+    $("body").removeClass(".user-action-visible .login-window-visible");
 });
