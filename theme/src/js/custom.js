@@ -270,12 +270,7 @@ if ($(".stars-wrapper").length){
     $(".stars-wrapper").insertBefore(".p-final-price-wrapper");
 }
 
-/* add button into advanced-order modal */   
-$(document).ready(function() { 
-    $(".add-to-cart-button").click(function(){
-        $(".advanced-order .extra.step a").before('<div id="closeModal" class="btn btn-back">Jdu dále nakupovat</div>');
-    }); 
-});
+
 
 /* load shop rating */
 if ($(".type-detail").length){
@@ -460,6 +455,7 @@ $(document).ready(function() {
         setTimeout(function(){
             $("#backToShop").remove();
             $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
+            $(".advanced-order .extra.step .btn-conversion").text("Přejít do košíku");
             $("#backToShop").click(function(){
                 $("#cboxClose").click();
             });
@@ -801,3 +797,5 @@ $("<span class='login-close'></span>").insertAfter(".user-action .login-widget .
 $(".login-close").click(function(){
     $("body").removeClass(".user-action-visible .login-window-visible");
 });
+
+
