@@ -54,9 +54,21 @@ textarea.form-control{
     padding-top: 20px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
     a{
         margin: 0 20px;
+    }
+    a:first-child{
+        width: 100%;
+        margin-bottom: 20px;
+        background: $gray-300;
+        color: $gray-800;
+        height: 46px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 input.form-control:disabled, select.form-control:disabled{
