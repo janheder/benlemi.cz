@@ -91,6 +91,7 @@
     }
 }
 
+
 .in-registrace #content-wrapper-wrap::after{
     content: "";
     height: 300px;
@@ -113,6 +114,10 @@
     border: $gray-300 2px solid;
     padding: 20px;
     font-size: 14px;
+    background-image: url("../img/bg-register-points.png");
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
 
     .register-points__title{
         width: 100%;
