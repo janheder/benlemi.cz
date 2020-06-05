@@ -34,11 +34,11 @@
         justify-content: flex-start;
     }
     .content-inner .table .btn-primary{
-        background: $gray-300;
+        background: $gray-400;
         color: $gray-900;
 
         &:hover, &:active, &:focus{
-            background: $gray-400;
+            background: $gray-500;
             border: 0;
         }
     }
