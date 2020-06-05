@@ -4,6 +4,10 @@
     td{
         border: 1px solid $gray-400;
         padding: 10px;
+
+        &:first-child{
+            display: none;
+        }
     }
 }
 .in-klient-slevy .content table + p{
