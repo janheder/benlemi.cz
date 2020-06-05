@@ -30,7 +30,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 600;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -50,6 +50,9 @@
 }
 #colorbox .advanced-order .advanced-order-suggestion{
     padding: 40px 50px 10px 50px;
+    background: #eee;
+    margin: 0;
+    font-size: 24px;
 }
 #colorbox .advanced-order .h2{
     text-align: center;
@@ -69,7 +72,6 @@
     padding: 0px 10px;
     width: 100%;
     margin-bottom: 20px;
-    background: #f7f7f7;
     color: $green-700;
     display: flex;
     justify-content: center;
@@ -140,6 +142,7 @@
     display: flex;
     justify-content: center;
     margin: 0;
+    background: #eee;
 }
 
 @media screen and (max-width: 991px){
