@@ -205,58 +205,6 @@ $(".menu-item-responsive").click(function(){
 
 
 // -----------------------------------------------------------------------------
-// HOMEPAGE
-// -----------------------------------------------------------------------------
-
-
-/* unwrap homepage section */
-if ($("#homepageSection").length){
-    $("#homepageSection").unwrap().unwrap().unwrap().unwrap().unwrap();
-}
-
-/* load blog posts into homepage section */
-if ($("#blogSection").length){
-    $("#blogSection .blogSection__content").load("/blog-bydleni/ .news-wrapper");
-}
-
-/* load rating into homepage section */
-if ($("#ratingSection").length){
-    $("#ratingSection .ratingSection__content").load("/hodnoceni-obchodu/ .content-inner", function() {
-        $('<div style="display:block;text-align:center;"><a href="hodnoceni-obchodu" class="btn btn-secondary">Další hodnocení</a></div>').insertAfter(".ratingSection__content #ratingWrapper + .votes-wrap");
-    });
-}
-
-/* relocate benefit points and email form depending on page type */
-if ($("#pointsSection").length){
-    if ($("body.type-index").length){
-
-        if ($(".before-carousel").length){
-            $("#pointsSection").insertAfter(".before-carousel");
-        }
-        else{
-            $("#pointsSection").insertBefore("#footer");
-        }
-    }
-    else if ($("body.type-product").length){
-        $("#pointsSection").insertBefore(".p-detail-tabs-wrapper");
-    }
-    else{
-        $("#footer").before('<section id="newsletterSection"></section>');
-        $("#newsletterSection").load("/ #newsletterSection .container");
-        $("#pointsSection").insertBefore("#newsletterSection");
-    }
-}
-
-/* relocate instagram from footer to above footer */
-if ($("#instagramSection").length){
-    $("#instagramSection").insertBefore("#footer");
-}
-
-/* relocate middle categories section */
-$(".middle-banners-wrapper").insertBefore("#pointsSection + .content-wrapper");
-
-
-// -----------------------------------------------------------------------------
 // PRODUCT PAGE
 // -----------------------------------------------------------------------------
 
@@ -566,57 +514,6 @@ $(window).on('scroll', function() {
         $(".bottomCta").removeClass("--active");
     }
 });
-
-// -----------------------------------------------------------------------------
-// PRODUCT CATEGORY
-// -----------------------------------------------------------------------------
-
-/* relocate heading and categories */
-if ($(".type-category").length){
-    $(".category-title").insertBefore(".content-wrapper-in");
-    $(".subcategories").insertAfter(".category-title");
-    $(".category-perex").insertAfter(".category-title");
-}
-
-/* relocate sort into filters */
-if ($(".filters-wrapper").length){
-    $("#content-wrapper").append('<div id="filtersToggle">Otevřít filtr</div>')
-    $("#filtersToggle").click(function(){
-        $("#content-wrapper").toggleClass("--showFilters");
-        if ($("#content-wrapper").hasClass("--showFilters")) {
-            $("#filtersToggle").text("Zavřít filtr");
-        }else{
-            $("#filtersToggle").text("Otevřít filtr");
-        }
-    });
-}
-
-/* rename show more button */
-if ($(".pagination-loader").length){
-    $(".pagination-loader span").text("Zobrazit další");
-}
-
-/* relocate hover overlay on product & add more variants into product box*/
-if ($(".product").length){
-    $(".product").each(function(){
-        $(this).find(".p-tools .btn").text("Zobrazit");
-
-        if ($(this).find(".price-final strong > small").length){
-            $(this).find(".name").append("<span class='p-variants'>Více variant</span>");
-        }
-
-    });
-}
-
-/* category header edit */
-if ($("#category-header").length){
-    $("#category-header").insertBefore(".content-wrapper-in");
-    $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">Filtr</div>');
-
-    $("#filterToggleDesktop").click(function(){
-        $(".sidebar-left").toggleClass("--active");
-    });
-}
 
 
 // -----------------------------------------------------------------------------
