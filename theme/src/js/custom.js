@@ -590,7 +590,7 @@ if ($(".logout").length){
 
 if ($("#footer").length){
     $("#signature .title").text("Shoptet");
-    $("#signature").prepend('<a href="https://benlemi.cz" class="title --benlemi">Vytvořili <img src="https://janheder.github.io/benlemi.cz/theme/dist/img/symbol-benlemi.svg" class="image --benlemi"> Benlemi &</a>');
+    $("#signature").prepend('<a href="https://benlemi.cz" class="title --benlemi">Vytvořili <img src="https://janheder.github.io/benlemi.cz/theme/dist/img/symbol-benlemi.svg" alt="Benlemi" class="image --benlemi"> Benlemi &</a>');
 }
 
 // -----------------------------------------------------------------------------
