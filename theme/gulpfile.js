@@ -33,8 +33,8 @@ gulp.task('sass:watch', function () {
 
 gulp.task('minifyjs', function (cb) {
   pump([
-        gulp.src(['./src/js/custom.js']),
-        concat('custom.min.js'),
+        gulp.src(['./src/js/*.js']),
+
         uglify(),
         gulp.dest('./dist/js')
     ],
