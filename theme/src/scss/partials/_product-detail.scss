@@ -317,6 +317,11 @@
     padding-top: 10px;
     display: flex;
 
+
+}
+.availability-label{
+    display: flex;
+    
     &::before{
         content: "";
         display: flex;
@@ -328,8 +333,8 @@
         background-repeat: no-repeat;
     }
 }
-.availability-label{
-
+.default-variant .availability-label::before{
+    content: none;
 }
 .availability-amount{
 
