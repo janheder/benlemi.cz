@@ -104,6 +104,11 @@
     background-image: url("../img/bg.png");
     background-position: center top;
 }
+@media screen and (max-width: 991px){
+    .in-registrace #content-wrapper-wrap::after{
+        content: none;
+    }
+}
 
 .register-points{
     display: flex;

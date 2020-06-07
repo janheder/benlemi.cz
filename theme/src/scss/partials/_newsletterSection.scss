@@ -78,8 +78,8 @@
 }
 .newsletterSection__imgWrap{
     position: absolute;
-    right: 20px;
-    max-width: 50%;
+    right: 0px;
+    max-width: calc(50% + 50px);
 }
 
 @media screen and (max-width: 991px){
