@@ -108,7 +108,7 @@
 .register-points{
     display: flex;
     flex-wrap: wrap;
-    max-width: 660px;
+    max-width: 700px;
     margin: 0 auto;
     padding-top: 10px;
     border: $gray-300 0px solid;
@@ -118,7 +118,8 @@
     background-position: right center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 20px 0;
+    padding: 60px 20px 20px 20px;
+    margin-top: -20px;
     border-bottom: 1px solid $gray-400;
 
     .register-points__title{
@@ -148,5 +149,11 @@
         height: 40px;
         width: 40px;
         margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .register-points{
+        background-image: none;
     }
 }
