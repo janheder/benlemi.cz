@@ -70,6 +70,9 @@ textarea.form-control{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
     }
 }
 input.form-control:disabled, select.form-control:disabled{
