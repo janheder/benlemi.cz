@@ -521,7 +521,7 @@ $(window).on('scroll', function() {
 // -----------------------------------------------------------------------------
 
 /* add points above form */
-if ($("#register-form").length){
+if ($(".in-registrace #register-form").length){
     $('<div class="register-points"><h4 class="register-points__title">Co získáte?</h4>'+
     '<span>Kompletní historii všech svých objednávek </span>'+
     '<span>Info o designových novinkách </span>'+
