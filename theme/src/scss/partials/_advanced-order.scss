@@ -106,6 +106,19 @@
         }
     }
 }
+#colorbox .delivery .price-range{
+    display: flex;
+    height: 10px;
+    width: 100%;
+    background: $gray-300;
+    position: relative;
+
+    div{
+        position: absolute;
+        background: $green-700;
+        height: 10px;
+    }
+}
 #backToShop{
     margin-right: 20px;
     background: $gray-400;
