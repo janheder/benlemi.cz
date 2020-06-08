@@ -347,6 +347,7 @@ header + .content-wrapper .content-wrapper-in{
     padding: 10px 0;
     margin-bottom: 20px;
     width: 100%;
+    font-size: 14px;
 }
 .extras-product-img{
     width: 80px;
@@ -377,11 +378,10 @@ header + .content-wrapper .content-wrapper-in{
     align-items: center;
     display: flex;
     color: $red-700;
-    font-size: 16px;
     font-weight: 700;
 
     .price-final-currency{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 .extras-product-priceTotal{
