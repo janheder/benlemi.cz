@@ -100,10 +100,20 @@
     justify-content: center;
     align-items: center;
     
-    .btn-conversion{
-        &:hover, &:active, &:focus{
-            text-decoration: none;
-        }
+
+}
+#colorbox .step .btn-conversion{
+    &::before{
+        content: "";
+        height: 14px;
+        width: 14px;
+        background-color: transparent;
+        background-image: url($i-arrow-down-white);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 14px 14px;
+        transform: rotate(-90deg);
+        margin-left: 10px;
     }
 }
 #colorbox .delivery .price-range{
