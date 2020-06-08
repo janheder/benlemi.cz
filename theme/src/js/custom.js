@@ -606,7 +606,8 @@ if ($(".logout").length){
 if ($(".in-klient, .in-nastaveni, .in-objednavky, .in-klient-objednavky, .in-klient-slevy, .in-klient-hodnoceni, .in-klient-doklady, .in-klient-diskuze, .in-zapomenute-heslo").length){
     var name = $(".sidebar-inner ul li strong").text();
     $(".sidebar-inner strong").text(name + " v Benlemi");
-
+    $(".in-klient .content-inner h1").text("Vítejte v naší rodině");
+    $("<p>Patříte mezi nás. Proto můžete sbírat slevy, hodnotit produkty nebo si prohlížet své objednávky, kdykoliv se vám zachce.</p>").insertAfter(".in-klient .content-inner h1")
 }
 
 // -----------------------------------------------------------------------------
@@ -643,4 +644,12 @@ $(".login-close").click(function(){
     $("body").removeClass("user-action-visible login-window-visible");
 });
 
-
+if ($(".in-login").length){
+    $(".in-login .content-inner h1").text("Přihlaste se ke svému účtu");
+    $(".in-login .content-inner .password-helper").prepend('<h4 class="login-form-register-title">Staňte se členem rodiny Benlemi a získáte:</h4><div class="login-form-points">' +
+    + '<div class="login-form-point">slevy za každý svůj nákup</div>' +
+    + '<div class="login-form-point">kompletní přehled o objednávkách</div>' +
+    + '<div class="login-form-point">info o designových novinkách</div>' +
+    + '<div class="možnost hodnotit i debatovat</div>' +
+    + '</div>');
+}

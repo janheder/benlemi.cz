@@ -179,6 +179,9 @@
     .filter-sections{
 
     }
+    .filter-section-button{
+        display: none;
+    }
     #content-wrapper.--showFilters .filters{
         transform: translateX(0%);
     }
