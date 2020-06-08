@@ -99,20 +99,19 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    
-
 }
 #colorbox .step .btn-conversion{
+    flex-direction: row;
+
     &::before{
         content: "";
         height: 14px;
         width: 14px;
         background-color: transparent;
-        background-image: url($i-arrow-down-white);
+        background-image: url($i-arrow-left-white);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 14px 14px;
-        transform: rotate(-90deg);
         margin-left: 10px;
     }
 }
