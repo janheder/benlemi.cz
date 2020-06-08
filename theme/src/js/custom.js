@@ -413,7 +413,7 @@ $(document).ready(function() {
             '<div class="extras-product-img">' + img + '</div>' + 
             '<div class="extras-product-name">' + name + '</div>' +
             '<div class="extras-product-stock">' + stock + '</div>' +
-            '<div class="extras-product-amount">' + amount + '</div>' +
+            '<div class="extras-product-amount">' + amount + ' kus/ů</div>' +
             '<div class="extras-product-priceSingle">' + priceSingle + '</div>' +
             '<div class="extras-product-priceTotal">' + priceTotal + '</div>' +
             '</div>');

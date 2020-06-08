@@ -376,6 +376,13 @@ header + .content-wrapper .content-wrapper-in{
     flex-grow: 1;
     align-items: center;
     display: flex;
+    color: $red-700;
+    font-size: 16px;
+    font-weight: 700;
+
+    .price-final-currency{
+        font-size: 16px;
+    }
 }
 .extras-product-priceTotal{
     flex-grow: 1;
