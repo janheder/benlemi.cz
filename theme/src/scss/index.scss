@@ -348,8 +348,22 @@ header + .content-wrapper .content-wrapper-in{
     margin-bottom: 40px;
 }
 .extras-product-img{
-    width: 60px;
+    width: 80px;
+    height: 80px;
 }
 .extras-product-name{
-    width: 60px;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+.extras-product-stock{
+    flex-grow: 1;
+}
+.extras-product-amount{
+    flex-grow: 1;
+}
+.extras-product-priceSingle{
+    flex-grow: 1;
+}
+.extras-product-priceTotal{
+    flex-grow: 1;
 }
