@@ -75,6 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: $green-200;
 
     &::before{
         content: "";
@@ -97,18 +98,18 @@
 #colorbox .step{
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 #colorbox .step .btn-conversion{
     flex-direction: row;
 
-    &::before{
+    &::after{
         content: "";
         height: 14px;
         width: 14px;
         background-color: transparent;
-        background-image: url($i-arrow-left-white);
+        background-image: url($i-arrow-right-white);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 14px 14px;

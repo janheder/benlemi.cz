@@ -221,9 +221,10 @@
         color: $gray-700;
     }
     .cart-table .p-name .show-related{
-        display: none;
+        display: flex;
+        font-size: 14px;
+        color: $gray-700;
     }
-
     .cart-table .p-cell{
         padding: 0 10px;
         width: 15%;
@@ -373,11 +374,11 @@
     }
 
     .cart-table .related{
-        padding: 5px 10px;
+        padding: 5px 0px 5px 10px;
         background: transparent;
         border-top: 1px solid $gray-400;
         padding-left: 40px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         display: none;
 
         &.visible{
@@ -415,12 +416,24 @@
     .cart-related-button{
         display: flex;
         align-items: center;
+        white-space: nowrap;
     }
     .cart-related-button .price-final{
-
+        small{
+            margin-right: 5px;
+        }
     }
     .cart-related-button .btn{
         display: none;
+    }
+    @media screen and (max-width: 991px){
+        .cart-table .related{
+            padding-left: 0px;
+    
+            &.visible{
+
+            }
+        }
     }
 }
 
