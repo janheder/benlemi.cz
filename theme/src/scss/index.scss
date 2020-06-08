@@ -358,17 +358,27 @@ header + .content-wrapper .content-wrapper-in{
 .extras-product-name{
     padding-left: 20px;
     flex-grow: 1;
+    align-items: center;
+    display: flex;
 }
 .extras-product-stock{
     flex-grow: 1;
     color: $green-700;
+    align-items: center;
+    display: flex;
 }
 .extras-product-amount{
     flex-grow: 1;
+    align-items: center;
+    display: flex;
 }
 .extras-product-priceSingle{
     flex-grow: 1;
+    align-items: center;
+    display: flex;
 }
 .extras-product-priceTotal{
     flex-grow: 1;
+    align-items: center;
+    display: flex;
 }
