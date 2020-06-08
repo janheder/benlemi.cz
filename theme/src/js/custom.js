@@ -426,7 +426,7 @@ $(document).ready(function() {
             $("#backToShop").click(function(){
                 $("#cboxClose").click();
             });
-        }, 500);
+        }, 1000);
     });
 });
 
@@ -606,7 +606,7 @@ if ($(".logout").length){
 if ($(".in-klient, .in-nastaveni, .in-objednavky, .in-klient-objednavky, .in-klient-slevy, .in-klient-hodnoceni, .in-klient-doklady, .in-klient-diskuze, .in-zapomenute-heslo").length){
     var name = $(".sidebar-inner ul li strong").text();
     $(".sidebar-inner strong").text(name + " v Benlemi");
-    
+
 }
 
 // -----------------------------------------------------------------------------
