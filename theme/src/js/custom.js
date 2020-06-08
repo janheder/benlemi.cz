@@ -603,6 +603,12 @@ if ($(".logout").length){
     $(".client-contact-box").load("/objednavka/krok-1/ .checkout-box");
 }
 
+if ($(".in-klient, .in-nastaveni, .in-objednavky, .in-klient-objednavky, .in-klient-slevy, .in-klient-hodnoceni, .in-klient-doklady, .in-klient-diskuze, .in-zapomenute-heslo").length){
+    var name = $(".sidebar-inner ul li strong").text();
+    $(".sidebar-inner strong").text(name + " v Benlemi");
+    
+}
+
 // -----------------------------------------------------------------------------
 // FOOTER
 // -----------------------------------------------------------------------------

@@ -52,6 +52,28 @@
 .in-klient-objednavky .content, .in-klient-slevy .content, .in-klient-hodnoceni .content, .in-klient-doklady .content,
 .in-klient-diskuze .content, .in-zapomenute-heslo .content, .in-dorucovaci-udaje .content{
     width: 75%;
+
+    .content-inner h1{
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        color: $gray-800;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 6px;
+            width: 40px;
+            background: $green-200;
+        }
+    }
 }
 @media screen and (max-width: 991px){
     .in-klient .content, .in-nastaveni .content, .in-objednavky .content, 
