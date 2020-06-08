@@ -124,20 +124,22 @@
     margin-right: 20px;
     background: $gray-400;
     color: $gray-900;
+    flex-direction: row;
 
     &:hover, &:active, &:focus{
         background: $gray-500;
     }
     &::before{
         content: "";
-        height: 12px;
-        width: 12px;
+        height: 14px;
+        width: 14px;
         background-color: transparent;
         background-image: url($i-arrow-down);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 12px 12px;
+        background-size: 14px 14px;
         transform: rotate(90deg);
+        margin-right: 10px;
     }
 }
 #colorbox #cboxClose{
