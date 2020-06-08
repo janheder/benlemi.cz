@@ -409,7 +409,7 @@ $(document).ready(function() {
             var priceSingle = $(".price-final-holder:not(no-display)").html();
             var priceTotal = amount * priceSingle;
 
-            $(".extras-wrap").prepend('<div class="extras-product">'+ img + name + stock + amount + priceSingle + priceTotal'</div>');
+            $(".extras-wrap").prepend('<div class="extras-product">' + img + name + stock + amount + priceSingle + priceTotal + '</div>');
 
             $("#backToShop").remove();
             $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
