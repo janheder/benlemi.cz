@@ -650,7 +650,7 @@ if ($(".in-login").length){
     '<div class="login-form-point">slevy za každý svůj nákup</div>' +
     '<div class="login-form-point">kompletní přehled o objednávkách</div>' +
     '<div class="login-form-point">info o designových novinkách</div>' +
-    '<div class="možnost hodnotit i debatovat</div>' +
+    '<div class="login-form-point">možnost hodnotit i debatovat</div>' +
     '</div></div>');
 
     $("#formLogin .password-helper a:last-child").text("Zapomněli jste heslo?").insertAfter(".login-wrapper button");

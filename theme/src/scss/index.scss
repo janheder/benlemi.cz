@@ -396,3 +396,11 @@ header + .content-wrapper .content-wrapper-in{
     justify-content: center;
     align-items: center;
 }
+.login-form-points-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.login-form-point{
+    width: 50%;
+    font-size: 14px;
+}
