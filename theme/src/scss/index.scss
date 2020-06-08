@@ -339,3 +339,13 @@ header + .content-wrapper .content-wrapper-in{
     background-position: center center;
     cursor: pointer;
 }
+
+.extras-product{
+    display: flex;
+    border-top: 1px solid $gray-400;
+    border-bottom: 1px solid $gray-400;
+    padding: 10px 0;
+}
+.extras-product{
+    width: 60px;
+}
