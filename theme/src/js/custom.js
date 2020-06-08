@@ -401,6 +401,16 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(".add-to-cart-button").click(function(){
         setTimeout(function(){
+
+            var img = $(".p-image-wrapper a").html();
+            var name = $(".p-detail-inner-header h1").html();
+            var stock = $(".availability-value .parameter-dependent:not(no-display) span").html();
+            var amount = $(".add-to-cart .amount").val();
+            var priceSingle = $(".price-final-holder:not(no-display)").html();
+            var priceTotal = amount * priceSingle;
+
+            $(".extras-wrap").prepend('<div class="extras-product">'+ img + name + stock + amount + priceSingle + priceTotal'</div>');
+
             $("#backToShop").remove();
             $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
             $(".advanced-order .extra.step .btn-conversion").text("Přejít do košíku");
