@@ -345,11 +345,15 @@ header + .content-wrapper .content-wrapper-in{
     border-top: 1px solid $gray-400;
     border-bottom: 1px solid $gray-400;
     padding: 10px 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 .extras-product-img{
     width: 80px;
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .extras-product-name{
     padding-left: 20px;
