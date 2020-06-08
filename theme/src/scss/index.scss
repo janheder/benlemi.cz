@@ -390,6 +390,10 @@ header + .content-wrapper .content-wrapper-in{
     display: flex;
 }
 
+.login-form-register-title{
+    width: 100%;
+    text-align: left;
+}
 .login-form-points{
     display: flex;
     flex-direction: column;
@@ -399,8 +403,18 @@ header + .content-wrapper .content-wrapper-in{
 .login-form-points-wrap{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .login-form-point{
     width: 50%;
     font-size: 14px;
+    text-align: left;
+    color: $gray-700;
+    padding: 2px 0;
+}
+
+.in-login #formLogin .login-wrapper button + a{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
