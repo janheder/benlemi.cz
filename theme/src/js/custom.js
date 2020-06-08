@@ -645,11 +645,13 @@ $(".login-close").click(function(){
 });
 
 if ($(".in-login").length){
-    $(".in-login .content-inner h1").text("Přihlaste se ke svému účtu");
-    $(".in-login .content-inner .password-helper").prepend('<h4 class="login-form-register-title">Staňte se členem rodiny Benlemi a získáte:</h4><div class="login-form-points">' +
-    + '<div class="login-form-point">slevy za každý svůj nákup</div>' +
-    + '<div class="login-form-point">kompletní přehled o objednávkách</div>' +
-    + '<div class="login-form-point">info o designových novinkách</div>' +
-    + '<div class="možnost hodnotit i debatovat</div>' +
-    + '</div>');
+    $("#formLogin h1").text("Přihlaste se ke svému účtu");
+    $("#formLogin .password-helper").prepend('<h4 class="login-form-register-title">Staňte se členem rodiny Benlemi a získáte:</h4><div class="login-form-points">' +
+    '<div class="login-form-point">slevy za každý svůj nákup</div>' +
+    '<div class="login-form-point">kompletní přehled o objednávkách</div>' +
+    '<div class="login-form-point">info o designových novinkách</div>' +
+    '<div class="možnost hodnotit i debatovat</div>' +
+    '</div>');
+
+    $("#formLogin .password-helper a:last-child").insertAfter(".login-wrapper button");
 }
