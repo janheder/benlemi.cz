@@ -73,6 +73,11 @@ textarea.form-control{
         text-transform: uppercase;
         font-weight: 500;
         font-size: 15px;
+
+        &:hover, &:active, &:focus{
+            background: $gray-400;
+            text-decoration: none;
+        }
     }
 }
 input.form-control:disabled, select.form-control:disabled{

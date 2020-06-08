@@ -404,6 +404,8 @@ $(document).ready(function() {
             $("#backToShop").remove();
             $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
             $(".advanced-order .extra.step .btn-conversion").text("Přejít do košíku");
+            $(".advanced-order .h1").text("S radostí přidáno do vašeho košíku");
+            $(".advanced-order .h1.advanced-order-suggestion").text("Co se vám ještě hodí");
             $("#backToShop").click(function(){
                 $("#cboxClose").click();
             });
