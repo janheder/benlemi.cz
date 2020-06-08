@@ -59,27 +59,28 @@ textarea.form-control{
     a{
         margin: 0 20px;
     }
-    a:first-child{
-        width: 100%;
-        margin: 0;
-        margin-bottom: 20px;
-        background: $gray-300;
-        color: $gray-800;
-        height: 46px;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 15px;
+}
+.password-helper a:first-child, .in-login #formLogin .password-helper a{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    background: $gray-300;
+    color: $gray-800;
+    height: 46px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
 
-        &:hover, &:active, &:focus{
-            background: $gray-400;
-            text-decoration: none;
-        }
+    &:hover, &:active, &:focus{
+        background: $gray-400;
+        text-decoration: none;
     }
 }
+
 input.form-control:disabled, select.form-control:disabled{
     background: $gray-300;
     border: 1px solid $gray-500;

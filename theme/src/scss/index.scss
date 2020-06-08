@@ -389,3 +389,10 @@ header + .content-wrapper .content-wrapper-in{
     align-items: center;
     display: flex;
 }
+
+.login-form-points{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
