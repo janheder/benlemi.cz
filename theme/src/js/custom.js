@@ -218,8 +218,6 @@ if ($(".stars-wrapper").length){
     $(".stars-wrapper").insertBefore(".p-final-price-wrapper");
 }
 
-
-
 /* load shop rating */
 if ($(".type-detail").length){
     $("#ratingTab").wrapInner("<div id='ratingProduct'></div>");
