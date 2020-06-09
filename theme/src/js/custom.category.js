@@ -11,7 +11,7 @@ if ($(".type-category").length){
 
 /* relocate sort into filters */
 if ($(".filters-wrapper").length){
-    $("#content-wrapper").append('<div id="filtersToggle">Otevřít filtr</div>')
+    $("#content-wrapper").append('<div id="filtersToggle">Otevřít filtr</div>');
     $("#filtersToggle").click(function(){
         $("#content-wrapper").toggleClass("--showFilters");
         if ($("#content-wrapper").hasClass("--showFilters")) {
@@ -27,7 +27,7 @@ if ($(".pagination-loader").length){
     $(".pagination-loader span").text("Zobrazit další");
 }
 
-/* relocate hover overlay on product & add more variants into product box*/
+/* relocate hover overlay on product & add more variants into product box */
 if ($(".product").length){
     $(".product").each(function(){
         $(this).find(".p-tools .btn").text("Zobrazit");
@@ -62,7 +62,7 @@ if ($(".category-perex").length){
     }
 }
 
-
+/* category header title */
 if ($(".category-header").length){
     var catHead = $(".category-header div strong").html();
     $(".category-header div:last-child").text("Položek celkem:" + catHead);
