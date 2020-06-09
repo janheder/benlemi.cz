@@ -42,10 +42,19 @@ if ($(".product").length){
 /* category header edit */
 if ($("#category-header").length){
     $("#category-header").insertBefore(".content-wrapper-in");
-    $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">Filtr</div>');
+    $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">Zobrazit filtr</div>');
 
     $("#filterToggleDesktop").click(function(){
         $(".sidebar-left").toggleClass("--active");
+
+        if($("#filterToggleDesktop").hasClass("active")){
+            $(this).text("Zobrazit filtr");
+            $(this).removeClass("active");
+        }
+        else{
+            $(this).text("Skrýt filtr");
+            $(this).addClass("active");
+        }
     });
 }
 
