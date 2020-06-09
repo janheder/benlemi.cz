@@ -647,7 +647,7 @@ $(".login-close").click(function(){
 
 if ($(".in-login").length){
     $(".content-inner > h1").text("Přihlaste se ke svému účtu");
-    $("#formLogin .password-helper").prepend('<div class="login-form-points"><h4 class="login-form-register-title">Staňte se členem rodiny Benlemi a získáte</h4><div class="login-form-points-wrap">' +
+    $("#formLogin .password-helper").prepend('<div class="login-form-points"><h4 class="login-form-register-title">Staňte se členem rodiny<br>Benlemi a získáte:</h4><div class="login-form-points-wrap">' +
     '<div class="login-form-point">slevy za každý svůj nákup</div>' +
     '<div class="login-form-point">kompletní přehled o objednávkách</div>' +
     '<div class="login-form-point">info o designových novinkách</div>' +
