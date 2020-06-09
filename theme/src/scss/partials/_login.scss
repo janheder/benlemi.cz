@@ -11,7 +11,14 @@
         background: $white;
         padding: 40px;
     }
+    .login-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .content-inner form .btn{
+        width: 161px;
         width: 100%;
         background: $orange-700;
         color: $white;

@@ -80,6 +80,15 @@ textarea.form-control{
         text-decoration: none;
     }
 }
+.in-login #formLogin .password-helper a{
+    background: $orange-700;
+    color: $white;
+    width: auto;
+
+    &:hover, &:active, &:focus{
+        background: $orange-800;
+    }
+}
 
 input.form-control:disabled, select.form-control:disabled{
     background: $gray-300;
