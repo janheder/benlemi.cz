@@ -31,7 +31,9 @@
     .content-inner .table th{
         border-bottom: 1px solid $gray-400;
         padding: 10px 10px;
-        font-size: 14px;
+        color: $gray-700;
+        font-size: 13px;
+        font-weight: 400;
     }
     .content-inner .table td{
         background: $gray-300;
