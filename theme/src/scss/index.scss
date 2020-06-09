@@ -428,7 +428,7 @@ header + .content-wrapper .content-wrapper-in{
     width: 50%;
     font-size: 14px;
     text-align: left;
-    color: $gray-700;
+    color: $gray-900;
     padding: 3px 0;
     position: relative;
     display: flex;
@@ -449,6 +449,9 @@ header + .content-wrapper .content-wrapper-in{
 @media (max-width: 500px){
     .login-form-point{
         width: 100%;
+    }
+    .in-login .content-inner h1, .login-form-register-title{
+        font-size: 20px;
     }
 }
 
