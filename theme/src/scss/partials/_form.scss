@@ -84,6 +84,7 @@ textarea.form-control{
     background: $orange-700;
     color: $white;
     width: auto;
+    padding: 0 20px;
 
     &:hover, &:active, &:focus{
         background: $orange-800;
