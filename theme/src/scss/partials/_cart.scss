@@ -452,6 +452,15 @@
         .cart-related-button .btn{
             display: none;
         }
+        .cart-related-product .cart-related-info{
+            flex-wrap: wrap;
+        }
+        .cart-related-product .cart-related-name{
+            width: calc(100% - 50px);
+        }
+        .cart-related-product .cart-related-availability{
+            width: calc(100% - 50px); 
+        }
     }
 }
 
