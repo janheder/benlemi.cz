@@ -449,6 +449,10 @@
         }
     }
     @media screen and (max-width: 767px){
+        .cart-related-product{
+            height: auto;
+            margin-bottom: 10px;
+        }
         .cart-related-button .btn{
             display: none;
         }
@@ -460,6 +464,7 @@
         }
         .cart-related-product .cart-related-availability{
             width: calc(100% - 50px); 
+            margin-left: 50px;
         }
     }
 }
