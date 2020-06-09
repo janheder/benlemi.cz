@@ -379,6 +379,7 @@ header + .content-wrapper .content-wrapper-in{
     display: flex;
     color: $red-700;
     font-weight: 700;
+    display: none;
 
     .price-final-currency{
         font-size: 14px;
@@ -413,7 +414,7 @@ header + .content-wrapper .content-wrapper-in{
     color: $gray-700;
     padding: 3px 0;
     position: relative;
-    
+
     &::before{
         content: "";
         height: 8px;
