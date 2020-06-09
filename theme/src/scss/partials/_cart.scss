@@ -349,6 +349,8 @@
         }
         .cart-table .p-name {
             width: calc(100% - 80px);
+            flex-direction: column;
+            justify-content: center;
         }
         .cart-table .p-cell {
             width: auto;
@@ -404,6 +406,7 @@
         height: 50px;
         width: 50px;
         display: flex;
+        flex-shrink: 0;
     }
     .cart-related-name{
         padding: 0 10px;
@@ -443,6 +446,11 @@
             &.visible{
 
             }
+        }
+    }
+    @media screen and (max-width: 767px){
+        .cart-related-button .btn{
+            display: none;
         }
     }
 }
