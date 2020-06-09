@@ -62,7 +62,7 @@ if ($(".in-dekujeme").length){
     $(".reca-number").text("Doma to budete mít krásné a ještě jste podpořili českou rodinnou firmu. Do 30 minut vám pošleme email se všemi důležitými informacemi.");
 }
 
-
+/* add title to related products */
 $(".related ").each(function(){
     $(this).prepend('<h4 class="related-title">Související produkty</h4>');
 });
