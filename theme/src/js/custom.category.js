@@ -61,3 +61,9 @@ if ($(".category-perex").length){
         });
     }
 }
+
+
+if ($(".category-header").length){
+    var catHead = $(".category-header div strong").html();
+    $(".category-header div:last-child").text("Položek celkem:" + catHead);
+}
