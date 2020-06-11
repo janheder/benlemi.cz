@@ -103,9 +103,14 @@ $("#js-menuToggle, .menu-helper").click(function(){
     $("body").toggleClass("--noScroll");
 });
 
+
+/* relocate search */
+$(".menu-helper .search").insertAfter(".menu-level-1>li:last-child");
+
+
 /* toggle show responsive searchbar */ 
 $("#js-searchToggle").click(function(){
-    $(".menu-helper .search").insertAfter(".navigation-buttons");
+    $(".menu-level-1 .search").insertAfter(".navigation-buttons");
     if($(".search").hasClass("--active")){
         $(".search").removeClass("--active");
         $(".menu-helper .search .form-control").blur();  
@@ -128,9 +133,6 @@ $(".menu-level-1 .ext").hover(
         $("body").removeClass("submenu-active");
     }
 );
-
-/* relocate search */
-$(".header-top .search").insertAfter(".menu-level-1>li:last-child");
 
 /* add header client section */
 if ($(".popup-widget-inner h2").length){
