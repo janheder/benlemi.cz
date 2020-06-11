@@ -63,6 +63,14 @@ if ($(".in-dekujeme").length){
 }
 
 /* add title to related products */
-$(".related ").each(function(){
+$(".related").each(function(){
     $(this).prepend('<h4 class="related-title">Související produkty</h4>');
+});
+
+
+
+/* remove duplicated related products in cart */
+$(".main-link").each(function(){
+    var href= $(this).attr("href");
+    $(".cart-related-name[href='"+ href +"']").parents(".cart-related-product").remove();
 });

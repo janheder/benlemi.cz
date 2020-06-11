@@ -122,7 +122,7 @@
     width: auto;
 }
 
-@media screen and (min-width: 991px){
+@media screen and (min-width: 992px){
     .search:hover fieldset input, .search fieldset input:focus,  .search fieldset input:active, .search fieldset input:not(:placeholder-shown){
         display: inline-block;
         border: 2px solid #373b4e;
@@ -133,7 +133,11 @@
         border-left: 0;
     }
 }
-
+@media screen and (max-width: 991px){
+    .search-form{
+        background: $gray-300;
+    }
+}
 
 .search:hover fieldset .btn, .search fieldset input:focus ~ .btn,  .search fieldset input:active ~ .btn{
     display: inline-block;
