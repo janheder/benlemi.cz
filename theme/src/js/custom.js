@@ -105,7 +105,7 @@ $("#js-menuToggle, .menu-helper").click(function(){
 
 
 /* relocate search */
-$(".header-top .search").insertAfter(".menu-level-1>li:last-child");
+$(".header-top .search").insertAfter("#navigation .menu-level-1>li:last-child");
 
 
 /* toggle show responsive searchbar */ 
