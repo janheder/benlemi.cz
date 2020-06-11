@@ -74,3 +74,5 @@ $(".main-link").each(function(){
     var href= $(this).attr("href");
     $(".cart-related-name[href='"+ href +"']").parents(".cart-related-product").remove();
 });
+
+$(".show-related").text("Související produkty");
