@@ -121,14 +121,17 @@
     display: none;
     width: auto;
 }
-.search:hover fieldset input, .search fieldset input:focus,  .search fieldset input:active, .search fieldset input:not(:placeholder-shown){
-    display: inline-block;
-    border: 2px solid #373b4e;
-    border-right: 0;
-}
-.search:hover fieldset input ~ button, .search fieldset input:focus ~ button,  .search fieldset input:active ~ button{
-    border: 2px solid #373b4e;
-    border-left: 0;
+
+@media screen and (min-width: 991px){
+    .search:hover fieldset input, .search fieldset input:focus,  .search fieldset input:active, .search fieldset input:not(:placeholder-shown){
+        display: inline-block;
+        border: 2px solid #373b4e;
+        border-right: 0;
+    }
+    .search:hover fieldset input ~ button, .search fieldset input:focus ~ button,  .search fieldset input:active ~ button{
+        border: 2px solid #373b4e;
+        border-left: 0;
+    }
 }
 
 
