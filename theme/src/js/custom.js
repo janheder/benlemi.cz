@@ -105,12 +105,12 @@ $("#js-menuToggle, .menu-helper").click(function(){
 
 
 /* relocate search */
-$(".menu-helper .search").insertAfter(".menu-level-1>li:last-child");
+$(".header-top .search").insertAfter(".menu-level-1>li:last-child");
 
 
 /* toggle show responsive searchbar */ 
 $("#js-searchToggle").click(function(){
-    $(".menu-level-1 .search").insertAfter(".navigation-buttons");
+    $(".header-top .search").insertAfter(".navigation-buttons");
     if($(".search").hasClass("--active")){
         $(".search").removeClass("--active");
         $(".menu-helper .search .form-control").blur();  
