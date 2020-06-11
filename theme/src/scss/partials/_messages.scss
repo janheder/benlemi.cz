@@ -55,3 +55,22 @@
     z-index: 9;
     box-shadow: 0px 5px 5px rgba($black,0.08);
 }
+
+
+.cookie-ag-wrap{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+.site-msg.cookies{
+    background: $white;
+    padding: 10px;
+    max-width: 400px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+}
+.site-msg.cookies .btn{
+    height: 34px;
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 10px;
+}

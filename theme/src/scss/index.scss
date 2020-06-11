@@ -401,6 +401,7 @@ header + .content-wrapper .content-wrapper-in{
     margin-bottom: 20px;
     padding-bottom: 15px;
     color: $gray-800;
+    margin-top: 40px;
 
     &::after{
         content: "";
@@ -452,6 +453,7 @@ header + .content-wrapper .content-wrapper-in{
     }
     .in-login .content-inner h1, .login-form-register-title{
         font-size: 20px;
+        margin-top: 0px;
     }
 }
 

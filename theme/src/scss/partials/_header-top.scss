@@ -123,10 +123,18 @@
 }
 .search:hover fieldset input, .search fieldset input:focus,  .search fieldset input:active, .search fieldset input:not(:placeholder-shown){
     display: inline-block;
+    border: 1px solid #373b4e;
 }
+.search:hover fieldset input ~ button, .search fieldset input:focus ~ button,  .search fieldset input:active ~ button, .search fieldset input:not(:placeholder-shown) ~ button{
+
+    border: 1px solid #373b4e;
+    border-left: 0;
+}
+
+
 .search:hover fieldset .btn, .search fieldset input:focus ~ .btn,  .search fieldset input:active ~ .btn{
     display: inline-block;
-    background: $gray-300;
+
 }
 
 
