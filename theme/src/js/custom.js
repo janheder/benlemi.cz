@@ -110,7 +110,7 @@ $(".header-top .search").insertAfter("#navigation .menu-level-1>li:last-child");
 
 /* toggle show responsive searchbar */ 
 $("#js-searchToggle").click(function(){
-    $(".header-top .search").insertAfter(".navigation-buttons");
+    $("#navigation .search").insertAfter(".navigation-buttons");
     if($(".search").hasClass("--active")){
         $(".search").removeClass("--active");
         $(".menu-helper .search .form-control").blur();  
