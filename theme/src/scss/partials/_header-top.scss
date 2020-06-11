@@ -125,7 +125,7 @@
     display: inline-block;
     border: 1px solid #373b4e;
 }
-.search:hover fieldset input ~ button, .search fieldset input:focus ~ button,  .search fieldset input:active ~ button, .search fieldset input:not(:placeholder-shown) ~ button{
+.search:hover fieldset input ~ button, .search fieldset input:focus ~ button,  .search fieldset input:active ~ button{
 
     border: 1px solid #373b4e;
     border-left: 0;
