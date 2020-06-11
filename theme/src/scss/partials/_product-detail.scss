@@ -374,6 +374,10 @@
 .variant-list select::-ms-expand {
     display: none;
 }
+.variant-list select:invalid:focus{
+    outline: $red-700 auto 1px;
+    outline-style: auto;
+  }
 
 @media screen and (max-width: 767px){
     .variant-list select{
