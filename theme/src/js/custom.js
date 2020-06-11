@@ -130,7 +130,7 @@ $(".menu-level-1 .ext").hover(
 );
 
 /* relocate search */
-$(".search").insertAfter(".menu-level-1>li:last-child");
+$(".header-top .search").insertAfter(".menu-level-1>li:last-child");
 
 /* add header client section */
 if ($(".popup-widget-inner h2").length){
