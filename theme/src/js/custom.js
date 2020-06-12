@@ -412,13 +412,13 @@ $(document).ready(function() {
             var priceTotalInt = $(".price-final-holder:not(no-display)").html();
             var priceTotal = parseInt(priceTotalInt.split('<')[0]) * amount;
 
-            $(".extras-wrap").prepend('<div class="extras-product">' + 
+            $(".extras-wrap").prepend('<div class="extras-product-heading"><span>Produkt</span><span>Dostupnost</span><span>Počet kusů</span><span>Cena</span></div><div class="extras-product">' + 
             '<div class="extras-product-img">' + img + '</div>' + 
             '<div class="extras-product-name">' + name + '</div>' +
             '<div class="extras-product-stock">' + stock + '</div>' +
             '<div class="extras-product-amount">' + amount + ' kus/ů</div>' +
             '<div class="extras-product-priceSingle">' + priceSingle + '</div>' +
-            '<div class="extras-product-priceTotal">' + priceTotal + '</div>' +
+            '<div class="extras-product-priceTotal">' + priceTotal + ' Kč</div>' +
             '</div>');
 
             $("#backToShop").remove();
