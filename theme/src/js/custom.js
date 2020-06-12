@@ -105,6 +105,8 @@ $("#js-menuToggle, .menu-helper").click(function(){
 
 
 /* relocate search */
+$(".header-top .search-form input").prop("placeholder", "Napište, co hledáte. Např. domečková postel");
+
 $(".header-top .search").insertAfter("#navigation .menu-level-1>li:last-child");
 
 
