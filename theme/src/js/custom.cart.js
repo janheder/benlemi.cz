@@ -75,7 +75,7 @@ $(".main-link").each(function(){
     $(".cart-related-name[href='"+ href +"']").parents(".cart-related-product").remove();
 });
 
-$(".show-related").text("Související produkty");
+$(".show-related").text("Všechny související produkty");
 
 $(".related").append("<div class='showMoreRelated'>Související produkt</div>");
 
