@@ -76,8 +76,8 @@ $(".main-link").each(function(){
 });
 
 $(".show-related").text("Všechny související produkty");
-
-$(".related").append("<div class='showMoreRelated'>Související produkt</div>");
+$(".in-kosik .cart-related-button .btn").text("Zobrazit");
+$(".related").append("<div class='showMoreRelated'>Všechny související produkty</div>");
 
 $(".showMoreRelated").click(function(){
     $(this).parent(".related").addClass("visible");
