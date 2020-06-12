@@ -340,6 +340,15 @@ header + .content-wrapper .content-wrapper-in{
     cursor: pointer;
 }
 
+.extras-product-heading{
+    display: flex;
+
+    span{
+        color: $gray-700;
+        font-size: 13px;
+    }
+}
+
 .extras-product{
     display: flex;
     border-top: 1px solid $gray-400;
