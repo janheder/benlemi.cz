@@ -342,7 +342,8 @@ header + .content-wrapper .content-wrapper-in{
 
 .extras-product-heading{
     display: flex;
-
+    width: 100%;
+    
     span{
         color: $gray-700;
         font-size: 13px;
