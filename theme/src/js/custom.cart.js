@@ -76,3 +76,10 @@ $(".main-link").each(function(){
 });
 
 $(".show-related").text("Související produkty");
+
+$(".related").append("<div class='showMoreRelated'>Související produkt</div>");
+
+$(".showMoreRelated").click(function(){
+    $(this).parent(".related").addClass("visible");
+    $(this).remove();
+});
