@@ -343,10 +343,20 @@ header + .content-wrapper .content-wrapper-in{
 .extras-product-heading{
     display: flex;
     width: 100%;
-    
+
     span{
         color: $gray-700;
         font-size: 13px;
+    }
+    span:first-child{
+        width: calc(25% + 80px);
+    }
+    span{
+        width:25%;
+    }
+    span:last-child{
+        width: auto;
+        flex-grow: 1;
     }
 }
 
@@ -368,18 +378,18 @@ header + .content-wrapper .content-wrapper-in{
 }
 .extras-product-name{
     padding-left: 20px;
-    flex-grow: 1;
+    width: 25%;
     align-items: center;
     display: flex;
 }
 .extras-product-stock{
-    flex-grow: 1;
+    width: 25%;
     color: $green-700;
     align-items: center;
     display: flex;
 }
 .extras-product-amount{
-    flex-grow: 1;
+    width: 25%;
     align-items: center;
     display: flex;
 }
