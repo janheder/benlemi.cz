@@ -66,15 +66,22 @@
     position: fixed;
     bottom: 10px;
     left: 10px;
-    background: $white;
+    background: $green-900;
+    color: $white;
     padding: 10px;
     max-width: 400px;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
     z-index: 2;
+
+    a{
+        color: $white;
+    }
 }
 .site-msg.cookies .btn{
     height: 34px;
     padding: 10px;
     font-size: 13px;
-    margin-left: 10px;
+    margin-top: 10px;
+    background: $white;
+    color: $gray-800;
 }
