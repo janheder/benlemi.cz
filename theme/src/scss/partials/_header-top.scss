@@ -126,12 +126,14 @@
 @media screen and (min-width: 992px){
     .search:hover fieldset input, .search fieldset input:focus,  .search fieldset input:active, .search fieldset input:not(:placeholder-shown){
         display: inline-block;
-        border: 2px solid #373b4e;
+        border: 1px solid #373b4e;
         border-right: 0;
+        background: $white;
     }
     .search:hover fieldset input ~ button, .search fieldset input:focus ~ button,  .search fieldset input:active ~ button{
-        border: 2px solid #373b4e;
+        border: 1px solid #373b4e;
         border-left: 0;
+        background: $white;
     }
 }
 @media screen and (max-width: 991px){
