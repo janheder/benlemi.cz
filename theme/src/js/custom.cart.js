@@ -75,9 +75,9 @@ $(".main-link").each(function(){
     $(".cart-related-name[href='"+ href +"']").parents(".cart-related-product").remove();
 });
 
-$(".show-related").text("Všechny související produkty");
+$(".show-related").text("Zobrazit další související produkty");
 $(".in-kosik .cart-related-button .btn").text("Zobrazit");
-$(".related").append("<div class='showMoreRelated'>Všechny související produkty</div>");
+$(".related").append("<div class='showMoreRelated'>Zobrazit další související produkty</div>");
 
 $(".showMoreRelated").click(function(){
     $(this).parent(".related").addClass("visible");
