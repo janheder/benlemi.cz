@@ -218,7 +218,7 @@
     }
     .cart-table .p-name .main-link-variant{
         font-size: 13px;
-        color: $gray-700;
+        color: $green-700;
     }
     .cart-table .p-name .show-related{
         display: flex;
@@ -244,7 +244,7 @@
     .cart-table .p-availability .show-tooltip{
         font-weight: 600;
         font-size: 14px;
-        color: $green-700;
+        color: $gray-500;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -431,7 +431,7 @@
     }
     .cart-related-availability{
         padding: 0 10px;
-        color: $green-700;
+        color: $gray-500;
     }
     .cart-related-button{
         display: flex;
