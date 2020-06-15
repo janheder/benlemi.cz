@@ -335,6 +335,7 @@
 }
 .default-variant .availability-label::before{
     content: none;
+    color: $green-900;
 }
 .availability-amount{
 

@@ -228,8 +228,8 @@
         display: none;
     }
     .showMoreRelated{
-        color: $gray-700;
-        font-size: 14px;
+        color: $green-700;
+        font-size: 13px;
         padding-bottom: 5px;
         cursor: pointer;
     }
@@ -244,7 +244,7 @@
     .cart-table .p-availability .show-tooltip{
         font-weight: 600;
         font-size: 14px;
-        color: $gray-700;
+        color: $green-900;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -431,7 +431,7 @@
     }
     .cart-related-availability{
         padding: 0 10px;
-        color: $gray-700;
+        color: $green-900;
     }
     .cart-related-button{
         display: flex;
