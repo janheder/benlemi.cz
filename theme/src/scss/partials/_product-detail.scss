@@ -1039,9 +1039,10 @@ div[id^="crossSelling"]{
 }
 .detail-cross-selling{
     order: 21;
-    padding: 5px 0;
+    padding: 0px 0;
     display: flex;
     align-items: center;
+    margin-top: -1px;
 }
 .selling-2 ~ .detail-cross-selling{
     display: none;
@@ -1111,6 +1112,7 @@ div[id^="crossSelling"]{
     order: 21;
     margin: 0;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #js-ratingStoreToggle{
