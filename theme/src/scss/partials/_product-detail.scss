@@ -1058,7 +1058,7 @@ div[id^="crossSelling"]{
     position: relative;
     display: flex;
     align-items: center;
-    border: 1px solid $gray-400;
+    border: 0px solid $gray-400;
     width: 100%;
 }
 .detail-cross-selling label > span{
@@ -1086,8 +1086,9 @@ div[id^="crossSelling"]{
     display: flex;
     margin-right: 10px;
     position: absolute;
-    left: 10px;
-    top: 23px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
     border-radius: 0%;
     border: 2px solid $gray-600;
 }

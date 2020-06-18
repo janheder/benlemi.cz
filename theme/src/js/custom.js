@@ -75,7 +75,6 @@ $(function() {
     }
 });
 
-
 /* add contacts into header area */ 
 if ($(".search").length){
     if ($("#footer").length){
@@ -91,13 +90,13 @@ if ($(".search").length){
     '</div>');
 }
 
-/* add search and user icons to header area */ 
+/* add search and user icons to header area */
 $(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><a href="/login" class="nav-user"></a>');
 
-/* add hamburger menu on mobile */ 
+/* add hamburger menu on mobile */
 $(".header-top").prepend('<div class="nav-menu-toggle" id="js-menuToggle"><span></span></div>');
 
-/* toggle control of responsive menu */ 
+/* toggle control of responsive menu */
 $("#js-menuToggle, .menu-helper").click(function(){
     $(".header-top").toggleClass("--active");
     $("body").toggleClass("--noScroll");
@@ -110,7 +109,7 @@ $(".header-top .search-form input").prop("placeholder", "Napište, co hledáte. 
 $(".header-top .search").insertAfter("#navigation .menu-level-1>li:last-child");
 
 
-/* toggle show responsive searchbar */ 
+/* toggle show responsive searchbar */
 $("#js-searchToggle").click(function(){
     $("#navigation .search").insertAfter(".navigation-buttons");
     if($(".search").hasClass("--active")){
@@ -122,7 +121,7 @@ $("#js-searchToggle").click(function(){
     }
 });
 
-/* *WIP* override shoptet cart function on mobile */ 
+/* *WIP* override shoptet cart function on mobile */
 $(".cart-count").click(function(){
     window.location.href='/kosik/';
 });
@@ -246,7 +245,7 @@ if ($(".type-detail").length){
     });
 }
 
-/* click on modal overlay closes the whole modal window */   
+/* click on modal overlay closes the whole modal window */
 $("#closeModal").click(function(){
     $("#cboxOverlay").click();
 });
