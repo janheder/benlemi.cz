@@ -374,8 +374,7 @@
     display: none;
 }
 .variant-list select:invalid:focus{
-    outline: $red-700 auto 1px;
-    outline-style: auto;
+    outline: 1px solid $red-700;
   }
 
 

@@ -515,7 +515,6 @@ if ($(".type-detail").length){
             $('#bottomCtaInput').val(inputValue-1);
         }
     });
-
 }
 
 $("#ratingProduct>p").text("Buďte první, kdo napíše hodnocení k tomuto produktu");
@@ -633,7 +632,7 @@ $(".vote-form-title").click(function(){
 });
 
 // -----------------------------------------------------------------------------
-// RATING STORE PAGE
+// 404
 // -----------------------------------------------------------------------------
 
 $(".empty-content-404 h1").text("Tahle stránka je vzhůru nohama");
