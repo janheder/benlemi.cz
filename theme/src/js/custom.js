@@ -537,7 +537,7 @@ $(window).on('scroll', function() {
     }
 });
 
-$("#content .availability-value .default-variant").text("Zvolte variantu pro zobrazení dob doručení");
+$("#content .availability-value .default-variant").text("Zvolte variantu pro zobrazení doby doručení");
 
 // -----------------------------------------------------------------------------
 // REGISTER PAGE
