@@ -1112,3 +1112,15 @@
     top: -30px;
     max-width: 45%;
 }
+
+@media screen and (max-width: 767px){
+    .cart-content .stay-in-touch{
+        margin-top: 0px;
+    }
+    .cart-content .stay-in-touch::before {
+        content: none;
+    }
+    .cart-content .stay-in-touch input[type="checkbox"]+label{
+        padding-right: 20px;
+    }
+}
