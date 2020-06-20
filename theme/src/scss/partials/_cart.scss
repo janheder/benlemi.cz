@@ -1121,6 +1121,8 @@
         content: none;
     }
     .cart-content .stay-in-touch input[type="checkbox"]+label{
-        padding-right: 20px;
+        padding: 20px 20px 20px 60px;
+        box-shadow: none;
+        border: 1px solid $gray-500;
     }
 }
