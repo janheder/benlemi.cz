@@ -127,6 +127,12 @@
     height: 30px;
     width: 30px;
 }
+@media screen and (max-width: 500px){
+    .rate-star-wrap .star{
+        height: 22px;
+        width: 22px;
+    }
+}
 .rate-wrapper{
     width: 33.333%;
     position: relative;
