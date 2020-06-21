@@ -702,6 +702,12 @@
         background: $green-200;
     }
 }
+@media screen and (max-width: 500px){
+    #ratingProduct h1{
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+}
 #ratingProduct > p{
     margin: 0;
     padding: 43px 20px;
@@ -799,6 +805,12 @@
         height: 6px;
         width: 40px;
         background: $green-200;
+    }
+}
+@media screen and (max-width: 500px){
+    #ratingStore h1{
+        font-size: 18px;
+        padding-bottom: 20px;
     }
 }
 #ratingStore .rate-wrapper {

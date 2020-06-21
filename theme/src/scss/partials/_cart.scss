@@ -1126,3 +1126,16 @@
         border: 1px solid $gray-500;
     }
 }
+
+
+.co-contact-information h4 + .form-group{
+    border: 1px solid $gray-500;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.co-contact-information h4 + .form-group label{
+    margin: 0 20px 0 0;
+}

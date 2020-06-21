@@ -37,6 +37,13 @@
         background: $green-200;
     }  
 }
+@media screen and (max-width: 500px){
+    .ratingSection__title{
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+}
+
 .ratingSection__content{
     padding-left: 0px;
 }
@@ -87,3 +94,4 @@
         padding: 20px;
     }
 }
+

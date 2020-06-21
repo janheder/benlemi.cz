@@ -2,7 +2,7 @@
     padding-top: 20px;
 }
 .products-related-header{
-    text-align: center;
+    text-align: left;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -20,6 +20,12 @@
         height: 6px;
         width: 40px;
         background: $green-200;
+    }
+}
+@media screen and (max-width: 500px){
+    .products-related-header{
+        font-size: 18px;
+        padding-bottom: 20px;
     }
 }
 .products-related{

@@ -33,6 +33,13 @@
         background: $green-200;
     }
 }
+@media screen and (max-width: 500px){
+    .categoriesSection__title{
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+}
+
 .categoriesSection__row .col-12{
     margin: 10px 0;
 }

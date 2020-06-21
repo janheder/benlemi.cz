@@ -40,7 +40,12 @@
         color: $green-700;
     }
 }
-
+@media screen and (max-width: 500px){
+    .instagramSection__title{
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+}
 @media screen and (max-width: 991px){
     #instagramSection{
         padding: 20px 0;
