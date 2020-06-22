@@ -331,3 +331,16 @@
         }
     }
 }
+
+.user-action-cart{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    z-index: 9;
+    background: $white;
+    top: 90px;
+    padding: 20px;
+}
+
+
