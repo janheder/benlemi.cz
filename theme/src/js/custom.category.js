@@ -76,3 +76,7 @@ if ($(".category-header").length){
     var catHead = $(".category-header div strong").html();
     $(".category-header div:last-child").text("Položek celkem:" + catHead);
 }
+
+
+$(".filters-wrapper").append("<div class='filter-contact'></div>");
+$(".filter-contact").load("/objednavka/krok-1/ .checkout-box");
