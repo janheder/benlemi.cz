@@ -361,6 +361,11 @@
 
     .quantity input{
         width: 50px;
+        height: 36px;
+        text-align: center;
+        border-radius: 0;
+        border: 1px solid $gray-500;
+
     }
 }
 .cart-widget-product-unit{
@@ -389,8 +394,8 @@
     
 }
 .cart-widget-product-delete .remove-item{
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: $gray-300;
     border: 0;
 }
@@ -409,4 +414,5 @@
 }
 .user-action-cart .cart-free-shipping strong{
     color: $green-700;
+    padding: 10px 0;
 }
