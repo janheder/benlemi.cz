@@ -348,12 +348,16 @@
 }
 .cart-widget-product{
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 .cart-widget-product-image{
     height: 60px;
+    width: 60px;
 }
 .cart-widget-product-amount{
+    padding: 0 10px;
+
     .quantity input{
         width: 50px;
     }
@@ -363,6 +367,8 @@
 }
 .cart-widget-product-name{
     display: flex;
+    flex-grow: 1;
+
     strong{
 
     }
