@@ -368,12 +368,15 @@
 .cart-widget-product-name{
     display: flex;
     flex-grow: 1;
+    padding-right: 20px;
 
     strong{
-
+        padding-right: 20px;
     }
     span{
-
+        color: $red-800;
+        font-weight: 700;
+        text-align: right;
     }
 }
 .cart-widget-product-delete{
