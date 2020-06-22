@@ -342,6 +342,7 @@
     background: $white;
     top: 90px;
     padding: 20px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
 }
 .cart-count:hover + .user-action-cart, .user-action-cart:hover{
     display: flex;
@@ -399,11 +400,13 @@
     color: $gray-900;
     height: 32px;
     font-size: 13px;
-    margin-left: 10px;
     transition: 0.3s ease opacity;
-    
+
     &:hover, &:active, &:focus{
         background: $gray-400;
         border: 0;
     }
+}
+.user-action-cart .cart-free-shipping strong{
+    color: $green-700;
 }
