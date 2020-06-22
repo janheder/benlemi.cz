@@ -343,7 +343,7 @@
     top: 90px;
     padding: 20px;
 }
-.cart-count:hover + .user-action-cart{
+.cart-count:hover + .user-action-cart, .user-action-cart:hover{
     display: flex;
 }
 .cart-widget-product{
@@ -377,4 +377,5 @@
     width: 20px;
     height: 20px;
     background: $gray-300;
+    border: 0;
 }
