@@ -391,7 +391,9 @@
     }
 }
 .cart-widget-product-delete{
-    
+    .inline{
+        display: flex;
+    }
 }
 .cart-widget-product-delete .remove-item{
     width: 24px;
@@ -415,4 +417,10 @@
 .user-action-cart .cart-free-shipping strong{
     color: $green-700;
     padding: 10px 0;
+    display: flex;
+}
+.user-action-cart .cart-widget-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -40px;
 }
