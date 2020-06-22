@@ -31,7 +31,7 @@ input:focus, button:focus{
     background-repeat: no-repeat;
 }
 textarea.form-control:valid, .search .search-form .form-control:valid, .form-control:optional{
-    background: none;
+    background: $white;
 }
 select.form-control, select.form-control:valid{
     background: $white;
