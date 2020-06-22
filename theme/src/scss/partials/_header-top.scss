@@ -372,11 +372,16 @@
 
     strong{
         padding-right: 20px;
+
+        a{
+            color: $gray-800;
+        }
     }
     span{
         color: $red-800;
         font-weight: 700;
         text-align: right;
+        flex-grow: 1;
     }
 }
 .cart-widget-product-delete{
@@ -387,4 +392,18 @@
     height: 20px;
     background: $gray-300;
     border: 0;
+}
+
+#continue-order-button{
+    background: $gray-300;
+    color: $gray-900;
+    height: 32px;
+    font-size: 13px;
+    margin-left: 10px;
+    transition: 0.3s ease opacity;
+    
+    &:hover, &:active, &:focus{
+        background: $gray-400;
+        border: 0;
+    }
 }
