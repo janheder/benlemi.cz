@@ -354,7 +354,9 @@
     height: 60px;
 }
 .cart-widget-product-amount{
-
+    .quantity input{
+        width: 50px;
+    }
 }
 .cart-widget-product-unit{
     display: none;
@@ -362,7 +364,7 @@
 .cart-widget-product-name{
     display: flex;
     strong{
-        
+
     }
     span{
 
@@ -374,4 +376,5 @@
 .cart-widget-product-delete .remove-item{
     width: 20px;
     height: 20px;
+    background: $gray-300;
 }
