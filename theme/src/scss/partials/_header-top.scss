@@ -4,6 +4,7 @@
     justify-content: space-between;
     height: 110px;
     padding-bottom: 20px;
+    position: relative;
     /* border-bottom: 1px solid $gray-400; */
 }
 @media screen and (max-width: 991px){
@@ -333,14 +334,15 @@
 }
 
 .user-action-cart{
-    display: flex;
+    display: absolute;
     flex-direction: column;
     position: absolute;
-    right: 20px;
+    right: 0px;
     z-index: 9;
     background: $white;
     top: 90px;
     padding: 20px;
 }
-
-
+.cart-count:hover + .user-action-cart{
+    display: flex;
+}
