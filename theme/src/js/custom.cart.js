@@ -77,7 +77,7 @@ $(".main-link").each(function(){
 
 $(".show-related").text("Zobrazit další související produkty");
 $(".in-kosik .cart-related-button .btn").text("Zobrazit");
-$(".related").append("<div class='showMoreRelated'>Zobrazit další související produkty</div>");
+$(".related").append("<div class='showMoreRelated'>Zobrazit další</div>");
 
 $(".showMoreRelated").click(function(){
     $(this).parent(".related").addClass("visible");
