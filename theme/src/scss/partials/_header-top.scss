@@ -405,7 +405,7 @@
 #continue-order-button{
     background: $gray-300;
     color: $gray-900;
-    height: 32px;
+    height: 42px;
     font-size: 13px;
     transition: 0.3s ease opacity;
 
@@ -417,6 +417,7 @@
 .user-action-cart .cart-free-shipping strong{
     color: $green-700;
     padding: 10px 0;
+    padding-top: 20px;
     display: flex;
 }
 .user-action-cart .cart-widget-button{
