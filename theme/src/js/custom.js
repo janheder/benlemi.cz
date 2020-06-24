@@ -137,9 +137,9 @@ $(".menu-level-1 .ext").hover(
 
 /* add header client section */
 if ($(".popup-widget-inner h2").length){
-    $('<div class="navLinks"><a href="/login/?backTo=%2F" class="top-nav-button top-nav-button-login primary login toggle-window navLinks__link" data-target="login" rel="nofollow">Přihlášení</a><a href="/registrace/" class="navLinks__link">Registrace</a><span class="navLinks__span">Jazyk:</span></div>').insertAfter(".nav-user");
+    $('<div class="navLinks"><a href="/login/?backTo=%2F" class="top-nav-button top-nav-button-login primary login toggle-window navLinks__link" data-target="login" rel="nofollow">' + g_login + '</a><a href="/registrace/" class="navLinks__link">' + g_register + '</a><span class="navLinks__span">' + g_language + ':</span></div>').insertAfter(".nav-user");
 }else{
-    $('<div class="navLinks"><a href="/klient/" class="navLinks__link --user">Uživatelský účet</a><span class="navLinks__span">Jazyk:</span></div>').insertAfter(".nav-user");
+    $('<div class="navLinks"><a href="/klient/" class="navLinks__link --user">' + g_userAccount + '</a><span class="navLinks__span">' + g_language + ':</span></div>').insertAfter(".nav-user");
 }
 
 /* language toggle */
@@ -157,20 +157,20 @@ function freeDelivery(){
         priceInt = parseInt(price);
 
         if(priceInt > priceFree){
-            $("<div class='headerFreeDelivery free'>Dopravu máte zdarma</div>").insertBefore(".cart-count");
+            $("<div class='headerFreeDelivery free'>" + g_freeDelivery + "</div>").insertBefore(".cart-count");
         }
         else{
             var priceFinal = priceFree - priceInt;
-            $("<div class='headerFreeDelivery'>Vyberte ještě za <span>"+ priceFinal +" " + g_currency + "</span><br>a dopravu máte zdarma</div>").insertBefore(".cart-count");
+            $("<div class='headerFreeDelivery'>" + g_pickAdditionalItemsForAtLeast + " <span>"+ priceFinal +" " + g_currency + "</span><br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");
         }
     }
     else{
         $(".headerFreeDelivery").remove();
-        $("<div class='headerFreeDelivery free'>Vyberte nad 1234 Kč<br>a máte dopravu zdarma</div>").insertBefore(".cart-count");  
+        $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");  
     }
 
     if ($(".ordering-process").length){
-        $("<div class='headerFreeDelivery free'>Vyberte nad 1234 Kč<br>a máte dopravu zdarma</div>").insertAfter(".navLinks");
+        $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertAfter(".navLinks");
     }
 }
 freeDelivery();
