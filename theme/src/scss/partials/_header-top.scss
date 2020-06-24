@@ -345,7 +345,7 @@
     box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
 }
 
-@media screen and (max-width: 991px){
+@media screen and (min-width: 992px){
     .cart-count.full:hover + .user-action-cart, .user-action-cart:hover{
         display: flex;
     }
