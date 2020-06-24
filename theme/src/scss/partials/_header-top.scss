@@ -405,10 +405,6 @@
     border: 0;
 }
 
-.cart-free-shipping div{
-    display: flex;
-    max-width: 50%;
-}
 
 #continue-order-button{
     background: $gray-300;
@@ -428,8 +424,12 @@
     padding-top: 20px;
     display: flex;
 }
+.cart-free-shipping{
+    display: none;
+}
+
 .user-action-cart .cart-widget-button{
     display: flex;
     justify-content: flex-end;
-    margin-top: -40px;
+    margin-top: 0px;
 }

@@ -546,9 +546,9 @@ $("#content .availability-value .default-variant").text("Zvolte variantu pro zob
 /* add points above form */
 if ($(".in-registrace #register-form").length){
     $('<div class="register-points"><h4 class="register-points__title">Co získáte?</h4>'+
-    '<span>Kompletní historii všech svých objednávek </span>'+
-    '<span>Info o designových novinkách </span>'+
-    '<span>Vyší slevy s každým dalším nákupem</span>'+
+    '<span>Kompletní historii všech svých objednávek</span>'+
+    '<span>Info o designových novinkách</span>'+
+    '<span>Vyšší slevy s každým dalším nákupem</span>'+
     '</div>').insertBefore("#register-form");
 
 
