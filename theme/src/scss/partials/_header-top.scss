@@ -403,18 +403,21 @@
     height: 24px;
     background: $gray-300;
     border: 0;
+    background-image: url("../icons/close.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center center;
 }
 
 
 #continue-order-button{
-    background: $gray-300;
-    color: $gray-900;
+
     height: 42px;
     font-size: 13px;
     transition: 0.3s ease opacity;
 
     &:hover, &:active, &:focus{
-        background: $gray-400;
+
         border: 0;
     }
 }
