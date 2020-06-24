@@ -193,13 +193,13 @@ if ($(".site-msg").length){
 
 /* rename user account */
 var name = $(".popup-widget-inner p strong").text();
-$(".navLinks__link.--user").text("Přihlášen: " + name);
+$(".navLinks__link.--user").text(g_logged + ":" + name);
 
 /* add responsive link into menu */
 $(".menu-level-1 > li.ext").each(function() {
     $(this).prepend('<div class="menu-item-responsive"></div>');
     var catLink = $(this).children('a').prop("href");
-    $(this).find(".menu-level-2").prepend('<a class="menu-item-more" href="' + catLink + '">Zobrazit vše</a>')
+    $(this).find(".menu-level-2").prepend('<a class="menu-item-more" href="' + catLink + '">' + g_viewAll + '</a>')
 });
 
 $(".menu-item-responsive").click(function(){
@@ -228,10 +228,10 @@ if ($(".type-detail").length){
     $("#ratingTab").wrapInner("<div id='ratingProduct'></div>");
     $("#ratingTab").append("<div id='ratingStore'></div>");
 
-    $("#ratingProduct").prepend("<h1>Hodnocení produktu</h1>");
+    $("#ratingProduct").prepend("<h1>" + g_productRating + "</h1>");
 
     $("#ratingTab #ratingStore").load("/hodnoceni-obchodu/ .content-inner", function() {
-        $("<a href='/hodnoceni-obchodu' class='btn btn-secondary' id='js-ratingStoreToggle'>Přidat hodnocení</div>").insertBefore("#ratingStore #rate-form");
+        $("<a href='/hodnoceni-obchodu' class='btn btn-secondary' id='js-ratingStoreToggle'>" + g_addRating + "</div>").insertBefore("#ratingStore #rate-form");
         
         /*
         $("#js-ratingStoreToggle").click(function(){
@@ -254,7 +254,7 @@ $("#closeModal").click(function(){
 
 /* related products setup */
 $(".products-related-header, .products-related").wrapAll("<div id='productsRelated'>");
-$("#p-detail-tabs").append('<li class="shp-tab"><a href="#productsRelated" class="shp-tab-link" role="tab" data-toggle="tab">Související</a></li>');
+$("#p-detail-tabs").append('<li class="shp-tab"><a href="#productsRelated" class="shp-tab-link" role="tab" data-toggle="tab">' + g_related + '</a></li>');
 
 /* make variant selects required */
 if ($(".hidden-split-parameter").length){
@@ -272,13 +272,13 @@ if ($("#p-detail-tabs").length){
 
 /* load infographic images into parameters */
 if ($("#relatedFiles").length){
-    $('select[data-parameter-name="Rozměr"]').change(function() {
+    $('select[data-parameter-name="' + g_propositions + '"]').change(function() {
         $(".description-infographics").remove();
-        var option = $('select[data-parameter-name="Rozměr"] option:selected').text(); 
+        var option = $('select[data-parameter-name="' + g_propositions + '"] option:selected').text(); 
         var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
         var src = $('#relatedFiles a[title*="' + optionClean + '"]').attr("href");
         if(typeof src != 'undefined'){
-            $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>Stáhnout infografiku</a></div>');
+            $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
             $(".description-infographics img").attr("src", src);
             $(".description-infographics a").attr("href", src);
         }else{
@@ -299,7 +299,7 @@ if ($("#productVideos").length){
 
 /* add "show more" button to thumbnails */
 if ($(".p-thumbnails-wrapper").length){
-    $(".p-thumbnails-inner > div > a:last-child").after('<div id="thumbnailsShowMore"><div class="thumbnailsShowMore-inner">Zobrazit vše</div></div>');
+    $(".p-thumbnails-inner > div > a:last-child").after('<div id="thumbnailsShowMore"><div class="thumbnailsShowMore-inner">' + g_viewAll + '</div></div>');
 }
 $("#thumbnailsShowMore").click(function(){
     $(".p-thumbnails-inner").toggleClass("--active");
@@ -311,10 +311,10 @@ $("#productsRelated").insertBefore("#productDiscussion");
 /* Description hooks changes */
 $(".basic-description").attr('id', 'descriptionLong');
 $('#p-detail-tabs a[href="#description"]').attr('href', '#descriptionLong');
-$("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="shp-tab-link" role="tab">Parametry</a></li>');
+$("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="shp-tab-link" role="tab">' + g_specifications + '</a></li>');
 
 /* Rename decription link */
-$('.p-info-wrapper a[href="#description"]').text("Zobrazit informace ");
+$('.p-info-wrapper a[href="#description"]').text(g_showMoreInfo);
 
 /* Cross selling products */
 if ($(".in-children-s-wooden-house-beds").length){
@@ -333,16 +333,23 @@ if ($(".in-children-s-wooden-house-beds").length){
                 $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
             });
 
-            $("#product-detail-form select[data-parameter-name='Barva']").change(function() {
-                var selected = $("#product-detail-form select[data-parameter-name='Barva'] option:selected").text(); 
+            $("#product-detail-form select[data-parameter-name='" + g_color + "']").change(function() {
+                var selected = $("#product-detail-form select[data-parameter-name='" + g_color + "'] option:selected").text(); 
                 $("#crossSelling" + ran + " option").filter(function(){
                     return $(this).text() == selected;
                 }).prop("selected", true);
-            
             });
+
+            $("#product-detail-form select[data-parameter-name='" + g_propositions + "']").change(function() {
+                var selected = $("#product-detail-form select[data-parameter-name='" + g_propositions + "'] option:selected").text(); 
+                $("#crossSelling" + ran + " option").filter(function(){
+                    return $(this).text() == selected;
+                }).prop("selected", true);
+            });
+
         });
 
-        $("<h4 class='detail-cross-selling-heading'>Doplňky</h4>").insertBefore(".selling-1");
+        $("<h4 class='detail-cross-selling-heading'>" + g_accessories + "</h4>").insertBefore(".selling-1");
 
 
         $("#product-detail-form").on("submit", function(){
@@ -358,14 +365,14 @@ if ($(".in-children-s-wooden-house-beds").length){
         });
 
         $("#product-detail-form select").change(function(){
-            if ($("#product-detail-form select[data-parameter-name='Barva']").length){
-                var one = $("#product-detail-form select[data-parameter-name='Barva']").attr("data-parameter-id");
-                var two = $("#product-detail-form select[data-parameter-name='Barva']").find("option:selected").prop("value");
+            if ($("#product-detail-form select[data-parameter-name='" + g_color + "']").length){
+                var one = $("#product-detail-form select[data-parameter-name='" + g_color + "']").attr("data-parameter-id");
+                var two = $("#product-detail-form select[data-parameter-name='" + g_color + "']").find("option:selected").prop("value");
             };
 
-            if ($("#product-detail-form select[data-parameter-name='Rozměr']").length){
-                var one2 = $("#product-detail-form select[data-parameter-name='Rozměr']").attr("data-parameter-id");
-                var two2 = $("#product-detail-form select[data-parameter-name='Rozměr']").find("option:selected").prop("value");
+            if ($("#product-detail-form select[data-parameter-name='" + g_propositions + "']").length){
+                var one2 = $("#product-detail-form select[data-parameter-name='" + g_propositions + "']").attr("data-parameter-id");
+                var two2 = $("#product-detail-form select[data-parameter-name='" + g_propositions + "']").find("option:selected").prop("value");
             };
 
             if (one === undefined){
