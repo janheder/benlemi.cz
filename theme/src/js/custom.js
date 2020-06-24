@@ -424,7 +424,7 @@ $(document).ready(function() {
             '<div class="extras-product-img">' + img + '</div>' + 
             '<div class="extras-product-name">' + name + '</div>' +
             '<div class="extras-product-stock">' + stock + '</div>' +
-            '<div class="extras-product-amount">' + amount + ' kus/ů</div>' +
+            '<div class="extras-product-amount">' + amount + ' ' + g_pieces + '</div>' +
             '<div class="extras-product-priceSingle">' + priceSingle + '</div>' +
             '<div class="extras-product-priceTotal">' + priceTotal + g_currency + ' </div>' +
             '</div>');
@@ -551,7 +551,7 @@ $("#content .availability-value .default-variant").text(g_chooseOptionToSeeDeliv
 // -----------------------------------------------------------------------------
 
 /* add points above form */
-if ($(".in-registrace #register-form").length){
+if ($(".in-" + g_registrationUrl + " #register-form").length){
     $('<div class="register-points"><h4 class="register-points__title">' + g_whatWillYouGet + '</h4>'+
     '<span>' + g_orderHistory + '</span>'+
     '<span>' + g_designNewsInformation + '</span>'+
@@ -559,9 +559,9 @@ if ($(".in-registrace #register-form").length){
     '</div>').insertBefore("#register-form");
 
 
-    $(".in-registrace .content-inner h1").text(g_frequentBueyrRegistration);
+    $(".in-" + g_registrationUrl + " .content-inner h1").text(g_frequentBueyrRegistration);
 
-    $("<p>" + g_frequentBueyrRegistrationText + "</p>").insertAfter(".in-registrace .content-inner h1");
+    $("<p>" + g_frequentBueyrRegistrationText + "</p>").insertAfter(".in-" + g_registrationUrl + " .content-inner h1");
 }
 
 // -----------------------------------------------------------------------------
@@ -611,14 +611,14 @@ if ($(".logout").length){
 
     $("<div class='client-contact-box'></div>").insertAfter(".client-center-box + .logout");
 
-    $(".client-contact-box").load("/objednavka/krok-1/ .checkout-box");
+    $(".client-contact-box").load("/" + g_cart1Url + "/ .checkout-box");
 }
 
-if ($(".in-klient, .in-nastaveni, .in-objednavky, .in-klient-objednavky, .in-klient-slevy, .in-klient-hodnoceni, .in-klient-doklady, .in-klient-diskuze, .in-zapomenute-heslo").length){
+if ($(".in-" + g_inClientUrl + ", .in-" + g_inSettingsUrl + ", .in-" + g_inOrdersUrl + ", .in-" + g_inClientOrdersUrl + ", .in-" + g_inClientSaleUrl + ", .in-" + g_inClientRatingUrl + ", .in-" + g_inClientDocumentsUrl + ", .in-" + g_inClientDiscussionUrl + ", .in-" + g_inForgotPasswordUrl).length){
     var name = $(".sidebar-inner ul li strong").text();
     $(".sidebar-inner strong").text(name + " " + g_inBenlemi);
-    $(".in-klient .content-inner h1").text(g_welcomeTitle);
-    $("<p>" + g_welcomeText + "</p>").insertAfter(".in-klient .content-inner h1")
+    $(".in-" + g_inClientUrl + " .content-inner h1").text(g_welcomeTitle);
+    $("<p>" + g_welcomeText + "</p>").insertAfter(".in-" + g_inClientUrl + " .content-inner h1")
 }
 
 // -----------------------------------------------------------------------------

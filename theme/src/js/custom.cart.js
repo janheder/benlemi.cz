@@ -55,7 +55,7 @@ $("#company-shopping").change(function(){
 });
 
 /* cart finish step */
-if ($(".in-dekujeme").length){
+if ($(".in-" + g_inThankYou).length){
     var num = $(".reca-number strong").text();
     $(".recapitulation-wrapper .co-order .order-content").text(g_orderContent + ": "+ num);
     $(".order-summary-heading").text(g_orderCompleteTitle);
@@ -76,7 +76,7 @@ $(".main-link").each(function(){
 });
 
 $(".show-related").text(g_showMoreRelatedProducts);
-$(".in-kosik .cart-related-button .btn").text(g_show);
+$(".in-" + g_cartUrl + " .cart-related-button .btn").text(g_show);
 $(".related").append("<div class='showMoreRelated'>" + g_showMore + "</div>");
 
 $(".showMoreRelated").click(function(){

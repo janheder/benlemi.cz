@@ -103,4 +103,19 @@ var g_crossSelling2 = "";
 
 /* page names */
 
+var g_registrationUrl = "registration";
+
 var g_cartUrl = "kosik";
+var g_cart1Url = "objednavka/krok-1";
+
+var g_inThankYou = "dekujeme";
+
+var g_inClientUrl = "klient";
+var g_inSettingsUrl = "nastaveni";
+var g_inOrdersUrl = "objednavky";
+var g_inClientOrdersUrl = "klient-objednavky";
+var g_inClientSaleUrl = "klient-slevy";
+var g_inClientRatingUrl = "klient-hodnoceni";
+var g_inClientDocumentsUrl = "klient-doklady";
+var g_inClientDiscussionUrl = "klient-diskuze";
+var g_inForgotPasswordUrl = "zapomenute-heslo";
