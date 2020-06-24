@@ -10,13 +10,13 @@ if ($("#homepageSection").length){
 
 /* load blog posts into homepage section */
 if ($("#blogSection").length){
-    $("#blogSection .blogSection__content").load("/blog-bydleni/ .news-wrapper");
+    $("#blogSection .blogSection__content").load("/" + category1Url + "/ .news-wrapper");
 }
 
 /* load rating into homepage section */
 if ($("#ratingSection").length){
-    $("#ratingSection .ratingSection__content").load("/hodnoceni-obchodu/ .content-inner", function() {
-        $('<div style="display:block;text-align:center;"><a href="hodnoceni-obchodu" class="btn btn-secondary">Další hodnocení</a></div>').insertAfter(".ratingSection__content #ratingWrapper + .votes-wrap");
+    $("#ratingSection .ratingSection__content").load("/" + g_ratingUrl + "/ .content-inner", function() {
+        $('<div style="display:block;text-align:center;"><a href="' + g_ratingUrl + '" class="btn btn-secondary">' + g_moreRating + '</a></div>').insertAfter(".ratingSection__content #ratingWrapper + .votes-wrap");
     });
 }
 

@@ -61,7 +61,8 @@ var g_welcomeText = "Patříte mezi nás. Proto můžete sbírat slevy, hodnotit
 var g_madeBy = "Vytvořili";
 var g_404Title = "Tahle stránka je vzhůru nohama";
 var g_404Text = "Náš kvalitní nábytek naštěstí stojí všema nohama pevně na zemi. Tak si vyberte unikátní domečkovou postel nebo cokoliv, čím proměníte svůj byt v krásný domov.";
-var g_BecomeMember = "Staňte se členem rodiny Benlemi a získáte:";
+var g_loginToYourAccount = "Přihlaste se ke svému účtu";
+var g_becomeMember = "Staňte se členem rodiny Benlemi a získáte:";
 var g_discountForEachPurchase = "slevy za každý svůj nákup";
 var g_completeOverviewOfYourOrders = "kompletní přehled o objednávkách";
 var g_designNewsInformation = "info o designových novinkách";
@@ -75,7 +76,7 @@ var g_contactInfo = "Kontaktní údaje";
 var g_areYouSigned = "Už jste u nás zaregistrovaní?";
 var g_signIn = "Přihlaste se";
 var g_receiveOurEmailTitle = "Dostávejte naše maily. Posíláme skutečně jen užitečné informace o bydlení, novinkách a slevách.";
-var g_orderContent = "Obsah objednávky:";
+var g_orderContent = "Obsah objednávky";
 var g_orderCompleteTitle = "Potvrzujeme, že jste si právě udělali radost";
 var g_orderCompleteText = "Doma to budete mít krásné a ještě jste podpořili českou rodinnou firmu. Do 30 minut vám pošleme email se všemi důležitými informacemi.";
 var g_relatedProducts = "Související produkty";
@@ -86,8 +87,20 @@ var g_showMore = "Zobrazit další";
 var g_show = "Zobrazit";
 var g_moreVariants = "Více variant";
 var g_showFilter = "Zobrazit filtr";
-var g_HideFilter = "Skrýt filtr";
+var g_hideFilter = "Skrýt filtr";
 var g_fullDescription = "Celý popis";
-var g_totalQuantity = "Položek celkem:";
+var g_totalQuantity = "Položek celkem";
 
 var g_moreRating = "Další hodnocení";
+
+var g_ratingUrl = "hodnoceni-obchodu";
+
+var g_priceFree = 1234;
+
+var g_crossSelling1 = "in-children-s-wooden-house-beds";
+var g_crossSelling2 = "";
+
+
+/* page names */
+
+var g_cartUrl = "kosik";

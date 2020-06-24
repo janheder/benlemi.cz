@@ -11,29 +11,29 @@ if ($(".type-category").length){
 
 /* relocate sort into filters */
 if ($(".filters-wrapper").length){
-    $("#content-wrapper").append('<div id="filtersToggle">Otevřít filtr</div>');
+    $("#content-wrapper").append('<div id="filtersToggle">' + g_openFilter + '</div>');
     $("#filtersToggle").click(function(){
         $("#content-wrapper").toggleClass("--showFilters");
         if ($("#content-wrapper").hasClass("--showFilters")) {
-            $("#filtersToggle").text("Zavřít filtr");
+            $("#filtersToggle").text(g_hideFilter);
         }else{
-            $("#filtersToggle").text("Otevřít filtr");
+            $("#filtersToggle").text(g_showFilter);
         }
     });
 }
 
 /* rename show more button */
 if ($(".pagination-loader").length){
-    $(".pagination-loader span").text("Zobrazit další");
+    $(".pagination-loader span").text(g_showMore);
 }
 
 /* relocate hover overlay on product & add more variants into product box */
 if ($(".product").length){
     $(".product").each(function(){
-        $(this).find(".p-tools .btn").text("Zobrazit");
+        $(this).find(".p-tools .btn").text(g_show);
 
         if ($(this).find(".price-final strong > small").length){
-            $(this).find(".name").append("<span class='p-variants'>Více variant</span>");
+            $(this).find(".name").append("<span class='p-variants'>" + g_moreVariants + "</span>");
         }
 
     });
@@ -42,17 +42,17 @@ if ($(".product").length){
 /* category header edit */
 if ($("#category-header").length){
     $("#category-header").insertBefore(".content-wrapper-in");
-    $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">Zobrazit filtr</div>');
+    $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div>');
 
     $("#filterToggleDesktop").click(function(){
         $(".sidebar-left").toggleClass("--active");
 
         if($("#filterToggleDesktop").hasClass("active")){
-            $(this).text("Zobrazit filtr");
+            $(this).text(g_showFilter);
             $(this).removeClass("active");
         }
         else{
-            $(this).text("Skrýt filtr");
+            $(this).text(g_hideFilter);
             $(this).addClass("active");
         }
     });
@@ -63,7 +63,7 @@ if ($(".category-perex").length){
     if ($(window).width() <= 991) {
         var text = $(".category-perex p").text();
         var textMod = text.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
-        $("<div class='perex-short'></div><div class='perex-showMore'>Celý popis</div>").insertAfter(".category-perex > p");
+        $("<div class='perex-short'></div><div class='perex-showMore'>" + g_fullDescription + "</div>").insertAfter(".category-perex > p");
         $(".perex-short").text(textMod);
         $(".perex-showMore").click(function(){
             $(".category-perex").addClass("active");
@@ -74,7 +74,7 @@ if ($(".category-perex").length){
 /* category header title */
 if ($(".category-header").length){
     var catHead = $(".category-header div strong").html();
-    $(".category-header div:last-child").text("Položek celkem:" + catHead);
+    $(".category-header div:last-child").text(g_totalQuantity + ":" + catHead);
 }
 
 

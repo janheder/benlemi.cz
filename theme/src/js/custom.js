@@ -123,7 +123,7 @@ $("#js-searchToggle").click(function(){
 
 /* *WIP* override shoptet cart function on mobile */
 $(".cart-count").click(function(){
-    window.location.href='/kosik/';
+    window.location.href='/' + g_cartUrl + '/';
 });
 
 /* toggle submenu overlay (faster than shoptet default function submenu-visible) */
@@ -153,7 +153,7 @@ function freeDelivery(){
     if ($(".cart-count.full .cart-price").length){
         $(".headerFreeDelivery").remove();
         var price = $(".cart-price").html().replace(/\s/g, '');
-        var priceFree = 1234;
+        var priceFree = g_priceFree;
         priceInt = parseInt(price);
 
         if(priceInt > priceFree){
@@ -230,8 +230,8 @@ if ($(".type-detail").length){
 
     $("#ratingProduct").prepend("<h1>" + g_productRating + "</h1>");
 
-    $("#ratingTab #ratingStore").load("/hodnoceni-obchodu/ .content-inner", function() {
-        $("<a href='/hodnoceni-obchodu' class='btn btn-secondary' id='js-ratingStoreToggle'>" + g_addRating + "</div>").insertBefore("#ratingStore #rate-form");
+    $("#ratingTab #ratingStore").load("/" + g_ratingUrl + "/ .content-inner", function() {
+        $("<a href='/" + g_ratingUrl + "' class='btn btn-secondary' id='js-ratingStoreToggle'>" + g_addRating + "</div>").insertBefore("#ratingStore #rate-form");
         
         /*
         $("#js-ratingStoreToggle").click(function(){
@@ -317,7 +317,7 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 $('.p-info-wrapper a[href="#description"]').text(g_showMoreInfo);
 
 /* Cross selling products */
-if ($(".in-children-s-wooden-house-beds").length){
+if ($("." + g_crossSelling1).length){
     if ($("#productsRelated .flag-custom2").length){
         var i=0;
         $("#productsRelated .flag-custom2").each(function(i){
@@ -616,9 +616,9 @@ if ($(".logout").length){
 
 if ($(".in-klient, .in-nastaveni, .in-objednavky, .in-klient-objednavky, .in-klient-slevy, .in-klient-hodnoceni, .in-klient-doklady, .in-klient-diskuze, .in-zapomenute-heslo").length){
     var name = $(".sidebar-inner ul li strong").text();
-    $(".sidebar-inner strong").text(name + " v Benlemi");
-    $(".in-klient .content-inner h1").text("Vítejte v naší rodině");
-    $("<p>Patříte mezi nás. Proto můžete sbírat slevy, hodnotit produkty nebo si prohlížet své objednávky, kdykoliv se vám zachce.</p>").insertAfter(".in-klient .content-inner h1")
+    $(".sidebar-inner strong").text(name + " " + g_inBenlemi);
+    $(".in-klient .content-inner h1").text(g_welcomeTitle);
+    $("<p>" + g_welcomeText + "</p>").insertAfter(".in-klient .content-inner h1")
 }
 
 // -----------------------------------------------------------------------------
@@ -627,7 +627,7 @@ if ($(".in-klient, .in-nastaveni, .in-objednavky, .in-klient-objednavky, .in-kli
 
 if ($("#footer").length){
     $("#signature .title").text("Shoptet");
-    $("#signature").prepend('<a href="https://benlemi.cz" class="title --benlemi">Vytvořili <img src="https://janheder.github.io/benlemi.cz/theme/dist/img/symbol-benlemi.svg" alt="Benlemi" class="image --benlemi"> Benlemi &</a>');
+    $("#signature").prepend('<a href="https://benlemi.cz" class="title --benlemi">' + g_madeBy + ' <img src="https://janheder.github.io/benlemi.cz/theme/dist/img/symbol-benlemi.svg" alt="Benlemi" class="image --benlemi"> Benlemi &</a>');
 }
 
 // -----------------------------------------------------------------------------
@@ -643,8 +643,8 @@ $(".vote-form-title").click(function(){
 // 404
 // -----------------------------------------------------------------------------
 
-$(".empty-content-404 h1").text("Tahle stránka je vzhůru nohama");
-$("<p>Náš kvalitní nábytek naštěstí stojí všema nohama pevně na zemi. Tak si vyberte unikátní domečkovou postel nebo cokoliv, čím proměníte svůj byt v krásný domov.</p>").insertAfter(".empty-content-404 h1");
+$(".empty-content-404 h1").text(g_404Title);
+$("<p>" + g_404Text + "</p>").insertAfter(".empty-content-404 h1");
 
 // -----------------------------------------------------------------------------
 // LOGIN FORM
@@ -656,13 +656,13 @@ $(".login-close").click(function(){
 });
 
 if ($(".in-login").length){
-    $(".content-inner > h1").text("Přihlaste se ke svému účtu");
-    $("#formLogin .password-helper").prepend('<div class="login-form-points"><h4 class="login-form-register-title">Staňte se členem rodiny<br>Benlemi a získáte:</h4><div class="login-form-points-wrap">' +
-    '<div class="login-form-point">slevy za každý svůj nákup</div>' +
-    '<div class="login-form-point">kompletní přehled o objednávkách</div>' +
-    '<div class="login-form-point">info o designových novinkách</div>' +
-    '<div class="login-form-point">možnost hodnotit i debatovat</div>' +
+    $(".content-inner > h1").text(g_loginToYourAccount);
+    $("#formLogin .password-helper").prepend('<div class="login-form-points"><h4 class="login-form-register-title">' + g_becomeMember + '</h4><div class="login-form-points-wrap">' +
+    '<div class="login-form-point">' + g_discountForEachPurchase + '</div>' +
+    '<div class="login-form-point">' + g_completeOverviewOfYourOrders + '</div>' +
+    '<div class="login-form-point">' + g_designNewsInformation + '</div>' +
+    '<div class="login-form-point">' + g_possibilityToRateAndDiscuss + '</div>' +
     '</div></div>');
 
-    $("#formLogin .password-helper a:last-child").text("Zapomněli jste heslo?").insertAfter(".login-wrapper button");
+    $("#formLogin .password-helper a:last-child").text(g_forgotPassword).insertAfter(".login-wrapper button");
 }
