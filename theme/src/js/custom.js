@@ -420,20 +420,20 @@ $(document).ready(function() {
             var priceTotalInt = $(".price-final-holder:not(no-display)").html();
             var priceTotal = parseInt(priceTotalInt.split('<')[0]) * amount;
 
-            $(".extras-wrap").prepend('<div class="extras-product-heading"><span>Produkt</span><span>Dostupnost</span><span>Počet kusů</span><span>Cena</span></div><div class="extras-product">' + 
+            $(".extras-wrap").prepend('<div class="extras-product-heading"><span>' + g_product + '</span><span>' + g_availability + '</span><span>' + g_quantity +'</span><span>' + g_price + '</span></div><div class="extras-product">' + 
             '<div class="extras-product-img">' + img + '</div>' + 
             '<div class="extras-product-name">' + name + '</div>' +
             '<div class="extras-product-stock">' + stock + '</div>' +
             '<div class="extras-product-amount">' + amount + ' kus/ů</div>' +
             '<div class="extras-product-priceSingle">' + priceSingle + '</div>' +
-            '<div class="extras-product-priceTotal">' + priceTotal + ' Kč</div>' +
+            '<div class="extras-product-priceTotal">' + priceTotal + g_currency + ' </div>' +
             '</div>');
 
             $("#backToShop").remove();
-            $(".extra.step").prepend("<div class='btn' id='backToShop'>Zpět do obchodu</div>");
-            $(".advanced-order .extra.step .btn-conversion").text("Přejít do košíku");
-            $(".advanced-order .h1").text("S radostí přidáno do vašeho košíku");
-            $(".advanced-order .h1.advanced-order-suggestion").text("Co se vám ještě hodí");
+            $(".extra.step").prepend("<div class='btn' id='backToShop'>" + g_backToStore + "</div>");
+            $(".advanced-order .extra.step .btn-conversion").text(g_viewCart);
+            $(".advanced-order .h1").text(g_addedToCart);
+            $(".advanced-order .h1.advanced-order-suggestion").text(g_youMightLike);
             $("#backToShop").click(function(){
                 $("#cboxClose").click();
             });
@@ -447,51 +447,51 @@ if ($(".type-detail").length){
 
     $(".price-final span").each(function() {
         var str = $(this).text();
-        var strM = str.replace(/\s/g, '',).replace("Kč", '').replace("od", ''); 
+        var strM = str.replace(/\s/g, '',).replace(g_currency, '').replace(g_from, ''); 
         $(this).text(strM);
-        var str = $(this).append("<span class='price-final-currency'> Kč</span>");
+        var str = $(this).append("<span class='price-final-currency'> " + g_currency + "</span>");
     });
 
-    $(".price-final span.default-variant").prepend("<span class='price-final-pre'>od </span>");
+    $(".price-final span.default-variant").prepend("<span class='price-final-pre'>" + g_from + " </span>");
 
     $(".price-additional span").each(function() {
         var str1 = $(this).text();
-        var strM1 = str1.replace(/\s/g, '',).replace("KčbezDPH", '').replace("od", ''); 
+        var strM1 = str1.replace(/\s/g, '',).replace(g_excludingVatModified, '').replace(g_from, ''); 
         $(this).text(strM1);
-        var str1 = $(this).append("<span class='price-final-dph'> Kč bez DPH</span>"); 
+        var str1 = $(this).append("<span class='price-final-dph'> " + g_excludingVat + "</span>"); 
     });
 
-    $(".price-additional span.default-variant").prepend("<span class='price-final-pre'>od </span>");
+    $(".price-additional span.default-variant").prepend("<span class='price-final-pre'>" + g_from + " </span>");
 
     $(".price-standard span").each(function() {
         var str1 = $(this).text();
-        var strM1 = str1.replace(/\s/g, '',).replace("Kč", '').replace("od", ''); 
+        var strM1 = str1.replace(/\s/g, '',).replace(g_currency, '').replace(g_from, ''); 
         $(this).text(strM1);
-        var str1 = $(this).append("<span class='price-final-currency'> Kč</span>");
+        var str1 = $(this).append("<span class='price-final-currency'> " + g_currency + "</span>");
     });
 
-    $(".price-standard span.default-variant").prepend("<span class='price-final-pre'>od </span>");
+    $(".price-standard span.default-variant").prepend("<span class='price-final-pre'>" + g_from + " </span>");
 
     $(".price-additional:not(:has(span))").each(function() {
         var str1 = $(this).text();
-        var strM1 = str1.replace(/\s/g, '',).replace("KčbezDPH", ''); 
+        var strM1 = str1.replace(/\s/g, '',).replace(g_excludingVatModified, ''); 
         $(this).text(strM1);
-        var str1 = $(this).append("<span class='price-final-dph'> Kč bez DPH</span>");
+        var str1 = $(this).append("<span class='price-final-dph'> " + g_excludingVat + "</span>");
     });
 }
 
 /* rename titles */
 if ($(".type-detail").length){
-    $(".extended-description h3").text("Výhody a parametry");
-    $(".products-related-header").text("Potřebné příslušenství, které oceníte:");
-    $('a[href="#productsRelated"]').text("Příslušenství");
+    $(".extended-description h3").text(g_advantagesAndSpecifications);
+    $(".products-related-header").text(g_similarFixturesAndFittings);
+    $('a[href="#productsRelated"]').text(g_fixturesAndFittings);
 }
 
 /* add add to cart cta fixed on bottom of a page */
 if ($(".type-detail").length){
     var pName = $(".p-detail-inner-header h1").text();
     var pPrice = $(".p-final-price-wrapper .price-final").html();
-    $('<div class="bottomCta"><div class="bottomCta__container"><div class="bottomCta__content"><div class="bottomCta__title">' + pName + '</div><div class="bottomCta__price">' + pPrice + '</div></div><div class="bottomCta__spinner"><input type="text" id="bottomCtaInput" value="1"><span class="increase"></span><span class="decrease"></span></div><div class="btn bottomCta__button" id="bottomCtaButton">Přidat do košíku</div></div></div>').insertBefore(".overall-wrapper");
+    $('<div class="bottomCta"><div class="bottomCta__container"><div class="bottomCta__content"><div class="bottomCta__title">' + pName + '</div><div class="bottomCta__price">' + pPrice + '</div></div><div class="bottomCta__spinner"><input type="text" id="bottomCtaInput" value="1"><span class="increase"></span><span class="decrease"></span></div><div class="btn bottomCta__button" id="bottomCtaButton">' + g_addToCart + '</div></div></div>').insertBefore(".overall-wrapper");
     $("#bottomCtaInput").change(function(){
         var inputValue = $('#bottomCtaInput').val();
         $('.quantity input').val(inputValue);
@@ -525,7 +525,7 @@ if ($(".type-detail").length){
     });
 }
 
-$("#ratingProduct>p").text("Buďte první, kdo napíše hodnocení k tomuto produktu");
+$("#ratingProduct>p").text(g_beFirstToRateThisProduct);
 
 /* rewrite description */
 if ($(".type-detail").length){
@@ -544,7 +544,7 @@ $(window).on('scroll', function() {
     }
 });
 
-$("#content .availability-value .default-variant").text("Zvolte variantu pro zobrazení doby doručení");
+$("#content .availability-value .default-variant").text(g_chooseOptionToSeeDeliveryTime);
 
 // -----------------------------------------------------------------------------
 // REGISTER PAGE
@@ -552,16 +552,16 @@ $("#content .availability-value .default-variant").text("Zvolte variantu pro zob
 
 /* add points above form */
 if ($(".in-registrace #register-form").length){
-    $('<div class="register-points"><h4 class="register-points__title">Co získáte?</h4>'+
-    '<span>Kompletní historii všech svých objednávek</span>'+
-    '<span>Info o designových novinkách</span>'+
-    '<span>Vyšší slevy s každým dalším nákupem</span>'+
+    $('<div class="register-points"><h4 class="register-points__title">' + g_whatWillYouGet + '</h4>'+
+    '<span>' + g_orderHistory + '</span>'+
+    '<span>' + g_designNewsInformation + '</span>'+
+    '<span>' + g_higherDiscountEveryPurchase + '</span>'+
     '</div>').insertBefore("#register-form");
 
 
-    $(".in-registrace .content-inner h1").text("Vybíráte u nás častěji? Rovnou se zaregistrujte");
+    $(".in-registrace .content-inner h1").text(g_frequentBueyrRegistration);
 
-    $("<p>Automaticky se stanete členem věrnostního programu rodiny Benlemi a budete sbírat slevy za každý svůj nákup.</p>").insertAfter(".in-registrace .content-inner h1");
+    $("<p>" + g_frequentBueyrRegistrationText + "</p>").insertAfter(".in-registrace .content-inner h1");
 }
 
 // -----------------------------------------------------------------------------
@@ -570,7 +570,7 @@ if ($(".in-registrace #register-form").length){
 
 /* add title to rating */
 if ($("#rate-form").length){
-    $("#rate-form").prepend("<h3 class='vote-form-title'>Přidat hodnocení</h3>");
+    $("#rate-form").prepend("<h3 class='vote-form-title'>" + g_addRating + "</h3>");
 }
 
 // -----------------------------------------------------------------------------
@@ -580,24 +580,24 @@ if ($("#rate-form").length){
 /* load blog posts into homepage section */
 if ($(".blogCategories").length){
 
-    $(".blogCategories .blogCategories__bydleni").load("/blog-bydleni/ .news-wrapper", function() {
-        $("<h2 class='blogCategories__sectionTitle'>Bydlení</h2>").insertBefore(".blogCategories .blogCategories__bydleni");
-        $("<div class='blogCategories__sectionShowMore'><a href='/blog-bydleni/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__bydleni .blogCategories__section .news-item:nth-child(2)");    
+    $(".blogCategories .blogCategories__bydleni").load("/" + category1Url + "/ .news-wrapper", function() {
+        $("<h2 class='blogCategories__sectionTitle'>" + category1 + "</h2>").insertBefore(".blogCategories .blogCategories__bydleni");
+        $("<div class='blogCategories__sectionShowMore'><a href='/" + category1Url + "/' class='blogCategories__sectionShowMoreLink'>" + g_moreArticles + "</a></div>").insertAfter(".blogCategories__bydleni .blogCategories__section .news-item:nth-child(2)");    
     });
     
-    $(".blogCategories .blogCategories__rodina").load("/blog-rodina/ .news-wrapper", function() {
-        $("<h2 class='blogCategories__sectionTitle'>Rodina</h2>").insertBefore(".blogCategories .blogCategories__rodina");
-        $("<div class='blogCategories__sectionShowMore'><a href='/blog-rodina/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__rodina .blogCategories__section .news-item:nth-child(2)");    
+    $(".blogCategories .blogCategories__rodina").load("/" + category2Url + "/ .news-wrapper", function() {
+        $("<h2 class='blogCategories__sectionTitle'>" + category2 + "</h2>").insertBefore(".blogCategories .blogCategories__rodina");
+        $("<div class='blogCategories__sectionShowMore'><a href='/" + category2Url + "/' class='blogCategories__sectionShowMoreLink'>" + g_moreArticles + "</a></div>").insertAfter(".blogCategories__rodina .blogCategories__section .news-item:nth-child(2)");    
     });
 
-    $(".blogCategories .blogCategories__novinky").load("/blog-novinky/ .news-wrapper", function() {
-        $("<h2 class='blogCategories__sectionTitle'>Novinky</h2>").insertBefore(".blogCategories .blogCategories__novinky");
-        $("<div class='blogCategories__sectionShowMore'><a href='/blog-novinky/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__novinky .blogCategories__section .news-item:nth-child(2)");    
+    $(".blogCategories .blogCategories__novinky").load("/" + category3Url + "/ .news-wrapper", function() {
+        $("<h2 class='blogCategories__sectionTitle'>" + category3 + "</h2>").insertBefore(".blogCategories .blogCategories__novinky");
+        $("<div class='blogCategories__sectionShowMore'><a href='/" + category3Url + "/' class='blogCategories__sectionShowMoreLink'>" + g_moreArticles + "</a></div>").insertAfter(".blogCategories__novinky .blogCategories__section .news-item:nth-child(2)");    
     });
 
-    $(".blogCategories .blogCategories__benlemi-pomaha").load("/blog-benlemi-pomaha/ .news-wrapper", function() {
-        $("<h2 class='blogCategories__sectionTitle'>Benlemi pomáhá</h2>").insertBefore(".blogCategories .blogCategories__benlemi-pomaha");
-        $("<div class='blogCategories__sectionShowMore'><a href='/blog-benlemi-pomaha/' class='blogCategories__sectionShowMoreLink'>Více článků</a></div>").insertAfter(".blogCategories__benlemi-pomaha .blogCategories__section .news-item:nth-child(2)");    
+    $(".blogCategories .blogCategories__benlemi-pomaha").load("/" + category4Url + "/ .news-wrapper", function() {
+        $("<h2 class='blogCategories__sectionTitle'>" + category4 + "</h2>").insertBefore(".blogCategories .blogCategories__benlemi-pomaha");
+        $("<div class='blogCategories__sectionShowMore'><a href='/" + category4Url + "/' class='blogCategories__sectionShowMoreLink'>" + g_moreArticles + "</a></div>").insertAfter(".blogCategories__benlemi-pomaha .blogCategories__section .news-item:nth-child(2)");    
     });
 
 }
