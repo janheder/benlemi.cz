@@ -344,8 +344,11 @@
     padding: 20px;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
 }
-.cart-count:hover + .user-action-cart, .user-action-cart:hover{
-    display: flex;
+
+@media screen and (max-width: 991px){
+    .cart-count.full:hover + .user-action-cart, .user-action-cart:hover{
+        display: flex;
+    }
 }
 .cart-widget-product{
     display: flex;
@@ -400,6 +403,11 @@
     height: 24px;
     background: $gray-300;
     border: 0;
+}
+
+.cart-free-shipping div{
+    display: flex;
+    max-width: 50%;
 }
 
 #continue-order-button{
