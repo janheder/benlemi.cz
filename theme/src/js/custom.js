@@ -161,7 +161,7 @@ function freeDelivery(){
         }
         else{
             var priceFinal = priceFree - priceInt;
-            $("<div class='headerFreeDelivery'>Vyberte ještě za <span>"+ priceFinal +" Kč</span><br>a dopravu máte zdarma</div>").insertBefore(".cart-count");
+            $("<div class='headerFreeDelivery'>Vyberte ještě za <span>"+ priceFinal +" " + g_currency + "</span><br>a dopravu máte zdarma</div>").insertBefore(".cart-count");
         }
     }
     else{
