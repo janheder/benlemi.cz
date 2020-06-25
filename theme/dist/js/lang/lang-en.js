@@ -95,14 +95,14 @@ var g_crossSelling2 = "";
 
 /* page names */
 
-var category1 = "Bydlení";
-var category1Url = "blog-bydleni";
-var category2 = "Rodina";
-var category2Url = "blog-rodina";
-var category3 = "Novinky";
-var category3Url = "blog-novinky";
-var category4 = "Benlemi pomáhá";
-var category4Url = "blog-benlemi-pomaha";
+var category1 = "Living";
+var category1Url = "blog-living";
+var category2 = "Family";
+var category2Url = "blog-family";
+var category3 = "News";
+var category3Url = "blog-news";
+var category4 = "Life in Benlemi";
+var category4Url = "blog-life-in-benlemi";
 
 
 var g_registrationUrl = "registration";
