@@ -46,14 +46,6 @@ var g_designNewsInformation = "Info o designových novinkách";
 var g_higherDiscountEveryPurchase = "Vyší slevy s každým dalším nákupem";
 var g_frequentBueyrRegistration = "Vybíráte u nás častěji? Rovnou se zaregistrujte";
 var g_frequentBueyrRegistrationText = "Automaticky se stanete členem věrnostního programu rodiny Benlemi a budete sbírat slevy za každý svůj nákup.";
-var category1 = "Bydlení";
-var category1Url = "blog-bydleni";
-var category2 = "Rodina";
-var category2Url = "blog-rodina";
-var category3 = "Novinky";
-var category3Url = "blog-novinky";
-var category4 = "Benlemi pomáhá";
-var category4Url = "blog-benlemi-pomaha";
 var g_moreArticles = "Více článků";
 var g_inBenlemi = "v Benlemi";
 var g_welcomeTitle = "Vítejte v naší rodině";
@@ -103,7 +95,17 @@ var g_crossSelling2 = "";
 
 /* page names */
 
-var g_registrationUrl = "registration";
+var category1 = "Bydlení";
+var category1Url = "blog-bydleni";
+var category2 = "Rodina";
+var category2Url = "blog-rodina";
+var category3 = "Novinky";
+var category3Url = "blog-novinky";
+var category4 = "Benlemi pomáhá";
+var category4Url = "blog-benlemi-pomaha";
+
+
+var g_registrationUrl = "registrace";
 
 var g_cartUrl = "kosik";
 var g_cart1Url = "objednavka/krok-1";

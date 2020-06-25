@@ -1,5 +1,5 @@
 
-.in-registrace{
+.in-registrace, .in-registration{
     .content-inner h1{
         position: relative;
         display: flex;
@@ -89,24 +89,21 @@
             background: $orange-800;
         }
     }
-}
+    #content-wrapper-wrap::after{
+        content: "";
+        height: 300px;
+        width: 100%;
+        position: sticky;
+        bottom: 0;
+        margin-top: -300px;
+        z-index: -1;
+        display: flex;
+        background-image: url("../img/bg.png");
+        background-position: center top;
 
-
-.in-registrace #content-wrapper-wrap::after{
-    content: "";
-    height: 300px;
-    width: 100%;
-    position: sticky;
-    bottom: 0;
-    margin-top: -300px;
-    z-index: -1;
-    display: flex;
-    background-image: url("../img/bg.png");
-    background-position: center top;
-}
-@media screen and (max-width: 991px){
-    .in-registrace #content-wrapper-wrap::after{
-        content: none;
+        @media screen and (max-width: 991px){
+            content: none;
+        }
     }
 }
 

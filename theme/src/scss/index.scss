@@ -165,7 +165,7 @@ header + .content-wrapper .content-wrapper-in{
 .content{
     width: 100%;
 }
-.type-post .content-wrapper-in{
+.type-post .content-wrapper-in, .type-posts-listing .content-wrapper-in{
     flex-wrap: nowrap;
 }
 .content > h4{

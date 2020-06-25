@@ -1,22 +1,8 @@
-.in-klient .content-inner h1 + p{
-    color: $gray-700;
-    margin-bottom: 20px;
-}
-.in-klient-slevy .content table{
-    width: 100%;
-
-    td{
-        border: 1px solid $gray-400;
-        padding: 10px;
-
-        &:first-child{
-            display: none;
-        }
-    }
-}
-.in-klient-slevy .content table + p{
-    color: $gray-700;
-    margin-top: 10px 20px;
+.in-klient{
+    .content-inner h1 + p{
+        color: $gray-700;
+        margin-bottom: 20px;
+    }    
 }
 
 .in-klient, .in-objednavky, .in-klient-hodnoceni{
@@ -53,6 +39,25 @@
         }
     }
 }
+
+.in-klient-slevy{
+    .content table{
+        width: 100%;
+        td{
+            border: 1px solid $gray-400;
+            padding: 10px;
+
+            &:first-child{
+                display: none;
+            }
+        }
+    }
+    .content table + p{
+        color: $gray-700;
+        margin-top: 10px 20px;
+    }
+}
+
 
 .in-klient .content, .in-nastaveni .content, .in-objednavky .content, 
 .in-klient-objednavky .content, .in-klient-slevy .content, .in-klient-hodnoceni .content, .in-klient-doklady .content,
