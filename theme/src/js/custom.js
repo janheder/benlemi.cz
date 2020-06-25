@@ -127,7 +127,7 @@ $(".cart-count").click(function(){
 });
 
 /* toggle submenu overlay (faster than shoptet default function submenu-visible) */
-$(".menu-level-1 .ext").hover(
+$(".menu-level-1 .ext, .cart-count").hover(
     function(){
         $("body").addClass("submenu-active");
     },function(){
@@ -137,16 +137,26 @@ $(".menu-level-1 .ext").hover(
 
 /* add header client section */
 if ($(".popup-widget-inner h2").length){
-    $('<div class="navLinks"><a href="/login/?backTo=%2F" class="top-nav-button top-nav-button-login primary login toggle-window navLinks__link" data-target="login" rel="nofollow">' + g_login + '</a><a href="/registrace/" class="navLinks__link">' + g_register + '</a><span class="navLinks__span">' + g_language + ':</span></div>').insertAfter(".nav-user");
+    $('<div class="navLinks"><a href="/login/?backTo=%2F" class="top-nav-button top-nav-button-login primary login toggle-window navLinks__link" data-target="login" rel="nofollow">' + g_login + '</a><a href="/' + g_registrationUrl + '/" class="navLinks__link">' + g_register + '</a><span class="navLinks__span">' + g_language + ':</span></div>').insertAfter(".nav-user");
 }else{
-    $('<div class="navLinks"><a href="/klient/" class="navLinks__link --user">' + g_userAccount + '</a><span class="navLinks__span">' + g_language + ':</span></div>').insertAfter(".nav-user");
+    $('<div class="navLinks"><a href="/' + g_inClientUrl + '/" class="navLinks__link --user">' + g_userAccount + '</a><span class="navLinks__span">' + g_language + ':</span></div>').insertAfter(".nav-user");
 }
 
 /* language toggle */
-$(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item cz active">Česky</div><a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
-$("#js-langToggle").click(function(){
-    $("#js-langToggle").toggleClass("--active");
-});
+if ($(":lang(cs)").length){
+    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item cz active">Česky</div><a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
+    $("#js-langToggle").click(function(){
+        $("#js-langToggle").toggleClass("--active");
+    });
+} 
+else if($(":lang(en)").length){
+    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item com active">English</div><a href="https://benlemi.cz" class="language-toggle-item cz">Czech</a><a href="https://benlemi.sk" class="language-toggle-item sk">Slovak</a></div></div>');
+    $("#js-langToggle").click(function(){
+        $("#js-langToggle").toggleClass("--active");
+    });
+}
+
+
 
 /* free delivery fucntion */
 function freeDelivery(){ 
