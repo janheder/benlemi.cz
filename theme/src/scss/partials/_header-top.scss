@@ -341,7 +341,7 @@
     flex-direction: column;
     right: 0px;
     z-index: 9;
-    background: $gray-300;
+    background: $white;
     top: 90px;
     padding: 20px;
     padding-top: 10px;
@@ -368,26 +368,29 @@
 }
 .cart-widget-product-amount{
     padding: 0 10px;
+    padding-right: 0;
 
     .quantity input{
-        width: 50px;
+        width: 26px;
         height: 36px;
-        text-align: center;
+        text-align: right;
         border-radius: 0;
-        border: 1px solid $gray-500;
+        border: 0;
         font-size: 14px;
+        background: transparent;
     }
 }
 .cart-widget-product-unit{
-    display: none;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 5px;
 }
 .cart-widget-product-name{
     display: flex;
     flex-grow: 1;
-    flex-direction: column;
     padding-right: 20px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     strong{
         padding-right: 20px;
@@ -414,6 +417,7 @@
     }
 }
 .cart-widget-product-delete .remove-item{
+    display: none;
     width: 24px;
     height: 24px;
     background: $white;
