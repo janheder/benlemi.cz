@@ -341,7 +341,7 @@
     flex-direction: column;
     right: 0px;
     z-index: 9;
-    background: $white;
+    background: $gray-300;
     top: 90px;
     padding: 20px;
     padding-top: 15px;
@@ -411,7 +411,7 @@
 .cart-widget-product-delete .remove-item{
     width: 24px;
     height: 24px;
-    background: $gray-300;
+    background: $white;
     border: 0;
     background-image: url("../icons/close.svg");
     background-repeat: no-repeat;
