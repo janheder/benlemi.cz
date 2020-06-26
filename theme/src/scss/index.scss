@@ -479,8 +479,14 @@ header + .content-wrapper .content-wrapper-in{
 }
 
 
-.in-login #formLogin .login-wrapper button + a{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+
+
+
+
+/* ========================================================================== */
+/* BENLEMI.COM SPECIFIC EDITS */
+/* ========================================================================== */
+
+.headerFreeDelivery{
+    display: none;
 }

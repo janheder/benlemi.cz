@@ -54,6 +54,15 @@
         padding-top: 40px;
         border-top: 1px solid $gray-400;
     }
+    #formLogin .login-wrapper button + a{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .content-inner h1.spaced, .content-inner h1.spaced+form{
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 991px){
@@ -67,7 +76,3 @@
     }
 }
 
-
-.in-login .content-inner h1.spaced, .in-login .content-inner h1.spaced+form{
-    display: none;
-}
