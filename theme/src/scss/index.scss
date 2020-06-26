@@ -71,7 +71,7 @@ body{
     }
 }
 @media (min-width: 992px){
-    body.in-kosik::after, body.ordering-process::after{
+    body.ordering-process::after{
         content: "";
         height: 300px;
         width: 100%;
@@ -378,7 +378,7 @@ header + .content-wrapper .content-wrapper-in{
     align-items: center;
 }
 .extras-product-name{
-    padding-left: 20px;
+    padding: 0 20px;
     width: 25%;
     align-items: center;
     display: flex;

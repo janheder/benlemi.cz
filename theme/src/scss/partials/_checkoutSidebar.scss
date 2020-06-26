@@ -172,13 +172,16 @@
     padding-bottom: 30px;
     flex-wrap: wrap;
 }
-.in-krok-2 .next-step a, .in-krok-2 .next-step button{
-    width: 100%;
-    margin-right: 0;
-}
-.in-krok-2 .next-step button{
-    margin-top: 10px;
-}
+.in-krok-2, .in-step-2{
+    .next-step a, .next-step button{
+        width: 100%;
+        margin-right: 0;
+    }
+    .next-step button{
+        margin-top: 10px;
+    }
+} 
+
 
 .next-step-back{
     display: flex;

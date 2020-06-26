@@ -12,9 +12,12 @@
     }
 
 }
-.in-kosik .cart-row .col-md-8, .in-kosik .cart-row .col-md-4{
-    max-width: none;
-    flex-basis: auto;
+.in-kosik, .in-cart{
+    .cart-row .col-md-8, .cart-row .col-md-4{
+        max-width: none;
+        flex-basis: auto;
+    }
+    
 }
 
 .cart-content{
@@ -148,7 +151,7 @@
     }
 }
 
-.in-kosik{
+.in-kosik, .in-cart{
         
     .cart-table{
         width: 100%;
@@ -762,13 +765,17 @@
 
 
 /*step 1 delivery and payment page*/
-.in-krok-1 .cart-row{
-    flex-direction: row;
+.in-krok-1, .in-step-1{
+    .cart-row{
+        flex-direction: row;
+    }
 }
 @media screen and (max-width: 991px){
-    .in-krok-1 .cart-row{
-        flex-direction: column;
-    }
+    .in-krok-1, .in-step-1{
+        .cart-row{
+            flex-direction: column;
+        }
+    } 
     .cart-row .col-md-8, .cart-row .col-md-4 {
         max-width: none;
         flex-basis: 100%;
@@ -913,7 +920,7 @@
 
 
 /*step 2 delivery and payment page*/
-.in-krok-2 .cart-row{
+.in-krok-2 .cart-row, .in-step-2 .cart-row{
     flex-direction: row;
 }
 .phone-combined-input{
