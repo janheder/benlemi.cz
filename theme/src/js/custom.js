@@ -127,7 +127,7 @@ $(".cart-count").click(function(){
 });
 
 /* toggle submenu overlay (faster than shoptet default function submenu-visible) */
-$(".menu-level-1 .ext, .cart-count, .cart-widget").hover(
+$(".menu-level-1 .ext, .cart-count.full, .cart-widget").hover(
     function(){
         $("body").addClass("submenu-active");
     },function(){
