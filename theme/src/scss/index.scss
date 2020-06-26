@@ -490,3 +490,9 @@ header + .content-wrapper .content-wrapper-in{
 .headerFreeDelivery{
     display: none;
 }
+.delivery-time-label, .delivery-time{
+    display: none;
+}
+:lang(en) .type-product #descriptionLong::before{
+    background-image: url("../img/en/vyroba-banner.png");
+}
