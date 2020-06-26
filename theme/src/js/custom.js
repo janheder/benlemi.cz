@@ -203,7 +203,7 @@ if ($(".site-msg").length){
 
 /* rename user account */
 var name = $(".popup-widget-inner p strong").text();
-$(".navLinks__link.--user").text(g_logged + ":" + name);
+$(".navLinks__link.--user").text(g_logged + ": " + name);
 
 /* add responsive link into menu */
 $(".menu-level-1 > li.ext").each(function() {
