@@ -109,8 +109,10 @@ var g_registrationUrl = "registrace";
 
 var g_cartUrl = "kosik";
 var g_cart1Url = "objednavka/krok-1";
-var g_cart2Url = "objednavka/krok-2";
+var g_cart1 = "krok-1";
 
+var g_cart2Url = "objednavka/krok-2";
+var g_cart2 = "krok-2";
 
 var g_inThankYou = "dekujeme";
 

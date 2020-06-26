@@ -34,9 +34,9 @@ if ($(".ordering-process").length){
 */
 
 /* customize cart step 2 */
-if ($(".in-krok-2").length){
-    $(".in-krok-2 .co-billing-address #company-info").insertAfter('.in-krok-2 .co-billing-address fieldset > h4');
-    $(".in-krok-2 .co-billing-address .unveil-wrapper").insertAfter('.in-krok-2 .co-billing-address fieldset > h4');
+if ($(".in-" + g_cart2).length){
+    $(".in-" + g_cart2 + " .co-billing-address #company-info").insertAfter('.in-' + g_cart2 + ' .co-billing-address fieldset > h4');
+    $(".in-" + g_cart2 + " .co-billing-address .unveil-wrapper").insertAfter('.in-' + g_cart2 + ' .co-billing-address fieldset > h4');
     $(".stay-in-touch .form-group:nth-child(2)").addClass("register");
     $(".stay-in-touch .form-group.register").insertAfter(".co-contact-information");
 
