@@ -498,7 +498,9 @@ header + .content-wrapper .content-wrapper-in{
     .type-product #descriptionLong::before{
         background-image: url("../img/en/vyroba-banner.png");
     }
-
+    .header-contacts{
+        padding-bottom: 20px;
+    }
     .header-contacts a:first-child{
         display: none;
     }
