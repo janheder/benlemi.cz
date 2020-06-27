@@ -1,11 +1,12 @@
-.in-klient{
+.in-klient, .in-client-center{
     .content-inner h1 + p{
         color: $gray-700;
         margin-bottom: 20px;
     }    
 }
 
-.in-klient, .in-objednavky, .in-klient-hodnoceni{
+.in-klient, .in-objednavky, .in-klient-hodnoceni,
+.in-client-center, .in-my-orders, .in-client-ratings{
 
     .content-inner h2{
         font-size: 18px;
@@ -40,7 +41,7 @@
     }
 }
 
-.in-klient-slevy{
+.in-klient-slevy, .in-client-discounts{
     .content table{
         width: 100%;
         td{
@@ -59,37 +60,43 @@
 }
 
 
-.in-klient .content, .in-nastaveni .content, .in-objednavky .content, 
-.in-klient-objednavky .content, .in-klient-slevy .content, .in-klient-hodnoceni .content, .in-klient-doklady .content,
-.in-klient-diskuze .content, .in-zapomenute-heslo .content, .in-dorucovaci-udaje .content{
-    width: 75%;
+.in-klient, .in-nastaveni, .in-objednavky, .in-klient-slevy, .in-klient-hodnoceni, .in-klient-doklady, .in-klient-diskuze, .in-zapomenute-heslo, .in-dorucovaci-udaje,
+.in-client-center, .in-my-account-settings, .in-my-orders, .in-client-discounts, .in-client-ratings, .in-klient-doklady, .in-client-documents, .in-forgotten-password, .in-shipping-address
+{
+    .content{
+        width: 75%;
 
-    .content-inner h1{
-        text-align: center;
-        position: relative;
-        display: flex;
-        justify-content: flex-start;
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-        color: $gray-800;
-    
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 6px;
-            width: 40px;
-            background: $green-200;
+        .content-inner h1{
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            color: $gray-800;
+        
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 6px;
+                width: 40px;
+                background: $green-200;
+            }
         }
     }
+
 }
 @media screen and (max-width: 991px){
-    .in-klient .content, .in-nastaveni .content, .in-objednavky .content, 
-    .in-klient-objednavky .content, .in-klient-slevy .content, .in-klient-hodnoceni .content, .in-klient-doklady .content,
-    .in-klient-diskuze .content, .in-zapomenute-heslo .content, .in-dorucovaci-udaje .content{
-        width: 100%;
+    .in-klient, .in-nastaveni, .in-objednavky, .in-klient-slevy, .in-klient-hodnoceni, .in-klient-doklady, .in-klient-diskuze, .in-zapomenute-heslo, .in-dorucovaci-udaje,
+    .in-client-center, .in-my-account-settings, .in-my-orders, .in-client-discounts, .in-client-ratings, .in-klient-doklady, .in-client-documents, .in-forgotten-password, .in-shipping-address
+    {
+        .content{
+            width: 100%;
+        }
+        
     }
 }
