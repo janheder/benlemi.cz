@@ -5,9 +5,11 @@
     display: none;
 }
 
-.filters{
+
+.filters-wrapper > .filters{
     background: $gray-300;
     padding: 20px;
+    display: flex;
 }
 
 .filters-wrapper .checkout-box{

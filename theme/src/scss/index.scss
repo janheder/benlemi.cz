@@ -487,12 +487,19 @@ header + .content-wrapper .content-wrapper-in{
 /* BENLEMI.COM SPECIFIC EDITS */
 /* ========================================================================== */
 
-.headerFreeDelivery{
-    display: none;
-}
-.delivery-time-label, .delivery-time{
-    display: none;
-}
-:lang(en) .type-product #descriptionLong::before{
-    background-image: url("../img/en/vyroba-banner.png");
-}
+
+:lang(en){
+    .headerFreeDelivery{
+        display: none;
+    }
+    .delivery-time-label, .delivery-time{
+        display: none;
+    }
+    .type-product #descriptionLong::before{
+        background-image: url("../img/en/vyroba-banner.png");
+    }
+
+    .header-contacts a:first-child{
+        display: none;
+    }
+} 
