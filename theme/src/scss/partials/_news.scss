@@ -10,7 +10,7 @@
     flex-direction: column;
     position: relative;
 }
-.in-index .sidebar-left + main .news-item, .in-blog .sidebar-left + main .news-item{
+.in-index .news-item, .in-blog .sidebar-left + main .news-item{
     width: 33.333%;
 }
 .news-item > .image{
