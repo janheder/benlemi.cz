@@ -79,4 +79,4 @@ if ($(".category-header").length){
 
 
 $(".filters-wrapper").append("<div class='filter-contact'></div>");
-$(".filter-contact").load("/objednavka/krok-1/ .checkout-box");
+$(".filter-contact").load(g_cart1Url + " .checkout-box");
