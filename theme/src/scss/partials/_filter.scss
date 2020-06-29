@@ -26,6 +26,12 @@
 .filter-sections{
 
 }
+.filter-section-default{
+    display: none;
+}
+#manufacturer-filter{
+    display: none;
+}
 .filter-section{
     /*border-top: 1px solid $gray-400;*/
     padding: 10px 0;

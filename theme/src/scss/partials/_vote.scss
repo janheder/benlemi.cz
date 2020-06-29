@@ -1,4 +1,4 @@
-.in-hodnoceni-obchodu{
+.in-hodnoceni-obchodu, .in-store-rating{
     .content-inner{
         display: flex;
         flex-wrap: wrap;
@@ -37,6 +37,9 @@
 }
 .votes-wrap.admin-response .vote-wrap{
     border: 0;
+}
+.in-index .votes-wrap.admin-response{
+    display: none;
 }
 .vote-wrap{
     padding: 20px 0;
