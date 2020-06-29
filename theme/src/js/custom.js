@@ -391,12 +391,14 @@ if ($(relatedCats).length){
                 var number = one+"-"+two;
             }else{
                 var number = one+"-"+two+"-"+one2+"-"+two2;
+                var number2 = one2+"-"+two2+"-"+one+"-"+two;
             }
             
             $(".p-info-wrapper span, .price-save span, .price-standard span, .bottomCta__price span").each(function(){
                 $(this).removeClass("force-display");
             });
             $("span."+ number).addClass("force-display");
+            $("span."+ number2).addClass("force-display");
         });
     }
 
