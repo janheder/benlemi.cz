@@ -78,15 +78,19 @@
     max-width: none;
     flex-basis: 40%;
 }
-
-.mobile .banners-row .col-sm-8{
-    width: 100%;
-    max-width: none;
-    flex-basis: 100%;
-}
-.mobile .banners-row #carousel{
-    padding-top: 0px;
-    margin-bottom: -30px;
-    height: auto;
-    margin-top: -10px;
+.mobile{
+    .banners-row .col-sm-8{
+        width: 100%;
+        max-width: none;
+        flex-basis: 100%;
+    }
+    .banners-row #carousel{
+        padding-top: 0px;
+        margin-bottom: -30px;
+        height: auto;
+        margin-top: -10px;
+    }
+    .carousel-inner .item{
+        position: relative;
+    }
 }
