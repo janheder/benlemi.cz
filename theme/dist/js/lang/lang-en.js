@@ -106,10 +106,10 @@ var category4Url = "blog-life-in-benlemi";
 var g_registrationUrl = "registration";
 
 var g_cartUrl = "cart";
-var g_cart1Url = "order/step-1";
+var g_cart1Url = "/order/step-1";
 var g_cart1 = "step-1";
 
-var g_cart2Url = "order/step-2";
+var g_cart2Url = "/order/step-2";
 var g_cart2 = "step-2";
 
 var g_inThankYou = "dekujeme";
