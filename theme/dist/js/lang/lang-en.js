@@ -125,4 +125,4 @@ var g_inClientDiscussionUrl = "client-discussion";
 var g_inForgotPasswordUrl = "forgotten-password";
 
 
-var relatedCats = "in-children-s-house-beds, in-children-s-single-beds";
+var relatedCats = ".in-children-s-house-beds, .in-children-s-single-beds";

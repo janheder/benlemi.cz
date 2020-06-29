@@ -124,4 +124,4 @@ var g_inClientDiscussionUrl = "klient-diskuze";
 var g_inForgotPasswordUrl = "zapomenute-heslo";
 
 
-var relatedCats = "in-children-s-wooden-house-beds";
+var relatedCats = ".in-children-s-wooden-house-beds";
