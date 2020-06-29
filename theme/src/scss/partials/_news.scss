@@ -63,7 +63,7 @@
 }
 @media screen and (max-width: 767px){
     .news-item{
-        width: 100%;
+        width: 100% !important;
         flex-direction: row;
     }
     .news-item > .image {
