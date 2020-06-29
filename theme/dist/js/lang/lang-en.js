@@ -125,4 +125,4 @@ var g_inClientDiscussionUrl = "client-discussion";
 var g_inForgotPasswordUrl = "forgotten-password";
 
 
-var relatedCats = ".in-children-s-house-beds, .in-children-s-single-beds";
+var relatedCats = ".in-children-s-house-beds, .in-children-s-single-beds, .in-children-s-bunk-and-loft-beds, .in-bed-accesory, .in-under-bed-drawers, .in-children-s-mattresses, .in-children-s-wardrobes, .in-children-s-tables-and-chairs, .in-single-beds, .in-double-beds, .in-bed-accesory-2, .in-sheets, .in-mattress-protectors";
