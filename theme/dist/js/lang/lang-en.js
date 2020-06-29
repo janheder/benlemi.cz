@@ -89,8 +89,6 @@ var g_ratingUrl = "store-rating";
 
 var g_priceFree = 1234;
 
-var g_crossSelling1 = "in-children-s-wooden-house-beds";
-var g_crossSelling2 = "";
 
 
 /* page names */
@@ -125,3 +123,6 @@ var g_inClientRatingUrl = "client-ratings";
 var g_inClientDocumentsUrl = "client-documents";
 var g_inClientDiscussionUrl = "client-discussion";
 var g_inForgotPasswordUrl = "forgotten-password";
+
+
+var relatedCats = "in-children-s-house-beds, in-children-s-single-beds";

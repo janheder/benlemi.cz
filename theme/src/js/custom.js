@@ -327,7 +327,7 @@ $("#p-detail-tabs").prepend('<li class="shp-tab"><a href="#description" class="s
 $('.p-info-wrapper a[href="#description"]').text(g_showMoreInfo);
 
 /* Cross selling products */
-if ($("." + g_crossSelling1).length){
+if ($(relatedCats).length){
     if ($("#productsRelated .flag-custom1").length){
         var i=0;
         $("#productsRelated .flag-custom1").each(function(i){

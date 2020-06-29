@@ -95,10 +95,14 @@
         margin-top: 40px;
     }
     .categoriesSection__single{
-        margin: 10px 0;
+  
     }
     .mobile #categoriesSection{
         margin-top: 0;
+    }
+    .categoriesSection__row .col-6{
+        margin: 5px 0;
+        padding: 0 5px;
     }
 }
 @media screen and (max-width: 767px){
@@ -108,10 +112,7 @@
     .categoriesSection__row {
         margin: 0 -5px;
     }
-    .categoriesSection__row .col-6{
-        margin: 5px 0;
-        padding: 0 5px;
-    }
+
     .categoriesSection__single {
         flex-direction: row;
     }
