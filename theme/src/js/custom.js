@@ -391,7 +391,7 @@ if ($(relatedCats).length){
                 var number = one+"-"+two;
             }else{
                 var number = one+"-"+two+"-"+one2+"-"+two2;
-                var number2 = one2+"-"+two2+"-"+one+"-"+two;
+                var number2 = one2+"-"+two2+"-"+one+"-"+two; // if order is reversed
             }
             
             $(".p-info-wrapper span, .price-save span, .price-standard span, .bottomCta__price span").each(function(){
