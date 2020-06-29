@@ -112,7 +112,7 @@ var g_cart1 = "step-1";
 var g_cart2Url = "/order/step-2";
 var g_cart2 = "step-2";
 
-var g_inThankYou = "dekujeme";
+var g_inThankYou = "thank-you";
 
 var g_inClientUrl = "client-center";
 var g_inSettingsUrl = "my-account-settings";
