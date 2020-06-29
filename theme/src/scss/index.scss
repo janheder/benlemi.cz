@@ -295,7 +295,7 @@ header + .content-wrapper .content-wrapper-in{
 @import "partials/_page-kontakty";
 
 
-.in-dekujeme .header-top{
+.in-dekujeme .header-top, .in-thank-you .header-top{
     border-bottom: 1px solid $gray-400;
 }
 
