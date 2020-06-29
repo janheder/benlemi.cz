@@ -333,6 +333,8 @@
     }
 }
 
+
+
 .user-action-cart{
     display: none;
     position: absolute;
@@ -342,45 +344,64 @@
     background: $white;
     top: 90px;
     padding: 20px;
+    padding-top: 10px;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.08);
+    max-width: 500px;
+    border: 4px solid $gray-300;
 }
-.cart-count:hover + .user-action-cart, .user-action-cart:hover{
-    display: flex;
+
+@media screen and (min-width: 992px){
+    .cart-count.full:hover + .user-action-cart, .user-action-cart:hover{
+        display: flex;
+    }
 }
 .cart-widget-product{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-400;
 }
 .cart-widget-product-image{
     height: 60px;
     width: 60px;
+    flex-shrink: 0;
 }
 .cart-widget-product-amount{
     padding: 0 10px;
+    padding-right: 0;
 
     .quantity input{
-        width: 50px;
+        width: 26px;
         height: 36px;
-        text-align: center;
+        text-align: right;
         border-radius: 0;
-        border: 1px solid $gray-500;
-
+        border: 0;
+        font-size: 14px;
+        background: transparent;
+        pointer-events: none;
     }
 }
 .cart-widget-product-unit{
-    display: none;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 5px;
 }
 .cart-widget-product-name{
     display: flex;
     flex-grow: 1;
     padding-right: 20px;
+    justify-content: center;
+    align-items: center;
 
     strong{
         padding-right: 20px;
+        line-height: 1.2;
+        padding-bottom: 5px;
 
         a{
             color: $gray-800;
+            font-size: 14px;
         }
     }
     span{
@@ -388,6 +409,8 @@
         font-weight: 700;
         text-align: right;
         flex-grow: 1;
+        flex-shrink: 0;
+        font-size: 14px;
     }
 }
 .cart-widget-product-delete{
@@ -396,21 +419,27 @@
     }
 }
 .cart-widget-product-delete .remove-item{
+    display: none;
     width: 24px;
     height: 24px;
-    background: $gray-300;
+    background: $white;
     border: 0;
+    background-image: url("../icons/close.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center center;
+    cursor: pointer;
 }
 
+
 #continue-order-button{
-    background: $gray-300;
-    color: $gray-900;
+
     height: 42px;
     font-size: 13px;
     transition: 0.3s ease opacity;
 
     &:hover, &:active, &:focus{
-        background: $gray-400;
+
         border: 0;
     }
 }
@@ -420,8 +449,12 @@
     padding-top: 20px;
     display: flex;
 }
+.cart-free-shipping{
+    display: none;
+}
+
 .user-action-cart .cart-widget-button{
     display: flex;
     justify-content: flex-end;
-    margin-top: -40px;
+    margin-top: 20px;
 }

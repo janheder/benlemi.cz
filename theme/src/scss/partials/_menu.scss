@@ -229,13 +229,13 @@
         background-position: left 20px center;
         background-repeat: no-repeat;
     }
-    .menu-level-1 > li.ext > a[href="/detsky-nabytek/"]{
+    .menu-level-1 > li.ext > a[href="/detsky-nabytek/"], .menu-level-1 > li.ext > a[href="/baby-and-children-s-furniture/"]{
         background-image: url("../img/detsky-nabytek.png");
     }
-    .menu-level-1 > li.ext > a[href="/nabytek/"]{
+    .menu-level-1 > li.ext > a[href="/nabytek/"], .menu-level-1 > li.ext > a[href="/furniture/"]{
         background-image: url("../img/nabytek.png");
     }
-    .menu-level-1 > li.ext > a[href="/textil/"]{
+    .menu-level-1 > li.ext > a[href="/textil/"], .menu-level-1 > li.ext > a[href="/textiles/"]{
         background-image: url("../img/textil.png");
     }
     .menu-level-1 > li > a > b{

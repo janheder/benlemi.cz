@@ -71,7 +71,7 @@ body{
     }
 }
 @media (min-width: 992px){
-    body.in-kosik::after, body.ordering-process::after{
+    body.ordering-process::after{
         content: "";
         height: 300px;
         width: 100%;
@@ -165,7 +165,7 @@ header + .content-wrapper .content-wrapper-in{
 .content{
     width: 100%;
 }
-.type-post .content-wrapper-in{
+.type-post .content-wrapper-in, .type-posts-listing .content-wrapper-in{
     flex-wrap: nowrap;
 }
 .content > h4{
@@ -378,7 +378,7 @@ header + .content-wrapper .content-wrapper-in{
     align-items: center;
 }
 .extras-product-name{
-    padding-left: 20px;
+    padding: 0 20px;
     width: 25%;
     align-items: center;
     display: flex;
@@ -479,8 +479,29 @@ header + .content-wrapper .content-wrapper-in{
 }
 
 
-.in-login #formLogin .login-wrapper button + a{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
+
+
+
+
+/* ========================================================================== */
+/* BENLEMI.COM SPECIFIC EDITS */
+/* ========================================================================== */
+
+
+:lang(en){
+    .headerFreeDelivery{
+        display: none;
+    }
+    .delivery-time-label, .delivery-time{
+        display: none;
+    }
+    .type-product #descriptionLong::before{
+        background-image: url("../img/en/vyroba-banner.png");
+    }
+    .header-contacts{
+        padding-bottom: 20px;
+    }
+    .header-contacts a:first-child{
+        display: none;
+    }
+} 

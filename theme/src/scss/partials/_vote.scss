@@ -1,13 +1,26 @@
-.in-hodnoceni-obchodu .content-inner{
-    display: flex;
-    flex-wrap: wrap;
-}
-.in-hodnoceni-obchodu .content-inner h1{
-    display: flex;
-    width: 100%;
-}
-.in-hodnoceni-obchodu .pagination-wrapper{
-    width: 100%;
+.in-hodnoceni-obchodu{
+    .content-inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content-inner h1{
+        display: flex;
+        width: 100%;
+    }
+    .pagination-wrapper{
+        width: 100%;
+    }
+    .votes-wrap{
+        width: 66.666%;
+    }
+    .sidebar{
+        display: none;
+    }
+    @media screen and (max-width: 767px){
+        .content-inner .rate-wrapper, .content-inner .votes-wrap{
+            width: 100%;
+        }
+    }
 }
 
 .votes-wrap{
@@ -15,9 +28,6 @@
     padding-left: 60px;
 }
 
-.in-hodnoceni-obchodu .votes-wrap{
-    width: 66.666%;
-}
 .votes-wrap.admin-response{
     background: $gray-300;
     padding: 0 20px;
@@ -40,9 +50,7 @@
     .votes-wrap{
         padding-left: 0px;
     }
-    .in-hodnoceni-obchodu .content-inner .rate-wrapper, .in-hodnoceni-obchodu .content-inner .votes-wrap{
-        width: 100%;
-    }
+
     .votes-wrap.admin-response{
         margin-left: 0px;
     }
