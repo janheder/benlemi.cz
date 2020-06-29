@@ -74,3 +74,17 @@
 body.ordering-process #header.scroll::before, body.type-detail #header.scroll::before{
     box-shadow: none;
 }
+
+
+.ordering-process{
+    .header-top{
+        padding-bottom: 0;
+        align-items: center;
+    }
+    .navLinks {
+        padding-bottom: 0;
+    }
+    .header-contacts {
+        padding-bottom: 0;
+    }
+}
