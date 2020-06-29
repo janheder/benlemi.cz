@@ -328,9 +328,9 @@ $('.p-info-wrapper a[href="#description"]').text(g_showMoreInfo);
 
 /* Cross selling products */
 if ($("." + g_crossSelling1).length){
-    if ($("#productsRelated .flag-custom2").length){
+    if ($("#productsRelated .flag-custom1").length){
         var i=0;
-        $("#productsRelated .flag-custom2").each(function(i){
+        $("#productsRelated .flag-custom1").each(function(i){
             var ran = i+1; 
             var pName = $(this).closest(".p").find(".name").prop("title");
             var pImg = $(this).closest(".p").find(".image img").prop("src");
