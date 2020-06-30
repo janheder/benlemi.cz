@@ -298,6 +298,10 @@
 
 .rate-wrapper .vote-form .consents{
     font-size: 13px;
+    display: flex;
+    label{
+        padding-left: 10px;
+    }
 }
 .heureka-rating-group{
     display: flex;
