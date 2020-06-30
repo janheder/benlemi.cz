@@ -19,9 +19,13 @@ var g_related = "Related";
 var g_downloadInfographic = "Download the infographic";
 var g_specifications = "Specifications";
 var g_showMoreInfo = "Show more";
-var g_color = "Colour";
 var g_accessories = "Accessories";
+
+var g_color = "Colour";
 var g_propositions = "Propositions";
+var g_colorOfPrism = "The color of the prisms";
+var g_surfaceColor = "Surface color";
+
 var g_product = "Product";
 var g_availability = "Availability";
 var g_quantity = "Quantity";
@@ -124,5 +128,7 @@ var g_inClientDocumentsUrl = "client-documents";
 var g_inClientDiscussionUrl = "client-discussion";
 var g_inForgotPasswordUrl = "forgotten-password";
 
-
+var relatedCats = "";
+/*
 var relatedCats = ".in-children-s-house-beds, .in-children-s-single-beds, .in-children-s-bunk-and-loft-beds, .in-bed-accesory, .in-under-bed-drawers, .in-children-s-mattresses, .in-children-s-wardrobes, .in-children-s-tables-and-chairs, .in-single-beds, .in-double-beds, .in-bed-accesory-2, .in-sheets, .in-mattress-protectors";
+*/

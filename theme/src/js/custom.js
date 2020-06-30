@@ -150,7 +150,7 @@ if ($(":lang(cs)").length){
     });
 } 
 else if($(":lang(en)").length){
-    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item com active">English</div><a href="https://benlemi.cz" class="language-toggle-item cz">Czech</a><a href="https://benlemi.sk" class="language-toggle-item sk">Slovak</a></div></div>');
+    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item com active">English</div><a href="https://www.benlemi.cz" class="language-toggle-item cz">Czech</a><a href="https://benlemi.sk" class="language-toggle-item sk">Slovak</a></div></div>');
     $("#js-langToggle").click(function(){
         $("#js-langToggle").toggleClass("--active");
     });
@@ -282,9 +282,9 @@ if ($("#p-detail-tabs").length){
 
 /* load infographic images into parameters */
 if ($("#relatedFiles").length){
-    $('select[data-parameter-name="' + g_propositions + '"]').change(function() {
+    $('main select[data-parameter-name="' + g_propositions + '"]').change(function() {
         $(".description-infographics").remove();
-        var option = $('select[data-parameter-name="' + g_propositions + '"] option:selected').text(); 
+        var option = $('main select[data-parameter-name="' + g_propositions + '"] option:selected').text(); 
         var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
         var src = $('#relatedFiles a[title*="' + optionClean + '"]').attr("href");
         if(typeof src != 'undefined'){
@@ -341,6 +341,7 @@ if ($(relatedCats).length){
 
             $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
                 $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
+                $("#crossSelling" + ran).find("select").attr("data-parameter-id", ran + 1000);
             });
 
             $("#product-detail-form select[data-parameter-name='" + g_color + "']").change(function() {
@@ -352,6 +353,20 @@ if ($(relatedCats).length){
 
             $("#product-detail-form select[data-parameter-name='" + g_propositions + "']").change(function() {
                 var selected = $("#product-detail-form select[data-parameter-name='" + g_propositions + "'] option:selected").text(); 
+                $("#crossSelling" + ran + " option").filter(function(){
+                    return $(this).text() == selected;
+                }).prop("selected", true);
+            });
+
+            $("#product-detail-form select[data-parameter-name='" + g_colorOfPrism + "']").change(function() {
+                var selected = $("#product-detail-form select[data-parameter-name='" + g_colorOfPrism + "'] option:selected").text(); 
+                $("#crossSelling" + ran + " option").filter(function(){
+                    return $(this).text() == selected;
+                }).prop("selected", true);
+            });
+
+            $("#product-detail-form select[data-parameter-name='" + g_surfaceColor + "']").change(function() {
+                var selected = $("#product-detail-form select[data-parameter-name='" + g_surfaceColor + "'] option:selected").text(); 
                 $("#crossSelling" + ran + " option").filter(function(){
                     return $(this).text() == selected;
                 }).prop("selected", true);
@@ -385,6 +400,16 @@ if ($(relatedCats).length){
                 var two2 = $("#product-detail-form select[data-parameter-name='" + g_propositions + "']").find("option:selected").prop("value");
             };
 
+            if ($("#product-detail-form select[data-parameter-name='" + g_colorOfPrism + "']").length){
+                var prism1 = $("#product-detail-form select[data-parameter-name='" + g_colorOfPrism + "']").attr("data-parameter-id");
+                var prism2 = $("#product-detail-form select[data-parameter-name='" + g_colorOfPrism + "']").find("option:selected").prop("value");
+            };
+
+            if ($("#product-detail-form select[data-parameter-name='" + g_surfaceColor + "']").length){
+                var prism11 = $("#product-detail-form select[data-parameter-name='" + g_surfaceColor + "']").attr("data-parameter-id");
+                var prism12 = $("#product-detail-form select[data-parameter-name='" + g_surfaceColor + "']").find("option:selected").prop("value");
+            };
+
             if (one === undefined){
                 var number = one2+"-"+two2;
             }else if(one2 === undefined){
@@ -393,12 +418,24 @@ if ($(relatedCats).length){
                 var number = one+"-"+two+"-"+one2+"-"+two2;
                 var number2 = one2+"-"+two2+"-"+one+"-"+two; // if order is reversed
             }
-            
+
+            if (prism1 === undefined){
+                var prism_num = prism11+"-"+prism12;
+            }else if(prism2 === undefined){
+                var prism_num = prism1+"-"+prism2;
+            }else{
+                var prism_num = prism1+"-"+prism2+"-"+prism11+"-"+prism12;
+                var prism_num2 = prism11+"-"+prism12+"-"+prism1+"-"+prism2; // if order is reversed
+            }
+
             $(".p-info-wrapper span, .price-save span, .price-standard span, .bottomCta__price span").each(function(){
                 $(this).removeClass("force-display");
             });
             $("span."+ number).addClass("force-display");
             $("span."+ number2).addClass("force-display");
+
+            $("span."+ prism_num).addClass("force-display");
+            $("span."+ prism_num2).addClass("force-display");
         });
     }
 
@@ -440,6 +477,12 @@ $(document).ready(function() {
             '<div class="extras-product-priceSingle">' + priceSingle + '</div>' +
             '<div class="extras-product-priceTotal">' + priceTotal + g_currency + ' </div>' +
             '</div>');
+
+            $(".detail-cross-selling.checked").each(function(){
+                var selling = $(this).html("");
+                $(selling).insertAfter(".extras-product");
+            });
+
 
             $("#backToShop").remove();
             $(".extra.step").prepend("<div class='btn' id='backToShop'>" + g_backToStore + "</div>");

@@ -4,6 +4,10 @@
 #blogSection .container{
     position: relative;
     padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #blogSection .container::before{
     content: "";
@@ -42,4 +46,17 @@
         font-size: 18px;
         padding-bottom: 20px;
     }
+}
+
+.blogSection__content{
+    text-align: center;
+}
+.news-wrapper{
+    text-align: left;
+}
+.blogSection__content > a{
+    margin-top: 40px;
+}
+.blogSection__btn{
+    margin-top: 40px;
 }
