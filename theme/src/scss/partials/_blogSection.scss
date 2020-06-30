@@ -4,6 +4,10 @@
 #blogSection .container{
     position: relative;
     padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #blogSection .container::before{
     content: "";
@@ -52,4 +56,7 @@
 }
 .blogSection__content > a{
     margin-top: 40px;
+}
+.blogSection__btn{
+
 }
