@@ -341,7 +341,7 @@ if ($(relatedCats).length){
 
             $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
                 $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
-                $(this).find("select").prop("data-parameter-id", ran + 100);
+                $("#crossSelling" + ran).find("select").attr("data-parameter-id", ran + 100);
             });
 
             $("#product-detail-form select[data-parameter-name='" + g_color + "']").change(function() {
