@@ -401,6 +401,8 @@ header + .content-wrapper .content-wrapper-in{
     flex-grow: 1;
     align-items: center;
     display: flex;
+    color: $red-700;
+    font-weight: 700;
 }
 
 .login-form-register-title{
