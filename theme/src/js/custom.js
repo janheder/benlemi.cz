@@ -282,9 +282,9 @@ if ($("#p-detail-tabs").length){
 
 /* load infographic images into parameters */
 if ($("#relatedFiles").length){
-    $('select[data-parameter-name="' + g_propositions + '"]').change(function() {
+    $('main select[data-parameter-name="' + g_propositions + '"]').change(function() {
         $(".description-infographics").remove();
-        var option = $('select[data-parameter-name="' + g_propositions + '"] option:selected').text(); 
+        var option = $('main select[data-parameter-name="' + g_propositions + '"] option:selected').text(); 
         var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
         var src = $('#relatedFiles a[title*="' + optionClean + '"]').attr("href");
         if(typeof src != 'undefined'){
