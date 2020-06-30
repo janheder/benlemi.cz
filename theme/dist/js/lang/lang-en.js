@@ -1,5 +1,5 @@
 var g_currency = "€"
-var g_searchPlaceholder = "Write down what you are searching for, for ex. house bed";
+var g_searchPlaceholder = "Search for products, for ex. house bed";
 var g_login = "Login";
 var g_register = "Sign up";
 var g_language = "Language";
