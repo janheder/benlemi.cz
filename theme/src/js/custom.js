@@ -357,6 +357,20 @@ if ($(relatedCats).length){
                 }).prop("selected", true);
             });
 
+            $("#product-detail-form select[data-parameter-name='" + g_colorOfPrism + "']").change(function() {
+                var selected = $("#product-detail-form select[data-parameter-name='" + g_colorOfPrism + "'] option:selected").text(); 
+                $("#crossSelling" + ran + " option").filter(function(){
+                    return $(this).text() == selected;
+                }).prop("selected", true);
+            });
+
+            $("#product-detail-form select[data-parameter-name='" + g_surfaceColor + "']").change(function() {
+                var selected = $("#product-detail-form select[data-parameter-name='" + g_surfaceColor + "'] option:selected").text(); 
+                $("#crossSelling" + ran + " option").filter(function(){
+                    return $(this).text() == selected;
+                }).prop("selected", true);
+            });
+
         });
 
         $("<h4 class='detail-cross-selling-heading'>" + g_accessories + "</h4>").insertBefore(".selling-1");
@@ -385,6 +399,16 @@ if ($(relatedCats).length){
                 var two2 = $("#product-detail-form select[data-parameter-name='" + g_propositions + "']").find("option:selected").prop("value");
             };
 
+            if ($("#product-detail-form select[data-parameter-name='" + g_colorOfPrism + "']").length){
+                var prism1 = $("#product-detail-form select[data-parameter-name='" + g_colorOfPrism + "']").attr("data-parameter-id");
+                var prism2 = $("#product-detail-form select[data-parameter-name='" + g_colorOfPrism + "']").find("option:selected").prop("value");
+            };
+
+            if ($("#product-detail-form select[data-parameter-name='" + g_surfaceColor + "']").length){
+                var prism11 = $("#product-detail-form select[data-parameter-name='" + g_surfaceColor + "']").attr("data-parameter-id");
+                var prism12 = $("#product-detail-form select[data-parameter-name='" + g_surfaceColor + "']").find("option:selected").prop("value");
+            };
+
             if (one === undefined){
                 var number = one2+"-"+two2;
             }else if(one2 === undefined){
@@ -393,12 +417,24 @@ if ($(relatedCats).length){
                 var number = one+"-"+two+"-"+one2+"-"+two2;
                 var number2 = one2+"-"+two2+"-"+one+"-"+two; // if order is reversed
             }
-            
+
+            if (prism1 === undefined){
+                var prism_num = prism11+"-"+prism12;
+            }else if(prism2 === undefined){
+                var prism_num = prism1+"-"+prism2;
+            }else{
+                var prism_num = prism1+"-"+prism2+"-"+prism11+"-"+prism12;
+                var prism_num2 = prism11+"-"+prism12+"-"+prism1+"-"+prism2; // if order is reversed
+            }
+
             $(".p-info-wrapper span, .price-save span, .price-standard span, .bottomCta__price span").each(function(){
                 $(this).removeClass("force-display");
             });
             $("span."+ number).addClass("force-display");
             $("span."+ number2).addClass("force-display");
+
+            $("span."+ prism_num).addClass("force-display");
+            $("span."+ prism_num2).addClass("force-display");
         });
     }
 

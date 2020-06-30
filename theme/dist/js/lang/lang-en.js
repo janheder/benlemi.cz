@@ -19,9 +19,13 @@ var g_related = "Related";
 var g_downloadInfographic = "Download the infographic";
 var g_specifications = "Specifications";
 var g_showMoreInfo = "Show more";
-var g_color = "Colour";
 var g_accessories = "Accessories";
+
+var g_color = "Colour";
 var g_propositions = "Propositions";
+var g_colorOfPrism = "The color of the prisms";
+var g_surfaceColor = "Surface color";
+
 var g_product = "Product";
 var g_availability = "Availability";
 var g_quantity = "Quantity";
