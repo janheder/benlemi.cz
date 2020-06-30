@@ -478,6 +478,12 @@ $(document).ready(function() {
             '<div class="extras-product-priceTotal">' + priceTotal + g_currency + ' </div>' +
             '</div>');
 
+            $(".detail-cross-selling.checked").each(function(){
+                var selling = $(this).html("");
+                $(selling).insertAfter(".extras-product");
+            });
+
+
             $("#backToShop").remove();
             $(".extra.step").prepend("<div class='btn' id='backToShop'>" + g_backToStore + "</div>");
             $(".advanced-order .extra.step .btn-conversion").text(g_viewCart);
