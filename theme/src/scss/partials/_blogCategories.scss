@@ -39,6 +39,10 @@
     background-size: cover;
     background-position: center center;
     padding-top: 140px;
+
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+    }
 }
 .blogCategories__img{
     height: 100px;
