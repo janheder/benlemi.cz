@@ -88,6 +88,10 @@ if ($(".search").length){
     '<a href="tel:' + tel + '">' + tel + '</a>'+
     '<a href="mailto:' + mail + '">' + mail + '</a>'+
     '</div>');
+
+    if($(":lang(en)").length){
+        $(".header-contacts").append('<span>Mon–Fri 9:30 a.m.– 4:00 p.m</span>');
+    }
 }
 
 /* add search and user icons to header area */
