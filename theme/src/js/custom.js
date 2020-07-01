@@ -509,6 +509,7 @@ $(document).ready(function() {
 
 
 /* Adjust price displaying */
+/*
 if ($(".type-detail").length){
 
     $(".price-final span").each(function() {
@@ -545,7 +546,7 @@ if ($(".type-detail").length){
         var str1 = $(this).append("<span class='price-final-dph'> " + g_excludingVat + "</span>");
     });
 }
-
+*/
 /* rename titles */
 if ($(".type-detail").length){
     $(".extended-description h3").text(g_advantagesAndSpecifications);
