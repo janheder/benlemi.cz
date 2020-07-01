@@ -286,6 +286,7 @@ if ($("#p-detail-tabs").length){
 
 /* load infographic images into parameters */
 if ($("#relatedFiles").length){
+    $(".extended-description").append('<div class="description-infographics empty">' + g_emptyInforgaphicsTitle + '</div>');
     $('main select[data-parameter-name="' + g_propositions + '"]').change(function() {
         $(".description-infographics").remove();
         var option = $('main select[data-parameter-name="' + g_propositions + '"] option:selected').text(); 
