@@ -524,3 +524,13 @@ header + .content-wrapper .content-wrapper-in{
         display: none;
     }
 } 
+
+/* ========================================================================== */
+/* BENLEMI.SK SPECIFIC EDITS */
+/* ========================================================================== */
+
+:lang(sk){
+    .type-product #descriptionLong::before{
+        background-image: url("../img/sk/vyroba-banner.png");
+    }
+} 
