@@ -88,7 +88,7 @@ var g_totalQuantity = "Položiek celkom";
 
 var g_moreRating = "Ďalšie hodnotenie";
 
-var g_ratingUrl = "hodnoceni-obchodu";
+var g_ratingUrl = "hodnotenie-obchodu";
 
 var g_priceFree = 49;
 
