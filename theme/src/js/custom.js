@@ -159,6 +159,13 @@ else if($(":lang(en)").length){
         $("#js-langToggle").toggleClass("--active");
     });
 }
+else if($(":lang(sk)").length){
+    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item sk active">Slovensky</div><a href="https://www.benlemi.cz" class="language-toggle-item cz">Česky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
+    $("#js-langToggle").click(function(){
+        $("#js-langToggle").toggleClass("--active");
+    });
+}
+
 
 
 
