@@ -423,21 +423,20 @@
     width: 30px;
     border-radius: 50%;
     position: relative;
-
-    .yes-before::after{
-        content: "";
-        background-image: url("../icons/check.svg");
-        background-position: center center;
-        background-size: 16px 16px;
-        background-repeat: no-repeat;
-        height: 16px;
-        width: 16px;
-        display: flex;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
+}
+.advanced-parameter-inner.yes-before::after{
+    content: "";
+    background-image: url("../icons/check.svg");
+    background-position: center center;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .add-to-cart{
     display: flex;
