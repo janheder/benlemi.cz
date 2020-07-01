@@ -47,10 +47,11 @@
     display: none;
 }
 .filter-section fieldset label{
-    padding: 7px 20px 5px 24px;
+    padding: 7px 0px 5px 24px;
     position: relative;
     cursor: pointer;
     width: 100%;
+    justify-content: space-between;
     font-size: 14px;
 }
 .filter-section fieldset input[type="checkbox"]{
