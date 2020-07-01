@@ -630,7 +630,7 @@
 
 @media screen and (min-width: 992px){
     .discount-coupon {
-        margin-bottom: -46px;
+        margin-bottom: 0px;
     }
     .cart-summary .extras-wrap .extra.delivery{
         color: $green-800;
@@ -639,6 +639,7 @@
         justify-content: flex-end;
         height: 46px;
         padding: 0;
+        margin-top: -66px;
     }
     .cart-summary .extras-wrap .extra.delivery > span{
         padding: 10px 20px;
