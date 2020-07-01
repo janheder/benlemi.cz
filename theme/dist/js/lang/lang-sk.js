@@ -117,14 +117,14 @@ var g_cart2 = "krok-2";
 var g_inThankYou = "dekujeme";
 
 var g_inClientUrl = "klient";
-var g_inSettingsUrl = "nastaveni";
+var g_inSettingsUrl = "nastavenie";
 var g_inOrdersUrl = "objednavky";
 var g_inClientOrdersUrl = "klient-objednavky";
-var g_inClientSaleUrl = "klient-slevy";
-var g_inClientRatingUrl = "klient-hodnoceni";
+var g_inClientSaleUrl = "klient-zlavy";
+var g_inClientRatingUrl = "klient-hodnotenie";
 var g_inClientDocumentsUrl = "klient-doklady";
-var g_inClientDiscussionUrl = "klient-diskuze";
-var g_inForgotPasswordUrl = "zapomenute-heslo";
+var g_inClientDiscussionUrl = "klient-diskusia";
+var g_inForgotPasswordUrl = "zabudnute-heslo";
 
 
 var relatedCats = ".in-children-s-wooden-house-beds";
