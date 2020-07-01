@@ -325,6 +325,7 @@ if ($(".p-thumbnails-wrapper").length){
 }
 $("#thumbnailsShowMore").click(function(){
     $(".p-thumbnails-inner").toggleClass("--active");
+    window.scrollBy(0, 1);
 });
 
 /* reloace related product before rating */
