@@ -19,9 +19,11 @@ var g_related = "Související";
 var g_downloadInfographic = "Stáhnout infografiku";
 var g_specifications = "Parametry";
 var g_showMoreInfo = "Zobrazit informace";
-var g_color = "Barva";
 var g_accessories = "Doplňky";
+
+var g_color = "Barva";
 var g_propositions = "Rozměr";
+
 var g_product = "Produkt";
 var g_availability = "Dostupnost";
 var g_quantity = "Počet kusů";
@@ -44,8 +46,8 @@ var g_whatWillYouGet = "Co získáte?";
 var g_orderHistory = "Kompletní historii všech svých objednávek";
 var g_designNewsInformation = "Info o designových novinkách";
 var g_higherDiscountEveryPurchase = "Vyší slevy s každým dalším nákupem";
-var g_frequentBueyrRegistration = "Vybíráte u nás častěji? Rovnou se zaregistrujte";
-var g_frequentBueyrRegistrationText = "Automaticky se stanete členem věrnostního programu rodiny Benlemi a budete sbírat slevy za každý svůj nákup.";
+var g_frequentBuyerRegistration = "Vybíráte u nás častěji? Rovnou se zaregistrujte";
+var g_frequentBuyerRegistrationText = "Automaticky se stanete členem věrnostního programu rodiny Benlemi a budete sbírat slevy za každý svůj nákup.";
 var g_moreArticles = "Více článků";
 var g_inBenlemi = "v Benlemi";
 var g_welcomeTitle = "Vítejte v naší rodině";

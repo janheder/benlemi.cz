@@ -48,4 +48,3 @@ if ($("#instagramSection").length){
 
 /* relocate middle categories section */
 $(".middle-banners-wrapper").insertBefore("#pointsSection + .content-wrapper");
-

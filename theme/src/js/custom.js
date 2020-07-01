@@ -286,7 +286,7 @@ if ($("#p-detail-tabs").length){
 
 /* load infographic images into parameters */
 if ($("#relatedFiles").length){
-    $(".extended-description").append('<div class="description-infographics empty">' + g_emptyInforgaphicsTitle + '</div>');
+    $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
     $('main select[data-parameter-name="' + g_propositions + '"]').change(function() {
         $(".description-infographics").remove();
         var option = $('main select[data-parameter-name="' + g_propositions + '"] option:selected').text(); 
@@ -618,9 +618,9 @@ if ($(".in-" + g_registrationUrl + " #register-form").length){
     '</div>').insertBefore("#register-form");
 
 
-    $(".in-" + g_registrationUrl + " .content-inner h1").text(g_frequentBueyrRegistration);
+    $(".in-" + g_registrationUrl + " .content-inner h1").text(g_frequentBuyerRegistration);
 
-    $("<p>" + g_frequentBueyrRegistrationText + "</p>").insertAfter(".in-" + g_registrationUrl + " .content-inner h1");
+    $("<p>" + g_frequentBuyerRegistrationText + "</p>").insertAfter(".in-" + g_registrationUrl + " .content-inner h1");
 }
 
 // -----------------------------------------------------------------------------
