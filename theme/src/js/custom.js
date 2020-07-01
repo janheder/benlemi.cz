@@ -173,9 +173,9 @@ else if($(":lang(sk)").length){
 function freeDelivery(){ 
     if ($(".cart-count.full .cart-price").length){
         $(".headerFreeDelivery").remove();
-        var price = $(".cart-price").html().replace(/\s/g, '');
+        var price = $(".cart-price").html().replace(/\s/g, '').replace(/\€/g, '');
         var priceFree = g_priceFree;
-        priceInt = parseInt(price);
+        priceInt = parseFloat(price).toFixed(2);
 
         if(priceInt > priceFree){
             $("<div class='headerFreeDelivery free'>" + g_freeDelivery + "</div>").insertBefore(".cart-count");
