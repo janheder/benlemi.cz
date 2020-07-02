@@ -171,7 +171,8 @@ else if($(":lang(sk)").length){
 
 /* free delivery fucntion */
 function freeDelivery(){ 
-    if(":lang(en)"){
+    if($(":lang(en)").length){
+
         $("<div class='headerFreeDelivery free'>Worldwide shipping</div>").insertAfter(".navLinks");
     }
     else{
