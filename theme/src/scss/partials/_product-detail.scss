@@ -50,6 +50,9 @@
         margin: 0;
         order: 1;
     }
+    .flags{
+        display: none;
+    }
 }
 @media screen and (max-width: 500px){
     .p-detail-inner-header .stars-wrapper{
