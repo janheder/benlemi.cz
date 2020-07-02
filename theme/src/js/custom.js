@@ -171,28 +171,34 @@ else if($(":lang(sk)").length){
 
 /* free delivery fucntion */
 function freeDelivery(){ 
-    if ($(".cart-count.full .cart-price").length){
-        $(".headerFreeDelivery").remove();
-        var price = $(".cart-price").html().replace(/\s/g, '').replace(/\€/g, '');
-        var priceFree = g_priceFree;
-        priceInt = parseFloat(price).toFixed(2);
-
-        if(priceInt > priceFree){
-            $("<div class='headerFreeDelivery free'>" + g_freeDelivery + "</div>").insertBefore(".cart-count");
-        }
-        else{
-            var priceFinal = priceFree - priceInt;
-            $("<div class='headerFreeDelivery'>" + g_pickAdditionalItemsForAtLeast + " <span>"+ priceFinal +" " + g_currency + "</span><br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");
-        }
+    if(":lang(en)"){
+        $("<div class='headerFreeDelivery free'>Worldwide shipping</div>").insertAfter(".navLinks");
     }
     else{
-        $(".headerFreeDelivery").remove();
-        $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");  
+        if ($(".cart-count.full .cart-price").length){
+            $(".headerFreeDelivery").remove();
+            var price = $(".cart-price").html().replace(/\s/g, '').replace(/\€/g, '');
+            var priceFree = g_priceFree;
+            priceInt = parseFloat(price).toFixed(2);
+    
+            if(priceInt > priceFree){
+                $("<div class='headerFreeDelivery free'>" + g_freeDelivery + "</div>").insertBefore(".cart-count");
+            }
+            else{
+                var priceFinal = priceFree - priceInt;
+                $("<div class='headerFreeDelivery'>" + g_pickAdditionalItemsForAtLeast + " <span>"+ priceFinal +" " + g_currency + "</span><br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");
+            }
+        }
+        else{
+            $(".headerFreeDelivery").remove();
+            $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");  
+        }
+    
+        if ($(".ordering-process").length){
+            $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertAfter(".navLinks");
+        }
     }
 
-    if ($(".ordering-process").length){
-        $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertAfter(".navLinks");
-    }
 }
 freeDelivery();
 
