@@ -60,12 +60,13 @@
 
 .categoriesSection__thumb{
     width: 90px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .categoriesSection__thumbImg{
-
+    max-height: 100%;
 }
 .categoriesSection__singleTitle{
     text-align: center;
