@@ -511,6 +511,38 @@ header + .content-wrapper .content-wrapper-in{
 }
 
 /* ========================================================================== */
+/* BENLEMI.SK SPECIFIC EDITS */
+/* ========================================================================== */
+:lang(cs){
+    .flag-custom2{
+        display: none !important;
+    }
+}
+
+/* ========================================================================== */
+/* BENLEMI.SK SPECIFIC EDITS */
+/* ========================================================================== */
+
+:lang(sk){
+    .type-product #descriptionLong::before{
+        background-image: url("../img/sk/vyroba-banner.png");
+    }
+    .tri-na-radku{
+        display: none;
+    }
+    .category-perex img{
+        display: none;
+    }
+    .in-preco-nakupovat-u-nas #pointsSection{
+        display: none;
+    }
+    .flag-custom2{
+        display: none !important;
+    }
+} 
+
+
+/* ========================================================================== */
 /* BENLEMI.COM SPECIFIC EDITS */
 /* ========================================================================== */
 
@@ -531,23 +563,7 @@ header + .content-wrapper .content-wrapper-in{
     .in-customer-benefits #pointsSection{
         display: none;
     }
-} 
-
-/* ========================================================================== */
-/* BENLEMI.SK SPECIFIC EDITS */
-/* ========================================================================== */
-
-:lang(sk){
-    .type-product #descriptionLong::before{
-        background-image: url("../img/sk/vyroba-banner.png");
-    }
-    .tri-na-radku{
-        display: none;
-    }
-    .category-perex img{
-        display: none;
-    }
-    .in-preco-nakupovat-u-nas #pointsSection{
-        display: none;
+    .flag-custom1{
+        display: none !important;
     }
 } 
