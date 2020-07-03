@@ -92,6 +92,10 @@
     }
     .carousel-inner .item{
         position: relative;
+        height: auto;
+    }
+    .carousel-inner .item a {
+        height: auto;
     }
     .carousel-inner .item a img {
         object-fit: initial;
