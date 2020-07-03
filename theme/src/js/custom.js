@@ -620,7 +620,19 @@ $(window).on('scroll', function() {
     }
 });
 
+/* rename default delivery text */
 $("#content .availability-value .default-variant").text(g_chooseOptionToSeeDeliveryTime);
+
+/* tooltip for advanced parameters */
+if ($(".advanced-parameter").length){
+    $(".advanced-parameter").each(function(){
+        var tooltip = $(this).find(".advanced-parameter-inner").data("original-title");
+        $(this).append("<div class='advanced-parameter-tooltip'>" + tooltip + "</div>")
+    });
+}
+
+
+
 
 // -----------------------------------------------------------------------------
 // REGISTER PAGE

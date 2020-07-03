@@ -414,6 +414,24 @@
         top: 0;
         left: 0;
     }
+    &:hover{
+        .advanced-parameter-tooltip{
+            display: flex;
+        }
+    }
+}
+.advanced-parameter-tooltip{
+    display: none;
+    position: absolute;
+    font-size: 12px;
+    white-space: nowrap;
+    background: rgba(0,0,0, 0.8);
+    color: $white;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -20px);
+    padding: 2px 5px;
+    z-index: 1;
 }
 .variant-default{
     display: none;
@@ -423,10 +441,12 @@
 }
 .advanced-parameter-inner{
     display: flex;
-    height: 30px;
-    width: 30px;
+    height: 34px;
+    width: 34px;
     border-radius: 50%;
     position: relative;
+    border: 2px solid $gray-400;
+    cursor: pointer;
 }
 .advanced-parameter-inner.yes-before::after{
     content: "";
