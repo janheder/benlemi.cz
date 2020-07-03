@@ -32,6 +32,12 @@
 .bottomCta__price span{
     font-size: 16px;
 }
+.bottomCta__price .price-standard{
+    font-size: 14px;
+    color: $gray-700;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
 .bottomCta__spinner{
     width: 120px;
     margin: 0 10px;
