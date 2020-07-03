@@ -486,7 +486,7 @@ $(document).ready(function() {
             var stock = $(".availability-value .parameter-dependent:not(.no-display) span").html();
             var amount = parseInt($(".add-to-cart .amount").val());
             var priceSingle = $(".p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
-            var priceTotal = parseFloat(priceSingle.split('<')[0]).toFixed(2) * amount;
+            var priceTotal = parseFloat(priceSingle.split('<')[0].replace('€', '').replace(',', '.')).toFixed(2) * amount;
 
             $(".extras-wrap").prepend('<div class="extras-product-heading"><span>' + g_product + '</span><span>' + g_availability + '</span><span>' + g_quantity +'</span><span>' + g_price + '</span></div><div class="extras-product">' + 
             '<div class="extras-product-img">' + img + '</div>' + 
