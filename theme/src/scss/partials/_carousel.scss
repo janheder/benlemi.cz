@@ -93,4 +93,7 @@
     .carousel-inner .item{
         position: relative;
     }
+    .carousel-inner .item a img {
+        object-fit: initial;
+    }
 }

@@ -510,6 +510,15 @@ header + .content-wrapper .content-wrapper-in{
     display: none;
 }
 
+
+@media (max-width: 991px){
+    .type-detail #chat-application{
+        bottom: 70px !important;
+    }
+}
+
+
+
 /* ========================================================================== */
 /* BENLEMI.SK SPECIFIC EDITS */
 /* ========================================================================== */
@@ -538,6 +547,14 @@ header + .content-wrapper .content-wrapper-in{
     }
     .flag-custom2{
         display: none !important;
+    }
+    .menu-level-1 > li:nth-child(4){
+        flex-grow: 0;
+    }
+    .menu-level-1 > li:nth-child(5){
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
     }
 } 
 

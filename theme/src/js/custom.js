@@ -604,6 +604,7 @@ $("#ratingProduct>p").text(g_beFirstToRateThisProduct);
 
 /* rewrite description */
 if ($(".type-detail").length){
+    if ($(".p-short-description").length){}else{$("<div class='p-short-description'><p></p></div>").insertAfter(".add-to-cart");}
     var desc = $("#descriptionLong .rte p").text();
     var descTrim = desc.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
     $(".p-short-description p").text(descTrim);

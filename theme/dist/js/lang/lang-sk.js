@@ -18,7 +18,7 @@ var g_addRating = "Pridať hodnotenie";
 var g_related = "Súvisiace";
 var g_downloadInfographic = "Stiahnúť fotografiu";
 var g_specifications = "Parametry";
-var g_showMoreInfo = "Zobraziť informácie";
+var g_showMoreInfo = "Zobraziť viac informácií";
 var g_accessories = "Doplnky";
 
 var g_color = "Farba";

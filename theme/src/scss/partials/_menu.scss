@@ -248,6 +248,10 @@
     }
     .menu-level-1 > li > a[href="/vyprodej/"], .menu-level-1 > li > a[href="/vypredaj/"]{
         background-image: url("../img/vyprodej.png");
+        padding: 0 40px 0 60px;
+        background-size: 30px;
+        background-position: left 20px center;
+        background-repeat: no-repeat;
     }
     .menu-level-1 > li > a > b{
         font-weight: 600;
