@@ -125,8 +125,16 @@
 .p-image .flag-discount .price-save{
     position: absolute;
     right: 40px;
-    top: 10px;    
+    top: 10px;  
+    padding: 10px;  
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    background: $orange-700;
 }
 .p-image .flag-discount .price-save span{
     padding: 10px;
