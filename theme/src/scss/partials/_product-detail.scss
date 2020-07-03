@@ -425,13 +425,26 @@
     position: absolute;
     font-size: 12px;
     white-space: nowrap;
-    background: rgba(0,0,0, 0.8);
+    background: $black;
     color: $white;
     left: 50%;
     top: 0;
-    transform: translate(-50%, -20px);
+    transform: translate(-50%, -24px);
     padding: 2px 5px;
     z-index: 1;
+
+    &::after{
+        content: "";
+        display: flex;
+        height: 8px;
+        width: 8px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%) rotate(45deg);
+        background: $black;
+
+    }
 }
 .variant-default{
     display: none;
