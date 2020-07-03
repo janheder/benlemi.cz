@@ -11,6 +11,11 @@
     width: 33.333%;
     text-align: center
 }
+@media screen and (max-width: 500px){
+    .kontaktyTop__col{ 
+        width: 100%;
+    }
+}
 .kontaktyTop__img{
     height: 80px;
 }
@@ -196,4 +201,15 @@
 }
 .personalProfile__link img{
     margin-right: 10px;
+}
+
+@media screen and (max-width: 991px){
+    .personalProfile{ 
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px){
+    .personalProfile{ 
+        width: 100%;
+    }
 }
