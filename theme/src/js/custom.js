@@ -614,9 +614,9 @@ if ($(".type-detail").length){
 $(window).on('scroll', function() {
     scrollPosition = $(this).scrollTop();
     if (scrollPosition >= 1000) {
-        $("body").addClass("--bottomCtaActive");
+        $(".type-detail").addClass("--bottomCtaActive");
     }else{
-        $("body").removeClass("--bottomCtaActive");
+        $(".type-detail").removeClass("--bottomCtaActive");
     }
 });
 
