@@ -11,8 +11,16 @@
     transform: translateY(100%);
     transition: 0.3s ease transform;
 }
-.bottomCta.--active{
-    transform: translateY(0%);
+.--bottomCtaActive{
+
+    .bottomCta{
+        transform: translateY(0%);
+    }
+    @media (max-width: 991px){
+        #chat-application{
+            bottom: 70px !important;
+        }
+    }
 }
 .bottomCta__container{
     margin: 0 auto;

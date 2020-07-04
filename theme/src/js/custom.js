@@ -614,9 +614,9 @@ if ($(".type-detail").length){
 $(window).on('scroll', function() {
     scrollPosition = $(this).scrollTop();
     if (scrollPosition >= 1000) {
-        $(".bottomCta").addClass("--active");
+        $("body").addClass("--bottomCtaActive");
     }else{
-        $(".bottomCta").removeClass("--active");
+        $("body").removeClass("--bottomCtaActive");
     }
 });
 
