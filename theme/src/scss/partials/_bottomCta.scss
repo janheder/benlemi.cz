@@ -16,10 +16,8 @@
     .bottomCta{
         transform: translateY(0%);
     }
-    @media (max-width: 991px){
-        #chat-application{
-            bottom: 68px !important;
-        }
+    #chat-application{
+        bottom: 68px !important;
     }
     @media (max-width: 575px){
         #chat-application{
