@@ -1,5 +1,7 @@
 .in-404{
-    
+    header h1{
+        display: none;
+    }
 }
 .empty-content-404{
     display: flex;
@@ -9,7 +11,26 @@
     text-align: center;
 }
 .empty-content-404 h1{
-    
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    color: $gray-800;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 6px;
+        width: 40px;
+        background: $green-200;
+    }
 }
 .empty-content-404 h1 + p{
     max-width: 700px;
@@ -20,7 +41,10 @@
 .empty-content-404 p{
     
 }
-.empty-content-404 p a{
-    
+.empty-content-404 img{
+    max-width: 600px;
+}
+.empty-content-404 a{
+    margin-top: 40px;
 }
 
