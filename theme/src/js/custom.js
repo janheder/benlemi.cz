@@ -300,7 +300,11 @@ if ($("#p-detail-tabs").length){
 
 /* load infographic images into parameters */
 if ($("#relatedFiles").length){
-    $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
+    
+    if($('main select[data-parameter-name="' + g_propositions + '"]').length){
+        $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
+    }
+    
     $('main select[data-parameter-name="' + g_propositions + '"]').change(function() {
         $(".description-infographics").remove();
         var option = $('main select[data-parameter-name="' + g_propositions + '"] option:selected').text(); 
