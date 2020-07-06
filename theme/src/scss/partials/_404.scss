@@ -3,14 +3,14 @@
         display: none;
     }
 }
-.empty-content-404{
+.page404Section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.empty-content-404 h1{
+.page404Section__title{
     text-align: center;
     position: relative;
     display: flex;
@@ -32,19 +32,13 @@
         background: $green-200;
     }
 }
-.empty-content-404 h1 + p{
-    max-width: 700px;
+.page404Section__text{
+    max-width: 700px; 
 }
-.empty-content-404 h2{
-    
-}
-.empty-content-404 p{
-    
-}
-.empty-content-404 img{
+.page404Section__img{
     max-width: 600px;
 }
-.empty-content-404 a{
+.page404Section__btn{
     margin-top: 40px;
 }
 
