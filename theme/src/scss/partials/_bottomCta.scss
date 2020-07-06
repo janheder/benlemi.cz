@@ -11,6 +11,10 @@
     transform: translateY(100%);
     transition: 0.3s ease transform;
 }
+#chat-application{
+    transition: 0.3s ease all !important;
+}
+
 .--bottomCtaActive{
 
     .bottomCta{

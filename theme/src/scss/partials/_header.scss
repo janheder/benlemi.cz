@@ -75,6 +75,10 @@ body.ordering-process #header.scroll::before, body.type-detail #header.scroll::b
     box-shadow: none;
 }
 
+.in-dekujeme .header-top, .in-thank-you .header-top{
+    border-bottom: 1px solid $gray-400;
+}
+
 
 .ordering-process{
     .header-top{
