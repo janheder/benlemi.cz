@@ -632,6 +632,9 @@ if ($(".advanced-parameter").length){
 }
 
 
+/* remove parameters */
+$('.detail-parameters tr th:contains("' + g_category + ':"), .detail-parameters tr th:contains("' + g_propositions + ':"), .detail-parameters tr th:contains("' + g_color + ':"), .detail-parameters tr th:contains("' + g_model + ':")').parents('tr').remove();
+
 
 
 // -----------------------------------------------------------------------------

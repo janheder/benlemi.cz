@@ -92,6 +92,8 @@ var g_ratingUrl = "hodnoceni-obchodu";
 
 var g_priceFree = 1234;
 
+var g_category = "Kategorie";
+var g_model = "Model";
 
 /* page names */
 

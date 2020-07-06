@@ -94,7 +94,8 @@ var g_ratingUrl = "store-rating";
 
 var g_priceFree = 1234;
 
-
+var g_category = "Category";
+var g_model = "Model";
 
 /* page names */
 
