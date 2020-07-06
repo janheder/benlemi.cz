@@ -1,6 +1,7 @@
 
 .kontaktyTop{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: 40px 0 60px 0;
     background: $white;
@@ -14,6 +15,7 @@
 @media screen and (max-width: 500px){
     .kontaktyTop__col{ 
         width: 100%;
+        padding: 10px 0;
     }
 }
 .kontaktyTop__img{
@@ -69,7 +71,11 @@
     flex-grow: 1;
     margin-left: 40px;
 }
-
+@media screen and (max-width: 767px){
+    .kontakty__infoMap{
+        margin: 0;
+    }
+}
 .kontakty__showroom{
     padding-bottom: 60px;
     margin-bottom: 60px;
