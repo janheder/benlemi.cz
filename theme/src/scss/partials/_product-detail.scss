@@ -425,6 +425,18 @@
     &:hover{
         .advanced-parameter-tooltip{
             display: flex;
+            
+            &::after{
+                content: "";
+                display: flex;
+                height: 8px;
+                width: 8px;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translate(-50%, 50%) rotate(45deg);
+                background: $black;
+            }
         }
     }
 }
@@ -441,18 +453,7 @@
     padding: 2px 5px;
     z-index: 1;
 
-    &::after{
-        content: "";
-        display: flex;
-        height: 8px;
-        width: 8px;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, 50%) rotate(45deg);
-        background: $black;
 
-    }
 }
 .variant-default{
     display: none;
