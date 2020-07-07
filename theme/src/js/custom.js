@@ -89,7 +89,7 @@ if ($(".search").length){
     '<a href="mailto:' + mail + '">' + mail + '</a>'+
     '</div>');
 
-    if($(":lang(en)").length){
+    if($("html:lang(en)").length){
         $(".header-contacts").append('<span>Mon–Fri 9:30 a.m.– 4:00 p.m</span>');
     }
 }
