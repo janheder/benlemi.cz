@@ -442,6 +442,12 @@ header + .content-wrapper .content-wrapper-in{
 .cognitoWrap .cognito{
     max-width: 760px;
 }
+.cognitoWrap .cognito .c-forms-form button:not(.c-icon-button){
+    background: #e39101;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
 
 /* ========================================================================== */
 /* BENLEMI.SK SPECIFIC EDITS */
