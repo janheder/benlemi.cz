@@ -472,6 +472,9 @@
     border: 2px solid $gray-400;
     cursor: pointer;
 }
+.advanced-parameter-inner.yes-before{
+    border-color: $green-700;
+}
 .advanced-parameter-inner.yes-before::after{
     content: "";
     background-image: url("../icons/check.svg");
