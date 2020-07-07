@@ -425,7 +425,7 @@
     &:hover{
         .advanced-parameter-tooltip{
             display: flex;
-            
+
             &::after{
                 content: "";
                 display: flex;
@@ -453,7 +453,9 @@
     padding: 2px 5px;
     z-index: 1;
 
-
+    &::after{
+        content: none;
+    }
 }
 .variant-default{
     display: none;
