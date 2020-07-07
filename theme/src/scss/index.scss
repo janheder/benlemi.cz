@@ -434,8 +434,14 @@ header + .content-wrapper .content-wrapper-in{
     font-weight: 600;
 }
 
-
-
+.cognitoWrap{
+    background: $gray-300;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+.cognitoWrap .cognito{
+    max-width: 760px;
+}
 
 /* ========================================================================== */
 /* BENLEMI.SK SPECIFIC EDITS */

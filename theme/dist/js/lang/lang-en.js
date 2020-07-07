@@ -87,6 +87,7 @@ var g_showFilter = "Show filter";
 var g_hideFilter = "Hide filtr";
 var g_fullDescription = "Full description";
 var g_totalQuantity = "Total quantity";
+var g_blogText = "Advices and inspiration for trend lovers and responsible parents.";
 
 var g_moreRating = "More ratings";
 

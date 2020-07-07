@@ -85,6 +85,7 @@ var g_showFilter = "Zobraziť filter";
 var g_hideFilter = "Skryť filter";
 var g_fullDescription = "Celý popis";
 var g_totalQuantity = "Položiek celkom";
+var g_blogText = "Advices and inspiration for trend lovers and responsible parents.";
 
 var g_moreRating = "Ďalšie hodnotenie";
 
