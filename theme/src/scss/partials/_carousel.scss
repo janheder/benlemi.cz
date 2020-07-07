@@ -90,12 +90,17 @@
         height: auto;
         margin-top: -10px;
     }
+    .carousel-inner{
+        min-height: none !important;
+    }
     .carousel-inner .item{
         position: relative;
         height: auto;
     }
     .carousel-inner .item a {
         height: auto;
+        justify-content: center;
+        align-items: center;
     }
     .carousel-inner .item a img {
         object-fit: initial;
