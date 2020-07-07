@@ -215,7 +215,7 @@ if ($(".site-msg").length){
         $(".site-msg").insertBefore(".breadcrumbs");
     } 
     if ($(".before-carousel").length){
-        $(".site-msg").insertBefore(".before-carousel");
+        $(".site-msg").insertAfter("#header");
     } 
 }
 
