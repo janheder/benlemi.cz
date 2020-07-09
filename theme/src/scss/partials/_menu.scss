@@ -201,6 +201,13 @@
     display: none;
 }
 
+.menu-level-1 > li > a[href="/vyprodej/"], .menu-level-1 > li > a[href="/vypredaj/"]{
+    background-image: url("../img/vyprodej.png");
+    padding: 0 20px 0 54px;
+    background-size: 24px;
+    background-position: left 20px center;
+    background-repeat: no-repeat;
+}
 
 @media screen and (max-width: 991px){
     header::before {
@@ -247,11 +254,8 @@
         background-image: url("../img/textil.png");
     }
     .menu-level-1 > li > a[href="/vyprodej/"], .menu-level-1 > li > a[href="/vypredaj/"]{
-        background-image: url("../img/vyprodej.png");
-        padding: 0 40px 0 60px;
         background-size: 30px;
-        background-position: left 20px center;
-        background-repeat: no-repeat;
+        padding: 0 40px 0 60px;
     }
     .menu-level-1 > li > a > b{
         font-weight: 600;

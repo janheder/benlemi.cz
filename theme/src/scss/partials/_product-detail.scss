@@ -425,6 +425,18 @@
     &:hover{
         .advanced-parameter-tooltip{
             display: flex;
+
+            &::after{
+                content: "";
+                display: flex;
+                height: 8px;
+                width: 8px;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translate(-50%, 50%) rotate(45deg);
+                background: $black;
+            }
         }
     }
 }
@@ -442,16 +454,7 @@
     z-index: 1;
 
     &::after{
-        content: "";
-        display: flex;
-        height: 8px;
-        width: 8px;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, 50%) rotate(45deg);
-        background: $black;
-
+        display: none;
     }
 }
 .variant-default{
@@ -468,6 +471,9 @@
     position: relative;
     border: 2px solid $gray-400;
     cursor: pointer;
+}
+.advanced-parameter-inner.yes-before{
+    border-color: $green-700;
 }
 .advanced-parameter-inner.yes-before::after{
     content: "";

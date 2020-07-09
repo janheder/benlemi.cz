@@ -89,7 +89,7 @@ if ($(".search").length){
     '<a href="mailto:' + mail + '">' + mail + '</a>'+
     '</div>');
 
-    if($(":lang(en)").length){
+    if($("html:lang(en)").length){
         $(".header-contacts").append('<span>Mon–Fri 9:30 a.m.– 4:00 p.m</span>');
     }
 }
@@ -215,7 +215,7 @@ if ($(".site-msg").length){
         $(".site-msg").insertBefore(".breadcrumbs");
     } 
     if ($(".before-carousel").length){
-        $(".site-msg").insertBefore(".before-carousel");
+        $(".site-msg").insertAfter("#header");
     } 
 }
 
@@ -694,6 +694,8 @@ if ($(".blogCategories").length){
         $("<h2 class='blogCategories__sectionTitle'>" + category4 + "</h2>").insertBefore(".blogCategories .blogCategories__benlemi-pomaha");
         $("<div class='blogCategories__sectionShowMore'><a href='/" + category4Url + "/' class='blogCategories__sectionShowMoreLink'>" + g_moreArticles + "</a></div>").insertAfter(".blogCategories__benlemi-pomaha .blogCategories__section .news-item:nth-child(2)");    
     });
+
+    $('<p style="text-align: center;">' + g_blogText + '</p>').insertAfter(".type-posts-listing .content-inner h1");
 
 }
 

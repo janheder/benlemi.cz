@@ -430,13 +430,29 @@ header + .content-wrapper .content-wrapper-in{
 }
 
 
+.content-inner strong, .content-inner b{
+    font-weight: 600;
+}
 
-
+.cognitoWrap{
+    background: $gray-300;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+.cognitoWrap .cognito{
+    max-width: 760px;
+}
+.cognitoWrap .cognito .c-forms-form button:not(.c-icon-button){
+    background: #e39101;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
 
 /* ========================================================================== */
 /* BENLEMI.SK SPECIFIC EDITS */
 /* ========================================================================== */
-:lang(cs){
+html:lang(cs){
     .flag-custom2{
         display: none !important;
     }
@@ -446,7 +462,7 @@ header + .content-wrapper .content-wrapper-in{
 /* BENLEMI.SK SPECIFIC EDITS */
 /* ========================================================================== */
 
-:lang(sk){
+html:lang(sk){
     .type-product #descriptionLong::before{
         background-image: url("../img/sk/vyroba-banner.png");
     }
@@ -478,7 +494,7 @@ header + .content-wrapper .content-wrapper-in{
 /* ========================================================================== */
 
 
-:lang(en){
+html:lang(en){
     .delivery-time-label, .delivery-time{
         display: none;
     }
