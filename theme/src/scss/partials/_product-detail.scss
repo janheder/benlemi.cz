@@ -1113,7 +1113,7 @@
 }
 
 #productsAlternative, a[href="#productsAlternative"]{
-    display: none;
+    display: none !important;
 }
 
 div[id^="crossSelling"]{
