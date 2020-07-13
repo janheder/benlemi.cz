@@ -530,7 +530,7 @@ $(document).ready(function() {
 
 
 /* Adjust price displaying */
-
+/*
 if ($(":lang(cs) .type-detail").length){
 
     $(".price-final span").each(function() {
@@ -567,6 +567,7 @@ if ($(":lang(cs) .type-detail").length){
         var str1 = $(this).append("<span class='price-final-dph'> " + g_excludingVat + "</span>");
     });
 }
+*/
 
 /* rename titles */
 if ($(".type-detail").length){

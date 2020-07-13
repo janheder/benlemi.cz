@@ -105,8 +105,8 @@ var category2 = "Rodina";
 var category2Url = "blog-rodina";
 var category3 = "Novinky";
 var category3Url = "blog-novinky";
-var category4 = "Benlemi pomáhá";
-var category4Url = "blog-benlemi-pomaha";
+var category4 = "Život v Benlemi";
+var category4Url = "blog-zivot-v-benlemi";
 
 
 var g_registrationUrl = "registrace";
@@ -130,5 +130,7 @@ var g_inClientDocumentsUrl = "klient-doklady";
 var g_inClientDiscussionUrl = "klient-diskuze";
 var g_inForgotPasswordUrl = "zapomenute-heslo";
 
-
+var relatedCats = "";
+/*
 var relatedCats = ".in-children-s-wooden-house-beds";
+*/

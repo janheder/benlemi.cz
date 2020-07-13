@@ -132,5 +132,7 @@ var g_inClientDocumentsUrl = "klient-doklady";
 var g_inClientDiscussionUrl = "klient-diskusia";
 var g_inForgotPasswordUrl = "zabudnute-heslo";
 
-
+var relatedCats = "";
+/*
 var relatedCats = ".in-children-s-wooden-house-beds";
+*/
