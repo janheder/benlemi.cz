@@ -369,10 +369,9 @@ if ($(relatedCats).length){
                 $("#crossSelling" + ran).find("select").attr("data-parameter-id", ran + 1000);
             });
 
-            $("#product-detail-form div[data-parameter-name='" + g_color + "'] input").change(function(){
-                var selected = $("#product-detail-form .advanced-parameter-inner.yes-before").data("original-title");
-                alert(selected);
-                $("#crossSelling" + ran + " .advanced-parameter-inner[title=" + selected + "]").siblings("input").prop("checked", true);
+            $("#product-detail-form div[data-parameter-name='" + g_color + "'] input").click(function(){
+                var selected = $(this).siblings(".parameter-value").text();
+                $("#crossSelling" + ran + " .advanced-parameter-inner[title='" + selected + "']").siblings("input").prop("checked", true);
             });
 
             $("#product-detail-form select[data-parameter-name='" + g_color + "']").change(function() {
@@ -424,6 +423,9 @@ if ($(relatedCats).length){
             if ($("#product-detail-form select[data-parameter-name='" + g_color + "']").length){
                 var one = $("#product-detail-form select[data-parameter-name='" + g_color + "']").attr("data-parameter-id");
                 var two = $("#product-detail-form select[data-parameter-name='" + g_color + "']").find("option:selected").prop("value");
+            }else if($("#product-detail-form div[data-parameter-name='" + g_color + "']").length){
+                var one = $("#product-detail-form select[data-parameter-name='" + g_color + "']").attr("data-parameter-id");
+                var two = $("#product-detail-form select[data-parameter-name='" + g_color + "']").find("input:checked").prop("value");
             };
 
             if ($("#product-detail-form select[data-parameter-name='" + g_propositions + "']").length){

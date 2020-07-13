@@ -23,6 +23,8 @@ var g_accessories = "Doplňky";
 
 var g_color = "Barva";
 var g_propositions = "Rozměr";
+var g_colorOfPrism = "Barva hranolů";
+var g_surfaceColor = "Barva ploch";
 
 var g_product = "Produkt";
 var g_availability = "Dostupnost";
