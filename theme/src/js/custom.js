@@ -352,10 +352,11 @@ $('.p-info-wrapper a[href="#description"]').text(g_showMoreInfo);
 
 /* Cross selling products */
 if ($(relatedCats).length){
-    if ($("#productsRelated .flag-custom1").length){
+
+    if ($("#productsRelated .flag-custom2").length){
         var i=0;
-        $("#productsRelated .flag-custom1").each(function(i){
-            var ran = i+1; 
+        $("#productsRelated .flag-custom2").each(function(i){
+            var ran = i+1;
             var pName = $(this).closest(".p").find(".name").prop("title");
             var pImg = $(this).closest(".p").find(".image img").prop("src");
             var pPrice = $(this).closest(".p").find(".price-final strong").text();
@@ -366,6 +367,12 @@ if ($(relatedCats).length){
             $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
                 $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
                 $("#crossSelling" + ran).find("select").attr("data-parameter-id", ran + 1000);
+            });
+
+            $("#product-detail-form div[data-parameter-name='" + g_color + "'] input").change(function(){
+                var selected = $("#product-detail-form .advanced-parameter-inner.yes-before").data("original-title");
+                alert(selected);
+                $("#crossSelling" + ran + " .advanced-parameter-inner[title=" + selected + "]").siblings("input").prop("checked", true);
             });
 
             $("#product-detail-form select[data-parameter-name='" + g_color + "']").change(function() {
