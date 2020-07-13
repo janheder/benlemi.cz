@@ -10,7 +10,7 @@ if ($("#homepageSection").length){
 
 /* load blog posts into homepage section */
 if ($("#blogSection").length){
-    $("#blogSection .blogSection__content").load("/" + category1Url + "/ .news-wrapper");
+    $("#blogSection .blogSection__content").load("/" + category1Url + "/ .news-wrapper .news-item:nth-child(n+3)");
 }
 
 /* load rating into homepage section */
