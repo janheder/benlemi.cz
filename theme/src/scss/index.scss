@@ -453,8 +453,22 @@ header + .content-wrapper .content-wrapper-in{
 /* BENLEMI.CZ SPECIFIC EDITS */
 /* ========================================================================== */
 html:lang(cs){
-    .flag-custom2{
+    .flag-custom1{
         display: none !important;
+    }
+    .tri-na-radku{
+        display: none !important;
+    }
+    .category-perex img{
+        display: none;
+    }
+    .menu-level-1 > li:nth-child(4){
+        flex-grow: 0;
+    }
+    .menu-level-1 > li:nth-child(5){
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
