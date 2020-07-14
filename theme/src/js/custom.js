@@ -153,7 +153,7 @@ if ($(":lang(cs)").length){
         $("#js-langToggle").toggleClass("--active");
     });
 } 
-else if($(":lang(en)").length){
+else if($("html:lang(en)").length){
     $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item com active">English</div><a href="https://www.benlemi.cz" class="language-toggle-item cz">Czech</a><a href="https://benlemi.sk" class="language-toggle-item sk">Slovak</a></div></div>');
     $("#js-langToggle").click(function(){
         $("#js-langToggle").toggleClass("--active");
@@ -167,11 +167,9 @@ else if($(":lang(sk)").length){
 }
 
 
-
-
 /* free delivery fucntion */
 function freeDelivery(){ 
-    if($(":lang(en)").length){
+    if($("html:lang(en)").length){
 
         $("<div class='headerFreeDelivery free'>Worldwide shipping</div>").insertAfter(".navLinks");
     }
