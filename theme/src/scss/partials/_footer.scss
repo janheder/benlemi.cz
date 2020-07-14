@@ -131,6 +131,15 @@ footer{
         top: 0;
     }
 }
+
+.eet-message{
+
+}
+.eet-message-inner{
+    font-size: 14px;
+    color: $gray-700;
+}
+
 @media screen and (max-width: 991px){
     .footer-bottom{
         flex-direction: column;

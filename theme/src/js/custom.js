@@ -496,10 +496,16 @@ $(document).ready(function() {
 
             var img = $(".p-image-wrapper a").html();
             var name = $(".p-detail-inner-header h1").html();
-            var stock = $(".availability-value .parameter-dependent:not(.no-display) span").html();
+            if($(".parameter-dependent").length){
+                var stock = $(".availability-value .parameter-dependent:not(.no-display) span").html();
+            }else{
+                var stock = $(".availability-value .availability-label span").html();
+            }
             var amount = parseInt($(".add-to-cart .amount").val());
             var priceSingle = $(".p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
             var priceTotal = parseFloat(priceSingle.split('<')[0].replace('€', '').replace(',', '.')).toFixed(2) * amount;
+            if($(":lang(cs)").length){var priceTotal = parseInt(priceSingle.replace('Kč', '').replace(/ /g,'')) * amount;}
+            if($(":lang(cs)").length){var priceTotalcurrency = priceTotal + " " + g_currency;}else{var priceTotalcurrency = g_currency + priceTotal;}
 
             $(".extras-wrap").prepend('<div class="extras-product-heading"><span>' + g_product + '</span><span>' + g_availability + '</span><span>' + g_quantity +'</span><span>' + g_price + '</span></div><div class="extras-product">' + 
             '<div class="extras-product-img">' + img + '</div>' + 
@@ -507,7 +513,7 @@ $(document).ready(function() {
             '<div class="extras-product-stock">' + stock + '</div>' +
             '<div class="extras-product-amount">' + amount + ' ' + g_pieces + '</div>' +
             '<div class="extras-product-priceSingle">' + priceSingle + '</div>' +
-            '<div class="extras-product-priceTotal">' + priceTotal + g_currency + ' </div>' +
+            '<div class="extras-product-priceTotal">' + priceTotalcurrency + ' </div>' +
             '</div>');
 
             $(".detail-cross-selling.checked").each(function(){
