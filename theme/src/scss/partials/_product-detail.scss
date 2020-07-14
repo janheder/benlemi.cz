@@ -295,6 +295,9 @@
 .p-final-price-wrapper .price-standard > span{
     padding-right: 10px;
 }
+.p-final-price-wrapper .price-standard > span.empty{
+    display: none;
+}
 .p-final-price-wrapper .price-save{
     display: none;
 }
