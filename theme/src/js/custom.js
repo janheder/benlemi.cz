@@ -249,6 +249,14 @@ if ($(".stars-wrapper").length){
     $(".stars-wrapper").insertBefore(".p-final-price-wrapper");
 }
 
+
+/* make advanced parameters required */
+if ($(".advanced-parameter").length){
+    $(".advanced-parameter input").prop("required", true);
+    $(".hidden-split-parameter[data-parameter-name='Barva'] span input").prop("required", true).removeAttr("checked");
+}
+
+
 /* load shop rating */
 if ($(".type-detail").length){
     $("#ratingTab").wrapInner("<div id='ratingProduct'></div>");
