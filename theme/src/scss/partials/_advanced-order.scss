@@ -181,10 +181,89 @@
     background: #eee;
 }
 
+
+
+.extras-product-heading{
+    display: flex;
+    width: 100%;
+    padding-bottom: 5px;
+
+    span{
+        color: $gray-700;
+        font-size: 13px;
+    }
+    span:first-child{
+        width: calc(25% + 80px);
+    }
+    span{
+        width:25%;
+    }
+    span:last-child{
+        width: auto;
+        flex-grow: 1;
+    }
+}
+
+.extras-product{
+    display: flex;
+    border-top: 1px solid $gray-400;
+    border-bottom: 1px solid $gray-400;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+}
+.extras-product-img{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.extras-product-name{
+    padding: 0 20px;
+    width: 25%;
+    align-items: center;
+    display: flex;
+}
+.extras-product-stock{
+    width: 25%;
+    color: $green-700;
+    align-items: center;
+    display: flex;
+}
+.extras-product-amount{
+    width: 25%;
+    align-items: center;
+    display: flex;
+}
+.extras-product-priceSingle{
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    color: $red-700;
+    font-weight: 700;
+    display: none;
+
+    .price-final-currency{
+        font-size: 14px;
+    }
+}
+.extras-product-priceTotal{
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    color: $red-700;
+    font-weight: 700;
+}
+
+
+
 @media screen and (max-width: 991px){
 
     #colorbox .advanced-order .h1{
         padding: 40px 20px 10px 20px;
+        font-size: 24px;
     }
     #colorbox .advanced-order .advanced-order-suggestion{
         padding: 40px 20px 10px 20px;
@@ -206,5 +285,25 @@
     #colorbox #backToShop{
         margin: 0;
         margin-bottom: 20px;
+    }
+    .extras-product-heading{
+        display: none;
+    }
+    .extras-product {
+        flex-wrap: wrap;
+    }
+    .extras-product-name{
+        padding: 0 10px;
+        width: calc( 100% - 80px );
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+    }
+    .extras-product-stock{
+        width: auto;
+        flex-grow: 1;
+    }
+    .extras-product-priceTotal{
+        text-align: right;
     }
 }
