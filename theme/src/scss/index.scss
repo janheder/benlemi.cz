@@ -317,6 +317,30 @@ header + .content-wrapper .content-wrapper-in{
 
 
 
+.hidden-split-parameter[data-parameter-name='Barva'] {
+    position: relative;
+    display: inline-flex;
+    padding: 5px 0;
+}
+.hidden-split-parameter[data-parameter-name='Barva'] > span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.hidden-split-parameter[data-parameter-name='Barva'] > span input{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+.hidden-split-parameter[data-parameter-name='Barva'] > span input:focus{
+    border: 1px solid $red-700;
+}
+
 
 .p-detail-tabs-wrapper .p-detail-tabs a[href="#manufacturerDescription"]{
     display: none;
