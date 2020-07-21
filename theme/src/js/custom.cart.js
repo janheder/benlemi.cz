@@ -7,6 +7,10 @@ if ($(".ordering-process").length){
     $(".cart-header").insertBefore('.content-wrapper-in');
 }
 
+/* remove duplicated label for user discount */
+if ($(".ordering-process").length){
+    $(".p-discount.p-cell .p-label:first-child").remove();
+}
 
 /* add heading to cart table */
 if ($(".cart-table").length){
@@ -83,3 +87,6 @@ $(".showMoreRelated").click(function(){
     $(this).parent(".related").addClass("visible");
     $(this).remove();
 });
+
+
+$(".cart-summary .extras-wrap .extra.discount").text("Zaregistrujte se a získáte slevu 3 %");

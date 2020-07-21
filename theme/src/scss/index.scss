@@ -384,6 +384,16 @@ header + .content-wrapper .content-wrapper-in{
     font-weight: 600;
 }
 
+
+.co-basic-information .col-sm-6{
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.co-basic-information .col-sm-6:last-child{
+    display: none;
+}
+
 .cognitoWrap{
     background: $gray-300;
     padding: 40px 20px;

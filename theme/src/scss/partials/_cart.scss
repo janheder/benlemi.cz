@@ -253,6 +253,11 @@
         padding: 0 10px;
         width: 15%;
     }
+    .cart-table .p-cell span:last-child{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
     .cart-table .p-availability{
         display: flex;
         flex-wrap: wrap;
@@ -564,6 +569,9 @@
     color: $green-800;
     background: $green-100;
     text-align: right;
+}
+.cart-summary .extras-wrap .extra.discount{
+    margin-top: 20px;
 }
 .cart-summary .free-gift{
     margin-bottom: 20px;

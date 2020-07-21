@@ -378,6 +378,9 @@
         background-repeat: no-repeat;
         background-size: contain;
         width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre;
     }
 }
 .navLinks__link:first-child{
