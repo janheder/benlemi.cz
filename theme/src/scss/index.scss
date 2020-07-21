@@ -336,6 +336,7 @@ header + .content-wrapper .content-wrapper-in{
     -webkit-appearance: none;
     appearance: none;
     border-radius: 0;
+    border: 0;
 }
 .hidden-split-parameter[data-parameter-name='Barva'] > span input:focus{
     border: 1px solid $red-700;
