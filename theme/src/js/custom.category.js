@@ -22,7 +22,7 @@ if ($(".filters-wrapper").length){
     });
 }
 
-/* rename show more button */
+/* rename show more button */;
 if ($(".pagination-loader").length){
     $(".pagination-loader span").text(g_showMore);
 }
@@ -35,9 +35,13 @@ if ($(".product").length){
         if ($(this).find(".price-final strong > small").length){
             $(this).find(".name").append("<span class='p-variants'>" + g_moreVariants + "</span>");
         }
-
+        $(this).find(".flags-default").insertBefore($(this).find(".p-in-in"));
     });
 }
+
+/* relocate flags on mobile */
+
+
 
 /* category header edit */
 if ($("#category-header").length){
