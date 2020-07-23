@@ -495,10 +495,8 @@ $(document).ready(function() {
     }
 });
 
-/* add button into advanced order modal */
-$(document).ready(function() {
-    $(".add-to-cart-button").click(function(){
-        setTimeout(function(){
+/* add button into advanced order modal - call this function in shoptet core js */
+function advanceOrderCustom() {
 
             var img = $(".p-image-wrapper a").html();
             var name = $(".p-detail-inner-header h1").html();
@@ -536,9 +534,8 @@ $(document).ready(function() {
             $("#backToShop").click(function(){
                 $("#cboxClose").click();
             });
-        }, 1000);
-    });
-});
+     
+}
 
 
 /* Adjust price displaying */
