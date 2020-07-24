@@ -8,9 +8,11 @@ if ($(".ordering-process").length){
 }
 
 /* remove duplicated label for user discount */
-if ($(".ordering-process").length){
-    $(".p-discount.p-cell .p-label:first-child").remove();
+if ($("html:lang(cs) .ordering-process").length){
+    $(".cart-table-heading span:contains('Sleva')").remove();
+    $("<span>Sleva</span>").insertBefore(".cart-table-heading span:contains('Součet')");
 }
+
 
 /* add heading to cart table */
 if ($(".cart-table").length){
