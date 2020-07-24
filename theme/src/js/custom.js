@@ -495,7 +495,7 @@ $(document).ready(function() {
     }
 });
 
-/* add button into advanced order modal - call this function in shoptet core js */
+/* add button and product into advanced order modal - call this function in shoptet core js */
 function advanceOrderCustom() {
 
             var img = $(".p-image-wrapper a").html();
@@ -527,7 +527,7 @@ function advanceOrderCustom() {
 
 
             $("#backToShop").remove();
-            $(".extra.step").prepend("<div class='btn' id='backToShop'>" + g_backToStore + "</div>");
+            $(".extra.step").prepend("<div class='btn' id='backToShop'>" + g_backToStore + "</div><div style='flex-grow:1;'></div>");
             $(".advanced-order .extra.step .btn-conversion").text(g_viewCart);
             $(".advanced-order .h1").text(g_addedToCart);
             $(".advanced-order .h1.advanced-order-suggestion").text(g_youMightLike);
