@@ -7,13 +7,6 @@ if ($(".ordering-process").length){
     $(".cart-header").insertBefore('.content-wrapper-in');
 }
 
-/* remove duplicated label for user discount */
-if ($("html:lang(cs) .ordering-process").length){
-    $(".cart-table-heading span:contains('Sleva')").remove();
-    $("<span>Sleva</span>").insertBefore(".cart-table-heading span:contains('Součet')");
-}
-
-
 /* add heading to cart table */
 if ($(".cart-table").length){
     $("<div class='cart-table-heading'></div>").insertBefore(".content-wrapper-in");
@@ -25,6 +18,11 @@ if ($(".cart-table").length){
     });
 }
 
+/* remove duplicated label for user discount */
+if ($("html:lang(cs) .ordering-process .cart-table-heading span:contains('Sleva')").length){
+    $(".cart-table-heading span:contains('Sleva')").remove();
+    $("<span>Sleva</span>").insertBefore(".cart-table-heading span:contains('Součet')");
+}
 
 /* add 4. step */
 if ($(".ordering-process").length){
@@ -32,6 +30,7 @@ if ($(".ordering-process").length){
     $(".cart-header .step-2 span").text(g_deliveryAndPayment);
     $(".cart-header .step-3 span").text(g_contactInfo);
 }
+
 
 /*
     if ($(".ordering-process").length){
