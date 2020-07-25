@@ -35,12 +35,16 @@ if ($(".product").length){
         if ($(this).find(".price-final strong > small").length){
             $(this).find(".name").append("<span class='p-variants'>" + g_moreVariants + "</span>");
         }
-        $(this).find(".flags-default").insertBefore($(this).find(".p-in-in"));
     });
 }
 
 /* relocate flags on mobile */
 
+if ($(".mobile .product").length){
+    $(".product").each(function(){
+        $(this).find(".flags-default").insertBefore($(this).find(".p-in-in"));
+    });
+}
 
 
 /* category header edit */
