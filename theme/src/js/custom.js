@@ -167,7 +167,7 @@ else if($(":lang(sk)").length){
 }
 
 
-/* free delivery fucntion */
+/* free delivery fucntion, call in core js file */
 function freeDelivery(){ 
     if($("html:lang(en)").length){
 
@@ -201,11 +201,6 @@ function freeDelivery(){
 }
 freeDelivery();
 
-$(".add-to-cart .add-to-cart-button").click(function(){
-    setTimeout(function(){
-        freeDelivery();
-    }, 1000);
-});
 
 /* relocate site message */
 if ($(".site-msg").length){
