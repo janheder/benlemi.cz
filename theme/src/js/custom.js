@@ -496,12 +496,12 @@ function advanceOrderCustom() {
             var img = $(".overall-wrapper .p-image-wrapper a").html();
             var name = $(".overall-wrapper .p-detail-inner-header h1").html();
             if($(".overall-wrapper .parameter-dependent").length){
-                var stock = $(".overall-wrapper .availability-value .parameter-dependent:not(.no-display) span").html();
+                var stock = $(".overall-wrapper .availability-value .parameter-dependent:not(.no-display) span, .overall-wrapper .availability-value .parameter-dependen.force-display span").html();
             }else{
                 var stock = $(".overall-wrapper .availability-value .availability-label span").html();
             }
             var amount = parseInt($(".overall-wrapper .add-to-cart .amount").val());
-            var priceSingle = $(".overall-wrapper .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
+            var priceSingle = $(".overall-wrapper .p-final-price-wrapper .price-final-holder:not(.noDisplay), .overall-wrapper .p-final-price-wrapper .price-final-holder.force-display").html();
             var priceTotal = parseFloat(priceSingle.split('<')[0].replace('€', '').replace(',', '.')).toFixed(2) * amount;
             if($("html:lang(cs)").length){var priceTotal = parseInt(priceSingle.replace('Kč', '').replace(/ /g,'')) * amount;}
             if($("html:lang(cs)").length){var priceTotalcurrency = priceTotal + " " + g_currency;}else{var priceTotalcurrency = g_currency + priceTotal;}

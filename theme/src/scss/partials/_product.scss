@@ -153,6 +153,14 @@
 }
 .p .prices{
     color: $red-700;
+    display: flex;
+    flex-direction: column;
+}
+.p .prices span{
+    color: $gray-700;
+    text-decoration: line-through;
+    font-size: 13px;
+    line-height: 1;
 }
 .p .price-final{
     display: flex;
