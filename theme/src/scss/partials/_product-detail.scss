@@ -1256,6 +1256,9 @@ div[id^="crossSelling"]{
     .type-product #descriptionLong{
         &::before{
             background-image: url("../img/vyroba-banner-responsive.png");
+            height: auto;
+            padding-bottom: 65%;
+            background-color: transparent;
         }
     }
 }
