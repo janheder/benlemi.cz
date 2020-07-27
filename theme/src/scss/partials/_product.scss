@@ -250,6 +250,10 @@
     } 
     .p{
         padding: 10px 5px;
+    }   
+    .p-in{
+        border-bottom: 1px solid $gray-400;
+        padding-bottom: 20px;
     }
     .products-page .product{
         width: 50%;
