@@ -90,4 +90,4 @@ $(".showMoreRelated").click(function(){
 });
 
 
-$(".cart-summary .extras-wrap .extra.discount").text("Zaregistrujte se a získáte slevu 3 %");
+$(".cart-summary .extras-wrap .extra.discount").html('<a href="/registrace">Zaregistrujte se a získáte slevu 3 %.</div');

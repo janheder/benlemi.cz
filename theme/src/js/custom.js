@@ -420,13 +420,13 @@ if ($(relatedCats).length){
             });
         });
 
-        $("#product-detail-form select").change(function(){
+        $("#product-detail-form select, #product-detail-form input").change(function(){
             if ($("#product-detail-form select[data-parameter-name='" + g_color + "']").length){
                 var one = $("#product-detail-form select[data-parameter-name='" + g_color + "']").attr("data-parameter-id");
                 var two = $("#product-detail-form select[data-parameter-name='" + g_color + "']").find("option:selected").prop("value");
             }else if($("#product-detail-form div[data-parameter-name='" + g_color + "']").length){
-                var one = $("#product-detail-form select[data-parameter-name='" + g_color + "']").attr("data-parameter-id");
-                var two = $("#product-detail-form select[data-parameter-name='" + g_color + "']").find("input:checked").prop("value");
+                var one = $("#product-detail-form div[data-parameter-name='" + g_color + "']").attr("data-parameter-id");
+                var two = $("#product-detail-form div[data-parameter-name='" + g_color + "']").find("input:checked").prop("value");
             };
 
             if ($("#product-detail-form select[data-parameter-name='" + g_propositions + "']").length){
@@ -493,15 +493,15 @@ $(document).ready(function() {
 /* add button and product into advanced order modal - call this function in shoptet core js */
 function advanceOrderCustom() {
 
-            var img = $(".p-image-wrapper a").html();
-            var name = $(".p-detail-inner-header h1").html();
-            if($(".parameter-dependent").length){
-                var stock = $(".availability-value .parameter-dependent:not(.no-display) span").html();
+            var img = $(".overall-wrapper .p-image-wrapper a").html();
+            var name = $(".overall-wrapper .p-detail-inner-header h1").html();
+            if($(".overall-wrapper .parameter-dependent").length){
+                var stock = $(".overall-wrapper .availability-value .parameter-dependent:not(.no-display) span").html();
             }else{
-                var stock = $(".availability-value .availability-label span").html();
+                var stock = $(".overall-wrapper .availability-value .availability-label span").html();
             }
-            var amount = parseInt($(".add-to-cart .amount").val());
-            var priceSingle = $(".p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
+            var amount = parseInt($(".overall-wrapper .add-to-cart .amount").val());
+            var priceSingle = $(".overall-wrapper .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
             var priceTotal = parseFloat(priceSingle.split('<')[0].replace('€', '').replace(',', '.')).toFixed(2) * amount;
             if($("html:lang(cs)").length){var priceTotal = parseInt(priceSingle.replace('Kč', '').replace(/ /g,'')) * amount;}
             if($("html:lang(cs)").length){var priceTotalcurrency = priceTotal + " " + g_currency;}else{var priceTotalcurrency = g_currency + priceTotal;}
@@ -516,10 +516,9 @@ function advanceOrderCustom() {
             '</div>');
 
             $(".detail-cross-selling.checked").each(function(){
-                var selling = $(this).html("");
-                $(selling).insertAfter(".extras-product");
+                var selling = $(this).html();
+                $("<div class='extras-product-selling'>" + selling + "</div>").insertAfter(".extras-product");
             });
-
 
             $("#backToShop").remove();
             $(".extra.step").prepend("<div class='btn' id='backToShop'>" + g_backToStore + "</div><div style='flex-grow:1;'></div>");

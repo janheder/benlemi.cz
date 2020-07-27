@@ -267,10 +267,18 @@
 }
 .order-summary-item.price .price.price-primary{
     color: $red-800;
+    
+    span{
+        display: none;
+    }
 }
 .order-summary-item.price .price-secondary{
     font-size: 14px;
     color: $gray-700;
+
+    span{
+        display: none;
+    }
 }
 #checkoutSidebar .consents{
     font-size: 14px;

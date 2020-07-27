@@ -340,6 +340,7 @@
         align-items: center;
         padding-left: 10px;
         width: 15%;
+        flex-grow: 1px;
     }
     .p-total strong{
         color: $red-800;
