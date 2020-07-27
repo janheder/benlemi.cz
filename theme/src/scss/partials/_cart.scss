@@ -170,6 +170,7 @@
     .cart-table-heading span:first-child{
         width: 35%;
         padding-left: 0;   
+        flex-shrink: 0;
     }
     @media screen and (max-width: 991px){
         .cart-table-heading{
@@ -205,6 +206,7 @@
         flex-wrap: wrap;
         padding: 0 10px 0 20px;
         width: calc( 35% - 80px);
+        flex-shrink: 0;
     }
     .cart-table .p-name .main-link{
         font-size: 14px;
