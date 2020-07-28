@@ -88,3 +88,10 @@ if ($(".category-header").length){
 
 $(".filters-wrapper").append("<div class='filter-contact'></div>");
 $(".filter-contact").load(g_cart1Url + " .checkout-box");
+
+
+
+$(".p").each(function(){
+    var price = $(this).find(".flags .flag .price-standard").html();
+    $(this).find(".prices").prepend(price);
+});

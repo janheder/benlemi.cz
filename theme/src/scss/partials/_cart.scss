@@ -168,7 +168,7 @@
         padding: 20px 10px 0px 10px;
     }
     .cart-table-heading span:first-child{
-        width: 35%;
+        width: 40%;
         padding-left: 0;   
         flex-shrink: 0;
     }
@@ -205,7 +205,7 @@
         display: flex;
         flex-wrap: wrap;
         padding: 0 10px 0 20px;
-        width: calc( 35% - 80px);
+        width: calc( 40% - 80px);
         flex-shrink: 0;
     }
     .cart-table .p-name .main-link{
@@ -340,7 +340,7 @@
         align-items: center;
         padding-left: 10px;
         width: 15%;
-        flex-grow: 1px;
+        flex-grow: 1;
     }
     .p-total strong{
         color: $red-800;
