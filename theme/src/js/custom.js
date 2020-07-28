@@ -367,8 +367,41 @@ if ($(relatedCats).length){
 
             $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
                 $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
-                $("#crossSelling" + ran).find("select").attr("data-parameter-id", ran + 1000);
+                /*$("#crossSelling" + ran).find("select").attr("data-parameter-id", ran + 1000);*/
             });
+
+
+            $("#product-detail-form select, #product-detail-form input").change(function(){
+                setTimeout(function(){
+                if ($("#crossSelling" + ran + " select[data-parameter-name='" + g_color + "']").length){
+                    var one = $("#crossSelling" + ran + " select[data-parameter-name='" + g_color + "']").attr("data-parameter-id");
+                    var two = $("#crossSelling" + ran + " select[data-parameter-name='" + g_color + "']").find("option:selected").prop("value");
+                }else if($("#crossSelling" + ran + " div[data-parameter-name='" + g_color + "']").length){
+                    var one = $("#crossSelling" + ran + " div[data-parameter-name='" + g_color + "']").attr("data-parameter-id");
+                    var two = $("#crossSelling" + ran + " div[data-parameter-name='" + g_color + "']").find("input:checked").prop("value");
+                };
+                if ($("#crossSelling" + ran + " select[data-parameter-name='" + g_propositions + "']").length){
+                    var one2 = $("#crossSelling" + ran + " select[data-parameter-name='" + g_propositions + "']").attr("data-parameter-id");
+                    var two2 = $("#crossSelling" + ran + " select[data-parameter-name='" + g_propositions + "']").find("option:selected").prop("value");
+                };
+
+
+                if (one === undefined){
+                    var number = one2+"-"+two2;
+                }else if(one2 === undefined){
+                    var number = one+"-"+two;
+                }else{
+                    var number = one+"-"+two+"-"+one2+"-"+two2;
+                    var number2 = one2+"-"+two2+"-"+one+"-"+two; // if order is reversed
+                }
+
+                var pPrice = $("#crossSelling" + ran).find(".price-final-holder." + number).text();
+                $('.selling-'+ ran + ' label>span>span:last-child').text(pPrice);
+
+                }, 300);
+
+            });
+
 
             $("#product-detail-form div[data-parameter-name='" + g_color + "'] input").click(function(){
                 var selected = $(this).siblings(".parameter-value").text();
@@ -475,6 +508,7 @@ if ($(relatedCats).length){
 
 }
 
+/*  */
 $('.detail-cross-selling input').change(function() {
     if($(this).is(":checked")) {
         $(this).closest(".detail-cross-selling").addClass("checked");
@@ -589,7 +623,7 @@ if ($(".type-detail").length){
         $('.quantity input').val(inputValue);
     });
     $("#bottomCtaButton").click(function(){
-        $('.add-to-cart-button').click();
+        $('#product-detail-form').submit();
     });
 
     $(".bottomCta__spinner .increase").click(function(){

@@ -1255,7 +1255,7 @@ div[id^="crossSelling"]{
 @media screen and (max-width: 500px){
     .type-product #descriptionLong{
         &::before{
-            background-image: url("../img/vyroba-banner-responsive.png");
+            background-image: url("../img/vyroba-banner-responsive.png?v=2");
             height: auto;
             padding-bottom: 65%;
             background-color: transparent;

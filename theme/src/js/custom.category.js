@@ -40,7 +40,7 @@ if ($(".product").length){
 
 /* relocate flags on mobile */
 
-if ($(".mobile .product").length){
+if ($(".product").length){
     $(".product").each(function(){
         $(this).find(".flags-default").insertBefore($(this).find(".p-in-in"));
     });

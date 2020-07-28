@@ -102,17 +102,17 @@
         top: 5px;
         left: 5px;
     }
-    .p-in .flags-default{
-        position: relative;
-        top: 0px;
-        left: 0px;
-        flex-direction: row;
-    }
     .p .image .flags-default{
         display: none;
     }
 }
 
+.p-in .flags-default{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    flex-direction: row;
+}
 
 
 .p-in{
