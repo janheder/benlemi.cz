@@ -73,6 +73,18 @@
 
     a{
         color: $white;
+        margin-right: 20px;
+        margin-top: 10px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 .site-msg.cookies .btn{

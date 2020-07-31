@@ -167,39 +167,6 @@ else if($(":lang(sk)").length){
 }
 
 
-/* free delivery fucntion, call in core js file */
-function freeDelivery(){ 
-    if($("html:lang(en)").length){
-
-        $("<div class='headerFreeDelivery free'>Worldwide shipping</div>").insertAfter(".navLinks");
-    }
-    else{
-        if ($(".cart-count.full .cart-price").length){
-            $(".headerFreeDelivery").remove();
-            var price = $(".cart-price").html().replace(/\s/g, '').replace(/\€/g, '');
-            var priceFree = g_priceFree;
-            priceInt = parseFloat(price).toFixed(2);
-    
-            if(priceInt > priceFree){
-                $("<div class='headerFreeDelivery free'>" + g_freeDelivery + "</div>").insertBefore(".cart-count");
-            }
-            else{
-                var priceFinal = priceFree - priceInt;
-                $("<div class='headerFreeDelivery'>" + g_pickAdditionalItemsForAtLeast + " <span>"+ priceFinal +" " + g_currency + "</span><br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");
-            }
-        }
-        else{
-            $(".headerFreeDelivery").remove();
-            $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");  
-        }
-    
-        if ($(".ordering-process").length){
-            $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertAfter(".navLinks");
-        }
-    }
-
-}
-freeDelivery();
 
 
 /* relocate site message */
@@ -524,7 +491,7 @@ $(document).ready(function() {
     }
 });
 
-/* add button and product into advanced order modal - call this function in shoptet core js */
+/* add button and product into advanced order modal */
 function advanceOrderCustom() {
 
             var img = $(".overall-wrapper .p-image-wrapper a").html();
@@ -562,8 +529,48 @@ function advanceOrderCustom() {
             $("#backToShop").click(function(){
                 $("#cboxClose").click();
             });
-     
 }
+
+/* free delivery function, call in core js file */
+function freeDelivery(){ 
+    if($("html:lang(en)").length){
+
+        $("<div class='headerFreeDelivery free'>Worldwide shipping</div>").insertAfter(".navLinks");
+    }
+    else{
+        if ($(".cart-count.full .cart-price").length){
+            $(".headerFreeDelivery").remove();
+            var price = $(".cart-price").html().replace(/\s/g, '').replace(/\€/g, '');
+            var priceFree = g_priceFree;
+            priceInt = parseFloat(price).toFixed(2);
+    
+            if(priceInt > priceFree){
+                $("<div class='headerFreeDelivery free'>" + g_freeDelivery + "</div>").insertBefore(".cart-count");
+            }
+            else{
+                var priceFinal = priceFree - priceInt;
+                $("<div class='headerFreeDelivery'>" + g_pickAdditionalItemsForAtLeast + " <span>"+ priceFinal +" " + g_currency + "</span><br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");
+            }
+        }
+        else{
+            $(".headerFreeDelivery").remove();
+            $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");  
+        }
+    
+        if ($(".ordering-process").length){
+            $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertAfter(".navLinks");
+        }
+    }
+
+}
+freeDelivery();
+
+/* call functions after order modal loaded */
+
+document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
+    freeDelivery();
+    advanceOrderCustom();
+});
 
 
 /* Adjust price displaying */
@@ -719,7 +726,7 @@ if ($("#rate-form").length){
 // BLOG
 // -----------------------------------------------------------------------------
 
-/* load blog posts into homepage section */
+/* load blog posts into blog page main section */
 if ($(".blogCategories").length){
 
     $(".blogCategories .blogCategories__bydleni").load("/" + category1Url + "/ .news-wrapper", function() {
