@@ -778,8 +778,8 @@ if ($(".in-" + g_inClientUrl + ", .in-" + g_inSettingsUrl + ", .in-" + g_inOrder
 
 if ($("#footer").length){
     $("#signature .title").text("Shoptet");
-    $("#signature").prepend('<a href="https://benlemi.cz" class="title --benlemi">' + g_madeBy + ' <img src="https://janheder.github.io/benlemi.cz/theme/dist/img/symbol-benlemi.svg" alt="Benlemi" class="image --benlemi"> Benlemi &</a>');
-}
+    $("#signature").prepend('<a href="https://benlemi.cz" class="title --benlemi">' + g_madeBy + ' <img src="https://www.benlemi.cz/user/documents/theme/dist/img/symbol-benlemi.svg" alt="Benlemi" class="image --benlemi"> Benlemi &</a>');
+} 
 
 // -----------------------------------------------------------------------------
 // RATING STORE PAGE
