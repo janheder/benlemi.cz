@@ -118,10 +118,10 @@ $("#js-searchToggle").click(function(){
     $("#navigation .search").insertAfter(".navigation-buttons");
     if($(".search").hasClass("--active")){
         $(".search").removeClass("--active");
-        $(".menu-helper .search .form-control").blur();  
+        $(".header-top .search .form-control").blur();  
     }else{
         $(".search").addClass("--active");
-        $(".menu-helper .search .form-control").focus(); 
+        $(".header-top .search .form-control").focus(); 
     }
 });
 
@@ -241,6 +241,7 @@ if ($(".type-detail").length){
             $(this).addClass("--hide");
         });
     });
+    $("<a href='/" + g_ratingUrl + "' class='btn btn-secondary'>" + g_moreRating +"</a>").insertAfter("#ratingStore .content-inner>.votes-wrap");
 }
 
 /* click on modal overlay closes the whole modal window */
@@ -692,6 +693,7 @@ if ($(".advanced-parameter").length){
 
 /* remove parameters */
 $('.detail-parameters tr th:contains("' + g_category + ':"), .detail-parameters tr th:contains("' + g_propositions + ':"), .detail-parameters tr th:contains("' + g_color + ':"), .detail-parameters tr th:contains("' + g_model + ':")').parents('tr').remove();
+
 
 
 
