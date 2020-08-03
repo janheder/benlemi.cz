@@ -228,7 +228,7 @@ if ($(".type-detail").length){
 
     $("#ratingTab #ratingStore").load("/" + g_ratingUrl + "/ .content-inner", function() {
         $("<a href='/" + g_ratingUrl + "' class='btn btn-secondary' id='js-ratingStoreToggle'>" + g_addRating + "</div>").insertBefore("#ratingStore #rate-form");
-        
+        $("<a href='/" + g_ratingUrl + "' class='btn btn-secondary'>" + g_moreRating +"</a>").insertAfter("#ratingStore .content-inner>.votes-wrap");
         /*
         $("#js-ratingStoreToggle").click(function(){
             $("#ratingStore #rate-form").addClass("--active");
@@ -241,7 +241,6 @@ if ($(".type-detail").length){
             $(this).addClass("--hide");
         });
     });
-    $("<a href='/" + g_ratingUrl + "' class='btn btn-secondary'>" + g_moreRating +"</a>").insertAfter("#ratingStore .content-inner>.votes-wrap");
 }
 
 /* click on modal overlay closes the whole modal window */
