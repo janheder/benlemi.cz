@@ -216,7 +216,7 @@
     .menu{
         position: fixed;
         left: 0;
-        top: 56px;
+        top: 0;
         z-index: 4;
         overflow-y: auto;
         height: 100%;
@@ -224,6 +224,7 @@
         transform: translate(-100%, 0);
         transition: 0.3s ease transform;
         background: $white;
+        padding-top: 56px;
     }
     .menu-level-1{
         flex-direction: column;

@@ -20,8 +20,17 @@
         box-shadow: 0px 3px 8px 0px rgba($black,0.05);
         
         &.--active{
-            /*transform: translate(200px, 0px);*/
+            span{
+                background: none;
+            }
+            span::before{
+                transform: rotate(-45deg);
+            }
+            span::after{
+                transform: rotate(45deg);
+            }
         }
+
         &.--active + #navigation .menu{
             transform: translate(0%, 0);
         }
@@ -316,7 +325,7 @@
         justify-content: center;
         align-items: center;
         transform: translate(-50%, -50%);
-        transition: 0.3s all ease;
+        transition: none;
         top: 50%;
         left: 50%;
         width: 18px;

@@ -141,4 +141,7 @@
     .nav-search{
         display: flex;
     }
+    .nav-search.--active{
+        background-image: url("../icons/close.svg");
+    }
 }

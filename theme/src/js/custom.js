@@ -117,10 +117,10 @@ $(".header-top .search").insertAfter("#navigation .menu-level-1>li:last-child");
 $("#js-searchToggle").click(function(){
     $("#navigation .search").insertAfter(".navigation-buttons");
     if($(".search").hasClass("--active")){
-        $(".search").removeClass("--active");
+        $(".search, #js-searchToggle").removeClass("--active");
         $(".header-top .search .form-control").blur();  
     }else{
-        $(".search").addClass("--active");
+        $(".search, #js-searchToggle").addClass("--active");
         $(".header-top .search .form-control").focus(); 
     }
 });
