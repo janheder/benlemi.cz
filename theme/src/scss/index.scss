@@ -409,23 +409,31 @@ header + .content-wrapper .content-wrapper-in{
     border: 0;
 }
 
-
-
 #speechToggle{
-    height: 50px;
-    width: 50px;
-    background: white;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ZnLWlubGluZS0tZmEgZmEtbWljcm9waG9uZSBmYS13LTEyIG1pY3JvcGhvbmUtaWNvbiIgb25jbGljaz0ic3RhcnREaWN0YXRpb24oKSIgdGl0bGU9IlZ5aGxlZMOhdmVqdGUgaGxhc2VtIiBhcmlhLWxhYmVsbGVkYnk9InN2Zy1pbmxpbmUtLWZhLXRpdGxlLTEiIGRhdGEtcHJlZml4PSJmYSIgZGF0YS1pY29uPSJtaWNyb3Bob25lIiByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDM4NCA1MTIiIGRhdGEtZmEtaTJzdmc9IiI+PHRpdGxlIGlkPSJzdmctaW5saW5lLS1mYS10aXRsZS0xIj5WeWhsZWTDoXZlanRlIGhsYXNlbTwvdGl0bGU+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNOTYgMjU2Vjk2YzAtNTMuMDE5IDQyLjk4MS05NiA5Ni05NnM5NiA0Mi45ODEgOTYgOTZ2MTYwYzAgNTMuMDE5LTQyLjk4MSA5Ni05NiA5NnMtOTYtNDIuOTgxLTk2LTk2em0yNTItNTZoLTI0Yy02LjYyNyAwLTEyIDUuMzczLTEyIDEydjQyLjY4YzAgNjYuMjE3LTUzLjA4MiAxMjAuOTM4LTExOS4yOTggMTIxLjMxOEMxMjYuMjEzIDM3Ni4zOCA3MiAzMjIuNDAyIDcyIDI1NnYtNDRjMC02LjYyNy01LjM3My0xMi0xMi0xMkgzNmMtNi42MjcgMC0xMiA1LjM3My0xMiAxMnY0NGMwIDg0LjQ4OCA2Mi42OTMgMTU0LjU5NyAxNDQgMTY2LjI3OFY0NjhoLTY4Yy02LjYyNyAwLTEyIDUuMzczLTEyIDEydjIwYzAgNi42MjcgNS4zNzMgMTIgMTIgMTJoMTg0YzYuNjI3IDAgMTItNS4zNzMgMTItMTJ2LTIwYzAtNi42MjctNS4zNzMtMTItMTItMTJoLTY4di00NS43MjJjODEuMzA3LTExLjY4MSAxNDQtODEuNzkgMTQ0LTE2Ni4yNzh2LTQ0YzAtNi42MjctNS4zNzMtMTItMTItMTJ6Ij48L3BhdGg+PC9zdmc+");
-    background-position: center center;
-    background-size: 18px 18px;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 1px;
-    bottom: 1px;
-    right: 50px;
     display: none;
 }
 
+@media screen and (max-width: 991px){
+    #speechToggle{
+        height: 48px;
+        width: 50px;
+        background: transparent;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ZnLWlubGluZS0tZmEgZmEtbWljcm9waG9uZSBmYS13LTEyIG1pY3JvcGhvbmUtaWNvbiIgb25jbGljaz0ic3RhcnREaWN0YXRpb24oKSIgdGl0bGU9IlZ5aGxlZMOhdmVqdGUgaGxhc2VtIiBhcmlhLWxhYmVsbGVkYnk9InN2Zy1pbmxpbmUtLWZhLXRpdGxlLTEiIGRhdGEtcHJlZml4PSJmYSIgZGF0YS1pY29uPSJtaWNyb3Bob25lIiByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDM4NCA1MTIiIGRhdGEtZmEtaTJzdmc9IiI+PHRpdGxlIGlkPSJzdmctaW5saW5lLS1mYS10aXRsZS0xIj5WeWhsZWTDoXZlanRlIGhsYXNlbTwvdGl0bGU+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNOTYgMjU2Vjk2YzAtNTMuMDE5IDQyLjk4MS05NiA5Ni05NnM5NiA0Mi45ODEgOTYgOTZ2MTYwYzAgNTMuMDE5LTQyLjk4MSA5Ni05NiA5NnMtOTYtNDIuOTgxLTk2LTk2em0yNTItNTZoLTI0Yy02LjYyNyAwLTEyIDUuMzczLTEyIDEydjQyLjY4YzAgNjYuMjE3LTUzLjA4MiAxMjAuOTM4LTExOS4yOTggMTIxLjMxOEMxMjYuMjEzIDM3Ni4zOCA3MiAzMjIuNDAyIDcyIDI1NnYtNDRjMC02LjYyNy01LjM3My0xMi0xMi0xMkgzNmMtNi42MjcgMC0xMiA1LjM3My0xMiAxMnY0NGMwIDg0LjQ4OCA2Mi42OTMgMTU0LjU5NyAxNDQgMTY2LjI3OFY0NjhoLTY4Yy02LjYyNyAwLTEyIDUuMzczLTEyIDEydjIwYzAgNi42MjcgNS4zNzMgMTIgMTIgMTJoMTg0YzYuNjI3IDAgMTItNS4zNzMgMTItMTJ2LTIwYzAtNi42MjctNS4zNzMtMTItMTItMTJoLTY4di00NS43MjJjODEuMzA3LTExLjY4MSAxNDQtODEuNzkgMTQ0LTE2Ni4yNzh2LTQ0YzAtNi42MjctNS4zNzMtMTItMTItMTJ6Ij48L3BhdGg+PC9zdmc+");
+        background-position: center center;
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 1px;
+        bottom: 1px;
+        right: 50px;
+        opacity: 0.5;
+        cursor: pointer;
+        display: none;
+    }
+    .search:hover fieldset input ~ #speechToggle, .search fieldset input:focus ~ #speechToggle, .search fieldset input:active ~ #speechToggle{
+        display: flex;
+    }
+}
 
 /* ========================================================================== */
 /* BENLEMI.CZ SPECIFIC EDITS */

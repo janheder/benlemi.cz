@@ -792,11 +792,6 @@ $(".vote-form-title").click(function(){
 });
 
 // -----------------------------------------------------------------------------
-// 404
-// -----------------------------------------------------------------------------
-
-
-// -----------------------------------------------------------------------------
 // LOGIN FORM
 // -----------------------------------------------------------------------------
 
@@ -816,3 +811,35 @@ if ($(".in-login").length){
 
     $("#formLogin .password-helper a:last-child").text(g_forgotPassword).insertAfter(".login-wrapper button");
 }
+
+// -----------------------------------------------------------------------------
+// VOICE SEARCH
+// -----------------------------------------------------------------------------
+
+$("#formSearchForm .query-input").attr("id","searchbox");
+$("<div id='speechToggle' onclick='startDictation()'></div>").insertBefore(".search-form .btn");
+
+function startDictation() {
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+        var recognition = new webkitSpeechRecognition();
+
+        recognition.continuous = false;
+        recognition.interimResults = false;
+
+        recognition.lang = "cs-CZ";
+        recognition.start();
+
+        recognition.onresult = function(e) {
+            document.getElementById('searchbox').value = e.results[0][0].transcript;
+            recognition.stop();
+            document.getElementById('formSearchForm').submit();
+        };
+
+        recognition.onerror = function(e) {
+            recognition.stop();
+        }
+    }
+}
+
+
