@@ -36,6 +36,11 @@
         }
     }
 }
+@media screen and (min-width: 992px){
+    .header-top .search{
+        display: none;
+    }
+}
 .header-top div:nth-child(2){
     flex-shrink: 1;
 }
@@ -241,6 +246,8 @@
     cursor: pointer;
     background: transparent;
     transition: 0s ease all;
+    border: 1px solid transparent;
+    border-left: 0;
 
     &:hover, &:active, &:focus{
         background: $white;
