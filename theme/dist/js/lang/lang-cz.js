@@ -108,6 +108,7 @@ var category3Url = "blog-novinky";
 var category4 = "Život v Benlemi";
 var category4Url = "blog-zivot-v-benlemi";
 
+var g_blogText = "";
 
 var g_registrationUrl = "registrace";
 
@@ -130,7 +131,7 @@ var g_inClientDocumentsUrl = "klient-doklady";
 var g_inClientDiscussionUrl = "klient-diskuze";
 var g_inForgotPasswordUrl = "zapomenute-heslo";
 
-var relatedCats = "meta[content='Dětská postel domeček Tery s bočnicí'], meta[content='Dětská postel domeček Lucky s bočnicí'], meta[content='Dětská postel domeček Funny'],meta[content='Dětská postel Baldee'],";
+var relatedCats = "meta[content='Dětská postel domeček Tery s bočnicí'], meta[content='Dětská postel domeček Lucky s bočnicí'], meta[content='Dětská postel domeček Funny']";
 /*
 var relatedCats = ".in-children-s-wooden-house-beds";
 meta[content='Dětská postel Baldee'], meta[content='Dětská postel Bunky s bočnicí'], meta[content='Dětská postel DeLuxe']

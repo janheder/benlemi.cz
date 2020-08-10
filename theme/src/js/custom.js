@@ -730,22 +730,22 @@ if ($("#rate-form").length){
 /* load blog posts into blog page main section */
 if ($(".blogCategories").length){
 
-    $(".blogCategories .blogCategories__bydleni").load("/" + category1Url + "/ .news-wrapper", function() {
+    $(".blogCategories .blogCategories__bydleni .news-wrapper").load("/" + category1Url + "/ .news-wrapper .news-item:nth-child(-n+3)", function() {
         $("<h2 class='blogCategories__sectionTitle'>" + category1 + "</h2>").insertBefore(".blogCategories .blogCategories__bydleni");
         $("<div class='blogCategories__sectionShowMore'><a href='/" + category1Url + "/' class='blogCategories__sectionShowMoreLink'>" + g_moreArticles + "</a></div>").insertAfter(".blogCategories__bydleni .blogCategories__section .news-item:nth-child(2)");    
     });
     
-    $(".blogCategories .blogCategories__rodina").load("/" + category2Url + "/ .news-wrapper", function() {
+    $(".blogCategories .blogCategories__rodina .news-wrapper").load("/" + category2Url + "/ .news-wrapper .news-item:nth-child(-n+3)", function() {
         $("<h2 class='blogCategories__sectionTitle'>" + category2 + "</h2>").insertBefore(".blogCategories .blogCategories__rodina");
         $("<div class='blogCategories__sectionShowMore'><a href='/" + category2Url + "/' class='blogCategories__sectionShowMoreLink'>" + g_moreArticles + "</a></div>").insertAfter(".blogCategories__rodina .blogCategories__section .news-item:nth-child(2)");    
     });
 
-    $(".blogCategories .blogCategories__novinky").load("/" + category3Url + "/ .news-wrapper", function() {
+    $(".blogCategories .blogCategories__novinky .news-wrapper").load("/" + category3Url + "/ .news-wrapper .news-item:nth-child(-n+3)", function() {
         $("<h2 class='blogCategories__sectionTitle'>" + category3 + "</h2>").insertBefore(".blogCategories .blogCategories__novinky");
         $("<div class='blogCategories__sectionShowMore'><a href='/" + category3Url + "/' class='blogCategories__sectionShowMoreLink'>" + g_moreArticles + "</a></div>").insertAfter(".blogCategories__novinky .blogCategories__section .news-item:nth-child(2)");    
     });
 
-    $(".blogCategories .blogCategories__benlemi-pomaha").load("/" + category4Url + "/ .news-wrapper", function() {
+    $(".blogCategories .blogCategories__benlemi-pomaha .news-wrapper").load("/" + category4Url + "/ .news-wrapper .news-item:nth-child(-n+3)", function() {
         $("<h2 class='blogCategories__sectionTitle'>" + category4 + "</h2>").insertBefore(".blogCategories .blogCategories__benlemi-pomaha");
         $("<div class='blogCategories__sectionShowMore'><a href='/" + category4Url + "/' class='blogCategories__sectionShowMoreLink'>" + g_moreArticles + "</a></div>").insertAfter(".blogCategories__benlemi-pomaha .blogCategories__section .news-item:nth-child(2)");    
     });
