@@ -79,15 +79,15 @@ $(function() {
 if ($(".search").length){
     if ($("#footer").length){
         var mail = $("#footer .mail").text().replace(/\s/g,'');
-        var tel = $("#footer .tel").text().replace(/\s/g,'');
+        var tel = $("#footer .tel").text();
     }else{
         var mail = $(".contact-box .mail a").text().replace(/\s/g,'');
-        var tel = $(".contact-box  .tel").text().replace(/\s/g,'');
+        var tel = $(".contact-box  .tel").text();
     }
-    $(".search").before('<div class="header-contacts">'+
+    $('<div class="header-contacts">'+
     '<a href="tel:' + tel + '">' + tel + '</a>'+
     '<a href="mailto:' + mail + '">' + mail + '</a>'+
-    '</div>');
+    '</div>').insertBefore(".navigation-buttons");
 
     if($("html:lang(en)").length){
         $(".header-contacts").append('<span>Mon–Fri 9:30 a.m.– 4:00 p.m</span>');
@@ -326,7 +326,7 @@ if ($(relatedCats).length){
         $("#productsRelated .flag-custom1").each(function(i){
             var ran = i+1;
             var pName = $(this).closest(".p").find(".name").prop("title");
-            var pImg = $(this).closest(".p").find(".image img").prop("src");
+            var pImg = $(this).closest(".p").find(".image img").data("src");
             var pPrice = $(this).closest(".p").find(".price-final strong").text();
             $(".p-info-wrapper .add-to-cart").before('<div class="detail-cross-selling selling-'+ ran +'"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '"><img src="' + pImg + '"><span><span>' + pName + '</span><span>' + pPrice + '</span></span></label></div>')
             var pUrl = $(this).closest("a.image").prop("href");
@@ -335,9 +335,13 @@ if ($(relatedCats).length){
             $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
                 $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
                 /*$("#crossSelling" + ran).find("select").attr("data-parameter-id", ran + 1000);*/
+
+                $("#crossSelling" + ran + " select option:nth-child(2)").prop("selected", true);
+                $("#crossSelling .variant-list label:nth-child(2) input").prop("checked", true);
             });
 
 
+            
             $("#product-detail-form select, #product-detail-form input").change(function(){
                 setTimeout(function(){
                 if ($("#crossSelling" + ran + " select[data-parameter-name='" + g_color + "']").length){
