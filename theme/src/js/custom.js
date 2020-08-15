@@ -332,16 +332,17 @@ if ($(relatedCats).length){
             var pUrl = $(this).closest("a.image").prop("href");
             $("body").append('<div id="crossSelling' + ran + '"></div>');
 
-            $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
-                $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
-                /*$("#crossSelling" + ran).find("select").attr("data-parameter-id", ran + 1000);*/
+            setTimeout(function(){
+                $("#crossSelling" + ran).load(pUrl + " #product-detail-form", function() {
+                    $("#crossSelling" + ran + " form").prop("id", "product-detail-form-" + ran);
+                    /*$("#crossSelling" + ran).find("select").attr("data-parameter-id", ran + 1000);*/
 
-                $("#crossSelling" + ran + " select option:nth-child(2)").prop("selected", true);
-                $("#crossSelling .variant-list label:nth-child(2) input").prop("checked", true);
-            });
+                    $("#crossSelling" + ran + " select option:nth-child(2)").prop("selected", true);
+                    $("#crossSelling" + ran + " .variant-list label:nth-child(2) input").prop("checked", true);
+                });
+            }, 200);
 
 
-            
             $("#product-detail-form select, #product-detail-form input").change(function(){
                 setTimeout(function(){
                 if ($("#crossSelling" + ran + " select[data-parameter-name='" + g_color + "']").length){
@@ -357,6 +358,16 @@ if ($(relatedCats).length){
                 };
 
 
+                if ($("#crossSelling" + ran + " select[data-parameter-name='" + g_colorOfPrism + "']").length){
+                    var prism1 = $("#crossSelling" + ran + " select[data-parameter-name='" + g_colorOfPrism + "']").attr("data-parameter-id");
+                    var prism2 = $("#crossSelling" + ran + " select[data-parameter-name='" + g_colorOfPrism + "']").find("option:selected").prop("value");
+                };
+    
+                if ($("#crossSelling" + ran + " select[data-parameter-name='" + g_surfaceColor + "']").length){
+                    var prism11 = $("#crossSelling" + ran + " select[data-parameter-name='" + g_surfaceColor + "']").attr("data-parameter-id");
+                    var prism12 = $("#crossSelling" + ran + " select[data-parameter-name='" + g_surfaceColor + "']").find("option:selected").prop("value");
+                };
+
                 if (one === undefined){
                     var number = one2+"-"+two2;
                 }else if(one2 === undefined){
@@ -366,10 +377,52 @@ if ($(relatedCats).length){
                     var number2 = one2+"-"+two2+"-"+one+"-"+two; // if order is reversed
                 }
 
-                var pPrice = $("#crossSelling" + ran).find(".price-final-holder." + number).text();
-                $('.selling-'+ ran + ' label>span>span:last-child').text(pPrice);
+                if (prism1 === undefined){
+                    var prism_num = prism11+"-"+prism12;
+                }else if(prism2 === undefined){
+                    var prism_num = prism1+"-"+prism2;
+                }else{
+                    var prism_num = prism1+"-"+prism2+"-"+prism11+"-"+prism12;
+                    var prism_num2 = prism11+"-"+prism12+"-"+prism1+"-"+prism2; // if order is reversed
+                }
 
+
+  
+
+           
+
+          
+
+
+                var pPrice = $("#crossSelling" + ran).find(".price-final-holder:not(.parameter-dependent)").text();
+                
+                if(pPrice === ''){
+      
+                    var pPrice = $("#crossSelling" + ran).find(".price-final-holder." + number).text();
+                    if(pPrice === ''){
+                        var pPrice = $("#crossSelling" + ran).find(".price-final-holder." + number2).text();
+                    }
+
+                    $('.selling-'+ ran + ' label>span>span:last-child').text(pPrice);
+
+
+                }else{
+                    
+                    $('.selling-'+ ran + ' label>span>span:last-child').text(pPrice);
+                }
+                
+
+                /*
+                else if(prism_num.length){
+                    var pPrice = $("#crossSelling" + ran).find(".price-final-holder." + prism_num).text();
+                    $('.selling-'+ ran + ' label>span>span:last-child').text(pPrice);
+                }
+
+         
+                */
                 }, 300);
+
+
 
             });
 
@@ -478,6 +531,7 @@ if ($(relatedCats).length){
     }
 
 }
+
 
 /*  */
 $('.detail-cross-selling input').change(function() {

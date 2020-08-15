@@ -2,12 +2,6 @@
 // HOMEPAGE
 // -----------------------------------------------------------------------------
 
-
-/* unwrap homepage section */
-if ($("#homepageSection").length){
-    $("#homepageSection").unwrap().unwrap().unwrap().unwrap().unwrap();
-}
-
 /* load blog posts into homepage section */
 if ($("#blogSection").length){
     $("#blogSection .blogSection__content .news-wrapper").load("/" + category1Url + "/ .news-wrapper .news-item:nth-child(-n+3)");

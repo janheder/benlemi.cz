@@ -231,6 +231,12 @@ header + .content-wrapper .content-wrapper-in{
     display: none !important;
 }
 
+.welcome-wrapper > .content-wrapper-in > .container{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
 
 @import "partials/_img";
 @import "partials/_btn";
@@ -342,7 +348,9 @@ header + .content-wrapper .content-wrapper-in{
     border: 1px solid $red-700;
 }
 
-
+#manufacturerDescription{
+    display: none;
+}
 .p-detail-tabs-wrapper .p-detail-tabs a[href="#manufacturerDescription"]{
     display: none;
 }
