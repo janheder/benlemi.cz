@@ -1,0 +1,96 @@
+.kariera{
+  
+}
+.kariera .col-12{
+    margin-bottom: 20px;
+}
+
+.kariera__text{
+  
+}
+.kariera__title{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;   
+    margin-top: 30px; 
+    position: relative;
+    font-size: 24px;
+}
+.kariera__title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 40px;
+    background: #d1e7b0;
+}
+.kariera__item{
+    background: #f5f5f5;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.kariera__itemTitle{
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;    
+    position: relative;
+}
+.kariera__itemTitle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    height: 6px;
+    width: 40px;
+    background: #d1e7b0;
+}
+.kariera__itemText{
+    opacity: 0.8;
+}
+.kariera__itemPoints{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.kariera__point{
+    padding: 10px 0;
+    width: 50%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.kariera__point img{
+    height: 40px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+.kariera__atmoskop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: $gray-800;
+}
+.kariera__atmoskop img{
+    height: 32px;
+    padding-right: 20px;
+}
+
+.kariera__pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+
+    img{
+        width: 50%;
+    }
+}

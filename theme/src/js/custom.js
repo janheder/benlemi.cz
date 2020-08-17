@@ -749,7 +749,11 @@ if ($(".advanced-parameter").length){
 
 
 /* remove parameters */
-$('.detail-parameters tr th:contains("' + g_category + ':"), .detail-parameters tr th:contains("' + g_propositions + ':"), .detail-parameters tr th:contains("' + g_color + ':"), .detail-parameters tr th:contains("' + g_model + ':")').parents('tr').remove();
+$('.detail-parameters tr th:contains("' + g_category + ':"), .detail-parameters tr th:contains("' + g_color + ':"), .detail-parameters tr th:contains("' + g_model + ':")').parents('tr').remove();
+
+if($('select[data-parameter-name="' + g_propositions + '"]').length){
+    $('.detail-parameters tr th:contains("' + g_propositions + ':")').parents('tr').remove();
+}
 
 
 
