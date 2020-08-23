@@ -276,7 +276,7 @@ if ($("#relatedFiles").length){
     $('main select[data-parameter-name="' + g_propositions + '"]').change(function() {
         $(".description-infographics").remove();
         var option = $('main select[data-parameter-name="' + g_propositions + '"] option:selected').text(); 
-        var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'');
+        var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'').split('(', 1);
         var src = $('#relatedFiles a[title*="' + optionClean + '"]').attr("href");
         if(typeof src != 'undefined'){
             $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
@@ -718,13 +718,18 @@ if ($(".type-detail").length){
 
 $("#ratingProduct>p").text(g_beFirstToRateThisProduct);
 
-/* rewrite description */
+/* rewrite description 
 if ($(".type-detail").length){
-    if ($(".p-short-description").length){}else{$("<div class='p-short-description'><p></p></div>").insertAfter(".add-to-cart");}
-    var desc = $("#descriptionLong .rte p").text();
-    var descTrim = desc.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
-    $(".p-short-description p").text(descTrim);
-}
+    if ($(".p-short-description").length){
+
+    }else{
+        $("<div class='p-short-description'><p></p></div>").insertAfter(".add-to-cart");
+        var desc = $("main #descriptionLong .rte p").text();
+        var descTrim = desc.replace(/(([^\s]+\s\s*){40})(.*)/,"$1…");
+        $(".p-short-description p").text(descTrim);
+    }
+
+}*/
 
 /* show add to cart section on scroll */
 $(window).on('scroll', function() {
