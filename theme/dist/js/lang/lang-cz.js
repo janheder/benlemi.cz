@@ -131,6 +131,7 @@ var g_inClientDocumentsUrl = "klient-doklady";
 var g_inClientDiscussionUrl = "klient-diskuze";
 var g_inForgotPasswordUrl = "zapomenute-heslo";
 
+var relatedTags = "#productsRelated .flag-custom1";
 var relatedCats = "meta[content='Dětská postel domeček Tery s bočnicí'], " + 
 "meta[content='Dětská postel domeček Tery bez bočnice'], " + 
 "meta[content='Dětská postel domeček Lucky s bočnicí'], " + 

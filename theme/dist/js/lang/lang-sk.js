@@ -132,7 +132,25 @@ var g_inClientDocumentsUrl = "klient-doklady";
 var g_inClientDiscussionUrl = "klient-diskusia";
 var g_inForgotPasswordUrl = "zabudnute-heslo";
 
-var relatedCats = "";
-/*
-var relatedCats = ".in-children-s-wooden-house-beds";
-*/
+
+var relatedTags = "#productsRelated .flag-custom2";
+var relatedCats = "meta[content='Detská posteľ domček Tery bez bočnice'], " + 
+"meta[content='Detská posteľ domček Tery s bočnicou'], " + 
+"meta[content='Detská posteľ Japa'], " + 
+"meta[content='Detská posteľ Modern'], " + 
+"meta[content='Detská posteľ Japa'], " + 
+
+"meta[content='Detská posteľ domček Poppi s bočnicou'], " + 
+"meta[content='Detská posteľ domček Wally'], " + 
+"meta[content='Detská posteľ domček Funny'], " + 
+
+"meta[content='Detská posteľ DeLuxe'], " + 
+"meta[content='Detská posteľ Bunky s bočnicou'], " + 
+"meta[content='Detská posteľ domček Lucky s bočnicou'], " + 
+"meta[content='Detská posteľ domček Sidy'], " + 
+"meta[content='Detská posteľ domček Happy'], " + 
+"meta[content='Detská posteľ Baldee'], " + 
+
+"meta[content='Detská postel Study']";
+
+

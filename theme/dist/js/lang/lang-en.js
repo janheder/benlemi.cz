@@ -131,7 +131,25 @@ var g_inClientDocumentsUrl = "client-documents";
 var g_inClientDiscussionUrl = "client-discussion";
 var g_inForgotPasswordUrl = "forgotten-password";
 
-var relatedCats = "";
-/*
-var relatedCats = ".in-children-s-house-beds, .in-children-s-single-beds, .in-children-s-bunk-and-loft-beds, .in-bed-accesory, .in-under-bed-drawers, .in-children-s-mattresses, .in-children-s-wardrobes, .in-children-s-tables-and-chairs, .in-single-beds, .in-double-beds, .in-bed-accesory-2, .in-sheets, .in-mattress-protectors";
-*/
+
+var relatedTags = "#productsRelated .flag-custom1";
+var relatedCats = "meta[content='Single Bed STUDY from Solid Wood']," + 
+"meta[content='Children's Single Bed JAPA in Japanese Style']," + 
+"meta[content='Children's Wooden Bed MODERN']," + 
+"meta[content='Children's House Bed TERY']," + 
+"meta[content='Children's House Bed POPPI with Firm Bed Guard']," + 
+"meta[content='Children's House Bed FUNNY']," + 
+
+"meta[content='Children's House Bed WALLY']," + 
+"meta[content='Children's House Bed TERY with Firm Bed Guard']," + 
+"meta[content='Children's Wooden Bed DELUXE with Headboard']," + 
+"meta[content='Children's House Bed BUNKY with Firm Bed Guard']," + 
+
+"meta[content='Children's House Bed LUCKY with Firm Bed Guard']," + 
+"meta[content='Children's House Bed SIDY']," + 
+"meta[content='Children's House Bed HAPPY']," + 
+"meta[content='Children's Bed BALDEE with Canopy']," + 
+
+"meta[content='Children's Wooden Bunk Bed CLOUDY']," + 
+
+"meta[content='Dětská postel domeček Happy']";

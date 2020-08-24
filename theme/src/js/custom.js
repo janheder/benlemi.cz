@@ -321,9 +321,9 @@ $('.p-info-wrapper a[href="#description"]').text(g_showMoreInfo);
 /* Cross selling products */
 if ($(relatedCats).length){
 
-    if ($("#productsRelated .flag-custom1").length){
+    if ($(relatedTags).length){
         var i=0;
-        $("#productsRelated .flag-custom1").each(function(i){
+        $(relatedTags).each(function(i){
             var ran = i+1;
             var pName = $(this).closest(".p").find(".name").prop("title");
             var pImg = $(this).closest(".p").find(".image img").data("src");
@@ -718,8 +718,8 @@ if ($(".type-detail").length){
 
 $("#ratingProduct>p").text(g_beFirstToRateThisProduct);
 
-/* rewrite description 
-if ($(".type-detail").length){
+/* rewrite description */
+if ($(":lang(en) .type-detail").length){
     if ($(".p-short-description").length){
 
     }else{
@@ -729,7 +729,7 @@ if ($(".type-detail").length){
         $(".p-short-description p").text(descTrim);
     }
 
-}*/
+}
 
 /* show add to cart section on scroll */
 $(window).on('scroll', function() {
@@ -759,8 +759,6 @@ $('.detail-parameters tr th:contains("' + g_category + ':"), .detail-parameters 
 if($('select[data-parameter-name="' + g_propositions + '"]').length){
     $('.detail-parameters tr th:contains("' + g_propositions + ':")').parents('tr').remove();
 }
-
-
 
 
 // -----------------------------------------------------------------------------
