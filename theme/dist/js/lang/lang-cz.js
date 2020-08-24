@@ -131,8 +131,35 @@ var g_inClientDocumentsUrl = "klient-doklady";
 var g_inClientDiscussionUrl = "klient-diskuze";
 var g_inForgotPasswordUrl = "zapomenute-heslo";
 
-var relatedCats = "meta[content='Dětská postel domeček Tery s bočnicí'], meta[content='Dětská postel domeček Lucky s bočnicí'], meta[content='Dětská postel domeček Funny'], meta[content='Dětská postel Baldee'], meta[content='Dětská postel Bunky s bočnicí'], meta[content='Dětská postel DeLuxe']";
+var relatedCats = "meta[content='Dětská postel domeček Tery s bočnicí'], " + 
+"meta[content='Dětská postel domeček Tery bez bočnice'], " + 
+"meta[content='Dětská postel domeček Lucky s bočnicí'], " + 
+"meta[content='Dětská postel domeček Funny'], " + 
+"meta[content='Dětská postel Baldee'], " + 
+"meta[content='Dětská postel Bunky s bočnicí'], " + 
+"meta[content='Dětská postel DeLuxe']," + 
+"meta[content='Dětská postel domeček Sidy']," + 
+"meta[content='Dětská postel domeček Wally']," + 
+"meta[content='Dětská postel Japa']," + 
+"meta[content='Dětská postel Modern']," + 
+"meta[content='Dětská postel Study']," + 
+"meta[content='Vyvýšená postel Toppy']," + 
+
+"meta[content='Dvoulůžková postel DeLuxe']," + 
+"meta[content='Dvoulůžková postel Baldee']," + 
+"meta[content='Dětská postel Study']," + 
+"meta[content='Dvoulůžková postel Japa']," + 
+"meta[content='Dvoulůžková postel Modern']," + 
+"meta[content='Jednolůžková postel Baldee']," + 
+"meta[content='Jednolůžková postel DeLuxe']," + 
+"meta[content='Dětská postel Japa']," + 
+"meta[content='Dětská postel Modern']," + 
+
+"meta[content='Patrová postel Cloudy']," + 
+
+"meta[content='Dětská postel domeček Happy']";
+
 /*
-var relatedCats = ".in-children-s-wooden-house-beds";
-meta[content='Dětská postel Baldee'], meta[content='Dětská postel Bunky s bočnicí'], meta[content='Dětská postel DeLuxe']
+"meta[content='Vyvýšená postel Nesty']," + 
+
 */
