@@ -27,24 +27,41 @@ if ($(".pagination-loader").length){
     $(".pagination-loader span").text(g_showMore);
 }
 
-/* relocate hover overlay on product & add more variants into product box */
-if ($(".product").length){
-    $(".product").each(function(){
-        $(this).find(".p-tools .btn").text(g_show);
 
-        if ($(this).find(".price-final strong > small").length){
-            $(this).find(".name").append("<span class='p-variants'>" + g_moreVariants + "</span>");
-        }
+function productCardEdit(){ 
+
+    /* relocate hover overlay on product & add more variants into product box */
+    if ($(".product").length){
+        $(".product").each(function(){
+            $(this).find(".p-tools .btn").text(g_show);
+
+            if ($(this).find(".price-final strong > small").length){
+                $(this).find(".name").append("<span class='p-variants'>" + g_moreVariants + "</span>");
+            }
+        });
+    }
+
+    /* relocate flags on mobile */
+
+    if ($(".product").length){
+        $(".product").each(function(){
+            $(this).find(".flags-default").insertBefore($(this).find(".p-in-in"));
+        });
+    }
+
+    $(".p").each(function(){
+        var price = $(this).find(".flags .flag .price-standard").html();
+        $(this).find(".prices span").remove();
+        $(this).find(".prices").prepend(price);
     });
 }
 
-/* relocate flags on mobile */
+productCardEdit();
 
-if ($(".product").length){
-    $(".product").each(function(){
-        $(this).find(".flags-default").insertBefore($(this).find(".p-in-in"));
-    });
-}
+document.addEventListener('ShoptetDOMPageMoreProductsLoaded', function () {
+    productCardEdit();  
+});
+
 
 
 /* category header edit */
@@ -91,7 +108,3 @@ $(".filter-contact").load(g_cart1Url + " .checkout-box");
 
 
 
-$(".p").each(function(){
-    var price = $(this).find(".flags .flag .price-standard").html();
-    $(this).find(".prices").prepend(price);
-});

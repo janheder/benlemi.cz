@@ -95,6 +95,8 @@
     color: $white;
     background: $orange-700;
     height: auto;
+    font-size: 14px;
+    padding: 2px 8px;
 }
 
 @media screen and (max-width: 991px){
@@ -139,9 +141,13 @@
     }
 
 }
+
 .p-in-in .name .p-variants{
-    display: flex;
+    display: none;
     color: $gray-700;
+  }
+.p-in-in .name .p-variants:last-child{
+    display: flex;
 }
 .p .p-bottom{
 
