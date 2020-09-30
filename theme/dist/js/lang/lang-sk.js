@@ -140,7 +140,7 @@ var relatedCats = "meta[content='Detská posteľ domček Tery bez bočnice'], " 
 "meta[content='Detská posteľ Modern'], " + 
 "meta[content='Detská posteľ Japa'], " + 
 
-"meta[content='Detská posteľ domček Poppi s bočnicou'], " + 
+
 "meta[content='Detská posteľ domček Wally'], " + 
 "meta[content='Detská posteľ domček Funny'], " + 
 
@@ -153,4 +153,5 @@ var relatedCats = "meta[content='Detská posteľ domček Tery bez bočnice'], " 
 
 "meta[content='Detská postel Study']";
 
+/* "meta[content='Detská posteľ domček Poppi s bočnicou'], " + */
 
