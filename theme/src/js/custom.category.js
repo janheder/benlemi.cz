@@ -54,6 +54,12 @@ function productCardEdit(){
         $(this).find(".prices span").remove();
         $(this).find(".prices").prepend(price);
     });
+
+    $(".p").each(function() {
+        var a = $(this).find(".flag-discount").html().replace('až','');
+        $(this).find(".flag-discount").html(a);
+    });
+    
 }
 
 productCardEdit();
@@ -105,6 +111,5 @@ if ($(".category-header").length){
 
 $(".filters-wrapper").append("<div class='filter-contact'></div>");
 $(".filter-contact").load(g_cart1Url + " .checkout-box");
-
 
 
