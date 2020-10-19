@@ -55,17 +55,26 @@ function productCardEdit(){
         $(this).find(".prices").prepend(price);
     });
 
-    $(".p").each(function() {
-        var a = $(this).find(".flag-discount").html().replace('až','');
-        $(this).find(".flag-discount").html(a);
-    });
-    
+    if ($(".product .flag-discount:contains('až')").length){
+        $(".p").each(function() {
+            var a = $(this).find(".flag-discount:contains('až')").html();
+            if(a === undefined){
+                
+            }else{
+                var b = a.replace('až','');
+                $(this).find(".flag-discount:contains('až')").html(b);
+            }
+        });
+    }
 }
 
 productCardEdit();
 
+document.addEventListener('ShoptetDOMPageContentLoaded', function () {
+    productCardEdit();
+});
 document.addEventListener('ShoptetDOMPageMoreProductsLoaded', function () {
-    productCardEdit();  
+    productCardEdit();
 });
 
 
