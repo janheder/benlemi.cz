@@ -110,7 +110,7 @@ $("#js-menuToggle, .menu-helper").click(function(){
 /* relocate search */
 $(".header-top .search-form input").prop("placeholder", g_searchPlaceholder);
 
-$(".header-top .search").insertAfter("#navigation .menu-level-1>li:last-child");
+$(".header-top .search").insertAfter("#navigation .menu-level-1");
 
 
 /* toggle show responsive searchbar */
@@ -906,5 +906,4 @@ function startDictation() {
         }
     }
 }
-
 

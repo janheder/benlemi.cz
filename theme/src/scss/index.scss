@@ -443,6 +443,12 @@ header + .content-wrapper .content-wrapper-in{
     }
 }
 
+
+.unavailable-variants{
+    display: none;
+}
+
+
 /* ========================================================================== */
 /* BENLEMI.CZ SPECIFIC EDITS */
 /* ========================================================================== */
@@ -456,10 +462,7 @@ html:lang(cs){
     .category-perex img{
         display: none;
     }
-    .menu-level-1 > li:nth-child(4){
-        flex-grow: 0;
-    }
-    .menu-level-1 > li:nth-child(5){
+    .menu-level-1>li:nth-last-child(2) {
         flex-grow: 1;
         display: flex;
         justify-content: flex-end;
@@ -500,6 +503,7 @@ html:lang(cs){
             display: none;
         }
     } 
+
 }
 
 /* ========================================================================== */
@@ -522,10 +526,7 @@ html:lang(sk){
     .flag-custom2{
         display: none !important;
     }
-    .menu-level-1 > li:nth-child(4){
-        flex-grow: 0;
-    }
-    .menu-level-1 > li:nth-child(5){
+    .menu-level-1>li:nth-last-child(1) {
         flex-grow: 1;
         display: flex;
         justify-content: flex-end;
@@ -553,5 +554,16 @@ html:lang(en){
     }
     .flag-custom1{
         display: none !important;
+    }
+    .menu-level-1 > li:nth-last-child(2){
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    @media screen and (max-width: 991px){
+        .menu-level-1 > li:nth-child(4){
+            justify-content: flex-start;
+            flex-grow: 0;
+        }  
     }
 } 

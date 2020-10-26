@@ -108,7 +108,7 @@ var category3Url = "blog-novinky";
 var category4 = "Život v Benlemi";
 var category4Url = "blog-zivot-v-benlemi";
 
-var g_blogText = "";
+var g_blogText = "Rady a inspirace pro zodpovědné rodiče i milovníky trendů";
 
 var g_registrationUrl = "registrace";
 
