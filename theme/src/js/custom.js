@@ -271,6 +271,11 @@ if ($("#relatedFiles").length){
     
     if($('main select[data-parameter-name="' + g_propositions + '"]').length){
         $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
+    }else{
+        var src = $('#relatedFiles a').attr("href");
+        $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
+        $(".description-infographics img").attr("src", src);
+        $(".description-infographics a").attr("href", src);  
     }
     
     $('main select[data-parameter-name="' + g_propositions + '"]').change(function() {
