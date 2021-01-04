@@ -915,10 +915,11 @@ function startDictation() {
 // -----------------------------------------------------------------------------
 // REMOVE PHONE VALIDATION AND ADD CUSTOM FUNCTION TO COUNTRY SELECT
 // -----------------------------------------------------------------------------
+$(document).ready(function() {
+    $("#phone").removeClass("js-validate-phone");
 
-$("#phone").removeClass("js-validate-phone");
-
-$(".country-flag").on("click", function() {
-    $(".country-flag").removeClass("selected");
-    $(this).addClass("selected");
+    $(".country-flag").on("click", function() {
+        $(".country-flag").removeClass("selected");
+        $(this).addClass("selected");
+    });
 });
