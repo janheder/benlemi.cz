@@ -126,6 +126,7 @@ $("#js-searchToggle").click(function(){
 });
 
 /* *WIP* override shoptet cart function on mobile */
+$(".cart-count").removeClass("toggle-window");
 $(".cart-count").click(function(){
     window.location.href='/' + g_cartUrl + '/';
 });
@@ -764,6 +765,8 @@ $('.detail-parameters tr th:contains("' + g_category + ':"), .detail-parameters 
 if($('select[data-parameter-name="' + g_propositions + '"]').length){
     $('.detail-parameters tr th:contains("' + g_propositions + ':")').parents('tr').remove();
 }
+
+$('.detail-parameters tr th:contains("Záruka:"), .detail-parameters tr th:contains("Typ produktu:"), .detail-parameters tr th:contains("Věk dítěte:")').parents('tr').remove();
 
 
 // -----------------------------------------------------------------------------
