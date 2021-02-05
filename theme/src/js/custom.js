@@ -89,7 +89,7 @@ if ($(".search").length){
     '<a href="mailto:' + mail + '">' + mail + '</a>'+
     '</div>').insertBefore(".navigation-buttons");
 
-    if($("html:lang(en)").length){
+    if($("html:lang(en), html:lang(ro)").length){
         $(".header-contacts").append('<span>Mon–Fri 9:30 a.m.– 4:00 p.m</span>');
     }
 }
@@ -126,6 +126,10 @@ $("#js-searchToggle").click(function(){
 });
 
 /* *WIP* override shoptet cart function on mobile */
+if ($(window).width() < 991) {
+    $(".cart-count").removeClass("toggle-window");
+ }
+
 $(".cart-count").click(function(){
     window.location.href='/' + g_cartUrl + '/';
 });
@@ -165,7 +169,12 @@ else if($(":lang(sk)").length){
         $("#js-langToggle").toggleClass("--active");
     });
 }
-
+else if($("html:lang(ro)").length){
+    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item com active">English</div><a href="https://www.benlemi.cz" class="language-toggle-item cz">Czech</a><a href="https://benlemi.sk" class="language-toggle-item sk">Slovak</a></div></div>');
+    $("#js-langToggle").click(function(){
+        $("#js-langToggle").toggleClass("--active");
+    });
+}
 
 
 
@@ -595,12 +604,21 @@ function advanceOrderCustom() {
 }
 
 /* free delivery function, call in core js file */
-function freeDelivery(){ 
-    if($("html:lang(en)").length){
+if($("html:lang(en)").length){
+    $(".headerFreeDelivery.free").remove();
+    $("<div class='headerFreeDelivery free'>Worldwide shipping</div>").insertAfter(".navLinks");
+    /* call functions after order modal loaded */
 
-        $("<div class='headerFreeDelivery free'>Worldwide shipping</div>").insertAfter(".navLinks");
-    }
-    else{
+    document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
+        advanceOrderCustom();
+    });
+
+
+}
+else{
+
+    function freeDelivery(){ 
+
         if ($(".cart-count.full .cart-price").length){
             $(".headerFreeDelivery").remove();
             var price = $(".cart-price").html().replace(/\s/g, '').replace(/\€/g, '');
@@ -624,16 +642,22 @@ function freeDelivery(){
             $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertAfter(".navLinks");
         }
     }
+    
+    
+    freeDelivery();
+
+    /* call functions after order modal loaded */
+
+    document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
+        freeDelivery();
+        advanceOrderCustom();
+    });
+
 
 }
-freeDelivery();
 
-/* call functions after order modal loaded */
 
-document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
-    freeDelivery();
-    advanceOrderCustom();
-});
+
 
 
 /* Adjust price displaying */
@@ -764,6 +788,8 @@ $('.detail-parameters tr th:contains("' + g_category + ':"), .detail-parameters 
 if($('select[data-parameter-name="' + g_propositions + '"]').length){
     $('.detail-parameters tr th:contains("' + g_propositions + ':")').parents('tr').remove();
 }
+
+$('.detail-parameters tr th:contains("Záruka:"), .detail-parameters tr th:contains("Typ produktu:"), .detail-parameters tr th:contains("Věk dítěte:")').parents('tr').remove();
 
 
 // -----------------------------------------------------------------------------
@@ -912,3 +938,14 @@ function startDictation() {
     }
 }
 
+// -----------------------------------------------------------------------------
+// REMOVE PHONE VALIDATION AND ADD CUSTOM FUNCTION TO COUNTRY SELECT
+// -----------------------------------------------------------------------------
+$(document).ready(function() {
+    $("#phone").removeClass("js-validate-phone");
+
+    $(".country-flag").on("click", function() {
+        $(".country-flag").removeClass("selected");
+        $(this).addClass("selected");
+    });
+});

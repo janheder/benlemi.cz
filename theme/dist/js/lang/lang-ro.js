@@ -34,7 +34,7 @@ var g_price = "Preț";
 var g_pieces = "produse";
 var g_from = "din";
 var g_backToStore = "Înapoi la pagina principala";
-var g_viewCart = "View cart";
+var g_viewCart = "Vizualizare coș";
 var g_addedToCart = "Adăugat cu succes în coș";
 var g_youMightLike = "S-ar putea sa va placa și...";
 var g_excludingVat = "fără TVA";
@@ -92,9 +92,9 @@ var g_blogText = "Sfaturi și inspirație pentru iubitorii de tendințe și păr
 
 var g_moreRating = "Mai multe evaluări";
 
-var g_ratingUrl = "store-rating";
+var g_ratingUrl = "evaluarea-magazinului";
 
-var g_priceFree = 1234;
+var g_priceFree = 1500;
 
 var g_category = "Category";
 var g_model = "Model";
@@ -113,14 +113,14 @@ var category4Url = "blog-life-in-benlemi";
 
 var g_registrationUrl = "registration";
 
-var g_cartUrl = "cart";
-var g_cart1Url = "/order/step-1";
-var g_cart1 = "step-1";
+var g_cartUrl = "cos-de-cumparaturi";
+var g_cart1Url = "/comanda/comanda-plata-si-transport";
+var g_cart1 = "comanda-plata-si-transport";
 
-var g_cart2Url = "/order/step-2";
-var g_cart2 = "step-2";
+var g_cart2Url = "comanda/comanda-informatii-despre-dvs";
+var g_cart2 = "comanda-informatii-despre-dvs";
 
-var g_inThankYou = "thank-you";
+var g_inThankYou = "va-multumim";
 
 var g_inClientUrl = "client-center";
 var g_inSettingsUrl = "my-account-settings";

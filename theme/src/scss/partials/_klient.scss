@@ -41,6 +41,13 @@
             border: 0;
         }
     }
+    .content-inner .table tr th:nth-child(5){
+        display: none;
+      }
+    .content-inner .table tr td:nth-child(5){
+        display: none;
+      }
+      
 }
 
 .in-klient-slevy, 

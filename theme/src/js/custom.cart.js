@@ -93,3 +93,5 @@ $(".showMoreRelated").click(function(){
 
 
 $(".cart-summary .extras-wrap .extra.discount").html('<a href="/registrace">Zaregistrujte se a získáte slevu 3 %.</div');
+
+
