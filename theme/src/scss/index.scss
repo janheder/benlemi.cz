@@ -566,4 +566,75 @@ html:lang(en){
             flex-grow: 0;
         }  
     }
+
+    .in-step-1 label[for="deliveryCountryId"]::after{
+        content: " (We will send your order to this country)";
+        opacity: 0.8;
+    }
+    .in-step-2 .co-shipping-address h4{
+        font-size: 0;
+        margin-top: 20px;
+    }
+    .in-step-2 .co-shipping-address h4::before{
+        content: "We will send your order to this address";
+        font-size: 18px;
+    }
+    .wholesale.in-step-2 .cart-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .wholesale.in-step-2 .co-billing-address{
+        order:1;
+    }
+    .wholesale.in-step-2 #shipping-address{
+        order:0;
+    }
+    .wholesale.in-step-2 .co-box-additional{
+        order:2;
+    }
+    .wholesale.in-step-2 label[for="another-shipping"]{
+        display: none !important;
+    }
+    #userCheck{
+        display: none;
+    }
+    .wholesale.in-step-2 .co-shipping-address > .form-group:last-child{
+        background:#dfefc9;
+        padding: 10px;
+        margin-top: 10px;
+    }
+} 
+
+/* ========================================================================== */
+/* BENLEMI.RO SPECIFIC EDITS */
+/* ========================================================================== */
+
+
+html:lang(ro){
+    .delivery-time-label, .delivery-time{
+        display: none;
+    }
+    .type-product #descriptionLong::before{
+        background-image: url("../img/en/vyroba-banner.png");
+    }
+    .header-contacts a:first-child{
+        display: none;
+    }
+    .in-customer-benefits #pointsSection{
+        display: none;
+    }
+    .flag-custom1{
+        display: none !important;
+    }
+    .menu-level-1 > li:nth-last-child(2){
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    @media screen and (max-width: 991px){
+        .menu-level-1 > li:nth-child(4){
+            justify-content: flex-start;
+            flex-grow: 0;
+        }  
+    }
 } 

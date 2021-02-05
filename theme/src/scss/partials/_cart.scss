@@ -12,7 +12,7 @@
     }
 
 }
-.in-kosik, .in-cart{
+.in-kosik, .in-cart, .in-cos-de-cumparaturi{
     .cart-row .col-md-8, .cart-row .col-md-4{
         max-width: none;
         flex-basis: auto;
@@ -151,7 +151,7 @@
     }
 }
 
-.in-kosik, .in-cart{
+.in-kosik, .in-cart, .in-cos-de-cumparaturi{
         
     .cart-table{
         width: 100%;
@@ -945,7 +945,7 @@
 
 
 /*step 2 delivery and payment page*/
-.in-krok-2 .cart-row, .in-step-2 .cart-row{
+.in-krok-2 .cart-row, .in-step-2 .cart-row, .in-comanda-informatii-despre-dvs .cart-row{
     flex-direction: row;
 }
 .phone-combined-input{

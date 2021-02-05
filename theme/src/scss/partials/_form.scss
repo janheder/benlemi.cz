@@ -97,7 +97,7 @@ input.form-control:disabled, select.form-control:disabled{
     cursor: not-allowed;
 }
 
-.in-krok-2 .cart-content, #register-form, .in-step-2 .cart-content{
+.in-krok-2 .cart-content, #register-form, .in-step-2 .cart-content, .in-comanda-informatii-despre-dvs .cart-content{
     input[type="checkbox"], input[type="radio"]{
         -webkit-appearance: none;
         position: absolute;

@@ -132,8 +132,8 @@ var g_inClientDiscussionUrl = "klient-diskuze";
 var g_inForgotPasswordUrl = "zapomenute-heslo";
 
 var relatedTags = "#productsRelated .flag-custom1";
-var relatedCats = "meta[content='Dětská postel domeček Tery s bočnicí'], " + 
-"meta[content='Dětská postel domeček Tery bez bočnice'], " + 
+var relatedCats = "meta[content='Dětská postel domeček TERY s bočnicí'], " + 
+"meta[content='Dětská postel domeček TERY bez bočnice'], " + 
 "meta[content='Dětská postel domeček Lucky s bočnicí'], " + 
 "meta[content='Dětská postel domeček Funny'], " + 
 "meta[content='Dětská postel Baldee'], " + 
