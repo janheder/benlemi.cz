@@ -1,5 +1,5 @@
 
-var g_currency = "€"
+var g_currency = "lei"
 var g_searchPlaceholder = "Scrieți ceea ce căutați, de ex. pat dublu";
 var g_login = "Conectare";
 var g_register = "Autentificare";
@@ -11,7 +11,7 @@ var g_langEN = "Engleza";
 var g_freeDelivery = "Livrarea mărfurilor este gratuită";
 var g_pickAdditionalItemsForAtLeast = "Alegeți articole suplimentare pentru cel puțin";
 var g_andGetFreeDeliveryOnYourOrder = "și primiți livrare gratuită la comanda dvs";
-var g_pickAdditionalItemsOver = "Livrare gratuită la comenzi de peste 1234 €";
+var g_pickAdditionalItemsOver = "Livrare gratuită la comenzi de peste 1500 lei";
 var g_logged = "Înscris";
 var g_viewAll = "Vedeți toate produsele";
 var g_productRating = "Evaluarea produsului";

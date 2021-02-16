@@ -89,9 +89,13 @@ if ($(".search").length){
     '<a href="mailto:' + mail + '">' + mail + '</a>'+
     '</div>').insertBefore(".navigation-buttons");
 
-    if($("html:lang(en), html:lang(ro)").length){
+    if($("html:lang(en)").length){
         $(".header-contacts").append('<span>Mon–Fri 9:30 a.m.– 4:00 p.m</span>');
     }
+    if($("html:lang(ro)").length){
+        $(".header-contacts").append('<span>Luni-Vineri 9:30 – 16:00</span>');
+    }
+    
 }
 
 /* add search and user icons to header area */
@@ -575,9 +579,24 @@ function advanceOrderCustom() {
             }
             var amount = parseInt($(".overall-wrapper .add-to-cart .amount").val());
             var priceSingle = $(".overall-wrapper .p-final-price-wrapper .price-final-holder:not(.noDisplay), .overall-wrapper .p-final-price-wrapper .price-final-holder.force-display").html();
-            var priceTotal = parseFloat(priceSingle.split('<')[0].replace('€', '').replace(',', '.')).toFixed(2) * amount;
-            if($("html:lang(cs)").length){var priceTotal = parseInt(priceSingle.replace('Kč', '').replace(/ /g,'')) * amount;}
-            if($("html:lang(cs)").length){var priceTotalcurrency = priceTotal + " " + g_currency;}else{var priceTotalcurrency = g_currency + priceTotal;}
+
+
+
+
+            if($("html:lang(cs)").length){
+                var priceTotal = parseInt(priceSingle.replace('Kč', '').replace(/ /g,'')) * amount;
+                var priceTotalcurrency = priceTotal + " " + g_currency;
+
+            }else if($("html:lang(en), html:lang(sk)").length){
+                var priceTotal = parseFloat(priceSingle.split('<')[0].replace('€', '').replace(',', '.')).toFixed(2) * amount;
+                var priceTotalcurrency = g_currency + priceTotal;
+
+            }else if($("html:lang(ro)").length){
+                var priceTotal = parseFloat(priceSingle.replace('lei', '').replace(',', '.').replace(/ /g,'')).toFixed(2) * amount;
+                var priceTotalcurrency = priceTotal + " " + g_currency;
+            }
+
+
 
             $(".extras-wrap").prepend('<div class="extras-product-heading"><span>' + g_product + '</span><span>' + g_availability + '</span><span>' + g_quantity +'</span><span>' + g_price + '</span></div><div class="extras-product">' + 
             '<div class="extras-product-img">' + img + '</div>' + 
