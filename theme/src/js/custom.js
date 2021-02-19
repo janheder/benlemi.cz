@@ -95,7 +95,9 @@ if ($(".search").length){
     if($("html:lang(ro)").length){
         $(".header-contacts").append('<span>Luni-Vineri 9:30 – 16:00</span>');
     }
-    
+    if($("html:lang(hu)").length){
+        $(".header-contacts").append('<span>hétfő-péntek 9:30 – 16:00</span>');
+    }
 }
 
 /* add search and user icons to header area */
@@ -156,28 +158,36 @@ if ($(".popup-widget-inner h2").length){
 
 /* language toggle */
 if ($(":lang(cs)").length){
-    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item cz active">Česky</div><a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
+    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item cz active">Česky</div> <a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a> <a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a> <a href="https://benlemi.ro" class="language-toggle-item ro">Rumunsky</a> <a href="https://benlemi.hu" class="language-toggle-item hu">Maďarsky</a> </div></div>');
     $("#js-langToggle").click(function(){
         $("#js-langToggle").toggleClass("--active");
     });
 } 
-else if($("html:lang(en)").length){
-    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item com active">English</div><a href="https://www.benlemi.cz" class="language-toggle-item cz">Czech</a><a href="https://benlemi.sk" class="language-toggle-item sk">Slovak</a></div></div>');
+else if($(":lang(sk)").length){
+    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item sk active">Česky</div> <a href="https://benlemi.cz" class="language-toggle-item cz">Česky</a> <a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a> <a href="https://benlemi.ro" class="language-toggle-item ro">Rumunsky</a> <a href="https://benlemi.hu" class="language-toggle-item hu">Maďarsky</a> </div></div>');
     $("#js-langToggle").click(function(){
         $("#js-langToggle").toggleClass("--active");
     });
 }
-else if($(":lang(sk)").length){
-    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item sk active">Slovensky</div><a href="https://www.benlemi.cz" class="language-toggle-item cz">Česky</a><a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a></div></div>');
+else if($("html:lang(en)").length){
+    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item com active">English</div> <a href="https://benlemi.cz" class="language-toggle-item cz">Czech</a> <a href="https://benlemi.sk" class="language-toggle-item sk">Slovak</a> <a href="https://benlemi.ro" class="language-toggle-item ro">Romanian</a> <a href="https://benlemi.hu" class="language-toggle-item hu">Hungarian</a> </div></div>');
     $("#js-langToggle").click(function(){
         $("#js-langToggle").toggleClass("--active");
     });
 }
 else if($("html:lang(ro)").length){
-    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"><div><div class="language-toggle-item com active">English</div><a href="https://www.benlemi.cz" class="language-toggle-item cz">Czech</a><a href="https://benlemi.sk" class="language-toggle-item sk">Slovak</a></div></div>');
+    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item ro active">Română</div> <a href="https://benlemi.cz" class="language-toggle-item cz">Ceh</a> <a href="https://benlemi.sk" class="language-toggle-item sk">Slovacă</a> <a href="https://benlemi.com" class="language-toggle-item com">Engleză</a> <a href="https://benlemi.hu" class="language-toggle-item hu">Maghiară</a> </div></div>');
     $("#js-langToggle").click(function(){
         $("#js-langToggle").toggleClass("--active");
     });
+}
+else if($("html:lang(hu)").length){
+    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item hu active">Magyar</div> <a href="https://benlemi.cz" class="language-toggle-item cz">Cseh</a> <a href="https://benlemi.sk" class="language-toggle-item sk">Szlovák</a> <a href="https://benlemi.com" class="language-toggle-item com">Angol</a> <a href="https://benlemi.ro" class="language-toggle-item ro">Román</a> </div></div>');
+    $("#js-langToggle").click(function(){
+        $("#js-langToggle").toggleClass("--active");
+    });
+}else{
+
 }
 
 
@@ -593,6 +603,10 @@ function advanceOrderCustom() {
 
             }else if($("html:lang(ro)").length){
                 var priceTotal = parseFloat(priceSingle.replace('lei', '').replace(',', '.').replace(/ /g,'')).toFixed(2) * amount;
+                var priceTotalcurrency = priceTotal + " " + g_currency;
+
+            }else if($("html:lang(hu)").length){
+                var priceTotal = parseFloat(priceSingle.replace('Ft', '').replace(',', '.').replace(/ /g,'')).toFixed(2) * amount;
                 var priceTotalcurrency = priceTotal + " " + g_currency;
             }
 

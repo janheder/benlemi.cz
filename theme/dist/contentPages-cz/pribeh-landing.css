@@ -1,3 +1,15 @@
+.id-2999 #content-wrapper{
+    max-width: none;
+    padding: 0;
+}
+.id-2999 #newsletterSection, .id-2999 #pointsSection{
+    display: none;
+}
+.id-2999 #content-wrapper header{
+    display: none;
+  }
+
+
 .storySection{
     padding: 140px 0;
 }
@@ -10,7 +22,7 @@
     background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/story/bg-wave.png");
     background-position: bottom right;
     background-repeat: no-repeat;
-    padding: 40px 0 0 0;
+    padding: 0px 0 0 0;
 }
 .storySection.--boys h1{
     font-size: 36px;
@@ -51,6 +63,7 @@
 
 .storySection.--points{
     background: #7BB82A;
+    padding: 60px 0;
 }
 .storySection__point{
     color: white;
@@ -59,6 +72,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
+    text-align: center;
 }
 .storySection__point img{
 
@@ -66,6 +80,8 @@
 .storySection__point h1{
     font-size: 16px;
     text-align: center;
+    margin: 0;
+    margin-top: 20px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -140,6 +156,8 @@
 
 .storySection.--present{
     border-bottom: 6px solid #FAFAF9;
+    padding-bottom: 0;
+    padding-top: 80px;
 }
 .storySection.--present h1{
     color: #C4C4C4;
@@ -157,7 +175,9 @@
 .storySection.--present strong{
     color: #373B2F;
 }
-
+.storySection__sidePhoto{
+    
+}
 
 
 
@@ -167,11 +187,33 @@
 .storySection.--profiles{
     border-bottom: 6px solid #FAFAF9;
 }
+
+.storySection__profilesBoys{
+    display: flex;
+    margin-bottom: 60px;
+}
+.storySection__profilesBoys h2{
+    font-size: 20px;
+    padding-top: 40px;
+}
+.storySection__profilesBoys h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.storySection__profilesBoys p{
+    font-size: 16px;
+    color: #5F5F5F;
+}
+.storySection__profilesBoys .col-md-3:first-child{
+    text-align: right;
+}
+
 .storySection.--profiles h1{
     text-align: center;
     font-size: 36px;
     font-weight: 600;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+    margin: 0;
 }
 
 .storySection__profile{
@@ -196,7 +238,7 @@
     height: 165px;
     width: 180px;
     bottom: 0;
-    left: 38%;
+    left: 32%;
     background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/symbol-benlemi.svg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -205,6 +247,7 @@
 }
 .storySection__profile img{
     height: 100%;
+    margin-right: 60px;
 }
 .storySection__profile h2{
     font-size: 18px;
@@ -241,6 +284,7 @@
     font-size: 18px;
     font-weight: 400;
     color: #5F5F5F;
+    margin-bottom: 20px;
 }
 .storySection__contact{
     display: flex;
@@ -253,6 +297,8 @@
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
+    font-weight: 500;
+    font-size: 18px;
 }
 .storySection__contactSingle img{
     margin-right: 10px;

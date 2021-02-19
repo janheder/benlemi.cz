@@ -640,4 +640,47 @@ html:lang(ro){
     .navigation-buttons {
         width: 400px;
     }
+    .news-item time{
+        display: none;
+    }
+} 
+
+/* ========================================================================== */
+/* BENLEMI.HU SPECIFIC EDITS */
+/* ========================================================================== */
+
+
+html:lang(hu){
+    .delivery-time-label, .delivery-time{
+        display: none;
+    }
+    .type-product #descriptionLong::before{
+        background-image: url("../img/en/vyroba-banner.png");
+    }
+    .header-contacts a:first-child{
+        display: none;
+    }
+    .in-customer-benefits #pointsSection{
+        display: none;
+    }
+    .flag-custom1{
+        display: none !important;
+    }
+    .menu-level-1 > li:nth-last-child(2){
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    @media screen and (max-width: 991px){
+        .menu-level-1 > li:nth-child(4){
+            justify-content: flex-start;
+            flex-grow: 0;
+        }  
+    }
+    .navigation-buttons {
+        width: 400px;
+    }
+    .news-item time{
+        display: none;
+    }
 } 
