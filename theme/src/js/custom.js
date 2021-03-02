@@ -90,13 +90,13 @@ if ($(".search").length){
     '</div>').insertBefore(".navigation-buttons");
 
     if($("html:lang(en)").length){
-        $(".header-contacts").append('<span>Mon–Fri 9:30 a.m.– 4:00 p.m</span>');
+        $(".header-contacts").append('<span>Mon–Fri 8:30 a.m.– 4:00 p.m</span>');
     }
     if($("html:lang(ro)").length){
-        $(".header-contacts").append('<span>Luni-Vineri 9:30 – 16:00</span>');
+        $(".header-contacts").append('<span>Luni-Vineri 8:30 – 16:00</span>');
     }
     if($("html:lang(hu)").length){
-        $(".header-contacts").append('<span>hétfő-péntek 9:30 – 16:00</span>');
+        $(".header-contacts").append('<span>hétfő-péntek 8:30 – 16:00</span>');
     }
 }
 
