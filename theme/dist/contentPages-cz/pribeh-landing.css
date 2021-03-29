@@ -13,6 +13,11 @@
 .storySection{
     padding: 140px 0;
 }
+@media screen and (max-width: 991px){
+    .storySection{
+        padding: 80px 0;
+    }
+}
 
 /* -------------------------------------------------------------------------- */
 /*  */
@@ -63,7 +68,7 @@
 
 .storySection.--points{
     background: #7BB82A;
-    padding: 60px 0;
+    padding: 40px 0;
 }
 .storySection__point{
     color: white;
@@ -75,13 +80,18 @@
     text-align: center;
 }
 .storySection__point img{
-
+    height: 100px;
 }
 .storySection__point h1{
     font-size: 16px;
     text-align: center;
     margin: 0;
     margin-top: 20px;
+}
+@media screen and (max-width: 991px){
+    .storySection__point{
+        padding: 20px 0px 20px 0;
+    }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -94,7 +104,6 @@
 
 .storySection__treeSection{
     display: flex;
-
 }
 .storySection__treeDate{
     flex-shrink: 0;
@@ -150,6 +159,48 @@
 .storySection__treeSection:last-child .storySection__treeText{
     padding-bottom: 0px;
 }
+@media screen and (max-width: 991px){
+    .storySection__treeSection{
+        display: flex;
+    }
+    .storySection__treeDate{
+        display: none;
+    }
+    .storySection__treeText{
+        display: flex;
+        flex-direction: column;
+    }
+    .storySection__treeText::before{
+        content: "2015";
+        color: #C4C4C4;
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 800;
+        margin: 0;
+        line-height: 1;
+        padding-bottom: 20px;
+    }
+    .storySection__treeSection:nth-child(2) .storySection__treeText::before{
+        content: "2016";
+    }
+    .storySection__treeSection:nth-child(3) .storySection__treeText::before{
+        content: "2017";
+    }
+}
+@media screen and (max-width: 500px){
+    .storySection__treeText{
+        padding-bottom: 40px;
+    }
+    .storySection__treeText::before{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .storySection__treeText p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
 /* -------------------------------------------------------------------------- */
 /*  */
 /* -------------------------------------------------------------------------- */
@@ -164,6 +215,7 @@
     text-transform: uppercase;
     font-size: 60px;
     padding-bottom: 80px;
+    margin: 0;
     font-weight: 800;
 }
 .storySection.--present p{
@@ -178,8 +230,21 @@
 .storySection__sidePhoto{
     
 }
-
-
+@media screen and (max-width: 991px){
+    .storySection.--present h1{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 500px){
+    .storySection.--present h1{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .storySection__treeText p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
 
 /* -------------------------------------------------------------------------- */
 /*  */
@@ -191,6 +256,9 @@
 .storySection__profilesBoys{
     display: flex;
     margin-bottom: 60px;
+}
+.storySection__profilesBoys-responsive{
+    display: none
 }
 .storySection__profilesBoys h2{
     font-size: 20px;
@@ -263,6 +331,19 @@
     color: #5F5F5F;
     margin: 0;
 }
+@media screen and (max-width: 991px){
+    .storySection__profilesBoys{
+        display: none;
+    }
+    .storySection.--profiles h1{
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+    .storySection__profilesBoys-responsive{
+        display: flex;
+    }
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*  */
@@ -290,6 +371,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .storySection__contactSingle{
     display: flex;

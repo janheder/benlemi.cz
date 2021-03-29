@@ -353,7 +353,7 @@ if ($(relatedCats).length){
         var i=0;
         $(relatedTags).each(function(i){
             var ran = i+1;
-            var pName = $(this).closest(".p").find(".name").prop("title");
+            var pName = $(this).closest(".p").find(".name span:first-child").text().trim();
             var pImg = $(this).closest(".p").find(".image img").data("src");
             var pPrice = $(this).closest(".p").find(".price-final strong").text();
             $(".p-info-wrapper .add-to-cart").before('<div class="detail-cross-selling selling-'+ ran +'"><input type="checkbox" id="csell' + ran + '" name="csell' + ran + '"><label for="csell' + ran + '"><img src="' + pImg + '"><span><span>' + pName + '</span><span>' + pPrice + '</span></span></label></div>')

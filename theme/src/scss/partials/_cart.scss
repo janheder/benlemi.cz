@@ -937,6 +937,7 @@
     justify-content: flex-end;
     display: flex;
     order: 20;
+    white-space: nowrap;
 }
 .payment-shipping-price.for-free{
     color: $green-700;
@@ -1188,4 +1189,20 @@
     .cart-summary .extras-wrap .extra.discount {
         margin-left: 0px;
     }
+}
+
+
+.discount-coupon form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.discount-coupon form input{
+    max-width: 200px;
+}
+.discount-coupon form span{
+display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    padding-top: 5px;
 }

@@ -1,0 +1,304 @@
+.oNas{
+
+}
+.oNas__quote{
+    padding: 20px;
+    background: $gray-300;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.oNas__headerImg{
+    margin: 40px auto;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.oNas__h2{
+    padding-top: 20px;
+    text-align: center;
+}   
+.oNas__p{
+
+}
+.oNas__points{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.oNas__point{
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.oNas__pointImg{
+    height: 100px;
+}
+.oNas__pointTitle{
+    padding-top: 20px;
+    color: $gray-700;
+    font-size: 14px;
+    margin: 0;
+}
+.oNas__link{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.oNas__profiles{
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.oNas__profile{
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.oNas__profileImgWrap{
+    height: 150px;
+    width: 150px;
+}
+.oNas__profileImg{
+
+}
+.oNas__profileTitle{
+    padding-top: 20px;
+}
+.oNas__profileSubtitle{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.oNas__profileText{
+    color: $gray-700;
+    font-size: 14px;
+    margin: 0;
+}
+.oNas__footerImg{
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+}
+
+@media screen and (max-width: 767px){
+    .oNas__point, .oNas__profile{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px){
+    .oNas__point, .oNas__profile{
+        width: 100%;
+    }
+}
+
+
+
+
+
+.aboutTree {
+    padding: 20px 0 80px;
+    margin-bottom: 100px
+}
+
+.aboutTree__single {
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: -70px
+}
+
+.aboutTree__single::after {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    content: "";
+    background-image: url("https://www.benlemi.cz/user/documents/upload/osa_onas_bg.png");
+    height: 100%;
+    width: 5px;
+    filter: brightness(1.2);
+    opacity: .8;
+    background-position: center
+}
+
+.aboutTree__col {
+    width: 50%;
+    display: flex;
+    position: relative
+}
+
+.aboutTree__col:first-child .aboutTree__text {
+    padding-right: 80px
+}
+
+.aboutTree__col:last-child .aboutTree__text {
+    padding-left: 80px
+}
+
+.aboutTree__col:first-child::before,.aboutTree__col:last-child::before {
+    display: flex;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-92%,-50%);
+    content: "";
+    background-image: url("https://www.benlemi.cz/user/documents/upload/osa_onas.png");
+    height: 40px;
+    width: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1
+}
+
+.aboutTree__col:last-child::before {
+    transform: translate(-7%,-50%) rotate(180deg);
+    left: 0;
+    right: 0
+}
+
+.aboutTree__col .aboutTree__imgWrap {
+    flex-shrink: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.aboutTree__text {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.6
+}
+
+.aboutTree .aboutTree__single:nth-child(odd) .aboutTree__col:last-child::before {
+    content: none
+}
+
+.aboutTree .aboutTree__single:nth-child(even) .aboutTree__col:first-child::before {
+    content: none
+}
+
+.aboutTree .aboutTree__single:first-child::after {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.aboutTree .aboutTree__single:last-child::after {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+
+@media screen and (max-width: 991px) {
+    .aboutTree {
+        flex-direction:column
+    }
+
+    .aboutTree__single {
+        flex-direction: column;
+        padding-left: 80px
+    }
+
+    .aboutTree__col {
+        width: 100%
+    }
+
+    .aboutTree__single::after {
+        left: 0%;
+        transform: translate(0%)
+    }
+
+    .aboutTree__col:last-child::before {
+        transform: translate(-120%,-50%) rotate(180deg);
+        left: 0;
+        right: 0
+    }
+
+    .aboutTree .aboutTree__single:nth-child(even) .aboutTree__col:last-child::before {
+        content: ""
+    }
+
+    .aboutTree .aboutTree__single:nth-child(odd) .aboutTree__col:first-child::before {
+        content: "";
+        left: 0;
+        right: 0;
+        transform: translate(-120%,-50%) rotate(180deg)
+    }
+
+    .aboutTree__col:first-child::before {
+        content: none
+    }
+
+    .aboutTree__col:last-child .aboutTree__text {
+        padding-left: 20px
+    }
+
+    .aboutTree__col:first-child .aboutTree__text {
+        padding-right: 20px
+    }
+}
+
+
+.aboutTree {
+    position: relative
+}
+
+.aboutTree::before {
+    position: absolute;
+    content: "";
+    background-image: url("https://www.benlemi.cz/user/documents/upload/osa_zacatek.png");
+    height: 15px;
+    width: 15px;
+    display: block;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-size: 15px 12px;
+    background-repeat: no-repeat
+}
+
+.aboutTree::after {
+    position: absolute;
+    content: "";
+    background-image: url("https://www.benlemi.cz/user/documents/upload/osa_konec.png");
+    height: 15px;
+    width: 15px;
+    display: block;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-size: 20px 12px;
+    background-repeat: no-repeat
+}
+
+@media screen and (max-width: 991px) {
+    .aboutTree::before {
+        left:0;
+        transform: none
+    }
+
+    .aboutTree::after {
+        left: 0;
+        transform: none
+    }
+}
+
+.aboutTree__col .aboutTree__imgWrap {
+    text-align: center;
+    width: 100%
+}
