@@ -81,7 +81,7 @@ var g_emptyInforgaphicsTitle = "Choose propositions above to see detailed infogr
 
 var g_openFilter = "Szűrő megjelenítése";
 var g_showMore = "Mutass többet";
-var g_show = "Előadás";
+var g_show = "Nézet";
 var g_moreVariants = "Több lehetőség";
 var g_showFilter = "Szűrő megjelenítése";
 var g_hideFilter = "Szűrő elrejtése";

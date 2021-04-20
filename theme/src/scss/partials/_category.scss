@@ -91,8 +91,10 @@
 
 @media screen and (min-width: 992px){
     #filterToggleDesktop{
-        color: $white;
+        color: #373b2f;
         display: flex;
+        background: #e5e5e5;
+    }
     }
     .type-category .sidebar-left{
         opacity: 0;

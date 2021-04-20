@@ -10,7 +10,7 @@ var g_langEN = "Anglicky";
 var g_freeDelivery = "Dopravu máte zadarmo";
 var g_pickAdditionalItemsForAtLeast = "Vyberte ešte za";
 var g_andGetFreeDeliveryOnYourOrder = "a dopravu máte zadarmo";
-var g_pickAdditionalItemsOver = "Vyberte nad 49 €";
+var g_pickAdditionalItemsOver = "Vyberte nad 400 €";
 var g_logged = "Prihlásený";
 var g_viewAll = "Zobraziť všetko";
 var g_productRating = "Hodnotenie produktu";
@@ -94,7 +94,7 @@ var g_moreRating = "Ďalšie hodnotenie";
 
 var g_ratingUrl = "hodnotenie-obchodu";
 
-var g_priceFree = 49;
+var g_priceFree = 400;
 
 var g_category = "Kategória";
 var g_model = "Model";

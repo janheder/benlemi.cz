@@ -111,7 +111,7 @@ var category4 = "Life in Benlemi";
 var category4Url = "blog-life-in-benlemi";
 
 
-var g_registrationUrl = "registration";
+var g_registrationUrl = "inregistrare";
 
 var g_cartUrl = "cos-de-cumparaturi";
 var g_cart1Url = "/comanda/comanda-plata-si-transport";

@@ -10,7 +10,7 @@ var g_langEN = "Anglicky";
 var g_freeDelivery = "Dopravu máte zdarma";
 var g_pickAdditionalItemsForAtLeast = "Vyberte ještě za";
 var g_andGetFreeDeliveryOnYourOrder = "a dopravu máte zdarma";
-var g_pickAdditionalItemsOver = "Vyberte nad 1234 Kč";
+var g_pickAdditionalItemsOver = "Vyberte nad 10 000 Kč";
 var g_logged = "Přihlášen";
 var g_viewAll = "Zobrazit vše";
 var g_productRating = "Hodnocení produktu";
@@ -84,7 +84,7 @@ var g_showMore = "Zobrazit další";
 var g_show = "Zobrazit";
 var g_moreVariants = "Více variant";
 var g_showFilter = "Zobrazit filtr";
-var g_hideFilter = "Skrýt filtr";
+var g_hideFilter = "Filtrovat";
 var g_fullDescription = "Celý popis";
 var g_totalQuantity = "Položek celkem";
 
@@ -92,7 +92,7 @@ var g_moreRating = "Další hodnocení";
 
 var g_ratingUrl = "hodnoceni-obchodu";
 
-var g_priceFree = 1234;
+var g_priceFree = 10000;
 
 var g_category = "Kategorie";
 var g_model = "Model";
