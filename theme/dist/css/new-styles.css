@@ -156,18 +156,7 @@ details p {
     background: #8C8C8C;
 
   }    
-  .pagination {
-      justify-content: center;
-  }
-  .pagination a, .pagination strong{
-    order: 5;
-  }
-  .pagination .prev{
-    order: 0;
-  }
-  .pagination .next{
-    order: 10;
-  }
+
 .faq-page{
     max-width: 780px;
     margin: 0 auto;
@@ -398,21 +387,4 @@ input[type=number]::-webkit-outer-spin-button {
 
 .variant-list select {
   background-size: 10px 10px;
-}
-.pagination a.hidden{
-  display: none;
-}
-.pagination a.hidden + *{
-  margin-left: 40px;
-  position: relative;
-}
-.pagination a.hidden + *::before{
-  content: "...";
-  height: 46px;
-  width: 40px;
-  position: absolute;
-  left: -43px;
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
