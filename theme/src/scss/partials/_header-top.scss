@@ -86,7 +86,7 @@
 
     &:hover, &:active, &:focus{
         text-decoration: none;
-        color: $green-700;
+        color: $green-900;
     }
     &::before{
         content: "";
@@ -111,7 +111,7 @@
 .header-contacts span{
     font-size: 14px;
     font-weight: 500;
-    color: $gray-700;
+    color: $gray-800;
     padding-left: 30px;
     padding-bottom: 10px;
 }
@@ -207,7 +207,7 @@
         text-decoration: none;
 
         .p-info{
-            color: $green-700;
+            color: $green-900;
         }
     }
 }
@@ -469,7 +469,7 @@
     }
 }
 .user-action-cart .cart-free-shipping strong{
-    color: $green-700;
+    color: $green-900;
     padding: 10px 0;
     padding-top: 20px;
     display: flex;

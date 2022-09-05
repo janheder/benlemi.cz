@@ -44,7 +44,7 @@
 }
 .news-item time{
     font-size: 13px;
-    color: $gray-700;
+    color: $gray-800;
     order: 2;
     font-weight: 400;
     padding-top: 10px;
@@ -57,7 +57,7 @@
 .news-item .description{
     font-size: 14px;
     order: 1;
-    color: $gray-700;
+    color: $gray-800;
 }
 .news-item .description p{
     margin: 0;
@@ -105,7 +105,7 @@
     margin: 0 auto;
 }
 .news-item-detail time{
-    color: $gray-700;
+    color: $gray-800;
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 40px;
@@ -153,7 +153,7 @@ body[class*="in-blog-"] .sidebar-left{
 }
 .news-item-widget time{
     font-size: 13px;
-    color: $gray-700;
+    color: $gray-800;
     font-weight: 400;
 }
 

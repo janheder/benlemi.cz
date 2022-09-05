@@ -398,4 +398,12 @@
     .storySection.--join h2 {
         font-size: 16px;
     }
+    .storySection.--join a{
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-width: 500px){
+    .storySection.--join a{
+        margin-bottom: 60px;
+    }
 }

@@ -98,6 +98,8 @@ var g_priceFree = 110000;
 var g_category = "Category";
 var g_model = "Model";
 
+var g_discountText = "Regisztráljon és 3% kedvezményt kapjon.";
+
 /* page names */
 
 var category1 = "Living";

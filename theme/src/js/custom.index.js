@@ -7,6 +7,8 @@ if ($("#blogSection").length){
     $("#blogSection .blogSection__content .news-wrapper").load("/" + category1Url + "/ .news-wrapper .news-item:nth-child(-n+3)");
 }
 
+    
+
 /* load rating into homepage section */
 if ($("#ratingSection").length){
     $("#ratingSection .ratingSection__content").load("/" + g_ratingUrl + "/ .content-inner", function() {

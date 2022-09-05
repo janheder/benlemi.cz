@@ -99,6 +99,8 @@ var g_priceFree = 1500;
 var g_category = "Category";
 var g_model = "Model";
 
+var g_discountText = "Înregistrați-vă și obțineți o reducere de 3%.";
+
 /* page names */
 
 var category1 = "Living";
@@ -122,14 +124,14 @@ var g_cart2 = "comanda-informatii-despre-dvs";
 
 var g_inThankYou = "va-multumim";
 
-var g_inClientUrl = "client-center";
-var g_inSettingsUrl = "my-account-settings";
-var g_inOrdersUrl = "my-orders";
+var g_inClientUrl = "centru-clienti";
+var g_inSettingsUrl = "configurarea-contului-meu";
+var g_inOrdersUrl = "comenzile-mele";
 var g_inClientOrdersUrl = "client-orders";
-var g_inClientSaleUrl = "client-discounts";
-var g_inClientRatingUrl = "client-ratings";
-var g_inClientDocumentsUrl = "client-documents";
-var g_inClientDiscussionUrl = "client-discussion";
+var g_inClientSaleUrl = "reducerile-mele";
+var g_inClientRatingUrl = "evaluare";
+var g_inClientDocumentsUrl = "documentele-mele";
+var g_inClientDiscussionUrl = "discutiile-mele-despre-produse";
 var g_inForgotPasswordUrl = "forgotten-password";
 
 var relatedCats = "";

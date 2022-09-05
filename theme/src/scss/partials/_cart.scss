@@ -52,12 +52,12 @@
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    color: $gray-700;
+    color: $gray-800;
     position: relative;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
-        color: $green-700;
+        color: $green-900;
     }
 }
 .cart-header .step strong{
@@ -68,7 +68,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    color: $gray-700;
+    color: $gray-800;
 }
 .cart-header .step.active{
     border-bottom: 2px solid $green-700;
@@ -78,7 +78,7 @@
     border-bottom: 2px solid $green-700;
 }
 .cart-header .step.completed a{
-    color: $green-700;
+    color: $green-900;
 }
 .cart-header .step.active strong{
     color: $gray-900;
@@ -164,7 +164,7 @@
         width: 15%;  
         font-size: 13px;
         font-weight: 400;
-        color: $gray-700;
+        color: $gray-800;
         padding: 20px 10px 0px 10px;
     }
     .cart-table-heading span:first-child{
@@ -182,7 +182,7 @@
         width: 100%;
         font-size: 14px;
         font-weight: 600;
-        color: $gray-700;
+        color: $gray-800;
         padding-bottom: 10px;
     }
     .cart-table .removeable{
@@ -223,17 +223,17 @@
     }
     .cart-table .p-name .main-link-variant{
         font-size: 13px;
-        color: $gray-700;
+        color: $gray-800;
     }
     .cart-table .p-name .show-related{
         display: flex;
         font-size: 14px;
-        color: $gray-700;
+        color: $gray-800;
         width: 100%;
         display: none;
     }
     .showMoreRelated{
-        color: $green-700;
+        color: $green-900;
         font-size: 13px;
         padding-bottom: 5px;
         cursor: pointer;
@@ -682,7 +682,7 @@
     font-size: 20px;
 }
 .cart-content.summary-wrapper .price-secondary{
-    color: $gray-700;
+    color: $gray-800;
     font-size: 14px;
 }
 
@@ -875,7 +875,7 @@
     border: 1px solid $green-700;
 
     &::before{
-        border-color: $green-700;
+        border-color: $green-900;
     }
     &::after{
         background: $green-700;
@@ -891,7 +891,7 @@
     }
     .sublabel-description{
         font-size: 13px;
-        color: $gray-700;
+        color: $gray-800;
     }
 }
 .payment-info b{
@@ -940,7 +940,7 @@
     white-space: nowrap;
 }
 .payment-shipping-price.for-free{
-    color: $green-700;
+    color: $green-900;
     font-weight: 400;
 }
 

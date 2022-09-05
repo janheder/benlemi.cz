@@ -153,7 +153,7 @@
     flex-direction: column;
 }
 .main-link-variant{
-    color: $gray-700;
+    color: $gray-800;
 }
 .cart-item-amount{
     flex-grow: 1;
@@ -250,7 +250,7 @@
 }
 .recapitulation-single > span{
     font-size: 14px;
-    color: $gray-700;
+    color: $gray-800;
 }
 .recapitulation-single > strong{
     flex-grow: 1;
@@ -274,7 +274,7 @@
 }
 .order-summary-item.price .price-secondary{
     font-size: 14px;
-    color: $gray-700;
+    color: $gray-800;
 
     span{
         display: none;

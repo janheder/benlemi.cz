@@ -1,7 +1,7 @@
 .in-klient, 
 .in-client-center{
     .content-inner h1 + p{
-        color: $gray-700;
+        color: $gray-800;
         margin-bottom: 20px;
     }    
 }
@@ -20,7 +20,7 @@
     .content-inner .table th{
         border-bottom: 1px solid $gray-400;
         padding: 10px 10px;
-        color: $gray-700;
+        color: $gray-800;
         font-size: 13px;
         font-weight: 400;
     }
@@ -65,7 +65,7 @@
         }
     }
     .content table + p{
-        color: $gray-700;
+        color: $gray-800;
         margin-top: 10px 20px;
     }
 }

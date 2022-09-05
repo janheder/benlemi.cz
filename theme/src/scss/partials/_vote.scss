@@ -80,7 +80,7 @@
 }   
 .vote-name{
     font-size: 14px;
-    color: $gray-700;
+    color: $gray-800;
     font-weight: 600;
     padding-right: 20px;
 }
@@ -115,7 +115,7 @@
 }
 .vote-time{
     font-size: 14px;
-    color: $gray-700;
+    color: $gray-800;
     flex-grow: 1;
     text-align: right;
 }
@@ -195,7 +195,7 @@
 .rate-wrap .stars-label{
     display: flex;
     font-size: 14px;
-    color: $gray-700;
+    color: $gray-800;
     text-align: center;
     justify-content: center;
     font-weight: 400;
@@ -336,7 +336,7 @@
     color: $green-800;
 }
 .heureka-rating-group.minus div{
-    color: $gray-700;
+    color: $gray-800;
 }
 .heureka-rating-group.minus div::before{
     background-image: url($i-minus-circle-gray);

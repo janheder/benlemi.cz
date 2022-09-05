@@ -99,6 +99,8 @@ var g_priceFree = 400;
 var g_category = "Kategória";
 var g_model = "Model";
 
+var g_discountText = "Zaregistrujte sa a získate zľavu 3%.";
+
 /* page names */
 
 var category1 = "Bývanie";
@@ -131,6 +133,8 @@ var g_inClientRatingUrl = "klient-hodnotenie";
 var g_inClientDocumentsUrl = "klient-doklady";
 var g_inClientDiscussionUrl = "klient-diskusia";
 var g_inForgotPasswordUrl = "zabudnute-heslo";
+
+var g_shape = "Tvar";
 
 
 var relatedTags = "#productsRelated .flag-custom2";

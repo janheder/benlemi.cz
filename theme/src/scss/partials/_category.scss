@@ -44,7 +44,7 @@
 }
 
 .perex-showMore{
-    color: $green-700;
+    color: $green-900;
 }
 .perex-short{
     
@@ -60,7 +60,7 @@
 }
 .category-header div{
     font-size: 14px;
-    color: $gray-700;
+    color: $gray-800;
     display: flex;
 
     strong{
@@ -82,7 +82,7 @@
 }
 
 .category-header input:checked + label{
-    color: $green-700;
+    color: $green-900;
 }
 #filterToggleDesktop{
     display: none;
@@ -91,10 +91,8 @@
 
 @media screen and (min-width: 992px){
     #filterToggleDesktop{
-        color: #373b2f;
+        background: #8C8C8C;
         display: flex;
-        background: #e5e5e5;
-    }
     }
     .type-category .sidebar-left{
         opacity: 0;

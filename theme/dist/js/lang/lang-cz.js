@@ -79,7 +79,7 @@ var g_relatedProducts = "Související produkty";
 var g_showMoreRelatedProducts = "Zobrazit další související produkty";
 var g_emptyInforgaphicsTitle = "Vyberte rozměr výše a zobrazí se vám detailní infografika produktu";
 
-var g_openFilter = "Otevřít filtr";
+var g_openFilter = "FILTROVAT";
 var g_showMore = "Zobrazit další";
 var g_show = "Zobrazit";
 var g_moreVariants = "Více variant";
@@ -96,6 +96,8 @@ var g_priceFree = 10000;
 
 var g_category = "Kategorie";
 var g_model = "Model";
+
+var g_discountText = "Registrujte se a sbírejte slevy s každým svým nákupem.";
 
 /* page names */
 
@@ -131,6 +133,13 @@ var g_inClientDocumentsUrl = "klient-doklady";
 var g_inClientDiscussionUrl = "klient-diskuze";
 var g_inForgotPasswordUrl = "zapomenute-heslo";
 
+var relatedTags = "";
+var relatedCats = "";
+
+var g_shape = "Tvar";
+
+
+/*
 var relatedTags = "#productsRelated .flag-custom1";
 var relatedCats = "meta[content='Dětská postel domeček TERY s bočnicí'], " + 
 "meta[content='Dětská postel domeček TERY bez bočnice'], " + 
@@ -160,7 +169,7 @@ var relatedCats = "meta[content='Dětská postel domeček TERY s bočnicí'], " 
 
 "meta[content='Dětská postel domeček Happy']";
 
-/*
+
 "meta[content='Vyvýšená postel Nesty']," + 
 
 */

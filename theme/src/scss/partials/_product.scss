@@ -144,7 +144,7 @@
 
 .p-in-in .name .p-variants{
     display: none;
-    color: $gray-700;
+    color: $gray-800;
   }
 .p-in-in .name .p-variants:last-child{
     display: flex;
@@ -163,7 +163,7 @@
     flex-direction: column;
 }
 .p .prices span{
-    color: $gray-700;
+    color: $gray-800;
     text-decoration: line-through;
     font-size: 13px;
     line-height: 1;
@@ -231,7 +231,7 @@
     font-size: 12px;
     flex-grow: 1;
     order: 0;
-    color: $green-700;
+    color: $green-900;
 }
 .p .availability span{
 

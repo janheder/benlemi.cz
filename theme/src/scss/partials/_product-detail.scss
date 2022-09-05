@@ -164,7 +164,7 @@
 .stars-wrapper .stars-label{
     padding-left: 5px;
     font-size: 13px;
-    color: $gray-700;
+    color: $gray-800;
     font-weight: 400;
     align-items: center;
     display: flex;
@@ -289,7 +289,7 @@
 }
 .p-final-price-wrapper .price-standard{
     text-decoration: line-through;
-    color: $gray-700;
+    color: $gray-800;
     font-weight: 500;
     font-size: 18px;
 }
@@ -308,7 +308,7 @@
 }
 .price-additional{
     font-size: 14px;
-    color: $gray-700;
+    color: $gray-800;
 }
 .price-final-holder{
     color: $red-700;
@@ -477,7 +477,7 @@
     cursor: pointer;
 }
 .advanced-parameter-inner.yes-before{
-    border-color: $green-700;
+    border-color: $green-900;
 }
 .advanced-parameter-inner.yes-before::after{
     content: "";
@@ -555,7 +555,7 @@
     order: 5;
     font-size: 14px;
     padding-top: 0px;
-    color: $gray-700;
+    color: $gray-800;
 }
 .p-short-description  p{
     margin-bottom: 10px;
@@ -715,7 +715,7 @@
             background: $gray-300;
         }
         th{
-            color: $gray-700;
+            color: $gray-800;
             padding-right: 10px;
             padding: 5px;
             font-weight: 400;
@@ -1183,7 +1183,7 @@ div[id^="crossSelling"]{
 }
 .detail-cross-selling input:checked+label::after{
     content: "";
-    background-color: $green-700;
+    background-color: $green-900;
     background-image: url("../icons/check-white.svg");
     background-position: center center;
     background-size: 12px 12px;

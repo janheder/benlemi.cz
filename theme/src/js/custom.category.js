@@ -117,8 +117,7 @@ if ($(".category-header").length){
     $(".category-header div:last-child").text(g_totalQuantity + ":" + catHead);
 }
 
-
+/*
 $(".filters-wrapper").append("<div class='filter-contact'></div>");
 $(".filter-contact").load(g_cart1Url + " .checkout-box");
-
-
+*/

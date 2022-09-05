@@ -1,5 +1,5 @@
 ::placeholder{
-    color: $gray-700;
+    color: $gray-800;
 }
 input:focus, button:focus{
     outline: none;
@@ -132,7 +132,7 @@ input.form-control:disabled, select.form-control:disabled{
     
         &::after{
             content: "";
-            background-color: $green-700;
+            background-color: $green-900;
             background-image: url($i-check-white);
             background-position: center center;
             background-size: 12px 12px;
@@ -150,7 +150,7 @@ input.form-control:disabled, select.form-control:disabled{
         border-radius: 50%;
     }
     .additional-information{
-        color: $gray-700;
+        color: $gray-800;
     }
 }
 

@@ -98,6 +98,8 @@ var g_priceFree = 1234;
 var g_category = "Category";
 var g_model = "Model";
 
+var g_discountText = "Registrujte sa a zbierajte zľavy s každým svojim nákupom";
+
 /* page names */
 
 var category1 = "Living";
@@ -133,6 +135,7 @@ var g_inForgotPasswordUrl = "forgotten-password";
 
 
 var relatedTags = "#productsRelated .flag-custom1";
+/*
 var relatedCats = "meta[content=\"Single Bed STUDY from Solid Wood\"], " + 
 "meta[content=\"Children's Single Bed JAPA in Japanese Style\"], " + 
 "meta[content=\"Children's Wooden Bed MODERN\"], " + 
@@ -151,3 +154,6 @@ var relatedCats = "meta[content=\"Single Bed STUDY from Solid Wood\"], " +
 "meta[content=\"Children's Bed BALDEE with Canopy\"], " + 
 
 "meta[content=\"Children's Wooden Bunk Bed CLOUDY\"]";
+*/
+
+var relatedCats = '';

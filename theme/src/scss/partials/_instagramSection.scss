@@ -2,6 +2,9 @@
     padding: 60px 0;
     background: $white;
 }
+#instagramSectionContent{
+    font-size: 0;
+}
 .instagramSection__title{
     text-align: center;
     position: relative;
@@ -33,11 +36,11 @@
 }
 .instagramSection__title a span{
     font-weight: 400;
-    color: $gray-700;
+    color: $gray-800;
 
     &:hover, &:focus, &:active{
         text-decoration: none;
-        color: $green-700;
+        color: $green-900;
     }
 }
 @media screen and (max-width: 500px){
