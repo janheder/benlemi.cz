@@ -63,7 +63,9 @@
         padding-left: 15px;
 
     }
-
+    .benefitBanner__data b{
+        display: inline-block;
+    }
     .benefitBanner__picture {
         height: 40px;
         width: 40px;
