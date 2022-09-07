@@ -49,7 +49,7 @@ if ($(".type-detail").length){
 
         document.addEventListener('ShoptetCartUpdated', function () {
 
-            $("body").addClass("--advancedModalProduct");
+            $("body").addClass("--advancedModal");
             $(".advancedModal__content").html("");
 
             $(".advancedModal__content").prepend('<div class="advancedProduct">' +
