@@ -27,7 +27,7 @@ if ($(".type-detail").length){
         var amount = parseFloat($(".p-detail-inner .add-to-cart .amount").val());
     
         var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
-        var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;
+        var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
     
         $(".advancedModal__content").prepend('<div class="advancedProduct">' +
         '<div class="advancedProduct-img">' + img + '</div>' +
@@ -72,7 +72,7 @@ if ($(".add-to-cart-button").length){
         var amount = 1;
 
         var priceSingle = $(this).closest(".p").find(".price-final strong").html();
-        var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;
+        var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount; //sk version
 
         document.addEventListener('ShoptetCartUpdated', function () {
             $("body").addClass("--advancedModal");
