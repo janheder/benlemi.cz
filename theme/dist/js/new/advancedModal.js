@@ -75,7 +75,7 @@ if ($(".type-detail").length){
 
 if ($(".p .add-to-cart-button").length){
 
-    $("body").append('<div class="advancedModal --product"><div class="advancedModal__inner"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/" class="btn btn-ghost">Zpět do obchodu</a><a href="/kosik" class="btn">Přejít do košíku</a></div></div></div>');
+    $("body").append('<div class="advancedModal --product"><div class="advancedModal__inner"><h2 class="advancedModal__title">'+ am_title +'</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/" class="btn btn-ghost">'+ am_back +'</a><a href="/kosik" class="btn">'+ am_gotocart +'</a></div></div></div>');
 
     
     /* call functions after order modal loaded */
@@ -100,7 +100,7 @@ if ($(".p .add-to-cart-button").length){
             '<div class="advancedProduct-name">' + name + '</div>' +
             '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
             '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
-            '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' Kč</span></div>' +
+            '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' '+ am_currency +'</span></div>' +
             '</div></div>');
         },{
             passive: true
