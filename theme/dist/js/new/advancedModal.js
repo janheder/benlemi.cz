@@ -57,13 +57,13 @@ if ($(".type-detail").length){
 
 
 
-if ($(".add-to-cart-button").length){
+if ($(".p .add-to-cart-button").length){
 
     $("body").append('<div class="advancedModal --product"><div class="advancedModal__inner"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/" class="btn btn-ghost">Zpět do obchodu</a><a href="/kosik" class="btn">Přejít do košíku</a></div></div></div>');
 
     
     /* call functions after order modal loaded */
-    $(".add-to-cart-button").on('click',function(){
+    $(".p .add-to-cart-button").on('click',function(){
 
         var img = $(this).closest(".p").find(".image").html();
         var name = $(this).closest(".p").find(".name").html();
@@ -75,7 +75,7 @@ if ($(".add-to-cart-button").length){
         var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount; //sk version
 
         document.addEventListener('ShoptetCartUpdated', function () {
-            $("body").addClass("--advancedModal");
+            $("body").addClass("--advancedModalProduct");
             $(".advancedModal__content").html("");
         
             $(".advancedModal__content").prepend('<div class="advancedProduct">' +
@@ -94,7 +94,7 @@ if ($(".add-to-cart-button").length){
 
 
 
-    $('.advancedModal').on('click',function(e){
+    $('.advancedModal.--product').on('click',function(e){
         if (e.target !== this)
         return;
         $("body").removeClass("--advancedModal");
