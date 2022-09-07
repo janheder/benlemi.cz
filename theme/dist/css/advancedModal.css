@@ -310,6 +310,9 @@ display: none;
 }
 
 @media screen and (max-width: 575px) {
+  .advancedProduct-content {
+    margin-top: 20px;
+  }
   .advancedProduct-img {
     height: 180px;
     width: 220px;
