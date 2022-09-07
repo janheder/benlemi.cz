@@ -9,6 +9,7 @@ if ($(":lang(cs)").length){
     var am_back = "Zpět do obchodu";
     var am_gotocart = "Přejít do košíku";
     var am_currency = "Kč";
+    var am_related = "Související produkty";
 }
 
 if ($(":lang(sk)").length){
@@ -16,6 +17,7 @@ if ($(":lang(sk)").length){
     var am_back = "Späť do obchodu";
     var am_gotocart = "Prejsť do košíka";
     var am_currency = "€";
+    var am_related = "Súvisiace produkty";
 }
 
 
@@ -25,11 +27,13 @@ if ($(".type-detail").length){
 
     if ($(".products-related").length){
         var related = $(".products-related").html();
-        $(".advancedModal__inner").append('<div id="productsRelated"><h3 class="advancedModal__relatedTitle">Související produkty</h3><div class="products-block">' + related + '</div></div>');
+        $(".advancedModal__inner").append('<div id="productsRelated"><h3 class="advancedModal__relatedTitle">'+ am_related +'</h3><div class="products-block">' + related + '</div></div>');
     }
     
-    function advanceOrderCustom() {
+
     
+    /* call functions after order modal loaded */
+    $(".p-detail .add-to-cart-button").on('click',function(){
         $("body").addClass("--advancedModal");
         $(".advancedModal__content").html("");
     
@@ -53,12 +57,6 @@ if ($(".type-detail").length){
         '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
         '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' '+ am_currency +'</span></div>' +
         '</div></div>');
-        
-    }
-    
-    /* call functions after order modal loaded */
-    document.addEventListener('ShoptetCartUpdated', function () {
-        advanceOrderCustom();
     },{
         passive: true
     });
@@ -113,6 +111,6 @@ if ($(".p .add-to-cart-button").length){
     $('.advancedModal.--product').on('click',function(e){
         if (e.target !== this)
         return;
-        $("body").removeClass("--advancedModal");
+        $("body").removeClass("--advancedModal.--product");
     });
 }

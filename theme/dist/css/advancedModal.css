@@ -190,6 +190,37 @@ body.--advancedModalProduct {
   mix-blend-mode: multiply;
 }
 
+.advancedProduct-img .flags{
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 10px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.advancedProduct-img .flags .flag {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  padding: 0 8px;
+  height: 22px;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+}
+.advancedProduct-img .flags .flag.flag-action {
+  background: #cf4823;
+  color: white;
+}
+
 .advancedProduct-content {
   display: flex;
   flex-direction: column;
