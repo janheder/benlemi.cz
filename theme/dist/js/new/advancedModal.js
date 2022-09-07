@@ -3,9 +3,25 @@
 // ADVANCED ORCDER SUMMARY
 // =============================================================================
 
+
+if ($(":lang(cs)").length){
+    var am_title = "Zboží bylo přidáno do košíku";
+    var am_back = "Zpět do obchodu";
+    var am_gotocart = "Přejít do košíku";
+    var am_currency = "Kč";
+}
+
+if ($(":lang(sk)").length){
+    var am_title = "Tovar bol pridaný do košíka";
+    var am_back = "Späť do obchodu";
+    var am_gotocart = "Prejsť do košíka";
+    var am_currency = "€";
+}
+
+
 if ($(".type-detail").length){
 
-    $("body").append('<div class="advancedModal"><div class="advancedModal__inner"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/" class="btn btn-ghost">Zpět do obchodu</a><a href="/kosik" class="btn">Přejít do košíku</a></div></div></div>');
+    $("body").append('<div class="advancedModal"><div class="advancedModal__inner"><h2 class="advancedModal__title">'+ am_title +'</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/" class="btn btn-ghost">'+ am_back +'</a><a href="/kosik" class="btn">'+ am_gotocart +'</a></div></div></div>');
 
     if ($(".products-related").length){
         var related = $(".products-related").html();
@@ -35,7 +51,7 @@ if ($(".type-detail").length){
         '<div class="advancedProduct-name">' + name + '</div>' +
         '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
         '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
-        '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' Kč</span></div>' +
+        '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' '+ am_currency +'</span></div>' +
         '</div></div>');
         
     }
