@@ -92,7 +92,7 @@ body.--advancedModalProduct {
 }
 
 .advancedModal__buttons .btn {
-  background: #2C8F35;
+
 }
 
 .advancedModal__buttons .btn.btn-ghost {
@@ -100,7 +100,7 @@ body.--advancedModalProduct {
   background: white;
   font-size: 15px;
   margin-right: 10px;
-  color: black;
+  color: #2E523D;
   border: 1px solid #F9f9f9;
 }
 
@@ -210,7 +210,7 @@ body.--advancedModalProduct {
   padding: 0 8px;
   height: 22px;
   background: white;
-  color: black;
+  color: #2E523D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,7 +220,13 @@ body.--advancedModalProduct {
   background: #cf4823;
   color: white;
 }
-
+.advancedProduct-img .flags .flag.flag-discount{
+  color: white;
+background: #cf4823;
+}
+.advancedProduct-img .flags .flag .price-standard{
+display: none;
+}
 .advancedProduct-content {
   display: flex;
   flex-direction: column;
@@ -235,6 +241,7 @@ body.--advancedModalProduct {
   border-bottom: 1px solid #eee;
   padding-bottom: 30px;
   font-style: normal;
+  line-height: 1.2;
 }
 
 .advancedProduct-stock {
@@ -242,7 +249,7 @@ body.--advancedModalProduct {
   justify-content: space-between;
   border-bottom: 1px solid #eee;
   padding: 12px 0;
-  color: #192E3A;
+  color: #2E523D;
   font-size: 14px;
   align-items: center;
 }
@@ -277,7 +284,7 @@ body.--advancedModalProduct {
   font-size: 19px;
   font-weight: 500;
   padding-top: 30px;
-  color: #192E3A;
+  color: #2E523D;
 }
 
 .advancedProduct-priceTotal span {
