@@ -96,7 +96,6 @@ body.--advancedModalProduct {
 }
 
 .advancedModal__buttons .btn.btn-ghost {
-  height: 50px;
   background: white;
   font-size: 15px;
   margin-right: 10px;
@@ -236,7 +235,7 @@ display: none;
 }
 
 .advancedProduct-name {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
   border-bottom: 1px solid #eee;
   padding-bottom: 30px;

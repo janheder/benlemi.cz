@@ -6,6 +6,9 @@
 
 if ($(":lang(cs)").length){
     var am_title = "Zboží bylo přidáno do košíku";
+    var am_stock = "Dostupnost";
+    var am_amount = "Počet kusů";
+    var am_totalprice = "Celková cena";
     var am_back = "Zpět do obchodu";
     var am_gotocart = "Přejít do košíku";
     var am_currency = "Kč";
@@ -14,6 +17,9 @@ if ($(":lang(cs)").length){
 
 if ($(":lang(sk)").length){
     var am_title = "Tovar bol pridaný do košíka";
+    var am_stock = "Dostupnosť";
+    var am_amount = "Počet kusov";
+    var am_totalprice = "Celková cena";
     var am_back = "Späť do obchodu";
     var am_gotocart = "Prejsť do košíka";
     var am_currency = "€";
@@ -56,9 +62,9 @@ if ($(".type-detail").length){
             '<div class="advancedProduct-img">' + img + '</div>' +
             '<div class="advancedProduct-content">' +
             '<div class="advancedProduct-name">' + name + '</div>' +
-            '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
-            '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
-            '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' '+ am_currency +'</span></div>' +
+            '<div class="advancedProduct-stock">' + am_stock + '<span>' + stock + '</span></div>' +
+            '<div class="advancedProduct-amount">' + am_amount + '<span>' + amount + 'x</span></div>' +
+            '<div class="advancedProduct-priceTotal">' + am_totalprice + '<span>' + priceTotal + ' '+ am_currency +'</span></div>' +
             '</div></div>');
         },{
             passive: true
@@ -101,9 +107,9 @@ if ($(".p .add-to-cart-button").length){
             '<div class="advancedProduct-img">' + img + '</div>' +
             '<div class="advancedProduct-content">' +
             '<div class="advancedProduct-name">' + name + '</div>' +
-            '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
-            '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
-            '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' '+ am_currency +'</span></div>' +
+            '<div class="advancedProduct-stock">' + am_stock + '<span>' + stock + '</span></div>' +
+            '<div class="advancedProduct-amount">' + am_amount + '<span>' + amount + 'x</span></div>' +
+            '<div class="advancedProduct-priceTotal">' + am_totalprice + '<span>' + priceTotal + ' '+ am_currency +'</span></div>' +
             '</div></div>');
         },{
             passive: true
