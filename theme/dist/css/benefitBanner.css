@@ -1,6 +1,6 @@
 .benefitBanner {
     padding: 0px 0 40px 0;
-    border-bottom: 1px solid #F0F0F0;
+    border-bottom: 3px solid #F7FAF9;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
