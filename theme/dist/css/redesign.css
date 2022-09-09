@@ -1,0 +1,446 @@
+/*#colorbox, #cboxOverlay{
+  display: none !important;
+}
+*/
+
+body {
+    font-family: "Karla";
+    font-size: 15px;
+    color: #2E523D;
+}
+
+@media (min-width: 1220px) {
+    .container {
+        max-width: 1340px;
+    }
+}
+
+.btn {
+    text-transform: none;
+    background: #CF4823;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background: #b93d19;
+}
+
+.btn-secondary {
+    background: #f5f5f5;
+    color: #2E523D;
+}
+
+.p .p-tools .btn {
+    background: #ECF2E8;
+    color: #2E523D;
+}
+
+.p .p-tools .btn:hover, .p .p-tools .btn:active, .p .p-tools .btn:focus {
+    background: #dde9d5;
+}
+
+.p-in-in .name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2E523D;
+}
+
+.p-in-in .name .p-variants:last-child {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.p .price-final {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #CF4823;
+}
+
+.p .prices span {
+    color: #6D6C79;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.p .availability {
+    font-size: 14px;
+}
+
+.p .flags.flags-extra {
+    top: 0;
+}
+
+.p .flags.flags-extra .flag-discount {
+    background: #CF4823;
+    line-height: 1.1;
+    padding: 8px 6px 2px 6px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.p .flags.flags-extra .flag-discount::after {
+    content: "";
+    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/sale-tag.svg");
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -20px;
+}
+
+.p-in .flags-default {
+    padding-bottom: 10px;
+}
+
+.p .flags .flag.flag-action {
+    background: rgba(207, 72, 35, 0.15);
+    color: #CF4823;
+}
+
+.p .flags .flag.flag-custom1 {
+    color: #F09000;
+    background: rgba(240, 186, 0, 0.15) !important;
+}
+
+.p .flags .flag.flag-cesky-vyrobok {
+    color: #2E523D;
+    background: #ECF2E8 !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Quicksand";
+    font-weight: 600;
+}
+
+.homepage-group-title, .instagramSection__title, .blogSection__title, .categoriesSection__title {
+    color: #2E523D;
+    font-family: "Quicksand";
+    font-size: 28px;
+    max-width: 100%;
+    font-weight: 600;
+}
+
+.overall-wrapper>.site-msg:first-child {
+    display: flex;
+}
+
+.overall-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.overall-wrapper>* {
+    order: 100;
+}
+
+.overall-wrapper .top-navigation-bar {
+    order: 0;
+}
+
+.overall-wrapper #header {
+    order: 1;
+}
+
+.overall-wrapper .site-msg {
+    order: 2;
+    max-width: 1300px;
+}
+
+.top-navigation-bar {
+    order: 0;
+    display: flex;
+    background: #2E523D;
+    font-size: 14px;
+    height: 36px;
+}
+
+.top-navigation-bar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-navigation-contacts {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.top-navigation-contacts a, .top-navigation-contacts strong {
+    color: white;
+    font-weight: 500;
+}
+
+.top-navigation-contacts a {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.top-navigation-contacts .project-phone::before,
+.top-navigation-contacts .project-email::before {
+    content: "";
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+    background: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/envelope-white.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top-navigation-contacts .project-phone::before {
+    background: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/phone-white.svg");
+}
+
+.top-navigation-menu {
+    display: flex;
+    align-items: center;
+}
+
+.top-navigation-bar-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0px;
+}
+
+.top-navigation-bar-menu a {
+    margin-left: 20px;
+}
+
+.top-navigation-bar-menu-helper {
+    display: none;
+}
+
+.top-navigation-bar-menu li::marker {
+    content: none
+}
+
+.top-navigation-bar-menu a {
+    color: white;
+    font-weight: 500;
+}
+
+.top-navigation-tools {
+    display: flex;
+    align-items: center;
+
+}
+
+.top-navigation-tools .responsive-tools,
+.top-navigation-tools .dropdown {
+    display: none;
+}
+
+.top-nav-button-login {
+    color: white;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.top-nav-button-login:hover {
+    color: white;
+}
+
+@media screen and (max-width: 991px) {
+    .top-navigation-bar {
+        display: none;
+    }
+
+    .navigation-buttons {
+        flex-wrap: nowrap;
+    }
+
+    .overall-wrapper>.site-msg:first-child {
+        margin-top: 0;
+    }
+}
+
+
+
+@media screen and (min-width: 992px) {
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        padding-bottom: 0px;
+        position: relative;
+    }
+
+    .header-top .header-contacts {
+        display: none;
+    }
+
+    .site-name {
+        height: 42px;
+        margin: 0;
+        margin-bottom: 0px;
+    }
+
+    .navigation-buttons .navLinks {
+        display: none;
+    }
+
+    .menu {
+        background: transparent;
+    }
+
+    #header::before {
+        background: #FFFFFF;
+        box-shadow: 0px 10px 15px rgba(46, 82, 61, 0.03);
+        border-top: 1px solid #F3F6F5;
+        height: 52px;
+    }
+
+    .menu-level-1>li {
+        height: 52px;
+    }
+
+    .menu-level-1::before, .menu-level-1>li.ext>a::before, .menu-level-1>li>a::before, .menu-level-1>li>a[href="/nove-produkty/"]::before {
+        content: none;
+    }
+
+    .menu-level-1>li>a {
+        font-size: 15px;
+        color: #2E523D;
+    }
+}
+
+
+.p-detail-inner-header h1 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    body:not(.ordering-process):not(.type-detail) .overall-wrapper {
+        padding: 0;
+    }
+
+    body:not(.ordering-process):not(.type-detail) #header {
+        position: relative;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+    }
+}
+
+
+.site-msg {
+    background: #E0EDD8;
+    color: #2E523D;
+    font-weight: 500;
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .desktop.in-index #content-wrapper-wrap {
+        margin-top: 40px;
+    }
+
+    .desktop.in-index .site-msg {
+        position: relative;
+    }
+}
+
+
+.banners-row {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 15px 5px;
+    margin: 0;
+}
+
+
+
+
+.desktop.in-index #content-wrapper-wrap {
+    margin-top: 0px;
+    display: none;
+}
+
+
+.before-carousel {
+    padding: 0px 0;
+    margin-top: 0px;
+}
+
+
+
+.mobile.in-index #content .row.banners-row {
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: none;
+    padding: 0;
+}
+
+.mobile .wide-carousel {
+    margin-top: 0;
+}
+
+.headerFreeDeliveryNew {
+    font-weight: 400;
+    margin: 0;
+    padding: 6px 20px;
+    background: white;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.1));
+    position: relative;
+    margin-right: 10px;
+    text-align: center;
+    color: #689C56;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.headerFreeDeliveryNew::after {
+    content: "";
+    height: 16px;
+    width: 16px;
+    background: white;
+    position: absolute;
+    right: -5px;
+    top: 16px;
+    transform: rotate(45deg);
+
+}
+
+.ctaSection__imgCaption {
+    max-width: 150px;
+}
+
+.cart-count {
+    margin: 0;
+    background: transparent;
+}
+
+.cart-count.hovered {
+    background: transparent;
+}
+
+.cart-count::before {
+    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/cart-new.svg");
+    background-size: 22px;
+    background-position: center;
+}
+
+.search-form .btn::after {
+    content: "";
+    height: 24px;
+    width: 24px;
+    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/search-new.svg");
+}
+
+.navigation-buttons {
+    width: auto;
+}
