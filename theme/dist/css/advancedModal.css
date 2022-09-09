@@ -3,7 +3,7 @@
 /* ========================================================================== */
 
 
-body.--advancedModal .advancedModal, body.--advancedModal .menu-helper {
+body.--advancedModal #advancedModal, body.--advancedModal .menu-helper {
   opacity: 1;
   pointer-events: auto;
   z-index: 9999;
@@ -18,7 +18,7 @@ body.--advancedModal {
   overflow: hidden;
 }
 
-body.--advancedModalProduct .advancedModal.--product, body.--advancedModalProduct .menu-helper {
+body.--advancedModalProduct #advancedModalProduct, body.--advancedModalProduct .menu-helper {
   opacity: 1;
   pointer-events: auto;
   z-index: 9999;
