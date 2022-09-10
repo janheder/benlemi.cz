@@ -3,10 +3,17 @@
     flex-wrap: wrap;
 }
 
-.pagination a, .pagination .current {
+.pagination a, .pagination .current{
     margin: 5px;
+    border-radius: 50%;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    border: 0;
 }
-
+.pagination .current{
+    background: #F8FAFA;
+}
 
 .pagination a, .pagination strong {
     order: 5;
