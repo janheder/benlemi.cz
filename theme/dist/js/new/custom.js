@@ -346,64 +346,7 @@ $(document).ready(function() {
     }
 });
 
-/* add button and product into advanced order modal */
-function advanceOrderCustom() {
 
-            var img = $(".overall-wrapper .p-image-wrapper a").html();
-            var name = $(".overall-wrapper .p-detail-inner-header h1").html();
-            if($(".overall-wrapper .parameter-dependent").length){
-                var stock = $(".overall-wrapper .availability-value .parameter-dependent:not(.no-display) span, .overall-wrapper .availability-value .parameter-dependent.force-display span").html();
-            }else{
-                var stock = $(".overall-wrapper .availability-value .availability-label span").html();
-            }
-            var amount = parseInt($(".overall-wrapper .add-to-cart .amount").val());
-            var priceSingle = $(".overall-wrapper .p-final-price-wrapper .price-final-holder:not(.noDisplay), .overall-wrapper .p-final-price-wrapper .price-final-holder.force-display").html();
-
-
-
-
-            if($("html:lang(cs)").length){
-                var priceTotal = parseInt(priceSingle.replace('Kč', '').replace(/ /g,'')) * amount;
-                var priceTotalcurrency = priceTotal + " " + g_currency;
-
-            }else if($("html:lang(en), html:lang(sk)").length){
-                var priceTotal = parseFloat(priceSingle.split('<')[0].replace('€', '').replace(',', '.')).toFixed(2) * amount;
-                var priceTotalcurrency = g_currency + priceTotal;
-
-            }else if($("html:lang(ro)").length){
-                var priceTotal = parseFloat(priceSingle.replace('lei', '').replace(',', '.').replace(/ /g,'')).toFixed(2) * amount;
-                var priceTotalcurrency = priceTotal + " " + g_currency;
-
-            }else if($("html:lang(hu)").length){
-                var priceTotal = parseFloat(priceSingle.replace('Ft', '').replace(',', '.').replace(/ /g,'')).toFixed(2) * amount;
-                var priceTotalcurrency = priceTotal + " " + g_currency;
-            }
-
-
-
-            $(".extras-wrap").prepend('<div class="extras-product-heading"><span>' + g_product + '</span><span>' + g_availability + '</span><span>' + g_quantity +'</span><span>' + g_price + '</span></div><div class="extras-product">' + 
-            '<div class="extras-product-img">' + img + '</div>' + 
-            '<div class="extras-product-name">' + name + '</div>' +
-            '<div class="extras-product-stock">' + stock + '</div>' +
-            '<div class="extras-product-amount">' + amount + ' ' + g_pieces + '</div>' +
-            '<div class="extras-product-priceSingle">' + priceSingle + '</div>' +
-            '<div class="extras-product-priceTotal">' + priceTotalcurrency + ' </div>' +
-            '</div>');
-
-            $(".detail-cross-selling.checked").each(function(){
-                var selling = $(this).html();
-                $("<div class='extras-product-selling'>" + selling + "</div>").insertAfter(".extras-product");
-            });
-
-            $("#backToShop").remove();
-            $(".extra.step").prepend("<div class='btn' id='backToShop'>" + g_backToStore + "</div><div style='flex-grow:1;'></div>");
-            $(".advanced-order .extra.step .btn-conversion").text(g_viewCart);
-            $(".advanced-order .h1").text(g_addedToCart);
-            $(".advanced-order .h1.advanced-order-suggestion").text(g_youMightLike);
-            $("#backToShop").click(function(){
-                $("#cboxClose").click();
-            });
-}
 
 /* free delivery function, call in core js file */
 if($("html:lang(en)").length){
@@ -412,7 +355,7 @@ if($("html:lang(en)").length){
     /* call functions after order modal loaded */
 
     document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
-        advanceOrderCustom();
+      
     });
 
 
@@ -452,7 +395,7 @@ else{
 
     document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
         freeDelivery();
-        advanceOrderCustom();
+       
     });
 
 
@@ -575,6 +518,26 @@ if ($(".in-" + g_registrationUrl + " #register-form").length){
 if ($("#rate-form").length){
     $("#rate-form").prepend("<h3 class='vote-form-title'>" + g_addRating + "</h3>");
 }
+
+
+
+// -----------------------------------------------------------------------------
+// ADD SEARCH ON MOBILE
+// -----------------------------------------------------------------------------
+
+$("#navigation .menu-level-1").append('<div class="nav-search --responsive" id="js-searchToggle-res" style="padding-left:54px;padding-top:18px;width:100%;background-position:20px;">Vyhledávání</div>');
+
+$("#js-searchToggle-res").click(function(){
+    $("#navigation .search").insertAfter(".navigation-buttons");
+    if($(".search").hasClass("--active")){
+        $(".search, #js-searchToggle-res").removeClass("--active");
+        $(".header-top .search .form-control").blur();  
+    }else{
+        $(".search, #js-searchToggle-res").addClass("--active");
+        $(".header-top .search .form-control").focus(); 
+    }
+});
+
 
 // -----------------------------------------------------------------------------
 // BLOG
