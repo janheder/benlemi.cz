@@ -1,653 +1,785 @@
 /* Copyright Jan Heder info@janheder.cz */
 
-body {
-    font-family: "Karla";
-    font-size: 15px;
-    color: #2E523D;
-}
-
-@media (min-width: 1220px) {
-    .container {
-        max-width: 1340px;
-    }
-}
-
-.type-detail .overall-wrapper::before, .type-category .overall-wrapper::before {
-    content: none;
-}
-
-.btn {
-    text-transform: none;
-    background: #CF4823;
-}
-
-.btn:hover, .btn:active, .btn:focus {
-    background: #b93d19;
-}
-
-.btn-secondary {
-    background: #f5f5f5;
-    color: #2E523D;
-}
-
-.p .p-tools .btn {
-    background: #ECF2E8;
-    color: #2E523D;
-}
-
-.p .p-tools .btn:hover, .p .p-tools .btn:active, .p .p-tools .btn:focus {
-    background: #dde9d5;
-}
-
-.p-in-in .name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: #2E523D;
-}
-
-.p-in-in .name .p-variants:last-child {
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.p .price-final {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #CF4823;
-}
-
-.p .prices span {
-    color: #6D6C79;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1;
-}
-
-.p .availability {
-    font-size: 14px;
-}
-
-.p .flags.flags-extra {
-    top: 0;
-}
-
-.p .flags.flags-extra .flag-discount {
-    background: #CF4823;
-    line-height: 1.1;
-    padding: 8px 6px 2px 6px;
-    position: relative;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.p .flags.flags-extra .flag-discount::after {
-    content: "";
-    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/sale-tag.svg");
-    background-size: cover;
-    background-position: center top;
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    bottom: -20px;
-}
-
-.p-in .flags-default {
-    padding-bottom: 10px;
-}
-
-.p .flags .flag.flag-action {
-    background: rgba(207, 72, 35, 0.15);
-    color: #CF4823;
-}
-
-.p .flags .flag.flag-custom1 {
-    color: #F09000;
-    background: rgba(240, 186, 0, 0.15) !important;
-}
-
-.p .flags .flag.flag-cesky-vyrobok {
-    color: #2E523D;
-    background: #ECF2E8 !important;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: "Quicksand";
-    font-weight: 600;
-}
-
-.homepage-group-title {
-    margin-top: 60px;
-}
-
-.homepage-group-title, .instagramSection__title, .blogSection__title, .categoriesSection__title {
-    color: #2E523D;
-    font-family: "Quicksand";
-    font-size: 28px;
-    max-width: 100%;
-    font-weight: 600;
-}
-
-.overall-wrapper>.site-msg:first-child {
-    display: flex;
-}
-
-.overall-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.overall-wrapper>* {
-    order: 100;
-}
-
-.overall-wrapper .top-navigation-bar {
-    order: 0;
-}
-
-.overall-wrapper #header {
-    order: 1;
-}
-
-.overall-wrapper .site-msg {
-    order: 2;
-    max-width: 1300px;
-}
-
-.top-navigation-bar {
-    order: 0;
-    display: flex;
-    background: #2E523D;
-    font-size: 14px;
-    height: 36px;
-}
-
-.top-navigation-bar .container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.top-navigation-contacts {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.top-navigation-contacts a, .top-navigation-contacts strong {
-    color: white;
-    font-weight: 500;
-}
-
-.top-navigation-contacts a {
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.top-navigation-contacts .project-phone::before,
-.top-navigation-contacts .project-email::before {
-    content: "";
-    height: 16px;
-    width: 16px;
-    margin-right: 8px;
-    background: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/envelope-white.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.top-navigation-contacts .project-phone::before {
-    background: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/phone-white.svg");
-}
-
-.top-navigation-menu {
-    display: flex;
-    align-items: center;
-}
-
-.top-navigation-bar-menu {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding-left: 0px;
-}
-
-.top-navigation-bar-menu a {
-    margin-left: 20px;
-}
-
-.top-navigation-bar-menu-helper {
-    display: none;
-}
-
-.top-navigation-bar-menu li::marker {
-    content: none
-}
-
-.top-navigation-bar-menu a {
-    color: white;
-    font-weight: 500;
-}
-
-.top-navigation-tools {
-    display: flex;
-    align-items: center;
-
-}
-
-.top-navigation-tools .responsive-tools,
-.top-navigation-tools .dropdown {
-    display: none;
-}
-
-.top-nav-button-login {
-    color: white;
-    margin-left: 20px;
-    padding-left: 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.top-nav-button-login:hover {
-    color: white;
-}
-
-.nav-menu-toggle {
-    margin-right: 20px;
-    background: #7bb82a;
-    border: 5px solid white;
-    width: 56px;
-}
-
-.site-name a {
-    justify-content: flex-start;
-}
-
-.header-top .search {
-    flex-shrink: 1;
-    flex-grow: 1;
-    justify-content: flex-end;
-}
-
-@media screen and (max-width: 991px) {
-    .top-navigation-bar {
-        display: none;
-    }
-
-    .navigation-buttons {
-        flex-wrap: nowrap;
-    }
-
-    .overall-wrapper>.site-msg:first-child {
-        margin-top: 0;
-    }
-}
-
-
-
-@media screen and (min-width: 992px) {
-
-    .header-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100px;
-        padding-bottom: 0px;
-        position: relative;
-    }
-
-    .header-top .header-contacts {
-        display: none;
-    }
-
-    .header-top .search {
-        display: flex;
-    }
-
-    .site-name {
-        height: 42px;
-        margin: 0;
-        margin-bottom: 0px;
-    }
-
-    .navigation-buttons .navLinks {
-        display: none;
-    }
-
-    .menu {
-        background: transparent;
-    }
-
-    #header::before {
-        background: #FFFFFF;
-        box-shadow: 0px 10px 15px rgba(46, 82, 61, 0.03);
-        border-top: 1px solid #F3F6F5;
-        height: 52px;
-    }
-
-    .menu-level-1>li {
-        height: 52px;
-    }
-
-    .menu-level-1::before, .menu-level-1>li.ext>a::before, .menu-level-1>li>a::before, .menu-level-1>li>a[href="/nove-produkty/"]::before {
-        content: none;
-    }
-
-    .menu-level-1>li>a {
-        font-size: 15px;
-        color: #2E523D;
-    }
-}
-
-
-.p-detail-inner-header h1 {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 1.3;
-}
-
-
-
-@media screen and (min-width: 992px) {
-    body:not(.ordering-process):not(.type-detail) .overall-wrapper {
-        padding: 0;
-    }
-
-    body:not(.ordering-process):not(.type-detail) #header {
-        position: relative;
-        width: 100%;
-        z-index: 2;
-        top: 0;
-    }
-}
-
-
-.site-msg {
-    background: #E0EDD8;
-    color: #2E523D;
-    font-weight: 500;
-    width: 100%;
-}
-
-@media screen and (min-width: 992px) {
-    .desktop.in-index #content-wrapper-wrap {
-        margin-top: 40px;
-    }
-
-    .desktop.in-index .site-msg {
-        position: relative;
-    }
-}
-
-
-.banners-row {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-    padding: 15px 5px;
-    margin: 0;
-}
-
-
-
-
-.desktop.in-index #content-wrapper-wrap {
-    margin-top: 0px;
-    display: none;
-}
-
-
-.before-carousel {
-    padding: 0px 0;
-    margin-top: 0px;
-}
-
-
-
-.mobile.in-index #content .row.banners-row {
-    margin-bottom: 20px;
-    text-align: center;
-    justify-content: center;
-    box-shadow: none;
-    padding: 0;
-}
-
-.mobile .wide-carousel {
-    margin-top: 0;
-}
-
-.headerFreeDeliveryNew {
-    font-weight: 400;
-    margin: 0;
-    padding: 6px 20px;
-    background: white;
-    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.1));
-    position: relative;
-    margin-right: 10px;
-    text-align: center;
-    color: #689C56;
-    font-size: 15px;
-    line-height: 1.3;
-    position: absolute;
-    transform: translateX(105%);
-}
-
-.headerFreeDeliveryNew::after {
-    content: "";
-    height: 16px;
-    width: 16px;
-    background: white;
-    position: absolute;
-    left: -5px;
-    top: 16px;
-    transform: rotate(45deg);
-
-}
-
-.ctaSection__imgCaption {
-    max-width: 150px;
-}
-
-.cart-count {
-    margin: 0;
+.category-header{
     background: transparent;
-}
-
-.cart-count.hovered {
-    background: transparent;
-}
-
-.cart-count::before {
-    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/cart-new.svg");
-    background-size: 22px;
-    background-position: center;
-}
-
-.cart-count i {
-    background: #CF4823;
-    line-height: 1;
-    font-size: 11px;
-    top: 52%;
-}
-
-.search-form .btn::after {
-    content: "";
-    height: 24px;
-    width: 24px;
-    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/search-new.svg");
-}
-
-.navigation-buttons {
-    width: auto;
-}
-
-.advanced-parameter-inner {
-    border: 1px solid #e5e5e5;
-}
-
-.advanced-parameter-inner img {
-    border-radius: 50%;
-}
-
-@media (min-width: 768px) {
-    body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
-        margin-top: 0px;
-        display: inline-flex;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.3;
-        padding: 10px 15px;
-        order: -1;
-        background: rgba(207, 72, 35, 0.1);
-        color: #CF4823;
-    }
-
-    .dkLabCountdownContainer {
-        display: flex;
-        align-items: baseline;
-    }
-
-    .dkLabCountdownActionText {
-        padding-right: 5px;
-    }
-}
-
-.position--benefitProduct {
-    padding-top: 30px;
-}
-
-.middle-banners-wrapper {
-    background: #f5f5f5;
-    margin: 20px 0 0px 0;
-}
-
-.category-title {
-    text-align: left;
-    justify-content: flex-start;
-    padding-bottom: 0;
-    display: inline-flex;
-    color: #2E523D;
-}
-
-.category-title::after {
-    left: 0;
-    transform: none;
-    bottom: 5px;
-    height: 22px;
-    background: rgba(160, 205, 84, 0.1);
-    width: 100%;
-}
-
-.category-perex {
-    margin-top: -30px;
-}
-
-.category-perex>p {
-    color: #6D6C79;
-}
-
-.subcategories {
-    display: grid;
-    grid-gap: 1px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-.subcategories li {
-    width: 100%;
-    min-width: 100%;
     padding: 0;
-    margin: 0;
-}
-
-.subcategories li a {
-    flex-direction: row;
-    border: 0;
-    outline: 1px solid #F0F0F0;
-    height: 76px;
-    overflow: hidden;
-}
-
-.subcategories li a:hover {
-    background: linear-gradient(300deg, #F7FAF9 0%, rgba(255, 255, 255, 0) 46.24%);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-
-}
-
-.subcategories li a .image {
-    height: 50px;
-    width: 70px;
-    margin-right: 15px;
-}
-
-.subcategories li a .image img {
-    object-fit: contain;
-}
-
-.subcategories li a .text {
-    color: #2E523D;
-    padding-top: 0;
-    max-height: 54px;
-    line-height: 1.1;
-    text-align: left;
-    overflow: hidden;
-}
-
-.user-action .login-widget {
-    max-width: 100%;
-    width: 540px;
-    min-width: auto;
-}
-
-.user-action .login-widget::after {
-    content: none;
-}
-
-.login-widget h2 {
-    font-size: 28px;
-    display: flex;
-    flex-direction: column;
-}
-
-.login-widget h2::before {}
-
-.login-widget h2::after {
-    content: "Jako člen sbíráte slevy za každý svůj nákup.";
-    font-size: 14px;
-    color: #6D6C79;
-    width: 100%;
-    background: none;
     position: relative;
-    font-weight: 400;
-}
-
-.login-widget .btn {
-    height: 58px;
-    background: #CF4823;
-    box-shadow: 0px 4px 9px rgba(207, 72, 35, 0.2);
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .category-header form{
+    background: #F8FAFA;
+    height: 46px;
+    padding: 3px;
+    display: flex;
+    align-items:center;
+    flex-grow: 1;
+  }
+  .category-header input:checked+label{
     text-transform: uppercase;
-}
-
-.login-close {
-    background-color: transparent;
-}
-
-.password-helper {
-    padding-top: 0;
-}
-
-.password-helper a:first-child {
-    background: transparent;
-}
-
-.form-control {
-    height: 52px;
-}
-
-.news-item .title {
-    color: #2E523D;
-}
-
-.news-item .description {
+  color: #2E523D;
+    font-size: 15px;
+    background: white;
+  
+  }
+  .category-header fieldset{
+        height: 100%;
+      display: flex;
+    align-items:center;
+  }
+  .category-header label {
+     text-transform: uppercase;
+  color: #6D6C79;
+    font-size: 15px;
+      height: 100%;
+    display: inline-flex;
+      align-items:center;
+    padding: 0 20px;
+    margin: 0;
+  }
+  .category-header div:last-child{
+        width: 100%;
+        text-align: right;
+      justify-content: flex-end;
+      margin-top: 20px;
     color: #6D6C79;
-}
+  }
+  @media screen and (min-width: 992px){
+    #filterToggleDesktop {
+  background: #CF4823;
+      color: white;
+       text-transform: uppercase;
+      margin-right: 10px;
+      width: auto;
+  }  
+  }
+  
+  
+  
+  body {
+      font-family: "Karla";
+      font-size: 15px;
+      color: #2E523D;
+  }
+  
+  @media (min-width: 1220px) {
+      .container {
+          max-width: 1340px;
+      }
+  }
+  
+  .type-detail .overall-wrapper::before, .type-category .overall-wrapper::before {
+      content: none;
+  }
+  
+  .btn {
+      text-transform: none;
+      background: #CF4823;
+    text-transform: uppercase;
+  }
+  
+  .btn:hover, .btn:active, .btn:focus {
+      background: #b93d19;
+  }
+  
+  .btn-secondary {
+      background: #f5f5f5;
+      color: #2E523D;
+  }
+  
+  .p .p-tools .btn {
+      background: #ECF2E8;
+      color: #2E523D;
+  }
+  
+  .p .p-tools .btn:hover, .p .p-tools .btn:active, .p .p-tools .btn:focus {
+      background: #dde9d5;
+  }
+  
+  .p-in-in .name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #2E523D;
+        padding-bottom: 10px;
+  }
+  
+  .p-in-in .name .p-variants:last-child {
+      font-weight: 400;
+      font-size: 14px;
+  }
+  
+  .p .price-final {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #CF4823;
+  }
+  
+  .p .prices span {
+      color: #6D6C79;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1;
+  }
+  
+  .p .availability {
+      font-size: 14px;
+  }
+  
+  .p .flags.flags-extra {
+      top: 0;
+  }
+  
+  .p .flags.flags-extra .flag-discount {
+      background: #CF4823;
+      line-height: 1.1;
+      padding: 8px 6px 2px 6px;
+      position: relative;
+      font-size: 16px;
+      font-weight: 500;
+  }
+  
+  .p .flags.flags-extra .flag-discount::after {
+      content: "";
+      background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/sale-tag.svg");
+      background-size: cover;
+      background-position: center top;
+      width: 100%;
+      height: 20px;
+      position: absolute;
+      bottom: -20px;
+  }
+  
+  .p-in .flags-default {
+      padding-bottom: 10px;
+  }
+  
+  .p .flags .flag.flag-action {
+      background: rgba(207, 72, 35, 0.15);
+      color: #CF4823;
+  }
+  
+  .p .flags .flag.flag-custom1 {
+      color: #F09000;
+      background: rgba(240, 186, 0, 0.15) !important;
+  }
+  
+  .p .flags .flag.flag-cesky-vyrobok {
+      color: #2E523D;
+      background: #ECF2E8 !important;
+  }
+  
+  h1, h2, h3, h4, h5 {
+      font-family: "Quicksand";
+      font-weight: 600;
+  }
+  
+  .homepage-group-title {
+      margin-top: 60px;
+  }
+  
+  .homepage-group-title, .instagramSection__title, .blogSection__title, .categoriesSection__title {
+      color: #2E523D;
+      font-family: "Quicksand";
+      font-size: 28px;
+      max-width: 100%;
+      font-weight: 600;
+  }
+  
+  .overall-wrapper>.site-msg:first-child {
+      display: flex;
+  }
+  
+  .overall-wrapper {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .overall-wrapper>* {
+      order: 100;
+  }
+  
+  .overall-wrapper .top-navigation-bar {
+      order: 0;
+  }
+  
+  .overall-wrapper #header {
+      order: 1;
+  }
+  
+  .overall-wrapper .site-msg {
+      order: 2;
+      max-width: 1300px;
+  }
+  
+  .top-navigation-bar {
+      order: 0;
+      display: flex;
+      background: #2E523D;
+      font-size: 14px;
+      height: 36px;
+  }
+  
+  .top-navigation-bar .container {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .top-navigation-contacts {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+  }
+  
+  .top-navigation-contacts a, .top-navigation-contacts strong {
+      color: white;
+      font-weight: 500;
+  }
+  
+  .top-navigation-contacts a {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .top-navigation-contacts .project-phone::before,
+  .top-navigation-contacts .project-email::before {
+      content: "";
+      height: 16px;
+      width: 16px;
+      margin-right: 8px;
+      background: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/envelope-white.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  
+  .top-navigation-contacts .project-phone::before {
+      background: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/phone-white.svg");
+  }
+  
+  .top-navigation-menu {
+      display: flex;
+      align-items: center;
+  }
+  
+  .top-navigation-bar-menu {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding-left: 0px;
+  }
+  
+  .top-navigation-bar-menu a {
+      margin-left: 20px;
+  }
+  
+  .top-navigation-bar-menu-helper {
+      display: none;
+  }
+  
+  .top-navigation-bar-menu li::marker {
+      content: none
+  }
+  
+  .top-navigation-bar-menu a {
+      color: white;
+      font-weight: 500;
+  }
+  
+  .top-navigation-tools {
+      display: flex;
+      align-items: center;
+  
+  }
+  
+  .top-navigation-tools .responsive-tools,
+  .top-navigation-tools .dropdown {
+      display: none;
+  }
+  
+  .top-nav-button-login {
+      color: white;
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .top-nav-button-login:hover {
+      color: white;
+  }
+  
+  .nav-menu-toggle {
+      margin-right: 20px;
+      background: #7bb82a;
+      border: 5px solid white;
+      width: 56px;
+  }
+  
+  .site-name a {
+      justify-content: flex-start;
+  }
+  
+  .header-top .search {
+      flex-shrink: 1;
+      flex-grow: 1;
+      justify-content: flex-end;
+  }
+  
+  @media screen and (max-width: 991px) {
+      .top-navigation-bar {
+          display: none;
+      }
+  
+      .navigation-buttons {
+          flex-wrap: nowrap;
+      }
+  
+      .overall-wrapper>.site-msg:first-child {
+          margin-top: 0;
+      }
+  }
+  
+  
+  
+  @media screen and (min-width: 992px) {
+  
+      .header-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 100px;
+          padding-bottom: 0px;
+          position: relative;
+      }
+  
+      .header-top .header-contacts {
+          display: none;
+      }
+  
+      .header-top .search {
+          display: flex;
+      }
+  
+      .site-name {
+          height: 42px;
+          margin: 0;
+          margin-bottom: 0px;
+      }
+  
+      .navigation-buttons .navLinks {
+          display: none;
+      }
+  
+      .menu {
+          background: transparent;
+      }
+  
+      #header::before {
+          background: #FFFFFF;
+          box-shadow: 0px 10px 15px rgba(46, 82, 61, 0.03);
+          border-top: 1px solid #F3F6F5;
+          height: 52px;
+      }
+  
+      .menu-level-1>li {
+          height: 52px;
+      }
+  
+      .menu-level-1::before, .menu-level-1>li.ext>a::before, .menu-level-1>li>a::before, .menu-level-1>li>a[href="/nove-produkty/"]::before {
+          content: none;
+      }
+  
+      .menu-level-1>li>a {
+          font-size: 15px;
+          color: #2E523D;
+      }
+  }
+  
+  
+  .p-detail-inner-header h1 {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 1.3;
+  }
+  
+  
+  
+  @media screen and (min-width: 992px) {
+      body:not(.ordering-process):not(.type-detail) .overall-wrapper {
+          padding: 0;
+      }
+  
+      body:not(.ordering-process):not(.type-detail) #header {
+          position: relative;
+          width: 100%;
+          z-index: 2;
+          top: 0;
+      }
+  }
+  
+  
+  .site-msg {
+      background: #E0EDD8;
+      color: #2E523D;
+      font-weight: 500;
+      width: 100%;
+  }
+  
+  @media screen and (min-width: 992px) {
+      .desktop.in-index #content-wrapper-wrap {
+          margin-top: 40px;
+      }
+  
+      .desktop.in-index .site-msg {
+          position: relative;
+      }
+  }
+  
+  
+  .banners-row {
+      background: #FFFFFF;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+      padding: 15px 5px;
+      margin: 0;
+  }
+  
+  
+  
+  
+  .desktop.in-index #content-wrapper-wrap {
+      margin-top: 0px;
+      display: none;
+  }
+  
+  
+  .before-carousel {
+      padding: 0px 0;
+      margin-top: 0px;
+  }
+  
+  
+  
+  .mobile.in-index #content .row.banners-row {
+      margin-bottom: 20px;
+      text-align: center;
+      justify-content: center;
+      box-shadow: none;
+      padding: 0;
+  }
+  
+  .mobile .wide-carousel {
+      margin-top: 0;
+  }
+  
+  .headerFreeDeliveryNew {
+      font-weight: 400;
+      margin: 0;
+      padding: 6px 20px;
+      background: white;
+      filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.1));
+      position: relative;
+      margin-right: 10px;
+      text-align: center;
+      color: #689C56;
+      font-size: 15px;
+      line-height: 1.3;
+      position: absolute;
+      transform: translateX(105%);
+  }
+  
+  .headerFreeDeliveryNew::after {
+      content: "";
+      height: 16px;
+      width: 16px;
+      background: white;
+      position: absolute;
+      left: -5px;
+      top: 16px;
+      transform: rotate(45deg);
+  
+  }
+  
+  .ctaSection__imgCaption {
+      max-width: 150px;
+  }
+  
+  .cart-count {
+      margin: 0;
+      background: transparent;
+  }
+  
+  .cart-count.hovered {
+      background: transparent;
+  }
+  
+  .cart-count::before {
+      background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/cart-new.svg");
+      background-size: 22px;
+      background-position: center;
+  }
+  
+  .cart-count i {
+      background: #CF4823;
+      line-height: 1;
+      font-size: 11px;
+      top: 52%;
+  }
+  
+  .search-form .btn::after {
+      content: "";
+      height: 24px;
+      width: 24px;
+      background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/search-new.svg");
+  }
+  
+  .navigation-buttons {
+      width: auto;
+  }
+  
+  .advanced-parameter-inner {
+      border: 1px solid #e5e5e5;
+  }
+  
+  .advanced-parameter-inner img {
+      border-radius: 50%;
+  }
+  
+  @media (min-width: 768px) {
+      body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
+          margin-top: 0px;
+          display: inline-flex;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.3;
+          padding: 10px 15px;
+          order: -1;
+          background: rgba(207, 72, 35, 0.1);
+          color: #CF4823;
+      }
+  
+      .dkLabCountdownContainer {
+          display: flex;
+          align-items: baseline;
+      }
+  
+      .dkLabCountdownActionText {
+          padding-right: 5px;
+      }
+  }
+  
+  .position--benefitProduct {
+      padding-top: 30px;
+  }
+  
+  .middle-banners-wrapper {
+      background: #f5f5f5;
+      margin: 20px 0 0px 0;
+  }
+  
+  .category-title {
+      text-align: left;
+      justify-content: flex-start;
+      padding-bottom: 0;
+      display: inline-flex;
+      color: #2E523D;
+  }
+  
+  .category-title::after {
+      left: 0;
+      transform: none;
+      bottom: 5px;
+      height: 22px;
+      background: rgba(160, 205, 84, 0.1);
+      width: 100%;
+  }
+  
+  .category-perex {
+      margin-top: -30px;
+  }
+  
+  .category-perex>p {
+      color: #6D6C79;
+  }
+  
+  .subcategories {
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 0;
+      margin-bottom: 40px;
+  }
+  
+  .subcategories li {
+      width: 100%;
+      min-width: 100%;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .subcategories li a {
+      flex-direction: row;
+      border: 0;
+      outline: 1px solid #F0F0F0;
+      height: 76px;
+      overflow: hidden;
+  }
+  
+  .subcategories li a:hover {
+      background: linear-gradient(300deg, #F7FAF9 0%, rgba(255, 255, 255, 0) 46.24%);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  
+  }
+  
+  .subcategories li a .image {
+      height: 50px;
+      width: 70px;
+      margin-right: 15px;
+  }
+  
+  .subcategories li a .image img {
+      object-fit: contain;
+  }
+  
+  .subcategories li a .text {
+      color: #2E523D;
+      padding-top: 0;
+      max-height: 54px;
+      line-height: 1.1;
+      text-align: left;
+      overflow: hidden;
+  }
+  
+  .user-action .login-widget {
+      max-width: 100%;
+      width: 540px;
+      min-width: auto;
+  }
+  
+  .user-action .login-widget::after {
+      content: none;
+  }
+  
+  .login-widget h2 {
+      font-size: 28px;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .login-widget h2::before {}
+  
+  .login-widget h2::after {
+      content: "Jako člen sbíráte slevy za každý svůj nákup.";
+      font-size: 14px;
+      color: #6D6C79;
+      width: 100%;
+      background: none;
+      position: relative;
+      font-weight: 400;
+  }
+  
+  .login-widget .btn {
+      height: 58px;
+      background: #CF4823;
+      box-shadow: 0px 4px 9px rgba(207, 72, 35, 0.2);
+      text-transform: uppercase;
+  }
+  
+  .login-close {
+      background-color: transparent;
+  }
+  
+  .password-helper {
+      padding-top: 0;
+  }
+  
+  .password-helper a:first-child {
+      background: transparent;
+  }
+  
+  .form-control {
+      height: 52px;
+  }
+  
+  .news-item .title {
+      color: #2E523D;
+  }
+  
+  .news-item .description {
+      color: #6D6C79;
+  }
+  
+  .middle-banners-wrapper {
+      background: #FDFAF6;
+      margin: 20px 0 0px 0;
+     margin-bottom: 60px;
+  }
+  #categoriesSection{
+   
+  }
+  .categoriesSection__title{
+    color: #7C2D12;
+   
+  }
+  .homepage-group-title{
+    margin-top: 0;
+  }
+  
+  .in-index .products-block{
+      padding-bottom: 40px;
+     margin-bottom: 40px;
+    border-bottom: 3px solid  #F7FAF9;
+  }
+  #blogSection .container::before{
+    content: none;
+  }
+  #blogSection .container{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  footer {
+      background: #F7FAF9;
+  
+  }
+  #ctaSection{
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 2
+  }
+  #ctaSection::before{
+    content: "";
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 50%;
+      background: #fff;
+      display: flex;
+      position: absolute;
+      z-index: -1;
+  }
+  .ctaSection__imgWrap {
+      margin-top: -60px;
+  }
+  .ctaSection__content{
+    padding: 40px;
+  }
+  .ctaSection__title{
+    font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 150%;
+  }
+  .ctaSection__text {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #2E523D;
+    margin-bottom: 30px;
+  }
