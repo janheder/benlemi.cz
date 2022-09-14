@@ -184,7 +184,7 @@ advancedModal #productsRelated .products-block .product:nth-child{
 
 .advancedProduct-img {
   background: #F9FAFB;
-  height: 280px;
+  height: auto;
   width: 280px;
   display: flex;
   align-items: center;
