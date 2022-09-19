@@ -1,7 +1,16 @@
 @font-face {
     font-family: 'Karla';
     src: url('../fonts/Karla_wght.woff2') format("woff2-variations"),
-         url('../fonts/Karla/Karla-Medium.woff2') format('woff2');
+         url('../fonts/Karla/Karla-Regular.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand_wght.woff2') format("woff2-variations"),
+         url('../fonts/Quicksand/Quicksand-Regular.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
