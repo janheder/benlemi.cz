@@ -7,7 +7,7 @@ if ($("#footer #ratingSection").length){
             document.querySelector('#ratingSection .vote-grid').appendChild(body[i]);
         }
 
-        const body1 = nodes.querySelector('#ratingWrapper');
+        const body1 = nodes.querySelector('#ratingWrapper .rate-average-inner');
         document.querySelector('#ratingSection').prepend(body1);
 
     };
