@@ -4,8 +4,11 @@ if ($("#footer #ratingSection").length){
         const nodes = new DOMParser().parseFromString(html, 'text/html');
         const body = nodes.querySelectorAll('.vote-wrap');
         for(var i = 0; i <= 2; i++) {
-            document.querySelector('#ratingSection').appendChild(body[i]);
+            document.querySelector('#ratingSection .vote-grid').appendChild(body[i]);
         }
+
+        const body1 = nodes.querySelector('#ratingWrapper');
+        document.querySelector('#ratingSection').prepend(body1);
 
     };
     fetch("https://www.benlemi.sk/hodnotenie-obchodu/")
