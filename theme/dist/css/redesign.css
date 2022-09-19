@@ -54,6 +54,7 @@
          text-transform: uppercase;
         margin-right: 10px;
         width: auto;
+        height: 46px;
     }  
     }
     
@@ -96,6 +97,7 @@
     .p .p-tools .btn {
         background: #ECF2E8;
         color: #2E523D;
+        font-weight: 500;
     }
     
     .p .p-tools .btn:hover, .p .p-tools .btn:active, .p .p-tools .btn:focus {
@@ -592,10 +594,7 @@
         padding-top: 30px;
     }
     
-    .middle-banners-wrapper {
-        background: #f5f5f5;
-        margin: 20px 0 0px 0;
-    }
+
     
     .category-title {
         text-align: left;
@@ -732,7 +731,7 @@
     
     .middle-banners-wrapper {
         background: #FDFAF6;
-        margin: 20px 0 0px 0;
+        margin: 0;
        margin-bottom: 60px;
     }
     #categoriesSection{
@@ -1049,12 +1048,10 @@
         display: flex;
       align-items: center;
       opacity: 0.8;
-      overflow-x: auto;
   }
   .breadcrumbs>span {
       font-size: 14px;
       display: inline-flex;
-      flex-shrink: 0;
   }
   .breadcrumbs>span>a,
   .breadcrumbs>span>span{
@@ -1111,5 +1108,85 @@
     margin-top: -2px;
   }
   
+
+.categoriesSection__thumbImg{
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+.homepage-products-heading-3{
+margin-top: 0px;
+}
+.categoriesSection__thumb{
+height: 120px;
+width: 120px;
+  margin-bottom: 10px;
+}
+.categoriesSection__singleTitle{
+font-size: 16px;
+font-weight: 600;
+border-top: 1px solid #F1F1F1;
+width: 100%;
+padding-top: 15px;
+  color: #2E523D;;
+}
+.categoriesSection__single p{
+text-align:center;
+color: #6D6C79;
+font-size: 14px;
+margin: 0;
+margin-top: 5px;
+line-height: 1.3;
+}
+
+@media screen and (min-width: 992px){
+.categoriesSection__row .col-6 {
+  width: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+.categoriesSection__row > div:nth-child(1n+9){
+display: none;
+}
+}
   
-  
+.category-header div:last-child {
+  margin-top: 15px;
+}
+
+  .products-page .product {
+    width: 100%;
+}
+
+.products-block{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0;
+}
+.products-block .p{
+  padding: 0;
+}
+
+#ratingSection{
+  display: flex !important;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+#ratingSection .container::before{
+  content: none;
+}
+#ratingSection::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+  background: linear-gradient(0deg, #F7FAF9 0%, rgba(255, 255, 255, 1) 100%);
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
