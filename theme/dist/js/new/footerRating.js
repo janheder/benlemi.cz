@@ -8,7 +8,7 @@ if ($("#footer #ratingSection").length){
         }
 
         const body1 = nodes.querySelector('#ratingWrapper .rate-average-inner');
-        document.querySelector('#ratingSection').prepend(body1);
+        document.querySelector('#ratingSection .rating-content').prepend(body1);
 
     };
     fetch("https://www.benlemi.sk/hodnotenie-obchodu/")
