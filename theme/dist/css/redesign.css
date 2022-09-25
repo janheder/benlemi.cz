@@ -58,7 +58,11 @@
       height: 46px;
       width: 290px;
       align-items: flex-start;
-  }  
+      background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/filter.svg");
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+   } 
+    
   }
   
   .product {
@@ -356,7 +360,11 @@
       }
   }
   
-  
+  @media screen and (max-width: 575px) {
+    .overall-wrapper>.site-msg:first-child {
+      line-height: 1.2;
+  }
+  }
   
   @media screen and (min-width: 992px) {
   
@@ -683,6 +691,13 @@
   @media screen and (max-width: 575px){
     .subcategories {
       grid-template-columns: 1fr 1fr;
+  }
+  .subcategories li a {
+    height: 60px;
+}
+  .subcategories li a .image{
+    height: 30px;
+    width: 50px;
   }
   }
   .user-action .login-widget {
@@ -1457,13 +1472,29 @@ line-height: 1.5;
 .filter-section fieldset label{
   padding: 7px 0px 5px 26px;
 }
-
+  .filter-sections{
+    width: 100%;
+  }
 @media (max-width: 991px){
   .filters-wrapper>#filters{
     width: 100%;
     padding: 20px;
+    padding-top: 60px;
   }
-  .filter-sections{
-    width: 100%;
+  .sidebar-inner .box form{
+    max-height: 100%;
   }
+
+}
+.sidebar-inner .box form[action="/action/ProductsListing/setStockFilter/"]{
+  padding: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+      border-bottom: 1px solid #F0F0F0;
+}
+@media screen and (min-width: 992px){
+  .type-category .sidebar-left.--active {
+    margin-top: -40px;
+}
+
 }

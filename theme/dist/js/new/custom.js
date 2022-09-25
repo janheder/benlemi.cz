@@ -690,7 +690,7 @@ if ($(".pagination").length){
     function refactorPagi(){ 
         var current = parseInt($(".pagination .current").text());
         var max = parseInt($(".pagination > *:last-child").text());
-        var currentUrl = window.location.href;
+        var currentUrl = window.location.href.split('?')[0];
         var currentUrlS = currentUrl.slice(0, currentUrl.indexOf('/strana'));
 
         $(".pagination *").remove();
