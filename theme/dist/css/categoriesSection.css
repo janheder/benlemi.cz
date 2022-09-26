@@ -52,16 +52,16 @@
 
 
 @media screen and (max-width: 991px) {
-    .categoriesSection__row{
+    .categoriesSection__grid{
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .categoriesSection__row>div:nth-child(1n+9) {
+    .categoriesSection__grid>a:nth-child(1n+9) {
         display: none;
     }
 }
 @media screen and (min-width: 575px) {
-    .categoriesSection__row{
+    .categoriesSection__grid{
         grid-template-columns: 1fr 1fr;
         gap: 2px;
     }
