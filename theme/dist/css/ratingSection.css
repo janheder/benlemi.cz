@@ -1,0 +1,176 @@
+#ratingSection {
+    display: flex !important;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    padding: 80px 0;
+    align-items: flex-start;
+
+}
+
+#ratingSection .container::before {
+    content: none;
+}
+
+#ratingSection::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(0deg, #F7FAF9 0%, rgba(255, 255, 255, 1) 100%);
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+
+#ratingSection::after {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0%;
+
+    width: 100%;
+    height: 3px;
+    background: #F7FAF9;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+
+#ratingSection .rating-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#ratingSection .rating-content-title {
+    margin-left: 20px;
+}
+
+#ratingSection .rating-content-title h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#ratingSection .rating-content-title a {
+    color: #689C56;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#ratingSection .rate-average-inner {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #F7FAF9;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#ratingSection .stars-label {
+    display: none;
+}
+
+#ratingSection .vote-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+#ratingSection .vote-wrap {
+    border: 0;
+    padding: 0;
+}
+
+#ratingSection .vote-time {
+    display: none;
+}
+
+#ratingSection .vote-header {
+    display: flex;
+}
+
+#ratingSection .vote-pic {
+    height: 40px;
+    width: 40px;
+    background-color: #F8FAFA;
+    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/user-new.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+
+#ratingSection .vote-pic * {
+    display: none;
+}
+
+#ratingSection .vote-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#ratingSection .vote-summary::before {}
+
+#ratingSection .rate-average {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    color: #2E523D;
+    padding-bottom: 10px;
+}
+
+#ratingSection .vote-name {
+    color: #2E523D;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+#ratingSection .stars .star {
+    height: 13px;
+    width: 13px;
+}
+
+#ratingSection .vote-content {
+    font-style: normal;
+    color: #6D6C79;
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 991px) {
+    #ratingSection {
+        padding: 60px 0;
+    }
+
+    #ratingSection .vote-grid {
+        display: flex;
+        overflow: auto;
+        width: 100%;
+        grid-gap: 20px;
+    }
+
+    #ratingSection .vote-wrap {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #ratingSection {
+        padding: 40px 0;
+    }
+    #ratingSection .rating-content-title h3 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
