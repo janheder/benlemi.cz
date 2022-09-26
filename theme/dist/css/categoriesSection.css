@@ -56,7 +56,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .categoriesSection__grid>a:nth-child(1n+9) {
+    .categoriesSection__grid>a:nth-child(1n+7) {
         display: none;
     }
 }
@@ -73,5 +73,18 @@
     .categoriesSection__grid{
         grid-template-columns: 1fr 1fr;
         gap: 2px;
+    }
+    .categoriesSection__single {
+        flex-direction: row;
+    }
+    .categoriesSection__thumb{
+        margin: 0;
+        height: 70px;
+    width: 80px;
+    margin-right: 15px;
+    }
+    .categoriesSection__singleTitle{
+        border: 0;
+        text-align: left;
     }
 }
