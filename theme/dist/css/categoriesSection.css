@@ -60,7 +60,7 @@
         display: none;
     }
 }
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
     .categoriesSection__grid{
         grid-template-columns: 1fr 1fr;
         gap: 2px;
