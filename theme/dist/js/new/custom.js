@@ -2,11 +2,16 @@
 // PRODUCT PAGE
 // -----------------------------------------------------------------------------
 
-$("<div id='productVideosToggle'>Přehrát video</div>").insertAfter(".product-top .p-image #wrap");
 
-$("#productVideosToggle, #productVideos").click(function(){
-    $("body").toggleClass("--showVideo");
-});
+if ($("#productVideos").length){
+    $("<div id='productVideosToggle'>Přehrát video</div>").insertAfter(".product-top .p-image #wrap");
+
+    $("#productVideosToggle, #productVideos").click(function(){
+        $("body").toggleClass("--showVideo");
+    });
+}
+
+
 
 // -----------------------------------------------------------------------------
 // GLOBAL
@@ -894,3 +899,13 @@ if ($(":lang(sk)").length){
   }
   
   
+
+// =============================================================================
+// nav redesign
+// =============================================================================
+
+
+$('<div class="main-header-nav"><a href="#">Produkty</a>').insertAfter(".header-top div:nth-child(2)");
+
+
+$('#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-3002').insertAfter(".main-header-nav a");

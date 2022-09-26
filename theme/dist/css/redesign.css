@@ -1,3 +1,52 @@
+.main-header-nav{
+  padding: 0 20px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.main-header-nav a{
+  align-items: center;
+text-transform: uppercase;
+color: #2E523D;
+  font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+  padding: 5px 30px;
+  border-right: 1px solid #F3F6F5;
+}
+.main-header-nav li:last-child a{
+  border: 0;
+}
+.main-header-nav a b{
+    font-weight: 500;
+}
+.main-header-nav li{
+  list-style: none;
+}
+.menu-item-29, .menu-item-1386, .menu-item-1347{
+   display: none !important;
+}
+.main-header-nav a:hover + .menu-level-2{
+  display: flex;
+}
+.main-header-nav a + .menu-level-2 {
+  z-index: 2;
+  top: 150px;
+  
+}
+@media screen and (max-width: 991px){
+  .main-header-nav{
+  width: 100%;
+    background: white;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    height: 48px;
+    border-top: 1px solid #F3F6F5;
+}
+}
+
 /* Copyright Jan Heder info@janheder.cz */
 .form-control::placeholder {
   color: #6F6F6F !important;
@@ -342,7 +391,7 @@
   
   .header-top .search {
       flex-shrink: 1;
-      flex-grow: 1;
+      flex-grow: 0;
       justify-content: flex-end;
   }
   
@@ -1171,6 +1220,7 @@ font-size: 14px;
 font-size: 15px;
     display: inline-flex;
   flex-direction: row;
+  box-shadow: 0px 4px 9px rgba(207, 72, 35, 0.2);
 }
 .add-to-cart .add-to-cart-button::before{
   content: "";
@@ -1497,4 +1547,21 @@ line-height: 1.5;
     margin-top: -40px;
 }
 
+}
+
+
+#ratingProduct{
+  display: flex;
+  flex-wrap: wrap;
+}
+#ratingProduct h1{
+  width: 100%;
+}
+#ratingProduct .rate-wrapper{
+  padding-right: 60px;
+  width: 50%;
+}
+#ratingProduct>.votes-wrap{
+  width: 50%;
+  padding: 0;
 }
