@@ -1,3 +1,5 @@
+/* Copyright Jan Heder info@janheder.cz */
+
 .menu-helper::after {
   top: 0px !important;
 }
@@ -22,7 +24,7 @@
   padding: 5px 30px;
   height: 100%;
   position: relative;
-  
+
 }
 
 .main-header-nav>a::after, .main-header-nav>li>a::after {
@@ -33,7 +35,8 @@
   right: 0px;
   position: absolute;
 }
-.main-header-nav>li:last-child>a::after{
+
+.main-header-nav>li:last-child>a::after {
   content: none;
 }
 
@@ -86,9 +89,11 @@
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .main-header-nav .menu-item-responsive{
+
+  .main-header-nav .menu-item-responsive {
     display: none;
   }
+
   .main-header-nav>a, .main-header-nav li>a {
     padding: 0 10px;
   }
@@ -102,7 +107,7 @@
   }
 }
 
-/* Copyright Jan Heder info@janheder.cz */
+
 .form-control::placeholder {
   color: #6F6F6F !important;
 }
@@ -317,11 +322,13 @@ h1, h2, h3, h4, h5 {
   max-width: 100%;
   font-weight: 600;
 }
+
 @media screen and (max-width: 991px) {
   .homepage-group-title, .instagramSection__title, .blogSection__title, .categoriesSection__title {
     font-size: 24px;
   }
 }
+
 @media screen and (max-width: 575px) {
   .homepage-group-title, .instagramSection__title, .blogSection__title, .categoriesSection__title {
     font-size: 20px;
@@ -1021,42 +1028,52 @@ footer {
   font-weight: 400;
   color: #2E523D;
 }
-@media (max-width: 991px){
-    .ctaSection__boxIcon {
-      display: flex;
+
+@media (max-width: 991px) {
+  .ctaSection__boxIcon {
+    display: flex;
   }
 }
+
 @media screen and (max-width: 767px) {
-  #ctaSection{
+  #ctaSection {
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
   }
-  #ctaSection::before{
+
+  #ctaSection::before {
     content: none;
   }
+
   .ctaSection__imgWrap {
     margin-top: 0px;
     position: relative;
-}
-#ctaSection::after{
-  content: none;
-}
-}
-@media screen and (max-width: 575px) {
-  #ctaSection::after{
+  }
+
+  #ctaSection::after {
     content: none;
   }
+}
+
+@media screen and (max-width: 575px) {
+  #ctaSection::after {
+    content: none;
+  }
+
   .ctaSection__title {
     font-size: 16px;
   }
-  .ctaSection__text{
+
+  .ctaSection__text {
     font-size: 20px;
   }
-  .ctaSection__boxWrap{
+
+  .ctaSection__boxWrap {
     margin-bottom: 20px;
   }
-  .ctaSection__content{
+
+  .ctaSection__content {
     padding-bottom: 0;
   }
 }
@@ -1215,11 +1232,13 @@ footer {
   .newsletterSection__formGroup {
     max-width: calc(100vw - 20px);
   }
-  .newsletterSection__formGroup .newsletterSection__btn{
+
+  .newsletterSection__formGroup .newsletterSection__btn {
     padding: 0 10px;
 
   }
-  .newsletterSection__input{
+
+  .newsletterSection__input {
     padding: 0 10px;
   }
 }
@@ -1614,6 +1633,7 @@ footer {
   #header {
     height: 114px;
   }
+
   .body-banners {
     background: transparent;
     margin-top: 0px;
@@ -1622,8 +1642,8 @@ footer {
 
 @media screen and (max-width: 575px) {
   .news-item .description p {
-    display:none;
-}
+    display: none;
+  }
 }
 
 
@@ -1633,7 +1653,8 @@ footer {
   color: #CF4823;
   font-size: 24px;
 }
-.p-final-price-wrapper .price-standard{
+
+.p-final-price-wrapper .price-standard {
   color: #6D6C79;
 }
 
@@ -1643,40 +1664,82 @@ footer {
 }
 
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
   .header-top {
     z-index: 3;
-}
+  }
 }
 
 
-@media screen and (max-width: 991px){
-.menu {
+@media screen and (max-width: 991px) {
+  .menu {
     padding-top: 0px;
-}
+  }
 
 }
 
 
 
-.menu-level-1>li.ext>a{
+.menu-level-1>li.ext>a {
   padding: 0 15px;
 }
 
-.menu-level-1>li.ext>a::after{
+.menu-level-1>li.ext>a::after {
   content: none;
 }
 
 
 .main-header-nav>li>a[href="/nove-produkty/"] {
-color: #F0BA00;
+  color: #F0BA00;
 }
-.main-header-nav>li>a[href="/nove-produkty/"]::before{
+
+.main-header-nav>li>a[href="/nove-produkty/"]::before {
   content: "";
   background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/nav-new.svg");
   background-size: 100%;
-height: 20px;
-width: 20px;;
-display: flex;
-margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  ;
+  display: flex;
+  margin-right: 8px;
+}
+
+
+
+#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-3002 {
+  display: none !important
+}
+
+@media screen and (max-width: 991px) {
+  .menu-level-1>li.ext>a {
+    background-image: none !important;
+  }
+
+  .menu-level-1>li>a {
+    padding: 0 15px 0 15px;
+  }
+  .menu-level-1>li.ext>a{
+    background-image: none !important;
+    padding-right: 35px;
+  }
+  .menu-level-1>li.ext>a::before {
+    right: 10px;
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
+    width: 8px;
+    height: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.in-login .content-inner form .btn {
+  width: 161px;
+  background: #CF4823;
+  color: #fff;
+}
+
+.in-login .content-inner form .btn:hover, .in-login .content-inner form .btn:active, .in-login .content-inner form .btn:focus {
+  color: #fff;
+  background: #b93d19
 }
