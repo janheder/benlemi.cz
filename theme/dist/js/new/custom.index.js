@@ -9,6 +9,7 @@
 $(document).ready(function() {
 
     if ($(".in-index").length){
+        
         const loadNews = (html) => {
             const nodes = new DOMParser().parseFromString(html, 'text/html');
             const body = nodes.querySelectorAll('.news-wrapper .news-item:nth-child(-n+3)');
