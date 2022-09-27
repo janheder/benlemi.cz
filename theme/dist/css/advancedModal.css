@@ -80,7 +80,7 @@ body.--advancedModalProduct {
 }
 
 .advancedModal__content {
-  padding: 50px 60px 40px 60px;
+  padding: 40px 60px 40px 60px;
 }
 
 .advancedModal__buttons {
@@ -115,6 +115,7 @@ body.--advancedModalProduct {
   text-align: center;
   font-size: 24px;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .advancedModal #productsRelated .p-tools {
@@ -350,4 +351,9 @@ display: none;
   top: 10px;
   right: auto;
   position: absolute;
+}
+
+
+.user-action-cart {
+  top: 70px;
 }

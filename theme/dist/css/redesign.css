@@ -674,6 +674,7 @@ h1, h2, h3, h4, h5 {
     content: none;
   }
 }
+
 @media (max-width: 1919px) {
   .headerFreeDeliveryNew {
     display: none;
@@ -747,10 +748,6 @@ h1, h2, h3, h4, h5 {
   .dkLabCountdownActionText {
     padding-right: 5px;
   }
-}
-
-.position--benefitProduct {
-  padding-top: 30px;
 }
 
 
@@ -915,6 +912,12 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 60px;
 }
 
+@media (max-width: 991px) {
+  .middle-banners-wrapper {
+    margin-bottom: 0px;
+  }
+}
+
 .homepage-group-title {
   margin-top: 0;
 }
@@ -923,6 +926,13 @@ h1, h2, h3, h4, h5 {
   padding-bottom: 40px;
   margin-bottom: 40px;
   border-bottom: 3px solid #F7FAF9;
+}
+
+@media screen and (max-width: 575px) {
+  .in-index .products-block {
+    margin-bottom: 0px;
+    border: 0;
+  }
 }
 
 #blogSection .container::before {
@@ -1663,10 +1673,12 @@ footer {
   .menu-level-1>li>a {
     padding: 0 15px 0 15px;
   }
-  .menu-level-1>li.ext>a{
+
+  .menu-level-1>li.ext>a {
     background-image: none !important;
     padding-right: 35px;
   }
+
   .menu-level-1>li.ext>a::before {
     right: 10px;
     background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
@@ -1687,4 +1699,37 @@ footer {
 .in-login .content-inner form .btn:hover, .in-login .content-inner form .btn:active, .in-login .content-inner form .btn:focus {
   color: #fff;
   background: #b93d19
+}
+
+.add-to-cart .increase, .add-to-cart .decrease {
+  opacity: 0.5;
+  height: 56px;
+}
+
+.add-to-cart .increase:hover, .add-to-cart .decrease {
+  opacity: 0.5;
+  height: 56px;
+}
+
+
+
+.main-header-nav .menu-level-2>li {
+
+  flex-direction: column;
+
+}
+
+.main-header-nav .menu-level-2>li {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.main-header-nav .menu-level-2 .menu-level-3 {
+  display: none;
+}
+
+.blogSection__btn {
+  height: 44px;
 }
