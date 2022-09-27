@@ -1083,7 +1083,15 @@ footer {
   .ctaSection__text {
     font-size: 20px;
   }
-
+  .ctaSection__box{
+    margin: 0;
+  }
+  .ctaSection__box span{
+    margin-right: 20px;
+  }
+  .ctaSection__boxContent{
+    text-align: left;
+  }
   .ctaSection__boxWrap {
     margin-bottom: 20px;
   }
@@ -1603,6 +1611,10 @@ footer {
 @media screen and (max-width: 575px) {
   .news-item .description p {
     display: none;
+  }
+
+  #instagramSection h1 + div{
+    max-height: 100px !important;
   }
 }
 
