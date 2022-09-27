@@ -58,7 +58,9 @@
         grid-template-columns: 1fr;
         margin-bottom: 40px;
     }
-
+    .position--benefitHomepage{
+        margin: 0;
+    }
     .benefitBanner__picture {
         width: 40px;
     }

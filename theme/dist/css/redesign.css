@@ -1398,7 +1398,12 @@ footer {
   margin-top: -2px;
 }
 
-
+@media screen and (max-width: 575px) {
+  .add-to-cart .add-to-cart-button {
+    padding: 0 20px;
+    width: 100%;
+  }
+}
 
 .category-header div:last-child {
   margin-top: 15px;
@@ -1681,11 +1686,13 @@ footer {
 
   .menu-level-1>li.ext>a::before {
     right: 10px;
+    background-color: transparent;
     background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
     width: 8px;
     height: 8px;
     background-position: center;
     background-repeat: no-repeat;
+
   }
 }
 
@@ -1732,4 +1739,8 @@ footer {
 
 .blogSection__btn {
   height: 44px;
+}
+
+.mobile .banners-row #carousel {
+  margin: 0;
 }

@@ -52,10 +52,11 @@
         position: relative;
     }
 
+    /*
     .breadcrumbs::after {
         content: "";
         height: 100%;
-        width: 80px;
+        width: 40px;
         display: flex;
         flex-shrink: 0;
         position: absolute;
@@ -64,6 +65,7 @@
         bottom: 0;
         background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
     }
+    */
 
     .breadcrumbs-wrapper {
         background: #fff;
