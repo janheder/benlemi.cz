@@ -13,9 +13,9 @@ $(document).ready(function() {
             document.querySelector('#ratingSection .rating-content').prepend(body1);
 
         };
-        fetch("https://www.benlemi.sk/hodnotenie-obchodu/")
+        fetch("/hodnotenie-obchodu/")
             .then((response) => response.text())
             .then(loadRating)
     }
-    
+
 });
