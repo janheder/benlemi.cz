@@ -1082,16 +1082,22 @@ footer {
 
   .ctaSection__text {
     font-size: 20px;
+    margin-bottom: 20px;
   }
-  .ctaSection__box{
+
+  .ctaSection__box {
     margin: 0;
+    margin-bottom: 10px;
   }
-  .ctaSection__box span{
-    margin-right: 20px;
+
+  .ctaSection__box span {
+    margin-right: 15px;
   }
-  .ctaSection__boxContent{
+
+  .ctaSection__boxContent {
     text-align: left;
   }
+
   .ctaSection__boxWrap {
     margin-bottom: 20px;
   }
@@ -1290,6 +1296,18 @@ footer {
   display: inline-block;
   color: #2E523D;
   line-height: 1.2;
+}
+
+@media screen and (max-width: 991px) {
+  #instagramSection {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #instagramSection h1>a {
+    font-size: 22px;
+  }
 }
 
 .instagramSection__title a span {
@@ -1613,7 +1631,7 @@ footer {
     display: none;
   }
 
-  #instagramSection h1 + div{
+  #instagramSection h1+div {
     max-height: 100px !important;
   }
 }
