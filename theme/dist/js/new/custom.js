@@ -905,7 +905,7 @@ if ($(":lang(sk)").length){
 // =============================================================================
 
 
-$('<div class="main-header-nav"><a href="#">Produkty</a>').insertAfter(".header-top div:nth-child(2)");
+$('<div class="main-header-nav"><a href="#">Produkty</a>').insertAfter(".header-top > div:nth-child(2)");
 
 
 $('#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-3002').insertAfter(".main-header-nav a");
