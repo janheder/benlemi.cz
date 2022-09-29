@@ -1789,3 +1789,62 @@ footer {
     display: flex;
 }
 }
+
+
+@media screen and (max-width: 991px){
+  #content #category-header {
+    display: none;
+}
+  .category-perex {
+    margin-top: 0px;
+  }
+  .ordering-process .main-header-nav{
+    display: none;
+  }
+.ordering-process #header {
+    height: 56px;
+}
+} 
+
+.cart-header {
+    background-color: #F7FAF9;
+}
+.cart-header .step.active {
+    border-bottom: 2px solid #7bb82a;
+    background: #eef3f1;
+}
+.step::after {
+background-color: #F7FAF9;
+}
+.step.active::after {
+    border: 2px solid #7bb82a;
+    background: #7bb82a;
+    color :white;
+}
+
+@media screen and (min-width: 992px){
+  .ordering-process .header-top .search {
+    display: none;
+}
+  .ordering-process .header-top .header-contacts {
+   display: flex;
+}
+  .ordering-process .header-contacts a{
+    padding: 2px;
+        padding-left: 30px;
+  }
+}
+
+
+.ordering-process .cart-table .remove-item{
+  border-radius: 50%;
+  width: 32px;
+    height: 32px;
+  background-color: #F7FAF9;
+      background-size: 14px;
+}
+
+.menu-level-1>li>a>b {
+    text-align: center;
+}
+
