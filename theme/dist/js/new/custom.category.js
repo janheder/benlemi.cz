@@ -82,6 +82,7 @@ document.addEventListener('ShoptetDOMPageMoreProductsLoaded', function () {
 /* category header edit */
 if ($("#category-header").length){
 
+    $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div>');
 
     $("#filterToggleDesktop").click(function(){
         $(".sidebar-left").toggleClass("--active");
