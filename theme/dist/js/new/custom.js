@@ -14,6 +14,27 @@ if ($("#productVideos").length){
 
 
 // -----------------------------------------------------------------------------
+// PRODUCTS GENERAL PAGE
+// -----------------------------------------------------------------------------
+
+$(document).ready(function() {
+
+    if ($(".in-produkty").length){
+        
+        const loadProducts = (html) => {
+            const nodes = new DOMParser().parseFromString(html, 'text/html');
+            const body = nodes.querySelector('#categoriesSection');
+            document.querySelector('.in-produkty #content article div').prepend(body);
+        };
+        fetch("/")
+            .then((response) => response.text())
+            .then(loadProducts)
+    }
+});
+
+
+
+// -----------------------------------------------------------------------------
 // GLOBAL
 // -----------------------------------------------------------------------------
 

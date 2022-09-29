@@ -1775,3 +1775,17 @@ footer {
 .mobile .banners-row #carousel {
   margin: 0;
 }
+
+#header::after {
+  transform: translateY(152px);
+}
+
+
+.in-produkty #categoriesSection .categoriesSection__title{
+  display: none;
+}
+@media screen and (max-width: 991px){
+  .in-produkty .categoriesSection__grid>a:nth-child(1n+7) {
+    display: flex;
+}
+}

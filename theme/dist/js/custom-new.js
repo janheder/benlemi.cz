@@ -387,16 +387,9 @@ $('<div class="info-delivery"> Expedujeme hned zítra. Víkendové objednávky e
 
  
 $( document ).ready(function() {
-$("<div class='countdown-div-wrap'><div class='countdown-div'><div id='countdown'></div></div></div>").insertBefore(".p-final-price-wrapper");
- $("#countdown").countdown("2021/01/06", function(event) {
-   $(this).text(
-     event.strftime('%D dní %H hodin %M minut %S sekund')
-   );
- });
- 
- if($(".p-detail-info .flag.flag-action").length){
-   $(".countdown-div").css("display","none");
- }
+
+
+
 
 
 
