@@ -784,6 +784,7 @@ h1, h2, h3, h4, h5 {
   padding: 0;
   line-height: 1.2;
   margin: 20px 0;
+  display: inline;
 }
 
 .category-title::after {
@@ -792,7 +793,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .category-perex {
-  margin-top: -20px;
+  margin-top: 15px;
 }
 
 .category-perex>p {
@@ -1933,4 +1934,13 @@ header+.content-wrapper .content-wrapper-in {
 .footer-language li {
   padding: 5px 10px;
 }
+}
+
+
+
+.pagination-loader {
+  margin: 40px 0 0 0;
+}
+.pagination-loader .load-products{
+  height: 42px;
 }
