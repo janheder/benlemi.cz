@@ -79,7 +79,7 @@
     width: 100%;
     background: white;
     position: absolute;
-    top: 56px;
+    top: 55px;
     left: 0;
     right: 0;
     height: 48px;
@@ -1899,3 +1899,8 @@ background-color: #F7FAF9;
     text-align: center;
 }
 
+@media screen and (max-width: 991px){
+  .footer-rows .custom-footer>div {
+    padding: 0 10px;
+  }
+}
