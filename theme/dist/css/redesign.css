@@ -485,6 +485,11 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 991px) {
+  .nav-menu-toggle{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
   .top-navigation-bar {
     display: none;
   }
@@ -567,7 +572,16 @@ h1, h2, h3, h4, h5 {
     color: #2E523D;
   }
 }
-
+@media screen and (max-width: 991px) {
+  .site-name {
+    margin-left: 62px;
+}
+}
+@media screen and (max-width: 575px) {
+  .site-name {
+    height: 34px;
+}
+}
 
 .p-detail-inner-header h1 {
   font-weight: 600;
