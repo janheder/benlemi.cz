@@ -1904,3 +1904,13 @@ background-color: #F7FAF9;
     padding: 0 10px;
   }
 }
+
+
+header+.content-wrapper .content-wrapper-in {
+  padding: 20px 0;
+}
+@media screen and (max-width: 991px){
+  header+.content-wrapper .content-wrapper-in {
+    padding: 10px 0;
+  }
+}
