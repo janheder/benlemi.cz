@@ -466,6 +466,12 @@ h1, h2, h3, h4, h5 {
   background: #7bb82a;
   border: 5px solid white;
   width: 56px;
+  margin-right: 15px;
+}
+
+
+.nav-menu-toggle span,.nav-menu-toggle span::before, .nav-menu-toggle span::after{
+  background: white;
 }
 
 .site-name a {
@@ -490,6 +496,7 @@ h1, h2, h3, h4, h5 {
   .overall-wrapper>.site-msg:first-child {
     margin-top: 0;
   }
+
 }
 
 @media screen and (max-width: 575px) {
