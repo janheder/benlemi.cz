@@ -780,19 +780,19 @@ h1, h2, h3, h4, h5 {
   padding-bottom: 0;
   display: inline-flex;
   color: #2E523D;
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, rgba(160, 205, 84, 0.1) 50%);
+  padding: 0;
+  line-height: 1.2;
+  margin: 20px 0;
 }
 
 .category-title::after {
-  left: 0;
-  transform: none;
-  bottom: 5px;
-  height: 22px;
-  background: rgba(160, 205, 84, 0.1);
-  width: 100%;
+  content: none;
+
 }
 
 .category-perex {
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 .category-perex>p {
@@ -1311,6 +1311,9 @@ footer {
   .newsletterSection__titleWrap{
     padding: 0;
   }
+  .newsletterSection__title {
+    font-size: 24px;
+}
 }
 
 
@@ -1627,7 +1630,7 @@ footer {
 
 @media screen and (min-width: 992px) {
   .type-category .sidebar-left.--active {
-    margin-top: -40px;
+    margin-top: 0px;
   }
 
 }
@@ -1913,4 +1916,21 @@ header+.content-wrapper .content-wrapper-in {
   header+.content-wrapper .content-wrapper-in {
     padding: 10px 0;
   }
+}
+
+
+
+@media screen and (max-width: 575px){
+  .footer-rows .custom-footer>div {
+    width: 100%;
+}
+
+.footer-language{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-language li {
+  padding: 5px 10px;
+}
 }
