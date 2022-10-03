@@ -9,18 +9,6 @@ if ($(".type-category").length){
     $(".category-perex").insertAfter(".category-title");
 }
 
-/* relocate sort into filters */
-if ($(".filters-wrapper").length){
-    $("#content-wrapper").append('<div id="filtersToggle">' + g_openFilter + '</div>');
-    $("#filtersToggle").click(function(){
-        $("#content-wrapper").toggleClass("--showFilters");
-        if ($("#content-wrapper").hasClass("--showFilters")) {
-            $("#filtersToggle").text(g_hideFilter);
-        }else{
-            $("#filtersToggle").text(g_showFilter);
-        }
-    });
-}
 
 /* rename show more button */;
 if ($(".pagination-loader").length){
@@ -85,15 +73,15 @@ if ($("#category-header").length){
     $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div>');
 
     $("#filterToggleDesktop").click(function(){
-        $(".sidebar-left").toggleClass("--active");
 
-        if($("#filterToggleDesktop").hasClass("active")){
+
+        if($("body").hasClass("--showFilters")){
             $(this).text(g_showFilter);
-            $(this).removeClass("active");
+            $(this).removeClass("--showFilters");
         }
         else{
             $(this).text(g_hideFilter);
-            $(this).addClass("active");
+            $(this).addClass("--showFilters");
         }
     });
 }
