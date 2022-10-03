@@ -77,11 +77,11 @@ if ($("#category-header").length){
 
         if($("body").hasClass("--showFilters")){
             $(this).text(g_showFilter);
-            $(this).removeClass("--showFilters");
+            $("body").removeClass("--showFilters");
         }
         else{
             $(this).text(g_hideFilter);
-            $(this).addClass("--showFilters");
+            $("body").addClass("--showFilters");
         }
     });
 }
