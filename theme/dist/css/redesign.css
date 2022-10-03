@@ -2103,3 +2103,8 @@ body.--showFilters .sidebar-left{
     margin-top: 20px;
   }
 }
+
+
+.main-header-nav::-webkit-scrollbar{
+  display: none
+}
