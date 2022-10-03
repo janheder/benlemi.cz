@@ -57,9 +57,11 @@
     .benefitBanner {
         grid-template-columns: 1fr;
         margin-bottom: 40px;
+        grid-gap: 10px;
     }
     .position--benefitHomepage{
         margin: 0;
+        padding-bottom: 30px;
     }
     .benefitBanner__picture {
         width: 40px;

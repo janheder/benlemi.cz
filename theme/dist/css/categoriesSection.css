@@ -21,7 +21,7 @@
 }
 
 .categoriesSection__title {
-    color: #7C2D12;
+    color: #7C2D12 !important;
 }
 
 .categoriesSection__grid {

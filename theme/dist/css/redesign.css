@@ -366,6 +366,10 @@ h1, h2, h3, h4, h5 {
   .homepage-group-title, .instagramSection__title, .blogSection__title, .categoriesSection__title {
     font-size: 22px !important;
   }
+  .p-in-in .name{
+    font-size: 15px;
+    line-height: 1.2;
+  }
 }
 
 
@@ -1145,6 +1149,15 @@ footer {
   #ctaSection::after {
     content: none;
   }
+  .ctaSection__imgWrap {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 280px;
+    width: 280px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: -40px;
+    background: white;
+}
 }
 
 @media screen and (max-width: 575px) {
@@ -1176,14 +1189,27 @@ footer {
   }
 
   .ctaSection__boxWrap {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .ctaSection__content {
+    padding: 20px;
     padding-bottom: 0;
   }
 }
 
+.ctaSection__imgWrap img {
+  mix-blend-mode: darken;
+}
+
+
+@media (max-width: 500px){
+  .ctaSection__imgWrap {
+    order: 0;
+    height: 180px;
+    width: 180px;
+}
+}
 
 
 .footer-rows .custom-footer {
@@ -2009,10 +2035,11 @@ header+.content-wrapper .content-wrapper-in {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 20px;
   }
 
   .footer-language li {
-    padding: 5px 10px;
+    padding: 0 10px;
   }
 }
 
