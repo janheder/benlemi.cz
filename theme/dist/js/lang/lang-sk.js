@@ -90,6 +90,8 @@ var g_fullDescription = "Celý popis";
 var g_totalQuantity = "Položiek celkom";
 var g_blogText = "Rady a inšpirácie pre zodpovedných rodičov aj milovníkov trendov";
 
+var g_showSort = "Radenie produktov";
+
 var g_moreRating = "Ďalšie hodnotenie";
 
 var g_ratingUrl = "hodnotenie-obchodu";

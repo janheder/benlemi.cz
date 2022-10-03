@@ -2008,6 +2008,7 @@ header+.content-wrapper .content-wrapper-in {
 @media screen and (max-width: 991px) {
   .category-header form {
     height: auto;
+    display: none;
   }
 
   .category-header fieldset {
@@ -2050,4 +2051,21 @@ header+.content-wrapper .content-wrapper-in {
   height: 20px;
   position: absolute;
   bottom: -20px;
+}
+
+
+
+body.--showFilters{
+  overflow: hidden;
+}
+body.--showFilters .sidebar-left{
+  display: flex;
+  opacity: 1;
+    position: relative;
+    pointer-events: auto;
+}
+@media screen and (max-width: 991px) {
+  body.--showFilters .filters{
+        transform: translateX(0%);
+  }
 }

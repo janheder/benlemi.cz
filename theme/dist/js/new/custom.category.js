@@ -70,7 +70,7 @@ document.addEventListener('ShoptetDOMPageMoreProductsLoaded', function () {
 /* category header edit */
 if ($("#category-header").length){
     $("#category-header").insertBefore(".content-wrapper-in");
-    $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div>');
+    $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div><div id="sortToggle" class="btn btn-ghost">' + g_showSort + '</div>');
 
     $("#filterToggleDesktop").click(function(){
 
