@@ -73,8 +73,6 @@ if ($("#category-header").length){
     $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div><div id="sortToggle" class="btn btn-ghost">' + g_showSort + '</div>');
 
     $("#filterToggleDesktop").click(function(){
-
-
         if($("body").hasClass("--showFilters")){
             $(this).text(g_showFilter);
             $("body").removeClass("--showFilters");
@@ -83,6 +81,10 @@ if ($("#category-header").length){
             $(this).text(g_hideFilter);
             $("body").addClass("--showFilters");
         }
+    });
+
+    $("#sortToggle").click(function(){
+        $("body").addClass("--showSort");
     });
 }
 
