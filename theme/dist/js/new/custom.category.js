@@ -84,7 +84,7 @@ if ($("#category-header").length){
     });
 
     $("#sortToggle").click(function(){
-        $("body").addClass("--showSort");
+        $("body").toggleClass("--showSort");
     });
 }
 

@@ -167,7 +167,6 @@
 @media screen and (max-width: 991px) {
   .category-header {
     flex-direction: row;
-    flex-wrap: nowrap;
   }
 
   #filterToggleDesktop {
@@ -175,6 +174,7 @@
     color: white;
     flex-shrink: 0;
     margin-right: 10px;
+    flex-grow: 1;
   }
 }
 
@@ -2013,6 +2013,7 @@ header+.content-wrapper .content-wrapper-in {
 
   .category-header fieldset {
     flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -2092,5 +2093,13 @@ body.--showFilters .sidebar-left{
     background-color: #F7FAF9;
     flex-grow: 1;
     margin-left: 5px;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  body.--showSort .category-header form{
+    display: flex;
+    margin-top: 20px;
   }
 }
