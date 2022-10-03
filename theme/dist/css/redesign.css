@@ -2056,7 +2056,7 @@ header+.content-wrapper .content-wrapper-in {
 
 
 body.--showFilters{
-  overflow: hidden;
+
 }
 body.--showFilters .sidebar-left{
   display: flex;
@@ -2065,6 +2065,9 @@ body.--showFilters .sidebar-left{
     pointer-events: auto;
 }
 @media screen and (max-width: 991px) {
+  body.--showFilters{
+    overflow: hidden;
+  }
   body.--showFilters .filters{
         transform: translateX(0%);
   }
