@@ -2069,3 +2069,14 @@ body.--showFilters .sidebar-left{
         transform: translateX(0%);
   }
 }
+
+
+#sortToggle{
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  #sortToggle{
+    display: flex;
+    background-color: #F7FAF9;
+  }
+}
