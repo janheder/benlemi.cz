@@ -2229,3 +2229,68 @@ color: #F09000;
     padding: 2px 6px;
   }
 }
+
+
+.footer-rows .banner-wrapper h4 {
+  display: inline;
+  color: #2E523D;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(160, 205, 84, 0.1) 50%);
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-rows .custom-footer>div>h4::after, .footer-rows .banner-wrapper h4::after{
+  content: none;
+}
+.footer-rows .banner-wrapper h4 + ul{
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 575px){
+  .footer-rows .banner-wrapper h4{
+    margin: 0px;
+    padding: 20px 0;
+    line-height: 1;
+    position: relative;
+    display: flex;
+    background:transparent;
+    border-top: 1px solid #EAF0EE;
+    font-size: 18px;
+}
+.footer-rows .banner-wrapper h4::after {
+    content: "";
+    position: absolute;
+    right: 0;
+  left: auto;
+    top: 24px;
+    height: 12px;
+    width: 12px;
+    display: flex;
+  background:transparent;
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: 0.2s ease transform;
+  opacity: 0.5;
+}
+ .custom-footer h4 ~ * {
+    display: none;
+} 
+ .footer-rows ul.footer-language{
+    margin-bottom: 20px;
+  }
+  .footer-logos{
+    margin: 0;
+  }
+  .footer-logos img{
+    max-height: 40px;
+  }
+  .custom-footer h4.--active {
+    padding-bottom: 15px;
+}
+  .custom-footer h4.--active ~ * {
+    display: flex;
+    flex-direction: column;
+}
+}

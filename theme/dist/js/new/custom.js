@@ -940,3 +940,13 @@ $('#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-i
 $(".main-header-nav>li").hover(function(){
  $("img").unveil();
 });
+
+
+// =============================================================================
+// FOOTER REVEAL CATEGORIES
+// =============================================================================
+
+$("#footer .custom-footer > div h4").click(function(){
+    $(this).toggleClass("--active");
+});
+
