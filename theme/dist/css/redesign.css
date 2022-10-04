@@ -2469,3 +2469,7 @@ background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/pl
   background-repeat: no-repeat;
 }
 }
+
+.in-index.desktop #content-wrapper{
+  display: none;
+}
