@@ -2322,10 +2322,13 @@ color: #F09000;
 @media screen and (max-width: 575px){
   .in-kosik .cart-table .related{
     padding-left: 0;
+    border:0;
   
 }
   .in-kosik .related-title{
-    padding-bottom: 10px;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #F7FAF9;
 }
   .in-kosik .related td{
     display: none;
@@ -2421,5 +2424,48 @@ font-weight: 500;
 .product-top{
   grid-template-columns: 1fr;
   grid-gap: 0px;
+}
+}
+
+.p .flags .flag.flag-new {
+  background: #a0cd54;
+}
+
+.p-info-wrapper .flag.flag-new{
+background: #a0cd54;
+color: white;
+}
+
+.user-action-cart{
+border: 0;
+}
+
+.menu-level-1>li.ext:hover, .menu-level-1>li>a:hover, .menu-level-1>li>a:focus{
+background: transparent;
+}
+
+.main-header-nav a+.menu-level-2{
+
+background: #F9FBFA;
+}
+
+@media screen and (max-width: 991px){
+.menu-level-2>li{
+  padding: 0 0 0 15px;
+}
+.menu-level-2 .menu-image {
+  height: 36px;
+width: 36px;
+object-fit: contain;
+  display: flex;
+}
+.menu-level-2>li>div>a{
+  padding: 12px 15px 12px 15px;
+}
+.menu-item-more {
+background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/plus-circle-green.svg");
+  padding: 12px 15px 12px 65px;
+  background-position: left 20px center;
+  background-repeat: no-repeat;
 }
 }
