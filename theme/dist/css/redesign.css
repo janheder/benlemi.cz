@@ -2197,8 +2197,12 @@ body.--showFilters .sidebar-left{
 }
 }
 
-
-
+.p .image .flags{
+  display: none;
+}
+.p-image-wrapper .flags{
+  display: none;
+}
 .p-info-wrapper .flags{
   margin-bottom: 10px;
   display: inline;
