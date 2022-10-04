@@ -1177,6 +1177,7 @@ footer {
   .ctaSection__box {
     margin: 0;
     margin-bottom: 10px;
+    padding: 0 10px;
   }
 
   .ctaSection__box span {
@@ -1194,7 +1195,6 @@ footer {
 
   .ctaSection__content {
     padding: 20px;
-    padding-bottom: 0;
   }
 }
 
@@ -1749,7 +1749,20 @@ footer {
   width: 50%;
   padding: 0;
 }
-
+@media (max-width: 991px) {
+  #ratingProduct {
+    flex-direction: column;
+  }
+  #ratingProduct .rate-wrapper {
+    padding-right: 0px;
+    width: 100%;
+  }
+  
+  #ratingProduct>.votes-wrap {
+    width: 100%;
+    padding: 0;
+  }
+}
 .variant-list th {
   color: #2E523D;
   font-weight: 500;
