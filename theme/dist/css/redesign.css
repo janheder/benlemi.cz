@@ -986,7 +986,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .password-helper a:first-child {
-  background: transparent;
+   background: #F8FAFA;
 }
 
 .form-control {
