@@ -260,6 +260,7 @@ $(".user-action-cart").insertAfter(".header-top .cart-count");
 if ($(".p-detail-inner-header").length){
     $(".p-detail-info .flags").insertBefore(".p-final-price-wrapper");
     $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
+    $(".p-detail-inner-header h1").wrap("<div class='p-detail-inner-heading'></div>");
 }
 
 /* relocate rating stars */
