@@ -950,3 +950,8 @@ $("#footer .custom-footer > div h4").click(function(){
     $(this).toggleClass("--active");
 });
 
+
+
+$(".in-kosik .cart-table .related h4").click(function(){
+    $(this).toggleClass("--active");
+});
