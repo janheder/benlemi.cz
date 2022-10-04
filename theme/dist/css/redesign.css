@@ -2196,3 +2196,32 @@ body.--showFilters .sidebar-left{
     padding: 0;
 }
 }
+
+
+
+.p-info-wrapper .flags{
+  margin-bottom: 10px;
+  display: inline;
+}
+.p-info-wrapper .flag{
+  font-size: 13px;
+  padding: 3px 8px;
+  margin-right: 5px;
+}
+.p-info-wrapper .flag.flag-action{
+  background: rgba(207, 72, 35, 0.15);
+    color: #CF4823;
+}
+.p-info-wrapper .flag.flag-cesky-vyrobok{
+    color: #2E523D;
+    background: #ECF2E8 !important;
+}
+.p-info-wrapper .flag.flag-custom1{
+color: #F09000;
+    background: rgba(240, 186, 0, 0.15) !important;
+}
+@media (max-width: 767px){
+  .p-info-wrapper .flag{
+    padding: 2px 6px;
+  }
+}
