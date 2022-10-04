@@ -247,7 +247,7 @@ $(".menu-level-1 > li.ext").each(function() {
 
 $(".menu-item-responsive").click(function(){
     $(this).siblings(".menu-level-2").toggleClass("--active");
-    $(this).siblings(".menu-level-2 img").unveil();
+    $(".menu-level-2 img").unveil();
 });
 
 

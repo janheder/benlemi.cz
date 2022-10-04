@@ -2456,8 +2456,12 @@ background: #F9FBFA;
 .menu-level-2 .menu-image {
   height: 36px;
 width: 36px;
-object-fit: contain;
   display: flex;
+}
+.menu-level-2 .menu-image img {
+  height: 100%;
+width: 100%;
+object-fit: contain;
 }
 .menu-level-2>li>div>a{
   padding: 12px 15px 12px 15px;
