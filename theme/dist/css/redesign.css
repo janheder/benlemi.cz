@@ -861,8 +861,7 @@ h1, h2, h3, h4, h5 {
   display: grid;
   grid-gap: 1px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .subcategories li {
@@ -1669,9 +1668,10 @@ footer {
   width: d12px;
 }
 
-.type-category .sidebar-left.--active+#content #products {
+body.--showFilters #products {
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 
 .filter-section fieldset input[type="checkbox"]+label::before {
   height: 16px;
@@ -2148,7 +2148,9 @@ body.--showFilters .sidebar-left{
     display: flex;
 }
 }
-
+.sidebar-left .sidebar-inner{
+  width: 100%;
+}
 
 #sortToggle{
   display: none;
@@ -2172,3 +2174,8 @@ body.--showFilters .sidebar-left{
 }
 
 
+@media screen and (max-width: 500px){
+  .type-product #descriptionLong::before {
+    content: none;
+}
+}
