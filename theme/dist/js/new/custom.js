@@ -258,6 +258,7 @@ $(".user-action-cart").insertAfter(".header-top .cart-count");
 
 /* relocate product title */
 if ($(".p-detail-inner-header").length){
+    $(".p-detail-info .flags").insertBefore(".p-final-price-wrapper");
     $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
 }
 

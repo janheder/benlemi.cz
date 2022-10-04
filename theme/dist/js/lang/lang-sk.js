@@ -101,7 +101,7 @@ var g_priceFree = 400;
 var g_category = "Kategória";
 var g_model = "Model";
 
-var g_discountText = "Zaregistrujte sa a získate zľavu 3%.";
+var g_discountText = "Registrujte sa a zbierajte zľavy s každým svojim nákupom.";
 
 /* page names */
 
