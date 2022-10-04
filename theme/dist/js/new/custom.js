@@ -952,6 +952,6 @@ $("#footer .custom-footer > div h4").click(function(){
 
 
 
-$(".in-kosik .cart-table .related h4").click(function(){
+$(".in-kosik .related-title").click(function(){
     $(this).toggleClass("--active");
 });

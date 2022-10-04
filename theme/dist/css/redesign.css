@@ -2224,6 +2224,10 @@ body.--showFilters .sidebar-left{
 color: #F09000;
     background: rgba(240, 186, 0, 0.15) !important;
 }
+.p-info-wrapper .flag.flag-tip{
+  color: #7C2D12;
+    background: #F9F1E7;
+}
 @media (max-width: 767px){
   .p-info-wrapper .flag{
     padding: 2px 6px;
@@ -2296,4 +2300,34 @@ color: #F09000;
 .footer-rows .banner-wrapper h4 + ul {
   margin-bottom: 20px;
 }
+}
+
+
+@media screen and (max-width: 575px){
+  .in-kosik .cart-table .related{
+    padding-left: 0;
+  
+}
+  .in-kosik .related-title{
+    padding-bottom: 10px;
+}
+  .in-kosik .related td{
+    display: none;
+}
+  .in-kosik .related-title.--active + td{
+    display: flex;
+ flex-direction: column;
+  }
+
+  .showMoreRelated{
+    display: none !important;
+  }
+}
+
+.in-kosik .cart-table .p-availability .show-tooltip{
+  flex-direction: row;
+  align-items:center;
+}
+.availability-label::before{
+  flex-shrink: 0;
 }
