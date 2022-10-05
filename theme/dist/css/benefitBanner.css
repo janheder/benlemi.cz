@@ -28,6 +28,7 @@
 .benefitBanner__picture {
     height: 70px;
     width: 70px;
+    flex-shrink: 0;
 }
 
 .benefitBanner__picture img {
@@ -63,9 +64,6 @@
         margin: 0;
         padding-bottom: 30px;
     }
-    .benefitBanner__picture {
-        width: 40px;
-    }
 
     .benefitBanner__item {
         flex-direction: row;
@@ -83,6 +81,7 @@
     .benefitBanner__picture {
         height: 40px;
         width: 40px;
+        
     }
     .benefitBanner__picture img{
 
