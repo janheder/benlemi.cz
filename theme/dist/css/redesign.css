@@ -560,7 +560,9 @@ h1, h2, h3, h4, h5 {
 #header::before {
   display: none;
 }
-
+.main-header-nav>a{
+  display: none;
+}
 @media screen and (min-width: 992px) {
 
   .header-top {
@@ -580,7 +582,7 @@ h1, h2, h3, h4, h5 {
     display: none;
   }
 
-  .main-header-nav+.header-top .search {
+  .header-top .main-header-nav+ .search {
     display: flex;
   }
 
