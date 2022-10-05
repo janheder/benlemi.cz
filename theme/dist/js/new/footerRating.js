@@ -9,8 +9,6 @@ $(document).ready(function() {
                 document.querySelector('#ratingSection .vote-grid').appendChild(body[i]);
             }
 
-            const body1 = nodes.querySelector('#ratingWrapper .rate-average-inner');
-            document.querySelector('#ratingSection .rating-content').prepend(body1);
 
         };
         fetch("/hodnotenie-obchodu/")
