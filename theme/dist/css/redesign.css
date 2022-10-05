@@ -363,8 +363,11 @@ h1, h2, h3, h4, h5 {
   font-size: 28px;
   max-width: 100%;
   font-weight: 600;
+  margin-bottom: 40px;
 }
-
+.homepage-group-title::after, .instagramSection__title::after, .blogSection__title::after, .categoriesSection__title::after{
+  content: none;
+}
 @media screen and (max-width: 991px) {
   .homepage-group-title, .instagramSection__title, .blogSection__title, .categoriesSection__title {
     font-size: 24px !important;
