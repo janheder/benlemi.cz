@@ -66,6 +66,7 @@
 .menu-item-29, .menu-item-1347 {
   display: none !important;
 }
+
 #navigation .menu-item-1386 {
   display: none !important;
 }
@@ -576,6 +577,10 @@ h1, h2, h3, h4, h5 {
   }
 
   .header-top .search {
+    display: none;
+  }
+
+  .main-header-nav+.header-top .search {
     display: flex;
   }
 
@@ -1895,17 +1900,18 @@ body.--showFilters #products {
   margin-right: 8px;
 }
 
-.main-header-nav>li.menu-item-1386>a{
+.main-header-nav>li.menu-item-1386>a {
   color: #7C2D12;
 }
-.main-header-nav>li.menu-item-1386>a::before{
+
+.main-header-nav>li.menu-item-1386>a::before {
   content: "";
-    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/nav-sale.svg");
-    background-size: 100%;
-    height: 20px;
-    width: 20px;
-    display: flex;
-    margin-right: 8px;
+  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/nav-sale.svg");
+  background-size: 100%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  margin-right: 8px;
 }
 
 
