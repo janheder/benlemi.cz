@@ -66,6 +66,9 @@
 .menu-item-29, .menu-item-1347 {
   display: none !important;
 }
+#navigation .menu-item-1386 {
+  display: none !important;
+}
 
 .main-header-nav>li:hover a+.menu-level-2 {
   display: grid;
