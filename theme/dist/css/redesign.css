@@ -2638,3 +2638,8 @@ select.form-control, select.form-control:valid {
     transform: translateX(-50%) translateY(3px);
   }
 }
+
+.p .image{
+  background-color: white;
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/symbol-benlemi-bw.svg?v=1");
+}
