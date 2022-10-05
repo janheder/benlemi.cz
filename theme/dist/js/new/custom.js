@@ -937,7 +937,7 @@ if ($(":lang(sk)").length){
 $('<div class="main-header-nav"><a href="/produkty">Produkty</a>').insertAfter(".header-top > div:nth-child(2)");
 
 
-$('#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-3002, #navigation .menu-item-1386').insertAfter(".main-header-nav a");
+$('#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-1386, #navigation .menu-item-3002').insertAfter(".main-header-nav a");
 
 $(".main-header-nav>li").hover(function(){
  $("img").unveil();
