@@ -63,7 +63,7 @@
   align-items: center;
 }
 
-.menu-item-29, .menu-item-1386, .menu-item-1347 {
+.menu-item-29, .menu-item-1347 {
   display: none !important;
 }
 
@@ -1494,6 +1494,7 @@ footer {
 .footer-logos img {
   height: auto;
   max-height: 44px;
+  max-width: 80px;
   width: auto;
   display: flex;
   margin: 5px 15px;
