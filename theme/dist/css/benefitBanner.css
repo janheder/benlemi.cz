@@ -58,7 +58,7 @@
     .benefitBanner {
         grid-template-columns: 1fr;
         margin-bottom: 40px;
-        grid-gap: 10px;
+        grid-gap: 12px;
     }
     .position--benefitHomepage{
         margin: 0;

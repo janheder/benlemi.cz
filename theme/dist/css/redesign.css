@@ -1921,8 +1921,15 @@ body.--showFilters #products {
 #navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-3002 {
   display: none !important
 }
-
+@media screen and (max-width: 1199px) {
+  .menu-level-1>li.ext>a{
+    padding: 0 10px;
+  }
+}
 @media screen and (max-width: 991px) {
+  .menu-level-1>li.ext>a{
+    padding: 0 15px;
+  }
   .menu-level-1>li.ext>a {
     background-image: none !important;
   }
