@@ -183,8 +183,19 @@
   color: #6D6C79;
 }
 
-.category-title + .category-header{
+.category-title+.category-header {
   margin-top: 40px;
+}
+
+.category-top {
+  margin-top: 20px;
+}
+
+.category-top h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding: 0;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
@@ -2737,5 +2748,15 @@ select.form-control, select.form-control:valid {
   .carousel-inner .item a img {
     object-fit: contain;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  body.mobile .filter-sections {
+    display: none;
+  }
+
+  body.mobile.--showFilters .filter-sections {
+    display: block;
   }
 }
