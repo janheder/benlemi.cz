@@ -183,9 +183,14 @@
   color: #6D6C79;
 }
 
+.category-title + .category-header{
+  margin-top: 40px;
+}
+
 @media screen and (max-width: 991px) {
   .category-header {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   #filterToggleDesktop {
