@@ -53,13 +53,17 @@
 
 #ratingSection .rating-content-title h3 {
     font-size: 24px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(160, 205, 84, 0.1) 50%);
+    width: auto;
+    display: inline;
 }
 
 #ratingSection .rating-content-title a {
     color: #689C56;
     font-size: 15px;
     font-weight: 500;
+    margin-top: 5px;
 }
 
 #ratingSection .rate-average-inner {
