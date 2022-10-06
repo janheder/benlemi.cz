@@ -392,12 +392,14 @@ h1, h2, h3, h4, h5 {
 @media screen and (max-width: 991px) {
   .homepage-group-title, .instagramSection__title, .blogSection__title, .categoriesSection__title {
     font-size: 24px !important;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 575px) {
   .homepage-group-title, .instagramSection__title, .blogSection__title, .categoriesSection__title {
     font-size: 22px !important;
+    margin-bottom: 20px;
   }
 
   .p-in-in .name {
@@ -1085,6 +1087,11 @@ h1, h2, h3, h4, h5 {
 #blogSection .container {
   margin-top: 0;
   padding-top: 0;
+}
+@media screen and (max-width: 575px) {
+  #blogSection .container {
+    padding-bottom: 20px;
+  }
 }
 
 footer {

@@ -78,6 +78,9 @@
 }
 
 @media screen and (max-width: 767px) {
+    #categoriesSection {
+        padding: 30px 0 30px 0;
+    }
     .categoriesSection__single {
         flex-direction: column;
     }
