@@ -16,7 +16,7 @@
     font-weight: 400;
     font-size: 14px;
     padding-right: 0;
-    padding-left: 2px;
+    padding-left: 0px;
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
@@ -32,12 +32,14 @@
     content: none;
 }
 .breadcrumbs>span>.navigation-bullet{
-    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-right.svg");
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     height: 20px;
     width: 20px;
+    font-size: 0;
+
 }
 .type-category .breadcrumbs {
     padding-bottom: 30px;
