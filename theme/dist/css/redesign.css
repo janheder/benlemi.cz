@@ -208,9 +208,10 @@
     display: flex;
     color: white;
     flex-shrink: 0;
-    margin-right: 10px;
+    margin-right:5px;
     flex-grow: 1;
     height: 46px;
+    padding: 0 12px;
   }
 
   .category-header label {
@@ -2274,6 +2275,7 @@ body.--showFilters .sidebar-left {
     flex-grow: 1;
     margin-left: 5px;
     height: 46px;
+    padding: 0 12px;
   }
 }
 
