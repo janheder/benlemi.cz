@@ -966,6 +966,6 @@ $(".in-kosik .related-title").click(function(){
 // =============================================================================
 
 var today = new Date().getHours();
-if (today >= 8 && today <= 18) {
+if (today >= 9 && today <= 16) {
    $(".project-phone").addClass("--online");
 } 
