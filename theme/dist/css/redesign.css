@@ -201,7 +201,6 @@
 @media screen and (max-width: 991px) {
   .category-header {
     flex-direction: row;
-    flex-wrap: nowrap;
   }
 
   #filterToggleDesktop {
@@ -2816,4 +2815,8 @@ select.form-control, select.form-control:valid {
 .p-detail-tabs-wrapper h2::after,
 .p-detail-tabs-wrapper h3::after {
   content: none !important;
+}
+
+.thumbnailsShowMore-inner {
+  background: #f7faf9;
 }
