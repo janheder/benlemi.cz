@@ -2762,3 +2762,28 @@ select.form-control, select.form-control:valid {
     display: block;
   }
 }
+
+
+
+.vote-content {
+  font-style: normal;
+}
+.votes-wrap.admin-response {
+ background: linear-gradient(0deg, #F7FAF9 0%, rgba(255, 255, 255, 1) 100%);
+
+}
+
+.top-navigation-contacts a {
+position: relative;
+}
+.project-phone.--online::after{
+content: "";
+  height: 8px;
+  width: 8px;
+border-radius: 50%;
+  position: absolute;
+left: 9px;
+bottom: 2px;
+border: 1px solid #373B2F;
+  background:#88C636;
+}

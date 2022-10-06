@@ -958,3 +958,14 @@ $(".in-kosik .related-title").click(function(){
     $(this).toggleClass("--active");
     $("img").unveil();
 });
+
+
+
+// =============================================================================
+// HEADER OPENING HOURS ICON
+// =============================================================================
+
+var today = new Date().getHours();
+if (today >= 8 && today <= 18) {
+   $(".project-phone").addClass("--online");
+} 
