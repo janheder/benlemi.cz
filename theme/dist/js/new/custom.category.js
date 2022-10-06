@@ -21,7 +21,7 @@ function productCardEdit(){
     /* relocate hover overlay on product & add more variants into product box */
     if ($(".product").length){
         $(".product").each(function(){
-            $(this).find(".p-tools .btn").text(g_show);
+            $(this).find(".p-tools a.btn").text(g_show);
 
             if ($(this).find(".price-final strong > small").length){
                 $(this).find(".name").append("<span class='p-variants'>" + g_moreVariants + "</span>");

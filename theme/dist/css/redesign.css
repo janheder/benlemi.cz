@@ -74,6 +74,7 @@
 .main-header-nav>li:hover a+.menu-level-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .main-header-nav a+.menu-level-2 {
@@ -364,10 +365,13 @@ h1, h2, h3, h4, h5 {
   max-width: 100%;
   font-weight: 600;
   margin-bottom: 40px;
+  padding-bottom: 0;
 }
-.homepage-group-title::after, .instagramSection__title::after, .blogSection__title::after, .categoriesSection__title::after{
+
+.homepage-group-title::after, .instagramSection__title::after, .blogSection__title::after, .categoriesSection__title::after {
   content: none;
 }
+
 @media screen and (max-width: 991px) {
   .homepage-group-title, .instagramSection__title, .blogSection__title, .categoriesSection__title {
     font-size: 24px !important;
@@ -565,9 +569,10 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (min-width: 992px) {
-.main-header-nav>a{
-  display: none;
-}
+  .main-header-nav>a {
+    display: none;
+  }
+
   .header-top {
     display: flex;
     align-items: center;
@@ -585,7 +590,7 @@ h1, h2, h3, h4, h5 {
     display: none;
   }
 
-  .header-top .main-header-nav+ .search {
+  .header-top .main-header-nav+.search {
     display: flex;
   }
 
@@ -1924,15 +1929,18 @@ body.--showFilters #products {
 #navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-3002 {
   display: none !important
 }
+
 @media screen and (max-width: 1199px) {
-  .menu-level-1>li.ext>a{
+  .menu-level-1>li.ext>a {
     padding: 0 10px;
   }
 }
+
 @media screen and (max-width: 991px) {
-  .menu-level-1>li.ext>a{
+  .menu-level-1>li.ext>a {
     padding: 0 15px;
   }
+
   .menu-level-1>li.ext>a {
     background-image: none !important;
   }
@@ -1995,13 +2003,16 @@ body.--showFilters #products {
   align-items: center;
   width: 100%;
 }
+
 .menu-level-2>li>div>a {
   margin-top: 15px;
 }
+
 .menu-level-2>li>a {
   height: auto;
   width: auto;
 }
+
 .menu-level-2>li>a>img {
   height: 100%;
   width: 100%;
@@ -2660,13 +2671,66 @@ select.form-control, select.form-control:valid {
   }
 }
 
-.p .image{
+.p .image {
   background-color: white;
   background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/symbol-benlemi-bw.svg?v=1");
 }
 
 
 
-.menu-level-2>li > div a > img{
+.menu-level-2>li>div a>img {
   display: none;
+}
+
+@media screen and (min-width: 1299px) {
+  .banners-row {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 800px 4fr;
+    grid-gap: 15px;
+    height: 450px;
+  }
+
+  .banners-row .col-sm-8 {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 0;
+  }
+
+  .banners-row .col-sm-4 {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 0;
+
+  }
+
+  .before-carousel .banner-wrapper:first-child,
+  .before-carousel .banner-wrapper:last-child {
+    padding: 0px;
+  }
+
+  .before-carousel .banner-wrapper {
+    height: 100%;
+  }
+
+  .banners-row .col-sm-4 .next-to-carousel-banners {
+    display: grid;
+    grid-gap: 15px;
+  }
+
+  .carousel-inner .item {
+    width: 100%;
+  }
+
+  .carousel-inner .item a {
+    width: 100%;
+    background: #fcfefe;
+  }
+
+  .carousel-inner .item a img {
+    object-fit: contain;
+    width: 100%;
+  }
 }
