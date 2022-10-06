@@ -4,11 +4,13 @@ $(document).ready(function() {
 
         const loadRating = (html) => {
             const nodes = new DOMParser().parseFromString(html, 'text/html');
-            const body = nodes.querySelectorAll('.vote-wrap:nth-child(-n+3)');
+            const body = nodes.querySelectorAll('.votes-wrap .vote-wrap:nth-child(-n+3)');
             for(var i = 0; i <= 2; i++) {
                 document.querySelector('#ratingSection .vote-grid').appendChild(body[i]);
             }
 
+            const body1 = nodes.querySelector('#ratingWrapper .rate-average-inner');
+            document.querySelector('#ratingSection .rating-content').prepend(body1);
 
         };
         fetch("/hodnotenie-obchodu/")
