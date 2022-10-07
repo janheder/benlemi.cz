@@ -705,6 +705,7 @@ function startDictation() {
 // -----------------------------------------------------------------------------
 // REMOVE PHONE VALIDATION AND ADD CUSTOM FUNCTION TO COUNTRY SELECT
 // -----------------------------------------------------------------------------
+
 $(document).ready(function() {
     $("#phone").removeClass("js-validate-phone");
 
@@ -786,8 +787,10 @@ $(document).ready(function() {
 
 
 
+// =============================================================================
+// tooltip for advanced parameters 
+// =============================================================================
 
-/* tooltip for advanced parameters */
 $(document).ready(function() {
     if ($(".advanced-parameter").length){
         $(".advanced-parameter").each(function(){
@@ -797,151 +800,6 @@ $(document).ready(function() {
     }
 });
 
-
-
-
-
-
-$(document).ready(function() {
-
-    if ($(":lang(sk)").length){
-
-        $("<div id='userCheck' style='visibility:hidden'></div>").insertAfter("#checkoutSidebar");
-        $("#userCheck").load("/klient/klient-zlavy/ .content-inner table tr:first-child strong", function() {
-
-            var userCheck = $("#userCheck strong").text();
-            if( (userCheck == "SK-B2BPLUS") || (userCheck == "SK-B2B") || (userCheck == "SK-B2B-DPH") || (userCheck == "SK-B2BPLUS-DPH")){
-
-                $('<div class="form-group" style="flex-direction:column;"><label for="post_phone">Doručovací telefón:</label><span style="opacity:0.8;padding-bottom:0px;display:block;font-size:14px;">(Vložte telefónne číslo v správnom formáte, napr.: +421776123456)</span><input type="text" id="post_phone" class="form-control"></div><div class="form-group" style="padding-bottom:20px;"><label for="post_email">Doručovací email:</label><input type="text" id="post_email" class="form-control"></div>').insertAfter('.co-shipping-address');
-
-                $('#order-form').submit(function() {
-                    dosomething();
-                });
-                
-                function dosomething(){
-                    var inputvalue=$("#post_phone").val(); 
-                    var inputvalue2=$("#post_email").val(); 
-                    var orgvalue= $('#remark').val().split('<')[0];
-                    $('#remark').val("");
-                    if(inputvalue != '' && inputvalue2 == ''){
-                    $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>');
-                    }else if(inputvalue2 != '' && inputvalue == ''){
-                    $('#remark').val(orgvalue + '<post_email>' + inputvalue2 + '</post_email>');
-                    }else if(inputvalue != '' && inputvalue2 != ''){
-                    $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>' + '<post_email>' + inputvalue2 + '</post_email>');
-                    }else{
-                    
-                    }
-                }
-
-            }else{
-
-            }
-        });
-    }        
-});
-
-
-
-
-
-
-if ($(":lang(sk)").length){
-
-    
-    $(".in-krok-2 .next-step button").text("Odoslať objednávku");
-    if ($("#relatedFiles").length){
-      
-      if($('main select[data-parameter-name="Varianta"]').length){
-          $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
-      }
-      
-      $('main select[data-parameter-name="Varianta"]').change(function() {
-          $(".description-infographics").remove();
-  
-          
-          if($('main select[data-parameter-name="Varianta"] option:selected').text() == 'Bez prídavných nôh navyše'){
-              $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
-              $(".description-infographics img").attr("src", "https://www.benlemi.cz/user/documents/upload/Infografiky produkty/Dětský nábytek/Stolky a ždiličky/Nanoc/nanoc bez foots.jpg");
-              $(".description-infographics a").attr("href", "https://www.benlemi.cz/user/documents/upload/Infografiky produkty/Dětský nábytek/Stolky a ždiličky/Nanoc/nanoc bez foots.jpg");
-          }
-          else{
-              var option = $('main select[data-parameter-name="Varianta"] option:selected').text(); 
-              var optionClean = option.replace(/[Navyšeprídavnénohycm]/g,'').replace(/\s/g,'').split('(', 1);
-              var src = $('#relatedFiles a[title*="' + optionClean + '"]').attr("href");
-              if(typeof src != 'undefined'){
-                  $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
-                  $(".description-infographics img").attr("src", src);
-                  $(".description-infographics a").attr("href", src);
-              }else{
-                  $(".description-infographics").remove();
-              }
-          }
-      });
-  }
-  
-    
-  $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
-  
-  if($(".login.toggle-window").length){
-      $(".headerFreeDeliveryNew").html("Registrujte sa a zbierajte <br> zľavy s každým svojim nákupom");
-  }else{
-      $.get('/klient/klient-zlavy/', function (data) {
-          data = $(data).find('.content-inner table tr:last-child strong').html();
-          $(".headerFreeDeliveryNew").html("Teraz máte <br>" + data + " zľavu za vernosť"); 
-      });
-      
-  }
-  
-  $('.detail-parameters tr th:contains("Rozměr:"), .detail-parameters tr th:contains("Tvar:")').parents('tr').remove();
-  
-    
-  $(document).ready(function() {
-  
-      $(".cart-content #phone, .co-registration #phone").removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
-      $(".cart-content #phone, .co-registration #phone").attr("disabled",false);
-       $( ".cart-content #phone, .co-registration #phone" ).change(function() {
-        $(this).removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
-        $(this).attr("disabled",false);
-       });
-       
-       
-    if($(".removeable .show-tooltip").length){$(".applied-coupon .btn").click();}
-    
-    });
-    
-  
-  
-  
-  
-  
-  if($(".in-matrace, .in-matrac-klasickych-i-atypickych-rozmerov ").length){
-  var img = $("#relatedFiles a").attr("href"); 
-  $(".extended-description").append('<div class="description-infographics-matrace"><img src="' + img + '"></div>')
-  }
-  
-  
-  
-  
-  
-  
-  }
-  
-  
-
-// =============================================================================
-// nav redesign
-// =============================================================================
-
-
-$('<div class="main-header-nav"><a href="/produkty">Produkty</a>').insertAfter(".header-top > div:nth-child(2)");
-
-
-$('#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-1386, #navigation .menu-item-3002').insertAfter(".main-header-nav a");
-
-$(".main-header-nav>li").hover(function(){
- $("img").unveil();
-});
 
 
 // =============================================================================
@@ -969,3 +827,187 @@ var today = new Date().getHours();
 if (today >= 9 && today <= 16) {
    $(".project-phone").addClass("--online");
 } 
+
+
+
+// =============================================================================
+// nav redesign
+// =============================================================================
+
+
+$('<div class="main-header-nav"><a href="/produkty">Produkty</a>').insertAfter(".header-top > div:nth-child(2)");
+
+if ($(":lang(sk)").length){
+    $('#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-1386, #navigation .menu-item-3002').insertAfter(".main-header-nav a");
+}
+
+$(".main-header-nav>li").hover(function(){
+ $("img").unveil();
+});
+
+
+// =============================================================================
+// SK SCRIPTS
+// =============================================================================
+
+if ($(":lang(sk)").length){
+
+    $(document).ready(function () {
+
+
+
+        $("<div id='userCheck' style='visibility:hidden'></div>").insertAfter("#checkoutSidebar");
+        $("#userCheck").load("/klient/klient-zlavy/ .content-inner table tr:first-child strong", function () {
+
+            var userCheck = $("#userCheck strong").text();
+            if ((userCheck == "SK-B2BPLUS") || (userCheck == "SK-B2B") || (userCheck == "SK-B2B-DPH") || (userCheck == "SK-B2BPLUS-DPH")) {
+
+                $('<div class="form-group" style="flex-direction:column;"><label for="post_phone">Doručovací telefón:</label><span style="opacity:0.8;padding-bottom:0px;display:block;font-size:14px;">(Vložte telefónne číslo v správnom formáte, napr.: +421776123456)</span><input type="text" id="post_phone" class="form-control"></div><div class="form-group" style="padding-bottom:20px;"><label for="post_email">Doručovací email:</label><input type="text" id="post_email" class="form-control"></div>').insertAfter('.co-shipping-address');
+
+                $('#order-form').submit(function () {
+                    dosomething();
+                });
+
+                function dosomething() {
+                    var inputvalue = $("#post_phone").val();
+                    var inputvalue2 = $("#post_email").val();
+                    var orgvalue = $('#remark').val().split('<')[0];
+                    $('#remark').val("");
+                    if (inputvalue != '' && inputvalue2 == '') {
+                        $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>');
+                    } else if (inputvalue2 != '' && inputvalue == '') {
+                        $('#remark').val(orgvalue + '<post_email>' + inputvalue2 + '</post_email>');
+                    } else if (inputvalue != '' && inputvalue2 != '') {
+                        $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>' + '<post_email>' + inputvalue2 + '</post_email>');
+                    } else {
+
+                    }
+                }
+
+            } else {
+
+            }
+        });
+
+    });
+
+
+
+
+    $(".in-krok-2 .next-step button").text("Odoslať objednávku");
+    if ($("#relatedFiles").length) {
+
+        if ($('main select[data-parameter-name="Varianta"]').length) {
+            $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
+        }
+
+        $('main select[data-parameter-name="Varianta"]').change(function () {
+            $(".description-infographics").remove();
+
+
+            if ($('main select[data-parameter-name="Varianta"] option:selected').text() == 'Bez prídavných nôh navyše') {
+                $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
+                $(".description-infographics img").attr("src", "https://www.benlemi.cz/user/documents/upload/Infografiky produkty/Dětský nábytek/Stolky a ždiličky/Nanoc/nanoc bez foots.jpg");
+                $(".description-infographics a").attr("href", "https://www.benlemi.cz/user/documents/upload/Infografiky produkty/Dětský nábytek/Stolky a ždiličky/Nanoc/nanoc bez foots.jpg");
+            }
+            else {
+                var option = $('main select[data-parameter-name="Varianta"] option:selected').text();
+                var optionClean = option.replace(/[Navyšeprídavnénohycm]/g, '').replace(/\s/g, '').split('(', 1);
+                var src = $('#relatedFiles a[title*="' + optionClean + '"]').attr("href");
+                if (typeof src != 'undefined') {
+                    $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
+                    $(".description-infographics img").attr("src", src);
+                    $(".description-infographics a").attr("href", src);
+                } else {
+                    $(".description-infographics").remove();
+                }
+            }
+        });
+    }
+
+
+    $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
+
+    if ($(".login.toggle-window").length) {
+        $(".headerFreeDeliveryNew").html("Registrujte sa a zbierajte <br> zľavy s každým svojim nákupom");
+    } else {
+        $.get('/klient/klient-zlavy/', function (data) {
+            data = $(data).find('.content-inner table tr:last-child strong').html();
+            $(".headerFreeDeliveryNew").html("Teraz máte <br>" + data + " zľavu za vernosť");
+        });
+
+    }
+
+    $('.detail-parameters tr th:contains("Rozměr:"), .detail-parameters tr th:contains("Tvar:")').parents('tr').remove();
+
+
+    $(document).ready(function () {
+
+        $(".cart-content #phone, .co-registration #phone").removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
+        $(".cart-content #phone, .co-registration #phone").attr("disabled", false);
+        $(".cart-content #phone, .co-registration #phone").change(function () {
+            $(this).removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
+            $(this).attr("disabled", false);
+        });
+
+
+        if ($(".removeable .show-tooltip").length) { $(".applied-coupon .btn").click(); }
+
+    });
+
+
+
+    if ($(".in-matrace, .in-matrac-klasickych-i-atypickych-rozmerov ").length) {
+        var img = $("#relatedFiles a").attr("href");
+        $(".extended-description").append('<div class="description-infographics-matrace"><img src="' + img + '"></div>')
+    }
+
+
+
+}
+
+
+
+// =============================================================================
+// CZ SCRIPTS
+// =============================================================================
+
+
+  
+if ($(":lang(cs)").length){
+
+    $("<div id='userCheck' style='visibility:hidden'></div>").insertAfter("#checkoutSidebar");
+    $("#userCheck").load("/klient/klient-slevy/ .content-inner table tr:first-child strong", function() {
+
+        var userCheck = $("#userCheck strong").text();
+        if( (userCheck == "CZ-B2B") || (userCheck == "CZ-B2BPLUS") || (userCheck == "CZ-B2B-DPH") || (userCheck == "CZ-B2BPLUS-DPH")){
+
+            $('<div class="form-group" style="flex-direction:column;"><label for="post_phone">Doručovací telefon:</label><span style="opacity:0.8;padding-bottom:0px;display:block;font-size:14px;">(Vložte telefonní číslo ve správném formátu, např.: +420776123456)</span><input type="text" id="post_phone" class="form-control"></div><div class="form-group" style="padding-bottom:20px;"><label for="post_email">Doručovací email:</label><input type="text" id="post_email" class="form-control"></div>').insertAfter('.co-shipping-address');
+
+            $('#order-form').submit(function() {
+                dosomething();
+            });
+            
+            function dosomething(){
+                var inputvalue=$("#post_phone").val(); 
+                var inputvalue2=$("#post_email").val(); 
+                var orgvalue= $('#remark').val().split('<')[0];
+                $('#remark').val("");
+                if(inputvalue != '' && inputvalue2 == ''){
+                $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>');
+                }else if(inputvalue2 != '' && inputvalue == ''){
+                $('#remark').val(orgvalue + '<post_email>' + inputvalue2 + '</post_email>');
+                }else if(inputvalue != '' && inputvalue2 != ''){
+                $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>' + '<post_email>' + inputvalue2 + '</post_email>');
+                }else{
+                
+                }
+            }
+
+        }else{
+
+        }
+    });
+
+    $('.detail-parameters tr th:contains("Typ produktu:"), .detail-parameters tr th:contains("Věk dítěte:"), .detail-parameters tr th:contains("Tvar:"), .detail-parameters tr th:contains("Motiv:"), .detail-parameters tr th:contains("Pro model postele:"), .detail-parameters tr th:contains("Pro postel o délce:"), .detail-parameters tr th:contains("Pro postel o šířce:")').parents('tr').remove();
+}
