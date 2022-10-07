@@ -2866,3 +2866,11 @@ select.form-control, select.form-control:valid {
     height: 80px;
   }
 }
+
+.login-wrapper .password-helper>a {
+  display: none;
+}
+
+.login-wrapper .password-helper .login-form-points a {
+  display: inline-flex;
+}
