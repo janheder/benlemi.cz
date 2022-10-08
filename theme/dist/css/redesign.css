@@ -2058,12 +2058,12 @@ body.--showFilters #products {
   margin-top: 15px;
 }
 
-.menu-level-2>li>a {
+.main-header-nav .menu-level-2>li>a {
   height: auto;
   width: auto;
 }
 
-.menu-level-2>li>a>img {
+.main-header-nav .menu-level-2>li>a>img {
   height: 100%;
   width: 100%;
 }
