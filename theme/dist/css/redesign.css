@@ -593,6 +593,8 @@ h1, h2, h3, h4, h5 {
 @media screen and (max-width: 575px) {
   .overall-wrapper>.site-msg:first-child {
     line-height: 1.2;
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -2873,4 +2875,10 @@ select.form-control, select.form-control:valid {
 
 .login-wrapper .password-helper .login-form-points a {
   display: inline-flex;
+}
+
+@media screen and (max-width: 575px) {
+  .type-product.type-detail .content-wrapper-in{
+    padding-top: 10px;
+  }
 }
