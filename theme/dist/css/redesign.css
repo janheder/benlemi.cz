@@ -2478,6 +2478,9 @@ body.--showFilters .sidebar-left {
     margin: 0;
     background-color: #F7FAF9;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .in-kosik .related-title::after {
@@ -2489,6 +2492,7 @@ body.--showFilters .sidebar-left {
     height: 8px;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
   }
 
   .in-kosik .related td {
@@ -2555,6 +2559,13 @@ body.--showFilters .sidebar-left {
 .cart-header .step strong, .cart-header .step a {
   padding: 22px 10px 35px 10px;
   height: 80px;
+}
+@media screen and (max-width: 575px) {
+  .cart-header .step strong, .cart-header .step a {
+    padding: 10px 10px 20px 10px;
+    height: 66px;
+    line-height: 1.2;
+  }
 }
 
 .order-summary-inner {
@@ -2867,6 +2878,14 @@ select.form-control, select.form-control:valid {
   .news-item>.image>a {
     height: 80px;
   }
+  .p-detail-inner-header .stars-wrapper {
+    width: auto;
+  }
+
+  .p-detail-inner-header .p-code {
+    padding: 0;
+    padding-left: 15px;
+  }
 }
 
 .login-wrapper .password-helper>a {
@@ -2883,13 +2902,19 @@ select.form-control, select.form-control:valid {
   }
 }
 
-@media screen and (max-width: 500px) {
-  .p-detail-inner-header .stars-wrapper {
-    width: auto;
-  }
+#continue-order-button {
+  height: 50px;
+  font-size: 15px;
+}
 
-  .p-detail-inner-header .p-code {
-    padding: 0;
-    padding-left: 15px;
-  }
+.cart-content.summary-wrapper .price-wrapper {
+  background: #f7faf9;
+}
+.summary-wrapper .next-step-back{
+  height: 50px;
+  font-size: 15px;
+}
+
+.discount-coupon.btn.btn-secondary{
+  height: 46px;
 }
