@@ -2878,7 +2878,18 @@ select.form-control, select.form-control:valid {
 }
 
 @media screen and (max-width: 575px) {
-  .type-product.type-detail .content-wrapper-in{
+  .type-product.type-detail .content-wrapper-in {
     padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .p-detail-inner-header .stars-wrapper {
+    width: auto;
+  }
+
+  .p-detail-inner-header .p-code {
+    padding: 0;
+    padding-left: 15px;
   }
 }
