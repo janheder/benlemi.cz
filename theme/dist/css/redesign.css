@@ -325,6 +325,8 @@ body {
 
 .p .availability {
   font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 5px;
 }
 
 .p .flags.flags-extra {
@@ -2560,6 +2562,7 @@ body.--showFilters .sidebar-left {
   padding: 22px 10px 35px 10px;
   height: 80px;
 }
+
 @media screen and (max-width: 575px) {
   .cart-header .step strong, .cart-header .step a {
     padding: 10px 10px 20px 10px;
@@ -2878,6 +2881,7 @@ select.form-control, select.form-control:valid {
   .news-item>.image>a {
     height: 80px;
   }
+
   .p-detail-inner-header .stars-wrapper {
     width: auto;
   }
@@ -2910,11 +2914,36 @@ select.form-control, select.form-control:valid {
 .cart-content.summary-wrapper .price-wrapper {
   background: #f7faf9;
 }
-.summary-wrapper .next-step-back{
+
+.summary-wrapper .next-step-back {
   height: 50px;
   font-size: 15px;
 }
 
-.discount-coupon.btn.btn-secondary{
+.discount-coupon.btn.btn-secondary {
   height: 46px;
+}
+
+.in-index .news-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0;
+}
+
+.in-index .news-wrapper .news-item {
+  padding: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .in-index .news-wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  #blogSection .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
