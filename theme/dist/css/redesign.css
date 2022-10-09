@@ -2803,7 +2803,7 @@ select.form-control, select.form-control:valid {
   }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
   body.mobile .filter-sections {
     display: none;
   }
@@ -2812,12 +2812,13 @@ select.form-control, select.form-control:valid {
     display: block;
   }
 
+}
+@media screen and (max-width: 991px) {
   .filter-sections {
     height: 100%;
     overflow-y: auto;
   }
 }
-
 
 
 .vote-content {
