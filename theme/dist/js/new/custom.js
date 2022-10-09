@@ -575,9 +575,14 @@ $("#js-searchToggle-res").click(function(){
     $("#navigation .search").insertAfter(".navigation-buttons");
     if($(".search").hasClass("--active")){
         $(".search, #js-searchToggle-res").removeClass("--active");
+        $(".header-top").removeClass("--active");  
+        $("body").removeClass("--noScroll"); 
         $(".header-top .search .form-control").blur();  
+
     }else{
         $(".search, #js-searchToggle-res").addClass("--active");
+        $(".header-top").removeClass("--active");  
+        $("body").removeClass("--noScroll"); 
         $(".header-top .search .form-control").focus(); 
     }
 });

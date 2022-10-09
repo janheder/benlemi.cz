@@ -1636,6 +1636,7 @@ footer {
 
 .p-detail-tabs-wrapper .p-detail-tabs a {
   padding: 12px 25px;
+  color: #2E523D;
 }
 
 
@@ -2947,3 +2948,20 @@ select.form-control, select.form-control:valid {
     padding-right: 10px;
   }
 }
+
+.cart-widget-product-name strong a {
+  color: #2E523D;
+  font-weight: 400;
+}
+
+.votes-wrap .vote-wrap {
+  background: linear-gradient(0deg, #F7FAF9 0%, rgba(255, 255, 255, 1) 100%);
+  border: 0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.--showFilters #supportBox-iframe{
+  z-index: -1 !important;
+}
+    
