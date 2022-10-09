@@ -72,6 +72,8 @@ if ($("#category-header").length){
     $("#category-header").insertBefore(".content-wrapper-in");
     $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div><div id="sortToggle" class="btn btn-ghost">' + g_showSort + '</div>');
 
+    $("#filters").prepend('<div id="filterToggleMobile" class="btn">' + g_hideFilter + '</div>');
+
     $("#filterToggleDesktop").click(function(){
         if($("body").hasClass("--showFilters")){
             $(this).text(g_showFilter);
@@ -79,6 +81,17 @@ if ($("#category-header").length){
         }
         else{
             $(this).text(g_hideFilter);
+            $("body").addClass("--showFilters");
+        }
+    });
+
+    $("#filterToggleMobile").click(function(){
+        if($("body").hasClass("--showFilters")){
+            $("#filterToggleDesktop").text(g_showFilter);
+            $("body").removeClass("--showFilters");
+        }
+        else{
+            $("#filterToggleDesktop").text(g_hideFilter);
             $("body").addClass("--showFilters");
         }
     });

@@ -1811,6 +1811,7 @@ body.--showFilters #products {
     z-index: 4;
     left: auto;
     right: 0;
+    padding-bottom: 60px;
   }
 
   .sidebar-inner .box form {
@@ -2810,6 +2811,11 @@ select.form-control, select.form-control:valid {
   body.mobile.--showFilters .filter-sections {
     display: block;
   }
+
+  .filter-sections {
+    height: 100%;
+    overflow-y: auto;
+  }
 }
 
 
@@ -2961,7 +2967,18 @@ select.form-control, select.form-control:valid {
   margin-bottom: 20px;
 }
 
-.--showFilters #supportBox-iframe{
+.--showFilters #supportBox-iframe {
   z-index: -1 !important;
 }
-    
+
+@media screen and (max-width: 991px) {
+  #filterToggleMobile {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    z-index: 9;
+    display: flex;
+    height: 46px;
+  }
+}
