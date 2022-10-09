@@ -2971,7 +2971,9 @@ select.form-control, select.form-control:valid {
 .--showFilters #supportBox-iframe {
   z-index: -1 !important;
 }
-
+#filterToggleMobile {
+  display: none;
+}
 @media screen and (max-width: 991px) {
   #filterToggleMobile {
     position: fixed;
