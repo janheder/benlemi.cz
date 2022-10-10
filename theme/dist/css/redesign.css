@@ -3,7 +3,9 @@
 .menu-helper::after {
   top: 0px !important;
 }
-
+.js-invalidCsrfToken{
+  display: none;
+}
 .main-header-nav {
   padding: 0 20px;
   display: flex;
@@ -2962,6 +2964,9 @@ select.form-control, select.form-control:valid {
 .in-index .news-wrapper .news-item {
   padding: 0;
   width: 100%;
+}
+.in-index .news-wrapper > i {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
