@@ -98,7 +98,7 @@
     box-shadow: 0px 4px 15px rgba(46, 82, 61, 0.03);
     overflow-x: auto;
     overflow-y: hidden;
-    padding-right: 10px;
+    padding: 0 10px 0 5px;
   }
 
   .main-header-nav::after {
@@ -2813,6 +2813,7 @@ select.form-control, select.form-control:valid {
   }
 
 }
+
 @media screen and (max-width: 991px) {
   .filter-sections {
     height: 100%;
@@ -2971,9 +2972,11 @@ select.form-control, select.form-control:valid {
 .--showFilters #supportBox-iframe {
   z-index: -1 !important;
 }
+
 #filterToggleMobile {
   display: none;
 }
+
 @media screen and (max-width: 991px) {
   #filterToggleMobile {
     position: fixed;
@@ -2983,5 +2986,57 @@ select.form-control, select.form-control:valid {
     z-index: 9;
     display: flex;
     height: 46px;
+  }
+}
+
+.p-detail-tabs-wrapper .detail-parameters th {
+  color: #6D6C79;
+}
+
+.p-detail-tabs-wrapper .detail-parameters td {
+  color: #2E523D;
+}
+
+.p-detail-tabs-wrapper .p-detail-tabs li {
+  position: relative;
+  margin-right: 3px;
+}
+
+li[data-testid="tabRelatedFiles"] {
+  display: none;
+}
+
+.p-thumbnail {
+  width: 16.666%;
+}
+
+.p-thumbnail img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#thumbnailsShowMore {
+  width: 16.666%;
+
+}
+
+@media screen and (max-width: 575px) {
+  .p-thumbnail {
+    width: 20%;
+  }
+
+  #thumbnailsShowMore {
+    display: flex;
+    width: 20%;
+  }
+}
+
+.p-thumbnail:nth-child(1n+22)~#thumbnailsShowMore {
+  display: flex;
+}
+
+@media screen and (min-width: 992px) {
+  .p-thumbnail:nth-child(1n+22) {
+    display: none;
   }
 }
