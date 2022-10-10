@@ -73,6 +73,9 @@ if ($("#category-header").length){
     $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div><div id="sortToggle" class="btn btn-ghost">' + g_showSort + '</div>');
 
     $("#filters").prepend('<div id="filterToggleMobile" class="btn">' + g_hideFilter + '</div>');
+    document.addEventListener('shoptet.products.sameHeightOfProducts', function () {
+        $("#filters").prepend('<div id="filterToggleMobile" class="btn">' + g_hideFilter + '</div>');
+    });
 
     $("#filterToggleDesktop").click(function(){
         if($("body").hasClass("--showFilters")){
