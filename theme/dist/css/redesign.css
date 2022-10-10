@@ -3172,3 +3172,7 @@ li[data-testid="tabRelatedFiles"] {
     border-bottom: 2px solid #FDFAF6;
   }
 }
+
+.welcome-wrapper .content-wrapper-in{
+  padding-top: 0;
+}
