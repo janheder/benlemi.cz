@@ -3189,3 +3189,42 @@ li[data-testid="tabRelatedFiles"] {
 .welcome-wrapper .content-wrapper-in{
   padding-top: 0;
 }
+
+.countdown-div{
+  display: none;
+  flex-direction: column;
+  background: #EB8959;
+  color: white;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  order: -1;
+  border-radius: 40px;
+  text-align: center;
+font-variant-numeric: tabular-nums;
+  font-weight: 300;
+}
+#countdown {
+    display: flex;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+
+.mobile.in-index #content #products-1, .mobile.in-index #content #products-2{
+  order: 0;
+}
+.mobile.in-index #content .h4.homepage-group-title {
+  order: 0;
+}
+.mobile #products-3, .mobile .homepage-products-heading-3 {
+order: 40 !important;
+}
+.mobile #products-1, .mobile .homepage-products-heading-1 {
+order: 30 !important;
+}
+
+html:lang(sk) #order-shipping-methods .radio-wrapper + #shipping-61{
+  display: none;
+}
