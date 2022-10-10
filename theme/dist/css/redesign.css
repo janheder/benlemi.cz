@@ -3273,7 +3273,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 .ordering-process .content-wrapper-in{
   margin-top: 150px;
 }
-.ordering-process .cart-header + .cart-table-heading + .content-wrapper-in{
+.ordering-process .cart-header ~ .content-wrapper-in{
   margin-top: 0;
 }
 
@@ -3281,7 +3281,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   .ordering-process .content-wrapper-in{
     margin-top: 88px;
   }
-  .ordering-process .cart-header + .cart-table-heading + .content-wrapper-in{
+  .ordering-process .cart-header ~ .content-wrapper-in{
     margin-top: 0;
   }
 }
