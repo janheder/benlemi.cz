@@ -392,64 +392,6 @@ $(document).ready(function() {
 
 
 
-/* free delivery function, call in core js file */
-if($("html:lang(en)").length){
-    $(".headerFreeDelivery.free").remove();
-    $("<div class='headerFreeDelivery free'>Worldwide shipping</div>").insertAfter(".navLinks");
-    /* call functions after order modal loaded */
-
-    document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
-      
-    });
-
-
-}
-else{
-
-    function freeDelivery(){ 
-
-        if ($(".cart-count.full .cart-price").length){
-            $(".headerFreeDelivery").remove();
-            var price = $(".cart-price").html().replace(/\s/g, '').replace(/\€/g, '');
-            var priceFree = g_priceFree;
-            priceInt = parseFloat(price).toFixed(2);
-    
-            if(priceInt > priceFree){
-                $("<div class='headerFreeDelivery free'>" + g_freeDelivery + "</div>").insertBefore(".cart-count");
-            }
-            else{
-                var priceFinal = priceFree - priceInt;
-                $("<div class='headerFreeDelivery'>" + g_pickAdditionalItemsForAtLeast + " <span>"+ priceFinal +" " + g_currency + "</span><br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");
-            }
-        }
-        else{
-            $(".headerFreeDelivery").remove();
-            $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertBefore(".cart-count");  
-        }
-    
-        if ($(".ordering-process").length){
-            $("<div class='headerFreeDelivery free'>" + g_pickAdditionalItemsOver + "<br>" + g_andGetFreeDeliveryOnYourOrder + "</div>").insertAfter(".navLinks");
-        }
-    }
-    
-    
-    freeDelivery();
-
-    /* call functions after order modal loaded */
-
-    document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
-        freeDelivery();
-       
-    });
-
-
-}
-
-
-
-
-
-
 /* rename titles */
 if ($(".type-detail").length){
     $(".extended-description h3").text(g_advantagesAndSpecifications);
