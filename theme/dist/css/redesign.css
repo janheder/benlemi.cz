@@ -3270,17 +3270,28 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 }
 
 
-.cart-table-heading{
-  padding-top: 120px;
+.ordering-process .content-wrapper-in{
+  margin-top: 160px;
 }
-.cart-header + .cart-table-heading{
+.ordering-process .cart-header + .cart-table-heading + .content-wrapper-in{
   padding-top: 0;
 }
+
 @media screen and (max-width: 575px) {
-  .cart-table-heading{
+  .ordering-process .content-wrapper-in{
     padding-top: 88px;
   }
-  .cart-header + .cart-table-heading{
+  .ordering-process .cart-header + .cart-table-heading + .content-wrapper-in{
     padding-top: 0;
   }
+}
+
+
+
+.cart-table .p-name .main-link{
+  color: #2E523D;
+}
+
+.cart-header .step a{
+  color: #2E523D;
 }
