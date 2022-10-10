@@ -3274,15 +3274,15 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   margin-top: 160px;
 }
 .ordering-process .cart-header + .cart-table-heading + .content-wrapper-in{
-  padding-top: 0;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 575px) {
   .ordering-process .content-wrapper-in{
-    padding-top: 88px;
+    margin-top: 88px;
   }
   .ordering-process .cart-header + .cart-table-heading + .content-wrapper-in{
-    padding-top: 0;
+    margin-top: 0;
   }
 }
 
