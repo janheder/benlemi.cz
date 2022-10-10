@@ -3228,3 +3228,29 @@ order: 30 !important;
 html:lang(sk) #order-shipping-methods .radio-wrapper + #shipping-61{
   display: none;
 }
+
+.unavailable-option-wrapper{
+  display: none;
+}
+.discount-coupon form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.discount-coupon form input{
+    max-width: 200px;
+}
+.discount-coupon form span{
+display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    padding-top: 5px;
+}
+
+
+@media screen and (max-width: 991px){
+
+    #js-searchToggle{
+      display: none;
+    }
+  }
