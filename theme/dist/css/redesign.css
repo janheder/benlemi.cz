@@ -2587,7 +2587,7 @@ body.--showFilters .sidebar-left {
 
 .cart-header .step strong, .cart-header .step a {
   padding: 22px 10px 35px 10px;
-  height: 80px;
+  height: 78px;
 }
 
 @media screen and (max-width: 575px) {
@@ -3266,5 +3266,21 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 @media screen and (max-width: 991px) {
   #js-searchToggle {
     display: none;
+  }
+}
+
+
+.cart-table-heading{
+  padding-top: 120px;
+}
+.cart-header + .cart-table-heading{
+  padding-top: 0;
+}
+@media screen and (max-width: 575px) {
+  .cart-table-heading{
+    padding-top: 88px;
+  }
+  .cart-header + .cart-table-heading{
+    padding-top: 0;
   }
 }
