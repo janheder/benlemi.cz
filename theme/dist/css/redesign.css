@@ -203,6 +203,13 @@
   .category-top h4 {
     font-size: 19px;
   }
+  .category-top {
+    margin-top: 0px;
+  }
+  .category-title+.category-header, .category__secondDescription+.category-header {
+    margin-top: 20px;
+  }
+  
 }
 
 @media screen and (max-width: 991px) {
@@ -1002,6 +1009,7 @@ h1, h2, h3, h4, h5 {
 @media screen and (max-width: 575px) {
   .subcategories {
     grid-template-columns: 1fr 1fr;
+    margin: 20px 0 30px 0;
   }
 
   .subcategories li a {
