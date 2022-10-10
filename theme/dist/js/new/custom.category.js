@@ -124,3 +124,6 @@ if ($(".category-header").length){
 $(".filters-wrapper").append("<div class='filter-contact'></div>");
 $(".filter-contact").load(g_cart1Url + " .checkout-box");
 */
+
+
+$(".category__secondDescription").insertAfter(".category-title");

@@ -3113,3 +3113,7 @@ li[data-testid="tabRelatedFiles"] {
     grid-gap: 10px;
   }
 }
+
+.category__secondDescription{
+  margin-top: 20px;
+}
