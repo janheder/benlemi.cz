@@ -2018,6 +2018,11 @@ body.--showFilters #products {
 #navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-3002, #navigation .menu-item-1386 {
   display: none !important
 }
+@media screen and (max-width: 1330px) {
+  .menu-level-1>li.ext>a {
+    padding: 0 12px;
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .menu-level-1>li.ext>a {
@@ -3336,4 +3341,9 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 
 .languagesMenu{
   display: none !important;
+}
+
+.essox-wrap{
+  order: 90;
+  margin-top: 20px;
 }

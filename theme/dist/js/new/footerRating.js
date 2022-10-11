@@ -13,7 +13,7 @@ $(document).ready(function() {
             document.querySelector('#ratingSection .rating-content').prepend(body1);
 
         };
-        fetch("/hodnotenie-obchodu/")
+        fetch("/"+ g_ratingUrl +"/")
             .then((response) => response.text())
             .then(loadRating)
     }
