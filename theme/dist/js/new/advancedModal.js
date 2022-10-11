@@ -51,7 +51,13 @@ if ($(".type-detail").length){
         var amount = parseFloat($(".p-detail-inner .add-to-cart .amount").val());
     
         var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
-        var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
+        if ($(":lang(cs)").length){
+            var priceTotal = parseFloat(priceSingle.replace('Kč', '').replace(' ',''))*amount;  //sk version
+        }
+        if ($(":lang(sk)").length){
+            var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
+        }
+
 
         document.addEventListener('ShoptetCartUpdated', function () {
 
