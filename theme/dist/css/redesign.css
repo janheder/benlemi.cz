@@ -3489,3 +3489,7 @@ margin-right: 0px;
   white-space: nowrap;
   height: 46px;
 }
+
+.country-flags, .country-flag{
+  height: 50px;
+}
