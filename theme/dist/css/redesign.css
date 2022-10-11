@@ -3171,6 +3171,9 @@ li[data-testid="tabRelatedFiles"] {
   display: inline-block;
   margin: 0;
 }
+.category__secondDescription p ~ p{
+  display: none;
+}
 .perex-showMore {
   color: #78aa66;
   white-space: nowrap;
