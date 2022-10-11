@@ -52,7 +52,7 @@ if ($(".type-detail").length){
     
         var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
         if ($(":lang(cs)").length){
-            var priceTotal = parseFloat(priceSingle.replace('Kč', '').replace(' ',''))*amount;  //sk version
+            var priceTotal = parseInt(priceSingle.replace('Kč', '').replace(/\s/g,''))*amount;  //cz version
         }
         if ($(":lang(sk)").length){
             var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
