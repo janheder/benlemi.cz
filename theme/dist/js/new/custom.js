@@ -704,7 +704,8 @@ if ($(".pagination").length){
     document.addEventListener('ShoptetDOMPageContentLoaded', function () {
         refactorPagi();
     },{passive: true});
-    document.addEventListener('ShoptetDOMContentLoaded', function () {
+
+    document.addEventListener('ShoptetDOMPageMoreProductsLoaded', function () {
         refactorPagi();
     },{passive: true});
 }
