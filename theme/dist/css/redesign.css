@@ -3294,6 +3294,9 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 .discount-coupon form input {
   max-width: 200px;
 }
+.discount-coupon button {
+  height: 46px;
+}
 
 .discount-coupon form span {
   display: flex;
@@ -3478,3 +3481,7 @@ top: 29px;
 margin-right: 0px;
 }
 
+.rate-wrapper .vote-form .vote-form-title{
+  padding: 0 20px !important;
+  background: #F7FAF9;
+}
