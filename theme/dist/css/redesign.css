@@ -3191,8 +3191,15 @@ li[data-testid="tabRelatedFiles"] {
   color: #78aa66;
   white-space: nowrap;
   cursor: pointer;
+  padding-left: 10px;
 }
-
+.category__secondDescription.--active *{
+  display: block;
+  white-space: normal;
+}
+.category__secondDescription.--active .perex-showMore{
+  display: none;
+}
 @media screen and (min-width: 992px) {
   .user-action-cart {
     top: 85px;
