@@ -798,6 +798,24 @@ $(".main-header-nav>li").hover(function(){
 
 
 // =============================================================================
+// remove cart phone validation
+// =============================================================================
+
+
+$(document).ready(function () {
+
+    $(".cart-content #phone, .co-registration #phone").removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
+    $(".cart-content #phone, .co-registration #phone").attr("disabled", false);
+    $(".cart-content #phone, .co-registration #phone").change(function () {
+        $(this).removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
+        $(this).attr("disabled", false);
+    });
+
+
+});
+
+
+// =============================================================================
 // SK SCRIPTS
 // =============================================================================
 
@@ -892,19 +910,7 @@ if ($(":lang(sk)").length){
     $('.detail-parameters tr th:contains("Rozměr:"), .detail-parameters tr th:contains("Tvar:")').parents('tr').remove();
 
 
-    $(document).ready(function () {
 
-        $(".cart-content #phone, .co-registration #phone").removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
-        $(".cart-content #phone, .co-registration #phone").attr("disabled", false);
-        $(".cart-content #phone, .co-registration #phone").change(function () {
-            $(this).removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
-            $(this).attr("disabled", false);
-        });
-
-
-        if ($(".removeable .show-tooltip").length) { $(".applied-coupon .btn").click(); }
-
-    });
 
 
 
@@ -961,4 +967,21 @@ if ($(":lang(cs)").length){
     });
 
     $('.detail-parameters tr th:contains("Typ produktu:"), .detail-parameters tr th:contains("Věk dítěte:"), .detail-parameters tr th:contains("Tvar:"), .detail-parameters tr th:contains("Motiv:"), .detail-parameters tr th:contains("Pro model postele:"), .detail-parameters tr th:contains("Pro postel o délce:"), .detail-parameters tr th:contains("Pro postel o šířce:")').parents('tr').remove();
+
+
+
+
+    $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
+
+    if ($(".login.toggle-window").length) {
+        $(".headerFreeDeliveryNew").html("Registrujte se a sbírejte <br> slevy s každým svým nákupem");
+    } else {
+        $.get('/klient/klient-slevy/', function (data) {
+            data = $(data).find('.content-inner table tr:last-child strong').html();
+            $(".headerFreeDeliveryNew").html("Nyní máte <br>" + data + " slevu za věrnost");
+        });
+
+    }
+
+
 }
