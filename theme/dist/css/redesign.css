@@ -224,6 +224,21 @@
 
 }
 
+#filterToggleDesktop {
+  background: #CF4823;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 5px;
+  width: auto;
+  height: 46px;
+  width: 290px;
+  align-items: flex-start;
+  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/filter.svg");
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+}
+
+
 @media screen and (max-width: 991px) {
   .category-header {
     flex-direction: row;
@@ -237,6 +252,7 @@
     flex-grow: 1;
     height: 46px;
     padding: 0 12px;
+    width: auto;
   }
 
   .category-header label {
@@ -252,22 +268,6 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  #filterToggleDesktop {
-    background: #CF4823;
-    color: white;
-    text-transform: uppercase;
-    margin-right: 5px;
-    width: auto;
-    height: 46px;
-    width: 290px;
-    align-items: flex-start;
-    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/filter.svg");
-    background-position: right 20px center;
-    background-repeat: no-repeat;
-  }
-
-}
 
 .product {
   position: relative;
@@ -1812,7 +1812,6 @@ body.--showFilters #products {
   width: 16px;
   position: absolute;
   left: 0px;
-  top: 9px;
   border: 1px solid #BFBFBF;
 }
 
@@ -2353,6 +2352,10 @@ body.--showFilters .sidebar-left {
     margin-left: 5px;
     height: 46px;
     padding: 0 12px;
+    color: #2E523D;
+  }
+  #sortToggle:hover, #sortToggle:focus, #sortToggle:active{
+    color: #2E523D;
   }
 }
 
