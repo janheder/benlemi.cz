@@ -2411,11 +2411,13 @@ body.--showFilters .sidebar-left {
   color: #CF4823;
 }
 
+
+.p-info-wrapper .flag.flag-cesky-vyrobek,
 .p-info-wrapper .flag.flag-cesky-vyrobok {
   color: #2E523D;
   background: #ECF2E8 !important;
 }
-
+.p-info-wrapper .flag.flag-doruceni-do-vanoc,
 .p-info-wrapper .flag.flag-custom1 {
   color: #F09000;
   background: rgba(240, 186, 0, 0.15) !important;
@@ -3182,7 +3184,7 @@ li[data-testid="tabRelatedFiles"] {
 
 @media screen and (min-width: 992px) {
   .user-action-cart {
-    top: 90px;
+    top: 70px;
     border: 1px solid #F3F6F5;
   }
 
@@ -3198,6 +3200,15 @@ li[data-testid="tabRelatedFiles"] {
     border-left: 1px solid #F3F6F5;
     border-top: 1px solid #F3F6F5;
   }
+  .user-action-cart::after {
+    content: "";
+        position: absolute;
+        right: 0px;
+        top: -15px;
+        width: 100%;
+        display: flex;
+        height: 20px;
+    }
 }
 
 .type-page #categoriesSection {}
@@ -3349,4 +3360,16 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 .essox-wrap{
   order: 90;
   margin-top: 20px;
+}
+
+.news-item time {
+  top: 10px;
+  right: 10px;
+}
+
+.id-404 .content-inner header h1{
+  display: none;
+}
+.page404Section__img{
+  margin-bottom: 30px;
 }
