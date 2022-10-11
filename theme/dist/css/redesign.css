@@ -386,12 +386,12 @@ body {
   background: rgba(207, 72, 35, 0.15);
   color: #CF4823;
 }
-
+.p .flags .flag.flag-doruceni-do-vanoc,
 .p .flags .flag.flag-custom1 {
   color: #F09000;
   background: rgba(240, 186, 0, 0.15) !important;
 }
-
+.p .flags .flag.flag-cesky-vyrobek,
 .p .flags .flag.flag-cesky-vyrobok {
   color: #2E523D;
   background: #ECF2E8 !important;
