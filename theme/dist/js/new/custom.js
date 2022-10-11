@@ -706,7 +706,11 @@ if ($(".pagination").length){
     },{
         passive: true
     });
-
+    document.addEventListener('ShoptetDOMContentLoaded', function () {
+        refactorPagi();
+    },{
+        passive: true
+    });
 }
 
 
