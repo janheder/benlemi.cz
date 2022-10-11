@@ -3485,3 +3485,7 @@ margin-right: 0px;
   padding: 0 20px !important;
   background: #F7FAF9;
 }
+#checkoutContent .co-contact-information h4+.form-group a {
+  white-space: nowrap;
+  height: 46px;
+}
