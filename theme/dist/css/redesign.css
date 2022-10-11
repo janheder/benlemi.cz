@@ -238,7 +238,7 @@
   background-repeat: no-repeat;
 }
 #filterToggleDesktop:hover{
-color: #b93d19;
+background: #b93d19;
 }
 
 
@@ -1033,7 +1033,7 @@ h1, h2, h3, h4, h5 {
 
   .subcategories li a .image {
     height: 30px;
-    width: 50px;
+    width: 40px;
   }
 }
 
@@ -3195,7 +3195,7 @@ li[data-testid="tabRelatedFiles"] {
 
 @media screen and (min-width: 992px) {
   .user-action-cart {
-    top: 70px;
+    top: 85px;
     border: 1px solid #F3F6F5;
   }
 
@@ -3388,4 +3388,44 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 .rate-wrap .rate-value {
   width: 12px;
   text-align: center;
+}
+
+.shipping-billing-table{
+  display: grid;
+  grid-gap: 1px;
+}
+.order-delivery-payment-form .radio-wrapper {
+  
+     outline: 1px solid #E7EEEC;
+}
+.order-delivery-payment-form .radio-wrapper.active{
+  
+}
+.order-delivery-payment-form .radio-wrapper label {
+  margin: 0;
+  border:0; 
+}
+.order-delivery-payment-form .radio-wrapper input:checked+label {
+    color: #2E523D;
+background: linear-gradient(300deg, #F7FAF9 0%, rgba(255, 255, 255, 0) 46.24%);
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 5%);
+    border: 0;
+}
+.payment-shipping-price.for-free {
+    font-weight: 500;
+}
+.payment-logo {
+    flex-shrink: 0;
+}
+@media screen and (max-width: 991px) {
+  #order-shipping-methods .show-tooltip{
+    display: none;
+  }
+}
+.recapitulation-single>strong>span {
+    white-space: nowrap;
+}
+
+.cart-summary .extras-wrap .extra.discount a{
+  color: #689C56;
 }
