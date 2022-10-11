@@ -126,13 +126,14 @@ $(".filter-contact").load(g_cart1Url + " .checkout-box");
 
 
 
-/* category perex */
+/* category perex 
 if ($(".category__secondDescription").length){
     $(".category__secondDescription").insertAfter(".category-title");
 
-       $(".category__secondDescription").insertAfter("<div class='perex-showMore'>" + g_fullDescription + "</div>");
+    $(".category__secondDescription").insertAfter("<div class='perex-showMore'>" + g_fullDescription + "</div>");
 
-        $(".perex-showMore").click(function(){
-            $(".category-perex").addClass("active");
-        });
+    $(".perex-showMore").click(function(){
+        $(".category-perex").addClass("active");
+    });
 }
+*/
