@@ -3193,8 +3193,11 @@ li[data-testid="tabRelatedFiles"] {
   cursor: pointer;
   padding-left: 10px;
 }
+.category__secondDescription.--active{
+  flex-direction: column;
+}
 .category__secondDescription.--active *{
-  display: block;
+  display: inline-block;
   white-space: normal;
 }
 .category__secondDescription.--active .perex-showMore{
