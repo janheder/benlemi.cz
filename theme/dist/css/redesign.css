@@ -3469,3 +3469,11 @@ left: 15px;
 top: 29px;
  left: 19px;
 }
+
+#signature img.--benlemi {
+  margin: 0 5px;
+  margin-top: -4px;
+}
+#signature .title.--benlemi{
+margin-right: 0px;
+}
