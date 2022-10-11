@@ -300,6 +300,14 @@ display: none;
   color: #B71F39;
 }
 
+.advancedModal #productsRelated .products-block .flags{
+  display: none;
+}
+.advancedModal #productsRelated .products-block .name{
+  font-size: 15px;
+  padding-top: 0;
+}
+
 @media screen and (max-width: 767px) {
   .advancedProduct {
     display: flex;
@@ -354,6 +362,3 @@ display: none;
 }
 
 
-.user-action-cart {
-  top: 70px;
-}
