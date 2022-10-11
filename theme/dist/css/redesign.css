@@ -3330,3 +3330,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 .appended-category{
   display: none !important;
 }
+
+.languagesMenu{
+  display: none !important;
+}
