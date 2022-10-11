@@ -703,14 +703,10 @@ if ($(".pagination").length){
 
     document.addEventListener('ShoptetDOMPageContentLoaded', function () {
         refactorPagi();
-    },{
-        passive: true
-    });
+    },{passive: true});
     document.addEventListener('ShoptetDOMContentLoaded', function () {
         refactorPagi();
-    },{
-        passive: true
-    });
+    },{passive: true});
 }
 
 
