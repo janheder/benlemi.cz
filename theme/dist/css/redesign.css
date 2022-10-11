@@ -3376,3 +3376,8 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 .page404Section__img{
   margin-bottom: 30px;
 }
+
+.rate-wrap .rate-value {
+  width: 12px;
+  text-align: center;
+}

@@ -616,7 +616,7 @@ if ($(".in-login").length){
     '<div class="login-form-point">' + g_possibilityToRateAndDiscuss + '</div>' +
     '</div></div>');
 
-    $("#formLogin .password-helper a:last-child").text(g_forgotPassword).insertAfter(".login-wrapper button");
+    $("#formLogin .password-helper a:last-child").text(g_forgotPassword).insertAfter("#formLogin .login-wrapper button");
 }
 
 // -----------------------------------------------------------------------------
