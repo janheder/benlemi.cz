@@ -122,7 +122,7 @@ $(".filter-contact").load(g_cart1Url + " .checkout-box");
 if ($(".category__secondDescription").length){
     $(".category__secondDescription").insertAfter(".category-title");
 
-       $("<div class='perex-showMore'>" + g_fullDescription + "</div>").insertAfter(".category__secondDescription > p");
+       $(".category__secondDescription").insertAfter("<div class='perex-showMore'>" + g_fullDescription + "</div>");
 
         $(".perex-showMore").click(function(){
             $(".category-perex").addClass("active");
