@@ -3302,3 +3302,31 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 .cart-header .step a{
   color: #2E523D;
 }
+
+
+.copyright{
+
+  font-size: 0;
+ 
+}
+
+.copyright::after{
+  content: "Vytvořeno s ❤ v Česku ️";
+    font-size: 15px;
+}
+.copyright strong{
+  font-size: 15px;
+  margin-right: 10px;
+  font-weight: 400;
+}
+.copyright strong::before{
+  content: "© 2022 ";
+   font-size: 15px;
+}
+.js-cookies-settings{
+  display: none;
+}
+
+.appended-category{
+  display: none !important;
+}
