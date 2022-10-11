@@ -3404,6 +3404,8 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 .order-delivery-payment-form .radio-wrapper label {
   margin: 0;
   border:0; 
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .order-delivery-payment-form .radio-wrapper input:checked+label {
     color: #2E523D;
@@ -3416,6 +3418,8 @@ background: linear-gradient(300deg, #F7FAF9 0%, rgba(255, 255, 255, 0) 46.24%);
 }
 .payment-logo {
     flex-shrink: 0;
+    width: 30px;
+    height: 20px;
 }
 @media screen and (max-width: 991px) {
   #order-shipping-methods .show-tooltip{
