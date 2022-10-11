@@ -3421,6 +3421,10 @@ background: linear-gradient(300deg, #F7FAF9 0%, rgba(255, 255, 255, 0) 46.24%);
     width: 30px;
     height: 20px;
 }
+#order-shipping-methods .show-tooltip {
+  width: 18px;
+  height: 18px;
+}
 @media screen and (max-width: 991px) {
   #order-shipping-methods .show-tooltip{
     display: none;
@@ -3432,4 +3436,36 @@ background: linear-gradient(300deg, #F7FAF9 0%, rgba(255, 255, 255, 0) 46.24%);
 
 .cart-summary .extras-wrap .extra.discount a{
   color: #689C56;
+}
+
+.order-summary .order-summary-inner .cart-item {
+  font-size: 14px;
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 55px;
+  position: relative;
+}
+.order-summary .order-summary-inner .cart-item>a {
+  display: flex;
+  float: left;
+  height: 42px;
+  margin-right: 15px;
+  position: absolute;
+  left: 0;
+}
+.order-summary .order-summary-inner .cart-item-amount {
+  float: left;
+}
+.order-summary .order-summary-inner .cart-item-price {
+  text-align: right;
+  font-weight: 500;
+}
+.order-delivery-payment-form .radio-wrapper label::before {
+  top: 25px;
+left: 15px;
+}
+.order-delivery-payment-form .radio-wrapper label::after{
+top: 29px;
+ left: 19px;
 }

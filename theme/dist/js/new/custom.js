@@ -778,6 +778,25 @@ if (today >= 9 && today <= 16) {
 
 
 // =============================================================================
+// load cart images 
+// =============================================================================
+
+const loadPicImages = (html) => {
+    const nodes = new DOMParser().parseFromString(html, 'text/html');
+    const body = nodes.querySelectorAll('.cart-p-image a');
+    const num = nodes.querySelectorAll('.cart-p-image a').length;
+    for(var i = 0; i < num; i++) {
+        document.querySelector('#checkoutSidebar .cart-item:nth-child('+ (i+1) +')').prepend(body[i]);
+    }
+    $("img").unveil();
+};
+fetch("/kosik/")
+    .then((response) => response.text())
+    .then(loadPicImages)
+    .then($("img").unveil())
+
+
+// =============================================================================
 // nav redesign
 // =============================================================================
 
