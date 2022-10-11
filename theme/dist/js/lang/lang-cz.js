@@ -88,6 +88,8 @@ var g_hideFilter = "Filtrovat";
 var g_fullDescription = "Celý popis";
 var g_totalQuantity = "Položek celkem";
 
+var g_showSort = "Řazení produktů";
+
 var g_moreRating = "Další hodnocení";
 
 var g_ratingUrl = "hodnoceni-obchodu";
