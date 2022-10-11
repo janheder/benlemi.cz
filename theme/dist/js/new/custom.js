@@ -784,9 +784,13 @@ if (today >= 9 && today <= 16) {
 
 $('<div class="main-header-nav"><a href="/produkty">Produkty</a>').insertAfter(".header-top > div:nth-child(2)");
 
+if ($(":lang(cs)").length){
+    $('#navigation .menu-item-3951, #navigation .menu-item-3978, #navigation .menu-item-2960, #navigation .menu-item-1395').insertAfter(".main-header-nav a");
+}
 if ($(":lang(sk)").length){
     $('#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-1386, #navigation .menu-item-3002').insertAfter(".main-header-nav a");
 }
+
 
 $(".main-header-nav>li").hover(function(){
  $("img").unveil();
