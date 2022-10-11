@@ -2010,9 +2010,12 @@ body.--showFilters #products {
   margin-right: 8px;
 }
 
-
-
-#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-3002 {
+/* cz */ 
+#navigation .menu-item-3951, #navigation .menu-item-3978, #navigation .menu-item-2960, #navigation .menu-item-1395 {
+  display: none !important
+}
+/* sk */ 
+#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-3002, #navigation .menu-item-1386 {
   display: none !important
 }
 
