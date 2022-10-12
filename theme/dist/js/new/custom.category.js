@@ -2,13 +2,13 @@
 // PRODUCT CATEGORY
 // -----------------------------------------------------------------------------
 
-/* relocate heading and categories */
+/* relocate heading and categories 
 if ($(".type-category").length){
     $(".category-title").insertBefore(".content-wrapper-in");
     $(".subcategories").insertAfter(".category-title");
     $(".category-perex").insertAfter(".category-title");
 }
-
+*/
 
 /* rename show more button */;
 if ($(".pagination-loader").length){
