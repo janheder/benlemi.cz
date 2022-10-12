@@ -198,8 +198,14 @@
   margin-top: 40px;
 }
 
-.category-top {
 
+.type-category .content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-top {
+  width: 100%;
 }
 
 .category-top h4 {
@@ -223,7 +229,9 @@
   }
 
 }
-
+body.--showFilters #products{
+  width: 75%;
+}
 #filterToggleDesktop {
   background: #CF4823;
   color: white;

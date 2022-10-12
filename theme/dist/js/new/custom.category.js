@@ -10,6 +10,12 @@ if ($(".type-category").length){
 }
 */
 
+
+if ($(".type-category").length){
+    $(".sidebar.sidebar-left").insertBefore(".category-content-wrapper");
+}
+
+
 /* rename show more button */;
 if ($(".pagination-loader").length){
     $(".pagination-loader span").text(g_showMore);
