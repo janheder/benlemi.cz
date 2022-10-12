@@ -3503,3 +3503,24 @@ margin-right: 0px;
 .country-flags, .country-flag{
   height: 50px;
 }
+
+.type-category #content .subcategories, .type-category #content .category-title, .type-category #content .category-perex {
+  display: flex;
+flex-direction: column;
+}
+.type-category #content .subcategories{
+display: grid;
+}
+.type-category  #content .category-title{
+display: inline;
+}
+
+#content #category-header {
+  display: flex;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 991px){
+  #content #category-header {
+  margin: 20px 0;
+}
+}
