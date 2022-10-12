@@ -3217,7 +3217,7 @@ li[data-testid="tabRelatedFiles"] {
   display: none;
 }
 
-.category__secondDescription p img {
+.category__secondDescription p img, .category__secondDescription p iframe {
   display: none !important;
 }
 
