@@ -3221,10 +3221,12 @@ li[data-testid="tabRelatedFiles"] {
 .category__secondDescription p img, .category__secondDescription p iframe {
   display: none !important;
 }
-.type-category #content .category__secondDescription + .subcategories{
+
+.type-category #content .category__secondDescription+.subcategories {
   margin-top: 40px;
 }
-.type-category #content .subcategories{
+
+.type-category #content .subcategories {
   margin-top: 80px;
 }
 
@@ -3610,4 +3612,19 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
     overflow: auto;
   }
 
+}
+
+
+@media screen and (max-width: 557px) {
+  .messages {
+    top: 100px;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    right: 0;
+  }
+
+  .msg {
+    padding: 10px 20px;
+  }
 }
