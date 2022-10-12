@@ -3229,7 +3229,7 @@ li[data-testid="tabRelatedFiles"] {
 .type-category #content .subcategories {
   margin-top: 80px;
 }
-.type-category .category-title + .subcategories{
+.type-category #content .category-title + .subcategories{
   margin-top: 40px;
 }
 @media screen and (max-width: 575px) {
@@ -3239,7 +3239,7 @@ li[data-testid="tabRelatedFiles"] {
   .type-category #content .subcategories {
     margin-top: 60px;
   }
-  .type-category .category-title + .subcategories{
+  .type-category #content .category-title + .subcategories{
     margin-top: 30px;
   }
 }
