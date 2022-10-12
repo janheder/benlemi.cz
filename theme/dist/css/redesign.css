@@ -3199,6 +3199,9 @@ li[data-testid="tabRelatedFiles"] {
 .category__secondDescription p ~ p{
   display: none;
 }
+.category__secondDescription p img{
+  display: none !important;
+}
 .perex-showMore {
   color: #78aa66;
   white-space: nowrap;
@@ -3534,5 +3537,6 @@ display: inline;
 @media screen and (max-width: 991px){
   #content #category-header {
   margin: 20px 0;
+  flex-wrap: wrap;
 }
 }
