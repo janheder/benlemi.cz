@@ -3229,6 +3229,20 @@ li[data-testid="tabRelatedFiles"] {
 .type-category #content .subcategories {
   margin-top: 80px;
 }
+.type-category .category-title + .subcategories{
+  margin-top: 40px;
+}
+@media screen and (max-width: 575px) {
+  .type-category #content .category__secondDescription+.subcategories {
+    margin-top: 30px;
+  }
+  .type-category #content .subcategories {
+    margin-top: 60px;
+  }
+  .type-category .category-title + .subcategories{
+    margin-top: 30px;
+  }
+}
 
 .perex-showMore {
   color: #78aa66;
@@ -3615,7 +3629,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 }
 
 
-@media screen and (max-width: 557px) {
+@media screen and (max-width: 575px) {
   .messages {
     top: 100px;
     bottom: auto;
@@ -3623,8 +3637,11 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
     width: 100%;
     right: 0;
   }
-
+  .ordering-process .messages {
+    top: 56px;
+  }
   .msg {
     padding: 10px 20px;
   }
+
 }
