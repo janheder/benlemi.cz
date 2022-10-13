@@ -930,7 +930,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .advanced-parameter-inner {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #E7EEEC;
+  height: 36px;
+    width: 36px;
 }
 
 .advanced-parameter-inner img {
@@ -2775,9 +2777,11 @@ body.--showFilters .sidebar-left {
 .order-summary-item.price .price-secondary span {
   display: flex;
 }
-
+.order-summary-item.price .price-wrapper .price-label.price-primary{
+  font-size: 20px;
+}
 .order-summary-item.price .price.price-primary span {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -3655,4 +3659,17 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 
 .p-image-wrapper .flags.flags-extra, .p .image .flags.flags-extra{
   display:flex;
+}
+
+.checkout-box .contact-box ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.checkout-box .contact-box li{
+margin: 0;
+}
+
+#checkoutSidebar .consents label {
+  padding: 2px 0;
 }

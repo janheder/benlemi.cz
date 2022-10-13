@@ -34,6 +34,7 @@ $("div.hidden-split-parameter").each(function(){
     var qOption = $(this).closest('.advanced-parameter').find('.parameter-value').text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     if(qOption == qPar) {
         $(this).prop('checked',true);
+        $(this).closest(".advanced-parameter-inner").addClass('yes-before');
     }
 
     });
