@@ -1116,7 +1116,11 @@ h1, h2, h3, h4, h5 {
 .form-control {
   height: 50px;
 }
-
+@media (max-width: 575px) {
+  .form-control {
+    height: 48px;
+  }
+}
 .news-item .title {
   color: #2E523D;
 }
