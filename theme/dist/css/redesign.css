@@ -3232,6 +3232,9 @@ li[data-testid="tabRelatedFiles"] {
 .type-category #content .category-title + .subcategories{
   margin-top: 40px;
 }
+.type-category #content .category-title + h4{
+  margin-top: 40px;
+}
 @media screen and (max-width: 575px) {
   .type-category #content .category__secondDescription+.subcategories {
     margin-top: 30px;
@@ -3241,6 +3244,9 @@ li[data-testid="tabRelatedFiles"] {
   }
   .type-category #content .category-title + .subcategories{
     margin-top: 30px;
+  }
+  .type-category #content .category-title + h4{
+    margin-top: 20px;
   }
 }
 
