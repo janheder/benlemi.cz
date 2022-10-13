@@ -3670,8 +3670,8 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 margin: 0;
 }
 
-#checkoutSidebar .consents label {
-  padding: 2px 0;
+#checkoutSidebar .consents label{
+  padding: 2px 0 2px 25px;
 }
 
 .add-to-cart {
