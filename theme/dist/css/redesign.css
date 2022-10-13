@@ -3652,3 +3652,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   }
 
 }
+
+.p-image-wrapper .flags.flags-extra, .p .image .flags.flags-extra{
+  display:flex;
+}
