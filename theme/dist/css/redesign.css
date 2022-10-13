@@ -3677,3 +3677,11 @@ margin: 0;
 .add-to-cart {
   padding-top: 30px;
 }
+
+#checkoutContent .co-contact-information h4+.form-group a{
+  font-size: 0;
+}
+#checkoutContent .co-contact-information h4+.form-group a::before{
+  content: "Přihlaste se";
+  font-size: 15px;
+}
