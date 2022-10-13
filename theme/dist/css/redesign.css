@@ -3222,6 +3222,7 @@ li[data-testid="tabRelatedFiles"] {
   display: none !important;
 }
 
+
 .type-category #content .category__secondDescription+.subcategories {
   margin-top: 40px;
 }
@@ -3229,23 +3230,21 @@ li[data-testid="tabRelatedFiles"] {
 .type-category #content .subcategories {
   margin-top: 80px;
 }
-.type-category #content .category-title + .subcategories{
+
+.type-category #content .category-title+h4 {
   margin-top: 40px;
 }
-.type-category #content .category-title + h4{
-  margin-top: 40px;
-}
+
 @media screen and (max-width: 575px) {
   .type-category #content .category__secondDescription+.subcategories {
     margin-top: 30px;
   }
+
   .type-category #content .subcategories {
     margin-top: 60px;
   }
-  .type-category #content .category-title + .subcategories{
-    margin-top: 30px;
-  }
-  .type-category #content .category-title + h4{
+
+  .type-category #content .category-title+h4 {
     margin-top: 20px;
   }
 }
@@ -3643,9 +3642,11 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
     width: 100%;
     right: 0;
   }
+
   .ordering-process .messages {
     top: 56px;
   }
+
   .msg {
     padding: 10px 20px;
   }
