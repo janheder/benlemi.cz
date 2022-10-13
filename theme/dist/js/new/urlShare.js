@@ -18,7 +18,6 @@ $(".detail-parameters select").each(function(){
     var qOption = $(this).text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     if(qOption == qPar) {
         $(this).attr("selected",true);
-        $(this).closest(".advanced-parameter-inner").addClass('yes-before');
         $(this).closest(".advanced-parameter").find(".advanced-parameter-inner").addClass('yes-before');
     }
 

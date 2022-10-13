@@ -16,6 +16,7 @@ $(document).ready(function() {
         fetch("/"+ g_ratingUrl +"/")
             .then((response) => response.text())
             .then(loadRating)
+            .then($("#ratingSectionCount").append($(".stars-label")))
     }
 
 });
