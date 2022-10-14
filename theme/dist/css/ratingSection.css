@@ -52,7 +52,8 @@
 }
 #ratingSection .rating-content-text{
     display: flex;
-   }
+    margin-top: 5px;
+}
 #ratingSectionCount{
     margin-right: 20px;
   }
@@ -69,7 +70,7 @@
     color: #689C56;
     font-size: 15px;
     font-weight: 500;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 #ratingSection .rate-average-inner {

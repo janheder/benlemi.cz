@@ -1752,7 +1752,7 @@ footer {
 .products-block {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 40px 20px;
   margin: 0;
 }
 
@@ -3688,4 +3688,8 @@ margin: 0;
 #checkoutContent .co-contact-information h4+.form-group a::before{
   content: "Přihlaste se";
   font-size: 15px;
+}
+
+#order-shipping-methods .show-tooltip {
+  background: #78aa66;
 }
