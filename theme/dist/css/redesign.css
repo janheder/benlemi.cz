@@ -3694,3 +3694,7 @@ margin: 0;
 #order-shipping-methods .show-tooltip {
   background: #78aa66;
 }
+
+.before-carousel .banner-wrapper a img {
+  object-fit: contain;
+}
