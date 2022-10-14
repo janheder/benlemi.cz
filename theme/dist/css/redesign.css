@@ -755,7 +755,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .p-detail-inner-heading {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .p-detail-inner-header div:nth-child(3) {
@@ -2487,9 +2487,11 @@ body.--showFilters .sidebar-left {
   height: 25px;
   padding-left: 66px;
   background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/symbol-premium.svg");
-  background-position: left 10px center;
+  background-position: left 8px top 5px;
   text-transform: uppercase;
   font-weight: 500;
+  background-repeat: no-repeat;
+  margin-right: 20px;
   display: none;
 }
 .p-detail-inner-header .flag.flag-premium{
@@ -3485,6 +3487,24 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   order: 90;
   margin-top: 20px;
 }
+.essox-wrap a{
+  display: flex;
+  padding-left: 50px;
+  border: 1px solid #E7EEEC;
+  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/calculator.svg");
+  background-repeat: no-repeat;
+  left: 14px;
+  top: 5px;
+}
+.essox-wrap a::before{
+  content: "Kalkulačka splátek";
+  height: 24px;
+  width: 70px;
+  display: flex;
+}
+.essox-wrap img{
+  display: none;
+}
 
 .news-item time {
   top: 10px;
@@ -3715,4 +3735,8 @@ margin: 0;
 
 .before-carousel .banner-wrapper a img {
   object-fit: contain;
+}
+
+.p-detail-inner-header .p-code {
+  align-items: center;
 }
