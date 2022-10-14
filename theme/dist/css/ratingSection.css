@@ -56,6 +56,8 @@
 }
 #ratingSectionCount{
     margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #D9DFDD;
   }
 
 #ratingSection .rating-content-title h3 {
@@ -86,7 +88,9 @@
 #ratingSection .stars-label {
     display: none;
 }
-
+#ratingSectionCount .stars-label{
+    display: flex
+}
 #ratingSection .vote-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
