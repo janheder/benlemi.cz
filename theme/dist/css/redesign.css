@@ -3239,8 +3239,10 @@ li[data-testid="tabRelatedFiles"] {
 .type-category #content .subcategories {
   margin-top: 80px;
 }
-
 .type-category #content .category-title+h4 {
+  margin-top: 80px;
+}
+.type-category #content .category-title+.category__secondDescription+h4 {
   margin-top: 40px;
 }
 
