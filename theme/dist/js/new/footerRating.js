@@ -12,8 +12,7 @@ $(document).ready(function() {
             const body1 = nodes.querySelector('#ratingWrapper .rate-average-inner');
             document.querySelector('#ratingSection .rating-content').prepend(body1);
 
-            const body2 = nodes.querySelector('#ratingWrapper .rate-average-inner .stars-label');
-            document.querySelector('#ratingSectionCount').prepend(body2);
+            $("#ratingSectionCount").append($("#ratingSection .rate-average-inner .stars-label"));
 
         };
         fetch("/"+ g_ratingUrl +"/")

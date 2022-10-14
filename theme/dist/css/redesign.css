@@ -1115,6 +1115,7 @@ h1, h2, h3, h4, h5 {
 
 .form-control {
   height: 50px;
+  border: 1px solid #E7EEEC;
 }
 @media (max-width: 575px) {
   .form-control {
