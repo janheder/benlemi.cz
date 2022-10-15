@@ -3807,5 +3807,14 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background: rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease opacity;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+  }
+  body.--noScroll .menu-helper {
+    display: flex;
+    pointer-events: auto;
+    opacity: 1;
   }
 }
