@@ -932,7 +932,7 @@ h1, h2, h3, h4, h5 {
 .advanced-parameter-inner {
   border: 1px solid #E7EEEC;
   height: 36px;
-    width: 36px;
+  width: 36px;
 }
 
 .advanced-parameter-inner img {
@@ -1118,11 +1118,13 @@ h1, h2, h3, h4, h5 {
   height: 50px;
   border: 1px solid #E7EEEC;
 }
+
 @media (max-width: 575px) {
   .form-control {
     height: 48px;
   }
 }
+
 .news-item .title {
   color: #2E523D;
 }
@@ -1992,6 +1994,10 @@ body.--showFilters #products {
   border: 1px solid #E7EEEC;
 }
 
+.variant-list select:invalid:focus {
+  border: 1px solid #7bb82a;
+}
+
 
 @media screen and (max-width: 991px) {
   .header-top {
@@ -2481,7 +2487,7 @@ body.--showFilters .sidebar-left {
   }
 }
 
-.flag.flag-premium{
+.flag.flag-premium {
   background-color: #8FB781;
   color: white;
   height: 25px;
@@ -2494,7 +2500,8 @@ body.--showFilters .sidebar-left {
   margin-right: 20px;
   display: none;
 }
-.p-detail-inner-header .flag.flag-premium{
+
+.p-detail-inner-header .flag.flag-premium {
   display: flex;
 }
 
@@ -2800,9 +2807,11 @@ body.--showFilters .sidebar-left {
 .order-summary-item.price .price-secondary span {
   display: flex;
 }
-.order-summary-item.price .price-wrapper .price-label.price-primary{
+
+.order-summary-item.price .price-wrapper .price-label.price-primary {
   font-size: 20px;
 }
+
 .order-summary-item.price .price.price-primary span {
   font-size: 20px;
 }
@@ -3257,9 +3266,11 @@ li[data-testid="tabRelatedFiles"] {
 .type-category #content .subcategories {
   margin-top: 80px;
 }
+
 .type-category #content .category-title+h4 {
   margin-top: 80px;
 }
+
 .type-category #content .category-title+.category__secondDescription+h4 {
   margin-top: 40px;
 }
@@ -3487,8 +3498,9 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   order: 90;
   margin-top: 20px;
 }
-.essox-wrap a{
-  display: flex;
+
+.essox-wrap a {
+  display: inline-flex;
   padding: 6px 10px;
   padding-left: 50px;
   border: 1px solid #E7EEEC;
@@ -3497,12 +3509,14 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   left: 14px;
   top: 5px;
   background-position: center left 14px;
+
 }
-.essox-wrap a:hover{
+
+.essox-wrap a:hover {
   text-decoration: none;
-  background: linear-gradient(300deg, #F7FAF9 0%, rgba(255, 255, 255, 0) 46.24%);
 }
-.essox-wrap a::before{
+
+.essox-wrap a::before {
   content: "Kalkulačka splátek";
   width: 74px;
   display: flex;
@@ -3511,7 +3525,8 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   flex-shrink: 0;
   color: #2E523D;
 }
-.essox-wrap img{
+
+.essox-wrap img {
   display: none;
 }
 
@@ -3709,8 +3724,8 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 
 }
 
-.p-image-wrapper .flags.flags-extra, .p .image .flags.flags-extra{
-  display:flex;
+.p-image-wrapper .flags.flags-extra, .p .image .flags.flags-extra {
+  display: flex;
 }
 
 .checkout-box .contact-box ul {
@@ -3718,11 +3733,12 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   flex-direction: column;
   justify-content: center;
 }
-.checkout-box .contact-box li{
-margin: 0;
+
+.checkout-box .contact-box li {
+  margin: 0;
 }
 
-#checkoutSidebar .consents label{
+#checkoutSidebar .consents label {
   padding: 2px 0 2px 25px;
 }
 
@@ -3730,10 +3746,11 @@ margin: 0;
   padding-top: 30px;
 }
 
-#checkoutContent .co-contact-information h4+.form-group a{
+#checkoutContent .co-contact-information h4+.form-group a {
   font-size: 0;
 }
-#checkoutContent .co-contact-information h4+.form-group a::before{
+
+#checkoutContent .co-contact-information h4+.form-group a::before {
   content: "Přihlaste se";
   font-size: 15px;
 }
@@ -3750,9 +3767,45 @@ margin: 0;
   align-items: center;
 }
 
-.p-info-wrapper>p{
+.p-info-wrapper>p {
   color: #2E523D;
 }
-.p-info-wrapper>p::after{
-  
+
+.p-info-wrapper>p::after {}
+
+@media screen and (max-width: 991px) {
+  .navigation-close {
+    height: 52px;
+    display: flex;
+    flex-shrink: 0;
+    order: 0;
+    position: relative;
+    border-bottom: 1px solid #F0F0F0;
+  }
+
+  .navigation-close::before {
+    content: "Zavřit menu";
+    background-image: url(../icons/close.svg);
+    background-position: 20px center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu-helper {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
