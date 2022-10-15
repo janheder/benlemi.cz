@@ -250,7 +250,7 @@ body.--showFilters .category-content-wrapper {
   height: 46px;
   width: 290px;
   align-items: flex-start;
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/filter.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/filter.svg");
   background-position: right 20px center;
   background-repeat: no-repeat;
 }
@@ -390,7 +390,7 @@ body {
 
 .p .flags.flags-extra .flag-discount::after {
   content: "";
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/sale-tag.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/sale-tag.svg");
   background-size: cover;
   background-position: center top;
   width: 100%;
@@ -535,14 +535,14 @@ h1, h2, h3, h4, h5 {
   height: 16px;
   width: 16px;
   margin-right: 8px;
-  background: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/envelope-white.svg");
+  background: url("https://www.benlemi.cz/user/documents/theme/dist/icons/envelope-white.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .top-navigation-contacts .project-phone::before {
-  background: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/phone-white.svg");
+  background: url("https://www.benlemi.cz/user/documents/theme/dist/icons/phone-white.svg");
 }
 
 .top-navigation-menu {
@@ -906,7 +906,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .cart-count::before {
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/cart-new.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/cart-new.svg");
   background-size: 22px;
   background-position: center;
 }
@@ -922,7 +922,7 @@ h1, h2, h3, h4, h5 {
   content: "";
   height: 24px;
   width: 24px;
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/search-new.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/search-new.svg");
 }
 
 .navigation-buttons {
@@ -1738,7 +1738,7 @@ footer {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/cart-new.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/cart-new.svg");
   background-position: center;
   background-repeat: no-repeat;
   display: inline-flex;
@@ -1959,7 +1959,7 @@ body.--showFilters #products {
 }
 
 .nav-user {
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/user-new.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/user-new.svg");
   background-size: 19px;
 }
 
@@ -2040,7 +2040,7 @@ body.--showFilters #products {
 .main-header-nav>li.menu-item-2960>a::before,
 .main-header-nav>li.menu-item-3002>a::before {
   content: "";
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/nav-new.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/nav-new.svg");
   background-size: 100%;
   height: 20px;
   width: 20px;
@@ -2056,7 +2056,7 @@ body.--showFilters #products {
 .main-header-nav>li.menu-item-1395>a::before,
 .main-header-nav>li.menu-item-1386>a::before {
   content: "";
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/nav-sale.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/nav-sale.svg");
   background-size: 100%;
   height: 20px;
   width: 20px;
@@ -2355,11 +2355,12 @@ header+.content-wrapper .content-wrapper-in {
   top: 0;
   font-size: 17px;
   padding: 15px 8px 5px 8px;
+  right: 40px;
 }
 
 .p-image .flags.flags-extra .price-save::after {
   content: "";
-  background-image: url(https://janheder.github.io/benlemi.cz/theme/dist/icons/sale-tag.svg);
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/sale-tag.svg");
   background-size: cover;
   background-position: center top;
   width: 100%;
@@ -2367,7 +2368,11 @@ header+.content-wrapper .content-wrapper-in {
   position: absolute;
   bottom: -20px;
 }
-
+@media screen and (max-width: 557px) {
+  .p-image .flags.flags-extra .flag-discount .price-save {
+    right: 20px;
+  } 
+}
 
 
 body.--showFilters {}
@@ -2783,7 +2788,7 @@ body.--showFilters .sidebar-left {
   }
 
   .menu-item-more {
-    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/plus-circle-green.svg");
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/plus-circle-green.svg");
     padding: 12px 15px 12px 65px;
     background-position: left 20px center;
     background-repeat: no-repeat;
@@ -3513,7 +3518,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   padding: 6px 10px;
   padding-left: 50px;
   border: 1px solid #E7EEEC;
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/calculator.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/calculator.svg");
   background-repeat: no-repeat;
   left: 14px;
   top: 5px;
@@ -3794,7 +3799,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 
   .navigation-close::before {
     content: "Zavřit menu";
-    background-image: url(../icons/close.svg);
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/close.svg");
     background-position: 20px center;
     background-size: 24px;
     background-repeat: no-repeat;
