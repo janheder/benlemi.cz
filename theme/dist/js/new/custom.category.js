@@ -96,12 +96,12 @@ if ($("#category-header").length){
 
         $("#filterToggleMobile").click(function(){
             if($("body").hasClass("--showFilters")){
-                $("#filterToggleDesktop").text(g_showFilter);
-                $("body").removeClass("--showFilters");
+                $("#filterToggleDesktop").text(g_hideFilter);
+                $("body").removeClass("--showFilters --noScroll");
             }
             else{
                 $("#filterToggleDesktop").text(g_hideFilter);
-                $("body").addClass("--showFilters");
+                $("body").addClass("--showFilters --noScroll");
             }
         });
     }

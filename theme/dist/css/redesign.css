@@ -234,13 +234,17 @@
 .category-content-wrapper {
   width: 100%;
 }
-
-body.--showFilters .category-content-wrapper {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 992px) {
+  body.--showFilters .category-content-wrapper {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+body.--showFilters #products {
+  grid-template-columns: 1fr 1fr 1fr;
 }
-
+}
 #filterToggleDesktop {
   background: #CF4823;
   color: white;
@@ -1856,9 +1860,6 @@ footer {
   width: d12px;
 }
 
-body.--showFilters #products {
-  grid-template-columns: 1fr 1fr 1fr;
-}
 
 
 .filter-section fieldset input[type="checkbox"]+label::before {
@@ -3546,6 +3547,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   font-size: 14px;
   flex-shrink: 0;
   color: #2E523D;
+  text-align: left;
 }
 
 .essox-wrap img {
@@ -3879,4 +3881,8 @@ body[class*="in-blog-"] .sidebar-left {
   .news-item-detail h1 {
     font-size: 24px;
   }
+}
+
+.variant-list select{
+  width: 380px;
 }
