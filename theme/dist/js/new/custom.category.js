@@ -81,12 +81,12 @@ if ($("#category-header").length){
 
     $("#filterToggleDesktop").click(function(){
         if($("body").hasClass("--showFilters")){
-            $(this).text(g_showFilter);
-            $("body").removeClass("--showFilters");
+            $(this).text(g_hideFilter);
+            $("body").removeClass("--showFilters --noScroll");
         }
         else{
             $(this).text(g_hideFilter);
-            $("body").addClass("--showFilters");
+            $("body").addClass("--showFilters --noScroll");
         }
     });
 
