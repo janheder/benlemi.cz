@@ -3865,3 +3865,14 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   text-align: center;
   display: block;
 }
+
+
+body[class*="in-blog-"] .sidebar-left {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, #F7FAF9 100%);
+}
+
+@media screen and (max-width: 575px) {
+  .news-item-detail h1 {
+    font-size: 24px;
+  }
+}
