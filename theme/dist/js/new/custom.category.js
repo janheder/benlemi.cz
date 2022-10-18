@@ -77,6 +77,7 @@ document.addEventListener('ShoptetDOMPageMoreProductsLoaded', function () {
 if ($("#category-header").length){
 
     function filterButtonDesktop(){ 
+        $("#filterToggleDesktop, #sortToggle").remove();
         $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div><div id="sortToggle" class="btn btn-ghost">' + g_showSort + '</div>');
 
 
@@ -89,6 +90,10 @@ if ($("#category-header").length){
                 $(this).text(g_hideFilter);
                 $("body").addClass("--showFilters --noScroll");
             }
+        });
+
+        $("#sortToggle").click(function(){
+            $("body").toggleClass("--showSort");
         });
     }
     filterButtonDesktop();
@@ -114,11 +119,6 @@ if ($("#category-header").length){
         filterButtonMobile();
     });
 
-
-
-    $("#sortToggle").click(function(){
-        $("body").toggleClass("--showSort");
-    });
 }
 
 
