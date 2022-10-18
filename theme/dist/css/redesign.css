@@ -3890,3 +3890,9 @@ body[class*="in-blog-"] .sidebar-left {
 .variant-list select{
   width: 380px;
 }
+
+@media (max-width: 991px){
+  .filter-total-count {
+    padding-bottom: 0px;
+}
+}
