@@ -75,21 +75,23 @@ document.addEventListener('ShoptetDOMPageMoreProductsLoaded', function () {
 
 /* category header edit */
 if ($("#category-header").length){
-    /*$("#category-header").insertBefore(".content-wrapper-in");*/
-    $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div><div id="sortToggle" class="btn btn-ghost">' + g_showSort + '</div>');
+
+    function filterButtonDesktop(){ 
+        $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div><div id="sortToggle" class="btn btn-ghost">' + g_showSort + '</div>');
 
 
-    $("#filterToggleDesktop").click(function(){
-        if($("body").hasClass("--showFilters")){
-            $(this).text(g_hideFilter);
-            $("body").removeClass("--showFilters --noScroll");
-        }
-        else{
-            $(this).text(g_hideFilter);
-            $("body").addClass("--showFilters --noScroll");
-        }
-    });
-
+        $("#filterToggleDesktop").click(function(){
+            if($("body").hasClass("--showFilters")){
+                $(this).text(g_hideFilter);
+                $("body").removeClass("--showFilters --noScroll");
+            }
+            else{
+                $(this).text(g_hideFilter);
+                $("body").addClass("--showFilters --noScroll");
+            }
+        });
+    }
+    filterButtonDesktop();
 
     function filterButtonMobile(){ 
         $("#filters").prepend('<div id="filterToggleMobile" class="btn">' + g_hideFilter + '</div>');
@@ -105,9 +107,10 @@ if ($("#category-header").length){
             }
         });
     }
-    
     filterButtonMobile();
+
     document.addEventListener('shoptet.products.sameHeightOfProducts', function () {
+        filterButtonDesktop()
         filterButtonMobile();
     });
 
