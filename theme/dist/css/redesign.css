@@ -941,38 +941,39 @@ h1, h2, h3, h4, h5 {
 }
 
 
+body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
+  margin-top: 0px;
+  display: inline-flex;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  padding: 10px 15px;
+  order: -1;
+  background: rgba(207, 72, 35, 0.1);
+  color: #CF4823;
+  margin-bottom: 20px;
+}
+
+.dkLabCountdownContainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.dkLabCountdownActionText {
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 557px) {
   body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
     margin-top: 0px;
     display: inline-flex;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 1.3;
-    padding: 10px 15px;
-    order: -1;
-    background: rgba(207, 72, 35, 0.1);
-    color: #CF4823;
+    padding: 6px 15px;
     margin-bottom: 20px;
   }
-
-  .dkLabCountdownContainer {
-    display: flex;
-    align-items: baseline;
-  }
-
-  .dkLabCountdownActionText {
-    padding-right: 5px;
-  }
-  @media screen and (max-width: 557px) {
-    body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
-      margin-top: 0px;
-      display: inline-flex;
-      font-size: 15px;
-      font-weight: 600;
-      line-height: 1.3;
-      padding: 6px 15px;
-      margin-bottom: 20px;
-    }
-  }
+}
 
 
 .category-title {
@@ -2369,10 +2370,11 @@ header+.content-wrapper .content-wrapper-in {
   position: absolute;
   bottom: -20px;
 }
+
 @media screen and (max-width: 557px) {
   .p-image .flags.flags-extra .flag-discount .price-save {
     right: 20px;
-  } 
+  }
 }
 
 
@@ -2825,6 +2827,7 @@ body.--showFilters .sidebar-left {
 
 .order-summary-item.price .price-wrapper .price-label.price-primary {
   font-size: 20px;
+  font-weight: 500;
 }
 
 .order-summary-item.price .price.price-primary span {
@@ -3827,9 +3830,38 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
     opacity: 0;
     display: flex;
   }
+
   body.--noScroll .menu-helper {
     display: flex;
     pointer-events: auto;
     opacity: 1;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletterSection__form::after {
+    background-color: transparent;
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/email-bottom.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    height: 90px;
+    width: 90px;
+    left: -5px;
+    top: 5%;
+    opacity: 1;
+  }
+
+  .newsletterSection__form {
+    padding-left: 120px;
+  }
+}
+
+
+.eet-message-inner {
+  font-size: 13px;
+  color: #6D6C79;
+  text-align: center;
+  display: block;
 }
