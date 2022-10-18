@@ -419,6 +419,10 @@ body {
   color: #2E523D;
   background: #ECF2E8 !important;
 }
+.p .flags .flag.flag-doprodej-poslednich-kusu{
+  background: #f5f5f5 !important;
+}
+
 
 h1, h2, h3, h4, h5 {
   font-family: "Quicksand";
