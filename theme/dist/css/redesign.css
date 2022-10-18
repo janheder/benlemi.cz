@@ -1001,7 +1001,11 @@ body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
   content: none;
 
 }
-
+@media screen and (max-width: 991px) {
+  .category-title {
+    font-size: 26px;
+  }
+}
 .category-perex {
   margin-top: 15px;
 }
