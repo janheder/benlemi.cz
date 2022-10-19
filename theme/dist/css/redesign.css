@@ -3826,13 +3826,14 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
     z-index: 9;
     background: white;
     line-height: 1;
-    opacity: 0;
-    pointer-events: none;
+    transform: translate3d(-100%, 0, 0);
+    transition: 0.3s cubic-bezier(0.65, 0.05, 0.36, 1) transform;
   }
-  .header-top.--active .navigation-close{
-    opacity: 1;
-    pointer-events: auto;
+
+  .header-top.--active+#navigation .navigation-close{
+    transform: translate(0%, 0);
   }
+
   .navigation-close::before {
     content: "Zavřit menu";
     background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/close.svg");
