@@ -974,15 +974,16 @@ body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
   padding-right: 5px;
 }
 
-@media screen and (max-width: 557px) {
+@media screen and (max-width: 575px) {
   body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
-    margin-top: 0px;
+    margin-top: -5px;
     display: inline-flex;
     font-size: 15px;
     font-weight: 600;
     line-height: 1.3;
-    padding: 6px 15px;
+    padding: 8px 15px;
     margin-bottom: 20px;
+    justify-content: center;
   }
 }
 
