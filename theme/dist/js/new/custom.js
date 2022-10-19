@@ -149,10 +149,11 @@ $("#js-menuToggle").click(function(){
 });
 
 
-$(".menu-helper").click(function(){
+$(".menu-helper, .navigation-close").click(function(){
     $(".header-top").removeClass("--active");
     $("body").removeClass("--noScroll --showFilters");
 });
+
 
 /* relocate search 
 $(".header-top .search-form input").prop("placeholder", g_searchPlaceholder);
