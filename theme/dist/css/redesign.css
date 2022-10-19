@@ -1743,6 +1743,7 @@ footer {
 
 .p-detail-inner .add-to-cart .amount {
   height: 58px;
+  width: 130px;
 }
 
 .add-to-cart .add-to-cart-button {
@@ -3896,7 +3897,8 @@ body[class*="in-blog-"] .sidebar-left {
 }
 
 .variant-list select {
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
 }
 
 @media (max-width: 991px) {
@@ -3929,4 +3931,8 @@ body[class*="in-blog-"] .sidebar-left {
 
 .empty-content-category p {
   display: block;
+}
+
+.add-to-cart .quantity {
+  max-width: 130px;
 }
