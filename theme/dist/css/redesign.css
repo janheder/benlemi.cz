@@ -3990,4 +3990,11 @@ body[class*="in-blog-"] .sidebar-left {
   .search-form .btn {
     background: #fff;
   }
+  .search.--active::after{
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
