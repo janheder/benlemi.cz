@@ -3955,24 +3955,28 @@ body[class*="in-blog-"] .sidebar-left {
   max-width: 130px;
 }
 
-
-.nav-search.--responsive {
-  padding-left: 54px;
-  padding-top: 0px;
-  width: auto;
-  background-position: 15px;
-  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/search-new.svg");
-  margin: 10px;
-  border: 1px solid #F3F6F5;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  height: 50px;
-  flex-shrink: 0;
+.nav-search.--responsive{
+  display: none;
 }
+@media screen and (max-width: 991px) {
+  .nav-search.--responsive {
+    padding-left: 54px;
+    padding-top: 0px;
+    width: auto;
+    background-position: 15px;
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/search-new.svg");
+    margin: 10px;
+    border: 1px solid #F3F6F5;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    height: 50px;
+    flex-shrink: 0;
+  }
 
-.nav-search.--responsive.--active {
-  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/search-new.svg");
+  .nav-search.--responsive.--active {
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/search-new.svg");
+  }
 }
 
 @media screen and (max-width: 991px) {
