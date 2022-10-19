@@ -1262,12 +1262,14 @@ footer {
 .ctaSection__content {
   padding: 40px;
 }
+
 .ctaSection__contentInner {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
+
 .ctaSection__title {
   font-family: 'Karla';
   font-style: normal;
@@ -3832,7 +3834,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
     transition: 0.3s cubic-bezier(0.65, 0.05, 0.36, 1) transform;
   }
 
-  .header-top.--active+#navigation .navigation-close{
+  .header-top.--active+#navigation .navigation-close {
     transform: translate(0%, 0);
   }
 
@@ -3954,7 +3956,7 @@ body[class*="in-blog-"] .sidebar-left {
 }
 
 
-.nav-search.--responsive{
+.nav-search.--responsive {
   padding-left: 54px;
   padding-top: 0px;
   width: auto;
@@ -3968,6 +3970,24 @@ body[class*="in-blog-"] .sidebar-left {
   height: 50px;
   flex-shrink: 0;
 }
-.nav-search.--responsive.--active{
+
+.nav-search.--responsive.--active {
   background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/search-new.svg");
+}
+
+@media screen and (max-width: 991px) {
+  .search-form {
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+    background: #fff;
+
+  }
+
+  .search-form input {
+    background: #fff !important;
+  }
+
+  .search-form .btn {
+    background: #fff;
+  }
 }
