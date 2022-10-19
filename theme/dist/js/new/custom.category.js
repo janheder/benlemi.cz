@@ -78,7 +78,7 @@ if ($("#category-header").length){
 
     function filterButtonDesktop(){ 
         $("#filterToggleDesktop, #sortToggle").remove();
-        $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_showFilter + '</div><div id="sortToggle" class="btn btn-ghost">' + g_showSort + '</div>');
+        $("#category-header").prepend('<div id="filterToggleDesktop" class="btn">' + g_hideFilter + '</div><div id="sortToggle" class="btn btn-ghost">' + g_showSort + '</div>');
 
 
         $("#filterToggleDesktop").click(function(){

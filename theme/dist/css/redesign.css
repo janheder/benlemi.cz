@@ -3130,7 +3130,7 @@ select.form-control, select.form-control:valid {
   margin-bottom: 20px;
 }
 
-.--showFilters #supportBox-iframe {
+body.--showFilters #supportBox-iframe, body.--noScroll #supportBox-iframe {
   z-index: -1 !important;
 }
 
