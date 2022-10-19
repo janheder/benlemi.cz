@@ -3977,10 +3977,7 @@ body[class*="in-blog-"] .sidebar-left {
 
 @media screen and (max-width: 991px) {
   .search-form {
-    border-top: 1px solid #F0F0F0;
-    border-bottom: 1px solid #F0F0F0;
     background: #fff;
-
   }
 
   .search-form input {
@@ -3996,5 +3993,8 @@ body[class*="in-blog-"] .sidebar-left {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background: rgba(0, 0, 0, 0.3);
+  }
+  .search-whisperer{
+    border-top: 1px solid #F0F0F0;
   }
 }
