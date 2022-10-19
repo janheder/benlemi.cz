@@ -2351,6 +2351,7 @@ header+.content-wrapper .content-wrapper-in {
     transform: translate3d(-100%, 0, 0);
     transition: 0.3s cubic-bezier(0.65, 0.05, 0.36, 1) transform;
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.05);
+    padding-top: 60px;
   }
 
   .content>h4 {
@@ -3816,16 +3817,27 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
     height: 52px;
     display: flex;
     flex-shrink: 0;
+    align-items: center;
     order: 0;
-    position: relative;
+    position: fixed;
     border-bottom: 1px solid #F0F0F0;
+    width: calc(100% - 52px);
+    max-width: 400px;
+    z-index: 9;
+    background: white;
+    line-height: 1;
+    opacity: 0;
+    pointer-events: none;
   }
-
+  .header-top.--active .navigation-close{
+    opacity: 1;
+    pointer-events: auto;
+  }
   .navigation-close::before {
     content: "Zavřit menu";
     background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/close.svg");
     background-position: 20px center;
-    background-size: 24px;
+    background-size: 10px;
     background-repeat: no-repeat;
     position: absolute;
     left: 0;
@@ -3833,7 +3845,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 55px;
+    padding-left: 50px;
     font-weight: 500;
   }
 }
@@ -3940,11 +3952,18 @@ body[class*="in-blog-"] .sidebar-left {
 
 
 .nav-search.--responsive{
-  padding-left:54px;
-  padding-top:18px;
-  width:100%;
-  background-position:20px;
+  padding-left: 54px;
+  padding-top: 0px;
+  width: auto;
+  background-position: 15px;
   background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/search-new.svg");
+  margin: 10px;
+  border: 1px solid #F3F6F5;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  height: 50px;
+  flex-shrink: 0;
 }
 .nav-search.--responsive.--active{
   background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/search-new.svg");
