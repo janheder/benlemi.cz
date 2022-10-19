@@ -3937,3 +3937,15 @@ body[class*="in-blog-"] .sidebar-left {
 .add-to-cart .quantity {
   max-width: 130px;
 }
+
+
+.nav-search.--responsive{
+  padding-left:54px;
+  padding-top:18px;
+  width:100%;
+  background-position:20px;
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/search-new.svg");
+}
+.nav-search.--responsive.--active{
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/search-new.svg");
+}

@@ -511,7 +511,7 @@ if ($("#rate-form").length){
 // ADD SEARCH ON MOBILE
 // -----------------------------------------------------------------------------
 
-$("#navigation .menu-level-1").append('<div class="nav-search --responsive" id="js-searchToggle-res" style="padding-left:54px;padding-top:18px;width:100%;background-position:20px;">Vyhledávání</div>');
+$("#navigation .menu-level-1").prepend('<div class="nav-search --responsive" id="js-searchToggle-res">Hledat</div>');
 
 $("#js-searchToggle-res").click(function(){
     $("#navigation .search").insertAfter(".navigation-buttons");
