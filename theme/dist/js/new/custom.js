@@ -525,7 +525,7 @@ $("#js-searchToggle-res").click(function(){
     }else{
         $(".search, #js-searchToggle-res").addClass("--active");
         $(".header-top").removeClass("--active");  
-        $("body").removeClass("--noScroll"); 
+        $("body").addClass("--noScroll"); 
         $(".header-top .search .form-control").focus(); 
     }
 });
