@@ -4008,3 +4008,7 @@ body[class*="in-blog-"] .sidebar-left {
     border-top: 1px solid #F0F0F0;
   }
 }
+
+select.hidden-split-parameter[data-parameter-name='Barva']{
+  padding: 0 15px;
+}
