@@ -4010,7 +4010,8 @@ body[class*="in-blog-"] .sidebar-left {
   .search-whisperer{
     border-top: 1px solid #F0F0F0;
     overflow: auto;
-    max-height: calc(100vh - 150px);
+    max-height: calc(100vh - 100px);
+    padding-bottom: 50px;
   }
 }
 
