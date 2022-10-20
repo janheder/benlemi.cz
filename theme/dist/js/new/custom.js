@@ -520,12 +520,14 @@ $("#js-searchToggle-res").click(function(){
         $(".search, #js-searchToggle-res").removeClass("--active");
         $(".header-top").removeClass("--active");  
         $("body").removeClass("--searchActive"); 
+        $("body").removeClass("--noScroll"); 
         $(".header-top .search .form-control").blur();  
 
     }else{
         $(".search, #js-searchToggle-res").addClass("--active");
         $(".header-top").removeClass("--active");  
         $("body").addClass("--searchActive"); 
+        $("body").removeClass("--noScroll"); 
         $(".header-top .search .form-control").focus(); 
     }
 });
