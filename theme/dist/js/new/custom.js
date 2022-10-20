@@ -519,13 +519,13 @@ $("#js-searchToggle-res").click(function(){
     if($(".search").hasClass("--active")){
         $(".search, #js-searchToggle-res").removeClass("--active");
         $(".header-top").removeClass("--active");  
-        $("body").removeClass("--noScroll"); 
+        $("body").removeClass("--searchActive"); 
         $(".header-top .search .form-control").blur();  
 
     }else{
         $(".search, #js-searchToggle-res").addClass("--active");
         $(".header-top").removeClass("--active");  
-        $("body").addClass("--noScroll"); 
+        $("body").addClass("--searchActive"); 
         $(".header-top .search .form-control").focus(); 
     }
 });
