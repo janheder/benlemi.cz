@@ -3134,7 +3134,7 @@ select.form-control, select.form-control:valid {
   margin-bottom: 20px;
 }
 
-body.--showFilters #supportBox-iframe, body.--noScroll #supportBox-iframe {
+body.--showFilters #supportBox-iframe, body.--noScroll #supportBox-iframe, body.--searchActive #supportBox-iframe {
   z-index: -1 !important;
 }
 
@@ -4010,7 +4010,7 @@ body[class*="in-blog-"] .sidebar-left {
   .search-whisperer{
     border-top: 1px solid #F0F0F0;
     overflow: auto;
-    max-height: calc(100vh - 100px);
+    max-height: calc(100vh - 150px);
   }
 }
 
