@@ -4013,6 +4013,9 @@ body[class*="in-blog-"] .sidebar-left {
     max-height: calc(100vh - 100px);
     padding-bottom: 50px;
   }
+  .search-whisperer ul.search-whisperer-products{
+    padding-bottom: 50px;
+  }
 }
 
 select.hidden-split-parameter[data-parameter-name='Barva']{
