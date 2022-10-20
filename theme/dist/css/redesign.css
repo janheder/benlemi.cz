@@ -3986,6 +3986,9 @@ body[class*="in-blog-"] .sidebar-left {
 }
 
 @media screen and (max-width: 991px) {
+  body.--searchActive {
+    overflow: hidden;
+}
   .search-form {
     background: #fff;
   }
@@ -4006,9 +4009,12 @@ body[class*="in-blog-"] .sidebar-left {
   }
   .search-whisperer{
     border-top: 1px solid #F0F0F0;
+    overflow: auto;
+    max-height: calc(100vh - 100px);
   }
 }
 
 select.hidden-split-parameter[data-parameter-name='Barva']{
   padding: 0 15px;
 }
+

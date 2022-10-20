@@ -515,7 +515,9 @@ if ($("#rate-form").length){
 $("#navigation .menu-level-1").prepend('<div class="nav-search --responsive" id="js-searchToggle-res">Hledat</div>');
 
 $("#js-searchToggle-res").click(function(){
+    
     $("#navigation .search").insertAfter(".navigation-buttons");
+
     if($(".search").hasClass("--active")){
         $(".search, #js-searchToggle-res").removeClass("--active");
         $(".header-top").removeClass("--active");  
