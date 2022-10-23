@@ -1360,15 +1360,16 @@ footer {
     margin-top: -40px;
     background: white;
   }
+  .ctaSection__contentInner{
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 575px) {
   #ctaSection::after {
     content: none;
   }
-  .ctaSection__contentInner{
-    align-items: center;
-  }
+
   .ctaSection__title {
     font-size: 16px;
   }
