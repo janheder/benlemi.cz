@@ -1366,7 +1366,9 @@ footer {
   #ctaSection::after {
     content: none;
   }
-
+  .ctaSection__contentInner{
+    align-items: center;
+  }
   .ctaSection__title {
     font-size: 16px;
   }
