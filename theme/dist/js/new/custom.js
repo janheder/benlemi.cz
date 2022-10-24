@@ -267,7 +267,7 @@ $(".user-action-cart").insertAfter(".header-top .cart-count");
 // PRODUCT PAGE
 // -----------------------------------------------------------------------------
 
-/* relocate product title */
+/*
 if ($(".p-detail-inner-header").length){
     
     $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
@@ -276,21 +276,19 @@ if ($(".p-detail-inner-header").length){
     $(".p-detail-info .flags").insertBefore(".p-final-price-wrapper");    
     
 }
-
-/* relocate product code and brand name */
+/
 if ($(".p-info-wrapper").length){
     $(".p-info-wrapper .stars-wrapper, .p-detail-info > div:last-child").appendTo(".p-detail-inner-header");
 }
 
-
-/* relocate rating stars */
 if ($(".stars-wrapper").length){
     $(".stars-wrapper").insertBefore(".p-final-price-wrapper");
 }
 
-if ($(".flag.flag-premiumr").length){
+if ($(".flag.flag-premium").length){
     $(".flag.flag-premium").insertAfter(".stars-wrapper");
 }
+*/
 
 /* make advanced parameters required */
 if ($(".advanced-parameter").length){
