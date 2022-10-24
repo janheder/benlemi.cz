@@ -4024,3 +4024,11 @@ body[class*="in-blog-"] .sidebar-left {
 select.hidden-split-parameter[data-parameter-name='Barva']{
   padding: 0 15px;
 }
+
+.social-buttons-wrapper{
+  display: flex;
+}
+
+.social-buttons-wrapper .link-icon.print, .social-buttons-wrapper .s-share-buttons-trigger{
+  display: none
+}
