@@ -4070,7 +4070,7 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
   display: none;
 }
 
-#watchdog-form .link-icon.watchdog{
+.social-buttons-wrapper .link-icon.watchdog{
   display: inline-flex;
     padding: 10px 25px;
     padding-left: 50px;
@@ -4086,4 +4086,15 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
 
 .type-product #descriptionLong::before{
   content: none;
+}
+
+.availability-label[style="color: #cb0000"]{
+
+}
+.availability-label[style="color: #cb0000"]::before{
+  content: "";
+  background: url("https://www.benlemi.cz/user/documents/theme/dist/icons/close-red.svg");
+  background-position: center;
+  height: 20px;
+  width: 10px;
 }
