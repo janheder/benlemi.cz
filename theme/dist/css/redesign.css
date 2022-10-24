@@ -662,9 +662,11 @@ h1, h2, h3, h4, h5 {
 #header::before {
   display: none;
 }
+
 .menu-level-1>li>a {
   color: #2E523D;
 }
+
 @media screen and (min-width: 992px) {
   .main-header-nav>a {
     display: none;
@@ -1360,7 +1362,8 @@ footer {
     margin-top: -40px;
     background: white;
   }
-  .ctaSection__contentInner{
+
+  .ctaSection__contentInner {
     align-items: center;
   }
 }
@@ -2039,7 +2042,8 @@ div.hidden-split-parameter {
   .header-top {
     z-index: 3;
   }
-  .header-top::before{
+
+  .header-top::before {
     content: "";
     left: 5px;
     bottom: 5px;
@@ -2136,9 +2140,11 @@ div.hidden-split-parameter {
     padding: 0 15px 0 15px;
     font-size: 15px
   }
-  .menu-level-1>li>a::before{
+
+  .menu-level-1>li>a::before {
     content: none;
   }
+
   .menu-level-1>li.ext>a {
     background-image: none !important;
     padding-right: 35px;
@@ -3972,9 +3978,10 @@ body[class*="in-blog-"] .sidebar-left {
   max-width: 130px;
 }
 
-.nav-search.--responsive{
+.nav-search.--responsive {
   display: none;
 }
+
 @media screen and (max-width: 991px) {
   .nav-search.--responsive {
     padding-left: 54px;
@@ -4000,7 +4007,8 @@ body[class*="in-blog-"] .sidebar-left {
 @media screen and (max-width: 991px) {
   body.--searchActive {
     overflow: hidden;
-}
+  }
+
   .search-form {
     background: #fff;
   }
@@ -4012,96 +4020,104 @@ body[class*="in-blog-"] .sidebar-left {
   .search-form .btn {
     background: #fff;
   }
-  .search.--active::after{
+
+  .search.--active::after {
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background: rgba(0, 0, 0, 0.3);
   }
-  .search-whisperer{
+
+  .search-whisperer {
     border-top: 1px solid #F0F0F0;
     overflow: auto;
     max-height: calc(100vh - 100px);
 
   }
-  .search-whisperer ul.search-whisperer-products{
+
+  .search-whisperer ul.search-whisperer-products {
     padding-bottom: 50px;
   }
 }
 
-select.hidden-split-parameter[data-parameter-name='Barva']{
+select.hidden-split-parameter[data-parameter-name='Barva'] {
   padding: 0 15px;
 }
 
-#colorbox #cboxClose{
+#colorbox #cboxClose {
   background-size: 10px;
 }
 
-.social-buttons-wrapper{
+.social-buttons-wrapper {
   display: flex;
   order: 90;
 }
 
-.social-buttons-wrapper .link-icon.print, .social-buttons-wrapper .js-share-buttons-trigger, .social-buttons-wrapper .link-icon.chat{
+.social-buttons-wrapper .link-icon.print, .social-buttons-wrapper .js-share-buttons-trigger, .social-buttons-wrapper .link-icon.chat {
   display: none
 }
-.social-buttons-wrapper .watchdog-active{
 
-}
+.social-buttons-wrapper .watchdog-active {}
 
-#watchdog-form{
+#watchdog-form {
   padding: 40px;
 }
-.watchdog-title{
+
+.watchdog-title {
   font-size: 22px;
 }
-#watchdog-form select{
+
+#watchdog-form select {
   width: 100%;
 }
-#watchdog-form .watchdog-row{
-  display: none;
-}
-#watchdog-form .watchdog-row:first-child{
-  display: none;
-}
-#watchdog-form .watchdog-row .disclaimer{
+
+#watchdog-form .watchdog-row {
   display: none;
 }
 
-.social-buttons-wrapper .link-icon.watchdog{
-    display: inline-flex;
-    padding: 15px 30px;
-    padding-left: 75px;
-    border: 1px solid #E7EEEC;
-    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/message-stock.svg");
-    background-repeat: no-repeat;
-    left: 14px;
-    top: 5px;
-    background-position: center left 30px;
-    display: none;
-    margin-top: 30px;
+#watchdog-form .watchdog-row:first-child {
+  display: none;
+}
+
+#watchdog-form .watchdog-row .disclaimer {
+  display: none;
+}
+
+.social-buttons-wrapper .link-icon.watchdog {
+  display: inline-flex;
+  padding: 15px 30px;
+  padding-left: 75px;
+  border: 1px solid #E7EEEC;
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/message-stock.svg");
+  background-repeat: no-repeat;
+  left: 14px;
+  top: 5px;
+  background-position: center left 30px;
+  display: none;
+  margin-top: 30px;
 
 }
-.social-buttons-wrapper .link-icon.watchdog{
+
+.social-buttons-wrapper .link-icon.watchdog {
   font-size: 0;
   text-transform: uppercase;
   font-weight: 500;
 }
-.social-buttons-wrapper .link-icon.watchdog::after{
+
+.social-buttons-wrapper .link-icon.watchdog::after {
   font-size: 15px;
   content: "Dejte mi vědět";
 }
 
 
-.type-product #descriptionLong::before{
+.type-product #descriptionLong::before {
   content: none;
 }
 
-.availability-label[style="color: #cb0000"]{
+.availability-label[style="color: #cb0000"] {}
 
-}
-.availability-label[style="color: #cb0000"]::before{
+.availability-label[style="color: #cb0000"]::before {
   content: "";
   background: url("https://www.benlemi.cz/user/documents/theme/dist/icons/close-red.svg");
   background-position: center;
@@ -4111,32 +4127,36 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
   margin-right: 5px;
 }
 
-.p-detail-tags{
-  
-}
-.p-detail-tags .flag-premium{
+.p-detail-tags {}
+
+.p-detail-tags .flag-premium {
   display: none;
 }
 
-.p-detail-subheader{
+.p-detail-subheader {
   display: flex;
   margin-bottom: 20px;
   font-size: 13px;
   align-items: center;
 }
-.p-detail-subheader .stars-label{
+
+.p-detail-subheader .stars-label {
   display: none;
 }
-.p-detail-subheader .star-list{
+
+.p-detail-subheader .star-list {
   margin-right: 15px;
 }
-.p-detail-subheader .flag-premium{
+
+.p-detail-subheader .flag-premium {
   margin-right: 15px;
 }
-.p-detail-header{
+
+.p-detail-header {
   margin: 10px 0 20px 0;
 }
-.p-detail-header h1{
+
+.p-detail-header h1 {
   color: #2E523D;
   margin-bottom: 30px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(160, 205, 84, 0.1) 50%);
@@ -4144,8 +4164,11 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
   margin-top: 5px;
   display: inline;
 }
-@media screen and (max-width: 991px) {
-.p-detail-header h1{
-  font-size: 24px;
-}
+
+@media screen and (max-width: 575px) {
+  .p-detail-header h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
 }
