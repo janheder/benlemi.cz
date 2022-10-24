@@ -2046,7 +2046,8 @@ div.hidden-split-parameter {
     top: 5px;
     background: #7bb82a;
     display: flex;
-    width: 56px;
+    width: 46px;
+    position: absolute;
   }
 }
 
@@ -4056,20 +4057,20 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
 .watchdog-title{
   font-size: 22px;
 }
-.watchdog-form select{
+#watchdog-form select{
   width: 100%;
 }
-.watchdog-form .watchdog-row{
+#watchdog-form .watchdog-row{
   display: none;
 }
-.watchdog-form .watchdog-row:first-child{
+#watchdog-form .watchdog-row:first-child{
   display: none;
 }
-.watchdog-form .watchdog-row .disclaimer{
+#watchdog-form .watchdog-row .disclaimer{
   display: none;
 }
 
-.watchdog-form .link-icon.watchdog{
+#watchdog-form .link-icon.watchdog{
   display: inline-flex;
     padding: 10px 25px;
     padding-left: 50px;
