@@ -4071,17 +4071,27 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
 }
 
 .social-buttons-wrapper .link-icon.watchdog{
-  display: inline-flex;
-    padding: 10px 25px;
-    padding-left: 50px;
+    display: inline-flex;
+    padding: 15px 30px;
+    padding-left: 75px;
     border: 1px solid #E7EEEC;
     background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/message-stock.svg");
     background-repeat: no-repeat;
     left: 14px;
     top: 5px;
-    background-position: center left 20px;
+    background-position: center left 30px;
     display: none;
     margin-top: 30px;
+
+}
+.social-buttons-wrapper .link-icon.watchdog{
+  font-size: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.social-buttons-wrapper .link-icon.watchdog::after{
+  font-size: 15px;
+  content: "Dejte mi vědět";
 }
 
 

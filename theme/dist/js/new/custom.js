@@ -17,7 +17,7 @@ if ($("#productVideos").length){
 
 if ($('.availability-label[style="color: #cb0000"]').length){
     
-    $(".add-to-cartg").css("display","none");
+    $(".add-to-cart").css("display","none");
     $(".link-icon.watchdog").css("display","flex");
 }
 
