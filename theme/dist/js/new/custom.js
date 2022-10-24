@@ -273,10 +273,13 @@ if ($(".p-detail-inner-header").length){
     $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
     $(".p-detail-inner-header h1").wrap("<div class='p-detail-inner-heading'></div>");
 
-    $(".p-detail-info .flags").insertBefore(".p-final-price-wrapper", function(){
-        $(".flag.flag-premium").insertAfter(".stars-wrapper");
-    });
+    $(".p-detail-info .flags").insertBefore(".p-final-price-wrapper");    
     
+}
+
+/* relocate product code and brand name */
+if ($(".p-info-wrapper").length){
+    $(".p-info-wrapper .stars-wrapper, .p-detail-info > div:last-child").appendTo(".p-detail-inner-header");
 }
 
 
@@ -285,8 +288,9 @@ if ($(".stars-wrapper").length){
     $(".stars-wrapper").insertBefore(".p-final-price-wrapper");
 }
 
-
-
+if ($(".flag.flag-premiumr").length){
+    $(".flag.flag-premium").insertAfter(".stars-wrapper");
+}
 
 /* make advanced parameters required */
 if ($(".advanced-parameter").length){
@@ -369,10 +373,7 @@ if ($("#relatedFiles").length){
     });
 }
 
-/* relocate product code and brand name */
-if ($(".p-info-wrapper").length){
-    $(".p-info-wrapper .stars-wrapper, .p-detail-info > div:last-child").appendTo(".p-detail-inner-header");
-}
+
 
 /* relocate video */
 if ($("#productVideos").length){
