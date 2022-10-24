@@ -4029,6 +4029,6 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
   display: flex;
 }
 
-.social-buttons-wrapper .link-icon.print, .social-buttons-wrapper .s-share-buttons-trigger{
+.social-buttons-wrapper .link-icon.print, .social-buttons-wrapper .js-share-buttons-trigger{
   display: none
 }
