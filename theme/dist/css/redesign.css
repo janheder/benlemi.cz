@@ -2053,6 +2053,14 @@ div.hidden-split-parameter {
     width: 46px;
     position: absolute;
   }
+  .header-top::after{
+    content: "";
+    position: absolute;
+    top: 55px;
+    border-top: 1px solid #F3F6F5;
+    background: #fff;
+    box-shadow: 0px 4px 15px rgb(46 82 61 / 3%);
+  }
 }
 
 
@@ -4122,9 +4130,10 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   background: url("https://www.benlemi.cz/user/documents/theme/dist/icons/close-red.svg");
   background-position: center;
   height: 20px;
-  width: 10px;
+  width: 12px;
   background-repeat: no-repeat;
-  margin-right: 5px;
+  margin-right: 8px;
+  background-size: 10px;
 }
 
 .p-detail-tags {}
