@@ -4033,7 +4033,7 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
   display: flex;
 }
 
-.social-buttons-wrapper .link-icon.print, .social-buttons-wrapper .js-share-buttons-trigger{
+.social-buttons-wrapper .link-icon.print, .social-buttons-wrapper .js-share-buttons-trigger, .social-buttons-wrapper .link-icon.chat{
   display: none
 }
 .social-buttons-wrapper .watchdog-active{
@@ -4057,4 +4057,8 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
 }
 .watchdog-form .watchdog-row .disclaimer{
   display: none;
+}
+
+.type-product #descriptionLong::before{
+  content: none;
 }
