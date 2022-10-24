@@ -2039,6 +2039,14 @@ div.hidden-split-parameter {
   .header-top {
     z-index: 3;
   }
+  .header-top::before{
+    left: 5px;
+    bottom: 5px;
+    top: 5px;
+    background: #7bb82a;
+    display: flex;
+    width: 56px;
+  }
 }
 
 

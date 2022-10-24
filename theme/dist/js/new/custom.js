@@ -12,6 +12,10 @@ if ($("#productVideos").length){
 }
 
 
+$(".flag.flag-premium").insertBefore(".stars-wrapper");
+
+
+
 
 // -----------------------------------------------------------------------------
 // PRODUCTS GENERAL PAGE
@@ -515,7 +519,7 @@ if ($("#rate-form").length){
 $("#navigation .menu-level-1").prepend('<div class="nav-search --responsive" id="js-searchToggle-res">Hledat</div>');
 
 $("#js-searchToggle-res").click(function(){
-    
+
     $("#navigation .search").insertAfter(".navigation-buttons");
 
     if($(".search").hasClass("--active")){
@@ -892,6 +896,8 @@ if ($(":lang(sk)").length){
 
 
     $(".in-krok-2 .next-step button").text("Odoslať objednávku");
+
+
     if ($("#relatedFiles").length) {
 
         if ($('main select[data-parameter-name="Varianta"]').length) {
@@ -1011,5 +1017,34 @@ if ($(":lang(cs)").length){
 
     }
 
+/*
+    if ($("#relatedFiles").length) {
+
+
+            $('main select[data-parameter-name="Varianta"]').change(function() {
+                $(".description-infographics").remove();
+
+
+                var option = $('main select[data-parameter-name="Rozměr"] option:selected').text(); 
+                var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'').split('(', 1);;
+
+                var option2 = $('main select[data-parameter-name="Varianta"] option:selected').text(); 
+                var optionClean2 = option.replace(/\s/g,'');
+
+
+                var src = $('#relatedFiles a[title*="' + optionClean + ';' + option2 + '"]').attr("href");
+                if(typeof src != 'undefined'){
+                    $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
+                    $(".description-infographics img").attr("src", src);
+                    $(".description-infographics a").attr("href", src);
+                }else{
+                    $(".description-infographics").remove();
+                }
+            });
+
+
+
+    }
+*/
 
 }
