@@ -4070,7 +4070,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 .social-buttons-wrapper .watchdog-active {}
 
 #watchdog-form {
-  padding: 40px;
+  padding: 50px 40px;
 }
 
 .watchdog-title {
@@ -4088,12 +4088,22 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   border: 1px solid #E7EEEC;
   margin: 20px 0;
   display: flex;
+  position: relative;
+}
+#watchdog-form .watchdog-row:nth-child(4) input{
+  position: absolute;
+}
+#watchdog-form .watchdog-row:nth-child(4) label{
   padding: 10px;
+  padding-left: 50px;
+  display: flex;
 }
 #watchdog-form .watchdog-row:nth-child(5), #watchdog-form .watchdog-row:nth-child(6)  {
   display: none;
 }
-
+#watchdog-form .watchdog-row:nth-child(7) label{
+  padding-bottom: 10px;
+} 
 #watchdog-form .watchdog-action-buttons{
   margin-top: 20px;
   width: 100%;
