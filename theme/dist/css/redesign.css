@@ -2059,6 +2059,9 @@ div.hidden-split-parameter {
     top: 55px;
     border-top: 1px solid #F3F6F5;
     background: #fff;
+    height: 50px;
+    display: flex;
+    width: 100%;
     box-shadow: 0px 4px 15px rgb(46 82 61 / 3%);
   }
 }
