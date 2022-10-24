@@ -4080,13 +4080,25 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 #watchdog-form select {
   width: 100%;
 }
-
+#watchdog-form .watchdog-row label{
+  padding: 0;
+  margin: 0;
+}
+#watchdog-form .watchdog-row:nth-child(4){
+  border: 1px solid #E7EEEC;
+  margin: 20px 0;
+  display: flex;
+  padding: 10px;
+}
 #watchdog-form .watchdog-row:nth-child(5), #watchdog-form .watchdog-row:nth-child(6)  {
   display: none;
 }
 
 #watchdog-form .watchdog-action-buttons{
   margin-top: 20px;
+  width: 100%;
+}
+#watchdog-form .watchdog-action-buttons .btn{
   width: 100%;
 }
 
