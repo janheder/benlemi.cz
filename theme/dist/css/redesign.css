@@ -4157,6 +4157,10 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   margin: 15px 0 20px 0;
 }
 
+.p-detail-subheader .p-code{
+  display: flex;
+}
+
 .p-detail-header h1 {
   color: #2E523D;
   margin-bottom: 30px;

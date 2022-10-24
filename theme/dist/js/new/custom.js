@@ -272,7 +272,7 @@ var p_tags = $(".flags-default").html();
 var p_name = $(".p-detail-inner-header h1").html();
 var p_stars = $(".stars-wrapper").html();
 var p_code = $(".p-detail-inner-header .p-code").html();
-if($(".flag.flag-premium").lenght){
+if($(".flag.flag-premium").length){
     var p_tagPremium = $(".flag.flag-premium").html()
     var p_tagPremiumClean = "<span class='flag flag-premium'>" + p_tagPremium + "</span>";
 }else{
