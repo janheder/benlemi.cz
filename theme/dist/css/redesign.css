@@ -4092,10 +4092,12 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 }
 #watchdog-form .watchdog-row:nth-child(4) input{
   position: absolute;
+  left: 15px;
+    top: 15px;
 }
 #watchdog-form .watchdog-row:nth-child(4) label{
   padding: 10px;
-  padding-left: 50px;
+  padding-left: 40px;
   display: flex;
 }
 #watchdog-form .watchdog-row:nth-child(5), #watchdog-form .watchdog-row:nth-child(6)  {
