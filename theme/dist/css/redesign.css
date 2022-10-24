@@ -4070,14 +4070,14 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
 
 .watchdog-form .link-icon.watchdog{
   display: inline-flex;
-    padding: 6px 10px;
+    padding: 10px 25px;
     padding-left: 50px;
     border: 1px solid #E7EEEC;
-    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/doggo.svg");
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/message-stock.svg");
     background-repeat: no-repeat;
     left: 14px;
     top: 5px;
-    background-position: center left 14px;
+    background-position: center left 20px;
     display: none;
 }
 
