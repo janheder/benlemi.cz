@@ -2040,6 +2040,7 @@ div.hidden-split-parameter {
     z-index: 3;
   }
   .header-top::before{
+    content: "";
     left: 5px;
     bottom: 5px;
     top: 5px;
