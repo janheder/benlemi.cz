@@ -4110,3 +4110,15 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
   background-repeat: no-repeat;
   margin-right: 5px;
 }
+
+
+.p-detail-subheader{
+  display: flex;
+  margin-bottom: 20px;
+}
+.p-detail-subheader .stars-label{
+  display: none;
+}
+.p-detail-subheader .star-list{
+  margin-right: 5px;
+}
