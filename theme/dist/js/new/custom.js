@@ -272,11 +272,16 @@ var p_tags = $(".flags-default").html();
 var p_name = $(".p-detail-inner-header h1").html();
 var p_stars = $(".stars-wrapper").html();
 var p_code = $(".p-detail-inner-header .p-code").html();
+if($(".flag.flag-premium").lenght){
+    var p_tagPremium = $(".flag.flag-premium").html()
+    var p_tagPremiumClean = "<span class='flag flag-premium'>" + p_tagPremium + "</span>";
+}else{
+    var p_tagPremiumClean = "";
+}
 
-var p_tagPremium = $(".flag.flag-premium").html();
 
 
-$("<div class='p-detail-tags'>" + p_tags + "</div><div class='p-detail-header'><h1>" + p_name + "</h1></div><div class='p-detail-subheader'><span class='flag flag-premium'>" + p_tagPremium + "</span>" + p_stars + "<span class='p-code'>" + p_code + "</span></div>").insertBefore(".p-final-price-wrapper");
+$("<div class='p-detail-tags'>" + p_tags + "</div><div class='p-detail-header'><h1>" + p_name + "</h1></div><div class='p-detail-subheader'>" + p_tagPremiumClean + p_stars + "<span class='p-code'>" + p_code + "</span></div>").insertBefore(".p-final-price-wrapper");
 
 
 
