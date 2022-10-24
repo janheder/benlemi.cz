@@ -276,7 +276,7 @@ var p_code = $(".p-detail-inner-header .p-code").html();
 var p_tagPremium = $(".flag.flag-premium").html();
 
 
-$("<div class='p-detail-tags'>" + p_tags + "</div><div class='p-detail-header'><h1>" + p_name + "</h1></div><div class='p-detail-subheader'><span class='flag flag-premium'>" + p_tagPremium + "</span>" + p_stars + p_code + "</div>").insertBefore(".p-final-price-wrapper");
+$("<div class='p-detail-tags'>" + p_tags + "</div><div class='p-detail-header'><h1>" + p_name + "</h1></div><div class='p-detail-subheader'><span class='flag flag-premium'>" + p_tagPremium + "</span>" + p_stars + "<span class='p-code'>" + p_code + "</span></div>").insertBefore(".p-final-price-wrapper");
 
 
 
