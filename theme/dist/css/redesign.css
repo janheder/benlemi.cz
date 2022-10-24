@@ -4045,9 +4045,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   padding: 0 15px;
 }
 
-#colorbox #cboxClose {
-  background-size: 10px;
-}
+
 
 .social-buttons-wrapper {
   display: flex;
@@ -4072,12 +4070,13 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   width: 100%;
 }
 
-#watchdog-form .watchdog-row {
+#watchdog-form .watchdog-row:nth-child(5), #watchdog-form .watchdog-row:nth-child(6)  {
   display: none;
 }
 
-#watchdog-form .watchdog-row:first-child {
-  display: none;
+#watchdog-form .watchdog-action-buttons{
+  margin-top: 20px;
+  width: 100%;
 }
 
 #watchdog-form .watchdog-row .disclaimer {
@@ -4088,14 +4087,15 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   display: inline-flex;
   padding: 15px 30px;
   padding-left: 75px;
-  border: 1px solid #E7EEEC;
-  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/message-stock.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/message-stock-white.svg");
   background-repeat: no-repeat;
-  left: 14px;
+  left: 15px;
   top: 5px;
   background-position: center left 30px;
   display: none;
   margin-top: 30px;
+  color: white;
+    background: #78aa66;
 
 }
 
@@ -4176,4 +4176,14 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
     line-height: 1.2;
   }
 
+}
+
+#colorbox #cboxClose {
+  height: 48px;
+  width: 48px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 10px solid white;
+  background-size: 10px;
 }
