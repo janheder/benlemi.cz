@@ -4031,16 +4031,17 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
 
 .social-buttons-wrapper{
   display: flex;
+  order: 90;
 }
 
 .social-buttons-wrapper .link-icon.print, .social-buttons-wrapper .js-share-buttons-trigger, .social-buttons-wrapper .link-icon.chat{
   display: none
 }
 .social-buttons-wrapper .watchdog-active{
-  order: 90;
+
 }
 
-.watchdog-form{
+#watchdog-form{
   padding: 40px;
 }
 .watchdog-title{
@@ -4058,6 +4059,20 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
 .watchdog-form .watchdog-row .disclaimer{
   display: none;
 }
+
+.watchdog-form .link-icon.watchdog{
+  display: inline-flex;
+    padding: 6px 10px;
+    padding-left: 50px;
+    border: 1px solid #E7EEEC;
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/doggo.svg");
+    background-repeat: no-repeat;
+    left: 14px;
+    top: 5px;
+    background-position: center left 14px;
+    display: none;
+}
+
 
 .type-product #descriptionLong::before{
   content: none;
