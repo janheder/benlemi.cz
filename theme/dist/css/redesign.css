@@ -4111,14 +4111,21 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
   margin-right: 5px;
 }
 
+.p-detail-tags{
+  
+}
+.p-detail-tags .flag-premium{
+  display: none;
+}
 
 .p-detail-subheader{
   display: flex;
   margin-bottom: 20px;
+  font-size: 13px;
 }
 .p-detail-subheader .stars-label{
   display: none;
 }
 .p-detail-subheader .star-list{
-  margin-right: 5px;
+  margin-right: 15px;
 }

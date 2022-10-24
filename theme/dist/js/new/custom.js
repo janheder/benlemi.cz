@@ -273,7 +273,10 @@ var p_name = $(".p-detail-inner-header h1").html();
 var p_stars = $(".stars-wrapper").html();
 var p_code = $(".p-detail-inner-header .p-code").html();
 
-$("<div class='p-detail-tags'>" + p_tags + "</div><div class='p-detail-header'><h1>" + p_name + "</h1></div><div class='p-detail-subheader'>" + p_stars + p_code + "</div>").insertBefore(".p-final-price-wrapper");
+var p_tagPremium = $(".flag.flag-premium").html();
+
+
+$("<div class='p-detail-tags'>" + p_tags + "</div><div class='p-detail-header'><h1>" + p_name + "</h1></div><div class='p-detail-subheader'>" + p_tagPremium + p_stars + p_code + "</div>").insertBefore(".p-final-price-wrapper");
 
 
 
