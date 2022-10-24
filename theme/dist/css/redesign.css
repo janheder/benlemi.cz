@@ -4081,6 +4081,7 @@ select.hidden-split-parameter[data-parameter-name='Barva']{
     top: 5px;
     background-position: center left 20px;
     display: none;
+    margin-top: 30px;
 }
 
 
