@@ -274,8 +274,10 @@ var p_stars = $("p-detail-inner .stars-wrapper").html();
 var p_code = $(".p-detail-inner-header .p-code").html();
 if($(".flag.flag-premium").length){
     var p_tags = $(".p-detail-inner .flags-default").html();
+    var p_tagsCeleam = "<div class='p-detail-tags'>" + p_tags + "</div>";
+
 }else{
-    var p_tags = "";
+    var tagsCeleams = "";
 }
 
 if($(".flag.flag-premium").length){
@@ -287,7 +289,7 @@ if($(".flag.flag-premium").length){
 
 
 
-$("<div class='p-detail-tags'>" + p_tags + "</div><div class='p-detail-header'><h1>" + p_name + "</h1></div><div class='p-detail-subheader'>" + p_tagPremiumClean + p_stars + "<span class='p-code'>" + p_code + "</span></div>").insertBefore(".p-final-price-wrapper");
+$(p_tagsCeleam + "<div class='p-detail-header'><h1>" + p_name + "</h1></div><div class='p-detail-subheader'>" + p_tagPremiumClean + p_stars + "<span class='p-code'>" + p_code + "</span></div>").insertBefore(".p-final-price-wrapper");
 
 
 
