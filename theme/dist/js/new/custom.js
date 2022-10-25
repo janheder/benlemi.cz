@@ -268,17 +268,25 @@ $(".user-action-cart").insertAfter(".header-top .cart-count");
 // -----------------------------------------------------------------------------
 
 
-
-var p_name = $(".p-detail-inner-header h1").html();
-var p_stars = $("p-detail-inner .stars-wrapper").html();
-var p_code = $(".p-detail-inner-header .p-code").html();
-if($(".flag.flag-premium").length){
+if($(".flag").length){
     var p_tags = $(".p-detail-inner .flags-default").html();
     var p_tagsClean = "<div class='p-detail-tags'>" + p_tags + "</div>";
 
 }else{
     var p_tagsClean = "<div class='p-detail-tags --hidden'></div>";
 }
+
+var p_name = $(".p-detail-inner-header h1").html();
+
+if($(".p-detail-inner .stars-wrapper").length){
+    var p_stars = $(".p-detail-inner .stars-wrapper").html();
+}else{
+    var p_stars = "";
+}
+
+var p_code = $(".p-detail-inner-header .p-code").html();
+
+
 
 if($(".flag.flag-premium").length){
     var p_tagPremium = $(".flag.flag-premium").html()
