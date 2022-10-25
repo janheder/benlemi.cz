@@ -292,7 +292,7 @@ if($(".flag.flag-premium").length){
     var p_tagPremium = $(".flag.flag-premium").html()
     var p_tagPremiumClean = "<span class='flag flag-premium'>" + p_tagPremium + "</span>";
 }else{
-    var p_tagPremiumClean = "<span class='flag flag-premium -hidden'></span>";
+    var p_tagPremiumClean = "<span class='flag flag-premium --hidden'></span>";
 }
 
 
