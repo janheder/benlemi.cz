@@ -277,14 +277,14 @@ if($(".flag.flag-premium").length){
     var p_tagsClean = "<div class='p-detail-tags'>" + p_tags + "</div>";
 
 }else{
-    var p_tagsClean = "";
+    var p_tagsClean = "<div class='p-detail-tags --hidden'></div>";
 }
 
 if($(".flag.flag-premium").length){
     var p_tagPremium = $(".flag.flag-premium").html()
     var p_tagPremiumClean = "<span class='flag flag-premium'>" + p_tagPremium + "</span>";
 }else{
-    var p_tagPremiumClean = "";
+    var p_tagPremiumClean = "<span class='flag flag-premium -hidden'></span>";
 }
 
 
