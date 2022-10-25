@@ -4165,7 +4165,9 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   background-size: 10px;
 }
 
-.p-detail-tags {}
+.p-detail-tags {
+  margin-bottom: 15px;
+}
 
 .p-detail-tags .flag-premium {
   display: none;
@@ -4198,7 +4200,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 }
 
 .p-detail-header {
-  margin: 15px 0 20px 0;
+  margin: px 0 20px 0;
 }
 
 .p-detail-subheader .p-code{
