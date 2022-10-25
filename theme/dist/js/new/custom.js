@@ -268,7 +268,7 @@ $(".user-action-cart").insertAfter(".header-top .cart-count");
 // -----------------------------------------------------------------------------
 
 
-if($(".flag").length){
+if($(".p-detail-inner .flag").length){
     var p_tags = $(".p-detail-inner .flags-default").html();
     var p_tagsClean = "<div class='p-detail-tags'>" + p_tags + "</div>";
 
