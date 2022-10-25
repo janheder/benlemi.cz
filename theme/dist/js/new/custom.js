@@ -268,10 +268,16 @@ $(".user-action-cart").insertAfter(".header-top .cart-count");
 // -----------------------------------------------------------------------------
 
 
-var p_tags = $(".p-detail-inner .flags-default").html();
+
 var p_name = $(".p-detail-inner-header h1").html();
 var p_stars = $("p-detail-inner .stars-wrapper").html();
 var p_code = $(".p-detail-inner-header .p-code").html();
+if($(".flag.flag-premium").length){
+    var p_tags = $(".p-detail-inner .flags-default").html();
+}else{
+    var p_tags = "";
+}
+
 if($(".flag.flag-premium").length){
     var p_tagPremium = $(".flag.flag-premium").html()
     var p_tagPremiumClean = "<span class='flag flag-premium'>" + p_tagPremium + "</span>";
