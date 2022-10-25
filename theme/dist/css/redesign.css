@@ -2063,6 +2063,7 @@ div.hidden-split-parameter {
     display: flex;
     width: 100%;
     box-shadow: 0px 4px 15px rgb(46 82 61 / 3%);
+    z-index: -1;
   }
 }
 
