@@ -4234,3 +4234,9 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   border: 10px solid white;
   background-size: 10px;
 }
+
+@media screen and (min-width: 992px){
+.p-detail-tabs-wrapper .responsive-nav {
+    z-index: 1;
+}
+}
