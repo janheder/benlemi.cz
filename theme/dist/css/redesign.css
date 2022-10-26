@@ -4185,6 +4185,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   font-size: 13px;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 15px;
 }
 
 .p-detail-subheader .stars-label {
