@@ -34,7 +34,7 @@
   position: relative;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .main-header-nav>a::after, .main-header-nav>li>a::after {
     content: "";
     background: #F3F6F5;
