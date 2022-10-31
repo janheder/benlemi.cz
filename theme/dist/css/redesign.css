@@ -32,16 +32,25 @@
   padding: 5px 30px;
   height: 100%;
   position: relative;
-
 }
 
-.main-header-nav>a::after, .main-header-nav>li>a::after {
-  content: "";
-  background: #F3F6F5;
-  width: 1px;
-  height: 26px;
-  right: 0px;
-  position: absolute;
+@media screen and (max-width: 992px) {
+  .main-header-nav>a::after, .main-header-nav>li>a::after {
+    content: "";
+    background: #F3F6F5;
+    width: 1px;
+    height: 26px;
+    right: 0px;
+    position: absolute;
+  }
+  .main-header-nav>li.ext>a::before{
+    content: "";
+      background: #F3F6F5;
+      width: 1px;
+      height: 26px;
+      right: 0px;
+      position: absolute;
+  }
 }
 
 .main-header-nav>li:last-child>a::after {
@@ -134,9 +143,7 @@
     display: none !important;
   }
 
-  .main-header-nav>a::after, .main-header-nav>li>a::after {
-    content: none;
-  }
+
 }
 
 
