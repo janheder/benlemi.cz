@@ -2065,6 +2065,9 @@ div.hidden-split-parameter {
     box-shadow: 0px 4px 15px rgb(46 82 61 / 3%);
     z-index: -1;
   }
+  .ordering-process .header-top::before, .ordering-process .header-top::after{
+    content: none;
+  }
 }
 
 
