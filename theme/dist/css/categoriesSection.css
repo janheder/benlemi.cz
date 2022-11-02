@@ -102,7 +102,9 @@
         flex-direction: column;
         padding: 10px 10px;
     }
-
+    .categoriesSection__single p{
+        display: none;
+    }
     .categoriesSection__thumb {
         margin: 0;
         height: 50px;
