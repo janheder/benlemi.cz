@@ -293,7 +293,7 @@ if($(".flag.flag-premium").length){
     var p_tagPremiumClean = "<span class='flag flag-premium'>" + p_tagPremium + "</span>";
 }
 else if($(".flag.flag-exclusive").length){
-    var p_tagPremium = $(".flag.exclusive").html()
+    var p_tagPremium = $(".flag.flag-exclusive").html()
     var p_tagPremiumClean = "<span class='flag flag-exclusive'>" + p_tagPremium + "</span>";
 }
 else{
