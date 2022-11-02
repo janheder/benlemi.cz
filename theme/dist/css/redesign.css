@@ -606,8 +606,11 @@ h1, h2, h3, h4, h5 {
 .top-nav-button-login {
   color: white;
   margin-left: 20px;
-  padding-left: 20px;
+  padding-left: 48px;
   border-left: 1px solid rgba(255, 255, 255, 0.15);
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/user-new.svg");
+  background-size: 14px;
+  background-position: center left 20px;
 }
 
 .top-nav-button-login:hover {
