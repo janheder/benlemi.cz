@@ -296,6 +296,13 @@ if($(".flag.flag-premium").length){
 }
 
 
+if($(".flag.flag-exclusive").length){
+    var p_tagExclusive = $(".flag.flag-exclusive").html()
+    var p_tagExclusiveClean = "<span class='flag flag-exclusive'>" + p_tagExclusive + "</span>";
+}else{
+    var p_tagExclusiveClean = "<span class='flag flag-exclusive --hidden'></span>";
+}
+
 
 $(p_tagsClean + "<div class='p-detail-header'><h1>" + p_name + "</h1></div><div class='p-detail-subheader'>" + p_tagPremiumClean + p_stars + "<span class='p-code'>" + p_code + "</span></div>").insertBefore(".p-final-price-wrapper");
 

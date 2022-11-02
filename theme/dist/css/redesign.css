@@ -2571,7 +2571,7 @@ body.--showFilters .sidebar-left {
   }
 }
 
-.flag.flag-premium {
+.flag.flag-premium, .flag.flag-exclusive {
   background-color: #8FB781;
   color: white;
   height: 25px;
@@ -2584,7 +2584,7 @@ body.--showFilters .sidebar-left {
   margin-right: 20px;
 }
 
-.p-detail-inner-header .flag.flag-premium {
+.p-detail-inner-header .flag.flag-premium, .p-detail-inner-header .flag.flag-exclusive {
   display: flex;
 }
 
@@ -3027,8 +3027,8 @@ select.form-control, select.form-control:valid {
   font-style: normal;
 }
 
-.votes-wrap.admin-response {
-  background: linear-gradient(0deg, #F7FAF9 0%, rgba(255, 255, 255, 1) 100%);
+.votes-wrap.admin-response, .votes-wrap.admin-response .vote-wrap {
+  background: white;
 
 }
 
@@ -4179,14 +4179,14 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   margin-bottom: 15px;
 }
 
-.p-detail-tags .flag-premium {
+.p-detail-tags .flag-premium, .p-detail-tags .flag-exclusive {
   display: none;
 }
 
 .p-detail-tags.--hidden{
   display: none;
 }
-.p-detail-subheader .flag-premium.--hidden{
+.p-detail-subheader .flag-premium.--hidden, .p-detail-subheader .flag-exclusive.--hidden{
   display: none;
 }
 .p-detail-subheader {
@@ -4206,7 +4206,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   margin-right: 15px;
 }
 
-.p-detail-subheader .flag-premium {
+.p-detail-subheader .flag-premium, .p-detail-subheader .flag-exclusive {
   margin-right: 15px;
 }
 
