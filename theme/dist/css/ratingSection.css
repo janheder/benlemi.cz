@@ -192,4 +192,11 @@
     #ratingSection .vote-content {
         line-height: 1.3;
     }
+    #ratingSection .rating-content-text{
+        flex-direction: column;
+    }
+    #ratingSectionCount{
+        border: 0;
+        margin: 0;
+    }
 }
