@@ -416,17 +416,18 @@ if ($("#relatedFiles").length){
         $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
 
 
-        function loadInfographics(){ 
+        if($("#relatedFiles > li").length == 1){
+            var src = $('#relatedFiles a').attr("href");
+            $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
+            $(".description-infographics img").attr("src", src);
+            $(".description-infographics a").attr("href", src);
+            
+        }else{
+            function loadInfographics(){ 
 
-            $(".description-infographics").remove();
-
-            if($("#relatedFiles > li").length == 1){
-                var src = $('#relatedFiles a').attr("href");
-                $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
-                $(".description-infographics img").attr("src", src);
-                $(".description-infographics a").attr("href", src);
-                
-            }else{
+                $(".description-infographics").remove();
+    
+    
                 let pickedOptions = '';
                 $('.variant-list select').each(function () {
                     pickedOptions +=  $(this).find("option:selected").text().replace(/ cm/i,'').replace(/ x /i,'x');
@@ -445,18 +446,13 @@ if ($("#relatedFiles").length){
                 }
     
             }
-
-
-
-
+        
+        
+            document.addEventListener('shoptet.products.replaceImage', function () {
+                loadInfographics();
+            },{passive: true});
         }
-    
-    
-        document.addEventListener('shoptet.products.replaceImage', function () {
-            loadInfographics();
-        },{passive: true});
-    
-    
+
 }
 
 
@@ -995,7 +991,7 @@ if ($(":lang(sk)").length){
 
     $(".in-krok-2 .next-step button").text("Odoslať objednávku");
 
-    
+
     $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
 
     if ($(".login.toggle-window").length) {
