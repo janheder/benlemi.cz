@@ -424,7 +424,7 @@ if ($("#relatedFiles").length){
     
             }); 
             var pickedOptionsClean = pickedOptions.replace(/.$/,"");
-            alert(pickedOptionsClean);
+            /*alert(pickedOptionsClean);*/
             var src = $('#relatedFiles a[title*="' + pickedOptionsClean + '"]').attr("href");
             if(typeof src != 'undefined'){
                 $(".description-infographics.empty").remove();
