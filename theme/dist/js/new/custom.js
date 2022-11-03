@@ -993,42 +993,9 @@ if ($(":lang(sk)").length){
     });
 
 
-
-
     $(".in-krok-2 .next-step button").text("Odoslať objednávku");
 
-
-    if ($("#relatedFiles").length) {
-
-        if ($('main select[data-parameter-name="Varianta"]').length) {
-            $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
-        }
-
-        $('main select[data-parameter-name="Varianta"]').change(function () {
-            $(".description-infographics").remove();
-
-
-            if ($('main select[data-parameter-name="Varianta"] option:selected').text() == 'Bez prídavných nôh navyše') {
-                $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
-                $(".description-infographics img").attr("src", "https://www.benlemi.cz/user/documents/upload/Infografiky produkty/Dětský nábytek/Stolky a ždiličky/Nanoc/nanoc bez foots.jpg");
-                $(".description-infographics a").attr("href", "https://www.benlemi.cz/user/documents/upload/Infografiky produkty/Dětský nábytek/Stolky a ždiličky/Nanoc/nanoc bez foots.jpg");
-            }
-            else {
-                var option = $('main select[data-parameter-name="Varianta"] option:selected').text();
-                var optionClean = option.replace(/[Navyšeprídavnénohycm]/g, '').replace(/\s/g, '').split('(', 1);
-                var src = $('#relatedFiles a[title*="' + optionClean + '"]').attr("href");
-                if (typeof src != 'undefined') {
-                    $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
-                    $(".description-infographics img").attr("src", src);
-                    $(".description-infographics a").attr("href", src);
-                } else {
-                    $(".description-infographics").remove();
-                }
-            }
-        });
-    }
-
-
+    
     $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
 
     if ($(".login.toggle-window").length) {
@@ -1042,17 +1009,6 @@ if ($(":lang(sk)").length){
     }
 
     $('.detail-parameters tr th:contains("Rozměr:"), .detail-parameters tr th:contains("Tvar:")').parents('tr').remove();
-
-
-
-
-
-
-    if ($(".in-matrace, .in-matrac-klasickych-i-atypickych-rozmerov ").length) {
-        var img = $("#relatedFiles a").attr("href");
-        $(".extended-description").append('<div class="description-infographics-matrace"><img src="' + img + '"></div>')
-    }
-
 
 
 }
@@ -1117,34 +1073,6 @@ if ($(":lang(cs)").length){
 
     }
 
-/*
-    if ($("#relatedFiles").length) {
 
-
-            $('main select[data-parameter-name="Varianta"]').change(function() {
-                $(".description-infographics").remove();
-
-
-                var option = $('main select[data-parameter-name="Rozměr"] option:selected').text(); 
-                var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'').split('(', 1);;
-
-                var option2 = $('main select[data-parameter-name="Varianta"] option:selected').text(); 
-                var optionClean2 = option.replace(/\s/g,'');
-
-
-                var src = $('#relatedFiles a[title*="' + optionClean + ';' + option2 + '"]').attr("href");
-                if(typeof src != 'undefined'){
-                    $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
-                    $(".description-infographics img").attr("src", src);
-                    $(".description-infographics a").attr("href", src);
-                }else{
-                    $(".description-infographics").remove();
-                }
-            });
-
-
-
-    }
-*/
 
 }
