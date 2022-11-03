@@ -1146,6 +1146,7 @@ body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
 
 .login-close {
   background-color: transparent;
+  background-size: 10px;
 }
 
 .password-helper {
@@ -4255,4 +4256,10 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 .p-detail-tabs-wrapper .responsive-nav {
     z-index: 1;
 }
+}
+
+.in-kosik .cart-table .p-availability, .in-cart .cart-table .p-availability, .in-cos-de-cumparaturi .cart-table .p-availability, .in-kosar .cart-table .p-availability{
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
