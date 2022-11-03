@@ -2586,7 +2586,10 @@ body.--showFilters .sidebar-left {
   background-repeat: no-repeat;
   margin-right: 20px;
 }
-
+.flag.flag-premium, .flag.flag-exclusive {
+  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/symbol-exclusive.svg");
+  padding-left: 79px;
+}
 .p-detail-inner-header .flag.flag-premium, .p-detail-inner-header .flag.flag-exclusive {
   display: flex;
 }
