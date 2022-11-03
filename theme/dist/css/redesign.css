@@ -252,7 +252,7 @@
   body.--showFilters #products {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  body.--showFilters .type-category .content{
+  body.type-category.--showFilters .content{
     width: 75%;
   }
 }
