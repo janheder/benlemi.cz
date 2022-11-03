@@ -417,26 +417,38 @@ if ($("#relatedFiles").length){
 
 
         function loadInfographics(){ 
-            
+
             $(".description-infographics").remove();
 
-            let pickedOptions = '';
-            $('.variant-list select').each(function () {
-                pickedOptions +=  $(this).find("option:selected").text().replace(/ cm/i,'').replace(/ x /i,'x');
-                pickedOptions += ";";
-    
-            }); 
-            var pickedOptionsClean = pickedOptions.replace(/.$/,"");
-            /*alert(pickedOptionsClean);*/
-            var src = $('#relatedFiles a[title*="' + pickedOptionsClean + '"]').attr("href");
-            if(typeof src != 'undefined'){
-                
+            if($("#relatedFiles > li").length == 1){
+                var src = $('#relatedFiles a').attr("href");
                 $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
                 $(".description-infographics img").attr("src", src);
                 $(".description-infographics a").attr("href", src);
+                
             }else{
-                $(".description-infographics").remove();
+                let pickedOptions = '';
+                $('.variant-list select').each(function () {
+                    pickedOptions +=  $(this).find("option:selected").text().replace(/ cm/i,'').replace(/ x /i,'x');
+                    pickedOptions += ";";
+        
+                }); 
+                var pickedOptionsClean = pickedOptions.replace(/.$/,"");
+                var src = $('#relatedFiles a[title*="' + pickedOptionsClean + '"]').attr("href");
+                if(typeof src != 'undefined'){
+                    
+                    $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
+                    $(".description-infographics img").attr("src", src);
+                    $(".description-infographics a").attr("href", src);
+                }else{
+                    $(".description-infographics").remove();
+                }
+    
             }
+
+
+
+
         }
     
     
