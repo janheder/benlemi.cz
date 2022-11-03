@@ -252,6 +252,9 @@
   body.--showFilters #products {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  body.--showFilters .type-category .content{
+    width: 75%;
+  }
 }
 
 #filterToggleDesktop {
