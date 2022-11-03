@@ -417,6 +417,7 @@ if ($("#relatedFiles").length){
 
 
         if($("#relatedFiles > li").length == 1){
+            $(".description-infographics").remove();
             var src = $('#relatedFiles a').attr("href");
             $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
             $(".description-infographics img").attr("src", src);
