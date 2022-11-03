@@ -383,6 +383,8 @@ if ($("#p-detail-tabs").length){
 }
 
 /* load infographic images into parameters */
+
+/*
 if ($("#relatedFiles").length){
     
     if($('main select[data-parameter-name="' + g_propositions + '"]').length){
@@ -407,6 +409,39 @@ if ($("#relatedFiles").length){
             $(".description-infographics").remove();
         }
     });
+}
+*/
+if ($("#relatedFiles").length){
+
+        $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
+
+
+        function loadInfographics(){ 
+            let pickedOptions = '';
+            $('.variant-list select').each(function () {
+                pickedOptions +=  $(this).find("option:selected").text().replace(/ cm/i,'').replace(/ x /i,'x');
+                pickedOptions += ";";
+    
+            }); 
+            var pickedOptionsClean = pickedOptions.replace(/.$/,"");
+            alert(pickedOptionsClean);
+            var src = $('#relatedFiles a[title*="' + pickedOptionsClean + '"]').attr("href");
+            if(typeof src != 'undefined'){
+                $(".description-infographics.empty").remove();
+                $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
+                $(".description-infographics img").attr("src", src);
+                $(".description-infographics a").attr("href", src);
+            }else{
+                $(".description-infographics").remove();
+            }
+        }
+    
+    
+        document.addEventListener('shoptet.products.replaceImage', function () {
+            loadInfographics();
+        },{passive: true});
+    
+    
 }
 
 
