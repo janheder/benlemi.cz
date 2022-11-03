@@ -577,6 +577,8 @@ h1, h2, h3, h4, h5 {
 
 .top-navigation-bar-menu a {
   margin-left: 20px;
+  color: white;
+  font-weight: 400;
 }
 
 .top-navigation-bar-menu-helper {
@@ -587,10 +589,6 @@ h1, h2, h3, h4, h5 {
   content: none
 }
 
-.top-navigation-bar-menu a {
-  color: white;
-  font-weight: 500;
-}
 
 .top-navigation-tools {
   display: flex;
