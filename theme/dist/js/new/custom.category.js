@@ -2,19 +2,6 @@
 // PRODUCT CATEGORY
 // -----------------------------------------------------------------------------
 
-/* relocate heading and categories 
-if ($(".type-category").length){
-    $(".category-title").insertBefore(".content-wrapper-in");
-    $(".subcategories").insertAfter(".category-title");
-    $(".category-perex").insertAfter(".category-title");
-}
-*/
-
-
-if ($(".type-category").length){
-    $(".sidebar.sidebar-left").insertBefore(".category-content-wrapper");
-}
-
 
 /* rename show more button */;
 if ($(".pagination-loader").length){
