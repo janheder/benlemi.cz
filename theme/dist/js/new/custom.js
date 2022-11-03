@@ -417,6 +417,9 @@ if ($("#relatedFiles").length){
 
 
         function loadInfographics(){ 
+            
+            $(".description-infographics").remove();
+
             let pickedOptions = '';
             $('.variant-list select').each(function () {
                 pickedOptions +=  $(this).find("option:selected").text().replace(/ cm/i,'').replace(/ x /i,'x');
@@ -427,7 +430,7 @@ if ($("#relatedFiles").length){
             /*alert(pickedOptionsClean);*/
             var src = $('#relatedFiles a[title*="' + pickedOptionsClean + '"]').attr("href");
             if(typeof src != 'undefined'){
-                $(".description-infographics.empty").remove();
+                
                 $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
                 $(".description-infographics img").attr("src", src);
                 $(".description-infographics a").attr("href", src);
