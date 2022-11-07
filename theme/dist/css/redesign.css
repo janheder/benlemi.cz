@@ -4208,19 +4208,14 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 15px;
+  gap: 10px;
 }
 
 .p-detail-subheader .stars-label {
   display: none;
 }
 
-.p-detail-subheader .star-list {
-  margin-right: 15px;
-}
 
-.p-detail-subheader .flag-premium, .p-detail-subheader .flag-exclusive {
-  margin-right: 15px;
-}
 
 .p-detail-header {
   margin: px 0 20px 0;
