@@ -22,6 +22,15 @@ function productCardEdit(){
         });
     }
 
+
+    if ($(".product").length){
+        $(".product").each(function(){
+            $(this).find(".widget-parameter-wrapper").insertAfter($(this).find(".name"));
+        });
+    }
+    
+
+
     /* relocate flags on mobile */
 
     if ($(".product").length){

@@ -384,11 +384,13 @@ body {
   font-size: 14px;
   line-height: 1;
 }
-
+.p .ratings-wrapper{
+  margin-bottom: 5px;
+}
 .p .availability {
   font-size: 14px;
   line-height: 1.2;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .p .flags.flags-extra {

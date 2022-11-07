@@ -1,0 +1,26 @@
+.widget-parameter-wrapper {
+    order: 2;
+}
+.widget-parameter-list{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    font-size: 0;
+}
+.widget-parameter-value a{
+    display: flex;
+    height: 18px;
+    width: 18px;
+    background: white;
+    border-radius: 50%;
+}
+/* CZ */
+
+
+
+/* SK */
+
+.widget-parameter-value a[data-value-id="24"]{
+    background: #fff;
+}
