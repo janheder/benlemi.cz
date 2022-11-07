@@ -5,6 +5,7 @@
     margin: 0;
     list-style: none;
     display: flex;
+    gap: 4px;
     padding: 0;
     font-size: 0;
 }
@@ -23,6 +24,7 @@
 
 html:lang(sk) .widget-parameter-value a[data-value-id="24"]{
     background: #fff;
+    border: 1px solid #E7EEEC;
 }
 html:lang(sk) .widget-parameter-value a[data-value-id="42"]{
     background: #f1ebe2;
