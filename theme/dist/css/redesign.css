@@ -4266,3 +4266,14 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   align-items: center;
   font-size: 14px;
 }
+
+#register-form .btn-login{
+  background: #CF4823;
+  text-transform: uppercase;
+  height: 50px;
+  font-size: 15px;
+}
+
+.in-login .content-inner{
+  margin-bottom: 40px;
+}
