@@ -3526,7 +3526,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 
 
 .ordering-process .content-wrapper-in {
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .ordering-process .cart-header~.content-wrapper-in {
@@ -3680,8 +3680,11 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 }
 
 #order-shipping-methods .show-tooltip {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  font-size: 14px;
+  height: 15px;
+  margin-top: 2px;
+  background: #78aa66;
 }
 
 @media screen and (max-width: 991px) {
@@ -3849,11 +3852,6 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   content: "Přihlaste se";
   font-size: 15px;
 }
-
-#order-shipping-methods .show-tooltip {
-  background: #78aa66;
-}
-
 .before-carousel .banner-wrapper a img {
   object-fit: contain;
 }
