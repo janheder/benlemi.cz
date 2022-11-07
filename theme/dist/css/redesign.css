@@ -3077,11 +3077,17 @@ select.form-control, select.form-control:valid {
 .thumbnailsShowMore-inner {
   background: #f7faf9;
 }
+.news-item time {
+  top: 10px;
+  right: 10px;
+}
 
 @media screen and (max-width: 767px) {
   .news-item time {
     padding: 0;
     line-height: 1;
+    top: 0;
+    right: 0;
   }
 
   .news-item .title {
@@ -3627,10 +3633,6 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   display: none;
 }
 
-.news-item time {
-  top: 10px;
-  right: 10px;
-}
 
 .id-404 .content-inner header h1 {
   display: none;
