@@ -18,7 +18,7 @@
     border-radius: 50%;
 }
 
-.p-variants{
+.p-in-in .name .p-variants:last-child{
     display: none;
 }
 
@@ -76,4 +76,7 @@ html:lang(sk) .widget-parameter-value a[data-value-id="675"]{
 }
 html:lang(sk) .widget-parameter-value a[data-value-id="672"]{
     background: #dc3a3c;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="1578"]{
+    background: #90f4e3;
 }
