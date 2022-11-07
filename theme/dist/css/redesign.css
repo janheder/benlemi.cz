@@ -2315,14 +2315,14 @@ div.hidden-split-parameter {
     display: none;
   }
 
-  .ordering-process .header-top .header-contacts {
-    display: flex;
-  }
 
   .ordering-process .header-contacts a {
     padding: 2px;
     padding-left: 30px;
   }
+}
+.ordering-process .header-top .header-contacts {
+  display: flex;
 }
 
 
@@ -4273,4 +4273,23 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 
 .in-login .content-inner{
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 991px){
+  .navigation-buttons {
+    display: none;
+  }
+  .ordering-process .header-contacts{
+    padding-right: 15px;
+  }
+  .header-contacts a{
+    padding: 0;
+    padding-left: 30px;
+  }
+}
+.header-contacts a{
+  color: #2E523D;
+}
+.co-box>h4{
+  color: #2E523D;
 }
