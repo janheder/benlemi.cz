@@ -2332,6 +2332,10 @@ div.hidden-split-parameter {
   height: 32px;
   background-color: #F7FAF9;
   background-size: 8px;
+  transition: 0.3s ease all
+}
+.ordering-process .cart-table .remove-item:hover{
+  transform: rotate(90deg);
 }
 
 .menu-level-1>li>a>b {
@@ -4276,7 +4280,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 }
 
 @media screen and (max-width: 991px){
-  .navigation-buttons {
+  .ordering-process .navigation-buttons {
     display: none;
   }
   .ordering-process .header-contacts{
@@ -4297,3 +4301,4 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 .removeable .availability-label{
   color: #689C56;
 }
+
