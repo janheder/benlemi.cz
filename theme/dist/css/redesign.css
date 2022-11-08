@@ -2919,6 +2919,11 @@ body.--showFilters .sidebar-left {
 
 select.form-control, select.form-control:valid {
   background-size: 8px;
+  border: 1px solid #E7EEEC;
+}
+
+.country-flags{
+  border: 1px solid #E7EEEC;
 }
 
 
