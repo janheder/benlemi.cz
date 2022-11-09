@@ -919,6 +919,10 @@ if ($(":lang(sk)").length){
     $('<div class="main-header-nav"><a href="/produkty">Produkty</a>').insertAfter(".header-top > div:nth-child(2)");
     $('#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-1386, #navigation .menu-item-3002').insertAfter(".main-header-nav a");
 }
+if ($(":lang(en)").length){
+    $('<div class="main-header-nav"><a href="/produkty">Products</a>').insertAfter(".header-top > div:nth-child(2)");
+    $('#navigation .menu-item-1929, #navigation .menu-item-1959, #navigation .menu-item-1454, #navigation .menu-item-1276').insertAfter(".main-header-nav a");
+}
 
 
 $(".main-header-nav>li").hover(function(){
@@ -1073,3 +1077,10 @@ if ($(":lang(cs)").length){
 
 
 }
+
+
+
+// =============================================================================
+// EN SCRIPTS
+// =============================================================================
+
