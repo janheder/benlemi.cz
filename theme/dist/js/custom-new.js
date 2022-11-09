@@ -583,5 +583,5 @@ if ($(":lang(en)").length) {
 
     }
 
-
+    $("#note").insertBefore("#shipping-address .co-shipping-address > .form-group:last-child");
 }
