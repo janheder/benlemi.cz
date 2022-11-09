@@ -26,6 +26,17 @@ if ($(":lang(sk)").length){
     var am_related = "Súvisiace produkty";
 }
 
+if ($(":lang(en)").length){
+    var am_title = "Product has been added to cart";
+    var am_stock = "Availability";
+    var am_amount = "Number of pieces";
+    var am_totalprice = "Total price";
+    var am_back = "Back to the store";
+    var am_gotocart = "Go to cart";
+    var am_currency = "€";
+    var am_related = "Related products";
+}
+
 
 if ($(".type-detail").length){
 
@@ -57,7 +68,9 @@ if ($(".type-detail").length){
         if ($(":lang(sk)").length){
             var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
         }
-
+        if ($(":lang(en").length){
+            var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
+        }
 
         document.addEventListener('ShoptetCartUpdated', function () {
 
