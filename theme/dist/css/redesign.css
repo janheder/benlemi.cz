@@ -2104,12 +2104,14 @@ div.hidden-split-parameter {
 }
 
 .main-header-nav>li.menu-item-2960>a,
-.main-header-nav>li.menu-item-3002>a {
+.main-header-nav>li.menu-item-3002>a,
+.main-header-nav>li.menu-item-1454>a {
   color: #F0BA00;
 }
 
 .main-header-nav>li.menu-item-2960>a::before,
-.main-header-nav>li.menu-item-3002>a::before {
+.main-header-nav>li.menu-item-3002>a::before,
+.main-header-nav>li.menu-item-1454>a::before {
   content: "";
   background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/nav-new.svg");
   background-size: 100%;
@@ -2120,12 +2122,14 @@ div.hidden-split-parameter {
 }
 
 .main-header-nav>li.menu-item-1395>a,
-.main-header-nav>li.menu-item-1386>a {
+.main-header-nav>li.menu-item-1386>a,
+.main-header-nav>li.menu-item-1276>a {
   color: #7C2D12;
 }
 
 .main-header-nav>li.menu-item-1395>a::before,
-.main-header-nav>li.menu-item-1386>a::before {
+.main-header-nav>li.menu-item-1386>a::before,
+.main-header-nav>li.menu-item-1276>a::before {
   content: "";
   background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/nav-sale.svg");
   background-size: 100%;
