@@ -606,7 +606,7 @@ h1, h2, h3, h4, h5 {
   display: none;
 }
 
-.top-nav-button-login {
+.top-nav-button-login, .top-nav-button-account {
   color: white;
   margin-left: 20px;
   padding-left: 48px;
@@ -617,7 +617,7 @@ h1, h2, h3, h4, h5 {
   background-repeat: no-repeat;
 }
 
-.top-nav-button-login:hover {
+.top-nav-button-login:hover, .top-nav-button-account:hover {
   color: white;
 }
 
@@ -4322,4 +4322,5 @@ html:lang(cs) .menu-level-1>li:nth-last-child(2),
 html:lang(sk) .menu-level-1>li:nth-last-child(2),
 html:lang(en) .menu-level-1>li:nth-last-child(2){
     display: block;
+    flex-grow: 0;
 }
