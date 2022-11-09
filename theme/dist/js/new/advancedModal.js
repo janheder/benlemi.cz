@@ -13,6 +13,7 @@ if ($(":lang(cs)").length){
     var am_gotocart = "Přejít do košíku";
     var am_currency = "Kč";
     var am_related = "Související produkty";
+    var am_cartUrl = "/kosik";
 }
 
 if ($(":lang(sk)").length){
@@ -24,6 +25,7 @@ if ($(":lang(sk)").length){
     var am_gotocart = "Prejsť do košíka";
     var am_currency = "€";
     var am_related = "Súvisiace produkty";
+    var am_cartUrl = "/kosik";
 }
 
 if ($(":lang(en)").length){
@@ -35,6 +37,7 @@ if ($(":lang(en)").length){
     var am_gotocart = "Go to cart";
     var am_currency = "€";
     var am_related = "Related products";
+    var am_cartUrl = "/cart";
 }
 
 
@@ -102,7 +105,7 @@ if ($(".type-detail").length){
 
 if ($(".p .add-to-cart-button").length){
 
-    $("body").append('<div id="advancedModalProduct" class="advancedModal"><div class="advancedModal__inner"><h2 class="advancedModal__title">'+ am_title +'</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/" class="btn btn-ghost">'+ am_back +'</a><a href="/kosik" class="btn">'+ am_gotocart +'</a></div></div></div>');
+    $("body").append('<div id="advancedModalProduct" class="advancedModal"><div class="advancedModal__inner"><h2 class="advancedModal__title">'+ am_title +'</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/" class="btn btn-ghost">'+ am_back +'</a><a href="'+ am_cartUrl +'" class="btn">'+ am_gotocart +'</a></div></div></div>');
 
     
     /* call functions after order modal loaded */
