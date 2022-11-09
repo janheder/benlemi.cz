@@ -3578,10 +3578,12 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 }
 
 .copyright::after {
-  content: "Vytvořeno s ❤ v Česku ️";
+  content: "Vytvořeno s ❤ v Česku";
   font-size: 15px;
 }
-
+html[lang="en"].copyright::after{
+  content: "Made with ❤ in Czechia"; 
+}
 .copyright strong {
   font-size: 15px;
   margin-right: 10px;
