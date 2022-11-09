@@ -2149,6 +2149,12 @@ div.hidden-split-parameter {
   display: none !important
 }
 
+/* en */
+#navigation .menu-item-1929, #navigation .menu-item-1959, #navigation .menu-item-1454, #navigation .menu-item-1276 {
+  display: none !important
+}
+
+
 @media screen and (max-width: 1330px) {
   .menu-level-1>li.ext>a {
     padding: 0 12px;
@@ -4315,7 +4321,5 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 html:lang(cs) .menu-level-1>li:nth-last-child(2),
 html:lang(sk) .menu-level-1>li:nth-last-child(2),
 html:lang(en) .menu-level-1>li:nth-last-child(2){
-  flex-grow: 0;
-    display: flex;
-    justify-content: flex-start;
+    display: block;
 }
