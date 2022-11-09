@@ -4308,4 +4308,10 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 .removeable .availability-label{
   color: #689C56;
 }
-
+html:lang(cs) .menu-level-1>li:nth-last-child(2),
+html:lang(sk) .menu-level-1>li:nth-last-child(2),
+html:lang(en) .menu-level-1>li:nth-last-child(2){
+  flex-grow: 0;
+    display: flex;
+    justify-content: flex-start;
+}
