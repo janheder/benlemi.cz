@@ -1091,7 +1091,77 @@ if ($(":lang(sk)").length){
 
 
 
+
 // =============================================================================
 // EN SCRIPTS
 // =============================================================================
 
+if ($(":lang(en)").length) {
+
+
+    $(document).ready(function () {
+
+        $("#companyId").removeClass("js-validate-company-id");
+
+        $('label[for="companyId"]').text("ID");
+        $('label[for="vatId"]').text("VAT");
+
+
+
+        if ($(".p-price.p-cell .show-tooltip.acronym").length) {
+            $(".discount-coupon input[type='text'], .discount-coupon button").attr("disabled", "true");
+            $("<span>The discount code cannot be applied to discounted products</span>").insertAfter(".discount-coupon button");
+            $(".js-remove-form .btn-primary").click();
+        }
+
+
+        $(".payment-shipping-price.for-free").text("Please find in our invoice");
+
+    });
+
+    /* cart phone validation */
+    $(document).ready(function () {
+
+        $(".cart-content #phone, .co-registration #phone").removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
+        $(".cart-content #phone, .co-registration #phone").attr("disabled", false);
+        $(".cart-content #phone, .co-registration #phone").change(function () {
+            $(this).removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
+            $(this).attr("disabled", false);
+        });
+
+
+        if ($(".removeable .show-tooltip").length) { $(".applied-coupon .btn").click(); }
+
+    });
+
+
+
+    $('<div class="form-group"><label for="post_phone">CUSTOMER´S phone num.:</label><span style="opacity:0.8;padding-bottom:0px;display:block;font-size:14px;">(INSERT PHONE NU IN CORRECT FORMAT - NO GAPS: +420776123456)</span><input type="text" id="post_phone" class="form-control"><span style="opacity:0.8;padding-bottom:0px;display:block;font-size:14px;">* &#xFEFF;&#xFEFF;The telephone number is used by the transport services that require it for dispatch from the Czech Republic.</span></div><div class="form-group" style="padding-bottom:20px;"><label for="post_email">CUSTOMER´S email address:</label><input type="text" id="post_email" class="form-control"></div>').insertBefore('#remark');
+
+
+    $('<span style="opacity:0.8;padding-bottom:0px;display:block;font-size:14px;">* &#xFEFF;&#xFEFF;The telephone number is used by the transport services that require it for dispatch from the Czech Republic.</span>').insertAfter("#checkoutContent .phone-combined-input");
+
+    $('#order-form').submit(function () {
+        dosomething();
+    });
+
+
+    function dosomething() {
+        var inputvalue = $("#post_phone").val();
+        var inputvalue2 = $("#post_email").val();
+        var orgvalue = $('#remark').val().split('<')[0];
+        $('#remark').val("");
+        if (inputvalue != '' && inputvalue2 == '') {
+            $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>');
+        } else if (inputvalue2 != '' && inputvalue == '') {
+            $('#remark').val(orgvalue + '<post_email>' + inputvalue2 + '</post_email>');
+        } else if (inputvalue != '' && inputvalue2 != '') {
+            $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>' + '<post_email>' + inputvalue2 + '</post_email>');
+        } else {
+
+        }
+
+    }
+
+    $("#note").insertBefore("#shipping-address .co-shipping-address > .form-group:last-child");
+}
