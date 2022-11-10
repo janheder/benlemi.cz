@@ -1157,4 +1157,18 @@ if ($(":lang(en)").length) {
     }
 
     $("#note").insertBefore("#shipping-address .co-shipping-address > .form-group:last-child");
+
+
+
+    if ($(".login.toggle-window").length) {
+        $(".headerFreeDeliveryNew").html("Register and collect <br> discounts with every purchase");
+    } else {
+        $.get('/client-center/client-discounts/', function (data) {
+            data = $(data).find('.content-inner table tr:last-child strong').html();
+            $(".headerFreeDeliveryNew").html("Now you have discounts with every purchase");
+        });
+
+    }
+
+
 }

@@ -79,15 +79,17 @@ var g_relatedProducts = "Related products";
 var g_showMoreRelatedProducts = "View related products";
 var g_emptyInforgaphicsTitle = "Choose propositions above to see detailed infographic";
 
-var g_openFilter = "Open filter";
+var g_openFilter = "Filter";
 var g_showMore = "Show more";
 var g_show = "Show";
 var g_moreVariants = "More options";
 var g_showFilter = "Show filter";
-var g_hideFilter = "Hide filtr";
+var g_hideFilter = "Filter";
 var g_fullDescription = "Full description";
 var g_totalQuantity = "Total quantity";
 var g_blogText = "Advices and inspiration for trend lovers and responsible parents.";
+
+var g_showSort = "Sort by";
 
 var g_moreRating = "More ratings";
 
