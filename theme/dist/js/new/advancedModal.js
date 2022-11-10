@@ -43,7 +43,7 @@ if ($(":lang(en)").length){
 
 if ($(".type-detail").length){
 
-    $("body").append('<div id="advancedModal" class="advancedModal"><div class="advancedModal__inner"><h2 class="advancedModal__title">'+ am_title +'</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/" class="btn btn-ghost">'+ am_back +'</a><a href="/kosik" class="btn">'+ am_gotocart +'</a></div></div></div>');
+    $("body").append('<div id="advancedModal" class="advancedModal"><div class="advancedModal__inner"><h2 class="advancedModal__title">'+ am_title +'</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/" class="btn btn-ghost">'+ am_back +'</a><a href="'+ am_cartUrl +'" class="btn">'+ am_gotocart +'</a></div></div></div>');
 
     if ($(".products-related").length){
         var related = $(".products-related").html();
