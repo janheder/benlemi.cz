@@ -2721,11 +2721,11 @@ body.--showFilters .sidebar-left {
     display: flex;
   }
 
-  .in-kosik .related td {
+
+  .ordering-process .cart-table .related>td{
     display: none;
   }
-
-  .in-kosik .related-title.--active+td {
+  .ordering-process .cart-table .related-title.--active+td {
     display: flex;
     flex-direction: column;
   }
