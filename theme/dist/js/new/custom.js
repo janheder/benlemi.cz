@@ -1122,13 +1122,6 @@ if ($(":lang(en)").length) {
     /* cart phone validation */
     $(document).ready(function () {
 
-        $(".cart-content #phone, .co-registration #phone").removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
-        $(".cart-content #phone, .co-registration #phone").attr("disabled", false);
-        $(".cart-content #phone, .co-registration #phone").change(function () {
-            $(this).removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
-            $(this).attr("disabled", false);
-        });
-
 
         if ($(".removeable .show-tooltip").length) { $(".applied-coupon .btn").click(); }
 
