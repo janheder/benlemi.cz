@@ -909,8 +909,6 @@ if ($("#checkoutSidebar .cart-item").length){
 // =============================================================================
 
 
-
-
 if ($(":lang(cs)").length){
     $('<div class="main-header-nav"><a href="/nabytek">Produkty</a>').insertAfter(".header-top > div:nth-child(2)");
     $('#navigation .menu-item-3951, #navigation .menu-item-3978, #navigation .menu-item-2960, #navigation .menu-item-1395').insertAfter(".main-header-nav a");
@@ -948,7 +946,70 @@ $(document).ready(function () {
 });
 
 
+// =============================================================================
+// CZ SCRIPTS
+// =============================================================================
 
+
+if ($(":lang(cs)").length){
+
+    $("<div id='userCheck' style='visibility:hidden'></div>").insertAfter("#checkoutSidebar");
+    $("#userCheck").load("/klient/klient-slevy/ .content-inner table tr:first-child strong", function() {
+
+        var userCheck = $("#userCheck strong").text();
+        if( (userCheck == "CZ-B2B") || (userCheck == "CZ-B2BPLUS") || (userCheck == "CZ-B2B-DPH") || (userCheck == "CZ-B2BPLUS-DPH")){
+
+            $('<div class="form-group" style="flex-direction:column;"><label for="post_phone">Doručovací telefon:</label><span style="opacity:0.8;padding-bottom:0px;display:block;font-size:14px;">(Vložte telefonní číslo ve správném formátu, např.: +420776123456)</span><input type="text" id="post_phone" class="form-control"></div><div class="form-group" style="padding-bottom:20px;"><label for="post_email">Doručovací email:</label><input type="text" id="post_email" class="form-control"></div>').insertAfter('.co-shipping-address');
+
+            $('#order-form').submit(function() {
+                dosomething();
+            });
+            
+            function dosomething(){
+                var inputvalue=$("#post_phone").val(); 
+                var inputvalue2=$("#post_email").val(); 
+                var orgvalue= $('#remark').val().split('<')[0];
+                $('#remark').val("");
+                if(inputvalue != '' && inputvalue2 == ''){
+                $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>');
+                }else if(inputvalue2 != '' && inputvalue == ''){
+                $('#remark').val(orgvalue + '<post_email>' + inputvalue2 + '</post_email>');
+                }else if(inputvalue != '' && inputvalue2 != ''){
+                $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>' + '<post_email>' + inputvalue2 + '</post_email>');
+                }else{
+                
+                }
+            }
+
+        }else{
+
+        }
+    });
+
+    $('.detail-parameters tr th:contains("Typ produktu:"), .detail-parameters tr th:contains("Věk dítěte:"), .detail-parameters tr th:contains("Tvar:"), .detail-parameters tr th:contains("Motiv:"), .detail-parameters tr th:contains("Pro model postele:"), .detail-parameters tr th:contains("Pro postel o délce:"), .detail-parameters tr th:contains("Pro postel o šířce:")').parents('tr').remove();
+
+
+    $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
+
+
+    if($(".p-price.p-cell .show-tooltip.acronym").length){
+        $(".discount-coupon input[type='text'], .discount-coupon button").attr("disabled", "true");
+        $("<span>Slevový kód nelze uplatnit v košíku, který obsahuje zlevněný produkt</span>").insertAfter(".discount-coupon button");
+        $(".js-remove-form .btn-primary").click();
+    }
+
+
+    if ($(".login.toggle-window").length) {
+        $(".headerFreeDeliveryNew").html("Registrujte se a sbírejte <br> slevy s každým svým nákupem");
+    } else {
+        $.get('/klient/klient-slevy/', function (data) {
+            data = $(data).find('.content-inner table tr:last-child strong').html();
+            $(".headerFreeDeliveryNew").html("Nyní máte <br>" + data + " slevu za věrnost");
+        });
+
+    }
+
+}
 
 
 // =============================================================================
@@ -1002,6 +1063,15 @@ if ($(":lang(sk)").length){
 
     $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
 
+
+
+    if($(".p-price.p-cell .show-tooltip.acronym").length){
+        $(".discount-coupon input[type='text'], .discount-coupon button").attr("disabled", "true");
+        $("<span>Zľavový kód nemožno uplatniť na zľavnené produkty</span>").insertAfter(".discount-coupon button");
+        $(".js-remove-form .btn-primary").click();
+    }
+
+
     if ($(".login.toggle-window").length) {
         $(".headerFreeDeliveryNew").html("Registrujte sa a zbierajte <br> zľavy s každým svojim nákupom");
     } else {
@@ -1018,76 +1088,6 @@ if ($(":lang(sk)").length){
 }
 
 
-
-// =============================================================================
-// CZ SCRIPTS
-// =============================================================================
-
-
-  
-if ($(":lang(cs)").length){
-
-    $("<div id='userCheck' style='visibility:hidden'></div>").insertAfter("#checkoutSidebar");
-    $("#userCheck").load("/klient/klient-slevy/ .content-inner table tr:first-child strong", function() {
-
-        var userCheck = $("#userCheck strong").text();
-        if( (userCheck == "CZ-B2B") || (userCheck == "CZ-B2BPLUS") || (userCheck == "CZ-B2B-DPH") || (userCheck == "CZ-B2BPLUS-DPH")){
-
-            $('<div class="form-group" style="flex-direction:column;"><label for="post_phone">Doručovací telefon:</label><span style="opacity:0.8;padding-bottom:0px;display:block;font-size:14px;">(Vložte telefonní číslo ve správném formátu, např.: +420776123456)</span><input type="text" id="post_phone" class="form-control"></div><div class="form-group" style="padding-bottom:20px;"><label for="post_email">Doručovací email:</label><input type="text" id="post_email" class="form-control"></div>').insertAfter('.co-shipping-address');
-
-            $('#order-form').submit(function() {
-                dosomething();
-            });
-            
-            function dosomething(){
-                var inputvalue=$("#post_phone").val(); 
-                var inputvalue2=$("#post_email").val(); 
-                var orgvalue= $('#remark').val().split('<')[0];
-                $('#remark').val("");
-                if(inputvalue != '' && inputvalue2 == ''){
-                $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>');
-                }else if(inputvalue2 != '' && inputvalue == ''){
-                $('#remark').val(orgvalue + '<post_email>' + inputvalue2 + '</post_email>');
-                }else if(inputvalue != '' && inputvalue2 != ''){
-                $('#remark').val(orgvalue + '<post_phone>' + inputvalue + '</post_phone>' + '<post_email>' + inputvalue2 + '</post_email>');
-                }else{
-                
-                }
-            }
-
-        }else{
-
-        }
-    });
-
-    $('.detail-parameters tr th:contains("Typ produktu:"), .detail-parameters tr th:contains("Věk dítěte:"), .detail-parameters tr th:contains("Tvar:"), .detail-parameters tr th:contains("Motiv:"), .detail-parameters tr th:contains("Pro model postele:"), .detail-parameters tr th:contains("Pro postel o délce:"), .detail-parameters tr th:contains("Pro postel o šířce:")').parents('tr').remove();
-
-
-
-
-    $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
-
-
-    if($(".p-price.p-cell .show-tooltip.acronym").length){
-        $(".discount-coupon input[type='text'], .discount-coupon button").attr("disabled", "true");
-        $("<span>Slevový kód nelze uplatnit v košíku, který obsahuje zlevněný produkt</span>").insertAfter(".discount-coupon button");
-        $(".js-remove-form .btn-primary").click();
-    }
-
-
-    if ($(".login.toggle-window").length) {
-        $(".headerFreeDeliveryNew").html("Registrujte se a sbírejte <br> slevy s každým svým nákupem");
-    } else {
-        $.get('/klient/klient-slevy/', function (data) {
-            data = $(data).find('.content-inner table tr:last-child strong').html();
-            $(".headerFreeDeliveryNew").html("Nyní máte <br>" + data + " slevu za věrnost");
-        });
-
-    }
-
-
-
-}
 
 
 
