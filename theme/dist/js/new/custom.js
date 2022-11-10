@@ -1167,4 +1167,45 @@ if ($(":lang(en)").length) {
     }
 
 
+    $("<div id='userCheck' style='visibility:hidden'></div>").insertAfter("#checkoutSidebar");
+    $("#userCheck").load("/client-center/client-discounts/ .content-inner table tr:first-child strong", function () {
+
+        var userCheck = $("#userCheck strong").text();
+
+        if ((userCheck == "Koncový zákazík_COM") || (userCheck == "")) { } else {
+            $("body").addClass("wholesale");
+            $(".in-step-2 #billCountryId").attr("disabled", false);
+            $(".in-step-2 #shipping-address").addClass("visible");
+            $(".in-step-2 #another-shipping").prop("checked", true);
+
+            $(".co-billing-address fieldset>.form-group:last-child").load("/client-center/my-account-settings/ #additionalInformation fieldset .form-group:last-child", function () {
+                var id = $(".co-billing-address #billCountryId option:selected").attr("value");
+                $('<input type="hidden" name="billCountryId" id="billCountryIdInput" value="' + id + '" disabled="disabled">').insertAfter(".co-billing-address #billCountryId");
+            });
+        }
+
+        if ((userCheck == "COM-B2B") || (userCheck == "COM-B2BPLUS")) {
+            $("#shipping-61").css("display", "none");
+            $("#shipping-61 input").prop('checked', false);
+
+            $("#shipping-141").css("display", "flex");
+        }
+
+        if ((userCheck == "COM-B2B-DPH") || (userCheck == "COM-B2BPLUS-DPH")) {
+            $("#shipping-141").css("display", "none"); // hide transport without vat
+            $("#shipping-141 input").prop('checked', false);
+
+            $("#shipping-61").css("display", "flex");
+        }
+    });
+
+
+    $("<div id='userGroup' style='visibility:hidden'></div>").insertAfter("footer"); $("#userGroup").load("/client-center/client-discounts/ .content-inner table tr:first-child strong", function () {
+        var userGroup = $("#userGroup strong").text();
+        if (userGroup.includes("B2B")) {
+            $("body").addClass("velkoobchod");
+        }
+    });
+
+
 }
