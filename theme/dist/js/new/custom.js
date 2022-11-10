@@ -1021,7 +1021,6 @@ if ($(":lang(sk)").length){
     $(document).ready(function () {
 
 
-
         $("<div id='userCheck' style='visibility:hidden'></div>").insertAfter("#checkoutSidebar");
         $("#userCheck").load("/klient/klient-zlavy/ .content-inner table tr:first-child strong", function () {
 
@@ -1086,9 +1085,6 @@ if ($(":lang(sk)").length){
 
 
 }
-
-
-
 
 
 
@@ -1158,7 +1154,7 @@ if ($(":lang(en)").length) {
 
     $("#note").insertBefore("#shipping-address .co-shipping-address > .form-group:last-child");
 
-
+    $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
 
     if ($(".login.toggle-window").length) {
         $(".headerFreeDeliveryNew").html("Register and collect <br> discounts with every purchase");
