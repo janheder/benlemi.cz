@@ -2760,6 +2760,7 @@ body.--showFilters .sidebar-left {
 
 .cart-header {
   position: relative;
+  background: transparent;
 }
 
 .cart-header::before {

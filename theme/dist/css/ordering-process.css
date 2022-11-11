@@ -96,6 +96,25 @@
   
   @media screen and (max-width:991px) {
     .ordering-process .cart-table .related{
-      padding-bottom: 20px;
+        padding-bottom: 0;
+        padding-top: 0px;
+        border: 1px solid #F0F0F0;
+        margin: 0;
+        margin-bottom: 30px;
     }
+    .ordering-process .cart-table .related>td{
+      display: none;
+      grid-template-columns: 1fr;
+    }
+    .ordering-process .cart-table .related .related-title {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ordering-process .cart-related-availability{
+        width: auto;
+        margin-left: 0px;
+    }
+
   }
