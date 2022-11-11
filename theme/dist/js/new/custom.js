@@ -991,13 +991,13 @@ if ($(":lang(cs)").length){
 
     $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
 
-
+    /*
     if($(".p-price.p-cell .show-tooltip.acronym").length){
         $(".discount-coupon input[type='text'], .discount-coupon button").attr("disabled", "true");
         $("<span>Slevový kód nelze uplatnit v košíku, který obsahuje zlevněný produkt</span>").insertAfter(".discount-coupon button");
         $(".js-remove-form .btn-primary").click();
     }
-
+    */
 
     if ($(".login.toggle-window").length) {
         $(".headerFreeDeliveryNew").html("Registrujte se a sbírejte <br> slevy s každým svým nákupem");
