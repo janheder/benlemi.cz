@@ -25,6 +25,7 @@
   font-size: 18px;
   line-height: 1;
     padding-bottom: 15px;
+    margin: 0;
   }
   .ordering-process .cart-table .related>td{
     display: grid;
@@ -95,6 +96,11 @@
   }
   
   @media screen and (max-width:991px) {
+    .ordering-process .cart-table .related>td{
+        grid-template-columns: 1fr;
+      }
+  }
+  @media screen and (max-width: 767px) {
     .ordering-process .cart-table .related{
         padding-bottom: 0;
         padding-top: 0px;
@@ -106,15 +112,16 @@
       display: none;
       grid-template-columns: 1fr;
     }
+    .ordering-process .cart-related-product{
+        outline: none;
+    }
     .ordering-process .cart-table .related .related-title {
         font-size: 16px;
         padding: 15px 10px;
     }
-  }
-  @media screen and (max-width: 767px) {
     .ordering-process .cart-related-availability{
-        width: auto;
-        margin-left: 0px;
+        width: auto !important;
+        margin-left: 0px !important;
     }
 
   }
