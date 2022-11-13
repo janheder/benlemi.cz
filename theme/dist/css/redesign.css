@@ -4284,3 +4284,7 @@ html:lang(en) .menu-level-1>li:nth-last-child(2){
     display: block;
     flex-grow: 0;
 }
+
+.checkout-box .contact-box strong {
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/customer-support-3.png");
+}
