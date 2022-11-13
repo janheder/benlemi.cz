@@ -102,6 +102,9 @@
   }
   @media screen and (max-width: 767px) {
     .ordering-process .cart-table .related{
+        padding-left: 0;
+        border: 0;
+        margin-bottom: 10px;
         padding-bottom: 0;
         padding-top: 0px;
         border: 1px solid #F0F0F0;
@@ -123,5 +126,42 @@
         width: auto !important;
         margin-left: 0px !important;
     }
+    .ordering-process .showMoreRelated{
+        display: none;
+    }
+  
 
-  }
+ 
+  
+    .ordering-process .related-title {
+      padding: 10px 15px;
+      margin: 0;
+      background-color: #F7FAF9;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .ordering-process  .related-title::after {
+      content: "";
+      right: 10px;
+      background-color: transparent;
+      background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
+      width: 8px;
+      height: 8px;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+    }
+  
+  
+    .ordering-process .cart-table .related>td{
+      display: none;
+    }
+    .ordering-process .cart-table .related-title.--active+td {
+      display: flex;
+      flex-direction: column;
+    }
+
+}
