@@ -2692,48 +2692,7 @@ body.--showFilters .sidebar-left {
 }
 
 
-@media screen and (max-width: 575px) {
-  .in-kosik .cart-table .related {
-    padding-left: 0;
-    border: 0;
-    margin-bottom: 10px;
-  }
 
-  .in-kosik .related-title {
-    padding: 10px 15px;
-    margin: 0;
-    background-color: #F7FAF9;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .in-kosik .related-title::after {
-    content: "";
-    right: 10px;
-    background-color: transparent;
-    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
-    width: 8px;
-    height: 8px;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-  }
-
-
-  .ordering-process .cart-table .related>td{
-    display: none;
-  }
-  .ordering-process .cart-table .related-title.--active+td {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .showMoreRelated {
-    display: none !important;
-  }
-}
 
 .in-kosik .cart-table .p-availability .show-tooltip {
   flex-direction: row;
