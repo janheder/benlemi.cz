@@ -1,0 +1,73 @@
+
+.faq-page{
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+
+.faq-page h2{
+  border-bottom: 1px solid #F0F0F0;
+  margin: 60px 0 0px 0;
+  padding-bottom: 30px;
+}
+#faqSearch{
+  margin-bottom: 20px;
+}
+details{
+  border-bottom: 1px solid #F0F0F0;
+  margin: 0;
+}
+summary {
+  position: relative;
+  padding: 30px 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  padding-right: 30px;
+  line-height: 1.5;
+  background: transparent;
+  font-size: 18px;
+  opacity: 1;
+  color: #2E523D;
+}
+summary::marker{
+  content: "";
+}
+summary::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 34px;
+  height: 12px;
+  width: 12px;
+  display: flex;
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg?v=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: 0.2s ease transform;
+  opacity: 0.4;
+}
+details[open] summary{
+  opacity: 1;
+}
+details[open] summary::after{
+  transform: rotate(180deg);
+}
+details p {
+  padding-left: 0px;
+  color: #6D6C79;
+  margin: 0;
+  margin-top: -5px;   
+  margin-bottom: 30px;
+  font-size: 15px;
+  padding-left: 40px;
+  opacity: 0.9;
+  line-height: 1.7;
+  border-left: 2px solid #c3dcb2;
+}
+
+@media screen and (max-width: 991px){
+  details p {
+    padding-left: 20px;
+  }
+}
