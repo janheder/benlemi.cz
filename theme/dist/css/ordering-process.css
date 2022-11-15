@@ -75,11 +75,11 @@
     color: #2E523D;
   }
   .ordering-process .cart-related-button .btn{
-    background: #ECF2E8;
+    background: #f7faf9;
     color: #2E523D;
   }
   .ordering-process .cart-related-button .btn:hover{
-        background: #dde9d5;
+        background: #ECF2E8;
   }
   .ordering-process .cart-table .p-name .main-link{
     color: #2E523D;

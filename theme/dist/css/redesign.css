@@ -2604,7 +2604,7 @@ body.--showFilters .sidebar-left {
   text-transform: uppercase;
   font-weight: 500;
   background-repeat: no-repeat;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 .flag.flag-premium, .flag.flag-exclusive {
   background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/symbol-exclusive.svg");
@@ -3125,6 +3125,12 @@ select.form-control, select.form-control:valid {
 .summary-wrapper .next-step-back {
   height: 50px;
   font-size: 15px;
+  background: white;
+  text-decoration: none;
+  outline: 1px solid #F0F0F0;
+}
+.summary-wrapper .next-step-back:hover, .summary-wrapper .next-step-back:active, .summary-wrapper .next-step-back:focus {
+  background: #f7faf9;
 }
 
 .discount-coupon.btn.btn-secondary {
