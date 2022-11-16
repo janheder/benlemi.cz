@@ -2,13 +2,16 @@
     display: none;
 }
 
-.in-zapomenute-heslo #content, .in-registrace #content {
+.in-login #content, 
+.in-zapomenute-heslo #content, 
+.in-registrace #content {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 60px 0 100px 0;
 }
 
+.in-login .content-inner,
 .in-zapomenute-heslo .content-inner,
 .in-registrace .content-inner {
     background: white;
@@ -19,6 +22,8 @@
     position: relative;
 }
 
+.in-login .content-inner::before,
+.in-login .content-inner::after,
 .in-zapomenute-heslo .content-inner::before,
 .in-zapomenute-heslo .content-inner::after,
 .in-registrace .content-inner::before,
@@ -37,6 +42,7 @@
     opacity: 1;
 }
 
+.in-login .content-inner::after,
 .in-registrace .content-inner::after,
 .in-zapomenute-heslo .content-inner::after {
     background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/blob1.svg");
