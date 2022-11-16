@@ -118,6 +118,10 @@
         position: relative;
     }
 
+    .ordering-process .cart-table .removeable .p-price .show-tooltip.acronym{
+        display: flex;
+      }
+      
     .ordering-process .cart-table .removeable .p-price .show-tooltip::before {
         content: "";
         background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/nav-sale.svg");
