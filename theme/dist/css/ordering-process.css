@@ -113,7 +113,7 @@
     border: 1px solid #F0F0F0;
 }
 
-@media screen and (min-width:9912x) {
+@media screen and (min-width:991px) {
     .ordering-process .cart-table .removeable .p-price {
         position: relative;
     }
