@@ -1,107 +1,126 @@
-.ordering-process .overall-wrapper #header{
+.ordering-process .overall-wrapper #header {
     box-shadow: 0px 10px 15px rgb(46 82 61 / 3%);
-  }
-  .ordering-process .cart-table-heading{
+}
+
+.ordering-process .cart-table-heading {
     margin-bottom: -5px;
-  }
-  .ordering-process .cart-table .removeable, .ordering-process .cart-table .removeable:first-child{
+}
+
+.ordering-process .cart-table .removeable, .ordering-process .cart-table .removeable:first-child {
     background: #FFFFFF;
-  border: 1px solid #F0F0F0;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     padding: 20px;
-    
-  }
-  .ordering-process .cart-table .removeable .p-total strong{
+
+}
+
+.ordering-process .cart-table .removeable .p-total strong {
     font-size: 17px;
     color: #CF4823;
-  }
-  
-  .ordering-process .cart-table .related{
-     border: 0;
+}
+
+.ordering-process .cart-table .related {
+    border: 0;
     padding: 30px 0 40px 0;
-  }
-  .ordering-process .cart-table .related .related-title{
+}
+
+.ordering-process .cart-table .related .related-title {
     color: #2E523D;
-  font-size: 18px;
-  line-height: 1;
+    font-size: 18px;
+    line-height: 1;
     padding-bottom: 15px;
     margin: 0;
-  }
-  .ordering-process .cart-table .related>td{
+}
+
+.ordering-process .cart-table .related>td {
     display: grid;
     grid-gap: 00px;
     grid-template-columns: 1fr 1fr;
-  }
-  .ordering-process .cart-related-product{
+}
+
+.ordering-process .cart-related-product {
     background: #FFFFFF;
-  outline: 1px solid #F0F0F0;
+    outline: 1px solid #F0F0F0;
     padding: 8px 15px;
-        height: auto;
+    height: auto;
     flex-basis: 100%;
     margin: 0;
-  }
-  .ordering-process .cart-related-product .cart-related-info{
+}
+
+.ordering-process .cart-related-product .cart-related-info {
     display: grid;
     grid-template-columns: 50px auto;
     grid-template-rows: auto auto;
     grid-gap: 5px 20px;
-  }
-  .ordering-process .cart-related-img{
+}
+
+.ordering-process .cart-related-img {
     grid-row-start: 1;
     grid-row-end: 3;
-  }
-  .ordering-process .cart-related-name{
+}
+
+.ordering-process .cart-related-name {
     line-height: 1.2;
     padding: 0;
-  align-self: end;
+    align-self: end;
     font-size: 14px;
     color: #2E523D;
-  }
-  .ordering-process .cart-related-availability{
+}
+
+.ordering-process .cart-related-availability {
     grid-column-start: 2;
     padding: 0;
     align-self: start;
-        line-height: 1;
-  }
-  .ordering-process .showMoreRelated{
+    line-height: 1;
+}
+
+.ordering-process .showMoreRelated {
     justify-content: center;
     margin-top: 5px;
-  }
-  .ordering-process .cart-related-button{
+}
+
+.ordering-process .cart-related-button {
     padding-left: 10px;
-  }
-  .ordering-process .cart-related-button .price-final{
-      font-size: 14px;
+}
+
+.ordering-process .cart-related-button .price-final {
+    font-size: 14px;
     color: #2E523D;
-  }
-  .ordering-process .cart-related-button .btn{
+}
+
+.ordering-process .cart-related-button .btn {
     background: #f7faf9;
     color: #2E523D;
-  }
-  .ordering-process .cart-related-button .btn:hover{
-        background: #ECF2E8;
-  }
-  .ordering-process .cart-table .p-name .main-link{
+}
+
+.ordering-process .cart-related-button .btn:hover {
+    background: #ECF2E8;
+}
+
+.ordering-process .cart-table .p-name .main-link {
     color: #2E523D;
     font-size: 16px;
     font-weight: 500;
-  }
-  .ordering-process .cart-table .p-name .main-link-variant{
+}
+
+.ordering-process .cart-table .p-name .main-link-variant {
     color: #6F6F6F;
     font-weight: 400;
     font-size: 14px;
-  }
-  .ordering-process .cart-table .p-quantity .quantity .amount{
+}
+
+.ordering-process .cart-table .p-quantity .quantity .amount {
     border: 1px solid #F0F0F0;
-  }
-  
-  @media screen and (max-width:991px) {
-    .ordering-process .cart-table .related>td{
+}
+
+@media screen and (max-width:991px) {
+    .ordering-process .cart-table .related>td {
         grid-template-columns: 1fr;
-      }
-  }
-  @media screen and (max-width: 767px) {
-    .ordering-process .cart-table .related{
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ordering-process .cart-table .related {
         padding-left: 0;
         border: 0;
         margin-bottom: 10px;
@@ -111,58 +130,77 @@
         margin: 0;
         margin-bottom: 30px;
     }
-    .ordering-process .cart-table .related>td{
-      display: none;
-      grid-template-columns: 1fr;
+
+    .ordering-process .cart-table .related>td {
+        display: none;
+        grid-template-columns: 1fr;
     }
-    .ordering-process .cart-related-product{
+
+    .ordering-process .cart-related-product {
         outline: none;
     }
+
     .ordering-process .cart-table .related .related-title {
         font-size: 16px;
         padding: 15px 10px;
         border-top: 0;
     }
-    .ordering-process .cart-related-availability{
+
+    .ordering-process .cart-related-availability {
         width: auto !important;
         margin-left: 0px !important;
     }
-    .ordering-process .showMoreRelated{
+
+    .ordering-process .showMoreRelated {
         display: none;
     }
-  
 
- 
-  
+
     .ordering-process .related-title {
-      padding: 10px 15px;
-      margin: 0;
-      background-color: #F7FAF9;
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .ordering-process  .related-title::after {
-      content: "";
-      right: 10px;
-      background-color: transparent;
-      background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
-      width: 8px;
-      height: 8px;
-      background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-    }
-  
-  
-    .ordering-process .cart-table .related>td{
-      display: none;
-    }
-    .ordering-process .cart-table .related-title.--active+td {
-      display: flex;
-      flex-direction: column;
+        padding: 10px 15px;
+        margin: 0;
+        background-color: #F7FAF9;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
+    .ordering-process .related-title::after {
+        content: "";
+        right: 10px;
+        background-color: transparent;
+        background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
+        width: 8px;
+        height: 8px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+
+
+    .ordering-process .cart-table .related>td {
+        display: none;
+    }
+
+    .ordering-process .cart-table .related-title.--active+td {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.cart-summary .extras-wrap .extra.discount {
+    font-size: 0;
+}
+
+.cart-summary .extras-wrap .extra.discount a {
+    font-size: 0;
+}
+.cart-summary .extras-wrap .extra.discount a::before {
+    font-size: 15px;
+}
+
+html:lang(cs) .cart-summary .extras-wrap .extra.discount a::before {
+    content: "Registrujte se a sbírejte slevy s každým svým nákupem.";
 }
