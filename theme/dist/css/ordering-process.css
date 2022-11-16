@@ -113,6 +113,41 @@
     border: 1px solid #F0F0F0;
 }
 
+@media screen and (min-width:9912x) {
+    .ordering-process .cart-table .removeable .p-price {
+        position: relative;
+    }
+
+    .ordering-process .cart-table .removeable .p-price .show-tooltip::before {
+        content: "";
+        background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/nav-sale.svg");
+        background-size: 100%;
+        height: 18px;
+        width: 18px;
+        display: flex;
+        margin-right: 8px;
+        margin-top: 2px;
+    }
+
+    .ordering-process .cart-table .removeable .p-price:hover .show-tooltip[data-original-title]:after {
+        content: attr(data-original-title);
+        background: #E0EDD8;
+        border: 1px solid #F0F0F0;
+        box-shadow: 0px 4px 20px rgb(0 0 0 / 5%);
+        display: flex;
+        text-align: center;
+        position: absolute;
+        top: -25px;
+        left: -50%;
+        padding: 5px;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+}
+
+
+
+
 @media screen and (max-width:991px) {
     .ordering-process .cart-table .related>td {
         grid-template-columns: 1fr;
@@ -197,6 +232,7 @@
 .cart-summary .extras-wrap .extra.discount a {
     font-size: 0;
 }
+
 .cart-summary .extras-wrap .extra.discount a::before {
     font-size: 15px;
 }
