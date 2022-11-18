@@ -1,0 +1,126 @@
+.customer-page .content-wrapper-in {
+    display: grid;
+    grid-template-columns: 280px auto;
+    ;
+    grid-gap: 60px;
+}
+
+.customer-page .sidebar-left, .customer-page #content {
+    width: 100%;
+    padding: 0;
+}
+
+.customer-page .sidebar-left .client-center-box li.active {
+    background: transparent;
+}
+
+.client-center-box {
+    background: transparent;
+}
+
+.client-center-box li:first-child a {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E7EEEC;
+}
+
+.client-center-box li:first-child a:hover {
+    background: transparent;
+}
+
+.client-center-box a {
+    padding: 14px 0px 14px 30px;
+    color: #2E523D;
+    border-top: 0;
+}
+
+.client-center-box a::before {
+    left: 0px;
+}
+
+.client-center-box a:hover, .client-center-box a:active, .client-center-box a:focus {
+    background: transparent;
+}
+
+.client-center-box strong {
+    font-size: 16px;
+}
+
+.customer-page #content .content-inner {
+    width: 100%;
+
+    margin: 0 auto;
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 8%);
+    background: #fff;
+    padding: 40px;
+}
+
+.customer-page #content .content-inner h1 {
+    color: #2E523D;
+}
+
+.customer-page #content .content-inner h1+p {
+    color: #6D6C79;
+}
+
+.customer-page #content .content-inner .table thead {
+    display: none;
+}
+
+.customer-page #content .content-inner .table tbody {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.customer-page #content .content-inner .table td {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 15px 010px
+}
+
+.customer-page #content .content-inner .table td .client-table-heading {
+    color: #6D6C79;
+    font-size: 13px;
+}
+
+.customer-page #content .content-inner .table td .status {
+    font-weight: 600;
+}
+
+.customer-page #content .content-inner .table tr {
+
+    background: #F7FAF9;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.customer-page #content .content-inner .table tr.even td {
+    background: #fff;
+}
+
+.logout {
+    margin-top: 10px;
+}
+
+.logout a {
+    background: #F7FAF9;
+    margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .customer-page .content-wrapper-in {
+
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 757px) {
+    .customer-page #content .content-inner .table tr {
+
+        grid-template-columns: auto auto auto;
+    }
+}

@@ -4253,6 +4253,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 
 #register-form .btn-login{
   background: #CF4823;
+  color: white;
   text-transform: uppercase;
   height: 50px;
   font-size: 15px;
