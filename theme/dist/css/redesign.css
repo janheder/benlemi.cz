@@ -4318,3 +4318,11 @@ input[type=number] {
 .twistoPayFooterBanner img{ 
   height: 36px;
 }
+
+html:lang(cs) .in-krok-2 .next-step button{
+  font-size: 0;
+}
+html:lang(cs) .in-krok-2 .next-step button::before{
+  content: "POTVRDIT NÁKUP";
+  font-size: 15px;
+}
