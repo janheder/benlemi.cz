@@ -2,6 +2,9 @@
     display: none;
 }
 
+.in-zapomenute-heslo.customer-page .content-wrapper-in {
+    display: flex;
+}
 .in-login #content, 
 .in-zapomenute-heslo #content, 
 .in-registrace #content {

@@ -1,7 +1,6 @@
 .customer-page .content-wrapper-in {
     display: grid;
     grid-template-columns: 280px auto;
-    ;
     grid-gap: 60px;
 }
 
