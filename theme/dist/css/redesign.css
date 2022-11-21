@@ -4326,3 +4326,7 @@ html:lang(cs) .in-krok-2 .next-step button::before{
   content: "POTVRDIT NÁKUP";
   font-size: 15px;
 }
+
+.news-item-detail *{
+  font-family: "Karla";
+ }
