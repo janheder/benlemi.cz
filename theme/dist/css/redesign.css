@@ -4309,3 +4309,12 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+
+.twistoPayFooterBanner{
+  text-align:center;
+   margin-top: 0;
+}
+.twistoPayFooterBanner img{ 
+  height: 36px;
+}
