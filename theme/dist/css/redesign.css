@@ -4432,8 +4432,9 @@ input.form-control:focus {
     grid-gap: 10px;
   }
 }
-@media screen and (max-width: 575px){
+@media screen and (max-width: 767px){
   .categoriesSection__row{
     grid-gap: 2px;
+    grid-template-columns: 1fr 1fr;
   }
 }
