@@ -4330,3 +4330,38 @@ html:lang(cs) .in-krok-2 .next-step button::before{
 .news-item-detail *{
   font-family: "Karla";
  }
+
+ .form-group-tooltip{
+  float: left;
+  background: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 10px;
+}
+#vatId-description{
+  font-size: 14px;
+  padding-left: 25px;
+  display: block;
+  margin-top: 10px;
+}
+
+
+#company-info.js-hidden{
+  display: none
+}
+#company-info.visible{
+  display: flex;
+  flex-direction: column;
+  background: #F7FAF9;
+    margin: 0;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+input.form-control:focus{
+      box-shadow: 0px 5px 15px rgb(46 82 61 / 3%);
+}
