@@ -43,13 +43,14 @@
     right: 0px;
     position: absolute;
   }
-  .main-header-nav>li.ext>a::before{
+
+  .main-header-nav>li.ext>a::before {
     content: "";
-      background: #F3F6F5;
-      width: 1px;
-      height: 26px;
-      right: 0px;
-      position: absolute;
+    background: #F3F6F5;
+    width: 1px;
+    height: 26px;
+    right: 0px;
+    position: absolute;
   }
 }
 
@@ -252,7 +253,8 @@
   body.--showFilters #products {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  body.type-category.--showFilters .content{
+
+  body.type-category.--showFilters .content {
     width: 75%;
   }
 }
@@ -384,9 +386,12 @@ body {
   font-size: 14px;
   line-height: 1;
 }
-.p .ratings-wrapper{
+
+.p .ratings-wrapper {
   margin-bottom: 5px;
+  gap: 5px;
 }
+
 .p .availability {
   font-size: 14px;
   line-height: 1.2;
@@ -2068,7 +2073,8 @@ div.hidden-split-parameter {
     width: 46px;
     position: absolute;
   }
-  .header-top::after{
+
+  .header-top::after {
     content: "";
     position: absolute;
     top: 55px;
@@ -2080,7 +2086,8 @@ div.hidden-split-parameter {
     box-shadow: 0px 4px 15px rgb(46 82 61 / 3%);
     z-index: -1;
   }
-  .ordering-process .header-top::before, .ordering-process .header-top::after{
+
+  .ordering-process .header-top::before, .ordering-process .header-top::after {
     content: none;
   }
 }
@@ -2331,6 +2338,7 @@ div.hidden-split-parameter {
     padding-left: 30px;
   }
 }
+
 .ordering-process .header-top .header-contacts {
   display: flex;
 }
@@ -2344,7 +2352,8 @@ div.hidden-split-parameter {
   background-size: 8px;
   transition: 0.3s ease all
 }
-.ordering-process .cart-table .remove-item:hover{
+
+.ordering-process .cart-table .remove-item:hover {
   transform: rotate(90deg);
 }
 
@@ -2606,10 +2615,12 @@ body.--showFilters .sidebar-left {
   background-repeat: no-repeat;
   margin-right: 0px;
 }
+
 .flag.flag-premium, .flag.flag-exclusive {
   background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/symbol-exclusive.svg");
   padding-left: 79px;
 }
+
 .p-detail-inner-header .flag.flag-premium, .p-detail-inner-header .flag.flag-exclusive {
   display: flex;
 }
@@ -2892,7 +2903,7 @@ select.form-control, select.form-control:valid {
   border: 1px solid #E7EEEC;
 }
 
-.country-flags{
+.country-flags {
   border: 1px solid #E7EEEC;
 }
 
@@ -3056,6 +3067,7 @@ select.form-control, select.form-control:valid {
 .thumbnailsShowMore-inner {
   background: #f7faf9;
 }
+
 .news-item time {
   top: 10px;
   right: 10px;
@@ -3129,6 +3141,7 @@ select.form-control, select.form-control:valid {
   text-decoration: none;
   outline: 1px solid #F0F0F0;
 }
+
 .summary-wrapper .next-step-back:hover, .summary-wrapper .next-step-back:active, .summary-wrapper .next-step-back:focus {
   background: #f7faf9;
 }
@@ -3557,9 +3570,11 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   content: "Vytvořeno s ❤ v Česku";
   font-size: 15px;
 }
-:lang(en).copyright::after{
-  content: "Made with ❤ in Czechia"; 
+
+:lang(en).copyright::after {
+  content: "Made with ❤ in Czechia";
 }
+
 .copyright strong {
   font-size: 15px;
   margin-right: 10px;
@@ -3843,6 +3858,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   content: "Přihlaste se";
   font-size: 15px;
 }
+
 .before-carousel .banner-wrapper a img {
   object-fit: contain;
 }
@@ -4090,37 +4106,45 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 #watchdog-form select {
   width: 100%;
 }
-#watchdog-form .watchdog-row label{
+
+#watchdog-form .watchdog-row label {
   padding: 0;
   margin: 0;
 }
-#watchdog-form .watchdog-row:nth-child(4){
+
+#watchdog-form .watchdog-row:nth-child(4) {
   border: 1px solid #E7EEEC;
   margin: 20px 0;
   display: flex;
   position: relative;
 }
-#watchdog-form .watchdog-row:nth-child(4) input{
+
+#watchdog-form .watchdog-row:nth-child(4) input {
   position: absolute;
   left: 15px;
-    top: 15px;
+  top: 15px;
 }
-#watchdog-form .watchdog-row:nth-child(4) label{
+
+#watchdog-form .watchdog-row:nth-child(4) label {
   padding: 10px;
   padding-left: 40px;
   display: flex;
 }
-#watchdog-form .watchdog-row:nth-child(5), #watchdog-form .watchdog-row:nth-child(6)  {
+
+#watchdog-form .watchdog-row:nth-child(5), #watchdog-form .watchdog-row:nth-child(6) {
   display: none;
 }
-#watchdog-form .watchdog-row:nth-child(7) label{
+
+#watchdog-form .watchdog-row:nth-child(7) label {
   padding-bottom: 10px;
-} 
-#watchdog-form .watchdog-action-buttons{
+}
+
+#watchdog-form .watchdog-action-buttons {
   margin-top: 20px;
   width: 100%;
 }
-#watchdog-form .watchdog-action-buttons .btn{
+
+#watchdog-form .watchdog-action-buttons .btn {
   width: 100%;
 }
 
@@ -4182,12 +4206,14 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   display: none;
 }
 
-.p-detail-tags.--hidden{
+.p-detail-tags.--hidden {
   display: none;
 }
-.p-detail-subheader .flag-premium.--hidden, .p-detail-subheader .flag-exclusive.--hidden{
+
+.p-detail-subheader .flag-premium.--hidden, .p-detail-subheader .flag-exclusive.--hidden {
   display: none;
 }
+
 .p-detail-subheader {
   display: flex;
   margin-bottom: 20px;
@@ -4208,7 +4234,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   margin: px 0 20px 0;
 }
 
-.p-detail-subheader .p-code{
+.p-detail-subheader .p-code {
   display: flex;
 }
 
@@ -4239,19 +4265,19 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   background-size: 10px;
 }
 
-@media screen and (min-width: 992px){
-.p-detail-tabs-wrapper .responsive-nav {
+@media screen and (min-width: 992px) {
+  .p-detail-tabs-wrapper .responsive-nav {
     z-index: 1;
-}
+  }
 }
 
-.in-kosik .cart-table .p-availability, .in-cart .cart-table .p-availability, .in-cos-de-cumparaturi .cart-table .p-availability, .in-kosar .cart-table .p-availability{
+.in-kosik .cart-table .p-availability, .in-cart .cart-table .p-availability, .in-cos-de-cumparaturi .cart-table .p-availability, .in-kosar .cart-table .p-availability {
   justify-content: center;
   align-items: center;
   font-size: 14px;
 }
 
-#register-form .btn-login{
+#register-form .btn-login {
   background: #CF4823;
   color: white;
   text-transform: uppercase;
@@ -4259,37 +4285,42 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   font-size: 15px;
 }
 
-.in-login .content-inner{
+.in-login .content-inner {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
   .ordering-process .navigation-buttons {
     display: none;
   }
-  .ordering-process .header-contacts{
+
+  .ordering-process .header-contacts {
     padding-right: 15px;
   }
-  .header-contacts a{
+
+  .header-contacts a {
     padding: 0;
     padding-left: 30px;
   }
 }
-.header-contacts a{
-  color: #2E523D;
-}
-.co-box>h4{
+
+.header-contacts a {
   color: #2E523D;
 }
 
-.removeable .availability-label{
+.co-box>h4 {
+  color: #2E523D;
+}
+
+.removeable .availability-label {
   color: #689C56;
 }
+
 html:lang(cs) .menu-level-1>li:nth-last-child(2),
 html:lang(sk) .menu-level-1>li:nth-last-child(2),
-html:lang(en) .menu-level-1>li:nth-last-child(2){
-    display: block;
-    flex-grow: 0;
+html:lang(en) .menu-level-1>li:nth-last-child(2) {
+  display: block;
+  flex-grow: 0;
 }
 
 .checkout-box .contact-box strong {
@@ -4311,38 +4342,41 @@ input[type=number] {
 }
 
 
-.twistoPayFooterBanner{
-  text-align:center;
-   margin-top: 0;
+.twistoPayFooterBanner {
+  text-align: center;
+  margin-top: 0;
 }
-.twistoPayFooterBanner img{ 
+
+.twistoPayFooterBanner img {
   height: 36px;
 }
 
-html:lang(cs) .in-krok-2 .next-step button{
+html:lang(cs) .in-krok-2 .next-step button {
   font-size: 0;
 }
-html:lang(cs) .in-krok-2 .next-step button::before{
+
+html:lang(cs) .in-krok-2 .next-step button::before {
   content: "POTVRDIT NÁKUP";
   font-size: 15px;
 }
 
-.news-item-detail *{
+.news-item-detail * {
   font-family: "Karla";
- }
+}
 
- .form-group-tooltip{
+.form-group-tooltip {
   float: left;
   background: white;
   border-radius: 50%;
   height: 20px;
   width: 20px;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   margin-top: 10px;
 }
-#vatId-description{
+
+#vatId-description {
   font-size: 14px;
   padding-left: 25px;
   display: block;
@@ -4350,18 +4384,33 @@ html:lang(cs) .in-krok-2 .next-step button::before{
 }
 
 
-#company-info.js-hidden{
+#company-info.js-hidden {
   display: none
 }
-#company-info.visible{
+
+#company-info.visible {
   display: flex;
   flex-direction: column;
   background: #F7FAF9;
-    margin: 0;
+  margin: 0;
   margin-bottom: 20px;
   padding: 20px;
 }
 
-input.form-control:focus{
-      box-shadow: 0px 5px 15px rgb(46 82 61 / 3%);
+input.form-control:focus {
+  box-shadow: 0px 5px 15px rgb(46 82 61 / 3%);
+}
+
+
+@media (max-width: 500px) {
+  .ctaSection__socialSingle {
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .ctaSection__socialWrap {
+    margin-bottom: 30px;
+  }
 }
