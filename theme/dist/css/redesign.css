@@ -4231,7 +4231,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 
 
 .p-detail-header {
-  margin: px 0 20px 0;
+
 }
 
 .p-detail-subheader .p-code {
@@ -4439,6 +4439,7 @@ input.form-control:focus {
 @media screen and (max-width: 991px){
   .categoriesSection__row{
     grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 767px){
