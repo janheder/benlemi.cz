@@ -4414,3 +4414,26 @@ input.form-control:focus {
     margin-bottom: 30px;
   }
 }
+
+.type-posts-listing .content-inner h1{
+  color: #2E523D;
+}
+.blogCategories__sectionTitle{
+   color: #2E523D;
+}
+
+.categoriesSection__row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+@media screen and (max-width: 991px){
+  .categoriesSection__row{
+    grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 575px){
+  .categoriesSection__row{
+    grid-gap: 2px;
+  }
+}

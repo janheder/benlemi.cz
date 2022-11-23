@@ -76,7 +76,8 @@
     display: flex;
     flex-direction: column;
     font-size: 15px;
-    padding: 15px 010px
+    padding: 15px 10px;
+    border: 1px solid white;
 }
 
 .customer-page #content .content-inner .table td .client-table-heading {
