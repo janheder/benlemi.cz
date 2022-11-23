@@ -4426,6 +4426,15 @@ input.form-control:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.categoriesSection__row .col-6 {
+  width: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
 @media screen and (max-width: 991px){
   .categoriesSection__row{
