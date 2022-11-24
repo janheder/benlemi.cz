@@ -436,6 +436,7 @@ if ($("#relatedFiles").length){
         
                 }); 
                 var pickedOptionsClean = pickedOptions.replace(/.$/,"");
+                console.log(pickedOptionsClean);
                 var src = $('#relatedFiles a[title*="' + pickedOptionsClean + '"]').attr("href");
                 if(typeof src != 'undefined'){
                     

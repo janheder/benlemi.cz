@@ -1798,6 +1798,7 @@ footer {
   margin-right: 15px;
   filter: invert(1) brightness(5);
   margin-top: -2px;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 575px) {
@@ -2614,6 +2615,8 @@ body.--showFilters .sidebar-left {
   font-weight: 500;
   background-repeat: no-repeat;
   margin-right: 0px;
+  display: flex;
+  align-items: center;
 }
 
 .flag.flag-premium, .flag.flag-exclusive {
@@ -4446,5 +4449,7 @@ input.form-control:focus {
   .categoriesSection__row{
     grid-gap: 2px;
     grid-template-columns: 1fr 1fr;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
