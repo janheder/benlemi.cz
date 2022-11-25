@@ -2597,6 +2597,9 @@ body.--showFilters .sidebar-left {
   color: #7C2D12;
   background: #F9F1E7;
 }
+.p .flags .flag.flag-czech-product, .p-info-wrapper .flag.flag-czech-product{
+  background-color: #e0efc7;
+}
 
 @media (max-width: 767px) {
   .p-info-wrapper .flag {
