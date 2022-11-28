@@ -288,7 +288,7 @@ body.cookies-visible {
 }
 
 :lang(ro) .js-cookies-settings::before {
-    content: "La setări";
+    content: "Setări";
 }
 
 :lang(hu) .js-cookies-settings::before {

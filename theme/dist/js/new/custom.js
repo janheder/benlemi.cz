@@ -170,45 +170,6 @@ if ($(".popup-widget-inner h2").length) {
 }
 
 
-
-/* language toggle */
-
-/*
-if ($(":lang(cs)").length){
-    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item cz active">Česky</div> <a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a> <a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a> <a href="https://benlemi.ro" class="language-toggle-item ro">Rumunsky</a> <a href="https://benlemi.hu" class="language-toggle-item hu">Maďarsky</a> </div></div>');
-    $("#js-langToggle").click(function(){
-        $("#js-langToggle").toggleClass("--active");
-    });
-} 
-else if($(":lang(sk)").length){
-    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item sk active">Česky</div> <a href="https://benlemi.cz" class="language-toggle-item cz">Česky</a> <a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a> <a href="https://benlemi.ro" class="language-toggle-item ro">Rumunsky</a> <a href="https://benlemi.hu" class="language-toggle-item hu">Maďarsky</a> </div></div>');
-    $("#js-langToggle").click(function(){
-        $("#js-langToggle").toggleClass("--active");
-    });
-}
-else if($("html:lang(en)").length){
-    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item com active">English</div> <a href="https://benlemi.cz" class="language-toggle-item cz">Czech</a> <a href="https://benlemi.sk" class="language-toggle-item sk">Slovak</a> <a href="https://benlemi.ro" class="language-toggle-item ro">Romanian</a> <a href="https://benlemi.hu" class="language-toggle-item hu">Hungarian</a> </div></div>');
-    $("#js-langToggle").click(function(){
-        $("#js-langToggle").toggleClass("--active");
-    });
-}
-else if($("html:lang(ro)").length){
-    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item ro active">Română</div> <a href="https://benlemi.cz" class="language-toggle-item cz">Ceh</a> <a href="https://benlemi.sk" class="language-toggle-item sk">Slovacă</a> <a href="https://benlemi.com" class="language-toggle-item com">Engleză</a> <a href="https://benlemi.hu" class="language-toggle-item hu">Maghiară</a> </div></div>');
-    $("#js-langToggle").click(function(){
-        $("#js-langToggle").toggleClass("--active");
-    });
-}
-else if($("html:lang(hu)").length){
-    $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item hu active">Magyar</div> <a href="https://benlemi.cz" class="language-toggle-item cz">Cseh</a> <a href="https://benlemi.sk" class="language-toggle-item sk">Szlovák</a> <a href="https://benlemi.com" class="language-toggle-item com">Angol</a> <a href="https://benlemi.ro" class="language-toggle-item ro">Román</a> </div></div>');
-    $("#js-langToggle").click(function(){
-        $("#js-langToggle").toggleClass("--active");
-    });
-}else{
-
-}
-*/
-
-
 /* rename user account */
 var name = $(".popup-widget-inner p strong").text();
 $(".navLinks__link.--user").text(g_logged + ": " + name);
@@ -847,15 +808,14 @@ if ($(":lang(en)").length) {
     $('<div class="main-header-nav"><a href="/produkty">Products</a>').insertAfter(".header-top > div:nth-child(2)");
     $('#navigation .menu-item-1929, #navigation .menu-item-1959, #navigation .menu-item-1454, #navigation .menu-item-1276').insertAfter(".main-header-nav a");
 }
-if ($(":lang(en)").length) {
+if ($(":lang(ro)").length) {
     $('<div class="main-header-nav"><a href="/produkty">Products</a>').insertAfter(".header-top > div:nth-child(2)");
-    $('#navigation .menu-item-1929, #navigation .menu-item-1959, #navigation .menu-item-1454, #navigation .menu-item-1276').insertAfter(".main-header-nav a");
+    $('#navigation .menu-item-1895, #navigation .menu-item-1952, #navigation .menu-item-1454, #navigation .menu-item-1276').insertAfter(".main-header-nav a");
 }
 
 $(".main-header-nav>li").hover(function () {
     $("img").unveil();
 });
-
 
 // =============================================================================
 // remove cart phone validation
@@ -1165,7 +1125,7 @@ if ($(":lang(ro)").length) {
 
     });
 
-    
+
     $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
 
     if ($(".login.toggle-window").length) {
