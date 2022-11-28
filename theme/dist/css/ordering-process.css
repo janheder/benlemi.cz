@@ -244,7 +244,9 @@
 html:lang(cs) .cart-summary .extras-wrap .extra.discount a::before {
     content: "Registrujte se a sbírejte slevy s každým svým nákupem.";
 }
-
+html:lang(sk) .cart-summary .extras-wrap .extra.discount a::before {
+    content: "Registrujte sa a zbierajte zľavy s každým svojim nákupom.";
+}
 html:lang(ro) .cart-summary .extras-wrap .extra.discount a::before {
     content: "Înscrieți-vă și colectați reduceri la fiecare achiziție pe care o faceți.";
 }
