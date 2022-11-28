@@ -251,7 +251,7 @@ body.cookies-visible {
     margin: 0;
 }
 
-.siteCookies__text .js-cookiesConsentSubmit{
+.siteCookies__text .js-cookiesConsentSubmit {
     appearance: none;
     -webkit-appearance: none;
     border: 0;
@@ -260,35 +260,51 @@ body.cookies-visible {
     text-decoration: underline;
 }
 
-
-.siteCookies__button.js-cookiesConsentSubmit{
+.siteCookies__button.js-cookiesConsentSubmit {
     font-size: 0;
     min-width: 100px;
 }
-.siteCookies__button.js-cookiesConsentSubmit::before{
+
+.siteCookies__button.js-cookiesConsentSubmit::before {
     content: "OK";
     font-size: 14px;
     text-align: center;
     width: 100%;
 }
-.js-cookies-settings{
+
+.js-cookies-settings {
     font-size: 0;
 }
-.js-cookies-settings::before{
+
+.js-cookies-settings::before {
     content: "Do nastavení";
     font-size: 14px;
     text-align: center;
     white-space: nowrap;
 }
 
+:lang(en).js-cookies-settings::before {
+    content: "Settings";
+}
+
+:lang(ro) .js-cookies-settings::before {
+    content: "La setări";
+}
+
+:lang(hu) .js-cookies-settings::before {
+    content: "A beállításokhoz";
+}
+
 @media screen and (max-width: 575px) {
-    .cookiesSetting__item{
+    .cookiesSetting__item {
         flex-direction: column;
     }
-    .cookiesSetting__bottom{
+
+    .cookiesSetting__bottom {
         flex-direction: column;
     }
-    .cookiesSetting__bottom button{
+
+    .cookiesSetting__bottom button {
         margin-bottom: 10px;
         width: 100%;
         text-align: center;

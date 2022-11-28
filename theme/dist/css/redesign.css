@@ -2174,19 +2174,25 @@ div.hidden-split-parameter {
 }
 
 /* cz */
-#navigation .menu-item-3951, #navigation .menu-item-3978, #navigation .menu-item-2960, #navigation .menu-item-1395 {
+:lang(cs) #navigation .menu-item-3951, :lang(cs) #navigation .menu-item-3978, :lang(cs) #navigation .menu-item-2960, :lang(cs) #navigation .menu-item-1395 {
   display: none !important
 }
 
 /* sk */
-#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-3002, #navigation .menu-item-1386 {
+:lang(sk) #navigation .menu-item-3756, :lang(sk) #navigation .menu-item-3768, :lang(sk) #navigation .menu-item-3002, :lang(sk) #navigation .menu-item-1386 {
   display: none !important
 }
 
 /* en */
-#navigation .menu-item-1929, #navigation .menu-item-1959, #navigation .menu-item-1454, #navigation .menu-item-1276 {
+:lang(en) #navigation .menu-item-1929, :lang(en) #navigation .menu-item-1959, :lang(en) #navigation .menu-item-1454, :lang(en) #navigation .menu-item-1276 {
   display: none !important
 }
+
+/* ro */
+:lang(ro) #navigation .menu-item-1895, :lang(ro) #navigation .menu-item-1952, :lang(ro) #navigation .menu-item-1454, :lang(ro) #navigation .menu-item-1276 {
+  display: none !important
+}
+
 
 
 @media screen and (max-width: 1330px) {
