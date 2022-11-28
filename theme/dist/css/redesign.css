@@ -754,6 +754,31 @@ h1, h2, h3, h4, h5 {
     font-size: 15px;
     color: #2E523D;
   }
+  .menu .menu-level-2{
+    background: transparent;
+    padding-top: 20px;
+  }
+  .menu .menu-level-2::after{
+    content: "";
+    background: white;
+    top: 10px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+  }
+  .menu .menu-level-1>li.ext:hover>a::after{
+    content: "";
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      right: 50%;
+      top: 110%;
+      transform: rotate(45deg);
+      background: white;
+  }
 }
 
 @media screen and (max-width: 991px) {
