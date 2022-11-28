@@ -771,13 +771,14 @@ h1, h2, h3, h4, h5 {
   }
   .menu .menu-level-1>li.ext:hover>a::after{
     content: "";
-      width: 14px;
-      height: 14px;
-      position: absolute;
-      right: 50%;
-      top: 110%;
-      transform: rotate(45deg);
-      background: white;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: rotate(45deg) translateX(-10px);
+    background: white;
+    transform-origin: left;
   }
 }
 
