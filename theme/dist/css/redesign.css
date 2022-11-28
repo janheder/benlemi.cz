@@ -2597,7 +2597,8 @@ body.--showFilters .sidebar-left {
   color: #7C2D12;
   background: #F9F1E7;
 }
-.p .flags .flag.flag-czech-product, .p-info-wrapper .flag.flag-czech-product{
+
+.p .flags .flag.flag-czech-product, .p-info-wrapper .flag.flag-czech-product {
   background-color: #e0efc7;
 }
 
@@ -3319,7 +3320,7 @@ li[data-testid="tabRelatedFiles"] {
 }
 
 .cart-empty .cart-heading {
-  margin: 40px 0 80px 0;
+  margin: 0px 0 120px 0;
   font-size: 30px;
 }
 
@@ -3338,6 +3339,13 @@ li[data-testid="tabRelatedFiles"] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+  }
+  .cart-empty .cart-heading {
+    margin: 0px 0 80px 0;
+    font-size: 26px;
+  }
+  .cart-empty{
+    margin-top: -40px;
   }
 }
 
@@ -4236,9 +4244,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 
 
 
-.p-detail-header {
-
-}
+.p-detail-header {}
 
 .p-detail-subheader .p-code {
   display: flex;
@@ -4421,20 +4427,22 @@ input.form-control:focus {
   }
 }
 
-.type-posts-listing .content-inner h1{
+.type-posts-listing .content-inner h1 {
   color: #2E523D;
 }
-.blogCategories__sectionTitle{
-   color: #2E523D;
+
+.blogCategories__sectionTitle {
+  color: #2E523D;
 }
 
-.categoriesSection__row{
+.categoriesSection__row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   margin-right: 0px;
   margin-left: 0px;
 }
+
 .categoriesSection__row .col-6 {
   width: 100%;
   flex-basis: 100%;
@@ -4442,17 +4450,24 @@ input.form-control:focus {
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 991px){
-  .categoriesSection__row{
+
+@media screen and (max-width: 991px) {
+  .categoriesSection__row {
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-@media screen and (max-width: 767px){
-  .categoriesSection__row{
+
+@media screen and (max-width: 767px) {
+  .categoriesSection__row {
     grid-gap: 2px;
     grid-template-columns: 1fr 1fr;
     margin-right: 0px;
     margin-left: 0px;
   }
+}
+
+.p-image .flag-discount .price-save span {
+  padding: 0;
+  background: transparent;
 }

@@ -1,15 +1,4 @@
-// -----------------------------------------------------------------------------
-// PRODUCT PAGE
-// -----------------------------------------------------------------------------
 
-
-if ($("#productVideos").length){
-    $("<div id='productVideosToggle'>Přehrát video</div>").insertAfter(".product-top .p-image #wrap");
-
-    $("#productVideosToggle, #productVideos").click(function(){
-        $("body").toggleClass("--showVideo");
-    });
-}
 
 // -----------------------------------------------------------------------------
 // PRODUCTS PAGE SHOW WATCHDOG
@@ -40,7 +29,6 @@ $(document).ready(function() {
             .then(loadProducts)
     }
 });
-
 
 
 // -----------------------------------------------------------------------------
@@ -89,8 +77,6 @@ $(document).ready(function() {
 });
 
 
-
-
 // -----------------------------------------------------------------------------
 // HEADER AREA
 // -----------------------------------------------------------------------------
@@ -120,30 +106,6 @@ $(function() {
     }
 });
 
-/* add contacts into header area */ 
-if ($(".search").length){
-    if ($("#footer").length){
-        var mail = $("#footer .mail").text().replace(/\s/g,'');
-        var tel = $("#footer .tel").text();
-    }else{
-        var mail = $(".contact-box .mail a").text().replace(/\s/g,'');
-        var tel = $(".contact-box  .tel").text();
-    }
-    $('<div class="header-contacts">'+
-    '<a href="tel:' + tel + '">' + tel + '</a>'+
-    '<a href="mailto:' + mail + '">' + mail + '</a>'+
-    '</div>').insertBefore(".navigation-buttons");
-
-    if($("html:lang(en)").length){
-        $(".header-contacts").append('<span>Mon–Fri 8:30 a.m.– 4:00 p.m</span>');
-    }
-    if($("html:lang(ro)").length){
-        $(".header-contacts").append('<span>Luni-Vineri 8:30 – 16:00</span>');
-    }
-    if($("html:lang(hu)").length){
-        $(".header-contacts").append('<span>hétfő-péntek 8:30 – 16:00</span>');
-    }
-}
 
 /* add search and user icons to header area */
 $(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><a href="/login" class="nav-user"></a>');
@@ -207,7 +169,11 @@ if ($(".popup-widget-inner h2").length){
     $('<div class="navLinks"><a href="/' + g_inClientUrl + '/" class="navLinks__link --user">' + g_userAccount + '</a><span class="navLinks__span">' + g_language + ':</span></div>').insertAfter(".nav-user");
 }
 
+
+
 /* language toggle */
+
+/*
 if ($(":lang(cs)").length){
     $(".navLinks").append('<div class="language-toggle" id="js-langToggle"> <div> <div class="language-toggle-item cz active">Česky</div> <a href="https://benlemi.sk" class="language-toggle-item sk">Slovensky</a> <a href="https://benlemi.com" class="language-toggle-item com">Anglicky</a> <a href="https://benlemi.ro" class="language-toggle-item ro">Rumunsky</a> <a href="https://benlemi.hu" class="language-toggle-item hu">Maďarsky</a> </div></div>');
     $("#js-langToggle").click(function(){
@@ -240,8 +206,7 @@ else if($("html:lang(hu)").length){
 }else{
 
 }
-
-
+*/
 
 
 /* rename user account */
@@ -263,10 +228,11 @@ $(".menu-item-responsive").click(function(){
 
 $(".user-action-cart").insertAfter(".header-top .cart-count");
 
+
+
 // -----------------------------------------------------------------------------
 // PRODUCT PAGE
 // -----------------------------------------------------------------------------
-
 
 if($(".p-detail-inner .flag").length){
     var p_tags = $(".p-detail-inner .flags-default").html();
@@ -304,29 +270,7 @@ $(p_tagsClean + "<div class='p-detail-header'><h1>" + p_name + "</h1></div><div 
 
 
 
-/*
 
-if ($(".p-detail-inner-header").length){
-    
-    $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
-    $(".p-detail-inner-header h1").wrap("<div class='p-detail-inner-heading'></div>");
-
-    $(".p-detail-info .flags").insertBefore(".p-final-price-wrapper");    
-    
-}
-/
-if ($(".p-info-wrapper").length){
-    $(".p-info-wrapper .stars-wrapper, .p-detail-info > div:last-child").appendTo(".p-detail-inner-header");
-}
-
-if ($(".stars-wrapper").length){
-    $(".stars-wrapper").insertBefore(".p-final-price-wrapper");
-}
-
-if ($(".flag.flag-premium").length){
-    $(".flag.flag-premium").insertAfter(".stars-wrapper");
-}
-*/
 
 /* make advanced parameters required */
 if ($(".advanced-parameter").length){
@@ -381,83 +325,6 @@ if ($("#p-detail-tabs").length){
         $(this).removeAttr("data-toggle");
     });
 }
-
-/* load infographic images into parameters */
-
-/*
-if ($("#relatedFiles").length){
-    
-    if($('main select[data-parameter-name="' + g_propositions + '"]').length){
-        $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
-    }else{
-        var src = $('#relatedFiles a').attr("href");
-        $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
-        $(".description-infographics img").attr("src", src);
-        $(".description-infographics a").attr("href", src);  
-    }
-    
-    $('main select[data-parameter-name="' + g_propositions + '"]').change(function() {
-        $(".description-infographics").remove();
-        var option = $('main select[data-parameter-name="' + g_propositions + '"] option:selected').text(); 
-        var optionClean = option.replace(/[cm]/g,'').replace(/\s/g,'').split('(', 1);
-        var src = $('#relatedFiles a[title*="' + optionClean + '"]').attr("href");
-        if(typeof src != 'undefined'){
-            $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
-            $(".description-infographics img").attr("src", src);
-            $(".description-infographics a").attr("href", src);
-        }else{
-            $(".description-infographics").remove();
-        }
-    });
-}
-*/
-if ($("#relatedFiles").length){
-
-        $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
-
-
-        if($("#relatedFiles > li").length == 1){
-            $(".description-infographics").remove();
-            var src = $('#relatedFiles a').attr("href");
-            $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
-            $(".description-infographics img").attr("src", src);
-            $(".description-infographics a").attr("href", src);
-            
-        }else{
-            function loadInfographics(){ 
-
-                $(".description-infographics").remove();
-    
-    
-                let pickedOptions = '';
-                $('.variant-list select').each(function () {
-                    pickedOptions +=  $(this).find("option:selected").text().replace(/ cm/i,'').replace(/ x /i,'x');
-                    pickedOptions += ";";
-        
-                }); 
-                var pickedOptionsClean = pickedOptions.replace(/.$/,"");
-                console.log(pickedOptionsClean);
-                var src = $('#relatedFiles a[title*="' + pickedOptionsClean + '"]').attr("href");
-                if(typeof src != 'undefined'){
-                    
-                    $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
-                    $(".description-infographics img").attr("src", src);
-                    $(".description-infographics a").attr("href", src);
-                }else{
-                    $(".description-infographics").remove();
-                }
-    
-            }
-        
-        
-            document.addEventListener('shoptet.products.replaceImage', function () {
-                loadInfographics();
-            },{passive: true});
-        }
-
-}
-
-
 
 /* relocate video */
 if ($("#productVideos").length){
@@ -579,6 +446,64 @@ if($('select[data-parameter-name="' + g_propositions + '"]').length){
 }
 
 
+/* videos */
+if ($("#productVideos").length){
+    $("<div id='productVideosToggle'>Přehrát video</div>").insertAfter(".product-top .p-image #wrap");
+
+    $("#productVideosToggle, #productVideos").click(function(){
+        $("body").toggleClass("--showVideo");
+    });
+}
+
+// -----------------------------------------------------------------------------
+// INFOGRAPHICS
+// -----------------------------------------------------------------------------
+
+if ($("#relatedFiles").length){
+
+    $(".extended-description").append('<div class="description-infographics empty"><span>' + g_emptyInforgaphicsTitle + '</span></div>');
+
+
+    if($("#relatedFiles > li").length == 1){
+        $(".description-infographics").remove();
+        var src = $('#relatedFiles a').attr("href");
+        $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
+        $(".description-infographics img").attr("src", src);
+        $(".description-infographics a").attr("href", src);
+        
+    }else{
+        function loadInfographics(){ 
+
+            $(".description-infographics").remove();
+
+
+            let pickedOptions = '';
+            $('.variant-list select').each(function () {
+                pickedOptions +=  $(this).find("option:selected").text().replace(/ cm/i,'').replace(/ x /i,'x');
+                pickedOptions += ";";
+    
+            }); 
+            var pickedOptionsClean = pickedOptions.replace(/.$/,"");
+            console.log(pickedOptionsClean);
+            var src = $('#relatedFiles a[title*="' + pickedOptionsClean + '"]').attr("href");
+            if(typeof src != 'undefined'){
+                
+                $(".extended-description").append('<div class="description-infographics"><img src=""><a href="" download>' + g_downloadInfographic + '</a></div>');
+                $(".description-infographics img").attr("src", src);
+                $(".description-infographics a").attr("href", src);
+            }else{
+                $(".description-infographics").remove();
+            }
+
+        }
+    
+    
+        document.addEventListener('shoptet.products.replaceImage', function () {
+            loadInfographics();
+        },{passive: true});
+    }
+
+}
 
 
 // -----------------------------------------------------------------------------

@@ -133,6 +133,9 @@ body.--advancedModalProduct {
   width: 100%;
   max-width: 100%;
 }
+.advancedModal #productsRelated .products-block .product.inactive{
+  display: none;
+}
 advancedModal #productsRelated .products-block .product:nth-child{
   display: none;
 }
