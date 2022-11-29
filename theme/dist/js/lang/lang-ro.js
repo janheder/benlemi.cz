@@ -90,6 +90,8 @@ var g_fullDescription = "Descriere completa";
 var g_totalQuantity = "Cantitatea totala";
 var g_blogText = "Sfaturi și inspirație pentru iubitorii de tendințe și părinți responsabili.";
 
+var g_showSort = "Sortarea produselor";
+
 var g_moreRating = "Mai multe evaluări";
 
 var g_ratingUrl = "evaluarea-magazinului";

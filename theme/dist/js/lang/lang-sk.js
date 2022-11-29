@@ -80,11 +80,11 @@ var g_relatedProducts = "Súvisiace produkty";
 var g_showMoreRelatedProducts = "Zobraziť ďalšie súvisiace produkty";
 var g_emptyInforgaphicsTitle = "Vyberte rozmer vyššie a zobrazí sa vám detailná infografika produktu";
 
-var g_openFilter = "Zobraziť filter";
+var g_openFilter = "FILTROVAŤ";
 var g_showMore = "Zobraziť ďalšie";
 var g_show = "Zobraziť";
 var g_moreVariants = "Viac variant";
-var g_showFilter = "Zobraziť filter";
+var g_showFilter = "FILTROVAŤ";
 var g_hideFilter = "Skryť filter";
 var g_fullDescription = "Celý popis";
 var g_totalQuantity = "Položiek celkom";

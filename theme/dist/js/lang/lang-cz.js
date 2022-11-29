@@ -84,9 +84,9 @@ var g_showMore = "Zobrazit další";
 var g_show = "Zobrazit";
 var g_moreVariants = "Více variant";
 var g_showFilter = "Zobrazit filtr";
-var g_hideFilter = "Filtrovat";
+var g_hideFilter = "FILTROVAT";
 var g_fullDescription = "Celý popis";
-var g_totalQuantity = "Položek celkem";
+var g_totalQuantity = "Položek celkem"; 
 
 var g_showSort = "Řazení produktů";
 

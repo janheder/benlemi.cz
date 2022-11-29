@@ -1592,6 +1592,9 @@ footer {
   padding-left: 0px;
   display: inline !important;
 }
+.newsletterSection__consent a:hover{
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 991px) {
   #newsletterSection {
@@ -3460,7 +3463,7 @@ li[data-testid="tabRelatedFiles"] {
 }
 
 .perex-showMore {
-  color: #78aa66;
+  color: #689C56;
   white-space: nowrap;
   cursor: pointer;
   padding-left: 10px;
@@ -3760,7 +3763,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   font-size: 14px;
   height: 15px;
   margin-top: 2px;
-  background: #78aa66;
+  background: #689C56;
 }
 
 @media screen and (max-width: 991px) {
@@ -4226,7 +4229,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 }
 
 .social-buttons-wrapper .link-icon.watchdog {
-  background: #78aa66;
+  background: #689C56;
   display: inline-flex;
   padding: 15px 30px;
   padding-left: 75px;
@@ -4307,6 +4310,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 
 .p-detail-subheader .p-code {
   display: flex;
+  gap: 5px;
 }
 
 .p-detail-header h1 {

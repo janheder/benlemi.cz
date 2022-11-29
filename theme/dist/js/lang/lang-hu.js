@@ -89,6 +89,8 @@ var g_fullDescription = "Teljes leírás";
 var g_totalQuantity = "Teljes mennyiség";
 var g_blogText = "Tanácsok és inspiráció a trend szerelmeseinek és a felelős szülőknek.";
 
+var g_showSort = "Termékek válogatása";
+
 var g_moreRating = "További értékelések";
 
 var g_ratingUrl = "uzleti-ertekeles";
