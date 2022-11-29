@@ -2945,6 +2945,15 @@ body.--showFilters .sidebar-left {
   font-size: 20px;
 }
 
+.order-summary-item.price .price-wrapper {
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+}
+.order-summary-item.price strong {
+  width: 100%;
+}
 
 select.form-control, select.form-control:valid {
   background-size: 8px;
