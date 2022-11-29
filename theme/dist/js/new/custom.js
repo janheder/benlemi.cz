@@ -805,15 +805,15 @@ if ($(":lang(sk)").length) {
     $('#navigation .menu-item-3756, #navigation .menu-item-3768, #navigation .menu-item-1386, #navigation .menu-item-3002').insertAfter(".main-header-nav a");
 }
 if ($(":lang(en)").length) {
-    $('<div class="main-header-nav"><a href="/produkty">Products</a>').insertAfter(".header-top > div:nth-child(2)");
+    $('<div class="main-header-nav"><a href="/products-2">Products</a>').insertAfter(".header-top > div:nth-child(2)");
     $('#navigation .menu-item-1929, #navigation .menu-item-1959, #navigation .menu-item-1454, #navigation .menu-item-1276').insertAfter(".main-header-nav a");
 }
 if ($(":lang(ro)").length) {
-    $('<div class="main-header-nav"><a href="/produkty">Products</a>').insertAfter(".header-top > div:nth-child(2)");
+    $('<div class="main-header-nav"><a href="/produse-2">Produse</a>').insertAfter(".header-top > div:nth-child(2)");
     $('#navigation .menu-item-1895, #navigation .menu-item-1952, #navigation .menu-item-1454, #navigation .menu-item-1276').insertAfter(".main-header-nav a");
 }
 if ($(":lang(hu)").length) {
-    $('<div class="main-header-nav"><a href="/produkty">Products</a>').insertAfter(".header-top > div:nth-child(2)");
+    $('<div class="main-header-nav"><a href="/butorok--dekoraciok-es-lakastextiliak-egy-fedel-alatt">Termékek</a>').insertAfter(".header-top > div:nth-child(2)");
     $('#navigation .menu-item-1808, #navigation .menu-item-2240, #navigation .menu-item-1460').insertAfter(".main-header-nav a");
 }
 
