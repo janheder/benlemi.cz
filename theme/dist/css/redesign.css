@@ -1544,6 +1544,8 @@ footer {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  width: 480px;
+  max-width: calc(100vw - 20px);
 }
 
 .newsletterSection__formGroup {
@@ -1588,7 +1590,7 @@ footer {
 
 .newsletterSection__consent a {
   padding-left: 0px;
-  display: inline-block !important;
+  display: inline !important;
 }
 
 @media screen and (max-width: 991px) {
