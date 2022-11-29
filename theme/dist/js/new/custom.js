@@ -1113,7 +1113,8 @@ if ($(":lang(ro)").length) {
 
     /* remove parameters */
     $('.detail-parameters tr th:contains("Categorie:"), .detail-parameters tr th:contains("Tipul de produs:")').parents('tr').remove();
-
+    
+    /* cart coupon */
     $(document).ready(function () {
 
         if ($(".p-price.p-cell .show-tooltip.acronym").length) {
@@ -1161,4 +1162,42 @@ if ($(":lang(ro)").length) {
 
         }
     });
+}
+
+
+// =============================================================================
+// HU SCRIPTS
+// =============================================================================
+
+if ($(":lang(hu)").length) {
+    if ($(".in-aludjon-egeszsegugyi-matracon, .in-aludjon-egeszsegugyi-matracon").length) {
+        var img = $("#relatedFiles a").attr("href");
+        $(".extended-description").append('<div class="description-infographics-matrace"><img src="' + img + '"></div>')
+    }
+
+    /* remove parameters */
+    $('.detail-parameters tr th:contains("Kategória:"), .detail-parameters tr th:contains("Modell:")').parents('tr').remove();
+
+    /* cart coupon */
+    $(document).ready(function () {
+
+        if ($(".p-price.p-cell .show-tooltip.acronym").length) {
+
+            $(".discount-coupon input[type='text'], .discount-coupon button").attr("disabled", "true");
+            $("<span>A kedvezmény kód nem alkalmazható olyan kosárra, amely leárazott terméket tartalmaz.</span>").insertAfter(".discount-coupon button");
+
+        }
+    });
+
+    $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
+
+    if ($(".login.toggle-window").length) {
+        $(".headerFreeDeliveryNew").html("Regisztráljon, és <br> 3% kedvezményt kap az első vásárláskor");
+    } else {
+        $.get('/ugyfel/ugyfel-kedvezmenyek/', function (data) {
+            data = $(data).find('.content-inner table tr:last-child strong').html();
+            $(".headerFreeDeliveryNew").html("Most " + data + "<br> kedvezményben részesül a vásárlásból");
+        });
+
+    }
 }
