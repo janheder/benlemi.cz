@@ -2149,7 +2149,7 @@ div.hidden-split-parameter {
 .main-header-nav>li.menu-item-2960>a::before,
 .main-header-nav>li.menu-item-3002>a::before,
 .main-header-nav>li.menu-item-1454>a::before,
-.main-header-nav>li.menu-item-1460>a
+.main-header-nav>li.menu-item-1460>a::before
 {
   content: "";
   background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/nav-new.svg");
