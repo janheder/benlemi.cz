@@ -812,6 +812,10 @@ if ($(":lang(ro)").length) {
     $('<div class="main-header-nav"><a href="/produkty">Products</a>').insertAfter(".header-top > div:nth-child(2)");
     $('#navigation .menu-item-1895, #navigation .menu-item-1952, #navigation .menu-item-1454, #navigation .menu-item-1276').insertAfter(".main-header-nav a");
 }
+if ($(":lang(hu)").length) {
+    $('<div class="main-header-nav"><a href="/produkty">Products</a>').insertAfter(".header-top > div:nth-child(2)");
+    $('#navigation .menu-item-1808, #navigation .menu-item-2240, #navigation .menu-item-1460').insertAfter(".main-header-nav a");
+}
 
 $(".main-header-nav>li").hover(function () {
     $("img").unveil();
