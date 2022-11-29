@@ -2195,7 +2195,7 @@ div.hidden-split-parameter {
 }
 
 /* hu */
-:lang(hu) #navigation .menu-item-1808, :lang(ro) #navigation .menu-item-2240, :lang(ro) #navigation .menu-item-1460{
+:lang(hu) #navigation .menu-item-1808, :lang(hu) #navigation .menu-item-2240, :lang(hu) #navigation .menu-item-1460{
   display: none !important
 }
 
