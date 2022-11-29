@@ -3,7 +3,6 @@
 // ADVANCED ORCDER SUMMARY
 // =============================================================================
 
-
 if ($(":lang(cs)").length){
     var am_title = "Zboží bylo přidáno do košíku";
     var am_stock = "Dostupnost";

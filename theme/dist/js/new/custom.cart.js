@@ -87,5 +87,40 @@ $(".showMoreRelated").click(function(){
 });
 
 
+// =============================================================================
+// load cart images 
+// =============================================================================
+
+if ($(":lang(cs)").length){
+    var sd_cartUrl = "/kosik/";
+}
+if ($(":lang(sk)").length){
+    var sd_cartUrl = "/kosik/";
+}
+if ($(":lang(en)").length){
+    var sd_cartUrl = "/cart/";
+}
+if ($(":lang(ro)").length){
+    var sd_cartUrl = "/cos-de-cumparaturi/";
+}
+if ($(":lang(hu)").length){
+    var sd_cartUrl = "/kosar/";
+}
+
+if ($("#checkoutSidebar .cart-item").length) {
+    const loadPicImages = (html) => {
+        const nodes = new DOMParser().parseFromString(html, 'text/html');
+        const body = nodes.querySelectorAll('.cart-p-image a');
+        const num = nodes.querySelectorAll('.cart-p-image a').length;
+        for (var i = 0; i < num; i++) {
+            document.querySelector('#checkoutSidebar .cart-item:nth-child(' + (i + 1) + ')').prepend(body[i]);
+        }
+        $("img").unveil();
+    };
+    fetch(sd_cartUrl)
+        .then((response) => response.text())
+        .then(loadPicImages)
+        .then($("img").unveil())
+}
 
 
