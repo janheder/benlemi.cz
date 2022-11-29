@@ -31,7 +31,9 @@
     padding-bottom: 15px;
     margin: 0;
 }
-
+.ordering-process .cart-table .related .related-title.--active{
+    border-bottom: 1px solid #F0F0F0;
+}
 .ordering-process .cart-table .related>td {
     display: grid;
     grid-gap: 00px;
@@ -41,6 +43,7 @@
 .ordering-process .cart-related-product {
     background: #FFFFFF;
     outline: 1px solid #F0F0F0;
+    border-top: 0;
     padding: 8px 15px;
     height: auto;
     flex-basis: 100%;
@@ -120,7 +123,8 @@
 
     .ordering-process .cart-table .removeable .p-price .show-tooltip.acronym{
         display: flex;
-      }
+        white-space: nowrap;
+    }
       
     .ordering-process .cart-table .removeable .p-price .show-tooltip::before {
         content: "";

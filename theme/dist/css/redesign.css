@@ -1303,7 +1303,7 @@ footer {
   left: 0;
   position: absolute;
   display: flex;
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/img/cta-bg.png");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/cta-bg.png");
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2654,7 +2654,7 @@ body.--showFilters .sidebar-left {
   color: white;
   height: 25px;
   padding-left: 66px;
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/symbol-premium.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/symbol-premium.svg");
   background-position: left 8px top 5px;
   text-transform: uppercase;
   font-weight: 500;
@@ -2665,7 +2665,7 @@ body.--showFilters .sidebar-left {
 }
 
 .flag.flag-premium, .flag.flag-exclusive {
-  background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/symbol-exclusive.svg");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/symbol-exclusive.svg");
   padding-left: 79px;
 }
 
@@ -2822,6 +2822,10 @@ body.--showFilters .sidebar-left {
 .next-step-back {
   background: #F7FAF9;
   height: 50px;
+}
+.next-step-back:hover, .next-step-back:active, .next-step-back:focus {
+  text-decoration: none;
+  background: #ECF2E8;
 }
 
 .product-top {
@@ -4337,7 +4341,6 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
 }
 
 .in-kosik .cart-table .p-availability, .in-cart .cart-table .p-availability, .in-cos-de-cumparaturi .cart-table .p-availability, .in-kosar .cart-table .p-availability {
-  justify-content: center;
   align-items: center;
   font-size: 14px;
 }
@@ -4366,6 +4369,9 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
   .header-contacts a {
     padding: 0;
     padding-left: 30px;
+  }
+  .in-kosik .cart-table .p-availability, .in-cart .cart-table .p-availability, .in-cos-de-cumparaturi .cart-table .p-availability, .in-kosar .cart-table .p-availability {
+    padding: 5px 0 10px 0;
   }
 }
 
