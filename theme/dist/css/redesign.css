@@ -2194,7 +2194,10 @@ div.hidden-split-parameter {
   display: none !important
 }
 
-
+/* hu */
+:lang(hu) #navigation .menu-item-1808, :lang(ro) #navigation .menu-item-2240, :lang(ro) #navigation .menu-item-1460{
+  display: none !important
+}
 
 @media screen and (max-width: 1330px) {
   .menu-level-1>li.ext>a {
