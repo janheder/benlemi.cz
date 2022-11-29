@@ -40,6 +40,29 @@ if ($(":lang(en)").length){
     var am_cartUrl = "/cart";
 }
 
+if ($(":lang(ro)").length){
+    var am_title = "Produsul a fost adăugat în coș";
+    var am_stock = "Stoc";
+    var am_amount = "Număr de bucați";
+    var am_totalprice = "Pretul total";
+    var am_back = "Înapoi la magazin";
+    var am_gotocart = "Du-te la coș";
+    var am_currency = "lei";
+    var am_related = "Produse asemanatoare";
+    var am_cartUrl = "/cos-de-cumparaturi";
+}
+
+if ($(":lang(hu)").length){
+    var am_title = "A termék a kosárba került";
+    var am_stock = "Elérhetőség";
+    var am_amount = "Darbok száma";
+    var am_totalprice = "Teljes ár";
+    var am_back = "Vissza az áruházba";
+    var am_gotocart = "Ugrás a kosárba";
+    var am_currency = "€";
+    var am_related = "Kapcsolódó termékek";
+    var am_cartUrl = "/kosar";
+}
 
 if ($(".type-detail").length){
 
@@ -73,6 +96,12 @@ if ($(".type-detail").length){
         }
         if ($(":lang(en").length){
             var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
+        }
+        if ($(":lang(ro)").length){
+            var priceTotal = parseInt(priceSingle.replace('lei', '').replace(/\s/g,''))*amount;  //ro version
+        }
+        if ($(":lang(hu)").length){
+            var priceTotal = parseInt(priceSingle.replace('HUF', '').replace(/\s/g,''))*amount;  //hu version
         }
 
         document.addEventListener('ShoptetCartUpdated', function () {

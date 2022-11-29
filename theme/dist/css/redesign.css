@@ -68,6 +68,7 @@
 
 .main-header-nav a b {
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .main-header-nav>li {
