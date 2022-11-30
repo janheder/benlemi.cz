@@ -97,7 +97,7 @@ if ($(".type-detail").length){
             var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
         }
         if ($(":lang(ro)").length){
-            var priceTotal = parseFloat(priceSingle.replace('lei', '').replace(',','.'))*amount;  //ro version
+            var priceTotal = parseFloat(priceSingle.replace(' ', '').replace('lei', '').replace(',','.'))*amount;  //ro version
         }
         if ($(":lang(hu)").length){
             var priceTotal = parseInt(priceSingle.replace('Ft', '').replace(/\s/g,''))*amount;  //hu version
