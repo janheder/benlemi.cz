@@ -58,7 +58,7 @@ if ($(":lang(hu)").length){
     var am_totalprice = "Teljes ár";
     var am_back = "Vissza az áruházba";
     var am_gotocart = "Ugrás a kosárba";
-    var am_currency = "€";
+    var am_currency = "Ft";
     var am_related = "Kapcsolódó termékek";
     var am_cartUrl = "/kosar";
 }
@@ -97,10 +97,10 @@ if ($(".type-detail").length){
             var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
         }
         if ($(":lang(ro)").length){
-            var priceTotal = parseInt(priceSingle.replace('lei', '').replace(/\s/g,''))*amount;  //ro version
+            var priceTotal = parseFloat(priceSingle.replace('lei', '').replace(',','.'))*amount;  //ro version
         }
         if ($(":lang(hu)").length){
-            var priceTotal = parseInt(priceSingle.replace('HUF', '').replace(/\s/g,''))*amount;  //hu version
+            var priceTotal = parseInt(priceSingle.replace('Ft', '').replace(/\s/g,''))*amount;  //hu version
         }
 
         document.addEventListener('ShoptetCartUpdated', function () {

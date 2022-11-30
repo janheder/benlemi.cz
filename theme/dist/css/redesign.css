@@ -1168,6 +1168,22 @@ body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
   font-weight: 400;
 }
 
+html:lang(sk) .login-widget h2::after{
+  content: "Ako člen zbierate zľavy za každý svoj nákup.";
+}
+
+html:lang(en) .login-widget h2::after{
+  content: "As a member, you collect discounts for every purchase you make.";
+}
+
+html:lang(ro) .login-widget h2::after{
+  content: "Ca membru, colectezi reduceri pentru fiecare achiziție pe care o faci.";
+}
+
+html:lang(hu) .login-widget h2::after{
+  content: "Tagként kedvezményeket gyűjt minden vásárlása után.";
+}
+
 .login-widget .btn {
   height: 58px;
   background: #CF4823;
