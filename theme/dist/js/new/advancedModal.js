@@ -116,6 +116,7 @@ if ($(".type-detail").length){
             '<div class="advancedProduct-amount">' + am_amount + '<span>' + amount + 'x</span></div>' +
             '<div class="advancedProduct-priceTotal">' + am_totalprice + '<span>' + priceTotal + ' '+ am_currency +'</span></div>' +
             '</div></div>');
+            console.log(priceTotal);
         },{
             passive: true
         });
