@@ -91,13 +91,13 @@ if ($(".type-detail").length){
             var priceTotal = parseInt(priceSingle.replace('Kč', '').replace(/\s/g,''))*amount;  //cz version
         }
         if ($(":lang(sk)").length){
-            var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
+            var priceTotal = parseFloat(priceSingle.replace('€', '').replace(/\s/g, '').replace(',','.'))*amount;  //sk version
         }
         if ($(":lang(en").length){
-            var priceTotal = parseFloat(priceSingle.replace('€', '').replace(',','.'))*amount;  //sk version
+            var priceTotal = parseFloat(priceSingle.replace('€', '').replace(/\s/g, '').replace(',','.'))*amount;  //sk version
         }
         if ($(":lang(ro)").length){
-            var priceTotal = parseFloat(priceSingle.replace(' ', '').replace('lei', '').replace(',','.'))*amount;  //ro version
+            var priceTotal = parseFloat(priceSingle.replace('lei', '').replace(/\s/g, '').replace(',','.'))*amount;  //ro version
         }
         if ($(":lang(hu)").length){
             var priceTotal = parseInt(priceSingle.replace('Ft', '').replace(/\s/g,''))*amount;  //hu version
