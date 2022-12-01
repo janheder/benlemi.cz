@@ -2054,7 +2054,14 @@ footer {
 }
 
 div.hidden-split-parameter {
-  margin: 0 -5px;
+  margin: 0;
+  gap: 4px;
+}
+div.hidden-split-parameter > span{
+  display: none;
+}
+.advanced-parameter {
+  padding: 0px;
 }
 
 .nav-user {
