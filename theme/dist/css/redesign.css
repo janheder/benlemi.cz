@@ -2056,6 +2056,8 @@ footer {
 div.hidden-split-parameter {
   margin: 0;
   gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
 }
 div.hidden-split-parameter > span{
   display: none;

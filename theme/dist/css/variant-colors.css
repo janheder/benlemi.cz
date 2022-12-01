@@ -137,6 +137,26 @@ html:lang(cs) .widget-parameter-value a[data-value-id="8402"] {
     background: #996633;
 }
 
+html:lang(cs) .widget-parameter-value a[data-value-id="11535"] {
+    background: #dbe4e3;
+}
+
+html:lang(cs) .widget-parameter-value a[data-value-id="13575"] {
+    background: #dfd7d4;
+}
+
+html:lang(cs) .widget-parameter-value a[data-value-id="9955"] {
+    background: #0033cc;
+}
+
+html:lang(cs) .widget-parameter-value a[data-value-id="9958"] {
+    background: #fffe65;
+}
+
+html:lang(cs) .widget-parameter-value a[data-value-id="13587"] {
+    background: #ffcc80;
+}
+
 html:lang(cs) .widget-parameter-value a[data-value-id="8603"] {
     background-image: url("https://www.benlemi.cz/user/parameters/duha_v___ern__ch_odst__nech.jpg");
 }
@@ -145,13 +165,17 @@ html:lang(cs) .widget-parameter-value a[data-value-id="8606"] {
     background-image: url("https://www.benlemi.cz/user/parameters/duha_kopie.jpg");
 }
 
+html:lang(cs) .widget-parameter-value a[data-value-id="8773"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/b__lo-__edo-r____ov__.jpg");
+}
 
+html:lang(cs) .widget-parameter-value a[data-value-id="8776"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/b__lo-__edo-mint.jpg");
+}
 
-
-
-
-
-
+html:lang(cs) .widget-parameter-value a[data-value-id="8779"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/b__lo-__edo-ho____icov___2.jpg");
+}
 
 
 
