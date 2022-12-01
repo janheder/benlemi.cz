@@ -2,114 +2,147 @@
     order: 2;
     padding-bottom: 15px;
 }
-.widget-parameter-list{
+
+.widget-parameter-list {
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 4px;
+    gap: 0px;
     padding: 0;
     font-size: 0;
 }
-.widget-parameter-value a{
+
+.widget-parameter-value {
+    margin-left: -4px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.widget-parameter-value a {
     display: flex;
     height: 18px;
     width: 18px;
     background: white;
     border-radius: 50%;
+    background-size: cover;
 }
 
-.p-in-in .name .p-variants:last-child{
+.p-in-in .name .p-variants:last-child {
     display: none;
 }
 
-.p-in + .widget-parameter-wrapper{
+.p-in+.widget-parameter-wrapper {
     display: none;
 }
 
 /* CZ */
-html:lang(cs) .widget-parameter-value a[data-value-id="705"]{
+html:lang(cs) .widget-parameter-value a[data-value-id="705"] {
     background: #f1ebe2;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="13488"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="13488"] {
     background: #f1ebe2;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="1"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="1"] {
     background: #fff;
     border: 1px solid #E7EEEC;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="750"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="750"] {
     background: #c0c0c0;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="579"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="579"] {
     background: #000000;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="762"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="762"] {
     background: #009999;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="78"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="78"] {
     background: #e89cb6;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="3"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="3"] {
     background: #bfe4bb;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="2596"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="2596"] {
     background: #e9dac3;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="741"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="741"] {
     background: #ffc702;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="789"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="789"] {
     background: #ffffde;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="792"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="792"] {
     background: #963400;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="795"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="795"] {
     background: #dc3a3c;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="798"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="798"] {
     background: #4cb4da;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="801"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="801"] {
     background: #9ACD32;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="3060"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="3060"] {
     background: #9aff99;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="3192"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="3192"] {
     background: #90f4e3;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="7337"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="7337"] {
     background: #dbcebe;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="7343"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="7343"] {
     background: #be7cf9;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="7346"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="7346"] {
     background: #003300;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="7349"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="7349"] {
     background: #f8a102;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="7355"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="7355"] {
     background: #b1b2b0;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="7358"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="7358"] {
     background: #663234;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="8186"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="8186"] {
     background: #ffce93;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="8402"]{
+
+html:lang(cs) .widget-parameter-value a[data-value-id="8402"] {
     background: #996633;
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="8603"]{
-    background-image:url("https://www.benlemi.cz/user/parameters/duha_v___ern__ch_odst__nech.jpg");
-    background-image: cover;
+
+html:lang(cs) .widget-parameter-value a[data-value-id="8603"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/duha_v___ern__ch_odst__nech.jpg");
 }
-html:lang(cs) .widget-parameter-value a[data-value-id="8606"]{
-    background-image:url("https://www.benlemi.cz/user/parameters/duha_kopie.jpg");
-    background-image: cover;
+
+html:lang(cs) .widget-parameter-value a[data-value-id="8606"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/duha_kopie.jpg");
 }
 
 
@@ -125,58 +158,143 @@ html:lang(cs) .widget-parameter-value a[data-value-id="8606"]{
 
 /* SK */
 
-html:lang(sk) .widget-parameter-value a[data-value-id="24"]{
+html:lang(sk) .widget-parameter-value a[data-value-id="24"] {
     background: #fff;
     border: 1px solid #E7EEEC;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="42"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="42"] {
     background: #f1ebe2;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="8469"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="8469"] {
     background: #f1ebe2;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="36"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="36"] {
     background: #9babb8;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="30"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="30"] {
     background: #000;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="27"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="27"] {
     background: #009999;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="33"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="33"] {
     background: #e89cb6;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="18"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="18"] {
     background: #bfe4bb;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="39"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="39"] {
     background: #e9dac3;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="1964"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="1964"] {
     background: #cecdc8;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="681"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="681"] {
     background: #ffffde;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="678"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="678"] {
     background: #ffc702;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="690"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="690"] {
     background: #b8ae3d;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="687"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="687"] {
     background: #4cb4da;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="675"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="675"] {
     background: #963400;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="672"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="672"] {
     background: #dc3a3c;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="1578"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="1578"] {
     background: #90f4e3;
 }
-html:lang(sk) .widget-parameter-value a[data-value-id="1958"]{
+
+html:lang(sk) .widget-parameter-value a[data-value-id="1958"] {
     background: #2d4371;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="5029"] {
+    background: #22a6e5;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="5059"] {
+    background: #fffe65;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="6786"] {
+    background: #dbe4e3;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="8499"] {
+    background: #dfd7d4;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="2438"] {
+    background: #dbcebe;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="5062"] {
+    background: #9aff99;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="6579"] {
+    background: #F0B6C1;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="7326"] {
+    background: #ffccc9;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="6582"] {
+    background: #CC0033;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="7317"] {
+    background: #669966;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="6771"] {
+    background: #cdffff;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="6585"] {
+    background: #003300;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="3185"] {
+    background: #996633;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="7221"] {
+    background: #a3818e;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="3673"] {
+    background-image: url("https://www.benlemi.sk/user/parameters/b__lo-__edo-r____ov___1.jpg");
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="3679"] {
+    background-image: url("https://www.benlemi.sk/user/parameters/b__lo-__edo-mint_1.jpg");
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="3748"] {
+    background-image: url("https://www.benlemi.sk/user/parameters/b__lo-__edo-ho____icov___1.jpg");
 }
