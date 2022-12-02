@@ -815,9 +815,9 @@ $(document).ready(function () {
     });
 
 
-    $(".cart-content #billZip, .cart-content #shipping-address #deliveryZip").removeClass("js-validate js-validate-zip-code");
+    $(".cart-content #billZip, .cart-content #shipping-address #deliveryZip").removeClass("js-validate js-validate-required js-error-field js-validate-zip-code");
     $(".cart-content #billZip, .cart-content #shipping-address #deliveryZip").change(function () {
-        $(this).removeClass("js-validate js-validate-zip-code");
+        $(this).removeClass("js-validate js-validate-required js-error-field js-validate-zip-code");
         $(this).attr("disabled", false);
     });
 
