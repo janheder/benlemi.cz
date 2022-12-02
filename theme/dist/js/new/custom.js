@@ -801,7 +801,7 @@ $(".main-header-nav>li").hover(function () {
 });
 
 // =============================================================================
-// remove cart phone validation
+// remove cart phone validation & zip code validation
 // =============================================================================
 
 
@@ -811,6 +811,13 @@ $(document).ready(function () {
     $(".cart-content #phone, .co-registration #phone").attr("disabled", false);
     $(".cart-content #phone, .co-registration #phone").change(function () {
         $(this).removeClass("js-validate-phone js-validate js-validate-required js-error-field js-phone-form-control js-validated-field");
+        $(this).attr("disabled", false);
+    });
+
+
+    $(".cart-content #billZip, .cart-content #shipping-address #deliveryZip").removeClass("js-validate js-validate-zip-code");
+    $(".cart-content #billZip, .cart-content #shipping-address #deliveryZip").change(function () {
+        $(this).removeClass("js-validate js-validate-zip-code");
         $(this).attr("disabled", false);
     });
 
