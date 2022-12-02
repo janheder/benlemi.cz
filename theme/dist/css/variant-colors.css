@@ -18,9 +18,11 @@
     border: 2px solid white;
     border-radius: 50%;
 }
-.widget-parameter-value:first-child{
+
+.widget-parameter-value:first-child {
     margin: 0;
 }
+
 .widget-parameter-value a {
     display: flex;
     height: 18px;
@@ -232,6 +234,21 @@ html:lang(cs) .widget-parameter-value a[data-value-id="13071"] {
     background: #1e1c1c;
 }
 
+html:lang(cs) .widget-parameter-value a[data-value-id="13455"] {
+    background: #7c7474;
+}
+
+html:lang(cs) .widget-parameter-value a[data-value-id="13050"] {
+    background: #1c1c1c;
+}
+
+html:lang(cs) .widget-parameter-value a[data-value-id="11511"] {
+    background: #686a6b;
+}
+
+
+
+
 html:lang(cs) .widget-parameter-value a[data-value-id="8603"] {
     background-image: url("https://www.benlemi.cz/user/parameters/duha_v___ern__ch_odst__nech.jpg");
 }
@@ -272,6 +289,21 @@ html:lang(cs) .widget-parameter-value a[data-value-id="13776"] {
     background-image: url("https://www.benlemi.cz/user/parameters/n__vrh_bez_n__zvu_(49).png");
 }
 
+html:lang(cs) .widget-parameter-value a[data-value-id="9772"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/bile.jpg");
+}
+
+html:lang(cs) .widget-parameter-value a[data-value-id="9784"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/__ed__.jpg");
+}
+
+html:lang(cs) .widget-parameter-value a[data-value-id="9787"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/tyrkys.jpg");
+}
+
+html:lang(cs) .widget-parameter-value a[data-value-id="9781"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/pr-ru.jpg");
+}
 
 
 
