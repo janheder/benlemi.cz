@@ -1866,7 +1866,7 @@ footer {
 
 .products-block {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: 40px 20px;
   margin: 0;
 }
