@@ -2260,6 +2260,11 @@ div.hidden-split-parameter > span{
     font-size: 15px
   }
 
+  :lang(hu) .menu-level-1>li>a {
+    padding: 0 12px 0 12px;
+    font-size: 14px
+  }
+
   .menu-level-1>li>a::before {
     content: none;
   }
