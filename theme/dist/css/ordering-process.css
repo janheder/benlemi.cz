@@ -251,7 +251,7 @@ html:lang(cs) .cart-summary .extras-wrap .extra.discount a::before {
 html:lang(sk) .cart-summary .extras-wrap .extra.discount a::before {
     content: "Registrujte sa a zbierajte zľavy s každým svojim nákupom.";
 }
-html:lang(com) .cart-summary .extras-wrap .extra.discount a::before {
+html:lang(en) .cart-summary .extras-wrap .extra.discount a::before {
     content: "Sign up and collect discounts with every purchase you make.";
 }
 html:lang(ro) .cart-summary .extras-wrap .extra.discount a::before {
