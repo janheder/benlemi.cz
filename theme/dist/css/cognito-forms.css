@@ -1,0 +1,57 @@
+.kontakty__form {
+    border: 0;
+    background: #f7faf9;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cognitoWrap {
+    background: #fff;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
+    padding: 60px;
+    margin: 0;
+    max-width: 800px;
+    width: 100%;
+}
+
+html .cog-form__container, :root:root:root:root:root .cog-form__container {
+    background: transparent;
+}
+
+html .cog-cognito--styled .el-input__inner, html .cog-cognito--styled .el-textarea__inner, :root:root:root:root:root .cog-cognito--styled .el-input__inner, :root:root:root:root:root .cog-cognito--styled .el-textarea__inner {
+    box-shadow: none;
+    border: 1px solid #e7eeec;
+}
+
+html .cog-page__navigation, :root:root:root:root:root .cog-page__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+html .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-cognito--styled .cog-button--primary {
+    background-color: #b93d19;
+    border: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .kontakty__form {
+        border: 0;
+        background: #fff;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .cognitoWrap {
+        background: #fff;
+        box-shadow: none;
+        padding: 40px 20px;
+        padding-top: 0;
+    }
+}

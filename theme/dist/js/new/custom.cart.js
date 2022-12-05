@@ -84,6 +84,7 @@ $(".related").append("<div class='showMoreRelated'>" + g_showMore + "</div>");
 $(".showMoreRelated").click(function(){
     $(this).parent(".related").addClass("visible");
     $(this).remove();
+    $("img").unveil();
 });
 
 

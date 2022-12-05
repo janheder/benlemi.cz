@@ -755,11 +755,13 @@ h1, h2, h3, h4, h5 {
     font-size: 15px;
     color: #2E523D;
   }
-  .menu .menu-level-2{
+
+  .menu .menu-level-2 {
     background: transparent;
     padding-top: 20px;
   }
-  .menu .menu-level-2::after{
+
+  .menu .menu-level-2::after {
     content: "";
     background: white;
     top: 10px;
@@ -770,7 +772,8 @@ h1, h2, h3, h4, h5 {
     position: absolute;
     z-index: -1;
   }
-  .menu .menu-level-1>li.ext:hover>a::after{
+
+  .menu .menu-level-1>li.ext:hover>a::after {
     content: "";
     width: 14px;
     height: 14px;
@@ -1168,19 +1171,19 @@ body.template-11 .p-info-wrapper .dkLabCountdownWrapper {
   font-weight: 400;
 }
 
-html:lang(sk) .login-widget h2::after{
+html:lang(sk) .login-widget h2::after {
   content: "Ako člen zbierate zľavy za každý svoj nákup.";
 }
 
-html:lang(en) .login-widget h2::after{
+html:lang(en) .login-widget h2::after {
   content: "As a member, you collect discounts for every purchase you make.";
 }
 
-html:lang(ro) .login-widget h2::after{
+html:lang(ro) .login-widget h2::after {
   content: "Ca membru, colectezi reduceri pentru fiecare achiziție pe care o faci.";
 }
 
-html:lang(hu) .login-widget h2::after{
+html:lang(hu) .login-widget h2::after {
   content: "Tagként kedvezményeket gyűjt minden vásárlása után.";
 }
 
@@ -1608,7 +1611,8 @@ footer {
   padding-left: 0px;
   display: inline !important;
 }
-.newsletterSection__consent a:hover{
+
+.newsletterSection__consent a:hover {
   text-decoration: underline;
 }
 
@@ -2059,9 +2063,11 @@ div.hidden-split-parameter {
   display: flex;
   flex-wrap: wrap;
 }
-div.hidden-split-parameter > span{
+
+div.hidden-split-parameter>span {
   display: none;
 }
+
 .advanced-parameter {
   padding: 0px;
 }
@@ -2171,16 +2177,14 @@ div.hidden-split-parameter > span{
 .main-header-nav>li.menu-item-2960>a,
 .main-header-nav>li.menu-item-3002>a,
 .main-header-nav>li.menu-item-1454>a,
-.main-header-nav>li.menu-item-1460>a
-{
+.main-header-nav>li.menu-item-1460>a {
   color: #F0BA00;
 }
 
 .main-header-nav>li.menu-item-2960>a::before,
 .main-header-nav>li.menu-item-3002>a::before,
 .main-header-nav>li.menu-item-1454>a::before,
-.main-header-nav>li.menu-item-1460>a::before
-{
+.main-header-nav>li.menu-item-1460>a::before {
   content: "";
   background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/nav-new.svg");
   background-size: 100%;
@@ -2192,8 +2196,7 @@ div.hidden-split-parameter > span{
 
 .main-header-nav>li.menu-item-1395>a,
 .main-header-nav>li.menu-item-1386>a,
-.main-header-nav>li.menu-item-1276>a
-{
+.main-header-nav>li.menu-item-1276>a {
   color: #7C2D12;
 }
 
@@ -2230,7 +2233,7 @@ div.hidden-split-parameter > span{
 }
 
 /* hu */
-:lang(hu) #navigation .menu-item-1808, :lang(hu) #navigation .menu-item-2240, :lang(hu) #navigation .menu-item-1460{
+:lang(hu) #navigation .menu-item-1808, :lang(hu) #navigation .menu-item-2240, :lang(hu) #navigation .menu-item-1460 {
   display: none !important
 }
 
@@ -2858,6 +2861,7 @@ body.--showFilters .sidebar-left {
   background: #F7FAF9;
   height: 50px;
 }
+
 .next-step-back:hover, .next-step-back:active, .next-step-back:focus {
   text-decoration: none;
   background: #ECF2E8;
@@ -2990,6 +2994,7 @@ body.--showFilters .sidebar-left {
   grid-gap: 10px;
   grid-template-columns: auto auto;
 }
+
 .order-summary-item.price strong {
   width: 100%;
 }
@@ -3429,11 +3434,13 @@ li[data-testid="tabRelatedFiles"] {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
+
   .cart-empty .cart-heading {
     margin: 0px 0 80px 0;
     font-size: 26px;
   }
-  .cart-empty{
+
+  .cart-empty {
     margin-top: -40px;
   }
 }
@@ -3944,7 +3951,8 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 .checkout-box .contact-box li {
   margin: 0;
 }
-.checkout-box .contact-box li .cellphone{
+
+.checkout-box .contact-box li .cellphone {
   display: none;
 }
 
@@ -4406,6 +4414,7 @@ select.hidden-split-parameter[data-parameter-name='Barva'] {
     padding: 0;
     padding-left: 30px;
   }
+
   .in-kosik .cart-table .p-availability, .in-cart .cart-table .p-availability, .in-cos-de-cumparaturi .cart-table .p-availability, .in-kosar .cart-table .p-availability {
     padding: 5px 0 10px 0;
   }
@@ -4565,4 +4574,32 @@ input.form-control:focus {
 .p-image .flag-discount .price-save span {
   padding: 0;
   background: transparent;
+}
+
+.article-list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.article-list-item {
+  background: #f7faf9;
+  padding: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .article-list-item {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .article-list-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .article-list-item {
+    padding: 20px;
+  }
 }

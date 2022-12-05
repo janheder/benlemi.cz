@@ -98,6 +98,7 @@
 
 .ordering-process .cart-related-button .btn:hover {
     background: #ECF2E8;
+    color: #2E523D;
 }
 
 .ordering-process .cart-table .p-name .main-link {
@@ -172,6 +173,7 @@
         border: 1px solid #F0F0F0;
         margin: 0;
         margin-bottom: 30px;
+        border-top: 0;
     }
 
     .ordering-process .cart-table .related>td {
@@ -259,4 +261,14 @@ html:lang(ro) .cart-summary .extras-wrap .extra.discount a::before {
 }
 html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
     content: "Regisztráljon, és gyűjtsön kedvezményeket minden vásárlása esetén.";
+}
+
+
+.cart-table-heading span{
+    color: #2e523d;
+}
+
+.cart-table .p-price .price-final{
+    color: #2e523d;
+    font-weight: 400;
 }
