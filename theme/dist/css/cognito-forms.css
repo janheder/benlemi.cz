@@ -17,7 +17,7 @@
 }
 
 html .cog-form__container, :root:root:root:root:root .cog-form__container {
-    background: transparent;
+    background: transparent !important;
 }
 
 html .cog-cognito--styled .el-input__inner, html .cog-cognito--styled .el-textarea__inner, :root:root:root:root:root .cog-cognito--styled .el-input__inner, :root:root:root:root:root .cog-cognito--styled .el-textarea__inner {

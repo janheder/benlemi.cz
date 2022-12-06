@@ -2702,7 +2702,7 @@ body.--showFilters .sidebar-left {
   align-items: center;
 }
 
-.flag.flag-premium, .flag.flag-exclusive {
+.flag.flag-exclusive {
   background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/symbol-exclusive.svg");
   padding-left: 79px;
 }
