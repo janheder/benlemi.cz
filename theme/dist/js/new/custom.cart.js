@@ -125,3 +125,10 @@ if ($("#checkoutSidebar .cart-item").length) {
 }
 
 
+// =============================================================================
+// display discout coupon
+// =============================================================================
+
+$(".ordering-process .cart-summary > h4").click(function () {
+    $(".ordering-process .cart-summary .discount-coupon form").toggleClass("--active");
+});
