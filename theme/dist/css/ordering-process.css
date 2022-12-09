@@ -286,10 +286,26 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
 
 
 
+.cart-header {
+    position: relative;
+    background: transparent;
+}
 
 .cart-header::before {
-    border: 0;
+    content: "";
+    top: 0;
+    bottom: 0px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: #F7FAF9;
+    display: flex;
+    position: absolute;
+    z-index: -1;
 }
+
 
 .cart-header .step, .cart-header .step.completed, .cart-header .step.active {
     border: 0;
@@ -305,6 +321,27 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
     font-weight: 500;
     text-align: left;
 }
+
+
+.cart-header .step::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    right: 0;
+    transform: rotate(-90deg) translateX(6px);
+    top: 50%;
+    opacity: 0.5;
+}
+
+.cart-header .step:last-child::before {
+    content: none;
+}
+
 
 .cart-header .step.active strong,
 .cart-header .step.completed a {
@@ -361,6 +398,9 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
     .cart-header .step strong, .cart-header .step a {
         font-size: 15px;
     }
+    .cart-header .step::before{
+        content: none;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -370,6 +410,8 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
     .cart-header .step.completed a {
         flex-direction: column;
         font-size: 14px;
+        padding: 0 5px;
+        line-height: 1.1;
     }
 
     .step a::before, .step strong::before {
@@ -417,14 +459,17 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
         content: "Mám zľavový kód";
         font-size: 15px;
     }
+
     html:lang(en) .ordering-process .cart-summary>h4::before {
         content: "I have a discount code";
         font-size: 15px;
     }
+
     html:lang(ro) .ordering-process .cart-summary>h4::before {
         content: "Am un cod de reducere";
         font-size: 15px;
     }
+
     html:lang(hu) .ordering-process .cart-summary>h4::before {
         content: "Van egy kedvezményes kódom";
         font-size: 15px;
@@ -443,4 +488,53 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
     .discount-coupon {
         margin: 0;
     }
+}
+
+
+.discount-coupon form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.discount-coupon form input {
+    max-width: 200px;
+}
+
+.discount-coupon button {
+    height: 46px;
+}
+
+.discount-coupon form span {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    padding-top: 5px;
+}
+
+
+
+
+.ordering-process .content-wrapper-in {
+    margin-top: 120px;
+}
+
+.ordering-process .cart-header~.content-wrapper-in {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 575px) {
+    .ordering-process .content-wrapper-in {
+        margin-top: 88px;
+    }
+
+    .ordering-process .cart-header~.content-wrapper-in {
+        margin-top: 0;
+    }
+}
+
+
+
+.cart-table .p-name .main-link {
+    color: #2E523D;
 }

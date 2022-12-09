@@ -101,7 +101,7 @@ var g_priceFree = 1500;
 var g_category = "Category";
 var g_model = "Model";
 
-var g_discountText = "Înregistrați-vă și obțineți o reducere de 3%.";
+var g_discountText = "Înscrieți-vă și colectați reduceri la fiecare achiziție pe care o faceți.";
 
 /* page names */
 
