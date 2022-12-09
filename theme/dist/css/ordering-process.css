@@ -871,7 +871,9 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
     width: 80px;
     min-height: 80px;
 }
-
+.cart-inner #orderSummaryToggle{
+    display: none;
+}
 
 @media screen and (max-width: 991px) {
     .order-summary .order-summary-inner .cart-item>a {
@@ -881,6 +883,8 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
         display: flex;
         position: 10px 20px;
         background: #F7FAF9;
+        font-size: 16px;
+        font-weight: 500;
     }
 }
 
