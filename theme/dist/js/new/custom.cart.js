@@ -132,3 +132,14 @@ if ($("#checkoutSidebar .cart-item").length) {
 $(".ordering-process .cart-summary > h4").click(function () {
     $(".ordering-process .cart-summary .discount-coupon form").toggleClass("--active");
 });
+
+
+// =============================================================================
+// display order summary on mobile
+// =============================================================================
+
+$('<div id="orderSummaryToggle">Zobrazit rekapitulaci objednávky</div>').insertBefore("#checkoutContent");
+
+$("#orderSummaryToggle").click(function () {
+    $("body").toggleClass("--activeSummary");
+});

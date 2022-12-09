@@ -873,6 +873,16 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
 }
 
 
+@media screen and (max-width: 991px) {
+    .order-summary .order-summary-inner .cart-item>a {
+        display: none;
+    }
+    .cart-inner #orderSummaryToggle{
+        display: flex;
+        position: 10px 20px;
+        background: #F7FAF9;
+    }
+}
 
 
 /* layout edit */

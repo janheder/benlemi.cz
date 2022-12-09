@@ -111,7 +111,8 @@
 }
 
 @media screen and (max-width: 991px) {
-
+    .in-login .content-inner::before,
+    .in-login .content-inner::after,
     .in-zapomenute-heslo .content-inner::before,
     .in-zapomenute-heslo .content-inner::after,
     .in-registrace .content-inner::before,
@@ -121,10 +122,12 @@
 }
 
 @media screen and (max-width: 575px) {
-    .in-zapomenute-heslo #content, .in-registrace #content {
+    .in-login #content,
+    .in-zapomenute-heslo #content, 
+    .in-registrace #content {
         padding: 10px 0 60px 0;
     }
-
+    .in-login .content-inner,
     .in-zapomenute-heslo .content-inner,
     .in-registrace .content-inner {
         box-shadow: none;
