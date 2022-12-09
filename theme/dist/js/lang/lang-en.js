@@ -100,7 +100,7 @@ var g_priceFree = 1234;
 var g_category = "Category";
 var g_model = "Model";
 
-var g_discountText = "Registrujte sa a zbierajte zľavy s každým svojim nákupom";
+var g_discountText = "Sign up and collect discounts with every purchase you make.";
 
 /* page names */
 

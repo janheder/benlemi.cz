@@ -1120,7 +1120,7 @@ if ($(":lang(ro)").length) {
     $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
 
     if ($(".login.toggle-window").length) {
-        $(".headerFreeDeliveryNew").html("Înregistrați-vă și aveți o reducere de <br> 3% la prima achiziție");
+        $(".headerFreeDeliveryNew").html("Înscrieți-vă și colectați reduceri la <br> fiecare achiziție pe care o faceți.");
     } else {
         $.get('/centru-clienti/reducerile-mele/', function (data) {
             data = $(data).find('.content-inner table tr:last-child strong').html();
@@ -1182,7 +1182,7 @@ if ($(":lang(hu)").length) {
     $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
 
     if ($(".login.toggle-window").length) {
-        $(".headerFreeDeliveryNew").html("Regisztráljon, és <br> 3% kedvezményt kap az első vásárláskor");
+        $(".headerFreeDeliveryNew").html("Regisztráljon, és gyűjtsön <br> kedvezményeket minden vásárlása esetén.");
     } else {
         $.get('/ugyfel/ugyfel-kedvezmenyek/', function (data) {
             data = $(data).find('.content-inner table tr:last-child strong').html();
