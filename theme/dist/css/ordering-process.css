@@ -626,6 +626,18 @@ border: 1px solid #2E523D;
     font-weight: 500;
     padding-bottom: 2px;
 }
+html:lang(sk) #checkoutContent .co-contact-information h4+.form-group label::before {
+    content: "Už u nás máte zákaznícky účet?";
+}
+html:lang(en) #checkoutContent .co-contact-information h4+.form-group label::before {
+    content: "Do you already have a customer account?";
+}
+html:lang(ro) #checkoutContent .co-contact-information h4+.form-group label::before {
+    content: "Aveți deja un cont de client la noi?";
+}
+html:lang(hu) #checkoutContent .co-contact-information h4+.form-group label::before {
+    content: "Van már ügyfélfiókod nálunk?";
+}
 
 #checkoutContent .co-contact-information h4+.form-group label::after {
     content: "Nemusíte nic vyplňovat a jednoduše se přihlaste.";
@@ -633,6 +645,21 @@ border: 1px solid #2E523D;
     font-weight: 400;
     color: #6F6F6F;
 }
+html:lang(sk) #checkoutContent .co-contact-information h4+.form-group label::after {
+    content: "Nemusíte nič vyplňovať a jednoducho sa prihláste.";
+}
+html:lang(en) #checkoutContent .co-contact-information h4+.form-group label::after {
+    content: "You don't have to fill in anything and simply log in";
+}
+html:lang(ro) #checkoutContent .co-contact-information h4+.form-group label::after {
+    content: "Nu trebuie să completați nimic și pur și simplu să vă conectați.";
+}
+html:lang(hu) #checkoutContent .co-contact-information h4+.form-group label::after {
+    content: "Nem kell semmit kitöltenie, csak be kell jelentkeznie.";
+}
+
+
+
 
 #checkoutContent .co-contact-information h4+.form-group a {
     font-size: 0;
@@ -643,6 +670,18 @@ border: 1px solid #2E523D;
 #checkoutContent .co-contact-information h4+.form-group a::before {
     content: "Přihlásit se";
     font-size: 15px;
+}
+html:lang(sk) #checkoutContent .co-contact-information h4+.form-group a::before {
+    content: "Prihlásiť sa";
+}
+html:lang(en) #checkoutContent .co-contact-information h4+.form-group a::before {
+    content: "Log in";
+}
+html:lang(ro) #checkoutContent .co-contact-information h4+.form-group a::before {
+    content: "Autentificare";
+}
+html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before {
+    content: "Belépés";
 }
 
 @media screen and (max-width: 991px) {
@@ -812,6 +851,9 @@ border: 1px solid #2E523D;
 #checkoutSidebar .consents {
     margin: 0;
     margin-bottom: 15px;
+}
+#checkoutSidebar .consents label::before{
+    border: 1px solid #2E523D;
 }
 
 .checkout-box {
