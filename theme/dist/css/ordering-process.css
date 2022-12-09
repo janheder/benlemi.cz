@@ -699,7 +699,7 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
 
     #checkoutContent .co-contact-information h4+.form-group label+div {
         margin-top: 10px;
-        margin-left: 70px;
+        margin-left: 80px;
     }
 
 }
@@ -881,10 +881,11 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
     }
     .cart-inner #orderSummaryToggle{
         display: flex;
-        padding: 10px 20px;
+        padding: 12px 20px;
         background: #F7FAF9;
         font-size: 16px;
         font-weight: 500;
+        margin-bottom: 10px;
     }
     body.--activeSummary #summary-box{
         display: flex;
@@ -892,6 +893,9 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
         background: white;
         padding: 20px;
         border: 1px solid #e7eeec;
+    }
+    .checkout-box{
+        margin-bottom: 20px;
     }
 }
 
@@ -954,6 +958,6 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
         box-shadow: none;
         padding: 0;
         border: 0;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 }

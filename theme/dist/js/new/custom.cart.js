@@ -142,4 +142,5 @@ $('<div id="orderSummaryToggle">Zobrazit rekapitulaci objednávky</div>').insert
 
 $("#orderSummaryToggle").click(function () {
     $("body").toggleClass("--activeSummary");
+    $("img").unveil();
 });
