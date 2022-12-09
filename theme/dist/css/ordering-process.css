@@ -398,7 +398,8 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
     .cart-header .step strong, .cart-header .step a {
         font-size: 15px;
     }
-    .cart-header .step::before{
+
+    .cart-header .step::before {
         content: none;
     }
 }
@@ -537,4 +538,358 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
 
 .cart-table .p-name .main-link {
     color: #2E523D;
+}
+
+.co-box>h4, .co-billing-address fieldset>h4{
+    color: #78AA66;
+font-size: 22px;
+font-weight: 500;
+border-bottom: 1px solid #F0F0F0;
+  padding-bottom: 10px;
+  margin: 20px 0;
+}
+
+
+#order-form .form-group, #order-form  textarea.form-control {
+max-width: 520px;
+position: relative;
+}
+.cart-content .register input[type="checkbox"]+label{
+padding-left: 30px;
+}
+.cart-content .register input[type="checkbox"]+label::before{
+border: 1px solid #2E523D;
+
+}
+
+.co-billing-address fieldset>h4::after, .co-box>h4::after, #order-form h4::after {
+    content: none;
+}
+
+#order-form .stay-in-touch .form-group {
+    max-width: 100%;
+}
+
+#shipping-address.visible {
+    background: #f7faf9;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#select-country-payment {
+    margin-bottom: 40px;
+}
+
+.cart-content .stay-in-touch input[type="checkbox"]+label {
+    box-shadow: none;
+    border: 1px solid #e7eeec;
+}
+
+.cart-content .stay-in-touch::before {
+    z-index: 1;
+}
+
+
+/* login banner */
+
+#checkoutContent .co-contact-information h4+.form-group {
+    max-width: 100%;
+    background: #f7faf9;
+    max-width: 100%;
+    width: 100%;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    border: 0;
+}
+
+
+#checkoutContent .co-contact-information h4+.form-group label {
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/user-login-circle.svg");
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    background-size: 60px;
+    background-position: center left;
+    min-height: 60px;
+    justify-content: center;
+}
+
+#checkoutContent .co-contact-information h4+.form-group label::before {
+    content: "Už u nás máte zákaznický účet?";
+    font-size: 19px;
+    font-weight: 500;
+    padding-bottom: 2px;
+}
+
+#checkoutContent .co-contact-information h4+.form-group label::after {
+    content: "Nemusíte nic vyplňovat a jednoduše se přihlaste.";
+    font-size: 15px;
+    font-weight: 400;
+    color: #6F6F6F;
+}
+
+#checkoutContent .co-contact-information h4+.form-group a {
+    font-size: 0;
+    background: #78AA66;
+    color: white;
+}
+
+#checkoutContent .co-contact-information h4+.form-group a::before {
+    content: "Přihlásit se";
+    font-size: 15px;
+}
+
+@media screen and (max-width: 991px) {
+    #checkoutContent .co-contact-information h4+.form-group {
+        padding: 20px 30px;
+        margin: 20px 0;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #checkoutContent .co-contact-information h4+.form-group label {
+        margin-right: 0;
+    }
+
+    #checkoutContent .co-contact-information h4+.form-group label+div {
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+
+}
+
+
+
+
+
+/* order summary */
+
+.order-summary {
+    margin-bottom: 30px;
+}
+
+.order-summary-inner {
+    padding: 0;
+    background: transparent;
+}
+
+.order-summary-inner>h4 {
+    font-size: 22px;
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 10px;
+    margin: 0 0 5px 0;
+    color: #78AA66;
+    font-weight: 500;
+}
+
+.order-summary-inner>h4::after {
+    content: none;
+}
+
+.order-recapitulation {
+    border: 0;
+}
+
+.order-summary-inner .recapitulation-single:first-child {
+    padding-top: 20px;
+}
+
+.order-summary-item.price {
+    border-bottom: 4px solid #F7FAF9;
+    border-top: 4px solid #F7FAF9;
+    padding: 20px 0;
+}
+
+.order-summary .order-summary-inner .cart-item {
+    font-size: 14px;
+    display: block;
+    border-bottom: 1px solid #E7EEEC;
+    padding: 15px 0;
+    padding-left: 65px;
+    position: relative;
+}
+
+.order-summary .order-summary-inner .cart-item>a {
+    display: flex;
+    float: left;
+    height: 50px;
+    margin-right: 15px;
+    position: absolute;
+    left: 0;
+}
+
+.order-summary .order-summary-inner .cart-item .main-link {
+    color: #2E523D;
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 2px;
+    line-height: 1.5;
+}
+
+.order-summary .order-summary-inner .cart-item .main-link span {
+    color: #6E6E6E;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.order-summary .order-summary-inner .cart-item .main-link:hover {
+    text-decoration: none;
+}
+
+.order-summary .order-summary-inner .cart-item-amount {
+    float: left;
+    font-size: 16px;
+}
+
+.order-summary .order-summary-inner .cart-item-price {
+    text-align: right;
+    font-weight: 500;
+    color: #2E523D;
+    font-size: 16px;
+}
+
+.order-summary-item.price .price.price-primary span,
+.order-summary-item.price .price-secondary span {
+    display: flex;
+}
+
+.order-summary-item.price .price-wrapper .price-label.price-primary {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.order-summary-item.price .price.price-primary span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #CF4823;
+}
+
+.recapitulation-single {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.recapitulation-single strong {
+    font-weight: 400;
+}
+
+.recapitulation-single strong span {
+    font-weight: 500;
+}
+
+.recapitulation-single>span {
+    color: #6F6F6F;
+    font-weight: 500;
+    font-size: 13px;
+    padding-bottom: 1px;
+    display: flex;
+}
+
+.order-summary-item.price .price-secondary {
+    color: #6E6E6E;
+    font-weight: 400;
+}
+
+.order-summary-item.price .price-wrapper {
+    width: 100%;
+    display: grid;
+    grid-gap: 5px 10px;
+    grid-template-columns: auto auto;
+}
+
+.order-summary-item.price strong {
+    width: 100%;
+}
+
+#checkoutSidebar .consents {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.checkout-box {
+    margin-bottom: 40px;
+}
+
+.checkout-box .contact-box {
+    padding: 20px;
+    border: 1px solid #e7eeec;
+}
+
+.checkout-box .contact-box strong {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    min-height: 80px;
+}
+
+
+
+
+/* layout edit */
+
+.ordering-process .cart-row {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 60px;
+}
+
+.in-kosik.ordering-process .cart-row,
+.in-cart.ordering-process .cart-row,
+.in-kosar.ordering-process .cart-row,
+.in-cos-de-cumparaturi.ordering-process .cart-row {
+    grid-template-columns: 1fr;
+}
+
+.ordering-process #checkoutContent {
+    padding: 0;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 40px 60px;
+    border: 1px solid #E7EEEC;
+}
+
+#checkoutContent .co-box {
+    padding: 0;
+}
+
+.ordering-process #checkoutSidebar {
+    padding: 0;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.in-krok-2.ordering-process #checkoutSidebar .next-step .next-step-back {
+    display: none;
+}
+
+.in-krok-1 .co-delivery-method {
+    margin-bottom: 40px;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+    .ordering-process .cart-row {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+    .ordering-process #checkoutContent {
+        box-shadow: none;
+        padding: 0;
+        border: 0;
+    }
 }
