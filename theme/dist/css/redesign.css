@@ -4488,3 +4488,8 @@ input.form-control:focus {
 .blogCategories__title{
   background: rgba(46, 82, 61, 0.7);
 }
+
+html:lang(hu) .top-navigation-contacts a.project-phone,
+html:lang(ro) .top-navigation-contacts a.project-phone{
+  display: none;
+}
