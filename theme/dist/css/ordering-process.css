@@ -886,6 +886,13 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
         font-size: 16px;
         font-weight: 500;
     }
+    body.--activeSummary #summary-box{
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 20px;
+        border: 1px solid #e7eeec;
+    }
 }
 
 

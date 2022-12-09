@@ -138,7 +138,7 @@ $(".ordering-process .cart-summary > h4").click(function () {
 // display order summary on mobile
 // =============================================================================
 
-$('<div id="orderSummaryToggle">Zobrazit rekapitulaci objednávky</div>').insertBefore("#checkoutContent");
+$('<div id="orderSummaryToggle">Zobrazit rekapitulaci objednávky</div>').insertBefore("#summary-box");
 
 $("#orderSummaryToggle").click(function () {
     $("body").toggleClass("--activeSummary");
