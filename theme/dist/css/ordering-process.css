@@ -515,7 +515,12 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
 }
 
 
-
+.ordering-process .form-control:valid {
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/checkbox-green.svg");
+    background-position: right 15px center;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
 
 .ordering-process .content-wrapper-in {
     margin-top: 120px;
