@@ -544,6 +544,12 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
         margin-top: 0;
         padding-top: 0;
     }
+    .ordering-process .header-top{
+        justify-content: center;
+    }
+    .ordering-process .site-name{
+        margin-left: 0;
+    }
 }
 
 
