@@ -523,6 +523,10 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
 }
 */
 
+.phone-combined-input + .js-validator-msg.msg-error{
+    display: none;
+}
+
 .ordering-process .content-wrapper-in {
     margin-top: 120px;
 }
