@@ -532,6 +532,7 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
 
     .ordering-process .cart-header~.content-wrapper-in {
         margin-top: 0;
+        padding-top: 0;
     }
 }
 
