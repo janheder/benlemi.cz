@@ -705,7 +705,15 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
     }
 
 }
+@media screen and (max-width: 575px) {
+    #checkoutContent .co-contact-information h4+.form-group {
+        padding: 20px 15px;
+    }
+    #checkoutContent .co-contact-information h4+.form-group label::after {
+        content: none;
+    }
 
+}
 
 
 
@@ -885,6 +893,9 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 10px;
+        background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
+        background-position: right 20px center;
+        background-repeat: no-repeat;
     }
     body.--activeSummary #summary-box{
         display: flex;
