@@ -514,13 +514,14 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
     padding-top: 5px;
 }
 
-
+/*
 .ordering-process .form-control:valid {
     background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/checkbox-green.svg");
     background-position: right 15px center;
     background-size: 15px 15px;
     background-repeat: no-repeat;
 }
+*/
 
 .ordering-process .content-wrapper-in {
     margin-top: 120px;
@@ -715,7 +716,7 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
         padding: 20px 15px;
     }
     #checkoutContent .co-contact-information h4+.form-group label::after {
-        content: none;
+        content: none !important;
     }
 
 }
