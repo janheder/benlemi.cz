@@ -3065,10 +3065,7 @@ select.form-control, select.form-control:valid {
   font-style: normal;
 }
 
-.votes-wrap.admin-response, .votes-wrap.admin-response .vote-wrap {
-  background: white;
 
-}
 
 .top-navigation-contacts a {
   position: relative;
@@ -3222,12 +3219,14 @@ select.form-control, select.form-control:valid {
 .votes-wrap .vote-wrap {
   border: 0;
   padding: 0px;
-  padding-left: 20px;
+  padding-left: 0px;
   margin-bottom: 0px;
-  border-left: 3px solid #f7faf9;
+  border-bottom: 3px solid #f7faf9;
+  padding-bottom: 20px;
 }
 .votes-wrap.admin-response .vote-wrap{
   border-left: 3px solid #f7faf9;
+  margin-top: 20px;
 }
 
 body.--showFilters #supportBox-iframe, body.--noScroll #supportBox-iframe, body.--searchActive #supportBox-iframe {
