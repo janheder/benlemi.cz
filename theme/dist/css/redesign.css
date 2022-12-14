@@ -1933,6 +1933,9 @@ footer {
 }
 #ratingTab .votes-wrap{
   padding: 0;
+  gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 991px) {
@@ -3218,8 +3221,9 @@ select.form-control, select.form-control:valid {
 
 .votes-wrap .vote-wrap {
   border: 0;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 0px;
+  padding-left: 20px;
+  margin-bottom: 0px;
   border-left: 3px solid #f7faf9;
 }
 .votes-wrap.admin-response .vote-wrap{
