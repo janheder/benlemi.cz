@@ -1936,6 +1936,7 @@ footer {
   gap: 20px;
     display: flex;
     flex-direction: column;
+    background: white;
 }
 
 @media (max-width: 991px) {
@@ -3226,7 +3227,9 @@ select.form-control, select.form-control:valid {
 }
 .votes-wrap.admin-response .vote-wrap{
   border-left: 3px solid #f7faf9;
+  margin: 0;
   margin-top: 20px;
+  padding-left: 20px;
 }
 
 body.--showFilters #supportBox-iframe, body.--noScroll #supportBox-iframe, body.--searchActive #supportBox-iframe {
