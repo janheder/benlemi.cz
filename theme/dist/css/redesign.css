@@ -1924,9 +1924,15 @@ footer {
 #ratingTab {
   display: grid;
   grid-gap: 40px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 0;
   padding-top: 60px;
+}
+#ratingTab .rate-wrapper {
+  width: 100%;
+}
+#ratingTab .votes-wrap{
+  padding: 0;
 }
 
 #ratingProduct, #ratingStore {
