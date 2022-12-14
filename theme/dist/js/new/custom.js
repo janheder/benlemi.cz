@@ -240,28 +240,7 @@ if ($(".advanced-parameter").length) {
 }
 
 
-/* load shop rating */
-/*
-if ($(".type-detail").length) {
-    $("#ratingTab").wrapInner("<div id='ratingProduct'></div>");
-    $("#ratingTab").append("<div id='ratingStore'></div>");
 
-    $("#ratingProduct").prepend("<h1>" + g_productRating + "</h1>");
-
-    $("#ratingTab #ratingStore").load("/" + g_ratingUrl + "/ .content-inner", function () {
-        $("<a href='/" + g_ratingUrl + "' class='btn btn-secondary' id='js-ratingStoreToggle'>" + g_addRating + "</div>").insertBefore("#ratingStore #rate-form");
-        $("<a href='/" + g_ratingUrl + "' class='btn btn-secondary'>" + g_moreRating + "</a>").insertAfter("#ratingStore .content-inner>.votes-wrap");
- 
-
-        $(".rate-wrapper .vote-form .vote-form-title").click(function () {
-            $(".vote-form-title + #formRating").addClass("--active");
-            $(this).addClass("--hide");
-        });
-    });
-}
-
-$("#ratingProduct>p").text(g_beFirstToRateThisProduct);
-*/
 
 /* click on modal overlay closes the whole modal window */
 $("#closeModal").click(function () {

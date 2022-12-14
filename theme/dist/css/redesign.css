@@ -3225,6 +3225,9 @@ select.form-control, select.form-control:valid {
   border-bottom: 3px solid #f7faf9;
   padding-bottom: 20px;
 }
+.votes-wrap.admin-response{
+  margin: 0;
+}
 .votes-wrap.admin-response .vote-wrap{
   border-left: 3px solid #f7faf9;
   margin: 0;
