@@ -3217,10 +3217,13 @@ select.form-control, select.form-control:valid {
 }
 
 .votes-wrap .vote-wrap {
-  background: linear-gradient(0deg, #F7FAF9 0%, rgba(255, 255, 255, 1) 100%);
   border: 0;
   padding: 20px;
   margin-bottom: 20px;
+  border-left: 3px solid #f7faf9;
+}
+.votes-wrap.admin-response .vote-wrap{
+  border-left: 3px solid #f7faf9;
 }
 
 body.--showFilters #supportBox-iframe, body.--noScroll #supportBox-iframe, body.--searchActive #supportBox-iframe {
