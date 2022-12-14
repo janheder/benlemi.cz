@@ -923,6 +923,10 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
     .checkout-box{
         margin-bottom: 20px;
     }
+    .order-summary-item.price{
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
 }
 
 
@@ -940,6 +944,7 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
 .in-kosar.ordering-process .cart-row,
 .in-cos-de-cumparaturi.ordering-process .cart-row {
     grid-template-columns: 1fr;
+    grid-gap: 0;
 }
 
 .ordering-process #checkoutContent {

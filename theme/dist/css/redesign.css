@@ -1,5 +1,11 @@
 /* Copyright Jan Heder info@janheder.cz */
 
+body {
+  font-family: "Karla",apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 15px;
+  color: #2E523D;
+}
+
 .menu-helper::after {
   top: 0px !important;
 }
@@ -315,11 +321,7 @@
   padding: 0;
 }
 
-body {
-  font-family: "Karla";
-  font-size: 15px;
-  color: #2E523D;
-}
+
 
 @media (min-width: 1220px) {
   .container {
@@ -3611,6 +3613,7 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
 .essox-wrap img {
   display: none;
 }
+
 
 
 .id-404 .content-inner header h1 {

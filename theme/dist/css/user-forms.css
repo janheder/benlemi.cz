@@ -134,3 +134,8 @@
         padding: 10px;
     }
 }
+
+
+.in-login .content-inner h1, .login-form-register-title{
+    color: #2E523D;
+}

@@ -241,6 +241,7 @@ if ($(".advanced-parameter").length) {
 
 
 /* load shop rating */
+/*
 if ($(".type-detail").length) {
     $("#ratingTab").wrapInner("<div id='ratingProduct'></div>");
     $("#ratingTab").append("<div id='ratingStore'></div>");
@@ -250,12 +251,7 @@ if ($(".type-detail").length) {
     $("#ratingTab #ratingStore").load("/" + g_ratingUrl + "/ .content-inner", function () {
         $("<a href='/" + g_ratingUrl + "' class='btn btn-secondary' id='js-ratingStoreToggle'>" + g_addRating + "</div>").insertBefore("#ratingStore #rate-form");
         $("<a href='/" + g_ratingUrl + "' class='btn btn-secondary'>" + g_moreRating + "</a>").insertAfter("#ratingStore .content-inner>.votes-wrap");
-        /*
-        $("#js-ratingStoreToggle").click(function(){
-            $("#ratingStore #rate-form").addClass("--active");
-            $(this).addClass("--hide");
-        });
-        */
+ 
 
         $(".rate-wrapper .vote-form .vote-form-title").click(function () {
             $(".vote-form-title + #formRating").addClass("--active");
@@ -263,6 +259,9 @@ if ($(".type-detail").length) {
         });
     });
 }
+
+$("#ratingProduct>p").text(g_beFirstToRateThisProduct);
+*/
 
 /* click on modal overlay closes the whole modal window */
 $("#closeModal").click(function () {
@@ -368,7 +367,7 @@ if ($(".type-detail").length) {
     });
 }
 
-$("#ratingProduct>p").text(g_beFirstToRateThisProduct);
+
 
 /* rewrite description */
 if ($(":lang(en) .type-detail").length) {
@@ -578,7 +577,6 @@ if ($(".in-" + g_inClientUrl + ", .in-" + g_inSettingsUrl + ", .in-" + g_inOrder
 // -----------------------------------------------------------------------------
 
 if ($("#footer").length) {
-
     $("#signature").html('<a href="https://benlemi.cz" class="title --benlemi" rel="noreferrer noopener">' + g_madeBy + ' <img src="https://www.benlemi.cz/user/documents/theme/dist/img/symbol-benlemi.svg" alt="Benlemi" class="image --benlemi"> Benlemi &</a><a href="https://www.shoptet.cz/" title="Vytvořil Shoptet" class="title" target="_blank" rel="noreferrer noopener"><img src="https://cdn.myshoptet.com/prj/2e0fa726/master/cms/img/shoptetLogo128x128.gif" width="" height="" alt="Shoptet.cz" class="image --benlemi">Shoptet</a>');
 }
 
