@@ -1935,6 +1935,12 @@ footer {
   padding: 0;
 }
 
+@media (max-width: 991px) {
+  #ratingTab {
+    grid-template-columns: 1fr;
+  }
+}
+
 #ratingProduct, #ratingStore {
   padding: 0;
   width: 100%;
