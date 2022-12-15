@@ -162,12 +162,6 @@ $(".menu-level-1 .ext, .cart-count.full, .cart-widget").hover(
     }
 );
 
-/* add header client section */
-if ($(".popup-widget-inner h2").length) {
-    $('<div class="navLinks"><a href="/login/?backTo=%2F" class="top-nav-button top-nav-button-login primary login toggle-window navLinks__link" data-target="login" rel="nofollow">' + g_login + '</a><a href="/' + g_registrationUrl + '/" class="navLinks__link">' + g_register + '</a><span class="navLinks__span">' + g_language + ':</span></div>').insertAfter(".nav-user");
-} else {
-    $('<div class="navLinks"><a href="/' + g_inClientUrl + '/" class="navLinks__link --user">' + g_userAccount + '</a><span class="navLinks__span">' + g_language + ':</span></div>').insertAfter(".nav-user");
-}
 
 
 /* rename user account */

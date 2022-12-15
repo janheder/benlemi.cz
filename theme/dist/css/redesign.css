@@ -744,9 +744,12 @@ h1, h2, h3, h4, h5 {
   body.ordering-process #header.scroll::before, body.type-detail #header.scroll::before {
     box-shadow: 0px 10px 15px rgba(46, 82, 61, 0.03);
   }
-
+  .menu-level-1 {
+    justify-content: space-between;
+  }
   .menu-level-1>li {
     height: 52px;
+    flex-grow: 1;
   }
 
   .menu-level-1::before, .menu-level-1>li.ext>a::before, .menu-level-1>li>a::before, .menu-level-1>li>a[href="/nove-produkty/"]::before {
