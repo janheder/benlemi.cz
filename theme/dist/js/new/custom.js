@@ -195,15 +195,7 @@ $(".user-action-cart").insertAfter(".header-top .cart-count");
 // PRODUCT PAGE
 // -----------------------------------------------------------------------------
 
-if ($(".p-detail-inner .flag").length) {
-    var p_tags = $(".p-detail-inner .flags-default").html();
-    var p_tagsClean = "<div class='p-detail-tags'>" + p_tags + "</div>";
 
-} else {
-    var p_tagsClean = "<div class='p-detail-tags --hidden'></div>";
-}
-
-var p_name = $(".p-detail-inner-header h1").html();
 
 if ($(".p-detail-inner .stars-wrapper").length) {
     var p_stars = $(".p-detail-inner .stars-wrapper").html();
@@ -227,7 +219,7 @@ else {
     var p_tagPremiumClean = "<span class='flag flag-premium --hidden'></span>";
 }
 
-$(p_tagsClean + "<div class='p-detail-header'><h1>" + p_name + "</h1></div><div class='p-detail-subheader'>" + p_tagPremiumClean + p_stars + "<span class='p-code'>" + p_code + "</span></div>").insertBefore(".p-final-price-wrapper");
+$(p_tagsClean + "<div class='p-detail-subheader'>" + p_tagPremiumClean + p_stars + "<span class='p-code'>" + p_code + "</span></div>").insertBefore(".p-final-price-wrapper");
 
 
 

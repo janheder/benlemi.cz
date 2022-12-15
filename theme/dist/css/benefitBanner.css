@@ -52,6 +52,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 60px;
     }
+    .position--benefitProduct {
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 575px) {
