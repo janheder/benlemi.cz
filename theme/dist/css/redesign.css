@@ -1830,7 +1830,9 @@ footer {
   height: 58px;
   width: 130px;
 }
-
+.add-to-cart .amount {
+  border: 1px solid #E7EEEC;
+}
 .add-to-cart .add-to-cart-button {
   height: 58px;
   padding: 0 50px;
