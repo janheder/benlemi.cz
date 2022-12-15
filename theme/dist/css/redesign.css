@@ -3687,7 +3687,12 @@ html:lang(sk) #order-shipping-methods .radio-wrapper+#shipping-61 {
   outline: 1px solid #E7EEEC;
 }
 
-.order-delivery-payment-form .radio-wrapper.active {}
+.order-delivery-payment-form .radio-wrapper.active {
+
+}
+.order-delivery-payment-form .radio-wrapper.inactive-child{
+  display: none;
+}
 
 .order-delivery-payment-form .radio-wrapper label {
   margin: 0;
