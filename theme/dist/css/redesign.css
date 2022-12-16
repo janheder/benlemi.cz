@@ -1736,6 +1736,7 @@ footer {
 .footer-rows .custom-footer>div:last-child {
   display: flex;
   max-width: 100%;
+  width: 100%;
 }
 
 .footer-logos {
