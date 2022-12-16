@@ -831,9 +831,23 @@ if ($(":lang(cs)").length) {
                 }
             }
 
-        } else {
+        } else { }
 
+        if ((userCheck == "CZ-B2B") || (userCheck == "CZ-B2BPLUS")) {
+            $("#shipping-102").css("display", "none");
+            $("#shipping-102 input").prop('checked', false);
+
+            $("#shipping-186").css("display", "flex");
         }
+
+        if ((userCheck == "CZ-B2B-DPH") || (userCheck == "CZ-B2BPLUS-DPH")) {
+            $("#shipping-186").css("display", "none");
+            $("#shipping-186 input").prop('checked', false);
+
+            $("#shipping-102").css("display", "flex");
+        }
+
+
     });
 
     $('.detail-parameters tr th:contains("Typ produktu:"), .detail-parameters tr th:contains("Věk dítěte:"), .detail-parameters tr th:contains("Tvar:"), .detail-parameters tr th:contains("Motiv:"), .detail-parameters tr th:contains("Pro model postele:"), .detail-parameters tr th:contains("Pro postel o délce:"), .detail-parameters tr th:contains("Pro postel o šířce:")').parents('tr').remove();
@@ -902,6 +916,21 @@ if ($(":lang(sk)").length) {
             } else {
 
             }
+
+            if ((userCheck == "SK-B2B") || (userCheck == "SK-B2BPLUS")) {
+                $("#shipping-75").css("display", "none");
+                $("#shipping-75 input").prop('checked', false);
+    
+                $("#shipping-45").css("display", "flex");
+            }
+    
+            if ((userCheck == "SK-B2B-DPH") || (userCheck == "SK-B2BPLUS-DPH")) {
+                $("#shipping-45").css("display", "none");
+                $("#shipping-45 input").prop('checked', false);
+    
+                $("#shipping-75").css("display", "flex");
+            }
+
         });
 
     });
