@@ -3247,11 +3247,17 @@ select.form-control, select.form-control:valid {
   border-bottom: 3px solid #f7faf9;
   padding-bottom: 20px;
 }
-
+.vote-name {
+  color: #2e523d;
+  padding-right: 10px;
+}
 .votes-wrap.admin-response {
   margin: 0;
 }
-
+.vote-rating .stars .star {
+  height: 12px;
+  width: 12px;
+}
 .votes-wrap.admin-response .vote-wrap {
   border-left: 3px solid #f7faf9;
   margin: 0;
