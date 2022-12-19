@@ -86,12 +86,12 @@ body {
 
 
 /*hide cz items in nav*/
-.menu-item-external-142, .menu-item-1500 {
+html:lang(cs) .menu-item-external-142, html:lang(cs) .menu-item-1500 {
   display: none !important;
 }
 
 /*hide sk items in nav*/
-.menu-item-29, .menu-item-1347 {
+html:lang(sk) .menu-item-29, html:lang(sk) .menu-item-1347 {
   display: none !important;
 }
 
