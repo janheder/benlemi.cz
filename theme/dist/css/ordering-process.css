@@ -528,7 +528,7 @@ html:lang(hu) .cart-summary .extras-wrap .extra.discount a::before {
 }
 
 .ordering-process .content-wrapper-in {
-    margin-top: 160px;
+    margin-top: 200px;
 }
 
 .ordering-process .cart-header~.content-wrapper-in {
@@ -945,8 +945,12 @@ html:lang(hu) #checkoutContent .co-contact-information h4+.form-group a::before 
 .in-cos-de-cumparaturi.ordering-process .cart-row {
     grid-template-columns: 1fr;
     grid-gap: 0;
-}
 
+}
+.in-kosik.ordering-process .cart-row .col-md-4,
+.in-kosik.ordering-process .cart-row .col-md-8{
+    padding: 0;
+}
 .ordering-process #checkoutContent {
     padding: 0;
     width: 100%;
