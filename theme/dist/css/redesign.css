@@ -218,6 +218,7 @@ html:lang(sk) .menu-item-29, html:lang(sk) .menu-item-1347 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .category-top {
@@ -1478,7 +1479,7 @@ footer {
 }
 
 .ctaSection__imgWrap img {
-  mix-blend-mode: darken;
+
 }
 
 
@@ -4342,7 +4343,7 @@ html:lang(en) .menu-level-1>li:nth-last-child(2) {
 }
 
 .checkout-box .contact-box strong {
-  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/customer-support-3.png");
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/customer-support-4.png");
 }
 
 
