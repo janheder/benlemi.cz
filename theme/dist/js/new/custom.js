@@ -631,13 +631,29 @@ $(document).ready(function () {
 // REFACTORED PAGIANTION
 // =============================================================================
 
+if ($(":lang(cs)").length){
+    var am_strana = "strana";
+}
+if ($(":lang(sk)").length){
+    var am_strana = "strana";
+}
+if ($(":lang(en)").length){
+    var am_strana = "page";
+}
+if ($(":lang(ro)").length){
+    var am_strana = "pagina";
+}
+if ($(":lang(hu)").length){
+    var am_strana = "oldal";
+}
+
 if ($(".pagination").length) {
 
     function refactorPagi() {
         var current = parseInt($(".pagination .current").text());
         var max = parseInt($(".pagination > *:last-child").text());
         var currentUrl = window.location.href.split('?')[0];
-        var currentUrlS = currentUrl.slice(0, currentUrl.indexOf('/strana'));
+        var currentUrlS = currentUrl.slice(0, currentUrl.indexOf('/'+ am_strana));
 
         $(".pagination *").remove();
 
@@ -646,20 +662,20 @@ if ($(".pagination").length) {
                 $('.pagination').append("<strong class='current'>" + i + "</strong>");
             } else if ((current - i) > 1 || (i - current) > 1) {
                 if (i == 1 || i == max) {
-                    $('.pagination').append("<a href='" + currentUrlS + "/strana-" + i + "'>" + i + "</a>");
+                    $('.pagination').append("<a href='" + currentUrlS + "/"+ am_strana +"-" + i + "'>" + i + "</a>");
                 } else {
-                    $('.pagination').append("<a class='hidden' href='" + currentUrlS + "strana-" + i + "'>" + i + "</a>");
+                    $('.pagination').append("<a class='hidden' href='" + currentUrlS + ""+ am_strana +"-" + i + "'>" + i + "</a>");
                 }
 
             } else {
-                $('.pagination').append("<a href='" + currentUrlS + "/strana-" + i + "'>" + i + "</a>");
+                $('.pagination').append("<a href='" + currentUrlS + "/"+ am_strana +"-" + i + "'>" + i + "</a>");
             }
         }
         if (current != max) {
-            $(".pagination").append("<a href='" + currentUrlS + "/strana-" + (current + 1) + "' class='next'>></a>");
+            $(".pagination").append("<a href='" + currentUrlS + "/"+ am_strana +"-" + (current + 1) + "' class='next'>></a>");
         }
         if (current != 1) {
-            $(".pagination").prepend("<a href='" + currentUrlS + "/strana-" + (current - 1) + "' class='previous'><</a>");
+            $(".pagination").prepend("<a href='" + currentUrlS + "/"+ am_strana +"-" + (current - 1) + "' class='previous'><</a>");
         }
     }
 
