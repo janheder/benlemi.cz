@@ -3245,7 +3245,7 @@ select.form-control, select.form-control:valid {
   border: 0;
   padding: 0px;
   padding-left: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   border-bottom: 3px solid #f7faf9;
   padding-bottom: 20px;
 }
@@ -4548,4 +4548,10 @@ input.form-control:focus {
 html:lang(hu) .top-navigation-contacts a.project-phone,
 html:lang(ro) .top-navigation-contacts a.project-phone {
   display: none;
+}
+
+.search-next-wrap{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
 }
