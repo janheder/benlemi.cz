@@ -27,11 +27,9 @@ function productCardEdit(){
         });
 
 
-        $(".product .p-bottom['data-micro-availability='https://schema.org/OutOfStock']").each(function(){
+        $(".product .p-bottom > div[data-micro-availability='https://schema.org/OutOfStock']").each(function(){
             let productUrl = $(this).parents(".product").find(".image").attr("href").slice(0, -1);
-
             $(this).parents(".product").find(".pr-action").attr("id","product-detail-form");
-
             $(this).parents(".product").find(".p-tools").prepend('<a href="'+ productUrl +':hlidat-cenu/" class="link-icon watchdog btn" title="Hlídat cenu" rel="nofollow">Hlídat</a>');
         });
 
