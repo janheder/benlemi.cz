@@ -30,6 +30,13 @@ function productCardEdit(){
     }
     
 
+    if ($(".product").length){
+        $(".product .availability .show-tooltip:contains('Vyprodáno')").each(function(){
+            let productUrl = $(this).parents(".product").find(".image").attr("href").slice(0, -1);
+            $(this).parents(".product").find(".p-tools").prepend('<a href="'+ productUrl +':hlidat-cenu/" class="link-icon watchdog btn" title="Hlídat cenu" rel="nofollow">Hlídat</a>');
+        });
+    }
+    
 
     /* relocate flags on mobile */
 
@@ -120,7 +127,7 @@ if ($("#category-header").length){
 
 /* category header title */
 if ($(".category-header").length){
-    var catHead = $(".category-header div strong").html();
+    let catHead = $(".category-header div strong").html();
     $(".category-header div:last-child").text(g_totalQuantity + ":" + catHead);
 }
 
@@ -141,3 +148,6 @@ if ($(".category__secondDescription").length){
         $(".category__secondDescription").addClass("--active");
     });
 }
+
+
+
