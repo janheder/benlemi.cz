@@ -20,21 +20,26 @@ function productCardEdit(){
                 $(this).find(".name").append("<span class='p-variants'>" + g_moreVariants + "</span>");
             }
         });
-    }
+    
 
-
-    if ($(".product").length){
         $(".product").each(function(){
             $(this).find(".widget-parameter-wrapper").insertAfter($(this).find(".name"));
         });
-    }
-    
 
-    if ($(".product").length){
+
         $(".product .availability .show-tooltip:contains('Vyprodáno')").each(function(){
             let productUrl = $(this).parents(".product").find(".image").attr("href").slice(0, -1);
+
+            $(this).parents(".product").find(".pr-action").attr("id","product-detail-form");
+
             $(this).parents(".product").find(".p-tools").prepend('<a href="'+ productUrl +':hlidat-cenu/" class="link-icon watchdog btn" title="Hlídat cenu" rel="nofollow">Hlídat</a>');
         });
+
+        $(".p-tools .watchdog").click(function(){
+            $(".product .pr-action").attr("id","");
+            $(this).parents(".product").find(".pr-action").attr("id","product-detail-form");
+        });
+
     }
     
 
