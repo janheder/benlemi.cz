@@ -8,6 +8,14 @@ if ($(".pagination-loader").length){
     $(".pagination-loader span").text(g_showMore);
 }
 
+if ($(":lang(cs)").length){
+    var sd_watchdogurl = "hlidat-cenu";
+}
+if ($(":lang(sk)").length){
+    var sd_watchdogurl = "strazit-cenu";
+}else{
+    var sd_watchdogurl = "";
+}
 
 function productCardEdit(){ 
 
@@ -27,10 +35,12 @@ function productCardEdit(){
         });
 
 
+
+
         $(".product .p-bottom > div[data-micro-availability='https://schema.org/OutOfStock']").each(function(){
             let productUrl = $(this).parents(".product").find(".image").attr("href").slice(0, -1);
             $(this).parents(".product").find(".pr-action").attr("id","product-detail-form");
-            $(this).parents(".product").find(".p-tools").prepend('<a href="'+ productUrl +':hlidat-cenu/" class="link-icon watchdog btn" title="Hlídat cenu" rel="nofollow">Hlídat</a>');
+            $(this).parents(".product").find(".p-tools").prepend('<a href="'+ productUrl +':'+ sd_watchdogurl +'/" class="link-icon watchdog btn" title="Hlídat cenu" rel="nofollow">Hlídat</a>');
         });
 
         $(".p-tools .watchdog").click(function(){
