@@ -27,7 +27,7 @@ function productCardEdit(){
         });
 
 
-        $(".product .availability .show-tooltip:contains('Vyprodáno')").each(function(){
+        $(".product .p-bottom['data-micro-availability='https://schema.org/OutOfStock']").each(function(){
             let productUrl = $(this).parents(".product").find(".image").attr("href").slice(0, -1);
 
             $(this).parents(".product").find(".pr-action").attr("id","product-detail-form");
