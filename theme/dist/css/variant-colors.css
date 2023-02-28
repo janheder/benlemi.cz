@@ -95,7 +95,7 @@ html:lang(cs) .widget-parameter-value a[data-value-id="795"] {
 }
 
 html:lang(cs) .widget-parameter-value a[data-value-id="798"] {
-    background: #4cb4da;
+    background: #acc9cd;
 }
 
 html:lang(cs) .widget-parameter-value a[data-value-id="801"] {
@@ -265,7 +265,9 @@ html:lang(cs) .widget-parameter-value a[data-value-id="14097"] {
 html:lang(cs) .widget-parameter-value a[data-value-id="14064"] {
     background: #e3d9d0;
 }
-
+html:lang(cs) .widget-parameter-value a[data-value-id="11061"] {
+    background: #b8d2d3;
+}
 
 
 
@@ -325,6 +327,23 @@ html:lang(cs) .widget-parameter-value a[data-value-id="9781"] {
     background-image: url("https://www.benlemi.cz/user/parameters/pr-ru.jpg");
 }
 
+
+
+html:lang(cs) .widget-parameter-value a[data-value-id="8600"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/duha_cervena_kopie.jpg");
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="8597"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/duha_modra_kopie.jpg");
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="10006"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/duha_pastel.jpg");
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="10003"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/duha_cervena_pastel.jpg");
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="10012"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/duha_modra_pastel_kopie.jpg");
+}
 
 
 /* SK */
@@ -468,4 +487,31 @@ html:lang(sk) .widget-parameter-value a[data-value-id="3679"] {
 
 html:lang(sk) .widget-parameter-value a[data-value-id="3748"] {
     background-image: url("https://www.benlemi.sk/user/parameters/b__lo-__edo-ho____icov___1.jpg");
+}
+
+/** NEW **/
+html:lang(sk) .widget-parameter-value a[data-value-id="9207"] {
+    background: #c29c8f;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="6918"] {
+    background: #953024
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="9213"] {
+    background: #3d4d67;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="9216"] {
+    background: #375e63;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="9204"] {
+    background: #6a7b70;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="687"] {
+    background: #b8d2d3;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="9210"] {
+    background: #e8e9e7;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="9288"] {
+    background: #9babb8;
 }
