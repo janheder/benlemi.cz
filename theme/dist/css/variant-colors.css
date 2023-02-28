@@ -246,6 +246,26 @@ html:lang(cs) .widget-parameter-value a[data-value-id="11511"] {
     background: #686a6b;
 }
 
+/** NEW **/
+html:lang(cs) .widget-parameter-value a[data-value-id="14100"] {
+    background: #c29c8f;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="11655"] {
+    background: #953024
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="14103"] {
+    background: #3d4d67;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="14106"] {
+    background: #375e63;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="14097"] {
+    background: #6a7b70;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="14064"] {
+    background: #e3d9d0;
+}
+
 
 
 
