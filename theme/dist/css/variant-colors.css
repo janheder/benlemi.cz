@@ -269,6 +269,16 @@ html:lang(cs) .widget-parameter-value a[data-value-id="11061"] {
     background: #b8d2d3;
 }
 
+html:lang(cs) .widget-parameter-value a[data-value-id="13581"] {
+    background: #c6a46c;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13578"] {
+    background: #a2794f;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13584"] {
+    background: #453730;
+}
+
 
 
 html:lang(cs) .widget-parameter-value a[data-value-id="8603"] {
@@ -514,4 +524,19 @@ html:lang(sk) .widget-parameter-value a[data-value-id="9210"] {
 }
 html:lang(sk) .widget-parameter-value a[data-value-id="9288"] {
     background: #9babb8;
+}
+
+
+
+html:lang(sk) .widget-parameter-value a[data-value-id="8511"] {
+    background: #ecdaac;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="8505"] {
+    background: #c6a46c;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="8502"] {
+    background: #a2794f;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="8508"] {
+    background: #453730;
 }

@@ -55,3 +55,36 @@ html .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-c
         padding-top: 0;
     }
 }
+
+.cognitoWrap {
+    margin: 40px auto;
+}
+
+html .cog-form__container, :root:root:root:root:root .cog-form__container {
+    background: white;
+}
+
+html .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-cognito--styled .cog-button--primary {
+    background: #cf4823;
+    border: 0;
+}
+
+html .cog-form__container, :root:root:root:root:root .cog-form__container {
+    background-color: white !important;
+}
+
+html .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-cognito--styled .cog-button--primary {
+    background: #cf4823 !important;
+}
+
+html .cog-row .cog-field--22 {
+    width: 100% !important;
+}
+
+html .cog-row .cog-field--27 {
+    display: none !important;
+}
+
+html .cog-checkable {
+    padding-top: 20px !important;
+}

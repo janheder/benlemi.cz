@@ -152,6 +152,7 @@ $(".filter-contact").load(g_cart1Url + " .checkout-box");
 
 
 /* category perex */
+/*
 if ($(".category__secondDescription").length){
     $(".category__secondDescription").insertAfter(".category-title");
 
@@ -161,6 +162,7 @@ if ($(".category__secondDescription").length){
         $(".category__secondDescription").addClass("--active");
     });
 }
+*/
 
 
 

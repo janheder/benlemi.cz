@@ -647,7 +647,7 @@ if ($(":lang(hu)").length){
     var am_strana = "oldal";
 }
 
-if ($(".pagination").length) {
+if ($(".type-category .pagination").length) {
 
     function refactorPagi() {
         var current = parseInt($(".pagination .current").text());
@@ -871,13 +871,13 @@ if ($(":lang(cs)").length) {
 
     $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
 
-
+/*
     if ($(".p-price.p-cell .show-tooltip.acronym").length) {
         $(".discount-coupon input[type='text'], .discount-coupon button").attr("disabled", "true");
         $("<span>Slevový kód nelze uplatnit v košíku, který obsahuje zlevněný produkt</span>").insertAfter(".discount-coupon button");
         $(".js-remove-form .btn-primary").click();
     }
-
+*/
 
     if ($(".login.toggle-window").length) {
         $(".headerFreeDeliveryNew").html("Registrujte se a sbírejte <br> slevy s každým svým nákupem");
@@ -888,6 +888,29 @@ if ($(":lang(cs)").length) {
         });
 
     }
+
+
+
+    if ($("#checkoutSidebar .cart-item[data-micro-sku*=DA-PO]").length == $("#checkoutSidebar .cart-item").length) {
+        $("#shipping-180").addClass("--active");
+      }
+      
+      $(".category-perex").append('<div id="readMore">Celý popis</div>');
+      $("#readMore").click(function () {
+          $(".category-perex").addClass("--active");
+      });
+      
+      $('<div id="repaymentButton"><img src="https://www.benlemi.cz/user/documents/theme/dist/icons/calculator.svg">Kalkulačka splátek</div>').insertAfter(".p-info-wrapper .add-to-cart");
+      
+      $("#repaymentButton").click(function () {
+          $("body").addClass("--activeRepayment");
+          const essoxframe = $("#essoxPaymentsCalculate a").attr("href");
+          $('<div id="repaymentModal"><div class="repayment-content"><div class="repayment-content-header"><h3 class="--active">ESSOX</h3><h3>Skip Pay</h3><h3>Twisto Pay</h3></div><div class="repayment-content-footer">Zavřít okno</div><div class="repayment-content-main"><iframe src="' + essoxframe + '"></div></div></div>').insertAfter("#footer");
+          $(".repayment-content-footer").click(function () {
+              $("body").removeClass("--activeRepayment");
+              $("#repaymentModal").remove();
+          });
+      });
 
 }
 
@@ -958,13 +981,13 @@ if ($(":lang(sk)").length) {
     $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
 
 
-
+/*
     if ($(".p-price.p-cell .show-tooltip.acronym").length) {
         $(".discount-coupon input[type='text'], .discount-coupon button").attr("disabled", "true");
         $("<span>Zľavový kód nemožno uplatniť na zľavnené produkty</span>").insertAfter(".discount-coupon button");
         $(".js-remove-form .btn-primary").click();
     }
-
+*/
 
     if ($(".login.toggle-window").length) {
         $(".headerFreeDeliveryNew").html("Registrujte sa a zbierajte <br> zľavy s každým svojim nákupom");
