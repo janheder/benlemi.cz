@@ -4921,3 +4921,77 @@ display: flex;
   cursor: pointer;
   color: rgba(207, 72, 35, 1);
 }
+
+
+
+
+
+.repayment-content-tab{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.repayment-content.--tab1 #tab1,
+.repayment-content.--tab2 #tab2,
+.repayment-content.--tab3 #tab3,
+.repayment-content.--tab4 #tab4{
+  display: flex;
+}
+.repayment-content.--tab1 #tabToggle1,
+.repayment-content.--tab2 #tabToggle2,
+.repayment-content.--tab3 #tabToggle3,
+.repayment-content.--tab4 #tabToggle4{
+background: #ecf2e8;
+}
+.repayment-content-header h3{
+background: white;
+}
+@media screen and (max-width: 575px){
+.repayment-content-header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: #e5e5e5;
+}
+}
+
+
+
+
+#repaymentButton{
+  position: relative;
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+   justify-content: center;
+  max-width: 425px;
+  border: 2px solid #ECF2E8;
+  font-size: 14px;
+  background:#fff;
+}
+#repaymentButton::before{
+  content: "";
+  position: absolute;
+  top: -40px;
+  height: 30px;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items:center;
+}
+#repaymentButton span {
+  line-height: 1.5;
+}
+#repaymentButton span b{
+  display: block;
+  text-transform: uppercase;
+ font-size: 16px;
+}
+#repaymentButton img{
+  height: 30px;
+}
+.repayment-content-footer{
+  border-top: 1px solid #e5e5e5;
+}

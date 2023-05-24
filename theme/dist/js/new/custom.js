@@ -900,16 +900,37 @@ if ($(":lang(cs)").length) {
           $(".category-perex").addClass("--active");
       });
       
-      $('<div id="repaymentButton"><img src="https://www.benlemi.cz/user/documents/theme/dist/icons/calculator.svg">Kalkulačka splátek</div>').insertAfter(".p-info-wrapper .add-to-cart");
+      $('<div id="repaymentButton"><img src="https://www.benlemi.cz/user/documents/theme/dist/icons/calculator.svg"><span>Kupte teď, zaplaťte později <b>Kalkulačka splátek</b></span></div>').insertAfter(".p-info-wrapper .add-to-cart");
       
       $("#repaymentButton").click(function () {
           $("body").addClass("--activeRepayment");
           const essoxframe = $("#essoxPaymentsCalculate a").attr("href");
-          $('<div id="repaymentModal"><div class="repayment-content"><div class="repayment-content-header"><h3 class="--active">ESSOX</h3><h3>Skip Pay</h3><h3>Twisto Pay</h3></div><div class="repayment-content-footer">Zavřít okno</div><div class="repayment-content-main"><iframe src="' + essoxframe + '"></div></div></div>').insertAfter("#footer");
+          $('<div id="repaymentModal"> <div class="repayment-content --tab1"> <div class="repayment-content-header"> <h3 id="tabToggle1">Třetina</h3> <h3 id="tabToggle2">Za 14 dnů</h3> <h3 id="tabToggle3">Za 30 dnů</h3> <h3 id="tabToggle4">Na splátky</h3> </div> <div class="repayment-content-footer">Zavřít okno</div> <div class="repayment-content-main"> <div class="repayment-content-tab" id="tab1"> <img src="https://www.benlemi.cz/user/documents/theme/dist/img/skippay-tretina.png" alt="Třetina"> </div> <div class="repayment-content-tab" id="tab2"> <img src="https://www.benlemi.cz/user/documents/theme/dist/img/skippay-14.png" alt="Třetina"> </div> <div class="repayment-content-tab" id="tab3"> <img src="https://www.benlemi.cz/user/documents/theme/dist/img/twisto-30.png" alt="Třetina"> </div> <div class="repayment-content-tab" id="tab4"> <iframe src="' + essoxframe + '"> </div> </div> </div></div>').insertAfter("#footer");
           $(".repayment-content-footer").click(function () {
               $("body").removeClass("--activeRepayment");
               $("#repaymentModal").remove();
           });
+
+        $("#tabToggle1").click(function(){
+            $(".repayment-content").addClass("--tab1");
+            $(".repayment-content").removeClass("--tab2 --tab3 --tab4");
+        });
+        
+        $("#tabToggle2").click(function(){
+            $(".repayment-content").addClass("--tab2");
+            $(".repayment-content").removeClass("--tab1 --tab3 --tab4");
+        });
+        
+        $("#tabToggle3").click(function(){
+            $(".repayment-content").addClass("--tab3");
+            $(".repayment-content").removeClass("--tab1 --tab2 --tab4");
+        });
+        
+        $("#tabToggle4").click(function(){
+            $(".repayment-content").addClass("--tab4");
+            $(".repayment-content").removeClass("--tab1 --tab2 --tab3");
+        });
+        
       });
 
 }
