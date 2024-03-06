@@ -1,0 +1,418 @@
+
+/*
+
+.faq-page {
+    max-width: 780px;
+    margin: 0 auto;
+  background: #faafa;
+  padding: 0px;
+}
+.faq-page h2{
+      border-bottom: 0px solid #F0F0F0;
+  margin: 80px 0 0px 0;
+  padding-bottom: 30px;
+}
+details{
+    border: 1px solid #F0F0F0;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+summary {
+    position: relative;
+    padding: 0px 0px 20px 0;
+    margin-bottom: 0px;
+    font-weight: 500;
+    padding-right: 30px;
+    line-height: 1.5;
+  background: transparent;
+  font-size: 18px;
+  opacity: 0.8;
+  color: #3c3c3b;
+}
+summary::marker{
+    content: "";
+}
+summary::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 8px;
+    height: 12px;
+    width: 12px;
+    display: flex;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: 0.2s ease transform;
+}
+details[open]{
+  background: white;
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 3%);
+}
+details[open] summary{
+  opacity: 1;
+}
+details[open] summary::after{
+    transform: rotate(180deg);
+}
+details p {
+    padding-left: 0px;
+color: #6D6C79;
+    margin: 0;
+    margin-top: 0px;   
+  margin-bottom: 30px;
+    font-size: 15px;
+  opacity: 0.9;
+  line-height: 1.7;
+  border: 0;
+}
+.content-inner details p a strong{
+  font-weight: 400;
+}
+*/
+
+
+.faq-page h2{
+  border-bottom: 1px solid #F0F0F0;
+  margin: 60px 0 0px 0;
+  padding-bottom: 30px;
+}
+#faqSearch{
+  margin-bottom: 20px;
+}
+details{
+  border-bottom: 1px solid #F0F0F0;
+  margin: 0;
+}
+summary {
+  position: relative;
+  padding: 30px 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  padding-right: 30px;
+  line-height: 1.5;
+  background: transparent;
+  font-size: 18px;
+  opacity: 1;
+  color: #2E523D;
+}
+summary::marker{
+  content: "";
+}
+summary::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 34px;
+  height: 12px;
+  width: 12px;
+  display: flex;
+  background-image: url("../icons/arrow-down.svg?v=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: 0.2s ease transform;
+  opacity: 0.4;
+}
+details[open] summary{
+  opacity: 1;
+}
+details[open] summary::after{
+  transform: rotate(180deg);
+}
+details p {
+  padding-left: 0px;
+  color: #6D6C79;
+  margin: 0;
+  margin-top: -5px;   
+  margin-bottom: 30px;
+  font-size: 15px;
+  padding-left: 40px;
+  opacity: 0.9;
+  line-height: 1.7;
+  border-left: 2px solid #c3dcb2;
+}
+
+@media screen and (max-width: 991px){
+  details p {
+    padding-left: 20px;
+  }
+}
+
+
+
+  .description-infographics-matrace{
+    width: 50%;
+    float:left;
+  }
+  .description-infographics-matrace + .description-infographics{
+    display: none
+  }
+
+  .load-products{
+    background: #8C8C8C;
+
+  }    
+  .pagination {
+      justify-content: center;
+  }
+  .pagination a, .pagination strong{
+    order: 5;
+  }
+  .pagination .prev{
+    order: 0;
+  }
+  .pagination .next{
+    order: 10;
+  }
+.faq-page{
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+
+.payment-info {
+  order: 10;
+  display: flex;
+  flex-direction: revert;
+  flex-wrap: wrap;
+}
+
+.payment-info .sublabel-description {
+  width: 100%;
+}
+#order-shipping-methods .question-tooltip{
+  display: flex;
+}
+
+
+#order-shipping-methods .show-tooltip {
+  padding: 0px;
+  position: relative;
+  background: #7bb82a;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#order-shipping-methods .show-tooltip::before {
+  content: attr(data-original-title);
+  position: absolute;
+    left: 20px;
+    top: 0;
+  font-size: 14px;
+  padding: 1px 5px;
+  display: none;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 0px;
+  transition: opacity 0.1s ease-out;
+  z-index: 99;
+  text-align: left;
+  width: 300px;
+}
+
+#order-shipping-methods .show-tooltip:hover::before {
+  display: inline-block;
+}
+
+
+
+.in-configurarea-contului-meu .content,
+.in-centru-clienti .content,
+.in-comenzile-mele .content,
+.in-platile-clientilor .content,
+.in-documentele-mele .content,
+.in-reducerile-mele .content,
+.in-evaluare .content,
+.in-discutiile-mele-despre-produse .content{
+  width: 75%;
+}
+@media screen and (max-width: 991px){
+  .in-configurarea-contului-meu .content,
+  .in-centru-clienti .content,
+  .in-comenzile-mele .content,
+  .in-platile-clientilor .content,
+  .in-documentele-mele .content,
+  .in-reducerile-mele .content,
+  .in-evaluare .content,
+  .in-discutiile-mele-despre-produse .content{
+    width: 100%;
+  }
+}
+
+
+
+.in-ugyfel .content,
+.in-allitas .content,
+.in-rendelesek .content,
+.in-kifizeteseim .content,
+.in-ugyfel-adatok .content,
+.in-ugyfel-kedvezmenyek .content,
+.in-produktbewertung .content,
+.in-ugyfel-beszelgetes .content{
+  width: 75%;
+}
+@media screen and (max-width: 991px){
+  .in-ugyfel .content,
+  .in-allitas .content,
+  .in-rendelesek .content,
+  .in-kifizeteseim .content,
+  .in-ugyfel-adatok .content,
+  .in-ugyfel-kedvezmenyek .content,
+  .in-produktbewertung .content,
+  .in-ugyfel-beszelgetes .content{
+    width: 100%;
+  }
+}
+
+.categoriesSection__row .col-6 {
+  margin: 5px 0;
+  padding: 0 5px;
+}
+
+@media screen and (min-width: 767px){
+  .categoriesSection__row > div:nth-child(1n+9){
+    display: none;
+  }
+}
+@media screen and (min-width: 992px){
+  .categoriesSection__row > div:nth-child(1n+6){
+    display: block;
+  }
+  .categoriesSection__thumb {
+    width: 120px;
+    height: 90px;
+  }
+}
+
+
+/* VANOCE */
+/*
+.header-top div:nth-child(2){
+  flex-shrink: 0;
+}
+.type-detail .overall-wrapper::before, .type-category .overall-wrapper::before {
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/bg-vanoce.png");
+}
+
+@media screen and (min-width: 992px){
+.site-name {
+    height: 56px;
+}
+  body:not(.ordering-process):not(.type-detail) #header {
+    top: 10px;
+}
+  .overall-wrapper::after{
+  content: "";
+    position: fixed;
+    top: 0;
+    height: 14px;
+      background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/vanoce-ozdoby.jpg");
+  z-index: 9;
+  width: 100%
+}
+}
+*/
+
+@media screen and (max-width:500px){
+.language-toggle{
+  display: none;
+}
+}
+
+
+.p .flags .flag.flag-new{
+    background: #a0cd54;
+  }
+
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+.hidden-split-parameter{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 991px){
+    .menu-level-1>li.ext>a[href="/nabytek/"], .menu-level-1>li.ext>a[href="/produkty/"], .menu-level-1>li.ext>a[href="/products-2/"], .menu-level-1>li.ext>a[href="/butorok--dekoraciok-es-lakastextiliak-egy-fedel-alatt/"], .menu-level-1>li.ext>a[href="/produse-2/"]  {
+    background-image: url("../img/menu-res/produkt.png");
+    }
+    .menu-level-1>li.ext>a[href="/mistnosti/"], .menu-level-1>li.ext>a[href="/miestnosti/"], .menu-level-1>li.ext>a[href="/rooms/"], .menu-level-1>li.ext>a[href="/gyonyoru-otthon-a-gyerekszobatol-a-kertig/"], .menu-level-1>li.ext>a[href="/camere/"]  {
+        background-image: url("../img/menu-res/mistnost.png");
+    }
+
+
+}
+.menu-level-1>li>a[href="/nove-produkty/"]{
+    background-image: url("../img/menu-res/novinka.png");
+}
+.menu-level-1>li>a[href="/vyprodej/"]{
+    background-image: url("../img/menu-res/sleva.png");
+}
+
+
+
+
+.menu-level-1>li>a{
+  position:relative;
+}
+.menu-level-1>li>a::before {
+    content: "";
+    width: 1px;
+    height: 26px;
+    background: #e5e5e5;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+
+
+
+.p-image .flag-discount .price-save span{
+  padding: 0;
+  background:transparent;
+}
+.checkout-box .contact-box strong {
+    background-image: url("https://www.benlemi.cz/user/documents/theme/dist/img/customer-support-3.png");
+}
+
+
+
+.variant-list select {
+  background-size: 10px 10px;
+}
+.pagination a.hidden{
+  display: none;
+}
+.pagination a.hidden + *{
+  margin-left: 40px;
+  position: relative;
+}
+.pagination a.hidden + *::before{
+  content: "...";
+  height: 46px;
+  width: 40px;
+  position: absolute;
+  left: -43px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}

@@ -15,7 +15,6 @@
     padding-top: 30px;
     margin-bottom: 0;
     border: 0;
-    margin-top: 20px;
 }
 .benefitBanner__item {
     display: flex;
@@ -52,9 +51,6 @@
     .benefitBanner {
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 60px;
-    }
-    .position--benefitProduct {
-        margin-bottom: 0;
     }
 }
 

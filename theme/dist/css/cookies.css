@@ -311,3 +311,67 @@ body.cookies-visible {
         justify-content: center;
     }
 }
+
+
+
+.siteCookies__button.js-cookiesConsentSubmit{
+  cursor: pointer;
+}
+.siteCookies{
+  max-width: 100%;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  transform: none;
+  width: 100%;
+background: rgba(0,0,0,0.1);
+  align-items:center;
+  justify-content: center;
+  display: flex;
+}
+.siteCookies__form{
+    max-width: 480px;
+ background: #e2eee5;
+  padding: 20px;
+  box-shadow: 0 10px 15px rgba(46,82,61,.1);
+}
+.siteCookies__text{
+  padding: 0;
+  font-size: 14px;
+}
+.siteCookies__content, .siteCookies__form{
+  flex-direction: column;
+}
+.siteCookies__content::before{
+  display: none;
+}
+.js-cookies-settings{
+  display: flex;
+  margin: 10px 0;
+}
+.siteCookies__link{
+  background:transparent;
+  text-decoration: underline;
+}
+.js-cookies-settings::before{
+  content: "Nastavení souborů cookies";
+}
+.siteCookies__button.js-cookiesConsentSubmit{
+  margin: 0;
+  margin-top: 10px;
+}
+@media screen and (max-width: 991px){
+.siteCookies__content {
+    margin-top: 0px;
+}
+}
+.siteCookies__button.js-cookiesConsentSubmit::before{
+  content: none;
+}
+.siteCookies__button.js-cookiesConsentSubmit{
+  font-size: 16px;
+  text-transform: uppercase;
+background: #cf4823;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}

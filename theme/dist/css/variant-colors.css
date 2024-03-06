@@ -11,6 +11,8 @@
     gap: 0px;
     padding: 0;
     font-size: 0;
+    flex-wrap: wrap;
+    padding-left: 4px
 }
 
 .widget-parameter-value {
@@ -20,7 +22,7 @@
 }
 
 .widget-parameter-value:first-child {
-    margin: 0;
+
 }
 
 .widget-parameter-value a {
@@ -354,6 +356,90 @@ html:lang(cs) .widget-parameter-value a[data-value-id="10003"] {
 html:lang(cs) .widget-parameter-value a[data-value-id="10012"] {
     background-image: url("https://www.benlemi.cz/user/parameters/duha_modra_pastel_kopie.jpg");
 }
+html:lang(cs) .widget-parameter-value a[data-value-id="15419"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/n__vrh_bez_n__zvu-2.png");
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="15425"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/n__vrh_bez_n__zvu_(1)-1.png");
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="15422"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/n__vrh_bez_n__zvu_(2).png");
+}
+
+
+
+html:lang(cs) .widget-parameter-value a[data-value-id="12231"] {
+    background: #f7b5d0;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13758"] {
+    background: #cc0066;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="16884"] {
+    background: #a0d3ce;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="16878"] {
+    background: #c68b55;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="12996"] {
+    background: #ffeff5;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13167"] {
+    background: #ffcc40;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13170"] {
+    background: #cc6633;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13173"] {
+    background: #CC3333;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13176"] {
+    background: #CC3366;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13179"] {
+    background: #996699;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13182"] {
+    background: #339966;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13290"] {
+    background: #9a0000;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="10225"] {
+    background: #ffffde;
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="12987"] {
+    background: #cacfeb;
+}
+
+html:lang(cs) .widget-parameter-value a[data-value-id="12999"] {
+    background-image: url(https://www.benlemi.cz/user/parameters/b__lo-__edo-r____ov__.jpg);
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13002"] {
+    background-image: url(https://www.benlemi.cz/user/parameters/b__lo-__edo-mint.jpg);
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="13005"] {
+    background-image: url(https://www.benlemi.cz/user/parameters/b__lo-__edo-ho____icov___2.jpg)
+}
+html:lang(cs) .widget-parameter-value a[data-value-id="12990"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/n__vrh_bez_n__zvu_(82).png");
+}
+
+/*sedo-ruzova*/
+html:lang(cs) .widget-parameter-value a[data-value-id="7983"] {
+    background-image: url("https://www.benlemi.cz/user/documents/upload/varianty/sedo-ruzova.png");
+}
+/*sedo-bila*/
+html:lang(cs) .widget-parameter-value a[data-value-id="12993"] {
+    background-image: url("https://www.benlemi.cz/user/documents/upload/varianty/sedo-bila.png");
+}
+/*ruzovo-bila*/
+html:lang(cs) .widget-parameter-value a[data-value-id="14415"] {
+    background-image: url("https://www.benlemi.cz/user/documents/upload/varianty/cerno-bila.png");
+}
+/*cerno-bila*/
+html:lang(cs) .widget-parameter-value a[data-value-id="9462"] {
+    background-image: url("https://www.benlemi.cz/user/documents/upload/varianty/cerno-bila.png");
+}
 
 
 /* SK */
@@ -539,4 +625,79 @@ html:lang(sk) .widget-parameter-value a[data-value-id="8502"] {
 }
 html:lang(sk) .widget-parameter-value a[data-value-id="8508"] {
     background: #453730;
+}
+
+
+html:lang(sk) .widget-parameter-value a[data-value-id="11701"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/n__vrh_bez_n__zvu-2.png");
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="11704"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/n__vrh_bez_n__zvu_(1)-1.png");
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="11707"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/n__vrh_bez_n__zvu_(2).png");
+}
+
+
+html:lang(sk) .widget-parameter-value a[data-value-id="5901"] {
+    background: #f1ebe2;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="8367"] {
+    background: #ffccc9;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="11746"] {
+    background: #cc0066;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="11847"] {
+    background: #a0d3ce;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="11841"] {
+    background: #c68b55;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="8040"] {
+    background: #333399;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="7734"] {
+   background: #6bc3f7;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="6834"] {
+    background: #ffffc7;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="5344"] {
+    background: #ffffc7;
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="1961"] {
+    background: #be7cf9;
+}
+
+html:lang(sk) .widget-parameter-value a[data-value-id="7980"] {
+    background-image: url("https://www.benlemi.sk/user/parameters/b__lo-__edo-mint_1.jpg");
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="7992"] {
+    background-image: url(https://www.benlemi.sk/user/parameters/b__lo-__edo-r____ov___1.jpg);
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="7995"] {
+    background-image: url("https://www.benlemi.sk/user/parameters/b__lo-__edo-mint_1.jpg");
+}
+html:lang(sk) .widget-parameter-value a[data-value-id="7998"] {
+    background-image: url(https://www.benlemi.sk/user/parameters/b__lo-__edo-ho____icov___1.jpg);
+}
+
+/*sedo-ruzova*/
+html:lang(sk) .widget-parameter-value a[data-value-id="7983"] {
+    background-image: url("https://www.benlemi.cz/user/documents/upload/varianty/sedo-ruzova.png");
+}
+/*sedo-bila*/
+html:lang(sk) .widget-parameter-value a[data-value-id="7986"] {
+    background-image: url("https://www.benlemi.cz/user/documents/upload/varianty/sedo-bila.png");
+}
+/*ruzovo-bila*/
+html:lang(sk) .widget-parameter-value a[data-value-id="7989"] {
+    background-image: url("https://www.benlemi.cz/user/documents/upload/varianty/ruzovo-bila.png");
+}
+/*cerno-bila*/
+html:lang(sk) .widget-parameter-value a[data-value-id="9462"] {
+    background-image: url("https://www.benlemi.cz/user/documents/upload/varianty/cerno-bila.png");
 }

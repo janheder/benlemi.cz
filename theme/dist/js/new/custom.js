@@ -867,6 +867,8 @@ if ($(":lang(cs)").length) {
     });
 
     $('.detail-parameters tr th:contains("Typ produktu:"), .detail-parameters tr th:contains("Věk dítěte:"), .detail-parameters tr th:contains("Tvar:"), .detail-parameters tr th:contains("Motiv:"), .detail-parameters tr th:contains("Pro model postele:"), .detail-parameters tr th:contains("Pro postel o délce:"), .detail-parameters tr th:contains("Pro postel o šířce:")').parents('tr').remove();
+    $('.detail-parameters tr th:contains("Rozměry:"), .detail-parameters tr th:contains("Šířka:"), .detail-parameters tr th:contains("Délka:"), .detail-parameters tr th:contains("Barvy:")').parents('tr').remove();
+
 
 
     $("<div class='headerFreeDeliveryNew'>.</div>").insertBefore(".cart-count");
@@ -933,7 +935,11 @@ if ($(":lang(cs)").length) {
         
       });
 
+
+
+
 }
+
 
 
 // =============================================================================
@@ -1020,10 +1026,68 @@ if ($(":lang(sk)").length) {
 
     }
 
-    $('.detail-parameters tr th:contains("Rozměr:"), .detail-parameters tr th:contains("Tvar:")').parents('tr').remove();
+    $('.detail-parameters tr th:contains("Tvar:")').parents('tr').remove();
+
 
 
 }
+
+
+
+// =============================================================================
+// CZ SK RO SCRIPTS
+// =============================================================================
+
+if ($(":lang(cs), :lang(sk), :lang(ro)").length) {
+
+    $(document).ready(function () {
+        $(".p-thumbnails-inner .p-thumbnail").each(function () {
+            var prodImg = $(this).attr("href");
+            $(this).find("img").attr("data-src",prodImg);
+            $(this).find("img").attr("src",prodImg);
+        });
+
+        $(".p-thumbnails-inner .cbox-gal").each(function() {
+            $(this).prev(".p-thumbnails-inner .p-thumbnail").append(this);
+        });
+
+    });
+
+    $(".extended-description").insertAfter(".add-to-cart");
+
+
+    $(document).ready(function () {
+
+        $('.product-top .p-info-wrapper > *').wrapAll('<div class="p-info-sticky"></div>'); 
+        $(".p-info-wrapper").addClass("--sticky");
+
+
+        $("#tab-content #description .description-inner").insertAfter(".social-buttons-wrapper");
+
+
+        if ($(":lang(cs)").length) {
+            $("<div class='descriptionFaqWrap'><h4>FAQ</h4><div id='descriptionFaq'></div></div>").insertAfter(".social-buttons-wrapper");
+            $("#descriptionFaq").load("/nejcastejsi-dotazy #FaqResult");
+        }
+        
+
+        $("<div id='productStory'></div>").insertAfter("#productsRelated");
+        $( "#productStory" ).load( "/ .storySection.--homepage" );
+
+        $(".p-image-wrapper .p-image .flags-extra").insertBefore(".p-thumbnails");
+        
+
+
+    });
+
+
+    document.addEventListener('ShoptetVariantAvailable', function () {
+        let activeImg = $("#wrap img").attr("src");
+        $(".p-thumbnails-wrapper a.p-thumbnail[href='"+ activeImg +"']").insertBefore(".p-thumbnail:first-child");
+    }, { passive: true });
+
+}
+
 
 
 
@@ -1251,3 +1315,5 @@ if ($(":lang(hu)").length) {
 
     }
 }
+
+

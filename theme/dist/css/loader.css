@@ -4,10 +4,9 @@
 @import url("categoriesSection.css?v=1");
 @import url("benefitBanner.css?v=1");
 @import url("cognito-forms.css?v=3");
-@import url("cookies.css?v=1");
+@import url("cookies.css?v=2");
 @import url("customer-page.css?v=1");
 @import url("faq.css?v=4");
-@import url("fonts.css?v=4");
 @import url("footer.css?v=4");
 @import url("new-styles.css?v=4");
 @import url("ordering-process.css?v=4");
@@ -17,6 +16,6 @@
 @import url("ratingSection.css?v=4");
 @import url("top-products.css?v=4");
 @import url("user-forms.css?v=4");
-@import url("variant-colors.css?v=5");
+@import url("variant-colors.css?v=9");
 
-@import url("redesign.css?v=8");
+@import url("redesign.css?v=29");

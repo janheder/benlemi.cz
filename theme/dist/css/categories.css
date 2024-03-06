@@ -1,0 +1,295 @@
+
+
+
+
+
+
+
+
+@media screen and (min-width: 991px){
+  .menu-item-1033 .menu-level-2, 
+  .menu-item-3753 .menu-level-2,
+  .menu-item-1926 .menu-level-2,
+  .menu-item-1880 .menu-level-2,
+  .menu-item-1811 .menu-level-2
+  {
+    padding-top: 0;
+      min-height: 560px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+  .menu-item-1033 .menu-level-2::before, 
+  .menu-item-3753 .menu-level-2::before,
+  .menu-item-1926 .menu-level-2::before,
+  .menu-item-1880 .menu-level-2::before,
+  .menu-item-1811 .menu-level-2::before
+  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25%;
+    background: #e5e5e5;
+    display: flex;
+    width: 1px;
+    height: 100%;
+  }
+
+
+
+  .menu-item-1033 .menu-level-2>li,
+  .menu-item-3753 .menu-level-2>li,
+  .menu-item-1926 .menu-level-2>li,
+  .menu-item-1880 .menu-level-2>li,
+  .menu-item-1811 .menu-level-2>li
+  {
+    width: 25%;
+      padding: 0;
+height: 100%;
+}
+
+/**/
+.menu-item-1033 .menu-level-2>li>a,  
+.menu-item-3951 .menu-level-2>li>a,
+.menu-item-3753 .menu-level-2>li>a,
+.menu-item-1926 .menu-level-2>li>a,
+.menu-item-1880 .menu-level-2>li>a,
+.menu-item-1811 .menu-level-2>li>a
+
+
+{
+  display: none;
+}
+/**/
+
+
+.menu-item-1033 .menu-level-2>li>div,
+.menu-item-3753 .menu-level-2>li>div,
+.menu-item-1926 .menu-level-2>li>div,
+.menu-item-1880 .menu-level-2>li>div,
+.menu-item-1811 .menu-level-2>li>div
+{
+  width: 100%;
+  flex-direction: row;
+}
+
+
+.menu-item-1033 .menu-level-2>li>div >a,
+.menu-item-3753 .menu-level-2>li>div >a,
+.menu-item-1926 .menu-level-2>li>div >a,
+.menu-item-1880 .menu-level-2>li>div >a,
+.menu-item-1811 .menu-level-2>li>div >a
+{
+  width: 100%;
+  align-items: center;
+    justify-content: flex-start;
+  margin: 0;
+  padding: 15px ;
+  position: relative;
+}
+.menu-item-1033 .menu-level-2>li>div >a::after,
+.menu-item-3753 .menu-level-2>li>div >a::after,
+.menu-item-1926 .menu-level-2>li>div >a::after,
+.menu-item-1880 .menu-level-2>li>div >a::after,
+.menu-item-1811 .menu-level-2>li>div >a::after
+{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("https://www.benlemi.cz/user/documents/theme/dist/icons/arrow-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  position: absolute;
+}
+
+
+
+.menu-item-1033 .menu-level-3,
+.menu-item-3753 .menu-level-3,
+.menu-item-1926 .menu-level-3,
+.menu-item-1880 .menu-level-3,
+.menu-item-1811 .menu-level-3
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 75%;
+  padding: 40px 60px;
+    display: none;
+  position: absolute;
+  left: 25%;
+  top: 0;
+grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+}
+
+
+.menu-item-1033 .menu-level-3>li,
+.menu-item-3753 .menu-level-3>li,
+.menu-item-1926 .menu-level-3>li,
+.menu-item-1880 .menu-level-3>li,
+.menu-item-1811 .menu-level-3>li
+{
+  font-size: 0;
+    display: flex;
+}
+
+
+.menu-item-1033 .menu-level-3>li a,
+.menu-item-3753 .menu-level-3>li a,
+.menu-item-1926 .menu-level-3>li a,
+.menu-item-1880 .menu-level-3>li a,
+.menu-item-1811 .menu-level-3>li a
+{
+    font-size: 14px;
+    width: 100%;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 10px ;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.menu-item-1033 .menu-level-3>li a img,
+.menu-item-3753 .menu-level-3>li a img,
+.menu-item-1926 .menu-level-3>li a img,
+.menu-item-1880 .menu-level-3>li a img,
+.menu-item-1811 .menu-level-3>li a img
+{
+  margin-bottom: 10px;
+  max-height: 100px;
+}
+
+
+.menu-item-1033 .menu-level-2>li>div:hover .menu-level-3,
+.menu-item-3753 .menu-level-2>li>div:hover .menu-level-3,
+.menu-item-1926 .menu-level-2>li>div:hover .menu-level-3,
+.menu-item-1880 .menu-level-2>li>div:hover .menu-level-3,
+.menu-item-1811 .menu-level-2>li>div:hover .menu-level-3
+{
+    display: grid;
+  }
+  
+  
+  
+.menu-level-1>li:hover .menu-item-1033  .menu-level-2:not(:hover) .has-third-level:nth-child(2) .menu-level-3,
+.menu-level-1>li:hover .menu-item-3753  .menu-level-2:not(:hover) .has-third-level:nth-child(2) .menu-level-3,
+.menu-level-1>li:hover .menu-item-1926  .menu-level-2:not(:hover) .has-third-level:nth-child(2) .menu-level-3,
+.menu-level-1>li:hover .menu-item-1880  .menu-level-2:not(:hover) .has-third-level:nth-child(2) .menu-level-3,
+.menu-level-1>li:hover .menu-item-1811  .menu-level-2:not(:hover) .has-third-level:nth-child(2) .menu-level-3
+{
+  display: grid;
+}
+
+
+.menu-item-1033 .menu-level-2 > li > div > a:hover,
+.menu-item-3753 .menu-level-2 > li > div > a:hover,
+.menu-item-1926 .menu-level-2 > li > div > a:hover,
+.menu-item-1880 .menu-level-2 > li > div > a:hover,
+.menu-item-1811 .menu-level-2 > li > div > a:hover
+{
+  background: #f5f5f5;
+}
+
+
+.menu-item-1033 .menu-level-3 >li a::before,
+.menu-item-3753 .menu-level-3 >li a::before,
+.menu-item-1926 .menu-level-3 >li a::before,
+.menu-item-1880 .menu-level-3 >li a::before,
+.menu-item-1811 .menu-level-3 >li a::before
+{
+  background: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+}
+
+
+@media screen and (max-width: 991px){
+    .menu-level-2>li>div>a img{
+    display: none;
+}
+
+}
+
+
+/* rooms */
+
+@media screen and (min-width: 992px){
+.menu-item-1808 .menu-level-3, .menu-item-1895 .menu-level-3, .menu-item-1929 .menu-level-3, .menu-item-3756 .menu-level-3, .menu-item-3951 .menu-level-3{
+  display: none !important;
+}
+.menu-item-1808 .menu-level-2>li>a>img{
+  display: none !important;
+}
+.menu-item-1808 .menu-level-2>li, .menu-item-1895 .menu-level-2>li, .menu-item-1929 .menu-level-2>li, .menu-item-3756 .menu-level-2>li, .menu-item-3951 .menu-level-2>li{
+  width: 100%;
+  padding: 0;
+}
+.menu-level-1>li.menu-item-1808:hover .menu-level-2, .menu-level-1>li.menu-item-1895:hover .menu-level-2, .menu-level-1>li.menu-item-1929:hover .menu-level-2, .menu-level-1>li.menu-item-3756:hover .menu-level-2, .menu-level-1>li.menu-item-3951:hover .menu-level-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px 20px;
+  padding: 20px;
+}
+.menu-item-1808 .menu-level-2::before, .menu-item-1895 .menu-level-2::before, .menu-item-1929 .menu-level-2::before, .menu-item-3756 .menu-level-2::before, .menu-item-3951 .menu-level-2::before{
+  content: none;
+}
+.menu-item-1808 .menu-level-2>li>div, .menu-item-1895 .menu-level-2>li>div, .menu-item-1929 .menu-level-2>li>div, .menu-item-3756 .menu-level-2>li>div, .menu-item-3951 .menu-level-2>li>div{
+  padding: 0;
+}
+.menu-item-1808 .menu-level-2>li>div >a, .menu-item-1895 .menu-level-2>li>div >a, .menu-item-1929 .menu-level-2>li>div >a, .menu-item-3756 .menu-level-2>li>div >a, .menu-item-3951 .menu-level-2>li>div >a{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.menu-item-1808 .menu-level-2 > li > div > a:hover, .menu-item-1895 .menu-level-2 > li > div > a:hover, .menu-item-1929 .menu-level-2 > li > div > a:hover, .menu-item-3756 .menu-level-2 > li > div > a:hover, .menu-item-33951 .menu-level-2 > li > div > a:hover{
+  background: none;
+}
+.menu-item-1808 .menu-level-2>li>div >a img, .menu-item-1895 .menu-level-2>li>div >a img, .menu-item-1929 .menu-level-2>li>div >a img, .menu-item-3756 .menu-level-2>li>div >a img, .menu-item-3951 .menu-level-2>li>div >a img{ 
+  margin-bottom: 10px;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width: 991px){
+.menu-level-1>li.ext>a[href="/postele/"], 
+.menu-level-1>li.ext>a[href="/produkty/"], 
+.menu-level-1>li.ext>a[href="/baby-and-children-s-furniture/"], 
+.menu-level-1>li.ext>a[href="/mobilier-pentru-bebelusi-i-copii/"] {
+    background-image: url("../img/detsky-nabytek.png");
+}
+.menu-level-1>li.ext>a[href="/postele/"], 
+.menu-level-1>li.ext>a[href="/miestnosti/"], 
+.menu-level-1>li.ext>a[href="/baby-and-children-s-furniture/"], 
+.menu-level-1>li.ext>a[href="/mobilier-pentru-bebelusi-i-copii/"] {
+    background-image: url("https://www.benlemi.sk/user/categories/thumb/p__irodni.jpg");
+}
+}
+
+
+
+
+.menu-item-3756 .menu-level-2>li>a,
+.menu-item-1929 .menu-level-2>li>a,
+.menu-item-1895 .menu-level-2>li>a,
+.menu-item-1808 .menu-level-2>li>a
+{
+  display: none;
+}

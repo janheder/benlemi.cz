@@ -144,6 +144,15 @@ if ($(".category-header").length){
     $(".category-header div:last-child").text(g_totalQuantity + ":" + catHead);
 }
 
+
+if ($(".category__secondDescription img").length){
+    $('.category-title, .category-perex').wrapAll('<div class="category-top-wrap"><div class="category-top-wrap-content"></div></div>');
+    $(".category-top-wrap").append($(".category__secondDescription img"));
+}
+    
+    
+
+
 /*
 $(".filters-wrapper").append("<div class='filter-contact'></div>");
 $(".filter-contact").load(g_cart1Url + " .checkout-box");
