@@ -1035,10 +1035,10 @@ if ($(":lang(sk)").length) {
 
 
 // =============================================================================
-// CZ SK RO SCRIPTS
+// CZ SK EN RO SCRIPTS
 // =============================================================================
 
-if ($(":lang(cs), :lang(sk), :lang(ro)").length) {
+if ($(":lang(cs), :lang(sk), :lang(en), :lang(ro)").length) {
 
     $(document).ready(function () {
         $(".p-thumbnails-inner .p-thumbnail").each(function () {
