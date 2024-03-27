@@ -1,0 +1,56 @@
+.widget-parameter-wrapper {
+    order: 2;
+    padding-bottom: 15px;
+}
+
+.widget-parameter-list {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    gap: 0px;
+    padding: 0;
+    font-size: 0;
+    flex-wrap: wrap;
+    padding-left: 4px
+}
+
+.widget-parameter-value {
+    margin-left: -4px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.widget-parameter-value:first-child {
+
+}
+
+.widget-parameter-value a {
+    display: flex;
+    height: 18px;
+    width: 18px;
+    background: white;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.p-in-in .name .p-variants:last-child {
+    display: none;
+}
+
+.p-in+.widget-parameter-wrapper {
+    display: none;
+}
+
+/* RO */
+html:lang(ro) .widget-parameter-value a[data-value-id="705"] {
+    background: #f1ebe2;
+}
+
+
+
+/*
+html:lang(cs) .widget-parameter-value a[data-value-id="8603"] {
+    background-image: url("https://www.benlemi.cz/user/parameters/duha_v___ern__ch_odst__nech.jpg");
+}
+*/
