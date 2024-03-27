@@ -5694,3 +5694,60 @@ body.--activeRepayment #repaymentModal {
     margin-right: 0px;
   }
 }
+
+
+
+
+.homepage-group-title,
+.homepage-group-title,
+.instagramSection__title,
+.blogSection__title,
+.categoriesSection__title,
+#productsAlternative::before,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500 !important;
+}
+
+.main-header-nav>a,
+.main-header-nav>li>a {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu-level-1>li>a {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.news-item .title,
+.news-item-detail h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500 !important;
+}
+
+.btn,
+.summary-wrapper .next-step-back {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px;
+}
+
+#continue-order-button {
+  font-size: 14px;
+}
+
+#checkoutContent .co-contact-information h4+.form-group a::before {
+  font-size: 14px;
+}
+
+.cart-header .step strong,
+.cart-header .step a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px;
+}

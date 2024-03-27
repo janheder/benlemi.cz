@@ -907,7 +907,7 @@ if ($(":lang(cs)").length) {
       $("#repaymentButton").click(function () {
           $("body").addClass("--activeRepayment");
           const essoxframe = $("#essoxPaymentsCalculate a").attr("href");
-          $('<div id="repaymentModal"> <div class="repayment-content --tab1"> <div class="repayment-content-header"> <h3 id="tabToggle1">Třetina</h3> <h3 id="tabToggle2">Za 14 dnů</h3> <h3 id="tabToggle3">Za 30 dnů</h3> <h3 id="tabToggle4">Na splátky</h3> </div> <div class="repayment-content-footer">Zavřít okno</div> <div class="repayment-content-main"> <div class="repayment-content-tab" id="tab1"> <img src="https://www.benlemi.cz/user/documents/theme/dist/img/skippay-tretina.png" alt="Třetina"> </div> <div class="repayment-content-tab" id="tab2"> <img src="https://www.benlemi.cz/user/documents/theme/dist/img/skippay-14.png" alt="Třetina"> </div> <div class="repayment-content-tab" id="tab3"> <img src="https://www.benlemi.cz/user/documents/theme/dist/img/twisto-30.png" alt="Třetina"> </div> <div class="repayment-content-tab" id="tab4"> <iframe src="' + essoxframe + '"> </div> </div> </div></div>').insertAfter("#footer");
+          $('<div id="repaymentModal"> <div class="repayment-content --tab1"> <div class="repayment-content-header"> <h3 id="tabToggle1">Třetina</h3> <h3 id="tabToggle2">Za 30 dnů</h3> <h3 id="tabToggle3">Twisto 30 dnů</h3> <h3 id="tabToggle4">Na splátky</h3> </div> <div class="repayment-content-footer">Zavřít okno</div> <div class="repayment-content-main"> <div class="repayment-content-tab" id="tab1"> <img src="https://www.benlemi.cz/user/documents/theme/dist/img/skippay-tretina.png" alt="Třetina"> </div> <div class="repayment-content-tab" id="tab2"> <img src="https://www.benlemi.cz/user/documents/theme/dist/img/skippay-30.png" alt="Třetina"> </div> <div class="repayment-content-tab" id="tab3"> <img src="https://www.benlemi.cz/user/documents/theme/dist/img/twisto-30-v2.png" alt="Třetina"> </div> <div class="repayment-content-tab" id="tab4"> <iframe src="' + essoxframe + '"> </div> </div> </div></div>').insertAfter("#footer");
           $(".repayment-content-footer").click(function () {
               $("body").removeClass("--activeRepayment");
               $("#repaymentModal").remove();
@@ -1067,7 +1067,13 @@ if ($(":lang(cs), :lang(sk), :lang(en), :lang(ro)").length) {
 
         if ($(":lang(cs)").length) {
             $("<div class='descriptionFaqWrap'><h4>FAQ</h4><div id='descriptionFaq'></div></div>").insertAfter(".social-buttons-wrapper");
-            $("#descriptionFaq").load("/nejcastejsi-dotazy #FaqResult");
+
+            if ($(".breadcrumbs-wrapper a[href='/matrace/']").length) {
+                $("#descriptionFaq").load("/nejcastejsi-dotazy-k-matracim #FaqResult");
+            }else{
+                $("#descriptionFaq").load("/nejcastejsi-dotazy #FaqResult");
+            }
+            
         }
         
 
