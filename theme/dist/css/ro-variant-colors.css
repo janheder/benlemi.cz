@@ -1,53 +1,187 @@
-.widget-parameter-wrapper {
-    order: 2;
-    padding-bottom: 15px;
-}
 
-.widget-parameter-list {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    overflow: hidden;
-    gap: 0px;
-    padding: 0;
-    font-size: 0;
-    flex-wrap: wrap;
-    padding-left: 4px
-}
-
-.widget-parameter-value {
-    margin-left: -4px;
-    border: 2px solid white;
-    border-radius: 50%;
-}
-
-.widget-parameter-value:first-child {
-
-}
-
-.widget-parameter-value a {
-    display: flex;
-    height: 18px;
-    width: 18px;
-    background: white;
-    border-radius: 50%;
-    background-size: cover;
-}
-
-.p-in-in .name .p-variants:last-child {
-    display: none;
-}
-
-.p-in+.widget-parameter-wrapper {
-    display: none;
-}
 
 /* RO */
-html:lang(ro) .widget-parameter-value a[data-value-id="705"] {
+html:lang(ro) .widget-parameter-value a[data-value-id="6128"] {
+    background: #fff;
+    border: 1px solid #E7EEEC;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="8432"] {
+    background: #D2C1AB;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6125"] {
     background: #f1ebe2;
 }
-
-
+html:lang(ro) .widget-parameter-value a[data-value-id="6230"] {
+    background: #e9dac3;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11319"] {
+    background: #efe6dd;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="13957"] {
+    background: #fffbcc;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10187"] {
+    background: #edf033;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11778"] {
+    background: #cc6633;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6143"] {
+    background: #ffc702;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="8444"] {
+    background: #eacebe;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6350"] {
+    background: #feddbe;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10998"] {
+    background: #c29c8f;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11304"] {
+    background: #f7b5d0;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6137"] {
+    background: #e89cb6;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6371"] {
+    background: #dc3a3c;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11232"] {
+    background: #c69a9e;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10178"] {
+    background: #7c5d6c;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10481"] {
+    background: #953024;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11007"] {
+    background: #acc9cd;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="8258"] {
+    background: #303498;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11001"] {
+    background: #3d4d67;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11382"] {
+    background: #333399;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6140"] {
+    background: #78e0df;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6296"] {
+    background: #9efbe8;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="13960"] {
+    background: #7cb698;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6392"] {
+    background: #bfe4bb;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10508"] {
+    background: #b1cdbc;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11004"] {
+    background: #375e63;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11283"] {
+    background: #6a7b70;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10511"] {
+    background: #556B2F;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10995"] {
+    background: #6a7b70;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10808"] {
+    background: #996633;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11718"] {
+    background: #663234;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10172"] {
+    background: #e8e9e7;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6131"] {
+    background: #9babb8;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10181"] {
+    background: #666666;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6134"] {
+    background: #000000;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10184"] {
+    background: #013300;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6389"] {
+    background: #ae9084;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="9539"] {
+    background: #f1ebe2;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11775"] {
+    background: #cc9933;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11784"] {
+    background: #996699;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11772"] {
+    background: #ffcc40;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11385"] {
+    background: #cc0066;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11376"] {
+    background: #93e1ce;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10845"] {
+    background: #329a9d;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11379"] {
+    background: #c68b55;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="8441"] {
+    background: #f8a102;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="12282"] {
+    background: #d1d1d1;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="12270"] {
+    background: #fdcc77;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="12273"] {
+    background: #cc0066;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="12276"] {
+    background: #d4cbe3;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="12279"] {
+    background: #4447a2;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="10193"] {
+    background: #CC33FF;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11295"] {
+    background: #f4e4ea;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11781"] {
+    background: #CC3366;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6146"] {
+    background: #000000;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="6386"] {
+    background: #dbcebe;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="11682"] {
+    background: #e3d9d0;
+}
+html:lang(ro) .widget-parameter-value a[data-value-id="9524"] {
+    background: #ffffde;
+}
 
 /*
 html:lang(cs) .widget-parameter-value a[data-value-id="8603"] {
