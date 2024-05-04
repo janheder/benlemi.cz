@@ -1076,13 +1076,20 @@ if ($(":lang(cs), :lang(sk), :lang(en), :lang(ro)").length) {
             
         }
         
+        if ($(":lang(ro)").length) {
+            $("<div class='descriptionFaqWrap'><h4>Întrebări frecvente</h4><div id='descriptionFaq'></div></div>").insertAfter(".social-buttons-wrapper");
+                $("#descriptionFaq").load("/nejcastejsi-dotazy #FaqResult");
+        }
+        
 
         $("<div id='productStory'></div>").insertAfter("#productsRelated");
         $( "#productStory" ).load( "/ .storySection.--homepage" );
 
         $(".p-image-wrapper .p-image .flags-extra").insertBefore(".p-thumbnails");
         
-
+        if (!$(".p-thumbnails-wrapper").length) { 
+            $('.p-image').addClass('importantDisplay');
+        }
 
     });
 

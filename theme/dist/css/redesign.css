@@ -5571,6 +5571,9 @@ body.--activeRepayment #repaymentModal {
   content: "Parametry";
   font-size: 20px;
 }
+html:lang(ro) .p-info-wrapper .extended-description>h3::before {
+  content: "Avantaje și specificații";
+}
 
 #productStory {
   order: 25;
@@ -5693,6 +5696,9 @@ body.--activeRepayment #repaymentModal {
     padding: 0;
     margin-right: 0px;
   }
+  .cart-inner{
+    padding-bottom: 70px;
+  }
 }
 
 
@@ -5750,4 +5756,8 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500 !important;
   font-size: 14px;
+}
+
+.type-category #content .category-perex.empty-content.empty-content-category{
+  flex-direction: column;
 }
