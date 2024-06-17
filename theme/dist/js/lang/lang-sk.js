@@ -78,7 +78,7 @@ var g_orderCompleteTitle = "Potvrdzujeme, že ste si práve urobili radosť";
 var g_orderCompleteText = "Doma to budete mať krásne a ešte ste podporili českú rodinnú firmu. Do 30 minút vám pošleme email so všetkými dôležitými informáciami.";
 var g_relatedProducts = "Súvisiace produkty";
 var g_showMoreRelatedProducts = "Zobraziť ďalšie súvisiace produkty";
-var g_emptyInforgaphicsTitle = "Vyberte rozmer vyššie a zobrazí sa vám detailná infografika produktu";
+var g_emptyInforgaphicsTitle = "Zvoľte si z každé varianty vyššie a zobrazí sa vám detailná infografika produktu";
 
 var g_openFilter = "FILTROVAŤ";
 var g_showMore = "Zobraziť ďalšie";

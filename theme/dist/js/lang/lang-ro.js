@@ -78,7 +78,7 @@ var g_orderCompleteTitle = "Vă confirmăm că sunteți un nou client fericit.";
 var g_orderCompleteText = "Nu numai că veți avea o casă frumoasă și confortabilă, dar veți susține și o afacere de familie din Cehia. În 30 de minute vă vom trimite un e-mail care conține toate informațiile necesare.";
 var g_relatedProducts = "Produse asemanatoare";
 var g_showMoreRelatedProducts = "Vizualizați produse conexe";
-var g_emptyInforgaphicsTitle = "Alegeți propuneri de mai sus pentru a vedea informații detaliate";
+var g_emptyInforgaphicsTitle = "Alegeți din fiecare variantă de mai sus și vi se va afișa o infografică detaliată a produsului";
 
 var g_openFilter = "Acceseaza filtrul";
 var g_showMore = "Afișați mai multe";

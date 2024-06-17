@@ -866,8 +866,26 @@ if ($(":lang(cs)").length) {
 
     });
 
-    $('.detail-parameters tr th:contains("Typ produktu:"), .detail-parameters tr th:contains("Věk dítěte:"), .detail-parameters tr th:contains("Tvar:"), .detail-parameters tr th:contains("Motiv:"), .detail-parameters tr th:contains("Pro model postele:"), .detail-parameters tr th:contains("Pro postel o délce:"), .detail-parameters tr th:contains("Pro postel o šířce:")').parents('tr').remove();
-    $('.detail-parameters tr th:contains("Rozměry:"), .detail-parameters tr th:contains("Šířka:"), .detail-parameters tr th:contains("Délka:"), .detail-parameters tr th:contains("Barvy:")').parents('tr').remove();
+    $(document).ready(function() {
+        const attributes = [
+            "Typ produktu", "Typ matrace", "Typ šuplíku", "Typ zavěšení", "Barvy", 
+            "Barvy sedáku", "Barvy podnože", "Rozměry", "Šířka", "Délka", "Materiály", 
+            "Motivy", "Motivy samolepek", "Vlastnosti produktů", "Věk dítěte", "Vybavení", 
+            "Tloušťka (+ potah)", "Tvrdost", "Výplň obsahuje", "Velikost", "Tvary", 
+            "Šířka desky", "Šířka pracovní desky", "Umístění", "uchycení", "Rozměry postele", 
+            "Sestava obsahuje", "Úroveň kvality", "Značka", "Tuhost (1 < 7 nejtužší)", 
+            "Vzory", "Barvy polštáře", "Barvy křesla", "Model", "Obtížnosti", 
+            "Způsoby zapojení", "Šířka tapety", "Výška tapety", "Svítící ve tmě", 
+            "Použití", "Vzor", "Hrací prvky", "Počet dílků", "Počet hráčů", 
+            "Rozměr polštáře", "Rozměr přikrývky", "Velikost mazlíčka", 
+            "Vybíráte pro", "Výška postavy", "Využití", "Sezóna"
+        ];
+    
+        const selector = attributes.map(attr => `.detail-parameters tr th:contains("${attr}:")`).join(', ');
+    
+        $(selector).parents('tr').remove();
+    });
+    
 
 
 
@@ -1026,9 +1044,25 @@ if ($(":lang(sk)").length) {
 
     }
 
-    $('.detail-parameters tr th:contains("Tvar:")').parents('tr').remove();
-
-
+    $(document).ready(function() {
+        const attributes = [
+            "Tvar", "Typ matrace", "Typ šuplíka", "Typ zavesenia", "Farby", "Farby sedáku", 
+            "Farby podnože", "Rozmery", "Šírka", "Dĺžka", "Materiály", "Motívy", 
+            "Motívy samolepiek", "Vlastnosti produktov", "Vek dieťaťa", "Vybavenie", 
+            "Hrúbka (+ poťah)", "Tvrdosť", "Výplň obsahuje", "Veľkosť", "Tvary", 
+            "Šírka dosky", "Šírka pracovnej dosky", "Umiestnenie", "Uchytenie", 
+            "Rozmery postele", "Zostava obsahuje", "Úroveň kvality", "Značka", 
+            "Veková skupina", "Tuhosť (1 <7 najpevnejšia)", "Vzory", "Farby vankúše", 
+            "Farby kresla", "Model", "Obtiažnosti", "Spôsoby zapojenia", 
+            "Šírka tapety", "Výška tapety", "Svietiaci v tme", "Použitie", "Hracie prvky", 
+            "Počet dielikov", "Počet hráčov", "Rozmery vankúša", "Rozmery prikrývky", 
+            "Veľkosť miláčika", "Vyberáte pre", "Výška postavy", "Využitie", "Sezóna", "Typ produktu"
+        ];
+    
+        const selector = attributes.map(attr => `.detail-parameters tr th:contains("${attr}:")`).join(', ');
+    
+        $(selector).parents('tr').remove();
+    });
 
 }
 
@@ -1289,6 +1323,30 @@ if ($(":lang(ro)").length) {
 
         }
     });
+
+
+    $(document).ready(function() {
+        const attributes = [
+            "Tipul de produs", "Tip saltea", "Tip sertar", "Culori", "Culorile scaunului", 
+            "Culorile portaltoiului", "Dimensiuni", "Dimensiunea păturii", "Dimensiunea pernei", 
+            "Dimensiunile patului", "Dimensiunile plăcii", "Dimensiunea animalului", "Lungime", 
+            "Lăţime", "Materiale", "Modele", "Motive de autocolant", "Rigiditate (1 < 7 cea mai rigidă)", 
+            "Trăsătură", "Calitatea lemnului", "Înălțime saltelei", "Formă", "Grupă de vârstă", 
+            "Vârsta copilului", "Pentru model de pat", "Pentru modelul swing", "Pentru un pat lat", 
+            "Pentru un pat de lungime", "Modelul produsului", "Culori pernei", "Baza", "Conține", 
+            "Dificultăți", "Prelucrare de margine", "Accesorii produsului", "Anotimp", "Ansamblul contine", 
+            "Culoare fotoliu", "Destinate pentru", "Duritate", "Elemente de joc", "Figură", 
+            "Grosime (+ acoperire)", "Înălțimea caracterului", "Înălțimea tapetului", "Lățimea plăcii", 
+            "Latimea tapetului", "Locație", "Luminând în întuneric", "Marime", "Modalitati de conectare", 
+            "Număr de bucați", "Tema autocolantului", "Umplutura conține", "Utilizări posibile", 
+            "Culori leagăn", "Nivel de calitate", "Brand"
+        ];
+    
+        const selector = attributes.map(attr => `.detail-parameters tr th:contains("${attr}:")`).join(', ');
+    
+        $(selector).parents('tr').remove();
+    });
+    
 }
 
 

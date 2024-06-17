@@ -77,7 +77,7 @@ var g_orderCompleteTitle = "We confirm that you have just made yourself happy";
 var g_orderCompleteText = "Not only will you have beautiful and cosy home but you also support a Czech family business. In 30 minutes we will send you an e-mail containing all necessary information.";
 var g_relatedProducts = "Related products";
 var g_showMoreRelatedProducts = "View related products";
-var g_emptyInforgaphicsTitle = "Choose propositions above to see detailed infographic";
+var g_emptyInforgaphicsTitle = "Choose from each variant above and you will be shown a detailed infographic of the product";
 
 var g_openFilter = "Filter";
 var g_showMore = "Show more";
